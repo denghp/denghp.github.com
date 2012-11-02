@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="en-us" lang="en-us" version="-//W3C//DTD XHTML 1.1//EN" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="public" />
+    <meta name="robots" content="follow, all" />
+    <meta name="language" content="en-us" />
+    <meta name="description" content="Latest entries" />
+    <meta name="keywords" content="nianliang, blog, raybbo, Bash, MacPorts, auto-ingest, find" />
+    <meta name="author" content="raybbo.com" />
+
+    <meta name="generator" content="Zinnia " />
+
+    <link rel="pingback" href="/xmlrpc/" />
+    <link rel="shortcut icon" href="/media/rayskin/favicon.ico" />
+    <link rel="home" href="/blog/" />
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="http://denghp.github.com/jekyll_demo//media/rayskin/css/blog.css" />
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="http://denghp.github.com/jekyll_demo//media/zinnia/css/screen.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="http://denghp.github.com/jekyll_demo/media/zinnia/css/print.css" />
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="/media/zinnia/css/ie.css" />
+    <![endif]-->
+    <link rel="index" href="/blog/" />
+    <link rel="EditURI" type="application/rsd+xml" href="/blog/rsd.xml" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/blog/wlwmanifest.xml" />
+    <link rel="search" type="application/opensearchdescription+xml" title="Zinnia's Blog" href="/blog/opensearch.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed of latest entries" href="/blog/feeds/latest/" />
+    <link rel="archives" title="Archives August 2011" href="/blog/2011/08/" />
+    <link rel="archives" title="Archives July 2011" href="/blog/2011/07/" />
+    <link rel="stylesheet" type="text/css" href="/media/zinnia/css/slider.css" />
+    <script type="text/javascript" src="http://denghp.github.com/jekyll_demo/media/zinnia/js/jquery.js"></script>
+    <script type="text/javascript" src="http://denghp.github.com/jekyll_demo/media/zinnia/js/jquery.ui.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $("#slider").tabs({ fx:{ opacity: "toggle"}}).tabs("rotate", 5000, true);
+          $("#slider").hover(
+            function() { $("#slider").tabs("rotate", 0, true); },
+            function() { $("#slider").tabs("rotate", 5000, true); });
+          });
+</script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-472324-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
+ </script>
+</head>
+<body id="zinnia">
+  <div class="container">
+    <div id="header" class="span-24 last">
+      <!-- 右侧导航栏 -->
+      <div class="top-navigation">
+        <a href="/" title="Home" class="link home">Home</a> | 
+        <a href="/blog/" title="Blog" class="link docs">Blog</a> | 
+        <a href="/blog/sitemap/" title="Sitemap" class="link sitemap">Sitemap</a> |
+        <a href="/blog/feeds/latest/" title="RSS Feed of latest entries" class="link feeds">RSS Feed</a>
+      </div>
+
+      <h1>
+        <a href="/blog/" title="Demi_Panda Blogs" rel="home">Demi Panda Blogs </a>
+      </h1>
+      <blockquote>
+        <p>Coding, and looking around on the road...</p>
+      </blockquote>
+      <div id="breadcrumbs" class="span-24 last">New Blog...</div>
+    </div>
+  </div>
+  <hr>
+
+  <div>
+    <p>Recent articles</p>
+    <ul>
+      　　{% for post in site.posts %}
+      　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+      　　{% endfor %}
+    </ul>
+  </div>
+
+</body>
+</html>
