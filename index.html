@@ -84,6 +84,506 @@ layout: default
       　　{% endfor %}
     </ul>
   </div>
+<div id="body" class="span-24 last">
+        <div id="content" class="hfeed span-16 border">
+          <div id="entry-3" class="hentry span-16 last">
+            <div class="entry-header span-16 last">
+              <h2 class="entry-title">
+                <a href="/blog/2011/08/28/bash-script-app-store-auto-ingest-tool/" title="A Bash script for App Store auto-ingest Tool" rel="bookmark">A Bash script for App Store auto-ingest Tool</a>
+              </h2>
+              <p class="entry-info">
+              Written by
+              <span class="vcard author">
+                <a href="/blog/authors/nianliang/" class="fn nickname url" rel="author"
+                  title="Show nianliang entries">nianliang</a>
+              </span>
+              on
+              <abbr class="published" title="2011-08-28T05:12:47Z">Aug. 28, 2011</abbr>
+              .
+              </p>
+            </div>
 
+            <div class="entry-body span-16 last">
+
+              <div class="entry-content">
+                <p>A couple of days ago, Apple released the auto-ingest tool. Now, with this tool we can easily download sales daily reports.</p>
+                <p>But, it's obviously, there are two problems.</p>
+                <ol>
+                  <li>Enter the password on the command line is not safe</li>
+                  <li>Inputting the command every time is boring, as it is too long</li>
+                </ol>
+                <p>Here is a very draft Bash script to solve the problems, it will prompt for a password when script running.</p>
+<pre><code>#!/usr/bin/env bash
+
+# Usage:
+# ./daily-report
+# ./daily-report -d 20110909
+#
+# Copyright 2011, Mo Nianliang
+# Released under the MIT license
+
+#---------------------------------------------------------------------
+# Configure your profile here:
+#---------------------------------------------------------------------
+# Apple ID
+username=&lt;your_apple_id&gt;
+vendorid=&lt;your_vendor_id&gt;
+# get ...</code></pre>
+                </div>
+              </div>
+
+              <div class="entry-footer">
+                <p class="entry-tags span-16 last">
+                <strong>Tags</strong> :
+
+
+                <a href="/blog/tags/Bash/"
+                  title="Tag Bash" rel="tag">Bash</a>
+
+                <a href="/blog/tags/auto-ingest/"
+                  title="Tag auto-ingest" rel="tag">auto-ingest</a>
+
+                </p>
+
+                <p class="entry-shorturl span-16 last">
+                <strong>Short url</strong> :
+
+                <a href="http://raybbo.com/blog/3/" title="A Bash script for App Store auto-ingest Tool" rel="shortlink">
+                  http://raybbo.com/blog/3/
+                </a>
+
+                </p>
+
+                <p class="entry-comments span-16 last">
+                <strong>Discussions</strong> :Comments are closed.
+                </p>
+              </div>
+
+            </div>
+            <hr />
+
+            <div id="entry-2" class="hentry span-16 last">
+
+              <div class="entry-header span-16 last">
+                <h2 class="entry-title">
+                  <a href="/blog/2011/08/25/upgrade-outdated-ports-failed-dependency-p512-xml-parser-not-found/" title="Upgrade Outdated Ports Failed: Dependency p5.12-xml-parser not found" rel="bookmark">
+                    Upgrade Outdated Ports Failed: Dependency p5.12-xml-parser not found
+                  </a>
+                </h2>
+                <p class="entry-info">
+
+                Written by
+
+                <span class="vcard author">
+                  <a href="/blog/authors/nianliang/" class="fn nickname url" rel="author"
+                    title="Show nianliang entries">nianliang</a>
+                </span>
+
+                on
+
+                <abbr class="published" title="2011-08-25T07:19:43Z">Aug. 25, 2011</abbr>
+                .
+                </p>
+              </div>
+
+              <div class="entry-body span-16 last">
+
+                <div class="entry-content">
+                  <h3>ERROR #1</h3>
+                  <p>I'm not able to upgrade the outdated packages of MacPorts, it has been a couple of months ago ( from MacPorts 1.9.2 or earlier). Today, even after update MacPorts to version 2.0.1, the same problem still persists.</p>
+                  <p>Mac OS X version: 10.6.8</p>
+<pre><code>~$ sudo port selfupdate
+~$ sudo port upgrade -d outdated
+Warning: No port p5.12-xml-parser found in the index.
+Warning: No port p5.12-getopt-long found in the index.
+Warning: No port p5.12-pathtools found in the index.
+Warning: No port p5.12-scalar-list-utils found in the index.
+---&gt;  Computing dependencies for intltool
+Error: Dependency ...</code></pre>
+                  </div>
+                </div>
+
+                <div class="entry-footer">
+                  <p class="entry-tags span-16 last">
+                  <strong>Tags</strong> :
+
+
+                  <a href="/blog/tags/MacPorts/"
+                    title="Tag MacPorts" rel="tag">MacPorts</a>
+
+                  </p>
+
+                  <p class="entry-shorturl span-16 last">
+                  <strong>Short url</strong> :
+
+                  <a href="http://raybbo.com/blog/2/" title="Upgrade Outdated Ports Failed: Dependency p5.12-xml-parser not found" rel="shortlink">
+                    http://raybbo.com/blog/2/
+                  </a>
+
+                  </p>
+
+                  <p class="entry-comments span-16 last">
+                  <strong>Discussions</strong> :
+
+
+
+                  Comments are closed.
+
+
+                  </p>
+                </div>
+
+
+              </div>
+              <hr />
+
+              <div id="entry-1" class="hentry span-16 last">
+
+
+
+                <div class="entry-header span-16 last">
+                  <h2 class="entry-title">
+                    <a href="/blog/2011/07/14/bash-find-and-delete-recursively/" title="Bash: Find And Delete Files Or Directory Recursively" rel="bookmark">
+                      Bash: Find And Delete Files Or Directory Recursively
+                    </a>
+                  </h2>
+                  <p class="entry-info">
+
+                  Written by
+
+                  <span class="vcard author">
+                    <a href="/blog/authors/nianliang/" class="fn nickname url" rel="author"
+                      title="Show nianliang entries">nianliang</a>
+                  </span>
+
+                  on
+
+                  <abbr class="published" title="2011-07-14T04:49:51Z">July 14, 2011</abbr>
+                  .
+                  </p>
+                </div>
+
+                <div class="entry-body span-16 last">
+
+                  <div class="entry-content">
+                    <h2>Problem</h2>
+                    <p>Just want to delete some certain files from a directory and its sub-directorys, e.g. all temporary files, or 'build' directory of all Xcode projects.</p>
+                    <p>I've tried using the <code>for</code> statement to loop through the results which returned from the <code>find</code> statement.</p>
+                    <p>For temporary files:                                                             <br />
+                    </p>
+<pre><code>for f in `find myprojects/ -name "*~"`; do
+    rm $f
+done
+</code></pre>
+                    <p>Or a directory:</p>
+<pre><code>for f in `find myprojects/ -type d -name "build"`; do
+    rm -rf $f
+done
+</code></pre>
+                    <p>However, it's broken for some of the directorys which name contains spaces.</p>
+                    <h2>Solution</h2>
+<pre><code>find myprojects/ -name "*~" -exec rm '{}' +
+</code></pre>
+                    <p>Or</p>
+<pre><code>while read f; do rm -rf ...</code></pre>
+                    </div>
+                  </div>
+
+                  <div class="entry-footer">
+                    <p class="entry-tags span-16 last">
+                    <strong>Tags</strong> :
+
+
+                    <a href="/blog/tags/Bash/"
+                      title="Tag Bash" rel="tag">Bash</a>
+
+                    <a href="/blog/tags/find/"
+                      title="Tag find" rel="tag">find</a>
+
+                    </p>
+
+                    <p class="entry-shorturl span-16 last">
+                    <strong>Short url</strong> :
+
+                    <a href="http://raybbo.com/blog/1/" title="Bash: Find And Delete Files Or Directory Recursively" rel="shortlink">
+                      http://raybbo.com/blog/1/
+                    </a>
+
+                    </p>
+
+                    <p class="entry-comments span-16 last">
+                    <strong>Discussions</strong> :
+                    Comments are closed.
+                    </p>
+                  </div>
+                </div>
+                <hr />
+              </div>
+              <!-- sidebar -=======================-->
+              <div id="sidebar" class="span-8 last">
+                <div class="welcome">
+                  <h3>Welcome!</h3>
+                  <p>This weblog is used to record what I've done in my programming life, and primarily for my own reference.</p>
+                </div>
+
+                <div class="search">
+                  <h3>Search</h3>
+                  <form method="get" id="searchform" action="/blog/search/">
+                    <p>
+                    <input type="text" value="Keywords..." name="pattern" id="searchbox" onfocus="this.value=''"/>
+                    <input type="submit" class="submitbutton" value="OK" />
+                    <a title="You can use - to exclude words or phrases, &quot;double quotes&quot; for exact phrases and the AND/OR boolean operators combined with parenthesis for complex searchs.">
+                      <img src="/media/zinnia/img/help.png" alt="?" width="14" height="14" />
+                    </a>
+                    </p>
+                  </form>
+                </div>
+                <div class="categories">
+                  <h3>Categories</h3>
+
+
+
+                  <ul>
+                    <li>
+                    No categories yet.
+                    </li>
+                  </ul>
+
+
+
+
+                </div>
+                <div class="authors">
+                  <h3>Authors</h3>
+
+
+                  <ul>
+
+                    <li class="vcard">
+                    <a href="/blog/authors/nianliang/"
+                      title="nianliang" class="fn nickname url">nianliang</a>
+                    3 entries
+                    </li>
+
+                  </ul>
+
+                </div>
+                <div class="calendar">
+                  <h3>Calendar</h3>
+                  <table border="0" cellpadding="0" cellspacing="0" class="month">
+                    <tr><th colspan="7" class="month">December 2011</th></tr>
+                    <tr><th class="sun">Sun</th><th class="mon">Mon</th><th class="tue">Tue</th><th class="wed">Wed</th><th class="thu">Thu</th><th class="fri">Fri</th><th class="sat">Sat</th></tr>
+                    <tr><td class="noday">&nbsp;</td><td class="noday">&nbsp;</td><td class="noday">&nbsp;</td><td class="noday">&nbsp;</td><td class="thu">1</td><td class="fri">2</td><td class="sat">3</td></tr>
+                    <tr><td class="sun">4</td><td class="mon">5</td><td class="tue">6</td><td class="wed">7</td><td class="thu">8</td><td class="fri">9</td><td class="sat">10</td></tr>
+                    <tr><td class="sun">11</td><td class="mon">12</td><td class="tue">13</td><td class="wed">14</td><td class="thu">15</td><td class="fri">16</td><td class="sat">17</td></tr>
+                    <tr><td class="sun">18</td><td class="mon">19</td><td class="tue">20</td><td class="wed">21</td><td class="thu">22</td><td class="fri">23</td><td class="sat">24</td></tr>
+                    <tr><td class="sun">25</td><td class="mon">26</td><td class="tue">27</td><td class="wed">28</td><td class="thu">29</td><td class="fri">30</td><td class="sat">31</td></tr>
+                  </table>
+
+                  <div class="month-navigation">
+                    <div class="month-previous">
+
+                      <a href="/blog/2011/08/">
+                        &lt;&lt; August 2011
+                      </a>
+
+                    </div>
+                    <div class="month-next">
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="tags">
+                  <h3>Tags</h3>
+
+                  <ul>
+
+                    <li>
+                    <a href="/blog/tags/Bash/" 
+                      title="2 entries" 
+                      class="tag_6">Bash</a>
+                    </li>
+
+                    <li>
+                    <a href="/blog/tags/MacPorts/" 
+                      title="1 entries" 
+                      class="tag_1">MacPorts</a>
+                    </li>
+
+                    <li>
+                    <a href="/blog/tags/auto-ingest/" 
+                      title="1 entries" 
+                      class="tag_1">auto-ingest</a>
+                    </li>
+
+                    <li>
+                    <a href="/blog/tags/find/" 
+                      title="1 entries" 
+                      class="tag_1">find</a>
+                    </li>
+
+                  </ul>
+                </div>
+                <div class="recents">
+                  <h3>Recent entries</h3>
+
+                  <ul>
+
+                    <li>
+                    <a href="/blog/2011/08/28/bash-script-app-store-auto-ingest-tool/" title="A Bash script for App Store auto-ingest Tool" rel="bookmark">A Bash script for App Store auto-ingest Tool</a>
+                    </li>
+
+                    <li>
+                    <a href="/blog/2011/08/25/upgrade-outdated-ports-failed-dependency-p512-xml-parser-not-found/" title="Upgrade Outdated Ports Failed: Dependency p5.12-xml-parser not found" rel="bookmark">Upgrade Outdated Ports Failed: Dependency p5.12-xml-parser not found</a>
+                    </li>
+
+                    <li>
+                    <a href="/blog/2011/07/14/bash-find-and-delete-recursively/" title="Bash: Find And Delete Files Or Directory Recursively" rel="bookmark">Bash: Find And Delete Files Or Directory Recursively</a>
+                    </li>
+
+                  </ul>
+
+                </div>
+                <div class="comments">
+                  <h3>Recent comments</h3>
+
+
+                  <ul>
+
+                    <li>
+                    No comments yet.
+                    </li>  
+
+                  </ul>
+
+
+                </div>
+                <div class="linkbacks">
+                  <h3>Recent linkbacks</h3>
+
+
+                  <ul>
+
+                    <li>
+                    No linkbacks yet.
+                    </li>
+
+                  </ul>
+
+
+                </div>
+                <div class="randoms">
+                  <h3>Random entries</h3>
+
+                  <ul>
+
+                    <li>
+                    <a href="/blog/2011/07/14/bash-find-and-delete-recursively/" title="Bash: Find And Delete Files Or Directory Recursively" rel="bookmark">Bash: Find And Delete Files Or Directory Recursively</a>
+                    </li>
+
+                    <li>
+                    <a href="/blog/2011/08/28/bash-script-app-store-auto-ingest-tool/" title="A Bash script for App Store auto-ingest Tool" rel="bookmark">A Bash script for App Store auto-ingest Tool</a>
+                    </li>
+
+                    <li>
+                    <a href="/blog/2011/08/25/upgrade-outdated-ports-failed-dependency-p512-xml-parser-not-found/" title="Upgrade Outdated Ports Failed: Dependency p5.12-xml-parser not found" rel="bookmark">Upgrade Outdated Ports Failed: Dependency p5.12-xml-parser not found</a>
+                    </li>
+
+                  </ul>
+
+                </div>
+                <div class="populars">
+                  <h3>Popular entries</h3>
+
+                  <ul>
+
+                    <li>
+                    No entries yet.
+                    </li>
+
+                  </ul>
+
+                </div>
+                <div class="archives">
+                  <h3>Archives</h3>
+
+
+
+                  <ul>
+
+                    <li>
+                    <a title="Archives 2011" rel="archives"
+                      href="/blog/2011/">2011</a>
+
+                    <ul>
+
+                      <li>
+
+                      <a title="Archives July 2011" rel="archives"
+                        href="/blog/2011/07/">
+                        July
+                      </a>
+
+
+                      <ul>
+
+                        <li>
+
+                        <a title="Archives July 14, 2011" rel="archives"
+                          href="/blog/2011/07/14/">
+                          July 14
+                        </a>
+
+                        </li>
+
+                      </ul>
+                      </li>
+
+                      <li>
+
+                      <a title="Archives August 2011" rel="archives"
+                        href="/blog/2011/08/">
+                        August
+                      </a>
+
+
+                      <ul>
+
+                        <li>
+
+                        <a title="Archives Aug. 25, 2011" rel="archives"
+                          href="/blog/2011/08/25/">
+                          August 25
+                        </a>
+
+                        </li>
+
+                        <li>
+
+                        <a title="Archives Aug. 28, 2011" rel="archives"
+                          href="/blog/2011/08/28/">
+                          August 28
+                        </a>
+
+                        </li>
+
+                      </ul>
+                      </li>
+
+                    </ul>
+                    </li>
+
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+            <hr />
+
+            <div id="footer" class="span-24 last">
+              <p>Powered by <a href="http://www.djangoproject.com">Django</a> and <a href="http://github.com/Fantomas42/django-blog-zinnia">Zinnia </a>.</p>
+            </div>
+          </div>
 </body>
 </html>
