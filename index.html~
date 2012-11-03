@@ -7,16 +7,16 @@
     <meta name="language" content="en-us" />
     <meta name="description" content="Latest entries" />
     <meta name="keywords" content="nianliang, blog, raybbo, Bash, MacPorts, auto-ingest, find" />
-    <meta name="author" content="denghp" />
+    <meta name="author" content="raybbo.com" />
 
-    <meta name="generator" content="Bluefish 2.2.2" />
+    <meta name="generator" content="Zinnia " />
 
     <link rel="pingback" href="/xmlrpc/" />
     <link rel="shortcut icon" href="/media/rayskin/favicon.ico" />
     <link rel="home" href="/blog/" />
-    <link rel="stylesheet" type="text/css" media="screen, projection" href="http://denghp.github.com/blog/media/rayskin/css/blog.css" />
-    <link rel="stylesheet" type="text/css" media="screen, projection" href="http://denghp.github.com/blog/media/zinnia/css/screen.css" />
-    <link rel="stylesheet" type="text/css" media="print" href="http://denghp.github.com/blogmedia/zinnia/css/print.css" />
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="http://denghp.github.com/jekyll_demo//media/rayskin/css/blog.css" />
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="http://denghp.github.com/jekyll_demo//media/zinnia/css/screen.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="http://denghp.github.com/jekyll_demo/media/zinnia/css/print.css" />
     <!--[if lt IE 8]>
     <link rel="stylesheet" type="text/css" media="screen, projection" href="/media/zinnia/css/ie.css" />
     <![endif]-->
@@ -28,8 +28,8 @@
     <link rel="archives" title="Archives August 2011" href="/blog/2011/08/" />
     <link rel="archives" title="Archives July 2011" href="/blog/2011/07/" />
     <link rel="stylesheet" type="text/css" href="/media/zinnia/css/slider.css" />
-    <script type="text/javascript" src="http://denghp.github.com/blogmedia/zinnia/js/jquery.js"></script>
-    <script type="text/javascript" src="http://denghp.github.com/blogmedia/zinnia/js/jquery.ui.js"></script>
+    <script type="text/javascript" src="http://denghp.github.com/jekyll_demo/media/zinnia/js/jquery.js"></script>
+    <script type="text/javascript" src="http://denghp.github.com/jekyll_demo/media/zinnia/js/jquery.ui.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
           $("#slider").tabs({ fx:{ opacity: "toggle"}}).tabs("rotate", 5000, true);
