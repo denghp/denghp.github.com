@@ -56,7 +56,7 @@
     <div id="header" class="span-24 last">
       <!-- 右侧导航栏 -->
       <div class="top-navigation">
-        <a href="/" title="Home" class="link home">Home</a> | 
+        <a href="http://denghp.github.com/blog/home.html" title="Home" class="link home">Home</a> | 
         <a href="/blog/" title="Blog" class="link docs">Blog</a> | 
         <a href="/blog/sitemap/" title="Sitemap" class="link sitemap">Sitemap</a> |
         <a href="/blog/feeds/latest/" title="RSS Feed of latest entries" class="link feeds">RSS Feed</a>
@@ -74,7 +74,7 @@
   <hr>
 
   <div>
-    <p>Recent articles</p>
+    <p ><a href="http://denghp.github.com/blog/home.html">Recent articles</a></p>
     <ul>
       　　{% for post in site.posts %}
       　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
