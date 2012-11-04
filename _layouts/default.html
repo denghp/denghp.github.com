@@ -10,9 +10,10 @@
     <meta name="copyright" lang="en" content="@2012 Demi_Panda Lab, All Rights Reserved!" />
 
 
-    <meta name="description" content="Raybbo Lab is an IT solution provider, Our services include software development, iphone application development and web development." />
-    <meta name="keywords" content="Text On Card, AvatarMate, Raybbo Lab, iPhone app, photo editor" />
-
+    <meta name="description" content="Demi Panda Lab is an IT solution provider, Our services include software development." />
+    <!--
+    <meta name="keywords" content="Text On Card, AvatarMate, Demi Panda Lab, photo editor" />
+    -->
 
     <link rel="shortcut icon" href="{{ site.baseurl }}/media/rayskin/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" media="screen,projection" type="text/css" href="{{ site.baseurl }}/media/rayskin/css/reset.css" />
@@ -25,7 +26,7 @@
     <script src="{{ site.baseurl }}/media/js/jquery.jcarousel.min.js" type="text/javascript"></script>
     <script src="{{ site.baseurl }}/media/js/jquery.raybbo.slider.js" type="text/javascript"></script>
 
-    <link rel="alternate" type="application/rss+xml" title="Raybbo Site News" href="{{ site.baseurl }}/news/rss/" />
+    <link rel="alternate" type="application/rss+xml" title="Demi Panda Site News" href="{{ site.baseurl }}/news/rss/" />
 
 
     <title>Raybbo Lab | Provider of Mobile Solutions</title>
@@ -42,7 +43,7 @@
        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
        })();
 
-     </script>
+</script>
    </head>
 
    <body>
@@ -52,7 +53,10 @@
 
        <!-- Header -->
        <div id="header"> 
+         <!--
          <h1 id="logo"><a href="{{ site.baseurl }}" title="[Go to homepage]"><img src="{{ site.baseurl }}/media/rayskin/img/raybbo-logo.png" alt="" /></a></h1>
+         -->
+         <h1 id="logo"><a href="{{ site.baseurl }}" title="{{ site.title }}" alt="{{ site.title }}"> </a></h1>
          <hr class="noscreen" />
 
          <!-- Navigation -->
@@ -110,7 +114,6 @@
 
 
          <hr class="noscreen" />
-
          <!-- Testimonials -->
          <section>
          {% include right.html %} 
@@ -119,7 +122,6 @@
 
        </div> <!-- /cols2 -->
        <div id="cols2-bottom"></div>
-
        {{ content }}  
        <hr class="noscreen" />
 
