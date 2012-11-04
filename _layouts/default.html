@@ -43,64 +43,26 @@
        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
        })();
 
-</script>
+     </script>
    </head>
 
    <body>
 
      <div id="main">
+       <header>
+       {% include header.html %} 
+       {% include tray.html %} 
+       </header>
 
-       <!-- Header -->
-       <div id="header"> 
-         <!--
-         <h1 id="logo"><a href="{{ site.baseurl }}" title="[Go to homepage]"><img src="{{ site.baseurl }}/media/rayskin/img/raybbo-logo.png" alt="" /></a></h1>
-         -->
-         <h1 id="logo"><a href="{{ site.baseurl }}" title="{{ site.meta.site_title }}" alt="{{ site.meta.site_title }}">{{ site.meta.site_title }}</a></h1>
-         <hr class="noscreen" />
-
-         <!-- Navigation
-         <div id="nav">
-           <a id="nav-active" href="/">Home</a> <span>|</span>
-           <a  href="{{ site.baseurl }}/blog/">Blog</a> <span>|</span>
-           <a  href="{{ site.baseurl }}/about/">About</a> <span>|</span>
-           <a  href="{{ site.baseurl }}/support/">Support</a> <span>|</span>
-           <a  href="{{ site.baseurl }}/contact/">Contact</a>
-         </div>
-         -->
-         <!-- /nav -->
-       </div> <!-- /header -->
-
-       <!-- Tray -->
-       <div id="tray">
-
-         <ul>
-
-           <li id="tray-active"><a href="/">Home</a></li>
-           <li ><a href="{{ site.baseurl }}/archives/">ARTICLE VIEW</a></li>
-           <li ><a href="{{ site.baseurl }}/categories/">CATEGORY</a></li>
-           <li ><a href="{{ site.baseurl }}/tags/">TAGS</a></li>
-           <li ><a href="{{ site.baseurl }}/news/">NEWS</a></li>
-           <li ><a href="{{ site.baseurl }}/about/">ABOUT ME</a></li>
-           <li ><a href="{{ site.baseurl }}/feed/">RSS FEED</a></li>
-         </ul>
-         <!-- 
-         <div id="buynow" class="box"><a href="{{ site.baseurl }}/buy/"><img src="{{ site.baseurl }}/media/rayskin/img/btn-buy.png" /></a></div>
-         -->
-
-         <hr class="noscreen" />
-       </div> <!-- /tray -->
-
-
-
-       <!-- Promo -->
-       <div id="col-top"></div>
-       <!-- slider box -->
+       <section>
+       {{ content }}  
+       <section>
+       <!-- slider box 
        <section>
        {% include slider.html %} 
        </section>
 
        <div id="col-bottom"></div>
-
        <hr class="noscreen" />
 
        <!-- 2 columns -->
@@ -117,17 +79,13 @@
          <section>
          {% include right.html %} 
          </section>
-
-
        </div> <!-- /cols2 -->
        <div id="cols2-bottom"></div>
-       {{ content }}  
        <hr class="noscreen" />
+       -->
 
-       <section>
        <!-- footer -->
        {% include footer.html %} 
-       </section> 
 
      </div> <!-- /main -->
 
