@@ -2,12 +2,12 @@ meta:
     site_title: "0xDECAFBAD"
     site_subtitle: "It's all spinning wheels and self-doubt until the first pot of coffee."
     site_language: "en"
-    absolute_baseurl: http://demi-panda.com/blog
+    absolute_baseurl: http://denghp.github.com/blog
     domain: demi-panda.com
     author:
-    full_name: Leslie Michael Orchard
-    short_name: lmorchard
-    name: l.m.orchard
+    full_name: demi panda
+    short_name: dmp
+    name: 
     email: demi-panda@126.com
 
 tag_dir: tag 
