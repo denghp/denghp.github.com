@@ -62,3 +62,8 @@
     color:gray;
   }
 
+
+#ckepop a, section.comments a{                                                      
+  border-bottom:0px;
+}
+
