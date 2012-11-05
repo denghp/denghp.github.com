@@ -96,4 +96,35 @@ var disqus_shortname = 'demi-panda'; // required: replace example with your foru
 
 {% endif %}
 
+{% if page.comment %}
+
+{% comment %}
+
+	<section class="comments" id="comments">
+		 <div id="disqus_thread" aria-live="polite"></div>
+		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">Comments powered by Disqus.</a>
+		</noscript>
+
+		
+	</section>
+{% endcomment %}
+
+<section class="comments" id="comments">
+	<!-- Duoshuo Comment BEGIN -->
+	<div class="ds-thread"></div>
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name: "ypchen"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- Duoshuo Comment END -->
+</section>
+
+	{% endif %}
+
+
 </section>
