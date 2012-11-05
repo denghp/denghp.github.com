@@ -3,31 +3,51 @@ layout: default
 title: 全部文章
 ---
 
-<aside>
-</aside>
 
-<section class="content">
-<h2>{{ page.title }}</h2>
-<p>你要找的文章也许在这儿：</p>
+<section>
+{% include slider.html %}
 
-<ul class="posts">
-  {% for post in site.posts %}
-  {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
-  {% if year != y %}
-  {% assign year = y %}
-  <li class="listing-seperator">{{ y }}</li>
-  {% endif %}
-  <li class="listing-item">
-  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-  <a href="{{site.baseurl}}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-  </li>
-  {% endfor %}
-</ul>
+<div id="col-bottom"></div>
+<hr class="noscreen" />
+<!-- 2 columns -->
+<div id="cols2-top"></div>
+<div id="cols2" class="box">
+  <div class="title">                                                                                                                                                
+    <span class="f-right"><a href="{{ site.baseurl }}/news/rss/" class="ico-rss">RSS feed</a></span>
+    <h4>{{ page.title }}</h4>
+  </div> <!-- /title -->
 
+  <p>你要找的文章也许在这儿：</p>
+
+  <ul class="posts">
+    {% for post in site.posts %}
+    {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
+    {% if year != y %}
+    {% assign year = y %}
+    <li class="listing-seperator">{{ y }}</li>
+    {% endif %}
+    <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{site.baseurl}}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <hr class="noscreen" />
+  <!-- Testimonials -->
+  {% include right.html %}  
+</div> 
+<!-- /cols2 -->
+<div id="cols2-bottom"></div>
+<hr class="noscreen" />
 <div id="post-bottom">
   <p style="text-align:right" class="more">
   <a href="{{site.baseurl}}/">返回主页</a>
   </p>
 </div>
+
 </section>
+
+
+
 
