@@ -3,22 +3,6 @@ layout: default
 ---
 
 <section >
-
-<article class="posts">
-<h2 class="title">{{ page.title }}</h2>
-<time class="emphnext" style="color:gray;" title="{{ page.date | date_to_xmlschema }}" pubdate="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %d, %Y' }}</time>
-
-{% if page.tags != empty %}
-<ul class="tags emphnext">
-  <li>标签：</li>
-  {% for tag in page.tags %}
-  <li><a href="{{ site.baseurl }}/tags#{{tag | replace:' ', '-' | downcase }}">{{ tag }}</a>{% if forloop.last == false %}, {%endif %}</li>
-  {% endfor %}
-</ul>
-{% endif %}	
-
-{{ content }}	
-
 <!-- post -->
 <hr class="noscreen" />
 
@@ -30,56 +14,29 @@ layout: default
   <div id="col-left">
 
     <div class="title">
-      <span class="f-right"><a href="./news/rss/" class="ico-rss">RSS feed</a></span>
       <h4>{{ page.title }}</h4>
     </div> <!-- /title -->
-
-    <ul class="ul-list nomb">
-      {% for post in site.posts %}
-      {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
-      {% if year != y %}
-      {% assign year = y %}
-      <li><span class="date">{{ y }}</span></li>
-      {% endif %}
-      <li>
-      <time datetime="{{ post.date | date:"%Y-%m-%d" }}" class="date">{{ post.date | date:"%Y-%m-%d" }}</time>
-      <a href="{{site.baseurl}}{{ post.url }}" title="{{ post.title }}" class="article">{{ post.title }}</a>
-      </li>
+    <p class="entry-info">
+    <time class="published" title="{{ page.date | date_to_xmlschema }}" pubdate="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %d, %Y' }}</time>
+    </p>
+    {% if page.tags != empty %}
+    <ul class="entry-tags span-16 last">
+      <strong>标签</strong> ：
+      {% for tag in page.tags %}
+      <li><a href="{{ site.baseurl }}/tags#{{tag | replace:' ', '-' | downcase }}">{{ tag }}</a>{% if forloop.last == false %}, {%endif %}</li>
       {% endfor %}
     </ul>
+    {% endif %}	
+
+    <div class="entry-body span-16 last">
+      <div class="entry-content">
+        {{ content }}	
+      </div>
+    </div>
+
   </div> <!-- /col-left -->
 
-  <hr class="noscreen" />
-
-  <!-- Testimonials -->
-  <div id="col-right">
-
-    <h4><span>Testimonials</span></h4>
-
-    <div class="box">
-
-      <div class="col-right-img"><img src="/media/rayskin/tmp/65x65.gif" width="65" height="65" alt="" /></div>
-      <div class="col-right-text">
-
-        <p><strong>Love this app</strong>. My father cannot stay to high in elevation and we are getting ready to move. This let's us know if the area we are looking is low enough for him.</p>
-        <p class="high smaller">&ndash; <cite>Red Kirk</cite></p>
-
-      </div> <!-- /col-right-text -->
-
-
-    </div> <!-- /box -->
-
-  </div> <!-- /col-right -->
-
-</div> <!-- /cols2 -->
-<div id="cols2-bottom"></div>
-
-<hr class="noscreen" />
-
-
-
-
-<!-- post  -->
+  <!-- post  -->
 
 
 
@@ -153,5 +110,34 @@ layout: default
 </section>
 
 {% endif %}
+
+
+<hr class="noscreen" />
+
+  <!-- Testimonials -->
+  <div id="col-right">
+
+    <h4><span>Testimonials</span></h4>
+
+    <div class="box">
+
+      <div class="col-right-img"><img src="/media/rayskin/tmp/65x65.gif" width="65" height="65" alt="" /></div>
+      <div class="col-right-text">
+
+        <p><strong>Love this app</strong>. My father cannot stay to high in elevation and we are getting ready to move. This let's us know if the area we are looking is low enough for him.</p>
+        <p class="high smaller">&ndash; <cite>Red Kirk</cite></p>
+
+      </div> <!-- /col-right-text -->
+
+
+    </div> <!-- /box -->
+
+  </div> <!-- /col-right -->
+
+</div> <!-- /cols2 -->
+<div id="cols2-bottom"></div>
+
+<hr class="noscreen" />
+
 
 </section>
