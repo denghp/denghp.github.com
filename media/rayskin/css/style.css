@@ -93,3 +93,22 @@ a:hover {color:#000;}
 ---------------------------------------------------------------------------------------------------------- */
 
 .high {color:#090}
+
+
+/*---------------------------------
+ *
+ * blog.duoshuo.com style.css
+ *--------------------------------*/
+
+.archivesbox {padding:15px 20px; margin-bottom:10px; background:#fff url(images/graygrad.gif) top left repeat-x; border:1px solid #d1d1d1;
+  /* optional rounded corners for browsers that support it */
+  -moz-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+h2#contentdesc {font-weight:normal; font-size:1em; text-transform:capitalize;}
+h2#contentdesc span {color:#225990;}
+
+
