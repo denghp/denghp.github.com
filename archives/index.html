@@ -3,98 +3,65 @@ layout: default
 title: 全部文章
 ---
 
-<div id="col-bottom"></div>
+
 <hr class="noscreen" />
+
 <!-- 2 columns -->
 <div id="cols2-top"></div>
 <div id="cols2" class="box">
-  <div class="title">                                                                                                                                                
-    <span class="f-right"><a href="{{ site.baseurl }}/news/rss/" class="ico-rss">RSS feed</a></span>
-    <h4>{{ page.title }}</h4>
-  </div> <!-- /title -->
 
-  <ul class="posts">
-    {% for post in site.posts %}
-    {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
-    {% if year != y %}
-    {% assign year = y %}
-    <li class="listing-seperator">{{ y }}</li>
-    {% endif %}
-    <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{site.baseurl}}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-  </ul>
+  <!-- News -->
+  <div id="col-left">
+
+    <div class="title">
+      <span class="f-right"><a href="./news/rss/" class="ico-rss">RSS feed</a></span>
+      <h4>News</h4>
+    </div> <!-- /title -->
+
+    <ul class="ul-list nomb">
+      {% for post in site.posts %}
+      {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
+      {% if year != y %}
+      {% assign year = y %}
+      <li><span class="date">[ {{ y }} ]</span></li>
+      {% endif %}
+      <li>
+      <time datetime="{{ post.date | date:"%Y-%m-%d" }}" class="date">{{ post.date | date:"%Y-%m-%d" }}</time>
+      <a href="{{site.baseurl}}{{ post.url }}" title="{{ post.title }}" class="article">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+
+
+
+  </div> <!-- /col-left -->
 
   <hr class="noscreen" />
+
   <!-- Testimonials -->
-  {% include right.html %}  
-</div> 
-<!-- /cols2 -->
+  <div id="col-right">
+
+    <h4><span>Testimonials</span></h4>
+
+    <div class="box">
+
+      <div class="col-right-img"><img src="./media/rayskin/tmp/65x65.gif" width="65" height="65" alt="" /></div>
+      <div class="col-right-text">
+
+        <p><strong>Love this app</strong>. My father cannot stay to high in elevation and we are getting ready to move. This let's us know if the area we are looking is low enough for him.</p>
+        <p class="high smaller">&ndash; <cite>Red Kirk</cite></p>
+
+      </div> <!-- /col-right-text -->
+
+
+    </div> <!-- /box -->
+
+  </div> <!-- /col-right -->
+
+</div> <!-- /cols2 -->
 <div id="cols2-bottom"></div>
-<hr class="noscreen" />
-
-
 
 <hr class="noscreen" />
-
-    <!-- 2 columns -->
-    <div id="cols2-top"></div>
-    <div id="cols2" class="box">
-    
-        <!-- News -->
-        <div id="col-left">
-
-            <div class="title">
-                <span class="f-right"><a href="./news/rss/" class="ico-rss">RSS feed</a></span>
-                <h4>News</h4>
-            </div> <!-- /title -->
-            
-	 <ul class="ul-list nomb">
-    {% for post in site.posts %}
-    {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
-    {% if year != y %}
-    {% assign year = y %}
-    <li><span class="date">[ {{ y }} ]</span></li>
-    {% endif %}
-    <li>
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}" class="date">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{site.baseurl}}{{ post.url }}" title="{{ post.title }}" class="article">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-  </ul>
-
-           
-        
-        </div> <!-- /col-left -->
-
-        <hr class="noscreen" />
-
-        <!-- Testimonials -->
-        <div id="col-right">
-        
-            <h4><span>Testimonials</span></h4>
-
-            <div class="box">
-            
-      			                <div class="col-right-img"><img src="./media/rayskin/tmp/65x65.gif" width="65" height="65" alt="" /></div>
-                <div class="col-right-text">
-
-                    <p><strong>Love this app</strong>. My father cannot stay to high in elevation and we are getting ready to move. This let's us know if the area we are looking is low enough for him.</p>
-                    <p class="high smaller">&ndash; <cite>Red Kirk</cite></p>
-
-                </div> <!-- /col-right-text -->
-
-            
-            </div> <!-- /box -->
-        
-        </div> <!-- /col-right -->
-    
-    </div> <!-- /cols2 -->
-    <div id="cols2-bottom"></div>
-
-    <hr class="noscreen" />
 
 
 
