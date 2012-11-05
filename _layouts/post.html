@@ -3,40 +3,34 @@ layout: default
 ---
 
 <section >
-<!-- post -->
-<hr class="noscreen" />
 
-<!-- 2 columns -->
-<div id="cols2-top"></div>
-<div id="cols2" class="box">
+<div id="col-top"></div>
+<div id="col-mid" class="box">
+  <h4>{{ page.title }}</h4>
+  <p>Aug. 21, 2012</p>
+  <p>Featured in iTunes in 378 places! Just released 3 days ago.</p>
+  <p class="entry-info">
+  <time class="published" title="{{ page.date | date_to_xmlschema }}" pubdate="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %d, %Y' }}</time>
+  </p>
+  {% if page.tags != empty %}
+  <ul class="entry-tags span-16 last">
+    <strong>标签</strong> ：
+    {% for tag in page.tags %}
+    <li><a href="{{ site.baseurl }}/tags#{{tag | replace:' ', '-' | downcase }}">{{ tag }}</a>{% if forloop.last == false %}, {%endif %}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}	
 
-  <!-- News -->
-  <div id="col-left">
-
-    <div class="title">
-      <h4>{{ page.title }}</h4>
-    </div> <!-- /title -->
-    <p class="entry-info">
-    <time class="published" title="{{ page.date | date_to_xmlschema }}" pubdate="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %d, %Y' }}</time>
-    </p>
-    {% if page.tags != empty %}
-    <ul class="entry-tags span-16 last">
-      <strong>标签</strong> ：
-      {% for tag in page.tags %}
-      <li><a href="{{ site.baseurl }}/tags#{{tag | replace:' ', '-' | downcase }}">{{ tag }}</a>{% if forloop.last == false %}, {%endif %}</li>
-      {% endfor %}
-    </ul>
-    {% endif %}	
-
-    <div class="entry-body span-16 last">
-      <div class="entry-content">
-        {{ content }}	
-      </div>
+  <div class="entry-body span-16 last">
+    <div class="entry-content">
+      {{ content }}	
     </div>
+  </div>
 
-  </div> <!-- /col-left -->
+</div>
+<div id="col-bottom"></div>
 
-  <!-- post  -->
+<!-- post  -->
 
 
 
@@ -114,25 +108,25 @@ layout: default
 
 <hr class="noscreen" />
 
-  <!-- Testimonials -->
-  <div id="col-right">
+<!-- Testimonials -->
+<div id="col-right">
 
-    <h4><span>Testimonials</span></h4>
+  <h4><span>Testimonials</span></h4>
 
-    <div class="box">
+  <div class="box">
 
-      <div class="col-right-img"><img src="/media/rayskin/tmp/65x65.gif" width="65" height="65" alt="" /></div>
-      <div class="col-right-text">
+    <div class="col-right-img"><img src="/media/rayskin/tmp/65x65.gif" width="65" height="65" alt="" /></div>
+    <div class="col-right-text">
 
-        <p><strong>Love this app</strong>. My father cannot stay to high in elevation and we are getting ready to move. This let's us know if the area we are looking is low enough for him.</p>
-        <p class="high smaller">&ndash; <cite>Red Kirk</cite></p>
+      <p><strong>Love this app</strong>. My father cannot stay to high in elevation and we are getting ready to move. This let's us know if the area we are looking is low enough for him.</p>
+      <p class="high smaller">&ndash; <cite>Red Kirk</cite></p>
 
-      </div> <!-- /col-right-text -->
+    </div> <!-- /col-right-text -->
 
 
-    </div> <!-- /box -->
+  </div> <!-- /box -->
 
-  </div> <!-- /col-right -->
+</div> <!-- /col-right -->
 
 </div> <!-- /cols2 -->
 <div id="cols2-bottom"></div>
