@@ -15,7 +15,7 @@ title: 全部文章
 
     <div class="title">
       <span class="f-right"><a href="./news/rss/" class="ico-rss">RSS feed</a></span>
-      <h4>News</h4>
+      <h4>{{ page.title }}</h4>
     </div> <!-- /title -->
 
     <ul class="ul-list nomb">
@@ -23,7 +23,7 @@ title: 全部文章
       {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
       {% if year != y %}
       {% assign year = y %}
-      <li><span class="date">[ {{ y }} ]</span></li>
+      <li><span class="date">{{ y }}</span></li>
       {% endif %}
       <li>
       <time datetime="{{ post.date | date:"%Y-%m-%d" }}" class="date">{{ post.date | date:"%Y-%m-%d" }}</time>
@@ -31,9 +31,6 @@ title: 全部文章
       </li>
       {% endfor %}
     </ul>
-
-
-
   </div> <!-- /col-left -->
 
   <hr class="noscreen" />
@@ -45,7 +42,7 @@ title: 全部文章
 
     <div class="box">
 
-      <div class="col-right-img"><img src="./media/rayskin/tmp/65x65.gif" width="65" height="65" alt="" /></div>
+      <div class="col-right-img"><img src="/media/rayskin/tmp/65x65.gif" width="65" height="65" alt="" /></div>
       <div class="col-right-text">
 
         <p><strong>Love this app</strong>. My father cannot stay to high in elevation and we are getting ready to move. This let's us know if the area we are looking is low enough for him.</p>
