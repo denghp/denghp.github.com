@@ -1,68 +1,130 @@
 ---
 layout: default
-title: 全部文章
 ---
+<div id="main" >
+  <div id="content">
 
-<div class="archivesbox">
-  <h2 id="contentdesc">Category: <span>ARTICLE</span></h2>
+    {% for post in site.posts %} 
+    <div class="post-1968 post type-post status-publish format-standard hentry category-1 post" id="post-1968">
+      <div class="posttop">
+        <h2 class="posttitle">
+          <a href="{{site.baseurl}}{{ post.url }}" rel="bookmark" title="{{ post.title }} {{ post.date | date_to_string }}">{{ post.title }}</a>
+        </h2>
+        <div class="postmetatop">Posted {{ post.date | date_to_string }}<a href="{{ site.baseurl }}" title="" rel="category tag">未分类</a></div>
+        <!-- /postmetatop -->
+      </div><!-- /posttop -->
+
+      <div class="postcontent">
+        {% if post.description %}                                                    
+        <p>{{ post.description }}</p>
+        {% else %}
+        <p>{{ post.content | strip_html | truncatewords: 2 }}</p>
+        {% endif %}
+        <div class="cleared"></div>
+
+      </div><!-- /postcontent -->
+
+      <div class="postmetabottom">
+        <div class="tags"></div>
+        KEY: {{ post.data-thread-key }}
+        <div class="metacomments"><span><a href="{{site.baseurl}}{{ post.url }}/#comments" title="<< {{ post.title }}>>上的评论"><span class="ds-thread-count" data-thread-key="{{ post.data-thread-key }}" data-replace="1"> Comments</span></a></span></div>
+        <div class="cleared"></div>
+
+      </div><!-- /postmetabottom -->
+    </div><!-- /post -->
+    {% endfor %}
+    
+    <!-- Pagination links 
+<div class="pagination">
+  {% if paginator.previous_page %}
+  <a href="{{ site.baseurl }}/page{{paginator.previous_page}}" class="previous">Previous</a>
+  {% else %}
+  <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">Page: {{paginator.page}} of {{paginator.total_pages}}</span>
+  {% if paginator.next_page %}
+  <a href="{{ site.baseurl }}/page{{paginator.next_page}}" class="next ">Next</a>
+  {% else %}
+  <span class="next ">Next</span>
+  {% endif %}
 </div>
-<!-- /archivesbox -->
+-->
 
-<hr class="noscreen" />
 
-<!-- 2 columns -->
-<div id="cols2-top"></div>
-<div id="cols2" class="box">
+    <div id="navigation">
+      <div class="alignleft"><a href="{{ site.baseurl }}/page/2/" >&laquo; Older Entries</a></div>
+      <div class="alignright"></div>
+      <!-- end of pagenavi conditional statement -->
+      <div class="cleared"></div>
+    </div><!-- /navigation -->
+  </div><!-- /content -->
 
-  <!-- News -->
-  <div id="col-left">
-
-    <div class="title">
-      <span class="f-right"><a href="./news/rss/" class="ico-rss">RSS feed</a></span>
-      <h4>{{ page.title }}</h4>
-    </div> <!-- /title -->
-
-    <ul class="ul-list nomb">
-      {% for post in site.posts %}
-      {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
-      {% if year != y %}
-      {% assign year = y %}
-      <li><span class="date">{{ y }}</span></li>
-      {% endif %}
-      <li>
-      <time datetime="{{ post.date | date:"%Y-%m-%d" }}" class="date">{{ post.date | date:"%Y-%m-%d" }}</time>
-      <a href="{{site.baseurl}}{{ post.url }}" title="{{ post.title }}" class="article">{{ post.title }}</a>
+  <div id="sidebar">
+    <ul>
+      <li id="tag_cloud-3" class="boxed widget widget_tag_cloud"><h3 class="widgettitle">标签</h3><div class="tagcloud"><a href='http://blog.duoshuo.com/tag/wordpress/' class='tag-link-13' title='2 个话题' style='font-size: 22pt;'>WordPress</a>
+        <a href='http://blog.duoshuo.com/tag/%e4%b8%bb%e6%9c%ba/' class='tag-link-12' title='1 个话题' style='font-size: 8pt;'>主机</a>
+        <a href='http://blog.duoshuo.com/tag/%e4%ba%92%e8%81%94%e7%bd%91%e5%8d%9a%e6%96%87/' class='tag-link-18' title='1 个话题' style='font-size: 8pt;'>互联网博文</a>
+        <a href='http://blog.duoshuo.com/tag/%e5%8a%a0%e9%80%9f/' class='tag-link-10' title='1 个话题' style='font-size: 8pt;'>加速</a>
+        <a href='http://blog.duoshuo.com/tag/%e5%8d%87%e7%ba%a7/' class='tag-link-6' title='1 个话题' style='font-size: 8pt;'>升级</a>
+        <a href='http://blog.duoshuo.com/tag/%e5%9b%bd%e5%a4%96%e7%bd%91/' class='tag-link-11' title='1 个话题' style='font-size: 8pt;'>国外网</a>
+        <a href='http://blog.duoshuo.com/tag/%e6%8f%92%e4%bb%b6/' class='tag-link-16' title='1 个话题' style='font-size: 8pt;'>插件</a>
+        <a href='http://blog.duoshuo.com/tag/%e6%96%b0%e5%8a%9f%e8%83%bd/' class='tag-link-15' title='1 个话题' style='font-size: 8pt;'>新功能</a>
+        <a href='http://blog.duoshuo.com/tag/%e6%9c%8d%e5%8a%a1%e5%99%a8/' class='tag-link-5' title='1 个话题' style='font-size: 8pt;'>服务器</a>
+        <a href='http://blog.duoshuo.com/tag/%e9%80%9a%e7%94%a8%e4%bb%a3%e7%a0%81/' class='tag-link-9' title='1 个话题' style='font-size: 8pt;'>通用代码</a></div>
       </li>
-      {% endfor %}
+      <li id="ds-top-threads-2" class="boxed widget ds-widget-top-threads">
+      <h3 class="widgettitle">热评文章</h3>
+      <ul class="ds-top-threads" data-num-items="5" data-range="weekly"></ul>
+      </li>
+      <script>
+        if (typeof DUOSHUO !== 'undefined')
+        DUOSHUO.TopThreads && DUOSHUO.TopThreads('.ds-top-threads');
+      </script>
+      <li id="recent-posts-2" class="boxed widget widget_recent_entries">    <h3 class="widgettitle">近期文章</h3>   <ul>
+        <li><a href="http://blog.duoshuo.com/2012/10/%e5%a4%9a%e8%af%b4%e5%8d%87%e7%ba%a7%ef%bc%8c%e9%87%87%e7%94%a8%e5%88%86%e5%b8%83%e5%bc%8f%e6%9e%b6%e6%9e%84/" title="多说升级，采用分布式架构">多说升级，采用分布式架构</a></li>
+        <li><a href="http://blog.duoshuo.com/2012/08/new-front-page/" title="多说团队博客已经迁移至多说开发者中心！">多说团队博客已经迁移至多说开发者中心！</a></li>
+        <li><a href="http://blog.duoshuo.com/2012/08/wp-plungin-0-8-notice/" title="老用户评论实时写回本地的亲切告知">老用户评论实时写回本地的亲切告知</a></li>
+        <li><a href="http://blog.duoshuo.com/2012/08/wp-plugin-0-8/" title="多说WP插件0.8版来啦，有木有更爽啊亲！">多说WP插件0.8版来啦，有木有更爽啊亲！</a></li>
+        <li><a href="http://blog.duoshuo.com/2012/07/sootoo-duoshuo-startup/" title="多说推广&amp;运营总监参与速途在线沙龙 畅聊创业话题">多说推广&#038;运营总监参与速途在线沙龙 畅聊创业话题</a></li>
+      </ul>
+      </li>
+
+      <li id="ds-recent-comments-3" class="boxed widget ds-widget-recent-comments">
+      <h3 class="widgettitle">近期评论</h3>
+      <ul class="ds-recent-comments" data-num-items="10" data-show-avatars="1" data-show-time="1" data-show-title="0" data-show-admin="0" data-avatar-size="32" data-excerpt-length="70">
+      </ul>
+      </li>
+      <script>
+        if (typeof DUOSHUO !== 'undefined')
+        DUOSHUO.RecentCommentsWidget && DUOSHUO.RecentCommentsWidget('.ds-recent-comments');
+      </script>
+
+      <li id="ds-qqt-follow-2" class="boxed widget ds-widget-qqt-follow">
+      <iframe  scrolling="no" width="167" height="75" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" src="http://follow.v.t.qq.com/index.php?c=follow&a=quick&name=duo-shuo&style=1&t=1352110887948&f=0"></iframe>
+      </li>
+      <li id="ds-recent-visitors-2" class="boxed widget ds-widget-recent-visitors">
+      <h3 class="widgettitle">最近访客</h3>
+      <ul class="ds-recent-visitors" data-num-items="21" data-show-time="0" data-avatar-size="50"></ul>
+      </li>
+      <script>
+        if (typeof DUOSHUO !== 'undefined')
+        DUOSHUO.RecentVisitors('.ds-recent-visitors');
+      </script>
     </ul>
-  </div> <!-- /col-left -->
+  </div>
+  <!-- /sidebar -->
 
-  <hr class="noscreen" />
+</div><!-- /main --> 
 
-  <!-- Testimonials -->
-  <div id="col-right">
-
-    <h4><span>Testimonials</span></h4>
-
-    <div class="box">
-
-      <div class="col-right-img"><img src="/media/rayskin/tmp/65x65.gif" width="65" height="65" alt="" /></div>
-      <div class="col-right-text">
-
-        <p><strong>Love this app</strong>. My father cannot stay to high in elevation and we are getting ready to move. This let's us know if the area we are looking is low enough for him.</p>
-        <p class="high smaller">&ndash; <cite>Red Kirk</cite></p>
-
-      </div> <!-- /col-right-text -->
-
-
-    </div> <!-- /box -->
-
-  </div> <!-- /col-right -->
-
-</div> <!-- /cols2 -->
-<div id="cols2-bottom"></div>
-
-<hr class="noscreen" />
-
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"deami-panda"};
+(function() {
+ var ds = document.createElement('script');
+ ds.type = 'text/javascript';ds.async = true;
+ ds.src = 'http://static.duoshuo.com/embed.js';
+ ds.charset = 'UTF-8';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+ })();
+</script>
 
 

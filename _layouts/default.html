@@ -8,21 +8,16 @@
 
     <meta name="author" lang="en" content="All: DemiPanda Lab [www.demi-panda.com]; e-mail: denghp@126.com" />
     <meta name="copyright" lang="en" content="@2012 Demi_Panda Lab, All Rights Reserved!" />
-
-
     <meta name="description" content="Demi Panda Lab is an IT solution provider, Our services include software development." />
-    <!--
-    <meta name="keywords" content="Text On Card, AvatarMate, Demi Panda Lab, photo editor" />
-    -->
-
     <link rel="shortcut icon" href="{{ site.baseurl }}/media/rayskin/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="{{ site.baseurl }}/media/rayskin/css/reset.css" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="{{ site.baseurl }}/media/rayskin/css/main.css" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="{{ site.baseurl }}/media/rayskin/css/screen.css" />
-    <!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/media/rayskin/css/main-msie.css" /><![endif]-->
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="{{ site.baseurl }}/media/rayskin/css/style-1.css" />
+    <!--
     <link rel="stylesheet" media="screen,projection" type="text/css" href="{{ site.baseurl }}/media/rayskin/css/style.css" />
-    <link rel="stylesheet" media="print" type="text/css" href="{{ site.baseurl }}/media/rayskin/css/print.css" />
-    <link rel="stylesheet" media="print" type="text/css" href=""/>
+    -->
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="{{ site.baseurl }}/media/rayskin/css/main.css" />
+
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="{{ site.baseurl }}/media/rayskin/css/superfish.css" />
+
     <script src="{{ site.baseurl }}/media/js/jquery-1.4.2.min.js" type="text/javascript"></script>
     <script src="{{ site.baseurl }}/media/js/jquery.jcarousel.min.js" type="text/javascript"></script>
     <script src="{{ site.baseurl }}/media/js/jquery.raybbo.slider.js" type="text/javascript"></script>
@@ -44,25 +39,24 @@
        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
        })();
 
-</script>
+     </script>
    </head>
+
 
    <body>
 
-     <div id="main">
-       <header>
+     <div id="wrapper">
        {% include header.html %} 
-       {% include tray.html %}
-       </header>
+       {% include nav.html %}
+       <div id="main">
+         {{ content }}  
 
-       <section>
-       {{ content }}  
-       <section>
+         
+       </div> <!-- /main -->
+     </div> <!-- wrapper -->
 
-       <!-- footer -->
-       {% include footer.html %} 
-
-     </div> <!-- /main -->
+     <!-- footer -->
+     {% include footer.html %} 
 
    </body>
  </html>

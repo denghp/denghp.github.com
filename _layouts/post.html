@@ -2,78 +2,38 @@
 layout: default
 ---
 
-<div id="col-top"></div>
-<div id="col-mid" class="box">
-  <h4>{{ page.title }}</h4>
-  <p>Aug. 21, 2012</p>
-  <p>Featured in iTunes in 378 places! Just released 3 days ago.</p>
-  <p class="entry-info">
-  <time class="published" title="{{ page.date | date_to_xmlschema }}" pubdate="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %d, %Y' }}</time>
-  </p>
-  {% if page.tags != empty %}
-  <ul class="entry-tags span-16 last">
-    <strong>标签</strong> ：
-    {% for tag in page.tags %}
-    <li><a href="{{ site.baseurl }}/tags#{{tag | replace:' ', '-' | downcase }}">{{ tag }}</a>{% if forloop.last == false %}, {%endif %}</li>
-    {% endfor %}
-  </ul>
-  {% endif %}  
+<div id="main" >
+  <div id="content">
 
-  {{ content }}                                                                                                                                              
-</div>
-<div id="col-bottom"></div>
+    <div class="post-1968 post type-post status-publish format-standard hentry category-1 post" id="post-1968">
+      <div class="posttop">
+        <h2 class="posttitle">
+          <a href="{{site.baseurl}}{{ page.url }}" rel="bookmark" title="{{ post.title }} {{ post.date | date_to_string }}">{{ page.title }}</a>
+        </h2>
+        <div class="postmetatop">Posted {{ page.date | date_to_string }}<a href="{{ site.baseurl }}" title="" rel="category tag">未分类</a></div>
+        <!-- /postmetatop -->
+      </div><!-- /posttop -->
 
-<div id="post-bottom">
-  <!-- JiaThis Button BEGIN -->
-  <div id="ckepop">
-    <span class="jiathis_txt">分享到：</span>
-    <a class="jiathis_button_qzone"></a>
-    <a class="jiathis_button_tsina"></a>
-    <a class="jiathis_button_tqq"></a>
-    <a class="jiathis_button_renren"></a>
-    <a class="jiathis_button_kaixin001"></a>
-    <a href="http://www.jiathis.com/share?uid=1558027" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-    <a class="jiathis_counter_style"></a>
+      <div class="postcontent">
+        <div class="cleared"></div>
+        {{ content }}
+      </div><!-- /postcontent -->
+      <div class="postmetabottom">
+        <div class="tags"></div>
+        <div class="metacomments"><span><a href="{{site.baseurl}}{{ page.url }}/#comments" title="<< {{ page.title }}>>上的评论"><span class="ds-thread-count" data-thread-key="{{ page.data-thread-key }}" data-replace="1"> Comments</span></a></span></div>
+        <div class="cleared"></div>
+      </div><!-- /postmetabottom -->
+    </div><!-- /post -->
+    
+    <div class="cleared"></div>
+    {% include disqus.html %}
 
-    <span class="more right">
-      <a href="{{site.baseurl}}/">返回主页</a>
-    </span>
-  </div>
-  <!-- JiaThis Button END -->	
+    </div><!-- /content -->
+  
+  {% include aside.html %}
 
-</div>
+  </div><!-- /main --> 
 
 
-<nav class="page-navigation">
-<ul>
-  {% if page.previous.url %}
-  <li class="left">
-  <a href="{{ site.baseurl }}{{page.previous.url}}" title="前一篇：{{page.previous.title}}">&laquo; {{page.previous.title}}</a>
-  </li>
-  {% endif %}
 
-  <li class="center"><a href="{{ site.baseurl }}/archives/">文章列表</a></li>
 
-  {% if page.next.url %}
-  <li class="right">
-  <a href="{{ site.baseurl }}{{page.next.url}}" title="后一篇：{{page.next.title}}">{{page.next.title}} &raquo;</a>
-  </li>
-  {% endif %}
-</ul>
-</nav>
-<div id="disqus_thread" ></div>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">Comments powered by Disqus.</a>
-</noscript>
-
-<div class="ds-thread"></div>
-<script type="text/javascript">
-  var duoshuoQuery = {short_name:"demi-panda"};
-(function() {
- var ds = document.createElement('script');
- ds.type = 'text/javascript';ds.async = true;
- ds.src = 'http://static.duoshuo.com/embed.js';
- ds.charset = 'UTF-8';
- (document.getElementsByTagName('head')[0] 
-  || document.getElementsByTagName('body')[0]).appendChild(ds);
- })();
-</script>
