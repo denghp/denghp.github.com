@@ -5,13 +5,12 @@ meta:
     absolute_baseurl: http://denghp.github.com/blog
     domain: demi-panda.com
     author:
-    full_name: demi panda
-    short_name: dmp
+    full_name: demi-panda.com
+    short_name: demi-panda
     name: 
     email: demi-panda@126.com
 
-url: http://denghp.github.com/blog
-#baseurl: /blog
+baseurl: /blog
 markdown: rdiscount
 pygments: true
 permalink: /:year/:month/:day/:title
