@@ -1,11 +1,3 @@
-baseurl:/blog
-markdown: rdiscount
-pygments: true
-permalink: /:year/:month/:day/:title
-auto: true
-
-debug: true
-
 meta:
     site_title: "Demi Panda Blogs"
     site_subtitle: "Demi 古希腊平民,人民的代名词, Panda 现实生活中高贵,权利的象征."
@@ -18,6 +10,13 @@ meta:
     name: 
     email: demi-panda@126.com
 
+baseurl:/blog
+markdown: rdiscount
+pygments: true
+permalink: /:year/:month/:day/:title
+auto: true
+
+debug: true
 
 
 
