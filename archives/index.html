@@ -20,6 +20,7 @@ layout: default
         {% else %}
         <p>{{ post.content | strip_html | truncatewords: 2 }}</p>
         {% endif %}
+        <p> <a href="{{ site.baseurl}}{{ post.url }}/#more-{{ post.data-thread-key }}" class="more-link">Read More &raquo;</a></p> 
         <div class="cleared"></div>
 
       </div><!-- /postcontent -->
