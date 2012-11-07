@@ -10,12 +10,12 @@ meta:
         name: 
         email: demi-panda@126.com
 
-#url: http://denghp.github.com/blog
-#baseurl: /blog
-#markdown: rdiscount
-#pygments: true
-#permalink: /:year/:month/:day/:title
-#auto: true
+url: http://denghp.github.com/blog
+baseurl: /blog
+markdown: rdiscount
+pygments: true
+permalink: /:year/:month/:day/:title
+auto: true
 #debug: false
 
 
