@@ -2,37 +2,28 @@
 title: 分类标签
 layout: default
 ---
+
 <div id="main" >
   <div id="content">
+    {% for tag in site.tags %}
+    <div class="post-1968 post type-post status-publish format-standard hentry category-1 post" id="post-1968">
+      <div class="posttop">
+        <h1 class="posttitle">
+          {{ tag[0] }}
+        </h1>
+      </div>
 
-
-    <div id="tag_cloud">
-      {% for tag in site.tags %}
-      <a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
-      {% endfor %}
-    </div>
-    <ul class="listing">
-      {% for tag in site.tags %}
-      <li class="listing-seperator" id="{{ tag[0] }}">{{ tag[0] }}</li>
-      {% for post in tag[1] %}
+      {% for post in tag[1] %} 
       <li class="listing-item">
       <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-      <a href="{{site.baseurl}}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+      <a href="{{ site.url }}{{ post.url }}" class="article" title="{{ post.title }}">{{ post.title }}</a>
       </li>
       {% endfor %}
-      {% endfor %}
-    </ul> 
+    </div><!-- /post -->
+    {% endfor %}
 
-    <div id="post-bottom">
-      <p style="text-align:right" class="more">
-      <a href="{{site.baseurl}}/">返回主页</a>
-      </p>
-    </div>
-
-    
-  </div> <!-- content -->
-{% include aside.html %}
-
-</div>
+  </div> <!-- /content -->
+  {% include aside.html %}
+</div><!-- /main -->
 
 
