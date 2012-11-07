@@ -5,7 +5,7 @@ layout: default
   <div id="content">
 
     {% for post in site.posts %} 
-    <div class="post-1968 post type-post status-publish format-standard hentry category-1 post" id="post-1968">
+    <div class="post-{{ post.data-thread-key }} post type-post status-publish format-standard hentry category-1 post" id="post-1968">
       <div class="posttop">
         <h2 class="posttitle">
           <a href="{{site.baseurl}}{{ post.url }}" rel="bookmark" title="{{ post.title }} {{ post.date | date_to_string }}">{{ post.title }}</a>
