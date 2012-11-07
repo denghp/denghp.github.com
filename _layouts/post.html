@@ -10,7 +10,15 @@ layout: default
         <h2 class="posttitle">
           <a href="{{site.baseurl}}{{ page.url }}" rel="bookmark" title="{{ post.title }} {{ post.date | date_to_string }}">{{ page.title }}</a>
         </h2>
-        <div class="postmetatop">Posted {{ page.date | date_to_string }}<a href="{{ site.baseurl }}" title="" rel="category tag">未分类</a></div>
+        <div class="postmetatop">Posted 
+          <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>&nbsp;
+          {% if page.categories %}
+          <span class="ds-thread-count">分类:</span> 
+          {% for cat in page.categories %}
+          <a href="{{ site.baseurl }}/categories/#{{cat}}" class="article" title="{{ cat }}" rel="category tag">{{ cat }}</a>&nbsp;
+          {% endfor %}
+          {% endif %}
+        </div>
         <!-- /postmetatop -->
       </div><!-- /posttop -->
 
@@ -24,16 +32,14 @@ layout: default
         <div class="cleared"></div>
       </div><!-- /postmetabottom -->
     </div><!-- /post -->
-    
-    <div class="cleared"></div>
-    {% include disqus.html %}
 
-    </div><!-- /content -->
-  
+    <div class="cleared"></div>
+
+  </div><!-- /content -->
+
   {% include aside.html %}
 
-  </div><!-- /main --> 
+</div><!-- /main --> 
 
-
-
+{% include disqus.html %}
 

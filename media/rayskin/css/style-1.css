@@ -120,7 +120,7 @@ form label {font-weight:bold; display:block;}
 #main {padding:12px 0 15px 0; text-shadow:0 0 1px #aaa, 0 0 4px #fff;}
 #content {float:left; width:620px;}
 #contentfull {float:left; width:960px;}
-h2#contentdesc {font-weight:normal; font-size:1em; text-transform:capitalize;}
+h2#contentdesc {font-weight:normal; font-size:1.4em; text-transform:capitalize;}
 h2#contentdesc span {color:#225990;}
 
 .archivesbox {padding:15px 20px; margin-bottom:10px; background:#fff url(../img/graygrad.gif) top left repeat-x; border:1px solid #d1d1d1;
@@ -139,6 +139,7 @@ h2#contentdesc span {color:#225990;}
   border-radius: 8px;
 }
 .sticky {background:none;}
+.posttop h1.posttitle a {color:#232323; font-size:1.8em;}
 .posttop h2.posttitle a {color:#232323; font-size:1.5em;}
 .posttop h2.posttitle a:hover {color:#010101;}
 .postmetatop {font-size:0.9em; padding-top:7px; line-height:1.5em; color:#666;}
@@ -159,7 +160,7 @@ h2#contentdesc span {color:#225990;}
 .postcontent ul li {list-style:disc;}
 .postcontent ol li {list-style:decimal;}
 
-.postmetabottom {background:#e9e9e9; padding:10px; font-size:0.75em; line-height:16px; margin-top:15px; border:1px solid #dedede;
+.postmetabottom {background:#e9e9e9; padding:10px; font-size:1.1em; line-height:16px; margin-top:15px; border:1px solid #dedede;
   /* optional rounded corners for browsers that support it */
   -moz-border-radius: 4px;
   -khtml-border-radius: 4px;
@@ -431,4 +432,34 @@ img.aligncenter {margin:10px auto; text-align:center; display:block;}
 #cols2 #col-right h4 span {background-color:#EEF8E4;}
 
 .noscreen {display:none;}
+
+.col {float:left; width:308px; padding:0 1px; margin-right:15px;}
+.col.last {margin-right:0;}
+.col h3 {margin:0; padding:7px 15px 12px 50px; background:url("../img/cols3-title.gif") 20px 40% no-repeat; font-size:120%;}
+
+.col-text {padding:20px; border-top:1px solid #DFDFDF;}
+.col-text p {margin:0;}
+.col-text ul {margin-bottom:0;}
+.col-more {padding:10px 10px 1px 0; text-align:right;}
+
+
+ul.ul-list {margin:15px 0; list-style:none;}
+ul.ul-list li {padding:1px 0;}
+ul.ul-list span.date {padding-right:10px;}
+
+.listing-item a, .listing-item a:hover{              
+  border-bottom:0px;
+  padding:.2em 1em;
+}
+
+.listing-item a:hover{color:#00B2EE;}
+
+.listing-item time {
+  color:#999;
+}
+
+.listing-item,.listing-seperator {
+  list-style-type:none;
+}
+
 

@@ -4,6 +4,9 @@ title: "第一篇"
 tags:
 comment: true
 published: true
+categories:
+- Life
+- Book 
 data-thread-key: 1968
 date: 2012-11-04
 ---
