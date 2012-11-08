@@ -10,8 +10,8 @@ meta:
         name: 
         email: demi-panda@126.com
 
-url: http://demi-panda.com
-#baseurl: /blog
+#url: http://demi-panda.com
+#baseurl: /
 markdown: rdiscount
 pygments: true
 permalink: /:year/:month/:day/:title
