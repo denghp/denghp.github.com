@@ -6,14 +6,14 @@ title: Categories
 <div id="main" >
   <div id="content">
     <div class="archivesbox">
-      <h3 id="widgettitle">分类目录 </h3>
+      <h3 id="tagcloud">分类目录 </h3>
       {% for cat in site.categories %}
-      <a href='{{ site.baseurl }}#{{ cat[0] }}' class='tag-link-{{tag[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:tag[1].size }}pt;'>{{ cat[0]}}</a>
+      <a href='{{ site.baseurl }}#{{ cat[0] }}' class='tag-link-{{tag[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>{{ cat[0]}}</a>
       {% endfor %}
     </div><!-- /archivesbox -->
 
     {% for cat in site.categories %}
-    <div class="post-1968 post type-post status-publish format-standard hentry category-1 post" id="post-1968">
+    <div class="post-{{ cat[0] }} post type-post status-publish format-standard hentry category-1 post" id="{{ cat[0]}}">
       <div class="posttop">
         <h3 class="widgettitle">
           {{ cat[0] }}
@@ -29,19 +29,6 @@ title: Categories
     </div>
     <!-- /post -->
     {% endfor %}
-
-    <script src="/media/js/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script> 
-    <script language="javascript">
-      $.fn.tagcloud.defaults = {
-      size: {start: 1, end: 1, unit: 'em'},
-      color: {start: '#f8e0e6', end: '#ff3333'}
-      };
-
-      $(function () {
-        $('#tag_cloud a').tagcloud();
-      });
-    </script>
-
   </div><!-- /content -->
   {% include aside.html %}
 
