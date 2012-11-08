@@ -2,7 +2,7 @@ meta:
     site_title: "Demi Panda Blogs"
     site_subtitle: "Demi 古希腊平民,人民的代名词, Panda 现实生活中高贵,权利的象征."
     site_language: "zh-cn"
-    absolute_baseurl: http://www.demi-panda.com/blog
+    absolute_baseurl: http://demi-panda.com/blog
     domain: www.demi-panda.com
     author:
         full_name: demi-panda.com
