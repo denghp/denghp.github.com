@@ -5,6 +5,7 @@ categories:
 - Programming
 tags:
 - Java
+data-thread-key: 20081017
 ---
 
 马越，Redhat 中国社区总架构师，作为Seam框架先行者马越，积极推动中国开源技术的发展。

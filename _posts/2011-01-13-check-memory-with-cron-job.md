@@ -5,6 +5,7 @@ categories:
 - Programming
 tags:
 - Shell
+data-thread-key: 20110113
 ---
 
 更新:crontab 默认的环境变量比较少,所以你需要设置自己的运行程序所需要的环境变量

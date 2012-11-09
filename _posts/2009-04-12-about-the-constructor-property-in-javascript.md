@@ -5,6 +5,7 @@ categories:
 - Programming
 tags:
 - Javascript
+data-thread-key: 20090412
 ---
 
 在Javascript中经常有一些让你匪夷所思的结果,我觉得一个主要的原因是大家最其规范了解甚少.

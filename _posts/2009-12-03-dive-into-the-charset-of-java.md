@@ -5,6 +5,7 @@ categories:
 - Programming
 tags:
 - Java
+data-thread-key: 20091203
 ---
 
 > Java中的String在JVM运行时都是Unicode编码的

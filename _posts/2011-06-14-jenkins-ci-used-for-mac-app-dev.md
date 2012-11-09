@@ -7,6 +7,7 @@ tags:
 - Jenkins
 - Hudson
 - CI
+data-thread-key: 20110614
 ---
 
 ### 介绍
