@@ -37,20 +37,21 @@ layout: default
         <div class="tags"></div>
         KEY: {{ post.data-thread-key }}
         <div class="metacomments"><span><a href="{{site.baseurl}}{{ post.url }}/#comments" title="<< {{ post.title }}>>上的评论">
-              <span class="ds-thread-count" data-thread-key="{{ post.data-thread-key }}"  data-title="{{ post.title }}" data-url="{{ post.url }}" data-limit="10"> Comments</span></a></span>
+        <span class="ds-thread-count" data-thread-key="{{ post.data-thread-key }}"  data-title="{{ post.title }}" data-url="{{ post.url }}" data-limit="10"> Comments</span></a></span>
         </div>
         <div class="cleared"></div>
 
       </div><!-- /postmetabottom -->
     </div><!-- /post -->
     {% endfor %}
-
+    <!--
     <div id="navigation">
       <div class="alignleft"><a href="{{ site.baseurl }}/page/2/" >&laquo; Older Entries</a></div>
       <div class="alignright"></div>
-      <!-- end of pagenavi conditional statement -->
       <div class="cleared"></div>
-    </div><!-- /navigation -->
+    </div>
+    -->
+    <!-- /navigation -->
     {% include disqus.html %}
 
   </div><!-- /content -->
