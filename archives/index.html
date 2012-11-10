@@ -35,7 +35,13 @@ layout: default
       
       <div class="postmetabottom">
         <div class="tags"></div>
-        <div class="metacomments"><span><a href="{{ post.url }}/#respond" title="《{{ post.title }}》上的评论"><span class="ds-thread-count" data-thread-key="{{ post.UUID }}" data-replace="1">Leave a Comment</span></a></span></div>
+        <div class="metacomments">
+         <span>
+          <a href="{{ post.url }}/#respond" title="《{{ post.title }}》上的评论">
+          <span class="ds-thread-count" data-thread-key="{{ post.UUID }}" data-replace="1">暂无评论</span>
+          </a>
+        </span>
+        </div>
         <div class="cleared"></div>
 
       </div><!-- /postmetabottom -->
