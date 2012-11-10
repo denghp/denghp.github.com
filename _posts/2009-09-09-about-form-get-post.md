@@ -5,6 +5,7 @@ categories:
 - Programming
 tags:
 - HTML
+data-thread-key: 20090909
 ---
 
 关于Form的get和post提交的方法,大家应该都知道是什么概念,

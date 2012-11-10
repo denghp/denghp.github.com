@@ -5,6 +5,7 @@ categories:
 - Programming
 tags:
 - Python
+data-thread-key: 20090427
 ---
 
 上周末一个同事姐姐，说他每周都要整理一封excel表格，去掉其中的空行并把某一列的内容拆分成两列，然后做统计。

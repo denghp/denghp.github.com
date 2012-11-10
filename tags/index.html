@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: 分类标签
 layout: default
@@ -27,3 +28,36 @@ layout: default
 </div><!-- /main -->
 
 
+=======
+---
+title: 分类标签
+layout: default
+---
+
+<div id="main" >
+  <div id="content">
+    {% for tag in site.tags %}
+    <div class="post type-post status-publish format-standard hentry category post" id="{{ tag[0] }}">
+      <div class="posttop">
+        <h1 class="posttitle">
+          {{ tag[0] }}
+        </h1>
+      </div>
+
+      {% for post in tag[1] %} 
+      <li class="listing-item">
+      <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+      <a href="{{ site.url }}{{ post.url }}" class="article" title="{{ post.title }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </div><!-- /post -->
+    {% endfor %}
+
+    {% include disqus.html %}
+
+  </div> <!-- /content -->
+  {% include aside.html %}
+</div><!-- /main -->
+
+
+>>>>>>> 6c65f0017246b3b6e9c3408f294bc450e5cdd495
