@@ -5,7 +5,7 @@ categories:
 - Programming
 tags:
 - Java
-data-thread-key: 20100722
+UUID: 20100722
 ---
 
 本篇对HashMap实现的源码进行简单的分析。

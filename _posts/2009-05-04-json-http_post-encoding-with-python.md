@@ -5,7 +5,7 @@ categories:
 - Programming
 tags:
 - Python
-data-thread-key: 20090504
+UUID: 20090504
 ---
 
 这几天在研究python相关的一些东西,其中涉及的内容包括:

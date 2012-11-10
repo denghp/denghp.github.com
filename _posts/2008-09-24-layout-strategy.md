@@ -5,7 +5,7 @@ categories:
 - Programming
 tags:
 - Java
-data-thread-key: 20080924
+UUID: 20080924
 ---
 
 Strategy中文名叫做策略，计谋，一听就知道是为实现某一需求而所使用的方法，相对于编程中的对象也就是对象所表现出来的行为。

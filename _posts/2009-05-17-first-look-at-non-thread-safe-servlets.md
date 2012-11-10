@@ -6,7 +6,7 @@ categories:
 tags:
 - Java
 - Servlet
-data-thread-key: 20090517
+UUID: 20090517
 ---
 
 Servlet名称的由来:

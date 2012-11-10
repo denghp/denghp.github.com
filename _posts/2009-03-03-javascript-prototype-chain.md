@@ -5,7 +5,7 @@ categories:
 - Programming
 tags:
 - Javascript
-data-thread-key: 20090303
+UUID: 20090303
 ---
 
 > 前言:如果想深入理解Javascript的面向对象编程思想,那么对于原型链的理解将十分重要,由于看了李战老师的<悟透Javascript>,产生了很多疑问,于是带着疑问在网络上查找答案,也翻出了Ecma-262来看了,总算明白了一些东西,但还是有些疑问.

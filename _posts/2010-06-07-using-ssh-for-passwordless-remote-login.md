@@ -6,7 +6,7 @@ categories:
 tags:
 - 安全
 - Linux
-data-thread-key: 20100607
+UUID: 20100607
 ---
 
 由于这几天需要写一个线上日志查询的小系统。打算使用ssh远程登录进行相关log文件的操作。

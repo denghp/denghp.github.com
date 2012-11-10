@@ -5,7 +5,7 @@ categories:
 - Programming
 tags:
 - Java
-data-thread-key: 20100721
+UUID: 20100721
 ---
 
 ## 一.数据结构

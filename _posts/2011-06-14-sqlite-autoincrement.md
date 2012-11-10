@@ -5,7 +5,7 @@ categories:
 - Programming
 tags:
 - SQLite
-data-thread-key: 20110614
+UUID: 20110614
 ---
 
 在SQLite3的表中每一行记录都有一个ROWID的隐藏字段，

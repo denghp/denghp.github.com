@@ -5,7 +5,7 @@ categories:
 - Programming
 tags:
 - Java
-data-thread-key: 20100727
+UUID: 20100727
 ---
 
 之前tomcat使用的版本是5.5.26 ，由于存在DDOS攻击的漏洞，所以需要进行升级，

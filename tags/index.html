@@ -6,7 +6,7 @@ layout: default
 <div id="main" >
   <div id="content">
     {% for tag in site.tags %}
-    <div class="post type-post status-publish format-standard hentry category post" id="{{ tag[0] }}">
+    <div class="post type-post status-publish format-standard hentry tag-{{tag[0]}} post" id="{{ tag[0] }}">
       <div class="posttop">
         <h1 class="posttitle">
           {{ tag[0] }}
@@ -21,7 +21,7 @@ layout: default
       {% endfor %}
     </div><!-- /post -->
     {% endfor %}
-
+    {% include disqus.html %}
   </div> <!-- /content -->
   {% include aside.html %}
 </div><!-- /main -->

@@ -7,7 +7,7 @@ tags:
 - Java
 - iBatis
 - Database
-data-thread-key: 20090119
+UUID: 20090119
 ---
 
 今天在使用iBatis的时候遇到了一些主键自动生成的问题，之前的一些项目使用的都是Oracle数据库，而这次我使用的是Mysql。

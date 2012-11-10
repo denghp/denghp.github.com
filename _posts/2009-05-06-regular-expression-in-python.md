@@ -5,7 +5,7 @@ categories:
 - Programming
 tags:
 - Python
-data-thread-key: 20090506
+UUID: 20090506
 ---
 
 > 本篇文章主要讲解一下Python中正则表达式的使用,这里并不会给你讲解正则表达式本身的相关知识,本文假设你已经对正则表达式有了一定的了解.

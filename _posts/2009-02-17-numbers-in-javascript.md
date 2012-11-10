@@ -5,7 +5,7 @@ categories:
 - Programming
 tags:
 - Javascript
-data-thread-key: 20090217
+UUID: 20090217
 ---
 
 Javascript作为一种弱类型语言,所以数字在JS里没有整型,浮点型,短整型,长整型,双精度等数字类型的区分,

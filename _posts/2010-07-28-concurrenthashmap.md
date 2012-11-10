@@ -5,7 +5,7 @@ categories:
 - Programming
 tags:
 - Java
-data-thread-key: 20100728
+UUID: 20100728
 ---
 
 ## 一.Java并发基础

@@ -6,7 +6,7 @@ categories:
 tags:
 - Java
 - Annotation
-data-thread-key: 20080923
+UUID: 20080923
 ---
 
 Annotation注解（也称Meta Data元数据）为我们在代码中添加信息提供一个形式化的方法，是我们在后面的某个时刻方便的使用这些数据。  

@@ -5,7 +5,7 @@ categories:
 - OS
 tags:
 - Linux
-data-thread-key: 20100731
+UUID: 20100731
 ---
 
 上周末，参加了一个关于Linux的培训，感觉还不错，以前一些比较模糊的概念渐渐的变得清晰了。

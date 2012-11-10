@@ -5,7 +5,7 @@ categories:
 - Programming
 tags:
 - Java
-data-thread-key: 20100710
+UUID: 20100710
 ---
 
 这两天在继续了解web应用中的异步处理问题。
