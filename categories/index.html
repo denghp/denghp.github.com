@@ -13,7 +13,7 @@ title: Categories
     </div><!-- /archivesbox -->
 
     {% for cat in site.categories %}
-    <div class="post-{{ cat[0] }} post type-post status-publish format-standard hentry category-1 post" id="{{ cat[0]}}">
+    <div class="post-{{ cat[0] }} post type-post status-publish format-standard hentry category-{{ cat[0] }} post" id="{{ cat[0]}}">
       <div class="posttop">
         <h3 class="widgettitle">
           {{ cat[0] }}
@@ -29,6 +29,7 @@ title: Categories
     </div>
     <!-- /post -->
     {% endfor %}
+  {% include disqus.html %}
   </div><!-- /content -->
   {% include aside.html %}
 

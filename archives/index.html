@@ -35,7 +35,10 @@ layout: default
 
       <div class="postmetabottom">
         <div class="tags"></div>
-        KEY: {{ post.data-thread-key }}
+        <!--
+        KEY: {{ post.data-thread-key }} title: {{ post.title}}
+        data-url: {{ post.url }}
+        -->
         <div class="metacomments"><span><a href="{{site.baseurl}}{{ post.url }}/#comments" title="<< {{ post.title }}>>上的评论">
         <span class="ds-thread-count" data-thread-key="{{ post.data-thread-key }}"  data-title="{{ post.title }}" data-url="{{ post.url }}" data-limit="10"> Comments</span></a></span>
         </div>
