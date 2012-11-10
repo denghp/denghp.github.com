@@ -32,28 +32,16 @@ layout: default
         <div class="cleared"></div>
 
       </div><!-- /postcontent -->
-
+      
       <div class="postmetabottom">
         <div class="tags"></div>
-        <!--
-        KEY: {{ post.data-thread-key }} title: {{ post.title}}
-        data-url: {{ post.url }}
-        -->
-        <div class="metacomments"><span><a href="{{site.baseurl}}{{ post.url }}/#comments" title="<< {{ post.title }}>>上的评论">
-        <span class="ds-thread-count" data-thread-key="{{ post.UUID }}"  data-title="{{ post.title }}" data-url="{{ post.url }}" data-limit="10">Leave a Comments</span></a></span>
-        </div>
+        <div class="metacomments"><span><a href="{{ post.url }}/#respond" title="《{{ post.title }}》上的评论"><span class="ds-thread-count" data-thread-key="{{ post.UUID }}" data-replace="1">Leave a Comment</span></a></span></div>
         <div class="cleared"></div>
 
       </div><!-- /postmetabottom -->
+
     </div><!-- /post -->
     {% endfor %}
-    <!--
-    <div id="navigation">
-      <div class="alignleft"><a href="{{ site.baseurl }}/page/2/" >&laquo; Older Entries</a></div>
-      <div class="alignright"></div>
-      <div class="cleared"></div>
-    </div>
-    -->
     <!-- /navigation -->
     {% include disqus.html %}
 
