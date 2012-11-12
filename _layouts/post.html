@@ -4,8 +4,7 @@ layout: default
 
 <div id="main" >
   <div id="content">
-
-    <div class="post-1968 post type-post status-publish format-standard hentry category-1 post" id="post-1968">
+    <div class="post type-post status-publish format-standard hentry category-1 post" >
       <div class="posttop">
         <h2 class="posttitle">
           <a href="{{site.baseurl}}{{ page.url }}" rel="bookmark" title="{{ post.title }} {{ post.date | date_to_string }}">{{ page.title }}</a>
@@ -26,12 +25,9 @@ layout: default
         <div class="cleared"></div>
         {{ content }}
       </div><!-- /postcontent -->
-      <div class="postmetabottom">
-        <div class="tags"></div>
-        <div class="metacomments"><span><a href="{{site.baseurl}}{{ page.url }}/#comments" title="<< {{ page.title }}>>上的评论"><span class="ds-thread-count" data-thread-key="{{ page.data-thread-key }}" data-replace="1"> Comments</span></a></span></div>
-        <div class="cleared"></div>
-      </div><!-- /postmetabottom -->
     </div><!-- /post -->
+
+    <script src="{{ site.baseurl }}/media/js/prettify.js" type="text/javascript"></script>
 
     <!-- JiaThis Button BEGIN -->
     <div class="jiathis_style">
@@ -52,10 +48,8 @@ layout: default
 
     <div class="cleared"></div>
     {% include disqus.html %}
-
   </div><!-- /content -->
 
   {% include aside.html %}
-
 </div><!-- /main --> 
 

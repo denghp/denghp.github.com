@@ -5,7 +5,7 @@ layout: default
   <div id="content">
 
     {% for post in site.posts %} 
-    <div class="post-{{ post.data-thread-key }} post type-post status-publish format-standard hentry category-1 post" id="post-1968">
+    <div class="post type-post status-publish format-standard category-1 hentry post" id='{{post.UUID}}'>
       <div class="posttop">
         <h2 class="posttitle">
           <a href="{{site.baseurl}}{{ post.url }}" rel="bookmark" title="{{ post.title }} {{ post.date | date_to_string }}">{{ post.title }}</a>
@@ -36,8 +36,8 @@ layout: default
       <div class="postmetabottom">
         <div class="tags"></div>
         <div class="metacomments">
-         <span>
-          <a href="{{ post.url }}/#respond" title="《{{ post.title }}》上的评论">
+          <span>
+          <a href="{{ post.url }}/#comments" title="《{{ post.title }}》上的评论">
           <span class="ds-thread-count" data-thread-key="{{ post.UUID }}" data-replace="1">暂无评论</span>
           </a>
         </span>

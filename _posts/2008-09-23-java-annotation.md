@@ -1,12 +1,15 @@
 ---
 layout: post
 title: Java自定义Annotation
+comment: true
+published: true
 categories:
 - Programming
 tags:
 - Java
 - Annotation
 UUID: 20080923
+date: 2008-09-23
 ---
 
 Annotation注解（也称Meta Data元数据）为我们在代码中添加信息提供一个形式化的方法，是我们在后面的某个时刻方便的使用这些数据。  
