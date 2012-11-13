@@ -46,8 +46,9 @@ layout: default
     {% endfor %}
     {% endif %}
     {% endfor %}
-
-    {% include disqus.html %}
+    <div style="display:none">
+      {% include disqus.html %}
+    </div>
   </div><!-- /content -->
   {% include aside.html %}
 
