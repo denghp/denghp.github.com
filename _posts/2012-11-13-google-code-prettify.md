@@ -12,14 +12,14 @@ date: 2012-11-13
 
 Prettify提供一个Javascript模块和CSS 文件,可以在HTML页面中显示源代码的代码高亮效果。这是用于code.google.com的脚本。
 
-#### 语法
+### 语法
 <pre id="javascript">
 &lt;pre class=&quot;prettyprint&quot;&gt;
 @*你的代码片断*@
 &lt;/pre&gt;
 </pre>
 
-#### prettify.js 的使用方法:
+### prettify.js 的使用方法:
 ##### 1、引入 jQuery 文件和 prettify.js 文件
 <pre id="javascript">
 &lt;script type=&quot;text/javascript&quot; src=&quot;jquery-1.6.1.min.js&quot;&gt;&lt;/script&gt;
@@ -40,7 +40,7 @@ Prettify提供一个Javascript模块和CSS 文件,可以在HTML页面中显示�
 </pre>
 
 
-#### 使用 jQuery 小技巧实现优化
+### 使用 jQuery 小技巧实现优化
 <p>上述方法可以实现代码的高亮，但每次手动为&lt;pre&gt;标签添加&quot;prettyprint&quot;类，显示有些麻烦。使用下边的代码片断来解决这个问题并替换掉 body 的&quot;onload&quot;的事件，实现分离：</p>
 <pre class="prettyprint" id="javascript">
 &lt;script type=&quot;text/javascript&quot;&gt;
@@ -52,7 +52,7 @@ $(window).load(function(){
 </pre>
 <p>到这我们应该已经成功使用 prettify.js 实现了代码的高亮显示，为了提高页面加载速度，我们应该将引用的 js 文件放置在底部，大家可以参考下本站的放置方法。</p>
 
-#### DEMO JAVA代码高亮显示
+### DEMO JAVA代码高亮显示
 <pre class="prettyprint" id="java">
 package foo;
 

@@ -6,18 +6,18 @@ layout: default
   <div id="content">
     <div class="post type-post status-publish format-standard hentry category-1 post" >
         <h1 class="title">
-          <!--
-          <a href="{{site.baseurl}}{{ page.url }}" rel="bookmark" title="{{ post.title }} {{ post.date | date_to_string }}">{{ page.title }}</a>
-          -->
           {{ page.title }}
         </h1>
         <div class="meta">
           Posted 
           <time class="date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>&nbsp;
+          {% if post.author != null %}
+          By {{ post.author }}
+          {% endif %}
           {% if page.categories %}
-          <span class="ds-thread-count">分类:</span> 
+          分类:
           {% for cat in page.categories %}
-          <a href="{{ site.baseurl }}/categories/#{{cat}}" class="article" title="{{ cat }}" rel="category tag">{{ cat }}</a>&nbsp;
+          <a href="{{ site.baseurl }}/categories/#{{cat}}" class="text" title="{{ cat }}" rel="category tag">{{ cat }}</a>&nbsp;
           {% endfor %}
           {% endif %}
         </div>

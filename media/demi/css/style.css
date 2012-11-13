@@ -451,19 +451,6 @@ ul.ul-list span.date {padding-right:10px;}
 .postcontent-entry h5 { margin-bottom: 18px; color: #444; font-size: 14px; line-height: 26px; text-transform: uppercase; }
 .postcontent-entry h6 { font-size: 13px; font-weight: 700; margin-bottom: 0.5em; color: #444; line-height: 26px; }
 
-/**
-.post .title {
-  margin-bottom: 10px;
-  font-family: "Times New Roman",Times,serif;
-  padding: 0 0;
-  font-size: 20px;
-  line-height: 32px;
-  font-weight: 700;
-  color: #e18b3a;
-  text-align: center;
-} 
-**/
-
 .post .title {
   font-family: courier, 'courier new', monospace;
   color: #75A83E;
@@ -480,15 +467,19 @@ ul.ul-list span.date {padding-right:10px;}
   color: #a0a0a0;
   font-family: "Times New Roman",Times,serif;
   font-size: 13px;
+  line-height: 26px;
   text-indent: 0;
   font-weight: 600; 
+  border-bottom: 3px solid #f0f0f0;
 }
+.post .meta .text {color:#489620;}
 .post .meta .date {
   color: #489620;
 }
 .post .meta .author {
   padding-right: 4px; 
 }
+.post .meta a:hover {color:#225990;}
 .post .description {                                                                 
   padding: 8px 12px;
   font-style: italic;
