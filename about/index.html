@@ -27,12 +27,20 @@ date: 2012-11-13
       github : [https://github.com/denghp]</p>
       <div class="cleared"></div>
     </div><!-- /postcontent -->
-
+    
     <div class="postmetabottom">
-      <div class="tags"></div>
-      <div class="cleared"></div>
-    </div><!-- /postmetabottom -->
-  </div><!-- /post -->
+        <div class="tags"></div>
+        <div class="metacomments">
+          <span>
+            <a href="{{ post.url }}/#comments" title="《{{ post.title }}》上的评论">
+              <span class="ds-thread-count" data-thread-key="{{ post.UUID }}" data-replace="1">暂无评论</span>
+            </a>
+          </span>
+        </div>
+        <div class="cleared"></div>
+      </div><!-- /postmetabottom -->
+
+     </div><!-- /post -->
 
 
   {% include disqus.html %}
