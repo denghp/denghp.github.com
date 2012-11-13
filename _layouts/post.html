@@ -5,12 +5,15 @@ layout: default
 <div id="main" >
   <div id="content">
     <div class="post type-post status-publish format-standard hentry category-1 post" >
-      <div class="posttop">
-        <h2 class="posttitle">
+        <h1 class="title">
+          <!--
           <a href="{{site.baseurl}}{{ page.url }}" rel="bookmark" title="{{ post.title }} {{ post.date | date_to_string }}">{{ page.title }}</a>
-        </h2>
-        <div class="postmetatop">Posted 
-          <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>&nbsp;
+          -->
+          {{ page.title }}
+        </h1>
+        <div class="meta">
+          Posted 
+          <time class="date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>&nbsp;
           {% if page.categories %}
           <span class="ds-thread-count">分类:</span> 
           {% for cat in page.categories %}
@@ -18,10 +21,8 @@ layout: default
           {% endfor %}
           {% endif %}
         </div>
-        <!-- /postmetatop -->
-      </div><!-- /posttop -->
 
-      <div class="postcontent">
+      <div class="postcontent-entry">
         <div class="cleared"></div>
         {{ content }}
       </div><!-- /postcontent -->

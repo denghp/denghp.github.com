@@ -10,8 +10,7 @@ UUID: 201211130032
 date: 2012-11-13
 ---
 
-#### 描述
-Google Code Prettify 提供一个Javascript 模块和CSS 文件，可以在HTML页面中显示源代码的代码高亮效果。这是用于code.google.com的脚本。
+Prettify提供一个Javascript模块和CSS 文件,可以在HTML页面中显示源代码的代码高亮效果。这是用于code.google.com的脚本。
 
 #### 语法
 <pre id="javascript">

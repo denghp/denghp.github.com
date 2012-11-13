@@ -463,3 +463,50 @@ ul.ul-list span.date {padding-right:10px;}
 }
 
 
+
+/************************************************
+*          post-entry *
+************************************************/
+.postcontent-entry h1 { padding: 3px 0; font-size: 20px; line-height: normal; margin-bottom: 20px; color: #489620; font-weight: 700; border-bottom: 1px solid #e8e8e8; }
+.postcontent-entry h2 { margin-bottom: 20px; color: #489620; padding: 3px 0; font-size: 18px; line-height: normal; border-bottom: 1px solid #e8e8e8; font-family: 700; }
+.postcontent-entry h3 { font-size: 16px; font-weight: 700; line-height: 26px; color: #489620; border-bottom: 1px solid #e8e8e8; margin-bottom: 18px; margin-top: 1.5em; }
+.postcontent-entry h4 { margin-bottom: 18px; font-size: 14px; font-weight: 700; color: #489620; line-height: 26px; text-transform: uppercase; }
+.postcontent-entry h5 { margin-bottom: 18px; color: #444; font-size: 14px; line-height: 26px; text-transform: uppercase; }
+.postcontent-entry h6 { font-size: 13px; font-weight: 700; margin-bottom: 0.5em; color: #444; line-height: 26px; }
+
+.post .title {
+  margin-bottom: 10px;
+  font-family: "Times New Roman",Times,serif;
+  padding: 0 0;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #e18b3a;
+  text-align: center;
+} 
+
+.post .meta {
+  text-align: center;
+  color: #a0a0a0;
+  font-family: "Times New Roman",Times,serif;
+  font-size: 13px;
+  text-indent: 0;
+  font-weight: 600; 
+}
+.post .meta .date {
+  color: #489620;
+}
+.post .meta .author {
+  padding-right: 4px; 
+}
+.post .description {                                                                 
+  padding: 8px 12px;
+  font-style: italic;
+  text-align: center;
+  color: #888;
+  text-indent: 0;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/** colorcode **/
