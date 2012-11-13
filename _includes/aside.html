@@ -1,11 +1,11 @@
 <div id="sidebar">
+    <ul>
     <li id="tag_cloud" class="boxed widget widget_tag_cloud">
     <h3 class="widgettitle">标签</h3>
     <div class="tagcloud">
       {% for tag in site.tags %}
       <a href='{{ site.baseurl }}/tags/#{{ tag[0] }}' class='tag-link-{{tag[1].size}}' title='{{ tag[0] }}' style='font-size: {{ 10 | plus:tag[1].size }}pt;'>{{tag[0]}}</a>&nbsp;
       {% endfor %}
-
       </li>
 
       <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">

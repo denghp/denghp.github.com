@@ -53,7 +53,6 @@ $(window).load(function(){
 <p>到这我们应该已经成功使用 prettify.js 实现了代码的高亮显示，为了提高页面加载速度，我们应该将引用的 js 文件放置在底部，大家可以参考下本站的放置方法。</p>
 
 #### DEMO JAVA代码高亮显示
-<h1>Java</h1>
 <pre class="prettyprint" id="java">
 package foo;
 
