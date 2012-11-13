@@ -32,15 +32,15 @@ layout: default
         <div class="cleared"></div>
 
       </div><!-- /postcontent -->
-      
+
       <div class="postmetabottom">
         <div class="tags"></div>
         <div class="metacomments">
           <span>
-          <a href="{{ post.url }}/#comments" title="《{{ post.title }}》上的评论">
-          <span class="ds-thread-count" data-thread-key="{{ post.UUID }}" data-replace="1">暂无评论</span>
-          </a>
-        </span>
+            <a href="{{ post.url }}/#comments" title="《{{ post.title }}》上的评论">
+              <span class="ds-thread-count" data-thread-key="{{ post.UUID }}" data-replace="1">暂无评论</span>
+            </a>
+          </span>
         </div>
         <div class="cleared"></div>
 
@@ -49,7 +49,9 @@ layout: default
     </div><!-- /post -->
     {% endfor %}
     <!-- /navigation -->
-    {% include disqus.html %}
+    <div style="display:none">
+      {% include disqus.html %}
+    </div>
 
   </div><!-- /content -->
   {% include aside.html %}
