@@ -11,11 +11,11 @@ layout: default
           <a href="{{site.baseurl}}{{ post.url }}" rel="bookmark" title="{{ post.title }} {{ post.date | date_to_string }}">{{ post.title }}</a>
         </h2>
         <div class="postmetatop">
-          Posted <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>&nbsp;
+          Posted <time class="date" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>&nbsp;
           {% if post.categories %}
-          <span class="ds-thread-count">分类:</span> 
+          分类:
           {% for cat in post.categories %}
-          <a href="{{ site.baseurl }}/categories/#{{cat}}" class="article" title="{{ cat }}" rel="category tag">{{ cat }}</a>&nbsp;
+          <a href="{{ site.baseurl }}/categories/#{{cat}}" class="text" title="{{ cat }}" rel="category tag">{{ cat }}</a>&nbsp;
           {% endfor %}
           {% endif %}
         </div>
