@@ -491,3 +491,21 @@ ul.ul-list span.date {padding-right:10px;}
 }
 
 /** colorcode **/
+
+/************************************************
+*          post-entry *
+************************************************/
+
+ol {
+  display: block;
+  list-style-type: decimal;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+}
+ol li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
