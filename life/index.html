@@ -20,7 +20,7 @@ layout: default
           {% if post.categories %}
           分类:
           {% for cat in post.categories %}
-          <a href="{{ site.baseurl }}/categories/#{{cat}}" class="article" title="{{ cat }}" rel="category tag">{{ cat }}</a>&nbsp;
+          <a href="{{ site.baseurl }}/categories/#{{cat}}" class="text" title="{{ cat }}" rel="category tag">{{ cat }}</a>&nbsp;
           {% endfor %}
           {% endif %}
         </div>
