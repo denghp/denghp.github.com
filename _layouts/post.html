@@ -1,61 +1,55 @@
 ---
 layout: default
 ---
-
-<div id="main" >
-  <div id="content">
-    <div class="post type-post status-publish format-standard hentry category-1 post" >
-        <h1 class="title">
-          {{ page.title }}
-        </h1>
-        <div class="meta">
-          Posted 
-          <time class="date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>&nbsp;
-          {% if post.author != null %}
-          By {{ post.author }}
-          {% endif %}
-          {% if page.categories %}
-          分类:
-          {% for cat in page.categories %}
-          <a href="{{ site.baseurl }}/categories/#{{cat}}" class="text" title="{{ cat }}" rel="category tag">{{ cat }}</a>&nbsp;
-          {% endfor %}
-          {% endif %}
-        </div>
-
-      <div class="postcontent-entry">
-        <div class="cleared"></div>
-        {{ content }}
-      </div><!-- /postcontent -->
-    </div><!-- /post -->
-
-    <script src="{{ site.baseurl }}/media/js/prettify.js" type="text/javascript"></script>
-    <script type="text/javascript">
-    $(window).load(function(){
-         $("pre").addClass("prettyprint");
-              prettyPrint();
-              })
-    </script>
-    <!-- JiaThis Button BEGIN -->
-    <div class="jiathis_style">
-      <span class="jiathis_txt">分享到：</span>
-      <a class="jiathis_button_tools_1"></a>
-      <a class="jiathis_button_tools_2"></a>
-      <a class="jiathis_button_tools_3"></a>
-      <a class="jiathis_button_tools_4"></a>
-      <a href="http://www.jiathis.com/share?uid=1706288" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
-      <a class="jiathis_counter_style"></a>
+<div id="content">
+  <div class="post type-post status-publish format-standard hentry category-1 post" >
+    <h1 class="title">
+      {{ page.title }}
+    </h1>
+    <div class="meta">
+      Posted 
+      <time class="date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>&nbsp;
+      {% if page.author != null %}
+      By {{ page.author }}
+      {% endif %}
+      {% if page.categories %}
+      分类:
+      {% for cat in page.categories %}
+      <a href="{{ site.baseurl }}/categories/#{{cat}}" class="text" title="{{ cat }}" rel="category tag">{{ cat }}</a>&nbsp;
+      {% endfor %}
+      {% endif %}
     </div>
 
-    <script type="text/javascript">
-      var jiathis_config = {data_track_clickback:true};
-    </script>
-    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1343704647947962" charset="utf-8"></script>
-    <!-- JiaThis Button END -->
+    <div class="postcontent-entry">
+      <div class="cleared"></div>
+      {{ content }}
+    </div><!-- /postcontent -->
+  </div><!-- /post -->
 
-    <div class="cleared"></div>
-    {% include disqus.html %}
-  </div><!-- /content -->
+  <!-- JiaThis Button BEGIN -->
+  <div class="jiathis_style">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_tools_1"></a>
+    <a class="jiathis_button_tools_2"></a>
+    <a class="jiathis_button_tools_3"></a>
+    <a class="jiathis_button_tools_4"></a>
+    <a href="http://www.jiathis.com/share?uid=1706288" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+    <a class="jiathis_counter_style"></a>
+  </div>
 
-  {% include aside.html %}
-</div><!-- /main --> 
+  <script type="text/javascript">
+    var jiathis_config = {data_track_clickback:true};
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1343704647947962" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+<div class="cleared"></div>
+<div class="comments">
+  <!-- Duoshuo Comment Begin -->
+  <div class="ds-thread" data-thread-id="{{page.UUID}}" data-thread-key="{{page.UUID}}" data-title="{{page.title}}" data-url="{{site.baseurl}}{{page.url}}"></div>
+  <!-- Duoshuo Comment End -->
+</div>
+</div><!-- /content -->
+
+{% include aside.html %}
 

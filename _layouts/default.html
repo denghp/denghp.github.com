@@ -14,6 +14,8 @@
     <link rel="stylesheet" media="screen,projection" type="text/css" href="{{ site.baseurl }}/media/demi/css/main.css" />
     <link rel="stylesheet" media="screen,projection" type="text/css" href="{{ site.baseurl }}/media/demi/css/reset.css" />
     <link rel="stylesheet" media="screen,projection" type="text/css" href="{{ site.baseurl }}/media/demi/css/superfish.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="{{ site.baseurl }}/media/demi/css/embed.css" />
+
     <link rel="stylesheet" media="screen,projection" type="text/css" href="{{ site.baseurl }}/media/demi/css/prettify.css" />
     <script src="{{ site.baseurl }}/media/js/jquery-1.6.1.min.js" type="text/javascript"></script>
     <script src="{{ site.baseurl }}/media/js/jquery.jcarousel.min.js" type="text/javascript"></script>
@@ -21,10 +23,23 @@
     <script src="{{ site.baseurl }}/media/js/jquery.demi.slider.js" type="text/javascript"></script>
 
     <link rel="alternate" type="application/rss+xml" title="Demi Panda" href="{{ site.baseurl }}/rss.xml" />
+    <script type="text/javascript" src="http://static.duoshuo.com/js/common.js"></script>
+    <script src="{{ site.baseurl }}/media/js/prettify.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+      var duoshuoQuery = {short_name:"demi-panda"};
+</script>
+<script type="text/javascript" src="http://static.duoshuo.com/embed.js"></script>
 
 
     <title>熊猫人Blog</title>
-  
+      <script type="text/javascript">
+      $(window).load(function(){
+          $("pre").addClass("prettyprint");
+          prettyPrint();
+          })
+        </script>
+
     <script language="javascript">
       $.fn.tagcloud.defaults = {
         size: {start: 0.9, end: 2, unit: 'em'},
