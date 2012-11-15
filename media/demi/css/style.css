@@ -456,14 +456,14 @@ ul.ul-list span.date {padding-right:10px;}
   color: #75A83E;
   font-size: 1.6em;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
   letter-spacing: -1pt;
   word-spacing: -1pt;
   line-height: 0.8;
  }
 
 .post .meta {
-  text-align: center;
+  text-align: left;
   color: #a0a0a0;
   font-family: "Times New Roman",Times,serif;
   font-size: 13px;
@@ -489,6 +489,9 @@ ul.ul-list span.date {padding-right:10px;}
   border-top: 1px solid #e8e8e8;
   border-bottom: 1px solid #f0f0f0;
 }
+.post .tag{margin:0 0 15px 0;}
+.post .tag a{margin:0 10px 0 0; padding:3px 10px; border-radius: 10px; -webkit-border-radius:10px; -moz-border-radius:10px; -khtml-border-radius:10px; background:#f3f3f3; text-decoration:none;}
+.post .tag a:hover{background:#c00; color:#fff;}
 
 /** colorcode **/
 
@@ -509,3 +512,20 @@ ol li {
   display: list-item;
   text-align: -webkit-match-parent;
 }
+
+.v-pagination {
+  height: 28px;
+  border-top: 1px solid #e0e0e0;
+  margin: 10px 10px 10px 0;
+  padding: 10px 0 0;
+}
+.v-pagination a{margin:0 10px 0 0; padding:3px 10px; border-radius: 10px; -webkit-border-radius:10px; -moz-border-radius:10px; -khtml-border-radius:10px; background:#f3f3f3; text-decoration:none;}
+.v-pagination .text {color:#489620;}
+.v-pagination .prev { float: left; }                                                                                                                                                    
+.v-pagination .center {float: center;}
+.v-pagination .next { float: right; }
+.v-pagination a:hover {
+  background:#c00; color:#fff;
+}
+
+

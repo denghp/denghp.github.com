@@ -8,47 +8,60 @@ layout: default
     </h1>
     <div class="meta">
       Posted 
-      <time class="date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>&nbsp;
+      <time class="date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>&nbsp; 
       {% if page.author != null %}
       By {{ page.author }}
       {% endif %}
       {% if page.categories %}
-      分类:
+      <div class="tag">
       {% for cat in page.categories %}
       <a href="{{ site.baseurl }}/categories/#{{cat}}" class="text" title="{{ cat }}" rel="category tag">{{ cat }}</a>&nbsp;
       {% endfor %}
-      {% endif %}
     </div>
-
+      {% endif %}
+   </div>
+    
     <div class="postcontent-entry">
       <div class="cleared"></div>
       {{ content }}
     </div><!-- /postcontent -->
+
+    <div class="v-pagination">
+      {% if page.previous.url %}
+      <a class="prev" href="{{ site.baseurl }}{{page.previous.url}}" title="前一篇：{{page.previous.title}}">&laquo; {{page.previous.title}}</a>
+      {% endif %}
+      <!--
+      <a class="center" href="{{ site.baseurl }}/archives/">文章列表</a>
+      -->
+      {% if page.next.url %}
+      <a class="next" href="{{ site.baseurl }}{{page.next.url}}" title="后一篇：{{page.next.title}}">{{page.next.title}} &raquo;</a>
+      {% endif %}
+    </div>
+    <!-- JiaThis Button BEGIN -->
+    <div class="jiathis_style" style="margin: 10px 10px 20px 0;padding: 10px 0 0;">
+      <span class="jiathis_txt">分享到：</span>
+      <a class="jiathis_button_tools_1"></a>
+      <a class="jiathis_button_tools_2"></a>
+      <a class="jiathis_button_tools_3"></a>
+      <a class="jiathis_button_tools_4"></a>
+      <a href="http://www.jiathis.com/share?uid=1706288" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+      <a class="jiathis_counter_style"></a>
+    </div>
+    <script type="text/javascript">
+      var jiathis_config = {data_track_clickback:true};
+    </script>
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1343704647947962" charset="utf-8"></script>
+    <!-- JiaThis Button END -->
   </div><!-- /post -->
+  <div class="cleared"></div>
 
-  <!-- JiaThis Button BEGIN -->
-  <div class="jiathis_style">
-    <span class="jiathis_txt">分享到：</span>
-    <a class="jiathis_button_tools_1"></a>
-    <a class="jiathis_button_tools_2"></a>
-    <a class="jiathis_button_tools_3"></a>
-    <a class="jiathis_button_tools_4"></a>
-    <a href="http://www.jiathis.com/share?uid=1706288" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
-    <a class="jiathis_counter_style"></a>
+  <div class="archivesbox">
+    <div class="comments">
+      <!-- Duoshuo Comment Begin -->
+      <div class="ds-thread" data-thread-id="{{page.UUID}}" data-thread-key="{{page.UUID}}" data-title="{{page.title}}" data-url="{{site.baseurl}}{{page.url}}"></div>
+      <!-- Duoshuo Comment End -->
+    </div>
   </div>
-
-  <script type="text/javascript">
-    var jiathis_config = {data_track_clickback:true};
-</script>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1343704647947962" charset="utf-8"></script>
-<!-- JiaThis Button END -->
-
-<div class="cleared"></div>
-<div class="comments">
-  <!-- Duoshuo Comment Begin -->
-  <div class="ds-thread" data-thread-id="{{page.UUID}}" data-thread-key="{{page.UUID}}" data-title="{{page.title}}" data-url="{{site.baseurl}}{{page.url}}"></div>
-  <!-- Duoshuo Comment End -->
-</div>
 </div><!-- /content -->
 
 {% include aside.html %}
