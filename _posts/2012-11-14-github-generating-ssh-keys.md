@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Generating SSH Keys"
-tags: JavaScript
+tags: 
+- SSH
+- Github
 comment: true
 published: true
 author: demi-panda

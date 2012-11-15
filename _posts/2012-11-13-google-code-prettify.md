@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Google Code Prettify 实现代码高亮"
-tags: JavaScript
+tags: 
+- prettify
 comment: true
 published: true
 categories:

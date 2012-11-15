@@ -8,19 +8,25 @@ layout: default
     </h1>
     <div class="meta">
       Posted 
-      <time class="date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>&nbsp; 
+      <time class="date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>&nbsp; |
       {% if page.author != null %}
-      By {{ page.author }}
+      By {{ page.author }} |
       {% endif %}
+      分类:
       {% if page.categories %}
-      <div class="tag">
       {% for cat in page.categories %}
-      <a href="{{ site.baseurl }}/categories/#{{cat}}" class="text" title="{{ cat }}" rel="category tag">{{ cat }}</a>&nbsp;
+        <a href="{{ site.baseurl }}/categories/#{{cat}}" class="text" title="{{ cat }}" rel="category tag">{{ cat }}</a>&nbsp;
       {% endfor %}
-    </div>
       {% endif %}
-   </div>
-    
+      {% if page.tags%}
+      <div class="tag">
+        {% for tag in page.tags%}
+        <a href="{{ site.baseurl }}/tags/#{{tag}}" class="text" title="{{ tag }}" rel="category tag">{{ tag}}</a>&nbsp;
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+
     <div class="postcontent-entry">
       <div class="cleared"></div>
       {{ content }}
@@ -49,9 +55,9 @@ layout: default
     </div>
     <script type="text/javascript">
       var jiathis_config = {data_track_clickback:true};
-    </script>
-    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1343704647947962" charset="utf-8"></script>
-    <!-- JiaThis Button END -->
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1343704647947962" charset="utf-8"></script>
+<!-- JiaThis Button END -->
   </div><!-- /post -->
   <div class="cleared"></div>
 
