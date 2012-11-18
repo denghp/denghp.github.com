@@ -1,29 +1,23 @@
 ---
-title: 分类标签
+title: 标签
 layout: default
 ---
 
-<div id="main" >
-  <div id="content">
-    {% for tag in site.tags %}
-    <div class="post type-post status-publish format-standard hentry tag-{{tag[0]}} post" id="{{ tag[0] }}">
-      <div class="posttop">
-        <h1 class="posttitle">
-          {{ tag[0] }}
-        </h1>
-      </div>
-
-      {% for post in tag[1] %} 
-      <li class="listing-item">
-      <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-      <a href="{{ site.url }}{{ post.url }}" class="article" title="{{ post.title }}">{{ post.title }}</a>
-      </li>
-      {% endfor %}
-    </div><!-- /post -->
+<div id="content">
+  {% for tag in site.tags %}
+  <div class="archivesbox category-{{ cat[0]}}" id="{{ tag[0]}}">
+    <h3 class="widgettitle">
+      {{ tag[0] }}
+    </h3>
+    {% for post in tag[1] %} 
+    <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li>
     {% endfor %}
-    {% include disqus.html %}
-  </div> <!-- /content -->
-  {% include aside.html %}
-</div><!-- /main -->
+  </div><!-- /archivesbox -->
+  {% endfor %}
+</div> <!-- /content -->
+{% include aside.html %}
 
 

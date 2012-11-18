@@ -1,51 +1,50 @@
 <div id="sidebar">
-    <ul>
+  <ul>
     <li id="tag_cloud" class="boxed widget widget_tag_cloud">
     <h3 class="widgettitle">标签</h3>
-    <div class="tagcloud">
-      {% for tag in site.tags %}
-      <a href='{{ site.baseurl }}/tags/#{{ tag[0] }}' class='tag-link-{{tag[1].size}}' title='{{ tag[0] }}' style='font-size: {{ 10 | plus:tag[1].size }}pt;'>{{tag[0]}}</a>&nbsp;
+    {% for tag in site.tags %}
+      <a href='{{ site.baseurl }}/tags/#{{ tag[0] }}' class='tag-link-{{tag[1].size}}' title='{{ tag[0] }}' style='font-size: {{ 10 | plus:tag[0].size }}pt;'>{{ tag[0]}}</a>
       {% endfor %}
-      </li>
+    </li>
 
-      <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
-      <h3 class="widgettitle">热评文章</h3>
-      <ul class="ds-top-threads" data-num-items="5" data-range="weekly"></ul>
+    <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
+    <h3 class="widgettitle">热评文章</h3>
+    <ul class="ds-top-threads" data-num-items="5" data-range="weekly"></ul>
+    </li>
+    <li id="recent-posts-2" class="boxed widget widget_recent_entries">		
+    <h3 class="widgettitle">近期文章</h3>	
+    <ul>
+      {% for post in site.posts limit:5 %} 
+      <li>
+      <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
       </li>
-      <li id="recent-posts-2" class="boxed widget widget_recent_entries">		
-      <h3 class="widgettitle">近期文章</h3>	
-      <ul>
-        {% for post in site.posts limit:5 %} 
-        <li>
-        <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-      </li>
-      <li id="ds-recent-comments-3" class="boxed widget ds-widget-recent-comments">
-      <h3 class="widgettitle">近期评论</h3>
-      <ul class="ds-recent-comments" data-num-items="10" data-show-avatars="1" data-show-time="1" data-show-title="0" data-show-admin="0" data-avatar-size="32" data-excerpt-length="70">
-      </ul>
-      </li>
-      <script>
-        if (typeof DUOSHUO !== 'undefined')
-          DUOSHUO.RecentCommentsWidget && DUOSHUO.RecentCommentsWidget('.ds-recent-comments');
-        </script>
-      <li id="ds-qqt-follow" class="boxed widget ds-widget-qqt-follow">
-      <iframe src="http://follow.v.t.qq.com/index.php?c=follow&a=quick&name=denghp_280606790&style=1&t=1352387427769&f=1" frameborder="0" scrolling="auto" width="227" height="75" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
-      </li>
-      <li id="ds-recent-visitors-2" class="boxed widget ds-widget-recent-visitors">
-      <h3 class="widgettitle">最近访客</h3>
-      <ul class="ds-recent-visitors" data-num-items="21" data-show-time="0" data-avatar-size="50"></ul>
-      </li>
-      <script>
-        if (typeof DUOSHUO !== 'undefined')
-          DUOSHUO.TopThreads && DUOSHUO.TopThreads('.ds-top-threads');
-        </script>
+      {% endfor %}
     </ul>
-  </div>
-  <!-- /sidebar -->
-  <div class="cleared"></div>
+    </li>
+    <li id="ds-recent-comments-3" class="boxed widget ds-widget-recent-comments">
+    <h3 class="widgettitle">近期评论</h3>
+    <ul class="ds-recent-comments" data-num-items="10" data-show-avatars="1" data-show-time="1" data-show-title="0" data-show-admin="0" data-avatar-size="32" data-excerpt-length="70">
+    </ul>
+    </li>
+    <script>
+      if (typeof DUOSHUO !== 'undefined')
+      DUOSHUO.RecentCommentsWidget && DUOSHUO.RecentCommentsWidget('.ds-recent-comments');
+    </script>
+    <li id="ds-qqt-follow" class="boxed widget ds-widget-qqt-follow">
+    <iframe src="http://follow.v.t.qq.com/index.php?c=follow&a=quick&name=denghp_280606790&style=1&t=1352387427769&f=1" frameborder="0" scrolling="auto" width="227" height="75" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
+    </li>
+    <li id="ds-recent-visitors-2" class="boxed widget ds-widget-recent-visitors">
+    <h3 class="widgettitle">最近访客</h3>
+    <ul class="ds-recent-visitors" data-num-items="21" data-show-time="0" data-avatar-size="50"></ul>
+    </li>
+    <script>
+      if (typeof DUOSHUO !== 'undefined')
+      DUOSHUO.TopThreads && DUOSHUO.TopThreads('.ds-top-threads');
+    </script>
+  </ul>
+</div>
+<!-- /sidebar -->
+<div class="cleared"></div>
 
 
 

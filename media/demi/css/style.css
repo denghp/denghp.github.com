@@ -89,6 +89,9 @@ h2#contentdesc span {color:#225990;}
   -webkit-border-radius: 8px;
   border-radius: 8px;
 }
+.archivesbox h3 {font-weight:normal; font-size:1.4em; margin-bottom:10px;line-height:0.3;margin-top:8px;}
+.archivesbox a {color:#090;padding:2px}
+.archivesbox a:hover {color:#000;}
 
 .post {padding:15px 20px; margin-bottom:10px; background:#fff url(../img/graygrad.gif) top left repeat-x; border:1px solid #d1d1d1;
   /* optional rounded corners for browsers that support it */
@@ -99,10 +102,10 @@ h2#contentdesc span {color:#225990;}
 }
 .sticky {background:none;}
 .posttop h1.posttitle a {color:#232323; font-size:1.8em;}
-.posttop h2.posttitle a:hover {color: #246105; text-decoration: none;}
+.posttop h2.posttitle a:hover {color: #000; text-decoration: none;}
 .posttop h2.posttitle a {
   font-family: "Times New Roman",Times, serif;
-  color: #54990B;
+  color:#090;
   font-size: 1.5em;
   font-weight: bold;
   letter-spacing: -1pt;
@@ -112,9 +115,10 @@ h2#contentdesc span {color:#225990;}
 
 .postmetatop {font-size:0.9em; padding-top:7px; line-height:1.5em; color:#666;}
 .postmetatop a {color:#333;}
-.postmetatop .text {color:#489620;}
-.postmetatop .date {color: #489620;}
-.postmetatop a:hover {color:#225990;}
+.postmetatop .text {color:#090;}
+.postmetatop .date {color:#090;}
+
+.postmetatop a:hover {color:#000;}
 
 .postcontent {margin:.8em 0; font-size:1.1em; line-height:1.5em;}
 .postcontent h1 {padding:.8em 0; font-size:1.5em;}
@@ -267,7 +271,7 @@ h2#contentdesc span {color:#225990;}
 /************************************************
 *          Sidebar       *
 ************************************************/
-#sidebar {float:right; width:330px; font-size:0.8em; line-height:1.4em;}
+#sidebar {float:right; width:330px; font-size:1.0em; line-height:1.4em;}
 #sidebar ul li.boxed {padding:15px; margin-bottom:10px; background:#fff url(../img/graygrad.gif) top left repeat-x; border:1px solid #d1d1d1;
   /* optional rounded corners for browsers that support it */
   -moz-border-radius: 8px;
@@ -281,7 +285,7 @@ h2#contentdesc span {color:#225990;}
   color: #2B2727;
   font-size: 15px;
   word-spacing: -1.4pt;
-  line-height: 1.7;
+  line-height: 1.0;
 }
 #sidebar ul ul li {margin-bottom:8px;}
 #sidebar ul ul li a {display:block; padding:8px; background:#e9e9e9; color:#222; border:1px solid #dedede;
@@ -292,8 +296,10 @@ h2#contentdesc span {color:#225990;}
   border-radius: 4px;
 }
 #sidebar ul ul li a:hover {background:#dcdcdc; color:#111; border:#1px solid #d9d9d9;}
+#sidebar ul li a {color:#090; padding:2px;}
+#sidebar ul li a:hover {color:#000; border:#1px solid #d9d9d9;}
+
 #sidebar p {padding:5px 0 5px 0;}
-#sidebar p a {}
 #sidebar p a:hover {background:#dceeff; color:#010101;}
 #sidebar img {border:none; }
 #tag_cloud a, .widget_tag_cloud a {display:inline;}
@@ -419,17 +425,13 @@ img.aligncenter {margin:10px auto; text-align:center; display:block;}
 .col-text ul {margin-bottom:0;}
 .col-more {padding:10px 10px 1px 0; text-align:right;}
 
-
-ul.ul-list {margin:15px 0; list-style:none;}
-ul.ul-list li {padding:1px 0;}
-ul.ul-list span.date {padding-right:10px;}
-
 .listing-item a, .listing-item a:hover{              
   border-bottom:0px;
+  color:#090;
   padding:.2em 1em;
 }
 
-.listing-item a:hover{color:#00B2EE;}
+.listing-item a:hover{color:#000;}
 
 .listing-item time {
   color:#999;
@@ -453,7 +455,10 @@ ul.ul-list span.date {padding-right:10px;}
 
 .post .title {
   font-family: courier, 'courier new', monospace;
+  /**
   color: #75A83E;
+  **/
+  color:#090;
   font-size: 1.6em;
   font-weight: bold;
   text-align: left;
@@ -472,7 +477,10 @@ ul.ul-list span.date {padding-right:10px;}
   font-weight: 600; 
   border-bottom: 3px solid #f0f0f0;
 }
+/**
 .post .meta .text {color:#489620;}
+**/
+.post .meta .text {color:#090;}
 .post .meta .date {
   color: #489620;
 }
