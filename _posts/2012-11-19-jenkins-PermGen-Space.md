@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Jekins PermGen space 问题
+title: Jenkins PermGen space 问题
 tags: 
-- Jekins
+- Jenkins
 - Mavne
 categories:
-- Jekins
+- Jenkins
 UUID: 201211192343
 date: 2012-11-19
 ---

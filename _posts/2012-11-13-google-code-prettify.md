@@ -15,10 +15,17 @@ Prettify提供一个Javascript模块和CSS 文件,可以在HTML页面中显示�
 
 ### 语法
 <pre id="javascript">
-&lt;pre class=&quot;prettyprint&quot;&gt;
+&lt;pre class=&quot;prettyprint&quot; id=&quot;language&quot;&gt;
 @*你的代码片断*@
 &lt;/pre&gt;
 </pre>
+
+### 常用的语言
+将id的language改成以下的语言：
+<pre>
+“bash”, “c”, “cc”, “cpp”, “cs”, “csh”, “cyc”, “cv”, “htm”, “html”, ”java”, “js”, “m”, “mxml”, “perl”, “pl”, “pm”, “py”, “rb”, “sh”, ”xhtml”, “xml”, “xsl”
+</pre>
+
 
 ### prettify.js 的使用方法:
 ##### 1、引入 jQuery 文件和 prettify.js 文件
