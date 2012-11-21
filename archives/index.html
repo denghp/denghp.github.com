@@ -10,7 +10,7 @@ layout: default
         <a href="{{site.baseurl}}{{ post.url }}" rel="bookmark" title="{{ post.title }} {{ post.date | date_to_string }}">{{ post.title }}</a>
       </h2>
       <div class="postmetatop">
-        Posted <time class="date" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>&nbsp;
+        Posted <time class="text" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>&nbsp;
         {% if post.author != null %}
         By {{ post.author }}
         {% endif %}

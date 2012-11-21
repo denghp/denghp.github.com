@@ -3,19 +3,21 @@ layout: default
 ---
 <div id="content">
   <div class="post type-post status-publish format-standard hentry category-1 post" >
-    <h1 class="title">
-      {{ page.title }}
+    <div class="posttop">
+    <h1 class="posttitle">
+  <a href="{{site.baseurl}}{{ post.url }}" rel="bookmark" title="{{ post.title }} {{ post.date | date_to_string }}">{{ page.title }}</a>
     </h1>
+  </div>
     <div class="meta">
       Posted 
-      <time class="date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>&nbsp; |
+      <time class="text" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>&nbsp; |
       {% if page.author != null %}
       By {{ page.author }} |
       {% endif %}
       分类:
       {% if page.categories %}
       {% for cat in page.categories %}
-        <a href="{{ site.baseurl }}/categories/#{{cat}}" class="text" title="{{ cat }}" rel="category tag">{{ cat }}</a>&nbsp;
+        <a href="{{ site.baseurl }}/categories/#{{cat}}" class="text" title="{{ cat }}" rel="category tag">{{ cat }}</a>&nbsp;|
       {% endfor %}
       {% endif %}
       {% if page.tags%}

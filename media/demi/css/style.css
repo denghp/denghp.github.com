@@ -90,7 +90,7 @@ h2#contentdesc span {color:#225990;}
   border-radius: 8px;
 }
 .archivesbox h3 {font-weight:normal; font-size:1.4em; margin-bottom:10px;line-height:0.3;margin-top:8px;}
-.archivesbox a {color:#090;padding:2px}
+.archivesbox a {color:#489620;padding:2px;margin:0 0 5px 0; font:normal "Microsoft YaHei";}
 .archivesbox a:hover {color:#000;}
 
 .post {padding:15px 20px; margin-bottom:10px; background:#fff url(../img/graygrad.gif) top left repeat-x; border:1px solid #d1d1d1;
@@ -101,23 +101,19 @@ h2#contentdesc span {color:#225990;}
   border-radius: 8px;
 }
 .sticky {background:none;}
-.posttop h1.posttitle a {color:#232323; font-size:1.8em;}
+.posttop h1.posttitle a {
+  margin:0 0 5px 0; font:normal 24px/32px "Microsoft YaHei";
+  text-decoration: none;
+}
 .posttop h2.posttitle a:hover {color: #000; text-decoration: none;}
 .posttop h2.posttitle a {
-  font-family: "Times New Roman",Times, serif;
-  color:#090;
-  font-size: 1.5em;
-  font-weight: bold;
-  letter-spacing: -1pt;
-  word-spacing: 1.8pt;
-  line-height: 0.8;
+  margin:0 0 5px 0; font:normal 18px/26px "Microsoft YaHei";
+  text-decoration: none;
   }
 
 .postmetatop {font-size:0.9em; padding-top:7px; line-height:1.5em; color:#666;}
 .postmetatop a {color:#333;}
-.postmetatop .text {color:#090;}
-.postmetatop .date {color:#090;}
-
+.postmetatop .text {color:#489620}
 .postmetatop a:hover {color:#000;}
 
 .postcontent {margin:.8em 0; font-size:1.1em; line-height:1.5em;}
@@ -296,8 +292,11 @@ h2#contentdesc span {color:#225990;}
   border-radius: 4px;
 }
 #sidebar ul ul li a:hover {background:#dcdcdc; color:#111; border:#1px solid #d9d9d9;}
-#sidebar ul li a {color:#090; padding:2px;}
-#sidebar ul li a:hover {color:#000; border:#1px solid #d9d9d9;}
+#sidebar ul li a {color:#333; padding:2px;margin:0 0 5px 0; font:normal "Microsoft YaHei";}
+/**
+#sidebar ul li a {color:#333; padding:2px;margin:0 0 5px 0; font:normal 8px/14px "Microsoft YaHei";}
+**/
+#sidebar ul li a:hover {color:#0079E1; border:#1px solid #d9d9d9;}
 
 #sidebar p {padding:5px 0 5px 0;}
 #sidebar p a:hover {background:#dceeff; color:#010101;}
@@ -377,7 +376,7 @@ img.aligncenter {margin:10px auto; text-align:center; display:block;}
  *
  * -----------------------------*/
 #tray {background-color:#BFBFBF;}
-#tray li a {color:#404040;}
+#tray li a {color:#404040;font-size: 1.2em;}
 #tray li#tray-active a {background-color:#888; color:#FFF;}
 #tray li a:hover {background-color:#9F9F9F; color:#FFF;}
 
@@ -408,7 +407,7 @@ img.aligncenter {margin:10px auto; text-align:center; display:block;}
 
 #cols2 #col-left .title h4, #cols2 #col-right h4 {color:#090;}
 #cols2 #col-left .title h4, #cols2 #col-left .title span {background-color:#FFF;}
-#cols2 #col-left .article {color:#090;}
+#cols2 #col-left .article {color:#489620;}
 #cols2 #col-left a:hover.article {color:#000;}
 
 #cols2 #col-right {background-color:#EEF8E4;}
@@ -427,7 +426,7 @@ img.aligncenter {margin:10px auto; text-align:center; display:block;}
 
 .listing-item a, .listing-item a:hover{              
   border-bottom:0px;
-  color:#090;
+  color:#489620;
   padding:.2em 1em;
 }
 
@@ -448,16 +447,22 @@ img.aligncenter {margin:10px auto; text-align:center; display:block;}
 ************************************************/
 .postcontent-entry h1 { padding: 3px 0; font-size: 20px; line-height: normal; margin-bottom: 20px; color: #489620; font-weight: 700; border-bottom: 1px solid #e8e8e8; }
 .postcontent-entry h2 { margin-bottom: 20px; color: #489620; padding: 3px 0; font-size: 18px; line-height: normal; border-bottom: 1px solid #e8e8e8; font-family: 700; }
+.postcontent-entry h3 {
+  font-family: verdana, sans-serif;
+  color: #262424;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid #e8e8e8; margin-bottom: 18px; margin-top: 1.5em; 
+}
+/**
 .postcontent-entry h3 { font-size: 16px; font-weight: 700; line-height: 26px; color: #489620; border-bottom: 1px solid #e8e8e8; margin-bottom: 18px; margin-top: 1.5em; }
+**/
 .postcontent-entry h4 { margin-bottom: 18px; font-size: 14px; font-weight: 700; color: #489620; line-height: 26px; text-transform: uppercase; }
 .postcontent-entry h5 { margin-bottom: 18px; color: #444; font-size: 14px; line-height: 26px; text-transform: uppercase; }
 .postcontent-entry h6 { font-size: 13px; font-weight: 700; margin-bottom: 0.5em; color: #444; line-height: 26px; }
-
+/**
 .post .title {
   font-family: courier, 'courier new', monospace;
-  /**
-  color: #75A83E;
-  **/
   color:#090;
   font-size: 1.6em;
   font-weight: bold;
@@ -466,6 +471,7 @@ img.aligncenter {margin:10px auto; text-align:center; display:block;}
   word-spacing: -1pt;
   line-height: 0.8;
  }
+ **/
 
 .post .meta {
   text-align: left;
@@ -477,13 +483,7 @@ img.aligncenter {margin:10px auto; text-align:center; display:block;}
   font-weight: 600; 
   border-bottom: 3px solid #f0f0f0;
 }
-/**
 .post .meta .text {color:#489620;}
-**/
-.post .meta .text {color:#090;}
-.post .meta .date {
-  color: #489620;
-}
 .post .meta .author {
   padding-right: 4px; 
 }

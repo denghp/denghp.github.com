@@ -17,11 +17,12 @@ date: 2012-11-20
 Virtual Box操作系统：XP SP3
 移动证书：工行U盾
 
+###VirtualBox使用U盾
+1. 下载安装VirtualBox。注意去官网上下载最新版的，Ubuntu自带的OSE不支持USB的。
+2. 在虚拟机上安装WindowsXP。
+3. 配置Ubuntu，注意细节。
 
-###下载安装VirtualBox。注意去官网上下载最新版的，Ubuntu自带的OSE不支持USB的。
-###在虚拟机上安装WindowsXP。
-###配置Ubuntu，注意细节
-a.新建一个usbfs组：
+a. 新建一个usbfs组：
 <pre id="bash">
 $ sudo groupadd usbfs
 </pre>
@@ -57,7 +58,8 @@ Press S to skip mounting or M for manual recovery
 </pre>
 
 按S进入Ubuntu，运行VirtualBox U盾使用正常。
-注：解决报错提示：
+
+*注：解决报错提示：*
 <pre id="bash">
 1.sudo gedit /etc/fstab  注释
 ＃none /proc/bus/usb usbfs devmode=0664,devgid=1001 0 0
