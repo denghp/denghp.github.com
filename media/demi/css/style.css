@@ -101,7 +101,7 @@ h2#contentdesc span {color:#225990;}
   border-radius: 8px;
 }
 .sticky {background:none;}
-.posttop h1.posttitle a {
+.posttop h1.posttitle{
   margin:0 0 5px 0; font:normal 24px/32px "Microsoft YaHei";
   text-decoration: none;
 }
@@ -293,9 +293,6 @@ h2#contentdesc span {color:#225990;}
 }
 #sidebar ul ul li a:hover {background:#dcdcdc; color:#111; border:#1px solid #d9d9d9;}
 #sidebar ul li a {color:#333; padding:2px;margin:0 0 5px 0; font:normal "Microsoft YaHei";}
-/**
-#sidebar ul li a {color:#333; padding:2px;margin:0 0 5px 0; font:normal 8px/14px "Microsoft YaHei";}
-**/
 #sidebar ul li a:hover {color:#0079E1; border:#1px solid #d9d9d9;}
 
 #sidebar p {padding:5px 0 5px 0;}
@@ -446,7 +443,11 @@ img.aligncenter {margin:10px auto; text-align:center; display:block;}
 *          post-entry *
 ************************************************/
 .postcontent-entry h1 { padding: 3px 0; font-size: 20px; line-height: normal; margin-bottom: 20px; color: #489620; font-weight: 700; border-bottom: 1px solid #e8e8e8; }
-.postcontent-entry h2 { margin-bottom: 20px; color: #489620; padding: 3px 0; font-size: 18px; line-height: normal; border-bottom: 1px solid #e8e8e8; font-family: 700; }
+.postcontent-entry h2 { 
+  font-family: verdana, sans-serif;
+  color: #262424;
+  padding: 3px 0; font-size: 18px; line-height: normal; border-bottom: 1px solid #e8e8e8; font-family: 700; 
+}
 .postcontent-entry h3 {
   font-family: verdana, sans-serif;
   color: #262424;
@@ -454,25 +455,14 @@ img.aligncenter {margin:10px auto; text-align:center; display:block;}
   font-weight: bold;
   border-bottom: 1px solid #e8e8e8; margin-bottom: 18px; margin-top: 1.5em; 
 }
-/**
-.postcontent-entry h3 { font-size: 16px; font-weight: 700; line-height: 26px; color: #489620; border-bottom: 1px solid #e8e8e8; margin-bottom: 18px; margin-top: 1.5em; }
-**/
 .postcontent-entry h4 { margin-bottom: 18px; font-size: 14px; font-weight: 700; color: #489620; line-height: 26px; text-transform: uppercase; }
-.postcontent-entry h5 { margin-bottom: 18px; color: #444; font-size: 14px; line-height: 26px; text-transform: uppercase; }
-.postcontent-entry h6 { font-size: 13px; font-weight: 700; margin-bottom: 0.5em; color: #444; line-height: 26px; }
-/**
-.post .title {
-  font-family: courier, 'courier new', monospace;
-  color:#090;
-  font-size: 1.6em;
+.postcontent-entry h5 { 
+  font-family: verdana, sans-serif;
+  color: #262424;
+  font-size: 14px;
   font-weight: bold;
-  text-align: left;
-  letter-spacing: -1pt;
-  word-spacing: -1pt;
-  line-height: 0.8;
- }
- **/
-
+}
+.postcontent-entry h6 { font-size: 13px; font-weight: 700; margin-bottom: 0.5em; color: #444; line-height: 26px; }
 .post .meta {
   text-align: left;
   color: #a0a0a0;

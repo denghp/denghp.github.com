@@ -6,20 +6,19 @@
       <a href='{{ site.baseurl }}/tags/#{{ tag[0] }}' class='tag-link-{{tag[1].size}}' title='{{ tag[0] }}' style='font-size: {{ 10 | plus:tag[0].size }}pt;'>{{ tag[0]}}</a>
       {% endfor %}
     </li>
-
-    <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
-    <h3 class="widgettitle">热评文章</h3>
-    <ul class="ds-top-threads" data-num-items="5" data-range="weekly"></ul>
-    </li>
     <li id="recent-posts-2" class="boxed widget widget_recent_entries">		
     <h3 class="widgettitle">近期文章</h3>	
     <ul>
-      {% for post in site.posts limit:5 %} 
+      {% for post in site.posts limit:10 %} 
       <li>
       <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
       </li>
       {% endfor %}
     </ul>
+    </li>
+    <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
+    <h3 class="widgettitle">热评文章</h3>
+    <ul class="ds-top-threads" data-num-items="5" data-range="weekly"></ul>
     </li>
     <li id="ds-recent-comments-3" class="boxed widget ds-widget-recent-comments">
     <h3 class="widgettitle">近期评论</h3>
