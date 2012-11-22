@@ -90,7 +90,7 @@ h2#contentdesc span {color:#225990;}
   border-radius: 8px;
 }
 .archivesbox h3 {font-weight:normal; font-size:1.4em; margin-bottom:10px;line-height:0.3;margin-top:8px;}
-.archivesbox a {color:#489620;padding:2px;margin:0 0 5px 0; font:normal "Microsoft YaHei";}
+.archivesbox a {color:#090;padding:2px;margin:0 0 5px 0; font:normal "Microsoft YaHei";}
 .archivesbox a:hover {color:#000;}
 
 .post {padding:15px 20px; margin-bottom:10px; background:#fff url(../img/graygrad.gif) top left repeat-x; border:1px solid #d1d1d1;
@@ -113,7 +113,7 @@ h2#contentdesc span {color:#225990;}
 
 .postmetatop {font-size:0.9em; padding-top:7px; line-height:1.5em; color:#666;}
 .postmetatop a {color:#333;}
-.postmetatop .text {color:#489620}
+.postmetatop .text {color:#090;}
 .postmetatop a:hover {color:#000;}
 
 .postcontent {margin:.8em 0; font-size:1.1em; line-height:1.5em;}
@@ -404,7 +404,7 @@ img.aligncenter {margin:10px auto; text-align:center; display:block;}
 
 #cols2 #col-left .title h4, #cols2 #col-right h4 {color:#090;}
 #cols2 #col-left .title h4, #cols2 #col-left .title span {background-color:#FFF;}
-#cols2 #col-left .article {color:#489620;}
+#cols2 #col-left .article {color:#090;}
 #cols2 #col-left a:hover.article {color:#000;}
 
 #cols2 #col-right {background-color:#EEF8E4;}
@@ -423,7 +423,7 @@ img.aligncenter {margin:10px auto; text-align:center; display:block;}
 
 .listing-item a, .listing-item a:hover{              
   border-bottom:0px;
-  color:#489620;
+  color:#090;
   padding:.2em 1em;
 }
 
