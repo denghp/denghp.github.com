@@ -1,0 +1,403 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="robots" content="all,follow" />
+    <title>Tomcat升级 - 熊猫人Blog</title>
+    <meta name="author" lang="en" content="All: Demi-Panda Lab [demi-panda.com]; e-mail: blog.pandam@gmail.com" />
+    <meta name="copyright" lang="en" content="@2012 Demi_Panda Lab, All Rights Reserved!" />
+    <meta name="description" content="熊猫人Blog主题：感想,敢拼,敢赢..." />
+    <link rel="shortcut icon" href="/media/demi/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="/media/demi/css/style.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="/media/demi/css/main.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="/media/demi/css/reset.css" />
+    <!--
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="/media/demi/css/embed.css" />
+    -->
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="/media/demi/css/superfish.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="/media/demi/css/prettify.css" />
+    <script src="/media/js/jquery-1.6.1.min.js" type="text/javascript"></script>
+    <script src="/media/js/jquery.jcarousel.min.js" type="text/javascript"></script>
+    <script src="/media/js/jquery.tagcloud.js" type="text/javascript"></script>
+    <script src="/media/js/jquery.demi.slider.js" type="text/javascript"></script>
+
+    <link rel="alternate" type="application/rss+xml" title="熊猫人Blog" href="/rss.xml" />
+    <script type="text/javascript" src="http://static.duoshuo.com/js/common.js"></script>
+    <script src="/media/js/prettify.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+      var duoshuoQuery = {short_name:"demi-panda"};
+    </script>
+    <script type="text/javascript" src="http://static.duoshuo.com/embed.js"></script>
+
+      <script type="text/javascript">
+      $(window).load(function(){
+          $("pre").addClass("prettyprint");
+          prettyPrint();
+          })
+        </script>
+
+    <script language="javascript">
+      $.fn.tagcloud.defaults = {
+        size: {start: 0.9, end: 2, unit: 'em'},
+        color: {start: '#e77471', end: '#f62817'}
+      };
+
+      $(function () {
+        $('#tagcloud a').tagcloud();
+      });
+    </script>  
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36197302-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+
+     </script>
+   </head>
+
+
+   <body >
+
+     <div id="wrapper">
+       <!-- /header -->
+<div id="header">
+
+  <div id="logo">
+    <h1 id="logo">
+      <a href="/" title="[Go to homepage]"><img src="/media/demi/img/demi-logo-2.png" alt="" /></a>
+    </h1> 
+  </div><!-- /logo -->
+
+  <div class="cleared"></div>
+</div>
+<!-- /header -->
+
+ 
+       <!-- Tray -->
+<div id="tray">
+  <ul>
+    <li ><a href="/">Home</a></li>
+    <li ><a href="/archives/">文章列表</a></li>
+    <li ><a href="/categories/">分类目录</a></li>
+    <li ><a href="/life/">生活范儿</a></li>
+    <li ><a href="/tags/">标签</a></li>
+    <li ><a href="/about/">关于我</a></li>
+  </ul>
+  <hr class="noscreen" />                    
+</div> 
+<!-- /tray -->
+
+
+       <div id="main">
+         <div id="content">
+  <div class="post type-post status-publish format-standard hentry category-1 post" >
+    <div class="posttop">
+      <h1 class="posttitle">
+        Tomcat升级
+      </h1>
+    </div>
+    <div class="meta">
+      Posted 
+      <time class="text" datetime="2010-07-27">2010-07-27</time>&nbsp; |
+      
+      分类:
+      
+      
+      <a href="/categories/#Programming" class="text" title="Programming" rel="category tag">Programming</a>&nbsp;
+      
+      
+      &nbsp;&nbsp;
+
+      <!-- Place this tag where you want the +1 button to render. -->
+      <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="200"></div>
+
+      <!-- Place this tag after the last +1 button tag. -->
+      <script type="text/javascript">
+        window.___gcfg = {lang: 'zh-CN'};
+
+(function() {
+ var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+ po.src = 'https://apis.google.com/js/plusone.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+ })();
+</script>
+      
+      <div class="tag">
+        
+        <a href="/tags/#Java" class="text" title="Java" rel="category tag">Java</a>&nbsp;
+        
+      </div>
+      
+    </div>
+
+    <div class="postcontent-entry">
+      <div class="cleared"></div>
+      <p>之前tomcat使用的版本是5.5.26 ，由于存在DDOS攻击的漏洞，所以需要进行升级，
+本来打算升级到5.5.30的，无奈发现部署了新版本的tomcat，F5就直接认为其不可用，
+经过在所升级的机器上使用links之类的工具直接访问localhost，发现web应用是正常的。
+这个时候把目光转移到F5上，应该和F5的健康检查有一定的关系。</p>
+
+<p>第二天，找到相应的网络工程师。一台开起tomcat5.5.30 另一台不变，果真发现5.5.30的机器被F5认为不可用。
+通过求同寻异的方法，最后定位到一个通过openssl s_client -host host -port port（应用限制使用https方式访问）然后GET某个标志应用状态的页面来检查的策略上。</p>
+
+<p>通过linux下测试果然发现5.5.30上GET的结果为：</p>
+
+<p>GET /xxx/xxx/status
+HTTP/1.1 400 Bad Request
+Server: Apache-Coyote/1.1
+Transfer-Encoding: chunked
+Date: Mon, 26 Jul 2010 19:39:47 GMT
+Connection: close</p>
+
+<p>找到原因了，怎么办呢？为了快速解决问题，所以尝试了下6版本的安全版本6.0.28 发现GET /xxx/xxx/status的结果是OK的，于是就直接升级到这个版本。
+今天再回过头来看之前5.5.30的问题的原因。</p>
+
+<p>发现当指定为 HTTP/1.0的协议是可以的</p>
+
+<div class="highlight"><pre><code class="html">GET /xxx/xxx/status HTTP/1.0
+</code></pre>
+</div>
+
+
+<p>两次回车</p>
+
+<div class="highlight"><pre><code class="html">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Length: 2
+Date: Mon, 26 Jul 2010 19:46:46 GMT
+Connection: close
+
+OKclosed
+</code></pre>
+</div>
+
+
+<p>如果指定HTTP/1.1 的话
+按一次回车不会显示结果 ，如果这个时候输入host：123.343.343.43之类的host信息再回车的话，可以获取结果，但是发现连接没有关闭还可以继续发送GET请求。</p>
+
+<div class="highlight"><pre><code class="html">GET /xxx/xxx/status HTTP/1.1
+host:127.0.0.1
+
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Length: 2
+Date: Mon, 26 Jul 2010 19:48:55 GMT
+
+OK
+</code></pre>
+</div>
+
+
+<p>由于没有精力去调试tomcat的源码，而且找官方文档也没发现什么信息。唉。</p>
+
+<p>还有tomcat在各个版本以及各个平台下的ssl的配置可能会存在各种问题
+比如通过https访问的时候显示ssl_error_rx_record_too_long的错误或者显示连接被断开。
+所以配置Connector 的时候，不行的话尝试添加protocol=”org.apache.coyote.http11.Http11Protocol”和SSLEnabled=”true”等参数。</p>
+
+    </div><!-- /postcontent -->
+
+    <div class="v-pagination">
+      
+      <a class="prev" href="/2010/07/22/java-hashmap" title="前一篇：Java HashMap 核心源码解读">&laquo; Java HashMap 核心源码解读</a>
+      
+      <!--
+      <a class="center" href="/archives/">文章列表</a>
+      -->
+      
+      <a class="next" href="/2010/07/28/concurrenthashmap" title="后一篇：ConcurrentHashMap原理分析">ConcurrentHashMap原理分析 &raquo;</a>
+      
+    </div>
+    <!-- JiaThis Button BEGIN -->
+    <div class="jiathis_style" style="margin: 10px 10px 20px 0;padding: 10px 0 0;">
+      <span class="jiathis_txt">分享到：</span>
+      <a class="jiathis_button_tools_1"></a>
+      <a class="jiathis_button_tools_2"></a>
+      <a class="jiathis_button_tools_3"></a>
+      <a class="jiathis_button_tools_4"></a>
+      <a href="http://www.jiathis.com/share?uid=1706288" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+      <a class="jiathis_counter_style"></a>
+    </div>
+    <script type="text/javascript">
+      var jiathis_config = {data_track_clickback:true};
+    </script>
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1343704647947962" charset="utf-8"></script>
+    <!-- JiaThis Button END -->
+  </div><!-- /post -->
+  <div class="cleared"></div>
+
+  <div class="archivesbox">
+    <div class="comments">
+      <!-- Duoshuo Comment Begin -->
+      <div class="ds-thread" data-thread-id="20100727" data-thread-key="20100727" data-title="Tomcat升级" data-url="/2010/07/27/tomcat-upgrade"
+        data-order="desc" data-form-positon="top"></div>
+      <!-- Duoshuo Comment End -->
+    </div>
+  </div>
+</div><!-- /content -->
+
+<div id="sidebar">
+  <ul>
+    <li id="tag_cloud" class="boxed widget widget_tag_cloud">
+    <h3 class="widgettitle">标签</h3>
+    
+      <a href='/tags/#Shell' class='tag-link-9' title='Shell' style='font-size: 15pt;'>Shell</a>
+      
+      <a href='/tags/#Jekyll' class='tag-link-1' title='Jekyll' style='font-size: 16pt;'>Jekyll</a>
+      
+      <a href='/tags/#CI' class='tag-link-1' title='CI' style='font-size: 12pt;'>CI</a>
+      
+      <a href='/tags/#Annotation' class='tag-link-1' title='Annotation' style='font-size: 20pt;'>Annotation</a>
+      
+      <a href='/tags/#Java' class='tag-link-6' title='Java' style='font-size: 14pt;'>Java</a>
+      
+      <a href='/tags/#prettify' class='tag-link-1' title='prettify' style='font-size: 18pt;'>prettify</a>
+      
+      <a href='/tags/#svn' class='tag-link-1' title='svn' style='font-size: 13pt;'>svn</a>
+      
+      <a href='/tags/#version' class='tag-link-1' title='version' style='font-size: 17pt;'>version</a>
+      
+      <a href='/tags/#HTTP' class='tag-link-1' title='HTTP' style='font-size: 14pt;'>HTTP</a>
+      
+      <a href='/tags/#OS' class='tag-link-1' title='OS' style='font-size: 12pt;'>OS</a>
+      
+      <a href='/tags/#Markdown' class='tag-link-1' title='Markdown' style='font-size: 18pt;'>Markdown</a>
+      
+      <a href='/tags/#Life' class='tag-link-1' title='Life' style='font-size: 14pt;'>Life</a>
+      
+      <a href='/tags/#Linux' class='tag-link-11' title='Linux' style='font-size: 15pt;'>Linux</a>
+      
+      <a href='/tags/#SSH' class='tag-link-2' title='SSH' style='font-size: 13pt;'>SSH</a>
+      
+      <a href='/tags/#Jenkins' class='tag-link-2' title='Jenkins' style='font-size: 17pt;'>Jenkins</a>
+      
+      <a href='/tags/#研发实践' class='tag-link-2' title='研发实践' style='font-size: 22pt;'>研发实践</a>
+      
+      <a href='/tags/#Hudson' class='tag-link-1' title='Hudson' style='font-size: 16pt;'>Hudson</a>
+      
+      <a href='/tags/#Python' class='tag-link-1' title='Python' style='font-size: 16pt;'>Python</a>
+      
+      <a href='/tags/#Ubuntu' class='tag-link-2' title='Ubuntu' style='font-size: 16pt;'>Ubuntu</a>
+      
+      <a href='/tags/#安全' class='tag-link-1' title='安全' style='font-size: 16pt;'>安全</a>
+      
+      <a href='/tags/#Github' class='tag-link-2' title='Github' style='font-size: 16pt;'>Github</a>
+      
+      <a href='/tags/#编程实践' class='tag-link-1' title='编程实践' style='font-size: 22pt;'>编程实践</a>
+      
+      <a href='/tags/#编程语言' class='tag-link-1' title='编程语言' style='font-size: 22pt;'>编程语言</a>
+      
+      <a href='/tags/#Mavne' class='tag-link-1' title='Mavne' style='font-size: 15pt;'>Mavne</a>
+      
+      <a href='/tags/#梦想' class='tag-link-1' title='梦想' style='font-size: 16pt;'>梦想</a>
+      
+      <a href='/tags/#HTML' class='tag-link-1' title='HTML' style='font-size: 14pt;'>HTML</a>
+      
+    </li>
+    <li id="recent-posts-2" class="boxed widget widget_recent_entries">		
+    <h3 class="widgettitle">近期文章</h3>	
+    <ul>
+       
+      <li>
+      <a href="/2012/11/22/version-manager" title="版本管理策略">版本管理策略</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/22/linux-find-practice" title="Linux find命令实践">Linux find命令实践</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/22/bash-profile" title=".bash_profile .bashrc profile 文件的作用的执行顺序">.bash_profile .bashrc profile 文件的作用的执行顺序</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/21/ssh-remote" title="SSH登陆响应慢的问题">SSH登陆响应慢的问题</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/21/http-status" title="HTTP状态码">HTTP状态码</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/20/ubunut-virtualbox" title="Ubuntu 中VirtualBox 使用U盾">Ubuntu 中VirtualBox 使用U盾</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/20/linux-ffmpeg" title="Linux下的命令行下转换媒体格式工具FFMPEG详解">Linux下的命令行下转换媒体格式工具FFMPEG详解</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/19/linux-command" title="程序员的利器-Linux常用命令">程序员的利器-Linux常用命令</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/19/jenkins-PermGen-Space" title="Jenkins PermGen space 问题">Jenkins PermGen space 问题</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/18/easybcd-win7-ubuntu" title="Win7 + Ubuntu12.04 + EasyDBC安装">Win7 + Ubuntu12.04 + EasyDBC安装</a>
+      </li>
+      
+    </ul>
+    </li>
+    <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
+    <h3 class="widgettitle">热评文章</h3>
+    <ul class="ds-top-threads" data-num-items="5" data-range="weekly"></ul>
+    </li>
+    <li id="ds-recent-comments-3" class="boxed widget ds-widget-recent-comments">
+    <h3 class="widgettitle">近期评论</h3>
+    <ul class="ds-recent-comments" data-num-items="10" data-show-avatars="1" data-show-time="1" data-show-title="0" data-show-admin="0" data-avatar-size="32" data-excerpt-length="70">
+    </ul>
+    </li>
+    <script>
+      if (typeof DUOSHUO !== 'undefined')
+      DUOSHUO.RecentCommentsWidget && DUOSHUO.RecentCommentsWidget('.ds-recent-comments');
+    </script>
+    <li id="ds-qqt-follow" class="boxed widget ds-widget-qqt-follow">
+    <iframe src="http://follow.v.t.qq.com/index.php?c=follow&a=quick&name=denghp_280606790&style=1&t=1352387427769&f=1" frameborder="0" scrolling="auto" width="227" height="75" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
+    </li>
+    <li id="ds-recent-visitors-2" class="boxed widget ds-widget-recent-visitors">
+    <h3 class="widgettitle">最近访客</h3>
+    <ul class="ds-recent-visitors" data-num-items="21" data-show-time="0" data-avatar-size="50"></ul>
+    </li>
+    <script>
+      if (typeof DUOSHUO !== 'undefined')
+      DUOSHUO.TopThreads && DUOSHUO.TopThreads('.ds-top-threads');
+    </script>
+  </ul>
+</div>
+<!-- /sidebar -->
+<div class="cleared"></div>
+
+
+
+
+
+  
+
+       </div> <!-- /main -->
+     </div> <!-- wrapper -->
+
+     <!-- footer -->
+     <footer>
+<div id="footer">                                          
+  <p class="t-center" style='font-size: 10pt;'>
+  &copy; 2012 <a href="/">Demi Panda Lab</a>, All Rights Reserved.
+  <script src="http://s14.cnzz.com/stat.php?id=4734788&web_id=4734788&show=pic" language="JavaScript"></script>
+  </p>
+  </div> 
+</footer>
+
+ 
+
+   </body>
+ </html>
+

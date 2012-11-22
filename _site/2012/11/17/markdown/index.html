@@ -1,0 +1,769 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="robots" content="all,follow" />
+    <title>markdown 语法学习 - 熊猫人Blog</title>
+    <meta name="author" lang="en" content="All: Demi-Panda Lab [demi-panda.com]; e-mail: blog.pandam@gmail.com" />
+    <meta name="copyright" lang="en" content="@2012 Demi_Panda Lab, All Rights Reserved!" />
+    <meta name="description" content="熊猫人Blog主题：感想,敢拼,敢赢..." />
+    <link rel="shortcut icon" href="/media/demi/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="/media/demi/css/style.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="/media/demi/css/main.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="/media/demi/css/reset.css" />
+    <!--
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="/media/demi/css/embed.css" />
+    -->
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="/media/demi/css/superfish.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="/media/demi/css/prettify.css" />
+    <script src="/media/js/jquery-1.6.1.min.js" type="text/javascript"></script>
+    <script src="/media/js/jquery.jcarousel.min.js" type="text/javascript"></script>
+    <script src="/media/js/jquery.tagcloud.js" type="text/javascript"></script>
+    <script src="/media/js/jquery.demi.slider.js" type="text/javascript"></script>
+
+    <link rel="alternate" type="application/rss+xml" title="熊猫人Blog" href="/rss.xml" />
+    <script type="text/javascript" src="http://static.duoshuo.com/js/common.js"></script>
+    <script src="/media/js/prettify.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+      var duoshuoQuery = {short_name:"demi-panda"};
+    </script>
+    <script type="text/javascript" src="http://static.duoshuo.com/embed.js"></script>
+
+      <script type="text/javascript">
+      $(window).load(function(){
+          $("pre").addClass("prettyprint");
+          prettyPrint();
+          })
+        </script>
+
+    <script language="javascript">
+      $.fn.tagcloud.defaults = {
+        size: {start: 0.9, end: 2, unit: 'em'},
+        color: {start: '#e77471', end: '#f62817'}
+      };
+
+      $(function () {
+        $('#tagcloud a').tagcloud();
+      });
+    </script>  
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36197302-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+
+     </script>
+   </head>
+
+
+   <body >
+
+     <div id="wrapper">
+       <!-- /header -->
+<div id="header">
+
+  <div id="logo">
+    <h1 id="logo">
+      <a href="/" title="[Go to homepage]"><img src="/media/demi/img/demi-logo-2.png" alt="" /></a>
+    </h1> 
+  </div><!-- /logo -->
+
+  <div class="cleared"></div>
+</div>
+<!-- /header -->
+
+ 
+       <!-- Tray -->
+<div id="tray">
+  <ul>
+    <li ><a href="/">Home</a></li>
+    <li ><a href="/archives/">文章列表</a></li>
+    <li ><a href="/categories/">分类目录</a></li>
+    <li ><a href="/life/">生活范儿</a></li>
+    <li ><a href="/tags/">标签</a></li>
+    <li ><a href="/about/">关于我</a></li>
+  </ul>
+  <hr class="noscreen" />                    
+</div> 
+<!-- /tray -->
+
+
+       <div id="main">
+         <div id="content">
+  <div class="post type-post status-publish format-standard hentry category-1 post" >
+    <div class="posttop">
+      <h1 class="posttitle">
+        markdown 语法学习
+      </h1>
+    </div>
+    <div class="meta">
+      Posted 
+      <time class="text" datetime="2012-11-17">2012-11-17</time>&nbsp; |
+      
+      分类:
+      
+      
+      <a href="/categories/#Jekyll" class="text" title="Jekyll" rel="category tag">Jekyll</a>&nbsp;
+      
+      
+      &nbsp;&nbsp;
+
+      <!-- Place this tag where you want the +1 button to render. -->
+      <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="200"></div>
+
+      <!-- Place this tag after the last +1 button tag. -->
+      <script type="text/javascript">
+        window.___gcfg = {lang: 'zh-CN'};
+
+(function() {
+ var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+ po.src = 'https://apis.google.com/js/plusone.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+ })();
+</script>
+      
+      <div class="tag">
+        
+        <a href="/tags/#Markdown" class="text" title="Markdown" rel="category tag">Markdown</a>&nbsp;
+        
+        <a href="/tags/#Jekyll" class="text" title="Jekyll" rel="category tag">Jekyll</a>&nbsp;
+        
+      </div>
+      
+    </div>
+
+    <div class="postcontent-entry">
+      <div class="cleared"></div>
+      <h3>概述</h3>
+
+<p>Markdown 的目标是实现「易读易写」。</p>
+
+<p>可读性，无论如何，都是最重要的。一份使用 Markdown 格式撰写的文件应该可以直接以纯文本发布，并且看起来不会像是由许多标签或是格式指令所构成。Markdown 语法受到一些既有 text-to-HTML 格式的影响，包括 Setext、atx、Textile、reStructuredText、Grutatext 和 EtText，而最大灵感来源其实是纯文本电子邮件的格式。</p>
+
+<p>总之， Markdown 的语法全由一些符号所组成，这些符号经过精挑细选，其作用一目了然。比如：在文字两旁加上星号，看起来就像<em>强调</em>。Markdown 的列表看起来，嗯，就是列表。Markdown 的区块引用看起来就真的像是引用一段文字，就像你曾在电子邮件中见过的那样。</p>
+
+<h3>特殊字符自动转换</h3>
+
+<p>在 HTML 文件中，有两个字符需要特殊处理： <code>&amp;</code> 和 <code>&lt;</code> 。 <code>&amp;</code> 符号用于起始标签，<code>&lt;</code> 符号则用于标记 HTML 实体，如果你只是想要显示这些字符的原型，你必须要使用实体的形式，像是<code> &lt;</code> 和 <code>&amp;</code>。</p>
+
+<p><code>&amp;</code> 字符尤其让网络文档编写者受折磨，如果你要打「<code>AT&amp;T</code>」 ，你必须要写成「<code>AT&amp;amp;T</code>」。而网址中的 <code>&amp;</code> 字符也要转换。比如你要链接到：</p>
+
+<pre>
+http://images.google.com/images?num=30&amp;q=larry+bird
+</pre>
+
+
+<p>你必须要把网址转换写为：</p>
+
+<pre>
+http://images.google.com/images?num=30&amp;amp;q=larry+bird
+</pre>
+
+
+<p>才能放到链接标签的 href 属性里。不用说也知道这很容易忽略，这也可能是 HTML 标准检验所检查到的错误中，数量最多的。</p>
+
+<p>Markdown 让你可以自然地书写字符，需要转换的由它来处理好了。如果你使用的 <code>&amp;</code> 字符是 HTML 字符实体的一部分，它会保留原状，否则它会被转换成 <code>&amp;amp</code>;。</p>
+
+<p>所以你如果要在文档中插入一个版权符号 ©，你可以这样写:</p>
+
+<pre>
+&amp;copy;
+</pre>
+
+
+<p>Markdown 就会将它转为：</p>
+
+<pre>
+AT&amp;T
+</pre>
+
+
+<h3>h 标题</h3>
+
+<p>类 Atx 形式则是在行首插入 1 到 6 个 # ，对应到标题 1 到 6 阶，例如：</p>
+
+<pre id="html">
+# 这是 H1
+## 这是 H2
+###### 这是 H6
+</pre>
+
+
+<p>你可以选择性地「闭合」类 atx 样式的标题，这纯粹只是美观用的，若是觉得这样看起来比较舒适，你就可以在行尾加上 #，而行尾的 # 数量也不用和开头一样（行首的井字符数量决定标题的阶数）：</p>
+
+<pre >
+# 这是 H1 #
+## 这是 H2 ##
+### 这是 H3 ######
+</pre>
+
+
+<h3>列表 ul 和 li</h3>
+
+<p>无序列表使用星号、加号或是减号作为列表标记：</p>
+
+<pre>
+*   Red
+*   Green
+*   Blue
+</pre>
+
+
+<p>等同于：</p>
+
+<pre>
++   Red
++   Green
++   Blue
+</pre>
+
+
+<p>也等同于：</p>
+
+<pre>
+-   Red
+-   Green
+-   Blue
+</pre>
+
+
+<p>有序列表则使用数字接着一个英文句点：</p>
+
+<pre>
+1.  Bird
+2.  McHale
+3.  Parish
+</pre>
+
+
+<p>很重要的一点是，你在列表标记上使用的数字并不会影响输出的 HTML 结果，上面的列表所产生的 HTML 标记为:</p>
+
+<pre>
+&lt;ol&gt;
+&lt;li&gt;Bird&lt;/li&gt;
+&lt;li&gt;McHale&lt;/li&gt;
+&lt;li&gt;Parish&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+
+
+<p>如果你的列表标记写成：</p>
+
+<pre>
+1.  Bird
+1.  McHale
+1.  Parish
+</pre>
+
+
+<table>
+  <tbody>
+    <tr>
+      <th>格式</th>
+      <th>用法</th>
+      <th>示例</th>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>h1标签</hd>
+      <td>    #标签</td>
+      <td>#我是h1
+          =========
+          ## h2
+      </td>
+    </tr>
+    <tr>
+      <td>ul标签</hd>
+      <td>    * 标签</td>
+      <td>  </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<p>你都会得到完全相同的 HTML 输出。重点在于，你可以让 Markdown 文件的列表数字和输出的结果相同，或是你懒一点，你可以完全不用在意数字的正确性。
+如果列表项目间用空行分开，在输出 HTML 时 Markdown 就会将项目内容用 标签包起来，举例来说：</p>
+
+<pre>
+*   Bird
+*   Magic
+</pre>
+
+
+<p>会被转换为：</p>
+
+<pre>
+&lt;ul&gt;
+&lt;li&gt;Bird&lt;/li&gt;
+&lt;li&gt;Magic&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+
+<p>但是这个：</p>
+
+<pre>
+*   Bird
+*   Magic
+</pre>
+
+
+<p>会被转换为：</p>
+
+<pre>
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Bird&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Magic&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+
+<p>换句话说，也就是在行首出现数字-句点-空白，要避免这样的状况，你可以在句点前面加上反斜杠。</p>
+
+<pre>
+1986\. What a great season.
+</pre>
+
+
+<h3>链接</h3>
+
+<p>Markdown 支持两种形式的链接语法： 行内式和参考式两种形式。
+不管是哪一种，链接文字都是用 [方括号] 来标记。</p>
+
+<p>要建立一个行内式的链接，只要在方块括号后面紧接着圆括号并插入网址链接即可，如果你还想要加上链接的 title 文字，只要在网址后面，用双引号把 title 文字包起来即可，例如：</p>
+
+<pre>
+This is [an example](http://example.com/ "Title") inline link.
+[This link](http://example.net/) has no title attribute.
+</pre>
+
+
+<p>会产生：</p>
+
+<pre>
+&lt;p&gt;This is &lt;a href="http://example.com/" title="Title"&gt;
+an example&lt;/a&gt; inline link.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://example.net/"&gt;This link&lt;/a&gt; has no
+title attribute.&lt;/p&gt;
+</pre>
+
+
+<p>如果你是要链接到同样主机的资源，你可以使用相对路径：</p>
+
+<pre>
+See my [About](/about/) page for details.
+</pre>
+
+
+<p>参考式的链接是在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记：</p>
+
+<pre>
+This is [an example][id] reference-style link.
+</pre>
+
+
+<p>你也可以选择性地在两个方括号中间加上一个空格：
+<per>
+This is [an example] [id] reference-style link.
+</pre>
+接着，在文件的任意处，你可以把这个标记的链接内容定义出来：</p>
+
+<pre>
+[id]: http://example.com/  "Optional Title Here"
+</pre>
+
+
+<p>链接内容定义的形式为：</p>
+
+<p>方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字
+接着一个冒号
+接着一个以上的空格或制表符
+接着链接的网址
+选择性地接着 title 内容，可以用单引号、双引号或是括弧包着
+下面这三种链接的定义都是相同：</p>
+
+<pre>
+[foo]: http://example.com/  "Optional Title Here"
+[foo]: http://example.com/  'Optional Title Here'
+[foo]: http://example.com/  (Optional Title Here)
+</pre>
+
+
+<p>请注意：有一个已知的问题是 Markdown.pl 1.0.1 会忽略单引号包起来的链接 title。</p>
+
+<p>链接网址也可以用方括号包起来：</p>
+
+<pre>
+[id]: <http://example.com/>  "Optional Title Here"
+</pre>
+
+
+<p>你也可以把 title 属性放到下一行，也可以加一些缩进，若网址太长的话，这样会比较好看：</p>
+
+<pre>
+[id]: http://example.com/longish/path/to/resource/here
+    "Optional Title Here"
+</pre>
+
+
+<h3>强调</h3>
+
+<p>Markdown 使用星号（<code><em></code>）和底线（<code>_</code>）作为标记强调字词的符号，被 <code></em></code> 或 <code><em></code> 包围的字词会被转成用 <code>&lt;em&gt;</code> 标签包围，用两个 <code>*</code> 或 <code></em></code> 包起来的话，则会被转成 <code>&lt;strong&gt;</code>，例如：</p>
+
+<pre>
+*single asterisks*
+_single underscores_
+**double asterisks**
+__double underscores__
+</pre>
+
+
+<p>会转成:</p>
+
+<pre>
+&lt;em&gt;single asterisks&lt;/em&gt;
+&lt;em&gt;single underscores&lt;/em&gt;
+&lt;strong&gt;double asterisks&lt;/strong&gt;
+&lt;strong&gt;double underscores&lt;/strong&gt;
+</pre>
+
+
+<p>你可以随便用你喜欢的样式，唯一的限制是，你用什么符号开启标签，就要用什么符号结束。</p>
+
+<p>强调也可以直接插在文字中间：</p>
+
+<pre>
+un*frigging*believable
+</pre>
+
+
+<p>但是<strong>如果你的 <code>*</code> 和 <code>_</code> 两边都有空白的话，它们就只会被当成普通的符号</strong>。</p>
+
+<p>如果要在文字前后直接插入普通的星号或底线，你可以用反斜线：</p>
+
+<pre>
+\*this text is surrounded by literal asterisks\*
+</pre>
+
+
+<h3>代码</h3>
+
+<p>如果要标记一小段行内代码，你可以用反引号把它包起来（<code>`</code>），例如：</p>
+
+<pre>
+Use the `printf()` function.
+</pre>
+
+
+<p>如果要在代码区段内插入反引号，你可以用多个反引号来开启和结束代码区段：</p>
+
+<pre>
+``There is a literal backtick (`) here.``
+</pre>
+
+
+<p>这段语法会产生：</p>
+
+<pre>
+&lt;p&gt;&lt;code&gt;There is a literal backtick (`) here.&lt;/code&gt;&lt;/p&gt;
+</pre>
+
+
+<p>代码区段的起始和结束端都可以放入一个空白，起始端后面一个，结束端前面一个，这样你就可以在区段的一开始就插入反引号：</p>
+
+<pre>
+A single backtick in a code span: `` ` ``
+
+A backtick-delimited string in a code span: `` `foo` ``
+</pre>
+
+
+<p>会产生：</p>
+
+<pre>
+&lt;p&gt;A single backtick in a code span: &lt;code&gt;`&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;A backtick-delimited string in a code span: &lt;code&gt;`foo`&lt;/code&gt;&lt;/p&gt;
+</pre>
+
+
+<h3>图片</h3>
+
+<p>很明显地，要在纯文字应用中设计一个「自然」的语法来插入图片是有一定难度的。</p>
+
+
+<p>Markdown 使用一种和链接很相似的语法来标记图片，同样也允许两种样式： <em>行内式</em>和<em>参考式</em>。</p>
+
+
+<p>行内式的图片语法看起来像是：</p>
+
+
+<pre>
+![Alt text](/path/to/img.jpg)
+![Alt text](/path/to/img.jpg "Optional title")
+</pre>
+
+
+<p>详细叙述如下：</p>
+
+<ul>
+<li>一个惊叹号 <code>!</code></li>
+<li>接着一个方括号，里面放上图片的替代文字</li>
+<li>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上
+选择性的 'title' 文字。</li>
+</ul>
+
+
+<p>参考式的图片语法则长得像这样：</p>
+
+<pre>
+![Alt text][id]
+</pre>
+
+
+<p>「id」是图片参考的名称，图片参考的定义方式则和连结参考一样：</p>
+
+<pre>
+[id]: url/to/image  "Optional title attribute"
+</pre>
+
+
+<p>到目前为止， Markdown 还没有办法指定图片的宽高，如果你需要的话，你可以使用普通的 <code>&lt;img&gt;</code> 标签</p>
+
+<h3>反斜杠</h3>
+
+<p>Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符号，例如：如果你想要用星号加在文字旁边的方式来做出强调效果（但不用 <code>&lt;em&gt;</code> 标签），你可以在星号的前面加上反斜杠：i</p>
+
+<pre>
+\*literal asterisks\*
+</pre>
+
+
+<p>Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：</p>
+
+<pre>
+\   反斜线
+`   反引号
+*   星号
+_   底线
+{}  花括号
+[]  方括号
+()  括弧
+#   井字号
++   加号
+-   减号
+.   英文句点
+!   惊叹号
+</pre>
+
+
+
+
+    </div><!-- /postcontent -->
+
+    <div class="v-pagination">
+      
+      <a class="prev" href="/2012/11/16/linux-ulimit" title="前一篇：Linux ulimit 设置">&laquo; Linux ulimit 设置</a>
+      
+      <!--
+      <a class="center" href="/archives/">文章列表</a>
+      -->
+      
+      <a class="next" href="/2012/11/18/easybcd-win7-ubuntu" title="后一篇：Win7 + Ubuntu12.04 + EasyDBC安装">Win7 + Ubuntu12.04 + EasyDBC安装 &raquo;</a>
+      
+    </div>
+    <!-- JiaThis Button BEGIN -->
+    <div class="jiathis_style" style="margin: 10px 10px 20px 0;padding: 10px 0 0;">
+      <span class="jiathis_txt">分享到：</span>
+      <a class="jiathis_button_tools_1"></a>
+      <a class="jiathis_button_tools_2"></a>
+      <a class="jiathis_button_tools_3"></a>
+      <a class="jiathis_button_tools_4"></a>
+      <a href="http://www.jiathis.com/share?uid=1706288" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+      <a class="jiathis_counter_style"></a>
+    </div>
+    <script type="text/javascript">
+      var jiathis_config = {data_track_clickback:true};
+    </script>
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1343704647947962" charset="utf-8"></script>
+    <!-- JiaThis Button END -->
+  </div><!-- /post -->
+  <div class="cleared"></div>
+
+  <div class="archivesbox">
+    <div class="comments">
+      <!-- Duoshuo Comment Begin -->
+      <div class="ds-thread" data-thread-id="201211172343" data-thread-key="201211172343" data-title="markdown 语法学习" data-url="/2012/11/17/markdown"
+        data-order="desc" data-form-positon="top"></div>
+      <!-- Duoshuo Comment End -->
+    </div>
+  </div>
+</div><!-- /content -->
+
+<div id="sidebar">
+  <ul>
+    <li id="tag_cloud" class="boxed widget widget_tag_cloud">
+    <h3 class="widgettitle">标签</h3>
+    
+      <a href='/tags/#Shell' class='tag-link-9' title='Shell' style='font-size: 15pt;'>Shell</a>
+      
+      <a href='/tags/#Jekyll' class='tag-link-1' title='Jekyll' style='font-size: 16pt;'>Jekyll</a>
+      
+      <a href='/tags/#CI' class='tag-link-1' title='CI' style='font-size: 12pt;'>CI</a>
+      
+      <a href='/tags/#Annotation' class='tag-link-1' title='Annotation' style='font-size: 20pt;'>Annotation</a>
+      
+      <a href='/tags/#Java' class='tag-link-6' title='Java' style='font-size: 14pt;'>Java</a>
+      
+      <a href='/tags/#prettify' class='tag-link-1' title='prettify' style='font-size: 18pt;'>prettify</a>
+      
+      <a href='/tags/#svn' class='tag-link-1' title='svn' style='font-size: 13pt;'>svn</a>
+      
+      <a href='/tags/#version' class='tag-link-1' title='version' style='font-size: 17pt;'>version</a>
+      
+      <a href='/tags/#HTTP' class='tag-link-1' title='HTTP' style='font-size: 14pt;'>HTTP</a>
+      
+      <a href='/tags/#OS' class='tag-link-1' title='OS' style='font-size: 12pt;'>OS</a>
+      
+      <a href='/tags/#Markdown' class='tag-link-1' title='Markdown' style='font-size: 18pt;'>Markdown</a>
+      
+      <a href='/tags/#Life' class='tag-link-1' title='Life' style='font-size: 14pt;'>Life</a>
+      
+      <a href='/tags/#Linux' class='tag-link-11' title='Linux' style='font-size: 15pt;'>Linux</a>
+      
+      <a href='/tags/#SSH' class='tag-link-2' title='SSH' style='font-size: 13pt;'>SSH</a>
+      
+      <a href='/tags/#Jenkins' class='tag-link-2' title='Jenkins' style='font-size: 17pt;'>Jenkins</a>
+      
+      <a href='/tags/#研发实践' class='tag-link-2' title='研发实践' style='font-size: 22pt;'>研发实践</a>
+      
+      <a href='/tags/#Hudson' class='tag-link-1' title='Hudson' style='font-size: 16pt;'>Hudson</a>
+      
+      <a href='/tags/#Python' class='tag-link-1' title='Python' style='font-size: 16pt;'>Python</a>
+      
+      <a href='/tags/#Ubuntu' class='tag-link-2' title='Ubuntu' style='font-size: 16pt;'>Ubuntu</a>
+      
+      <a href='/tags/#安全' class='tag-link-1' title='安全' style='font-size: 16pt;'>安全</a>
+      
+      <a href='/tags/#Github' class='tag-link-2' title='Github' style='font-size: 16pt;'>Github</a>
+      
+      <a href='/tags/#编程实践' class='tag-link-1' title='编程实践' style='font-size: 22pt;'>编程实践</a>
+      
+      <a href='/tags/#编程语言' class='tag-link-1' title='编程语言' style='font-size: 22pt;'>编程语言</a>
+      
+      <a href='/tags/#Mavne' class='tag-link-1' title='Mavne' style='font-size: 15pt;'>Mavne</a>
+      
+      <a href='/tags/#梦想' class='tag-link-1' title='梦想' style='font-size: 16pt;'>梦想</a>
+      
+      <a href='/tags/#HTML' class='tag-link-1' title='HTML' style='font-size: 14pt;'>HTML</a>
+      
+    </li>
+    <li id="recent-posts-2" class="boxed widget widget_recent_entries">		
+    <h3 class="widgettitle">近期文章</h3>	
+    <ul>
+       
+      <li>
+      <a href="/2012/11/22/version-manager" title="版本管理策略">版本管理策略</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/22/linux-find-practice" title="Linux find命令实践">Linux find命令实践</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/22/bash-profile" title=".bash_profile .bashrc profile 文件的作用的执行顺序">.bash_profile .bashrc profile 文件的作用的执行顺序</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/21/ssh-remote" title="SSH登陆响应慢的问题">SSH登陆响应慢的问题</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/21/http-status" title="HTTP状态码">HTTP状态码</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/20/ubunut-virtualbox" title="Ubuntu 中VirtualBox 使用U盾">Ubuntu 中VirtualBox 使用U盾</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/20/linux-ffmpeg" title="Linux下的命令行下转换媒体格式工具FFMPEG详解">Linux下的命令行下转换媒体格式工具FFMPEG详解</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/19/linux-command" title="程序员的利器-Linux常用命令">程序员的利器-Linux常用命令</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/19/jenkins-PermGen-Space" title="Jenkins PermGen space 问题">Jenkins PermGen space 问题</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/18/easybcd-win7-ubuntu" title="Win7 + Ubuntu12.04 + EasyDBC安装">Win7 + Ubuntu12.04 + EasyDBC安装</a>
+      </li>
+      
+    </ul>
+    </li>
+    <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
+    <h3 class="widgettitle">热评文章</h3>
+    <ul class="ds-top-threads" data-num-items="5" data-range="weekly"></ul>
+    </li>
+    <li id="ds-recent-comments-3" class="boxed widget ds-widget-recent-comments">
+    <h3 class="widgettitle">近期评论</h3>
+    <ul class="ds-recent-comments" data-num-items="10" data-show-avatars="1" data-show-time="1" data-show-title="0" data-show-admin="0" data-avatar-size="32" data-excerpt-length="70">
+    </ul>
+    </li>
+    <script>
+      if (typeof DUOSHUO !== 'undefined')
+      DUOSHUO.RecentCommentsWidget && DUOSHUO.RecentCommentsWidget('.ds-recent-comments');
+    </script>
+    <li id="ds-qqt-follow" class="boxed widget ds-widget-qqt-follow">
+    <iframe src="http://follow.v.t.qq.com/index.php?c=follow&a=quick&name=denghp_280606790&style=1&t=1352387427769&f=1" frameborder="0" scrolling="auto" width="227" height="75" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
+    </li>
+    <li id="ds-recent-visitors-2" class="boxed widget ds-widget-recent-visitors">
+    <h3 class="widgettitle">最近访客</h3>
+    <ul class="ds-recent-visitors" data-num-items="21" data-show-time="0" data-avatar-size="50"></ul>
+    </li>
+    <script>
+      if (typeof DUOSHUO !== 'undefined')
+      DUOSHUO.TopThreads && DUOSHUO.TopThreads('.ds-top-threads');
+    </script>
+  </ul>
+</div>
+<!-- /sidebar -->
+<div class="cleared"></div>
+
+
+
+
+
+  
+
+       </div> <!-- /main -->
+     </div> <!-- wrapper -->
+
+     <!-- footer -->
+     <footer>
+<div id="footer">                                          
+  <p class="t-center" style='font-size: 10pt;'>
+  &copy; 2012 <a href="/">Demi Panda Lab</a>, All Rights Reserved.
+  <script src="http://s14.cnzz.com/stat.php?id=4734788&web_id=4734788&show=pic" language="JavaScript"></script>
+  </p>
+  </div> 
+</footer>
+
+ 
+
+   </body>
+ </html>
+

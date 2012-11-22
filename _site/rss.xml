@@ -1,0 +1,2155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>熊猫人Blog</title>
+        <link>http:/demi-panda.com</link>
+        <description>熊猫人Blog主题：感想,敢拼,敢赢...</description>
+        <managingEditor>demi-panda@126.com (demi-panda.com)</managingEditor>
+        <lastBuildDate>Thu, 22 Nov 2012 10:58:32 +0800</lastBuildDate>
+        <language>en</language>
+        
+
+        <item>
+            <title>版本管理策略</title>
+            <pubDate>Thu, 22 Nov 2012 00:00:00 +0800</pubDate>
+            <description>&lt;h2&gt;GNU 风格的版本号命名格式&lt;/h2&gt;
+
+&lt;p&gt;主版本号 . 子版本号 [. 修正版本号 [. 编译版本号 ]]&lt;/p&gt;
+
+&lt;p&gt;英文对照 : Major_Version_Number.Minor_Version_Number[.Revision_Number[.Build_Number]]&lt;/p&gt;
+
+&lt;p&gt;示例 : 1.2.1,2.0,5.0.0 build-13124&lt;/p&gt;
+
+&lt;p&gt;二、 Windows 风格的版本号命名格式
+主版本号 . 子版本号 [ 修正版本号 [. 编译版本号 ]]&lt;/p&gt;
+
+&lt;p&gt;英文对照 : Major_Version_Number.Minor_Version_Number[Revision_Number[.Build_Number]]&lt;/p&gt;
+
+&lt;p&gt;示例： 1.21,2.0&lt;/p&gt;
+
+&lt;h2&gt;版本号管理策略&lt;/h2&gt;
+
+&lt;h3&gt;GNU 风格的版本号管理策略&lt;/h3&gt;
+
+&lt;p&gt;1．项目初版本时，版本号可以为 0.1 或 0.1.0，也可以为 1.0 或 1.0.0，如果你为人很低调，我想你会选择那个主版本号为 0 的方式 ;&lt;/p&gt;
+
+&lt;p&gt;2．当项目在进行了局部修改或 bug 修正时，主版本号和子版本号都不变，修正版本号加 1;&lt;/p&gt;
+
+&lt;p&gt;3．当项目在原有的基础上增加了部分功能时，主版本号不变，子版本号加 1，修正版本号复位为 0，因而可以被忽略掉 ;&lt;/p&gt;
+
+&lt;p&gt;4．当项目在进行了重大修改或局部修正累积较多，而导致项目整体发生全局变化时，主版本号加 1;&lt;/p&gt;
+
+&lt;p&gt;5．另外，编译版本号一般是编译器在编译过程中自动生成的，我们只定义其格式，并不进行人为控制 .&lt;/p&gt;
+
+&lt;h3&gt;Window 下的版本号管理策略&lt;/h3&gt;
+
+&lt;p&gt;1．顶目初版，版本号为 1.0 或 1.00;&lt;/p&gt;
+
+&lt;p&gt;2．当项目在进行了局部修改或 bug 修正时，主版本号和子版本号都不变，修正版本号加 1;&lt;/p&gt;
+
+&lt;p&gt;3．当项目在原有的基础上增加了部分功能时，主版本号不变，子版本号加 1，修正版本号复位为 0，因而可以被忽略掉 ;&lt;/p&gt;
+
+&lt;p&gt;4．当项目在进行了重大修改或局部修正累积较多，而导致项目整体发生全局变化时，主版本号加 1;&lt;/p&gt;
+
+&lt;p&gt;5．另外，编译版本号一般是编译器在编译过程中自动生成的，我们只定义其格式，并不进行人为控制 .&lt;/p&gt;
+
+&lt;p&gt;另外，还可以在版本号后面加入 Alpha,Beta,Gamma,Current,RC (Release Candidate),Release,Stable 等后缀，在这些后缀后面还可以加入 1 位数字的版本号 .&lt;/p&gt;
+
+&lt;p&gt;对于用户来说，如果某个软件的主版本号进行了升级，用户还想继续那个软件，则发行软件的公司一般要对用户收取升级费用 ; 而如果子版本号或修正版本号发生了升级，一般来说是免费的 .&lt;/p&gt;
+</description>
+            <link>http:/demi-panda.com/2012/11/22/version-manager</link>
+            <guid>http:/demi-panda.com/2012/11/22/version-manager</guid>
+        </item>
+
+        
+
+        <item>
+            <title>Linux find命令实践</title>
+            <pubDate>Thu, 22 Nov 2012 00:00:00 +0800</pubDate>
+            <description>&lt;p&gt;Linux中查找文件的命令通常为“find”命令，“find”命令能帮助我们在使用,管理Linux的日常事务中方便的查找出我们需要的文件。find是个很强大的命令，能够匹配正则，查找对应权限，能够帮你精确的定位你的系统中的任何地方任何目录下的文件。&lt;/p&gt;
+
+&lt;h3&gt;语法&lt;/h3&gt;
+
+&lt;pre id=&quot;bash&quot; style=&quot;width:580px&quot;&gt;
+Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec] [path...] [expression]
+&lt;/pre&gt;
+
+
+&lt;h3&gt;find 命令选项&lt;/h3&gt;
+
+&lt;pre id=&quot;wiki&quot; style=&quot;width:580px&quot;&gt;
+-name filename      #查找名为filename的文件
+-perm               #按执行权限来查找
+-user username      #按文件属主来查找
+-group groupname    #按组来查找
+-mtime -n +n        #按文件更改时间来查找文件，-n指n天以内，+n指n天以前
+-atime -n +n        #按文件访问时间来查
+-perm               #按执行权限来查找
+-user  username     #按文件属主来查找
+-group groupname    #按组来查找
+-mtime -n +n     #按文件更改时间来查找文件，-n指n天以内，+n指n天以前
+-atime -n +n     #按文件访问时间来查找文件，-n指n天以内，+n指n天以前 
+-ctime -n +n     #按文件创建时间来查找文件，-n指n天以内，+n指n天以前 
+-nogroup         #查无有效属组的文件，即文件的属组在/etc/groups中不存在
+-nouser          #查无有效属主的文件，即文件的属主在/etc/passwd中不存
+-newer f1 !f2    #找文件，-n指n天以内，+n指n天以前 
+-ctime -n +n     #按文件创建时间来查找文件，-n指n天以内，+n指n天以前 
+-nogroup         #查无有效属组的文件，即文件的属组在/etc/groups中不存在
+-nouser          #查无有效属主的文件，即文件的属主在/etc/passwd中不存
+-newer f1 !f2    #查更改时间比f1新但比f2旧的文件
+-type  b/d/c/p/l/f  #查是块设备、目录、字符设备、管道、符号链接、普通文件
+-size  n[c]         #查长度为n块[或n字节]的文件
+-depth              #使查找在进入子目录前先行查找完本目录
+-fstype             #查更改时间比f1新但比f2旧的文件
+-type b/d/c/p/l/f   #查是块设备、目录、字符设备、管道、符号链接、普通文件
+-size n[c]          #查长度为n块[或n字节]的文件
+-depth              #使查找在进入子目录前先行查找完本目录
+-mount              #查文件时不跨越文件系统mount点
+-follow             #如果遇到符号链接文件，就跟踪链接所指的文件
+-mount              #查文件时不跨越文件系统mount点
+-follow             #如果遇到符号链接文件，就跟踪链接所指的文件
+-cpio               #对匹配的文件使用cpio命令，将他们备份到磁带设备中
+-prune              #忽略某个目录
+&lt;/pre&gt;
+
+
+&lt;h3&gt;find命令示例&lt;/h3&gt;
+
+&lt;pre id=&quot;bash&quot; style=&quot;width:580px&quot;&gt;
+$find ~ -name &quot;*.txt&quot; -print    #在$HOME中查.txt文件并显示
+$find . -name &quot;*.txt&quot; -print
+$find . -name &quot;[A-Z]*&quot; -pri26nbsp; 
+#对匹配的文件使用cpio命令，将他们备份到磁带设备中
+$find ~ -name &quot;*.txt&quot; -print    #在$HOME中查.txt文件并显示
+$find . -name &quot;*.txt&quot; -print
+$find . -name &quot;[A-Z]*&quot; -print #查以大写字母开头的文件
+$find /etc -name &quot;host*&quot; -print #查以host开头的文件
+$find . -name &quot;[a-z][a-z][0--9].txt&quot; -print 
+#查以两个小写字母和两个数字开头的txt文件
+$find . -perm 755 -print
+$find . -perm -007 -exec ls -l {} /; #查所有用户都可读写执行的文件同-perm 777
+$find . -type d -print
+$find . ! -type d -print 
+$find . -type l -print
+$find . -size +1000000c -print #查长度大于1Mb的文件
+$find . -size 100c -print      #查长度为100c的文件
+$find . -size +10 -print       #查长度超过期作废10块的文件（1块=512字节）
+$find etc home apps -depth -print | cpio -ivcdC65536 -o /dev/rmt0
+$find /etc -name &quot;passwd*&quot; -exec grep &quot;cnscn&quot; {} /; #看是否存在cnscn用户
+$find . -name &quot;yao*&quot; | xargs file
+$find . -name &quot;yao*&quot; | xargs echo   &quot;&quot; &lt; /tmp/core.log
+$find . -name &quot;yao*&quot; | xargs chmod o-w
+&lt;/pre&gt;
+
+
+
+
+&lt;pre id=&quot;bash&quot; style=&quot;width:580px&quot;&gt;
+$find -name april*              #在当前目录下查找以april开始的文件
+$find -name april* fprint file  
+#在当前目录下查找以april开始的文件，并把结果输出到file中
+$find -name ap* -o -name may*   #查找以ap或may开头的文件
+$find /mnt -name tom.txt -ftype vfat  
+#在/mnt下查找名称为tom.txt且文件系统类型为vfat的文件
+$find /mnt -name t.txt ! -ftype vfat  
+#在/mnt下查找名称为tom.txt且文件系统类型不为vfat的文件
+$find /tmp -name wa* -type l    #在/tmp下查找名为wa开头且类型为符号链接的文件
+$find /home -mtime -2           #在/home下查最近两天内改动过的文件
+$find /home   -atime -1         #查1天之内被存取过的文件
+$find /home -mmin   +60         #在/home下查60分钟前改动过的文件
+$find /home -amin +30           #查最近30分钟前被存取过的文件
+$find /home -newer tmp.txt      #在/home下查更新时间比tmp.txt近的文件或目录
+$find /home -anewer tmp.txt     #在/home下查存取时间比tmp.txt近的文件或目录
+$find /home -used -2            #列出文件或目录被改动过之后，在2日内被存取过的文件或目录
+$find /home -user cnscn         #列出/home目录内属于用户cnscn的文件或目录
+$find /home -uid +501           #列出/home目录内用户的识别码大于501的文件或目录
+$find /home -group cnscn        #列出/home内组为cnscn的文件或目录
+$find /home -gid 501            #列出/home内组id为501的文件或目录
+$find /home -nouser             #列出/home内不属于本地用户的文件或目录
+$find /home -nogroup            #列出/home内不属于本地组的文件或目录
+$find /home -name tmp.txt -maxdepth 4 #列出/home内的tmp.txt 查时深度最多为3层
+$find /home -name tmp.txt -mindepth 3 #从第2层开始查
+$find /home -empty              #查找大小为0的文件或空目录
+$find /home -size +512k         #查大于512k的文件
+$find /home -size -512k         #查小于512k的文件
+$find /home -links +2           #查硬连接数大于2的文件或目录
+$find /home -perm 0700          #查权限为700的文件或目录
+$find /tmp -name tmp.txt -exec cat {} /;
+$find /tmp -name tmp.txt -ok rm {} /;
+$find / -amin -10       #查找在系统中最后10分钟访问的文件
+$find / -atime -2       #查找在系统中最后48小时访问的文件
+$find / -empty          #查找在系统中为空的文件或者文件夹
+$find / -group cat      #查找在系统中属于 groupcat的文件
+$find / -mmin -5        #查找在系统中最后5分钟里修改过的文件
+$find / -mtime -1       #查找在系统中最后24小时里修改过的文件
+$find / -nouser         #查找在系统中属于作废用户的文件
+$find / -user fred      #查找在系统中属于FRED这个用户的文件
+&lt;/pre&gt;
+
+
+&lt;h3&gt;查当前目录下的所有普通文件&lt;/h3&gt;
+
+&lt;p&gt;查当前目录下的所有普通文件，并在-exec选项中使用ls -l命令将它们列出&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot; style=&quot;width:580px&quot;&gt;
+$find . -type f | xargs ls -lt {}\;
+-rw-rw-r-- 1 root root  2245 Nov 19 09:40 ./2008-09-23-java-annotation.md
+-rw-rw-r-- 1 root root  1094 Nov 19 09:40 ./2009-04-27-a-python-program.md
+-rw-rw-r-- 1 root root  1239 Nov 19 09:40 ./2009-09-09-about-form-get-post.md
+-rw-rw-r-- 1 root root  7078 Nov 19 09:40 ./2010-07-21-hash-table.md
+&lt;/pre&gt;
+
+
+&lt;p&gt;在/logs目录中查找更改时间在5日以前的文件并删除它们：&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot; style=&quot;width:580px&quot;&gt;
+$ find logs -type f -mtime +5 | xargs -ok rm {}\;
+&lt;/pre&gt;
+
+
+&lt;p&gt;查询当天修改过的文件&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot; style=&quot;width:580px&quot;&gt;
+$find ./ -mtime -1 -type f | xargs ls -l {}\;
+&lt;/pre&gt;
+
+
+&lt;p&gt;查询并交给awk去处理&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot; style=&quot;width:580px&quot;&gt;
+$ who | awk '{print $1&quot;/t&quot;$2}'
+&lt;/pre&gt;
+
+
+&lt;p&gt;Linux字符编码转换&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot; style=&quot;width:580px&quot;&gt;
+find default -type d -exec mkdir -p utf/{} \;
+find default -type f -exec iconv -f GBK -t UTF-8 {} -o utf/{} \;
+&lt;/pre&gt;
+
+
+&lt;p&gt;这两行命令将default目录下的文件由GBK编码转换为UTF-8编码，目录结构不变，转码后的文件保存在utf/default目录下。&lt;/p&gt;
+
+&lt;p&gt;从M个文件中查找包含某个字符的文件并移动到另一个目录&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot; style=&quot;widht:580px&quot;&gt;
+grep -l &quot;data-thread-key&quot; ./* | xargs -i -i mv {} test/
+&lt;/pre&gt;
+
+</description>
+            <link>http:/demi-panda.com/2012/11/22/linux-find-practice</link>
+            <guid>http:/demi-panda.com/2012/11/22/linux-find-practice</guid>
+        </item>
+
+        
+
+        <item>
+            <title>.bash_profile .bashrc profile 文件的作用的执行顺序</title>
+            <pubDate>Thu, 22 Nov 2012 00:00:00 +0800</pubDate>
+            <description>&lt;h2&gt;登陆shell与交互式非登陆shell的区别&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/media/pub/bash-profile.png&quot; alt=&quot;Black Cube Theme&quot; class=&quot;img-center&quot; width=&quot;430px&quot; /&gt;&lt;/p&gt;
+
+&lt;h3&gt;登录shell&lt;/h3&gt;
+
+&lt;p&gt;所谓登录shell,指的是当用户登录系统时所取的那个   shell。登录shell属于交互式shell。
+登录shell将查找4个不同的启动文件来处理其中的命令。 bash shell处理文件的顺序如下：&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+1: /etc/profile
+2: /etc/profile.d等待配置文件
+3: $HOME/.bash_profile
+4: $HOME/.bash_login
+5: $HOME/.profile
+&lt;/pre&gt;
+
+
+&lt;p&gt;/etc /profile是bash shell在系统上的主默认启动文 件，系统上 每一个用户在登陆时都将执行此文件。&lt;/p&gt;
+
+&lt;p&gt;通过设置这个文件，超级用户可以为全系统内的所有bash用户建立默认特征。不同 Linux版本在此文件放置的命令不尽相同，&lt;/p&gt;
+
+&lt;p&gt;在redflag中，该文件设置了几个重要的变量，如：PATH USER LOGNAME MAIL HOSTNAME HISTSIZE  INPUTRC，详情可以查看具体的文件。&lt;/p&gt;
+
+&lt;p&gt;其余3个文件具备相同的功能——提供特定于用户的启动文件。大多 数Linux版本只使用其中之一。如：RedFlag使用.bash_profile   ubuntu使用.profile .&lt;/p&gt;
+
+&lt;pre&gt;
+shell依次查找~/.bash_profile、
+~/.bash_login、
+~/.profile(~是用户主目录的速记符)，
+&lt;/pre&gt;
+
+
+&lt;p&gt;并执行它找到的首个文件中的命令。
+可以将命令放置在这些文件中以覆盖掉/etc/profile文件中的默认设置。
+也就是后面的文件可以覆盖或者修改前面的设置 。&lt;/p&gt;
+
+&lt;h3&gt;交互式非登录shell&lt;/h3&gt;
+
+&lt;p&gt;如果启动了一个bash shell而没有等录系统（如在CLI提示符中键入bash）,则启动了一个交互式非登录shell.&lt;/p&gt;
+
+&lt;p&gt;而登录shell的初始化文件(比如.bash_profile)通常会运行这个文件。这样，登录shell和非登录shell都可以使用.bashrc中的命令。&lt;/p&gt;
+
+&lt;p&gt;如以X Window环境登录Linux时，在X环境所起动的终端，那些shell都是非登录shell.&lt;/p&gt;
+
+&lt;p&gt;在交互式非登录shell中并不执行前面提到的初始化文件中的命令。然而，交互式非登录shell从登录shell继承了由这些初始化文件设置的 shell变量。&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$HOME/.bashrc
+&lt;/pre&gt;
+
+
+&lt;p&gt;交互式非登录shell执行~/.bashrc文件中的命令.在每次执行shell脚本时，都会重新读取这个文件，所以是最完整的。&lt;/p&gt;
+
+&lt;p&gt;但是万事都不是一样的，debain系列的是不同的，如ubuntu&lt;/p&gt;
+
+&lt;p&gt;/etc/profile--&amp;lt;/etc/environment--&amp;lt;$HOME/.profile&lt;/p&gt;
+</description>
+            <link>http:/demi-panda.com/2012/11/22/bash-profile</link>
+            <guid>http:/demi-panda.com/2012/11/22/bash-profile</guid>
+        </item>
+
+        
+
+        <item>
+            <title>SSH登陆响应慢的问题</title>
+            <pubDate>Wed, 21 Nov 2012 00:00:00 +0800</pubDate>
+            <description>&lt;h3&gt;常见问题&lt;/h3&gt;
+
+&lt;p&gt;第一种情况比较常见，也有很多资料提及到，就是在SSH登陆时服务器端会对客户端的IP进行反解析造成登陆响应慢的问题，通常改sshd_config的“UseDNS no”即可以。&lt;/p&gt;
+
+&lt;p&gt;第二种情况，服务器端启用了GSSAPI[1]。登陆的时候客户端需要对服务器端的IP地址进行反解析，如果服务器的IP地址没有配置PTR记录，那么就容易在这里卡住了。&lt;/p&gt;
+
+&lt;p&gt;对于这种情况，就有必要禁用GSSAPI认证以加速SSH登陆。&lt;/p&gt;
+
+&lt;h3&gt;解决方案&lt;/h3&gt;
+
+&lt;p&gt;解法一：sh命令时使用附加的参数：&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+ssh -o GSSAPIAuthentication=no server_address
+&lt;/pre&gt;
+
+
+&lt;p&gt;解法二：修改客户端 ssh_config&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ vi /etc/ssh/ssh_config | vi ~/.ssh/config
+GSSAPIAuthentication no
+&lt;/pre&gt;
+
+
+&lt;p&gt;解法三：修改服务器端的sshd_config&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ vi /etc/ssh/ssd_config
+GSSAPIAuthentication no
+&lt;/pre&gt;
+
+</description>
+            <link>http:/demi-panda.com/2012/11/21/ssh-remote</link>
+            <guid>http:/demi-panda.com/2012/11/21/ssh-remote</guid>
+        </item>
+
+        
+
+        <item>
+            <title>HTTP状态码</title>
+            <pubDate>Wed, 21 Nov 2012 00:00:00 +0800</pubDate>
+            <description>&lt;p&gt;HTTP状态码（HTTP Status Code）是用以表示網頁伺服器HTTP响应状态的3位数字代码。&lt;/p&gt;
+
+&lt;h2&gt;1xx消息&lt;/h2&gt;
+
+&lt;p&gt;这一类型的状态码，代表请求已被接受，需要继续处理。这类响应是临时响应，只包含状态行和某些可选的响应头信息，并以空行结束。由于HTTP/1.0协议中没有定义任何1xx状态码，所以除非在某些试验条件下，服务器禁止向此类客户端发送1xx响应。 这些状态码代表的响应都是信息性的，标示客户应该采取的其他行动。&lt;/p&gt;
+
+&lt;h5&gt;100 Continue&lt;/h5&gt;
+
+&lt;p&gt;客户端应当继续发送请求。这个临时响应是用来通知客户端它的部分请求已经被服务器接收，且仍未被拒绝。客户端应当继续发送请求的剩余部分，或者如果请求已经完成，忽略这个响应。服务器必须在请求完成后向客户端发送一个最终响应。&lt;/p&gt;
+
+&lt;h5&gt;101 Switching Protocols&lt;/h5&gt;
+
+&lt;p&gt;服务器已经理解了客户端的请求，并将通过Upgrade消息头通知客户端采用不同的协议来完成这个请求。&lt;/p&gt;
+
+&lt;h5&gt;102 Processing&lt;/h5&gt;
+
+&lt;p&gt;由WebDAV（RFC 2518）扩展的状态码，代表处理将被继续执行。&lt;/p&gt;
+
+&lt;h2&gt;2xx成功&lt;/h2&gt;
+
+&lt;p&gt;这一类型的状态码，代表请求已成功被服务器接收、理解、并接受。&lt;/p&gt;
+
+&lt;h5&gt;200 OK&lt;/h5&gt;
+
+&lt;p&gt;请求已成功，请求所希望的响应头或数据体将随此响应返回。&lt;/p&gt;
+
+&lt;h5&gt;201 Created&lt;/h5&gt;
+
+&lt;p&gt;请求已经被实现，而且有一个新的资源已经依据请求的需要而建立，且其URI已经随Location头信息返回。假如需要的资源无法及时建立的话，应当返回'202 Accepted'。&lt;/p&gt;
+
+&lt;h5&gt;202 Accepted&lt;/h5&gt;
+
+&lt;p&gt;服务器已接受请求，但尚未处理。正如它可能被拒绝一样，最终该请求可能会也可能不会被执行。在异步操作的场合下，没有比发送这个状态码更方便的做法了。&lt;/p&gt;
+
+&lt;h5&gt;203 Non-Authoritative Information&lt;/h5&gt;
+
+&lt;p&gt;服务器已成功处理了请求，但返回的实体头部元信息不是在原始服务器上有效的确定集合，而是来自本地或者第三方的拷贝。当前的信息可能是原始版本的子集或者超集。例如，包含资源的元数据可能导致原始服务器知道元信息的超级。使用此状态码不是必须的，而且只有在响应不使用此状态码便会返回200 OK的情况下才是合适的。&lt;/p&gt;
+
+&lt;h5&gt;204 No Content&lt;/h5&gt;
+
+&lt;p&gt;服务器成功处理了请求，但不需要返回任何实体内容，并且希望返回更新了的元信息。响应可能通过实体头部的形式，返回新的或更新后的元信息。如果存在这些头部信息，则应当与所请求的变量相呼应。
+如果客户端是浏览器的话，那么用户浏览器应保留发送了该请求的页面，而不产生任何文档视图上的变化，即使按照规范新的或更新后的元信息应当被应用到用户浏览器活动视图中的文档。
+由于204响应被禁止包含任何消息体，因此它始终以消息头后的第一个空行结尾。&lt;/p&gt;
+
+&lt;h5&gt;205 Reset Content&lt;/h5&gt;
+
+&lt;p&gt;服务器成功处理了请求，且没有返回任何内容。但是与204响应不同，返回此状态码的响应要求请求者重置文档视图。该响应主要是被用于接受用户输入后，立即重置表单，以便用户能够轻松地开始另一次输入。
+与204响应一样，该响应也被禁止包含任何消息体，且以消息头后的第一个空行结束。&lt;/p&gt;
+
+&lt;h5&gt;206 Partial Content&lt;/h5&gt;
+
+&lt;p&gt;服务器已经成功处理了部分GET请求。类似于FlashGet或者迅雷这类的HTTP 下载工具都是使用此类响应实现断点续传或者将一个大文档分解为多个下载段同时下载。
+该请求必须包含Range头信息来指示客户端希望得到的内容范围，并且可能包含If-Range来作为请求条件。&lt;/p&gt;
+
+&lt;h5&gt;207 Multi-Status&lt;/h5&gt;
+
+&lt;p&gt;由WebDAV(RFC 2518)扩展的状态码，代表之后的消息体将是一个XML消息，并且可能依照之前子请求数量的不同，包含一系列独立的响应代码。&lt;/p&gt;
+
+&lt;h2&gt;3xx重定向&lt;/h2&gt;
+
+&lt;p&gt;这类状态码代表需要客户端采取进一步的操作才能完成请求。通常，这些状态码用来重定向，后续的请求地址（重定向目标）在本次响应的Location域中指明。&lt;/p&gt;
+
+&lt;h5&gt;300 Multiple Choices&lt;/h5&gt;
+
+&lt;p&gt;被请求的资源有一系列可供选择的回馈信息，每个都有自己特定的地址和浏览器驱动的商议信息。用户或浏览器能够自行选择一个首选的地址进行重定向。&lt;/p&gt;
+
+&lt;h5&gt;301 Moved Permanently&lt;/h5&gt;
+
+&lt;p&gt;被请求的资源已永久移动到新位置，并且将来任何对此资源的引用都应该使用本响应返回的若干个URI之一。如果可能，拥有链接编辑功能的客户端应当自动把请求的地址修改为从服务器反馈回来的地址。除非额外指定，否则这个响应也是可缓存的。&lt;/p&gt;
+
+&lt;h5&gt;302 Found&lt;/h5&gt;
+
+&lt;p&gt;请求的资源现在临时从不同的URI响应请求。由于这样的重定向是临时的，客户端应当继续向原有地址发送以后的请求。只有在Cache-Control或Expires中进行了指定的情况下，这个响应才是可缓存的。&lt;/p&gt;
+
+&lt;h5&gt;303 See Other&lt;/h5&gt;
+
+&lt;p&gt;对应当前请求的响应可以在另一个URI上被找到，而且客户端应当采用GET的方式访问那个资源。这个方法的存在主要是为了允许由脚本激活的POST请求输出重定向到一个新的资源。这个新的URI不是原始资源的替代引用。同时，303响应禁止被缓存。当然，第二个请求（重定向）可能被缓存。&lt;/p&gt;
+
+&lt;h5&gt;304 Not Modified&lt;/h5&gt;
+
+&lt;p&gt;如果客户端发送了一个带条件的GET请求且该请求已被允许，而文档的内容（自上次访问以来或者根据请求的条件）并没有改变，则服务器应当返回这个状态码。304响应禁止包含消息体，因此始终以消息头后的第一个空行结尾。&lt;/p&gt;
+
+&lt;h5&gt;305 Use Proxy&lt;/h5&gt;
+
+&lt;p&gt;被请求的资源必须通过指定的代理才能被访问。&lt;/p&gt;
+
+&lt;h5&gt;306 Switch Proxy&lt;/h5&gt;
+
+&lt;p&gt;在最新版的规范中，306状态码已经不再被使用。&lt;/p&gt;
+
+&lt;h5&gt;307 Temporary Redirect&lt;/h5&gt;
+
+&lt;p&gt;请求的资源现在临时从不同的URI响应请求。由于这样的重定向是临时的，客户端应当继续向原有地址发送以后的请求。只有在Cache-Control或Expires中进行了指定的情况下，这个响应才是可缓存的。&lt;/p&gt;
+
+&lt;h2&gt;4xx请求错误&lt;/h2&gt;
+
+&lt;h5&gt;400 Bad Request&lt;/h5&gt;
+
+&lt;p&gt;由于包含语法错误，当前请求无法被服务器理解。除非进行修改，否则客户端不应该重复提交这个请求。
+401 Unauthorized
+当前请求需要用户验证。&lt;/p&gt;
+
+&lt;h5&gt;402 Payment Required&lt;/h5&gt;
+
+&lt;p&gt;该状态码是为了将来可能的需求而预留的。
+403 Forbidden
+服务器已经理解请求，但是拒绝执行它。与401响应不同的是，身份验证并不能提供任何帮助，而且这个请求也不应该被重复提交。如果这不是一个HEAD请求，而且服务器希望能够讲清楚为何请求不能被执行，那么就应该在实体内描述拒绝的原因。当然服务器也可以返回一个404响应，假如它不希望让客户端获得任何信息。&lt;/p&gt;
+
+&lt;h6&gt;404 Not Found&lt;/h6&gt;
+
+&lt;p&gt;请求失败，请求所希望得到的资源未被在服务器上发现。&lt;/p&gt;
+
+&lt;h5&gt;405 Method Not Allowed&lt;/h5&gt;
+
+&lt;p&gt;请求行中指定的请求方法不能被用于请求相应的资源。该响应必须返回一个Allow头信息用以表示出当前资源能够接受的请求方法的列表。
+鉴于PUT，DELETE方法会对服务器上的资源进行写操作，因而绝大部分的网页服务器都不支持或者在默认配置下不允许上述请求方法，对于此类请求均会返回405错误。&lt;/p&gt;
+
+&lt;h5&gt;406 Not Acceptable&lt;/h5&gt;
+
+&lt;p&gt;请求的资源的内容特性无法满足请求头中的条件，因而无法生成响应实体。&lt;/p&gt;
+
+&lt;h5&gt;407 Proxy Authentication Required&lt;/h5&gt;
+
+&lt;p&gt;与401响应类似，只不过客户端必须在代理服务器上进行身份验证。代理服务器必须返回一个Proxy-Authenticate用以进行身份询问。&lt;/p&gt;
+
+&lt;h5&gt;408 Request Timeout&lt;/h5&gt;
+
+&lt;p&gt;请求超时。客户端没有在服务器预备等待的时间内完成一个请求的发送。客户端可以随时再次提交这一请求而无需进行任何更改。&lt;/p&gt;
+
+&lt;h5&gt;409 Conflict&lt;/h5&gt;
+
+&lt;p&gt;由于和被请求的资源的当前状态之间存在冲突，请求无法完成。这个代码只允许用在这样的情况下才能被使用：用户被认为能够解决冲突，并且会重新提交新的请求。该响应应当包含足够的信息以便用户发现冲突的源头。&lt;/p&gt;
+
+&lt;h5&gt;410 Gone&lt;/h5&gt;
+
+&lt;p&gt;被请求的资源在服务器上已经不再可用，而且没有任何已知的转发地址。这样的状况应当被认为是永久性的。如果可能，拥有链接编辑功能的客户端应当在获得用户许可后删除所有指向这个地址的引用。如果服务器不知道或者无法确定这个状况是否是永久的，那么就应该使用404状态码。除非额外说明，否则这个响应是可缓存的。&lt;/p&gt;
+
+&lt;h5&gt;411 Length Required&lt;/h5&gt;
+
+&lt;p&gt;服务器拒绝在没有定义Content-Length头的情况下接受请求。在添加了表明请求消息体长度的有效Content-Length头之后，客户端可以再次提交该请求。&lt;/p&gt;
+
+&lt;h5&gt;412 Precondition Failed&lt;/h5&gt;
+
+&lt;p&gt;服务器在验证在请求的头字段中给出先决条件时，没能满足其中的一个或多个。这个状态码允许客户端在获取资源时在请求的元信息（请求头字段数据）中设置先决条件，以此避免该请求方法被应用到其希望的内容以外的资源上。&lt;/p&gt;
+
+&lt;h5&gt;413 Request Entity Too Large&lt;/h5&gt;
+
+&lt;p&gt;服务器拒绝处理当前请求，因为该请求提交的实体数据大小超过了服务器愿意或者能够处理的范围。此种情况下，服务器可以关闭连接以免客户端继续发送此请求。&lt;/p&gt;
+
+&lt;h5&gt;414 Request-URI Too Long&lt;/h5&gt;
+
+&lt;p&gt;请求的URI长度超过了服务器能够解释的长度，因此服务器拒绝对该请求提供服务。这比较少见，通常的情况包括：&lt;/p&gt;
+
+&lt;h5&gt;415 Unsupported Media Type&lt;/h5&gt;
+
+&lt;p&gt;对于当前请求的方法和所请求的资源，请求中提交的实体并不是服务器中所支持的格式，因此请求被拒绝。&lt;/p&gt;
+
+&lt;h5&gt;416 Requested Range Not Satisfiable&lt;/h5&gt;
+
+&lt;p&gt;如果请求中包含了Range请求头，并且Range中指定的任何数据范围都与当前资源的可用范围不重合，同时请求中又没有定义If-Range请求头，那么服务器就应当返回416状态码。&lt;/p&gt;
+
+&lt;h5&gt;417 Expectation Failed&lt;/h5&gt;
+
+&lt;p&gt;在请求头Expect中指定的预期内容无法被服务器满足，或者这个服务器是一个代理服务器，它有明显的证据证明在当前路由的下一个节点上，Expect的内容无法被满足。&lt;/p&gt;
+
+&lt;h5&gt;418 Im a teapot&lt;/h5&gt;
+
+&lt;p&gt;本操作码是在1998年作为IETF的传统愚人节笑话, 在RFC 2324 超文本咖啡壶控制协议中定义的，并不需要在真实的HTTP服务器中定义。&lt;/p&gt;
+
+&lt;h5&gt;421 There are too many connections from your internet address&lt;/h5&gt;
+
+&lt;p&gt;从当前客户端所在的IP地址到服务器的连接数超过了服务器许可的最大范围。通常，这裡的IP地址指的是从服务器上看到的客户端地址（比如用户的网关或者代理服务器地址）。在这种情况下，连接数的计算可能涉及到不止一个终端用户。&lt;/p&gt;
+
+&lt;h5&gt;422 Unprocessable Entity&lt;/h5&gt;
+
+&lt;p&gt;请求格式正确，但是由于含有语义错误，无法响应。（RFC 4918 WebDAV）&lt;/p&gt;
+
+&lt;h5&gt;423 Locked&lt;/h5&gt;
+
+&lt;p&gt;当前资源被锁定。&lt;/p&gt;
+
+&lt;h2&gt;5xx服务器错误&lt;/h2&gt;
+
+&lt;p&gt;这类状态码代表了服务器在处理请求的过程中有错误或者异常状态发生，也有可能是服务器意识到以当前的软硬件资源无法完成对请求的处理&lt;/p&gt;
+
+&lt;h5&gt;500 Internal Server Error&lt;/h5&gt;
+
+&lt;p&gt;服务器遇到了一个未曾预料的状况，导致了它无法完成对请求的处理。一般來說，這個問題都會在服務器的程序碼出錯時出現。&lt;/p&gt;
+
+&lt;h5&gt;501 Not Implemented&lt;/h5&gt;
+
+&lt;p&gt;服务器不支持当前请求所需要的某个功能。当服务器无法识别请求的方法，并且无法支持其对任何资源的请求。&lt;/p&gt;
+
+&lt;h5&gt;502 Bad Gateway&lt;/h5&gt;
+
+&lt;p&gt;作为网关或者代理工作的服务器尝试执行请求时，从上游服务器接收到无效的响应。&lt;/p&gt;
+
+&lt;h5&gt;503 Service Unavailable&lt;/h5&gt;
+
+&lt;p&gt;由于临时的服务器维护或者过载，服务器当前无法处理请求。
+504 Gateway Timeout
+作为网关或者代理工作的服务器尝试执行请求时，未能及时从上游服务器&lt;/p&gt;
+
+&lt;h5&gt;505 HTTP Version Not Supported&lt;/h5&gt;
+
+&lt;p&gt;服务器不支持，或者拒绝支持在请求中使用的HTTP版本。这暗示着服务器不能或不愿使用与客户端相同的版本。响应中应当包含一个描述了为何版本不被支持以及服务器支持哪些协议的实体。&lt;/p&gt;
+
+&lt;h5&gt;506 Variant Also Negotiates&lt;/h5&gt;
+
+&lt;p&gt;代表服务器存在内部配置错误：被请求的协商变元资源被配置为在透明内容协商中使用自己，因此在一个协商处理中不是一个合适的重点。&lt;/p&gt;
+
+&lt;h5&gt;507 Insufficient Storage&lt;/h5&gt;
+
+&lt;p&gt;服务器无法存储完成请求所必须的内容。这个状况被认为是临时的。WebDAV（RFC 4918）&lt;/p&gt;
+
+&lt;h5&gt;509 Bandwidth Limit Exceeded&lt;/h5&gt;
+
+&lt;p&gt;服务器达到带宽限制。这不是一个官方的状态码，但是仍被广泛使用。&lt;/p&gt;
+
+&lt;h5&gt;510 Not Extended&lt;/h5&gt;
+
+&lt;p&gt;获取资源所需要的策略并没有没满足。&lt;/p&gt;
+</description>
+            <link>http:/demi-panda.com/2012/11/21/http-status</link>
+            <guid>http:/demi-panda.com/2012/11/21/http-status</guid>
+        </item>
+
+        
+
+        <item>
+            <title>Ubuntu 中VirtualBox 使用U盾</title>
+            <pubDate>Tue, 20 Nov 2012 00:00:00 +0800</pubDate>
+            <description>&lt;p&gt;运行环境：
+操作系统：Ubuntu11.4 Desktop
+虚拟机：Virtual Box4.0
+Virtual Box操作系统：XP SP3
+移动证书：工行U盾&lt;/p&gt;
+
+&lt;h3&gt;VirtualBox使用U盾&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;下载安装VirtualBox。注意去官网上下载最新版的，Ubuntu自带的OSE不支持USB的。&lt;/li&gt;
+&lt;li&gt;在虚拟机上安装WindowsXP。&lt;/li&gt;
+&lt;li&gt;配置Ubuntu，注意细节。&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;a. 新建一个usbfs组：&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ sudo groupadd usbfs
+&lt;/pre&gt;
+
+
+&lt;p&gt;b.将当前用户加入这个用户组：&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ sudo adduser $USER usbfs
+&lt;/pre&gt;
+
+
+&lt;p&gt;c. 打开/etc/group文件&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ gedit /etc/group
+&lt;/pre&gt;
+
+
+&lt;p&gt;找到usbfs，记下ID
+例如，我（cdt）的是：
+usbfs:x:1001:cdt
+上面1001就是ID。&lt;/p&gt;
+
+&lt;p&gt;d.打开/etc/fstab文件：&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ sudo gedit /etc/fstab
+&lt;/pre&gt;
+
+
+&lt;p&gt;在后面加一行：&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+none /proc/bus/usb usbfs devmode=0664,devgid=1001, 0 0
+&lt;/pre&gt;
+
+
+&lt;p&gt;注意devgid=1001中的1001要改成你刚在group中查到的usbfs组的ID。保存文件。
+完成以上后重新启动会提示：&lt;/p&gt;
+
+&lt;pre&gt;
+An error occurred while mounting /proc/bus/usb
+Press S to skip mounting or M for manual recovery 
+&lt;/pre&gt;
+
+
+&lt;p&gt;按S进入Ubuntu，运行VirtualBox U盾使用正常。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;注：解决报错提示：&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+1.sudo gedit /etc/fstab  注释
+＃none /proc/bus/usb usbfs devmode=0664,devgid=1001 0 0
+2.sudo gedit /etc/rc.local  
+在exit 0上一行加入 
+hald --daemon=no 
+exit 0
+&lt;/pre&gt;
+
+
+&lt;p&gt;重启电脑后不会再有报错，另U盾也可正常使用。&lt;/p&gt;
+
+&lt;h3&gt;配置VirtualBox, 使VirtualBox支持USB设备&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;关闭xp状态下，在virtualbox上点设置－USB设备，在窗口右边 点那个带+号的u盘图标，确定。&lt;/li&gt;
+&lt;li&gt;ubuntu下选系统－系统管理－用户和组－管理组－vboxusers-属性－在自已的用户名前打勾－ 确定－输入密码。&lt;/li&gt;
+&lt;li&gt;如果第二步查看用户和组-管理组 无法看到vboxusers，则需要自己手动添加用户组&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ sudo adduser $USERNAME vboxusers
+&lt;/pre&gt;
+
+
+&lt;p&gt;注销或重启ubuntu,打开xp就能用你的u盘了&lt;/p&gt;
+</description>
+            <link>http:/demi-panda.com/2012/11/20/ubunut-virtualbox</link>
+            <guid>http:/demi-panda.com/2012/11/20/ubunut-virtualbox</guid>
+        </item>
+
+        
+
+        <item>
+            <title>Linux下的命令行下转换媒体格式工具FFMPEG详解</title>
+            <pubDate>Tue, 20 Nov 2012 00:00:00 +0800</pubDate>
+            <description>&lt;p&gt;在windows下有格式工厂之类的软件可以转换媒体格式，在linux 下 呢？又没有这样的软件呢？既然linux喜欢命令行式操作，那linux迷就将命令行进行到底。今天介绍怎么在linux命令行下转换媒体格式，要用到的 工具就是ffmpeg。ffmpeg是一个Linux下音频视频格式转换的通用工具. 下面几条我觉得还不错，常用，就分享给linux迷爱好者了。&lt;/p&gt;
+
+&lt;h3&gt;avi电影音频提取&lt;/h3&gt;
+
+&lt;p&gt;用下面这个命令行能够把电影里的音频提取出来, 成为一个独立的mp3文件, 这样可以听电影:&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ ffmpeg -i input.avi -ab 128k output.mp3
+&lt;/pre&gt;
+
+
+&lt;p&gt;其中指定了mp3压缩码率为128k, 我想应能满足大多数人的要求了.&lt;/p&gt;
+
+&lt;h3&gt;ac3音频提取&lt;/h3&gt;
+
+&lt;p&gt;这个例子和上一个例子类似, 不过由于音频是ac3编码的, 因此参数稍有不同:&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ ffmpeg -i The.Devil.Wears.Prada.AC3.x264.mkv -acodec libmp3lame -ab 128 -ac 2 The.Devil.Wears.Prada.mp3
+&lt;/pre&gt;
+
+
+&lt;h3&gt;无损音频转换&lt;/h3&gt;
+
+&lt;p&gt;我有一个ipod, 为了把网上下到的ape/flac格式的文件转成苹果的无损格式, 我使用的是下面的命令:&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ ffmpeg -i input.ape -acodec alac output.m4a
+&lt;/pre&gt;
+
+
+&lt;p&gt;一般来说, 一个专辑里面有多个文件, 下面的循环能够做批量转换, 这个例子里面是对当前目录下所有的flac音乐进行转换.&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+for i in *.flac
+do
+    ffmpeg -i &quot;$i&quot; -acodec alac &quot;`basename &quot;$i&quot; .flac`.m4a&quot;
+done
+&lt;/pre&gt;
+
+
+&lt;h3&gt;视频转换成flash视频&lt;/h3&gt;
+
+&lt;p&gt;我的手机能够播放flv这种flash视频文件, 有时候我会把喜欢的电视剧转成flv文件放在手机上播放, 下面是批量转换的例子:&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+for file in *
+do
+    bsnm=`basename $file .avi`
+    ffmpeg -i $file -s qvga -ar 44100 &quot;$bsnm&quot;.flv
+done
+&lt;/pre&gt;
+
+</description>
+            <link>http:/demi-panda.com/2012/11/20/linux-ffmpeg</link>
+            <guid>http:/demi-panda.com/2012/11/20/linux-ffmpeg</guid>
+        </item>
+
+        
+
+        <item>
+            <title>程序员的利器-Linux常用命令</title>
+            <pubDate>Mon, 19 Nov 2012 00:00:00 +0800</pubDate>
+            <description>&lt;p&gt;每个程序员，在职业生涯的某个时刻，总会发现自己需要知道一些Linux方面的知识。我并不是说你应该成为一个Linux专家，我的意思是，当面对Linux命令行任务时，你应该能很熟练的完成。事实上，学会了下面8个命令，我基本上能完成任何需要完成的任务。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;注意:&lt;/em&gt;
+下面的每个命令都有十分丰富的文档说明。这篇文章并不是来详尽的展示每个命令的各种功用的。我在这里要讲的是这几个最常用的命令的最常见用法。如果你对linux命令并不是很了解，你想找一些这方面的资料学习，那这篇文章将会给你一个基本的指导。&lt;/p&gt;
+
+&lt;p&gt;在这里我拿一个search.log日志文件来说明：&lt;/p&gt;
+
+&lt;pre style=&quot;font-size:10px; width:560px&quot;&gt;
+Nov 15, 2012 12:00:00 AM org.apache.solr.core.SolrCore execute
+INFO: [deal] webapp=/solr-web-deal path=/analysis/field params={analysis.showmatch=false&amp;analysis.query=泡芙&amp;analysis.fieldname=title&amp;analysis.fieldvalue=text} QTime=0 
+Nov 15, 2012 12:00:01 AM org.apache.solr.core.SolrCore execute
+INFO: [deal] webapp=/solr-web-deal path=/select params={fl=id,score,price&amp;start=65&amp;q=(city_id:2+OR+city_id:0)+AND+(title:(火锅)^7.0)}&amp;rows=5&amp;version=2} hits=2527 QTime=1 
+Nov 15, 2012 12:00:01 AM org.apache.solr.core.SolrCore execute
+INFO: [deal] webapp=/solr-web-deal path=/select params={fl=id,score,price&amp;start=75&amp;q=(city_id:1+OR+city_id:0)+AND+(title:(男装)^7.0)}&amp;rows=15} hits=673 QTime=25
+&lt;/pre&gt;
+
+
+&lt;h3&gt;cat&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;语法&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+cat [OPTION]... [FILE]...
+&lt;/pre&gt;
+
+
+&lt;p&gt;cat – 连接文件，并输出结果&lt;/p&gt;
+
+&lt;p&gt;cat 命令非常的简单，你从下面的例子可以看到。&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot; style=&quot;font-size:10px; width:560px&quot;&gt;
+$ cat search.log
+Nov 15, 2012 12:00:00 AM org.apache.solr.core.SolrCore execute
+INFO: [deal] webapp=/solr-web-deal path=/analysis/field params={analysis.showmatch=false&amp;analysis.query=泡芙&amp;analysis.fieldname=title&amp;analysis.fieldvalue=text} QTime=0 
+Nov 15, 2012 12:00:01 AM org.apache.solr.core.SolrCore execute
+INFO: [deal] webapp=/solr-web-deal path=/select params={fl=id,score,price&amp;start=65&amp;q=(city_id:2+OR+city_id:0)+AND+(title:(火锅)^7.0)}&amp;rows=5&amp;version=2} hits=2527 QTime=1 
+Nov 15, 2012 12:00:01 AM org.apache.solr.core.SolrCore execute
+INFO: [deal] webapp=/solr-web-deal path=/select params={fl=id,score,price&amp;start=75&amp;q=(city_id:1+OR+city_id:0)+AND+(title:(男装)^7.0)}&amp;rows=15} hits=673 QTime=25
+&lt;/pre&gt;
+
+
+&lt;p&gt;就像它的说明描述的，你可以用它来连接多个文件。&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ cat search.*
+#或者
+$ cat search.log search.log-20121123
+&lt;/pre&gt;
+
+
+&lt;h3&gt;sort&lt;/h3&gt;
+
+&lt;pre&gt;
+sort – 文件里的文字按行排序
+&lt;/pre&gt;
+
+
+&lt;p&gt;此时sort命令显然是你最佳的选择。&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot; style=&quot;font-size:10px; width:560px&quot;&gt;
+$ cat search.* | sort
+INFO: [deal] webapp=/solr-web-deal path=/analysis/field params={analysis.showmatch=false&amp;analysis.query=泡芙&amp;analysis.fieldname=title&amp;analysis.fieldvalue=text} QTime=0 
+INFO: [deal] webapp=/solr-web-deal path=/select params={fl=id,score,price&amp;start=65&amp;q=(city_id:2+OR+city_id:0)+AND+(title:(火锅)^7.0)}&amp;rows=5&amp;version=2} hits=2527 QTime=1 
+INFO: [deal] webapp=/solr-web-deal path=/select params={fl=id,score,price&amp;start=75&amp;q=(city_id:1+OR+city_id:0)+AND+(title:(男装)^7.0)}&amp;rows=15} hits=673 QTime=25
+Nov 15, 2012 12:00:00 AM org.apache.solr.core.SolrCore execute
+Nov 15, 2012 12:00:01 AM org.apache.solr.core.SolrCore execute
+Nov 15, 2012 12:00:01 AM org.apache.solr.core.SolrCore execute
+&lt;/pre&gt;
+
+
+&lt;p&gt;就像上面例子显示的，文件里的数据已经经过排序。对于一些小文件，你可以读取整个文件来处理它们，然而，真正的log文件通常有大量的内容，你不能不考虑这个情况。此时你应该考虑过滤出某些内容，把cat、sort后的内容通过管道传递给过滤工具。&lt;/p&gt;
+
+&lt;h3&gt;grep&lt;/h3&gt;
+
+&lt;pre&gt;
+grep, egrep, fgrep – 打印出匹配条件的文字行
+&lt;/pre&gt;
+
+
+&lt;p&gt;假设我们只对city_id:1的搜索日志感兴趣。使用grep，我们能限制只输出含有city_id:1字符的日志。&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot; style=&quot;font-size:10px; width:560px&quot;&gt;
+$ cat order.* | sort | grep -r &quot;city_id:1&quot;
+INFO: [deal] webapp=/solr-web-deal path=/select params={fl=id,score,price&amp;start=75&amp;q=(city_id:1+OR+city_id:0)+AND+(title:(男装)^7.0)}&amp;rows=15} hits=673 QTime=25
+&lt;/pre&gt;
+
+
+&lt;p&gt;grep 可以直接使用正则表达式&lt;/p&gt;
+
+&lt;h3&gt;cut&lt;/h3&gt;
+
+&lt;pre&gt;
+cut – 删除文件中字符行上的某些区域
+&lt;/pre&gt;
+
+
+&lt;p&gt;又要使用grep，我们用grep过滤出我们想要的行。有了我们想要的行信息，我们就可以把它们切成小段，删除不需要的部分数据。&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot; style=&quot;font-size:10px; width:560px&quot;&gt;
+$ cat order.* | sort | grep -r &quot;city_id:1&quot;
+INFO: [deal] webapp=/solr-web-deal path=/select params={fl=id,score,price&amp;start=75&amp;q=(city_id:1+OR+city_id:0)+AND+(title:(男装)^7.0)}&amp;rows=15} hits=673 QTime=25
+$ cat order.* | sort | grep -r &quot;city_id:1&quot; |cut -d&quot;,&quot; -f6,8
+hits=673 QTime=25
+&lt;/pre&gt;
+
+
+&lt;p&gt;现在，我们把数据缩减为我们计算想要的形式，把这些数据粘贴到Excel里立刻就能得到结果了。&lt;/p&gt;
+
+&lt;p&gt;cut是用来消减信息、简化任务的，但对于输出内容，我们通常会有更复杂的形式。假设我们还需要知道订单的ID，这样可以用来关联相关的其他信息。我们用cut可以获得ID信息，但我们希望把ID放到行的最后，用单引号包上。&lt;/p&gt;
+
+&lt;h3&gt;sed&lt;/h3&gt;
+
+&lt;pre&gt;
+sed – 一个流编辑器。它是用来在输入流上执行基本的文本变换。
+&lt;/pre&gt;
+
+
+&lt;p&gt;下面的例子展示了如何用sed命令变换我们的文件行.&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+find -name &quot;*.java&quot; | xargs sed -i &quot;s/SOAPHandler/SOAPAction/g&quot;
+&lt;/pre&gt;
+
+
+&lt;h3&gt;tail&lt;/h3&gt;
+
+&lt;pre&gt;
+tail [  -f ] [  -c Number |  -n Number |  -m Number |  -b Number |  -k Number ] [ File ]
+&lt;/pre&gt;
+
+
+&lt;p&gt;命令从指定点开始将 File 参数指定的文件写到标准输出。如果没有指定文件，则会使用标准输入。 Number 变量指定将多少单元写入标准输出。 Number 变量的值可以是正的或负的整数。如果值的前面有 +（加号），从文件开头指定的单元数开始将文件写到标准输出。如果值的前面有 -（减号），则从文件末尾指定的单元数开始将文件写到标准输出。如果值前面没有 +（加号）或 -（减号），那么从文件末尾指定的单元号开始读取文件。&lt;/p&gt;
+
+&lt;p&gt;要显示 notes 文件的最后十行，输入：&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ tail notes
+&lt;/pre&gt;
+
+
+&lt;p&gt;要指定从 notes 文件末尾开始读取的行数，输入：&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ tail  -n 20 notes
+&lt;/pre&gt;
+
+
+&lt;p&gt;要从第 200 字节开始，每次显示一页 notes 文件，输入：&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ tail  -c +200 notes | pg
+&lt;/pre&gt;
+
+
+&lt;p&gt;要跟踪文件的增长，输入：&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ tail  -f accounts
+&lt;/pre&gt;
+
+
+&lt;h3&gt;uniq&lt;/h3&gt;
+
+&lt;pre&gt;
+uniq – 删除重复的行
+&lt;/pre&gt;
+
+
+&lt;h3&gt;find&lt;/h3&gt;
+
+&lt;p&gt;find – 在文件目录中搜索文件
+&lt;em&gt;语法&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;
+find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec] [path...] [expression]
+&lt;/pre&gt;
+
+
+&lt;p&gt;&lt;em&gt;示例：&lt;/em&gt;
+查找当前目录及子目录下的文件名,并重命名
+方案1:
+使用find命令查找，然后使用sed替换&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+find . -name &quot;*.java&quot; | sed -e 's/\.java/\.class/g'
+&lt;/pre&gt;
+
+
+&lt;p&gt;方案2：
+使用find命令查找，然后使用rename重命名&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+find . -name &quot;*.class&quot; | rename 's/\.class/\.java/g'
+&lt;/pre&gt;
+
+
+&lt;p&gt;方案3：
+使用bash，使用for循环mv重命名&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+#!/bin/bash 
+dn=`dirname $0`
+dn=`cd $dn;pwd`
+#for fn in `find $dn -type f |grep 'java$'` 
+for fn in `find $dn -name '*.java'` 
+do
+if [ -f $fn ]; then
+newfn=${fn/%java/class}
+echo $newfn
+mv $fn $newfn
+fi
+down
+&lt;/pre&gt;
+
+
+&lt;h3&gt;less&lt;/h3&gt;
+
+&lt;pre&gt;
+less – 在文件里向前或向后移动
+&lt;/pre&gt;
+
+
+&lt;p&gt;在 less 命令，使用“/”来执行向前搜索，使用“？”命令执行向后搜索。搜索条件是一个正则表达式。&lt;/p&gt;
+</description>
+            <link>http:/demi-panda.com/2012/11/19/linux-command</link>
+            <guid>http:/demi-panda.com/2012/11/19/linux-command</guid>
+        </item>
+
+        
+
+        <item>
+            <title>Jenkins PermGen space 问题</title>
+            <pubDate>Mon, 19 Nov 2012 00:00:00 +0800</pubDate>
+            <description>&lt;p&gt;首先熟悉tomcat内存溢出三种情况。这里根据平时遇到的情况和相关资料进行一个总结。常见的一般会有下面三种情况：&lt;/p&gt;
+
+&lt;p&gt;这里根据平时遇到的情况和相关资料进行一个总结。常见的一般会有下面三种情况：&lt;/p&gt;
+
+&lt;pre&gt;
+1.OutOfMemoryError: Java heap space
+2.OutOfMemoryError: PermGen space
+3.OutOfMemoryError: unable to create new native thread.
+&lt;/pre&gt;
+
+
+&lt;h3&gt;Tomcat内存溢出解决方案&lt;/h3&gt;
+
+&lt;p&gt;对于前两种情况，在应用本身没有内存泄露的情况下可以用设置tomcat jvm参数来解决。（-Xms -Xmx -XX:PermSize  -XX:MaxPermSize）&lt;/p&gt;
+
+&lt;p&gt;最后一种可能需要调整操作系统和tomcat jvm参数同时调整才能达到目的。&lt;/p&gt;
+
+&lt;h3&gt;第一种：是堆溢出。&lt;/h3&gt;
+
+&lt;p&gt;在JVM中如果98％的时间是用于GC且可用的 Heap size 不足2％的时候将抛出此异常信息。&lt;/p&gt;
+
+&lt;p&gt;没有内存泄露的情况下，调整-Xms -Xmx参数可以解决。
+-Xms:初始堆大小
+-Xmx:最大堆大小&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;但堆的大小受下面三方面影响：&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;1.相关操作系统的数据模型（32-bt还是64-bit）限制；（32位系统下，一般限制在1.5G~2G；我在2003 server 系统下（物理内存：4G和6G，jdk：1.6）测试 1612M，64为操作系统对内存无限制。）
+2.系统的可用虚拟内存限制；
+3.系统的可用物理内存限制。
+堆的大小可以使用 java -Xmx***M  version 命令来测试。支持的话会出现jdk的版本号，不支持会报错。
+-Xms -Xmx一般配置成一样比较好比如:&lt;/p&gt;
+
+&lt;pre&gt;
+set JAVA_OPTS= -Xms1024m -Xmx1024m
+&lt;/pre&gt;
+
+
+&lt;h3&gt;第二种：永久保存区域溢出&lt;/h3&gt;
+
+&lt;p&gt;PermGen space的全称是Permanent Generation space,是指内存的永久保存区域。这一部分用于存放Class和Meta的信息,Class在被 Load的时候被放入PermGen space区域，它和和存放Instance的Heap区域不同,GC(Garbage Collection)不会在主程序运行期对PermGen space进行清理，所以如果你的APP会LOAD很多CLASS的话,就很可能出现PermGen space错误。这种错误常见在web服务器对JSP进行pre compile的时候。但目前的hibernate和spring项目中也很容易出现这样的问题。可能是由于这些框架会动态class，而且jvm的gc是不会清理PemGen space的，导致内存溢出。&lt;/p&gt;
+
+&lt;p&gt;这一个一般是加大-XX:PermSize  -XX:MaxPermSize 来解决问题。
+-XX:PermSize 永久保存区域初始大小
+-XX:PermSize 永久保存区域初始最大值
+这一般结合第一条使用，比如:&lt;/p&gt;
+
+&lt;pre&gt;
+set JAVA_OPTS= -Xms1024m -Xmx1024m  -XX:PermSize=128M -XX:PermSize=256M
+&lt;/pre&gt;
+
+
+&lt;h3&gt;第三种：无法创建新的线程。&lt;/h3&gt;
+
+&lt;p&gt;这种情况可能是JVM已经被系统分配了大量的内存(比如1.5G)，并且它至少要占用可用内存的一半。有人发现，在线程个数很多的情况下，你分配给JVM的内存越多，那么，上述错误发生的可能性就越大
+那么是什么原因造成这种问题呢？&lt;/p&gt;
+
+&lt;p&gt;每一个32位的进程最多可以使用2G的可用内存，因为另外2G被操作系统保留。这里假设使用1.5G给JVM，那么还余下500M可用内存。这500M内存中的一部分必须用于系统dll的加载，那么真正剩下的也许只有400M，现在关键的地方出现了：当你使用Java创建一个线程，在JVM的内存里也会创建一个Thread对象，但是同时也会在操作系统里创建一个真正的物理线程(参考JVM规范)，操作系统会在余下的400兆内存里创建这个物理线程，而不是在JVM的1500M的内存堆里创建。在jdk1.4里头，默认的栈大小是256KB，但是在jdk1.5里头，默认的栈大小为1M每线程，因此，在余下400M的可用内存里边我们最多也只能创建400个可用线程。&lt;/p&gt;
+
+&lt;p&gt;这样结论就出来了，要想创建更多的线程，你必须减少分配给JVM的最大内存。还有一种做法是让JVM宿主在你的JNI代码里边。&lt;/p&gt;
+
+&lt;p&gt;给出一个有关能够创建线程的最大个数的估算公式：&lt;/p&gt;
+
+&lt;pre&gt;
+(MaxProcessMemory - JVMMemory - ReservedOsMemory) / (ThreadStackSize) = Number of threads
+#对于jdk1.5而言，假设操作系统保留120M内存：
+1.5GB JVM: (2GB-1.5Gb-120MB)/(1MB) = ~380 threads
+1.0GB JVM: (2GB-1.0Gb-120MB)/(1MB) = ~880 threads
+
+#对于栈大小为256KB的jdk1.4而言，
+1.5GB allocated to JVM: ~1520 threads
+1.0GB allocated to JVM: ~3520 threads 
+&lt;/pre&gt;
+
+
+&lt;p&gt;如果我没有记错的话，在2000/XP/2003里头有一个启动选项，好像是：/PAE /3G ，可以让用户进程最大内存扩充至3G，这时操作系统只能占用最多1G的虚存。那样应该可以让JVM创建更多的线程。&lt;/p&gt;
+
+&lt;h3&gt;解决Jekins内存溢出的方案：&lt;/h3&gt;
+
+&lt;p&gt;经过以上的了解，咱们就能快速的定位问题的所在，如果Jekins运行在tomcat中，或者使用Java命令运行，长时间运行，就会导致有大量的class类被加载,并保存在JVM PermGen Space空间中，这样就会导致内存溢出,然后报以下异常：&lt;/p&gt;
+
+&lt;pre id=&quot;java&quot; style=&quot;font-size:10px; width:560px&quot;&gt;
+Exception in thread &quot;main&quot; java.lang.OutOfMemoryError: PermGen space
+at java.lang.ClassLoader.defineClass1(Native Method)
+at java.lang.ClassLoader.defineClassCond(ClassLoader.java:631)
+at java.lang.ClassLoader.defineClass(ClassLoader.java:615)
+at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:141)
+at java.net.URLClassLoader.defineClass(URLClassLoader.java:283)
+at java.net.URLClassLoader.access$000(URLClassLoader.java:58)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:197)
+at java.security.AccessController.doPrivileged(Native Method)
+at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClassFromSelf(ClassRealm.java:386)
+codehaus.plexus.classworlds.strategy.SelfFirstStrategy.loadClass(SelfFirstStrategy.java:42)
+at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:244)
+at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:230)
+at org.apache.maven.cli.MavenCli.execute(MavenCli.java:545)
+at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:196)
+at org.apache.maven.cli.MavenCli.main(MavenCli.java:141)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+at java.lang.reflect.Method.invoke(Method.java:597)
+at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:290)
+at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:230)
+at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:409)
+at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:352)
+&lt;/pre&gt;
+
+
+&lt;h3&gt;解决方案&lt;/h3&gt;
+
+&lt;p&gt;我们可以通过设置MaxPermSize,和XX:PermSize来解决这个问题,一般这两个参数是结合Xmx,Xms来设置,只需要将Tomcat或者Java运行环境设置如下参数即可：&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+JAVA_OPTS=&quot;-Djava.awt.headless=true -Dfile.encoding=UTF-8 
+-server -Xms1536m -Xmx1536m
+-XX:NewSize=256m -XX:MaxNewSize=256m -XX:PermSize=256m 
+-XX:MaxPermSize=256m -XX:+DisableExplicitGC&quot; 
+&lt;/pre&gt;
+
+</description>
+            <link>http:/demi-panda.com/2012/11/19/jenkins-PermGen-Space</link>
+            <guid>http:/demi-panda.com/2012/11/19/jenkins-PermGen-Space</guid>
+        </item>
+
+        
+
+        <item>
+            <title>Win7 + Ubuntu12.04 + EasyDBC安装</title>
+            <pubDate>Sun, 18 Nov 2012 00:00:00 +0800</pubDate>
+            <description>&lt;p&gt;有时候为了满足不同的需求,很多用户选择安装双系统。双系统在安装的时候，两个系统是分别装在不同的分区内，后安装的系统不会覆盖前一个系统。而且每个单独的系统都有自己的分区格式，不会造成冲突的。安装了双系统后，在启动的时候，有一个多重启动的选择菜单，可以选择进入哪个操作系统。当前状态下，只有一个系统是在运行的，不能随意的切换。如果想要进入另外一个，就要重新启动，重新选择。&lt;/p&gt;
+
+&lt;h3&gt;安装双系统 Windows7 + Ubuntu12.04&lt;/h3&gt;
+
+&lt;p&gt;二个系统不在同一文件夹下就可以了.可以同盘的.文件夹名一定要不一样.如果装微软的，低版本先装再装高版本。如果是微软的和红旗，就要先装微软的 。&lt;/p&gt;
+
+&lt;h3&gt;系统分区&lt;/h3&gt;
+
+&lt;p&gt;可以使用计算机系统自带的分区工具，也可以使用DiskGenius软件。
+装Ubuntu分配的硬盘大小最好是(20G以上）不要太小，这里请注意，ubuntu和windows文件系统完全不同，所以我们划好要给ubuntu的分区后，删除卷。到时候，安装好的ubuntu的分区，在windows下是看不到的，但是进入ubuntu是可以访问windows的磁盘的。这才叫双系统的吧，和wubi那种不一样哦。&lt;/p&gt;
+
+&lt;h3&gt;软件准备&lt;/h3&gt;
+
+&lt;p&gt;准备两个东西EasyBCD软件和iso镜像(我用的easybcd是2.0版，就下载1.7之后版就行，要那种安装版的，不要绿色版)&lt;/p&gt;
+
+&lt;h3&gt;EasyBCD使用&lt;/h3&gt;
+
+&lt;p&gt;选择“Add New Entry”-&gt; 选择NeoGrub&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/media/pub/EasyBCD-GRUB.png&quot;&gt;&lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;
+选NeoGrub 然后点Install NeoGrub点Save ，接着是Configure
+&lt;/p&gt;
+
+
+&lt;p&gt;&lt;img src=&quot;/media/pub/easybcd-2.png&quot;&gt;&lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;
+然后就会出现一个menu.lst文件,我们需要编辑这个文件,因为系统启动需要依靠这个文件找到我们的ubuntu的ios.
+把下面的配置复制进去，把原来的全覆盖掉:
+&lt;/p&gt;
+
+
+&lt;pre&gt;
+title Install Ubuntu
+root (hd0,0)
+kernel (hd0,0)/vmlinuz boot=casper iso-scan/filename=/ubuntu-12.04-amd64.iso ro quiet splash locale=zh_CN.UTF-8
+initrd (hd0,0)/initrd.lz
+&lt;/pre&gt;
+
+
+&lt;p&gt;&lt;em&gt;特别注意:&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;ubuntu-12.04-amd64.iso是你的iso的名字，别写成我的了，这个要改成你的。&lt;/p&gt;
+
+&lt;p&gt;对于有的电脑上你的第一个盘符并不是C盘，在磁盘管理中可以看出，所以安装时需将(hd0,0)改为（hd0,1）【假设为第二个】。&lt;/p&gt;
+
+&lt;p&gt;关闭-保存。&lt;/p&gt;
+
+&lt;p&gt;接下来,把准备好的iso用压缩软件或者虚拟光驱打开，或者解压,然后找到casper文件夹，复制initrd.lz和vmlinuz到C盘根目录,然后在把iso也拷贝到C盘根目录。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;重启&lt;/em&gt;
+你就会看到有2个启动菜单给你选择,我们选择第2个NeoGrub
+默认桌面有2个文档,一个是演示的不用管,我们选择安装Ubuntu ，&lt;/p&gt;
+
+&lt;p&gt;记得在这之前要按 &lt;code&gt;Ctrl+Alt+T&lt;/code&gt;  打开终端，取消掉对光盘所在驱动器的挂载，否则分区界面找不到分区。&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+sudo umount -l /isodevice
+&lt;/pre&gt;
+
+
+&lt;h3&gt;开始安装&lt;/h3&gt;
+
+&lt;p&gt;根据自己的爱好，选择语言,选择安装类型，可以自定义.
+&lt;img src=&quot;/media/pub/ubuntu-install.png&quot;&gt;&lt;/img&gt;
+挂在分区的方案如下(以30G为例)：&lt;/p&gt;
+
+&lt;pre id=&quot;wiki&quot;&gt;
+/ 20G  ext4（根分区可以大点）
+SWAP  2G
+/home  8G ext4（剩下的给/home）
+&lt;/pre&gt;
+
+
+&lt;p&gt;&lt;img src=&quot;/media/pub/ubuntu-install-1.png&quot;&gt;&lt;/img&gt;
+&lt;img src=&quot;/media/pub/ubuntu-install-2.png&quot;&gt;&lt;/img&gt;
+&lt;img src=&quot;/media/pub/ubuntu-install-3.png&quot;&gt;&lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;注意:&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;
+(1)在选择安装启动引导器的设备时，可以选择我们分好的 / 区，也可以新建一个/boot区。
+&lt;/p&gt;
+
+
+&lt;p&gt;
+(2)若重启就会发现原来 windows进不去了。
+&lt;p&gt;
+
+打开终端输入命令
+&lt;pre id=&quot;bash&quot;&gt;
+$ sudo vi /etc/default/grub
+#修改GRUB_TIMEOUT=&quot;10&quot;
+&lt;/pre&gt;
+然后在终端中输入
+&lt;pre id=&quot;bash&quot;&gt;
+$ sudo update-grub
+&lt;/pre&gt;
+update 命令会自动找到 windows 7 启动项。并且自动更新 /boot/grub/grub.cfg 文件。这样重启就能进windows了。
+&lt;p&gt;
+(3)最后进入Window7，打开EasyBCD删除安装时改的menu.lst文件，按Remove即可。
+然后去我们的c盘 删除vmlinuz，initrd.lz和系统的iso文件。
+利用EasyBCD可以更改启动项菜单按Edit Boot Menu按钮，可以选择将Windows7设为默认开机选项。
+&lt;p&gt;
+
+</description>
+            <link>http:/demi-panda.com/2012/11/18/easybcd-win7-ubuntu</link>
+            <guid>http:/demi-panda.com/2012/11/18/easybcd-win7-ubuntu</guid>
+        </item>
+
+        
+
+        <item>
+            <title>markdown 语法学习</title>
+            <pubDate>Sat, 17 Nov 2012 00:00:00 +0800</pubDate>
+            <description>&lt;h3&gt;概述&lt;/h3&gt;
+
+&lt;p&gt;Markdown 的目标是实现「易读易写」。&lt;/p&gt;
+
+&lt;p&gt;可读性，无论如何，都是最重要的。一份使用 Markdown 格式撰写的文件应该可以直接以纯文本发布，并且看起来不会像是由许多标签或是格式指令所构成。Markdown 语法受到一些既有 text-to-HTML 格式的影响，包括 Setext、atx、Textile、reStructuredText、Grutatext 和 EtText，而最大灵感来源其实是纯文本电子邮件的格式。&lt;/p&gt;
+
+&lt;p&gt;总之， Markdown 的语法全由一些符号所组成，这些符号经过精挑细选，其作用一目了然。比如：在文字两旁加上星号，看起来就像&lt;em&gt;强调&lt;/em&gt;。Markdown 的列表看起来，嗯，就是列表。Markdown 的区块引用看起来就真的像是引用一段文字，就像你曾在电子邮件中见过的那样。&lt;/p&gt;
+
+&lt;h3&gt;特殊字符自动转换&lt;/h3&gt;
+
+&lt;p&gt;在 HTML 文件中，有两个字符需要特殊处理： &lt;code&gt;&amp;amp;&lt;/code&gt; 和 &lt;code&gt;&amp;lt;&lt;/code&gt; 。 &lt;code&gt;&amp;amp;&lt;/code&gt; 符号用于起始标签，&lt;code&gt;&amp;lt;&lt;/code&gt; 符号则用于标记 HTML 实体，如果你只是想要显示这些字符的原型，你必须要使用实体的形式，像是&lt;code&gt; &amp;lt;&lt;/code&gt; 和 &lt;code&gt;&amp;amp;&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;amp;&lt;/code&gt; 字符尤其让网络文档编写者受折磨，如果你要打「&lt;code&gt;AT&amp;amp;T&lt;/code&gt;」 ，你必须要写成「&lt;code&gt;AT&amp;amp;amp;T&lt;/code&gt;」。而网址中的 &lt;code&gt;&amp;amp;&lt;/code&gt; 字符也要转换。比如你要链接到：&lt;/p&gt;
+
+&lt;pre&gt;
+http://images.google.com/images?num=30&amp;amp;q=larry+bird
+&lt;/pre&gt;
+
+
+&lt;p&gt;你必须要把网址转换写为：&lt;/p&gt;
+
+&lt;pre&gt;
+http://images.google.com/images?num=30&amp;amp;amp;q=larry+bird
+&lt;/pre&gt;
+
+
+&lt;p&gt;才能放到链接标签的 href 属性里。不用说也知道这很容易忽略，这也可能是 HTML 标准检验所检查到的错误中，数量最多的。&lt;/p&gt;
+
+&lt;p&gt;Markdown 让你可以自然地书写字符，需要转换的由它来处理好了。如果你使用的 &lt;code&gt;&amp;amp;&lt;/code&gt; 字符是 HTML 字符实体的一部分，它会保留原状，否则它会被转换成 &lt;code&gt;&amp;amp;amp&lt;/code&gt;;。&lt;/p&gt;
+
+&lt;p&gt;所以你如果要在文档中插入一个版权符号 ©，你可以这样写:&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;amp;copy;
+&lt;/pre&gt;
+
+
+&lt;p&gt;Markdown 就会将它转为：&lt;/p&gt;
+
+&lt;pre&gt;
+AT&amp;amp;T
+&lt;/pre&gt;
+
+
+&lt;h3&gt;h 标题&lt;/h3&gt;
+
+&lt;p&gt;类 Atx 形式则是在行首插入 1 到 6 个 # ，对应到标题 1 到 6 阶，例如：&lt;/p&gt;
+
+&lt;pre id=&quot;html&quot;&gt;
+# 这是 H1
+## 这是 H2
+###### 这是 H6
+&lt;/pre&gt;
+
+
+&lt;p&gt;你可以选择性地「闭合」类 atx 样式的标题，这纯粹只是美观用的，若是觉得这样看起来比较舒适，你就可以在行尾加上 #，而行尾的 # 数量也不用和开头一样（行首的井字符数量决定标题的阶数）：&lt;/p&gt;
+
+&lt;pre &gt;
+# 这是 H1 #
+## 这是 H2 ##
+### 这是 H3 ######
+&lt;/pre&gt;
+
+
+&lt;h3&gt;列表 ul 和 li&lt;/h3&gt;
+
+&lt;p&gt;无序列表使用星号、加号或是减号作为列表标记：&lt;/p&gt;
+
+&lt;pre&gt;
+*   Red
+*   Green
+*   Blue
+&lt;/pre&gt;
+
+
+&lt;p&gt;等同于：&lt;/p&gt;
+
+&lt;pre&gt;
++   Red
++   Green
++   Blue
+&lt;/pre&gt;
+
+
+&lt;p&gt;也等同于：&lt;/p&gt;
+
+&lt;pre&gt;
+-   Red
+-   Green
+-   Blue
+&lt;/pre&gt;
+
+
+&lt;p&gt;有序列表则使用数字接着一个英文句点：&lt;/p&gt;
+
+&lt;pre&gt;
+1.  Bird
+2.  McHale
+3.  Parish
+&lt;/pre&gt;
+
+
+&lt;p&gt;很重要的一点是，你在列表标记上使用的数字并不会影响输出的 HTML 结果，上面的列表所产生的 HTML 标记为:&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;ol&amp;gt;
+&amp;lt;li&amp;gt;Bird&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;McHale&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Parish&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+&lt;/pre&gt;
+
+
+&lt;p&gt;如果你的列表标记写成：&lt;/p&gt;
+
+&lt;pre&gt;
+1.  Bird
+1.  McHale
+1.  Parish
+&lt;/pre&gt;
+
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;格式&lt;/th&gt;
+      &lt;th&gt;用法&lt;/th&gt;
+      &lt;th&gt;示例&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;h1标签&lt;/hd&gt;
+      &lt;td&gt;    #标签&lt;/td&gt;
+      &lt;td&gt;#我是h1
+          =========
+          ## h2
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ul标签&lt;/hd&gt;
+      &lt;td&gt;    * 标签&lt;/td&gt;
+      &lt;td&gt;  &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+
+&lt;p&gt;你都会得到完全相同的 HTML 输出。重点在于，你可以让 Markdown 文件的列表数字和输出的结果相同，或是你懒一点，你可以完全不用在意数字的正确性。
+如果列表项目间用空行分开，在输出 HTML 时 Markdown 就会将项目内容用 标签包起来，举例来说：&lt;/p&gt;
+
+&lt;pre&gt;
+*   Bird
+*   Magic
+&lt;/pre&gt;
+
+
+&lt;p&gt;会被转换为：&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;Bird&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Magic&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&lt;/pre&gt;
+
+
+&lt;p&gt;但是这个：&lt;/p&gt;
+
+&lt;pre&gt;
+*   Bird
+*   Magic
+&lt;/pre&gt;
+
+
+&lt;p&gt;会被转换为：&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;p&amp;gt;Bird&amp;lt;/p&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;p&amp;gt;Magic&amp;lt;/p&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&lt;/pre&gt;
+
+
+&lt;p&gt;换句话说，也就是在行首出现数字-句点-空白，要避免这样的状况，你可以在句点前面加上反斜杠。&lt;/p&gt;
+
+&lt;pre&gt;
+1986\. What a great season.
+&lt;/pre&gt;
+
+
+&lt;h3&gt;链接&lt;/h3&gt;
+
+&lt;p&gt;Markdown 支持两种形式的链接语法： 行内式和参考式两种形式。
+不管是哪一种，链接文字都是用 [方括号] 来标记。&lt;/p&gt;
+
+&lt;p&gt;要建立一个行内式的链接，只要在方块括号后面紧接着圆括号并插入网址链接即可，如果你还想要加上链接的 title 文字，只要在网址后面，用双引号把 title 文字包起来即可，例如：&lt;/p&gt;
+
+&lt;pre&gt;
+This is [an example](http://example.com/ &quot;Title&quot;) inline link.
+[This link](http://example.net/) has no title attribute.
+&lt;/pre&gt;
+
+
+&lt;p&gt;会产生：&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;p&amp;gt;This is &amp;lt;a href=&quot;http://example.com/&quot; title=&quot;Title&quot;&amp;gt;
+an example&amp;lt;/a&amp;gt; inline link.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;a href=&quot;http://example.net/&quot;&amp;gt;This link&amp;lt;/a&amp;gt; has no
+title attribute.&amp;lt;/p&amp;gt;
+&lt;/pre&gt;
+
+
+&lt;p&gt;如果你是要链接到同样主机的资源，你可以使用相对路径：&lt;/p&gt;
+
+&lt;pre&gt;
+See my [About](/about/) page for details.
+&lt;/pre&gt;
+
+
+&lt;p&gt;参考式的链接是在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记：&lt;/p&gt;
+
+&lt;pre&gt;
+This is [an example][id] reference-style link.
+&lt;/pre&gt;
+
+
+&lt;p&gt;你也可以选择性地在两个方括号中间加上一个空格：
+&lt;per&gt;
+This is [an example] [id] reference-style link.
+&lt;/pre&gt;
+接着，在文件的任意处，你可以把这个标记的链接内容定义出来：&lt;/p&gt;
+
+&lt;pre&gt;
+[id]: http://example.com/  &quot;Optional Title Here&quot;
+&lt;/pre&gt;
+
+
+&lt;p&gt;链接内容定义的形式为：&lt;/p&gt;
+
+&lt;p&gt;方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字
+接着一个冒号
+接着一个以上的空格或制表符
+接着链接的网址
+选择性地接着 title 内容，可以用单引号、双引号或是括弧包着
+下面这三种链接的定义都是相同：&lt;/p&gt;
+
+&lt;pre&gt;
+[foo]: http://example.com/  &quot;Optional Title Here&quot;
+[foo]: http://example.com/  'Optional Title Here'
+[foo]: http://example.com/  (Optional Title Here)
+&lt;/pre&gt;
+
+
+&lt;p&gt;请注意：有一个已知的问题是 Markdown.pl 1.0.1 会忽略单引号包起来的链接 title。&lt;/p&gt;
+
+&lt;p&gt;链接网址也可以用方括号包起来：&lt;/p&gt;
+
+&lt;pre&gt;
+[id]: &lt;http://example.com/&gt;  &quot;Optional Title Here&quot;
+&lt;/pre&gt;
+
+
+&lt;p&gt;你也可以把 title 属性放到下一行，也可以加一些缩进，若网址太长的话，这样会比较好看：&lt;/p&gt;
+
+&lt;pre&gt;
+[id]: http://example.com/longish/path/to/resource/here
+    &quot;Optional Title Here&quot;
+&lt;/pre&gt;
+
+
+&lt;h3&gt;强调&lt;/h3&gt;
+
+&lt;p&gt;Markdown 使用星号（&lt;code&gt;&lt;em&gt;&lt;/code&gt;）和底线（&lt;code&gt;_&lt;/code&gt;）作为标记强调字词的符号，被 &lt;code&gt;&lt;/em&gt;&lt;/code&gt; 或 &lt;code&gt;&lt;em&gt;&lt;/code&gt; 包围的字词会被转成用 &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; 标签包围，用两个 &lt;code&gt;*&lt;/code&gt; 或 &lt;code&gt;&lt;/em&gt;&lt;/code&gt; 包起来的话，则会被转成 &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;，例如：&lt;/p&gt;
+
+&lt;pre&gt;
+*single asterisks*
+_single underscores_
+**double asterisks**
+__double underscores__
+&lt;/pre&gt;
+
+
+&lt;p&gt;会转成:&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;em&amp;gt;single asterisks&amp;lt;/em&amp;gt;
+&amp;lt;em&amp;gt;single underscores&amp;lt;/em&amp;gt;
+&amp;lt;strong&amp;gt;double asterisks&amp;lt;/strong&amp;gt;
+&amp;lt;strong&amp;gt;double underscores&amp;lt;/strong&amp;gt;
+&lt;/pre&gt;
+
+
+&lt;p&gt;你可以随便用你喜欢的样式，唯一的限制是，你用什么符号开启标签，就要用什么符号结束。&lt;/p&gt;
+
+&lt;p&gt;强调也可以直接插在文字中间：&lt;/p&gt;
+
+&lt;pre&gt;
+un*frigging*believable
+&lt;/pre&gt;
+
+
+&lt;p&gt;但是&lt;strong&gt;如果你的 &lt;code&gt;*&lt;/code&gt; 和 &lt;code&gt;_&lt;/code&gt; 两边都有空白的话，它们就只会被当成普通的符号&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;如果要在文字前后直接插入普通的星号或底线，你可以用反斜线：&lt;/p&gt;
+
+&lt;pre&gt;
+\*this text is surrounded by literal asterisks\*
+&lt;/pre&gt;
+
+
+&lt;h3&gt;代码&lt;/h3&gt;
+
+&lt;p&gt;如果要标记一小段行内代码，你可以用反引号把它包起来（&lt;code&gt;`&lt;/code&gt;），例如：&lt;/p&gt;
+
+&lt;pre&gt;
+Use the `printf()` function.
+&lt;/pre&gt;
+
+
+&lt;p&gt;如果要在代码区段内插入反引号，你可以用多个反引号来开启和结束代码区段：&lt;/p&gt;
+
+&lt;pre&gt;
+``There is a literal backtick (`) here.``
+&lt;/pre&gt;
+
+
+&lt;p&gt;这段语法会产生：&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;p&amp;gt;&amp;lt;code&amp;gt;There is a literal backtick (`) here.&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
+&lt;/pre&gt;
+
+
+&lt;p&gt;代码区段的起始和结束端都可以放入一个空白，起始端后面一个，结束端前面一个，这样你就可以在区段的一开始就插入反引号：&lt;/p&gt;
+
+&lt;pre&gt;
+A single backtick in a code span: `` ` ``
+
+A backtick-delimited string in a code span: `` `foo` ``
+&lt;/pre&gt;
+
+
+&lt;p&gt;会产生：&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;p&amp;gt;A single backtick in a code span: &amp;lt;code&amp;gt;`&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;A backtick-delimited string in a code span: &amp;lt;code&amp;gt;`foo`&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
+&lt;/pre&gt;
+
+
+&lt;h3&gt;图片&lt;/h3&gt;
+
+&lt;p&gt;很明显地，要在纯文字应用中设计一个「自然」的语法来插入图片是有一定难度的。&lt;/p&gt;
+
+
+&lt;p&gt;Markdown 使用一种和链接很相似的语法来标记图片，同样也允许两种样式： &lt;em&gt;行内式&lt;/em&gt;和&lt;em&gt;参考式&lt;/em&gt;。&lt;/p&gt;
+
+
+&lt;p&gt;行内式的图片语法看起来像是：&lt;/p&gt;
+
+
+&lt;pre&gt;
+![Alt text](/path/to/img.jpg)
+![Alt text](/path/to/img.jpg &quot;Optional title&quot;)
+&lt;/pre&gt;
+
+
+&lt;p&gt;详细叙述如下：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;一个惊叹号 &lt;code&gt;!&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;接着一个方括号，里面放上图片的替代文字&lt;/li&gt;
+&lt;li&gt;接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上
+选择性的 'title' 文字。&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;参考式的图片语法则长得像这样：&lt;/p&gt;
+
+&lt;pre&gt;
+![Alt text][id]
+&lt;/pre&gt;
+
+
+&lt;p&gt;「id」是图片参考的名称，图片参考的定义方式则和连结参考一样：&lt;/p&gt;
+
+&lt;pre&gt;
+[id]: url/to/image  &quot;Optional title attribute&quot;
+&lt;/pre&gt;
+
+
+&lt;p&gt;到目前为止， Markdown 还没有办法指定图片的宽高，如果你需要的话，你可以使用普通的 &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; 标签&lt;/p&gt;
+
+&lt;h3&gt;反斜杠&lt;/h3&gt;
+
+&lt;p&gt;Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符号，例如：如果你想要用星号加在文字旁边的方式来做出强调效果（但不用 &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; 标签），你可以在星号的前面加上反斜杠：i&lt;/p&gt;
+
+&lt;pre&gt;
+\*literal asterisks\*
+&lt;/pre&gt;
+
+
+&lt;p&gt;Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：&lt;/p&gt;
+
+&lt;pre&gt;
+\   反斜线
+`   反引号
+*   星号
+_   底线
+{}  花括号
+[]  方括号
+()  括弧
+#   井字号
++   加号
+-   减号
+.   英文句点
+!   惊叹号
+&lt;/pre&gt;
+
+
+
+</description>
+            <link>http:/demi-panda.com/2012/11/17/markdown</link>
+            <guid>http:/demi-panda.com/2012/11/17/markdown</guid>
+        </item>
+
+        
+
+        <item>
+            <title>Linux ulimit 设置</title>
+            <pubDate>Fri, 16 Nov 2012 00:00:00 +0800</pubDate>
+            <description>&lt;p&gt;大家都知道Linux系统默认打开文件数是1024，而实际的生产环境中，这个值总是显得太小，而太小的后果就是你的系统会报：too many open files 等这样的错误导致你系统死掉，所以我们总是要修改这个值，虽然表面上看来，Linux提供了ulimit这样的命令让你修改这个文件打开数，但不幸的是，过程远远没有看到的那么简单，下面子猴就谈谈这方面的问题。&lt;/p&gt;
+
+&lt;h3&gt;语法&lt;/h3&gt;
+
+&lt;p&gt;ulimit 命令的格式为：ulimit [options] [limit]
+具体的 options 含义以及简单示例可以参考以下表格。&lt;/p&gt;
+
+&lt;h4&gt;ulimit 参数说明&lt;/h4&gt;
+
+&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;ibm-data-table&quot;&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left; vertical-align:top&quot;&gt;
+&lt;strong&gt;选项 [options]&lt;/strong&gt;
+&lt;/td&gt;&lt;td style=&quot;text-align:left; vertical-align:top&quot;&gt;
+&lt;strong&gt;含义&lt;/strong&gt;
+&lt;/td&gt;&lt;td style=&quot;text-align:left; vertical-align:top&quot;&gt;
+&lt;strong&gt;例子&lt;/strong&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+-H 
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+设置硬资源限制，一旦设置不能增加。
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+ulimit – Hs 64；限制硬资源，线程栈大小为 64K。
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+-S 
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+设置软资源限制，设置后可以增加，但是不能超过硬资源设置。
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+ulimit – Sn 32；限制软资源，32 个文件描述符。
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+-a 
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+显示当前所有的 limit 信息。
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+ulimit – a；显示当前所有的 limit 信息。
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+-c 
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+最大的 core 文件的大小， 以 blocks 为单位。
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+ulimit – c unlimited； 对生成的 core 文件的大小不进行限制。
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+-d 
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+进程最大的数据段的大小，以 Kbytes 为单位。
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+ulimit -d unlimited；对进程的数据段大小不进行限制。
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+-f 
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+进程可以创建文件的最大值，以 blocks 为单位。
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+ulimit – f 2048；限制进程可以创建的最大文件大小为 2048 blocks。
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+-l 
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+最大可加锁内存大小，以 Kbytes 为单位。
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+ulimit – l 32；限制最大可加锁内存大小为 32 Kbytes。
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+-m 
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+最大内存大小，以 Kbytes 为单位。
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+ulimit – m unlimited；对最大内存不进行限制。
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+-n 
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+可以打开最大文件描述符的数量。
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+ulimit – n 128；限制最大可以使用 128 个文件描述符。
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+-p 
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+管道缓冲区的大小，以 Kbytes 为单位。
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+ulimit – p 512；限制管道缓冲区的大小为 512 Kbytes。
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+-s 
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+线程栈大小，以 Kbytes 为单位。
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+ulimit – s 512；限制线程栈的大小为 512 Kbytes。
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+-t 
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+最大的 CPU 占用时间，以秒为单位。
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+ulimit – t unlimited；对最大的 CPU 占用时间不进行限制。
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+-u 
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+用户最大可用的进程数。
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+ulimit – u 64；限制用户最多可以使用 64 个进程。
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+-v 
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+进程最大可用的虚拟内存，以 Kbytes 为单位。
+&lt;/td&gt;&lt;td style=&quot;vertical-align:top&quot;&gt;
+ulimit – v 200000；限制最大可用的虚拟内存为 200000 Kbytes。
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+
+&lt;h3&gt;查看ulimit 参数 ulimit -a&lt;/h3&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 15951
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 1024
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 15951
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+&lt;/pre&gt;
+
+
+&lt;p&gt;open files 系统默认下是1024, 程序中如果有大量的IO文件操作，很可能出现too many open files.&lt;/p&gt;
+
+&lt;h3&gt;修改目标&lt;/h3&gt;
+
+&lt;p&gt;我们的目标是：让每一个用户登录系统后系统打开的最大文件数都是我们设定好的。
+但我这里不得不说的是：非常遗憾，网上很多这方面关于ulimit设置修改资源限制的文章，但没一篇文章管用。
+把这个目标分解为两个目标：&lt;/p&gt;
+
+&lt;h4&gt;设置对root用户登录系统生效&lt;/h4&gt;
+
+&lt;p&gt;这个目标可以实现起来不难&lt;/p&gt;
+
+&lt;h4&gt;设置对所有用户生效&lt;/h4&gt;
+
+&lt;p&gt;这个就非常麻烦了，弄不好还会把你的系统给整坏，因为要重编译Linux的内核才行！
+所以权衡之下，我只实现了第一个目标，因为第二个目标的风险太大，我想如果我之前知道这点，那么我在装系统的时候我会先做这个处理，但现在我觉得已经晚了。&lt;/p&gt;
+
+&lt;h3&gt;修改的地方&lt;/h3&gt;
+
+&lt;h4&gt;修改/etc/security/limits.conf&lt;/h4&gt;
+
+&lt;p&gt;通过 vi /etc/security/limits.conf修改其内容，在文件最后加入（数值也可以自己定义）：&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+* soft  nofile = 32768
+* hard  nofile = 65536
+&lt;/pre&gt;
+
+
+&lt;h4&gt;修改/etc/profile&lt;/h4&gt;
+
+&lt;p&gt;通过vi /etc/profile修改，在最后加入以下内容&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ ulimit -n 32768
+&lt;/pre&gt;
+
+
+&lt;p&gt;然后重新登录即可生效了。
+说明：
+其实只修改/etc/profile就可以生效了，但我还是建议把/etc/security/limits.conf也修改一下。
+最后强调的是，你如果要使得修改对所有用户都生效，那么现在看来你只能重新编译Linux的内核才行&lt;/p&gt;
+</description>
+            <link>http:/demi-panda.com/2012/11/16/linux-ulimit</link>
+            <guid>http:/demi-panda.com/2012/11/16/linux-ulimit</guid>
+        </item>
+
+        
+
+        <item>
+            <title>Linux 创建用户</title>
+            <pubDate>Thu, 15 Nov 2012 00:00:00 +0800</pubDate>
+            <description>&lt;p&gt;Linux 系统是一个多用户多任务的分时操作系统，任何一个要使用系统资源的用户，都必须首先向系统管理员申请一个账号，然后以这个账号的身份进入系统。用户的账号一方面可以帮助系统管理员对使用系统的用户进行跟踪，并控制他们对系统资源的访问；另一方面也可以帮助用户组织文件，并为用户提供安全性保护。每个用户账号都拥有一个惟一的用户名和各自的口令。用户在登录时键入正确的用户名和口令后，就能够进入系统和自己的主目录。&lt;/p&gt;
+
+&lt;p&gt;实现用户账号的管理，要完成的工作主要有如下几个方面：
+· 用户账号的添加、删除与修改。
+· 用户口令的管理。
+· 用户组的管理。&lt;/p&gt;
+
+&lt;h3&gt;Linux 系统账户用户管理&lt;/h3&gt;
+
+&lt;p&gt;用户账号的管理工作主要涉及到用户账号的添加、修改和删除。
+添加用户账号就是在系统中创建一个新账号，然后为新账号分配用户号、用户组、主目录和登录Shell等资源。刚添加的账号是被锁定的，无法使用。&lt;/p&gt;
+
+&lt;h3&gt;创建用户 useradd&lt;/h3&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$useradd testuser
+#创建用户testuser
+$ passwd testuser
+#给已创建的用户testuser设置密码
+&lt;/pre&gt;
+
+
+&lt;p&gt;说明：新创建的用户会在/home下创建一个用户目录testuser
+usermod --help 修改用户这个命令的相关参数
+userdel testuser&lt;/p&gt;
+
+&lt;h3&gt;常用命令&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;命令&lt;/th&gt;
+      &lt;th&gt;描述&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;-c, --comment COMMENT&lt;/hd&gt;
+    &lt;td&gt;指定一段注释性描述。 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;-d, --home-dir HOME_DIR&lt;/hd&gt;
+    &lt;td&gt;指定用户主目录,如果此目录不存在，则同时使用-m选项，可以创建主目录。&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt; -m, --create-home&lt;/hd&gt;
+    &lt;td&gt;创建主目录&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;-g, --gid GROUP&lt;/hd&gt;
+    &lt;td&gt;指定用户所属的用户组&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;-G, --groups GROUPS&lt;/hd&gt;
+    &lt;td&gt;用户组,指定用户所属的附加组。&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;-s, --shell SHELL&lt;/hd&gt;
+    &lt;td&gt;指定用户的登录Shell&lt;/td&gt;
+  &lt;/tr&gt;
+
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+
+&lt;h4&gt;示例&lt;/h4&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ useradd –d /usr/sam -m sam
+#此命令创建了一个用户sam，
+#其中-d和-m选项用来为登录名sam产生一个主目录/usr/sam（/usr为默认的用户主目录所在的父目录）。
+&lt;/pre&gt;
+
+
+&lt;h3&gt;删除用户&lt;/h3&gt;
+
+&lt;p&gt;如果一个用户的账号不再使用，可以从系统中删除。删除用户账号就是要将/etc/passwd等系统文件中的该用户记录删除，必要时还删除用户的主目录。删除一个已有的用户账号使用userdel命令，其格式如下：&lt;/p&gt;
+
+&lt;h4&gt;语法&lt;/h4&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+userdel 选项 用户名
+&lt;/pre&gt;
+
+
+&lt;p&gt;常用的选项是-r，它的作用是把用户的主目录一起删除。&lt;/p&gt;
+
+&lt;h4&gt;示例&lt;/h4&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ usrdel -r testuser
+#删除用户,并删除testuser所在目录
+&lt;/pre&gt;
+
+
+&lt;h3&gt;修改帐号&lt;/h3&gt;
+
+&lt;p&gt;修改用户账号就是根据实际情况更改用户的有关属性，如用户号、主目录、用户组、登录Shell等。
+修改已有用户的信息使用usermod命令，其格式如下：&lt;/p&gt;
+
+&lt;h4&gt;语法&lt;/h4&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ usermod 选项 用户名
+&lt;/pre&gt;
+
+
+&lt;p&gt;常用的选项包括-c, -d, -m, -g, -G, -s, -u以及-o等，这些选项的意义与useradd命令中的选项一样，可以为用户指定新的资源值。另外，有些系统可以使用如下选项：&lt;/p&gt;
+
+&lt;h4&gt;示例&lt;/h4&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ -l 新用户名
+&lt;/pre&gt;
+
+
+&lt;p&gt;这个选项指定一个新的账号，即将原来的用户名改为新的用户名&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ usermod -s /bin/ksh -d /home/z –g developer sam
+&lt;/pre&gt;
+
+
+&lt;p&gt;此命令将用户sam的登录Shell修改为ksh，主目录改为/home/z，用户组改为developer。&lt;/p&gt;
+
+&lt;h3&gt;linux修改用户密码：&lt;/h3&gt;
+
+&lt;pre id=&quot;wiki&quot;&gt;
+如果是以root身份登录,修改root密码.只要输入
+passwd
+就会出现:
+New password: 
+Retype new password: 
+按提示输入密码确认即可.
+如果想更改其他用户密码,只要输入passwd username即可.
+如:passwd testuser
+New password: 
+Retype new password:
+&lt;/pre&gt;
+
+</description>
+            <link>http:/demi-panda.com/2012/11/15/linux-user-manager</link>
+            <guid>http:/demi-panda.com/2012/11/15/linux-user-manager</guid>
+        </item>
+
+        
+
+        <item>
+            <title>Generating SSH Keys</title>
+            <pubDate>Wed, 14 Nov 2012 00:00:00 +0800</pubDate>
+            <description>&lt;p&gt;如果你不使用推荐的HTTPS方法，可以使用SSH密钥建立安全连接您的计算机和GitHub。下面的步骤将引导您通过生成一个SSH密钥，然后添加到您的GitHub的帐户的公共密钥。&lt;/p&gt;
+
+&lt;h3&gt;Step 1: Check for SSH keys&lt;/h3&gt;
+
+&lt;p&gt;确认你本机的密钥,如果你有现有的密钥，则直接跳到step 4。&lt;/p&gt;
+
+&lt;p&gt;首先，我们需要检查您的计算机上现有的SSH密钥。打开终端并运行：&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ cd ~/.ssh
+#确认&quot;.ssh&quot; 目录是否存在
+&lt;/pre&gt;
+
+
+&lt;p&gt;If it says &quot;No such file or directory&quot; skip to step 3. Otherwise continue to step 2.&lt;/p&gt;
+
+&lt;h3&gt;Step 2: 备份并移除存在的SSH keys&lt;/h3&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ ls
+# Lists all the subdirectories in the current directory
+ config  id_rsa  id_rsa.pub  known_hosts
+
+$ mkdir key_backup
+# Makes a subdirectory called &quot;key_backup&quot; in the current directory
+
+cp id_rsa* key_backup
+# Copies the id_rsa keypair into key_backup
+
+rm id_rsa*
+# Deletes the id_rsa keypair
+&lt;/pre&gt;
+
+
+&lt;h3&gt;Step 3: Generate a new SSH key&lt;/h3&gt;
+
+&lt;p&gt;要生成新的SSH密钥，输入下面的代码。修改默认值，要求输入一个文件，保存密钥，只需按Enter键。&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ ssh-keygen -t rsa -C &quot;your_email@youremail.com&quot;
+# Creates a new ssh key using the provided email
+
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/you/.ssh/id_rsa):
+&lt;/pre&gt;
+
+
+&lt;p&gt;按回车保存到默认位置，再稍等出来提示输入密码短语，输完按回车要输两遍；它用来加密私钥，也就是以后使用私钥的时候要输这个密码；&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+Enter passphrase (empty for no passphrase): [Type a passphrase]
+Enter same passphrase again: [Type passphrase again]
+&lt;/pre&gt;
+
+
+&lt;p&gt;密钥生成成功，则会提示如下：&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+Your identification has been saved in /home/you/.ssh/id_rsa.
+Your public key has been saved in /home/you/.ssh/id_rsa.pub.
+The key fingerprint is:
+01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@youremail.com
+&lt;/pre&gt;
+
+
+&lt;h3&gt;Step 4: 添加SSH key to GitHub&lt;/h3&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+sudo apt-get install xclip
+#Downloads and installs xclip
+
+xclip -sel clip &lt; ~/.ssh/id_rsa.pub
+# Copies the contents of the id_rsa.pub file to your clipboard
+&lt;/pre&gt;
+
+
+&lt;p&gt;警告：重要的是要复制的关键，完全不添加换行符或空格。值得庆幸的是xclip的命令可以很容易地完全执行此设置。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Go to your &lt;a href=&quot;https://github.com/settings&quot;&gt;Account Settings&lt;/a&gt;
+&lt;p&gt;
+&lt;img src=&quot;/media/pub/userbar-account-settings.png&quot;  alt=&quot;&quot;&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;Click &lt;a href=&quot;https://github.com/settings/ssh&quot;&gt;&amp;quot;SSH Keys&amp;quot;&lt;/a&gt; in the left sidebar
+&lt;p&gt;&lt;img src=&quot;/media/pub/settings-sidebar-ssh-keys.png&quot; width=&quot;320px&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;Click &amp;quot;Add SSH key&amp;quot;
+&lt;p&gt;&lt;img src=&quot;/media/pub/ssh-add-ssh-key.png&quot; width=&quot;320px&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;Paste your key into the &amp;quot;Key&amp;quot; field
+&lt;p&gt;&lt;img src=&quot;/media/pub/ssh-key-paste.png&quot; width=&quot;320px&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;Click &amp;quot;Add key&amp;quot;
+&lt;p&gt;&lt;img src=&quot;/media/pub/ssh-add-key.png&quot; width=&quot;320px&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;Confirm the action by entering your GitHub password&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h3&gt;Step 5: 测试&lt;/h3&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+$ ssh -T git@github.com
+# Attempts to ssh to github
+&lt;/pre&gt;
+
+
+&lt;p&gt;You may see this warning:&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+The authenticity of host github.com (207.97.227.239) can't be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)?
+&lt;/pre&gt;
+
+
+&lt;p&gt;输入&quot;yes&quot;,验证的指纹相匹配.&lt;/p&gt;
+
+&lt;pre id=&quot;bash&quot;&gt;
+Hi username! You've successfully authenticated, but GitHub does not
+provide shell access.
+&lt;/pre&gt;
+
+</description>
+            <link>http:/demi-panda.com/2012/11/14/github-generating-ssh-keys</link>
+            <guid>http:/demi-panda.com/2012/11/14/github-generating-ssh-keys</guid>
+        </item>
+
+        
+
+        <item>
+            <title>梦想旅程</title>
+            <pubDate>Tue, 13 Nov 2012 00:00:00 +0800</pubDate>
+            <description>&lt;p&gt;麻雀低飞百座村乡，只为了觅得更好的食物，生存的信念，足以让其放弃高傲的力量；雁掠千里云层，只为了回归温暖的巢窝，活着的意念，足以让其忍受风雨穿梭的苦涩；人行万里旅程，只为了追求心中的梦想，坚守的意志，足以让其忘却漂泊流浪的无奈与痛楚！&lt;/p&gt;
+
+&lt;p&gt;每当有人问我：“一光年的距离有多远？”我总是苦笑不已。我深深的知道那是一种梦想的距离，当机会来时，就在你的身边，你却没有发现它，甚至它还很顽皮的在你的视线徘徊、从你的指缝悄然滑过，如白驹过隙那般错过，这是一种让人含泪苦笑的距离！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/media/pub/hope.png&quot; alt=&quot;Black Cube Theme&quot; class=&quot;img-right&quot; width=&quot;330px&quot; /&gt;
+许多人为了追求心中的梦想，背井离乡、漂泊流浪，忍受风霜的漂洒、雨雪的吹冻；每当夜幕降临，月色朦胧、竹影婆娑，嫩叶载着旖旎的星光，唤着归根的影魂，露珠闪着晶莹的光束，飘着优美的音符……&lt;/p&gt;
+
+&lt;p&gt;追求梦想的人们，或点燃一根烟，凝望着窗外的夜色，思念家乡路口的那棵古树，那乐趣无边、嬉戏纯真、牧童笛声的童年岁月；或躺在床上，任凭晚风挤过帘缝、月光舞着完美的旋律，甜甜的濡睡；梦里，与心爱的人携手漫步于山谷小径，萤火虫轻翔着，载着暖光而来，花儿的香味，弥漫着空气，舒适着美丽的心情……&lt;/p&gt;
+
+&lt;p&gt;梦想的旅程，是一种辛酸的过程，追逐的路途上，布满太多的坎坷与挫折，充满了许许多多无奈的选择、寂寞与苦闷、忧愁与烦恼；奔跑的路上，也乐在其中，过程总是充满乐趣的，有梦想的人是幸福的，勇于追求梦想的人是快乐的，因为他们懂得生活，更懂得珍惜生活的真谛！&lt;/p&gt;
+
+&lt;p&gt;忙碌的生活，往往会使我们迷失了方向，失去应有的理智，甚至忘却了思考，更变得肤浅起来；让我们活得休闲些吧，回归人性的本真，让生活的信念更加有品位，让生活充满诗意，像蝴蝶一样在阳光下翩然起舞，轻盈洒脱、自由闲适、平实自然！&lt;/p&gt;
+
+&lt;p&gt;追逐梦想的路上，偶尔停一下脚步，放松紧绷着的心情，给自己多点空间去休闲，晨起看曙光饮露水、黄昏赏夕阳恋晚霞、夜里望月听弦思故乡，或依窗静听风雨、与心爱的人漫步原野、闻着花香听着鸟语、或登山望尽万紫千红、踏青田园小径绘色彩、心系海边沙滩细数海鸥……&lt;/p&gt;
+
+&lt;p&gt;让我们的梦想旅程更加精彩，像花香一样，飘然四溢，四季各具风采，永驻岁月；像星月一样，迷恋着晶莹的露珠，谱写着美丽的童话，浪漫心间；像蝴蝶一样，漫步于风中，轻舞于花间，乐此不疲！这样，我们的人生才会五彩斑斓、缤纷多姿！&lt;/p&gt;
+</description>
+            <link>http:/demi-panda.com/2012/11/13/life-hope</link>
+            <guid>http:/demi-panda.com/2012/11/13/life-hope</guid>
+        </item>
+
+        
+    </channel>
+</rss>

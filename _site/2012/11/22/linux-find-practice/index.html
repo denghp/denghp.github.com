@@ -1,0 +1,517 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="robots" content="all,follow" />
+    <title>Linux find命令实践 - 熊猫人Blog</title>
+    <meta name="author" lang="en" content="All: Demi-Panda Lab [demi-panda.com]; e-mail: blog.pandam@gmail.com" />
+    <meta name="copyright" lang="en" content="@2012 Demi_Panda Lab, All Rights Reserved!" />
+    <meta name="description" content="熊猫人Blog主题：感想,敢拼,敢赢..." />
+    <link rel="shortcut icon" href="/media/demi/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="/media/demi/css/style.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="/media/demi/css/main.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="/media/demi/css/reset.css" />
+    <!--
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="/media/demi/css/embed.css" />
+    -->
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="/media/demi/css/superfish.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="/media/demi/css/prettify.css" />
+    <script src="/media/js/jquery-1.6.1.min.js" type="text/javascript"></script>
+    <script src="/media/js/jquery.jcarousel.min.js" type="text/javascript"></script>
+    <script src="/media/js/jquery.tagcloud.js" type="text/javascript"></script>
+    <script src="/media/js/jquery.demi.slider.js" type="text/javascript"></script>
+
+    <link rel="alternate" type="application/rss+xml" title="熊猫人Blog" href="/rss.xml" />
+    <script type="text/javascript" src="http://static.duoshuo.com/js/common.js"></script>
+    <script src="/media/js/prettify.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+      var duoshuoQuery = {short_name:"demi-panda"};
+    </script>
+    <script type="text/javascript" src="http://static.duoshuo.com/embed.js"></script>
+
+      <script type="text/javascript">
+      $(window).load(function(){
+          $("pre").addClass("prettyprint");
+          prettyPrint();
+          })
+        </script>
+
+    <script language="javascript">
+      $.fn.tagcloud.defaults = {
+        size: {start: 0.9, end: 2, unit: 'em'},
+        color: {start: '#e77471', end: '#f62817'}
+      };
+
+      $(function () {
+        $('#tagcloud a').tagcloud();
+      });
+    </script>  
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36197302-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+
+     </script>
+   </head>
+
+
+   <body >
+
+     <div id="wrapper">
+       <!-- /header -->
+<div id="header">
+
+  <div id="logo">
+    <h1 id="logo">
+      <a href="/" title="[Go to homepage]"><img src="/media/demi/img/demi-logo-2.png" alt="" /></a>
+    </h1> 
+  </div><!-- /logo -->
+
+  <div class="cleared"></div>
+</div>
+<!-- /header -->
+
+ 
+       <!-- Tray -->
+<div id="tray">
+  <ul>
+    <li ><a href="/">Home</a></li>
+    <li ><a href="/archives/">文章列表</a></li>
+    <li ><a href="/categories/">分类目录</a></li>
+    <li ><a href="/life/">生活范儿</a></li>
+    <li ><a href="/tags/">标签</a></li>
+    <li ><a href="/about/">关于我</a></li>
+  </ul>
+  <hr class="noscreen" />                    
+</div> 
+<!-- /tray -->
+
+
+       <div id="main">
+         <div id="content">
+  <div class="post type-post status-publish format-standard hentry category-1 post" >
+    <div class="posttop">
+      <h1 class="posttitle">
+        Linux find命令实践
+      </h1>
+    </div>
+    <div class="meta">
+      Posted 
+      <time class="text" datetime="2012-11-22">2012-11-22</time>&nbsp; |
+      
+      分类:
+      
+      
+      <a href="/categories/#Linux" class="text" title="Linux" rel="category tag">Linux</a>&nbsp;
+      
+      <a href="/categories/#Shell" class="text" title="Shell" rel="category tag">Shell</a>&nbsp;
+      
+      
+      &nbsp;&nbsp;
+
+      <!-- Place this tag where you want the +1 button to render. -->
+      <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="200"></div>
+
+      <!-- Place this tag after the last +1 button tag. -->
+      <script type="text/javascript">
+        window.___gcfg = {lang: 'zh-CN'};
+
+(function() {
+ var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+ po.src = 'https://apis.google.com/js/plusone.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+ })();
+</script>
+      
+      <div class="tag">
+        
+        <a href="/tags/#Linux" class="text" title="Linux" rel="category tag">Linux</a>&nbsp;
+        
+        <a href="/tags/#Shell" class="text" title="Shell" rel="category tag">Shell</a>&nbsp;
+        
+      </div>
+      
+    </div>
+
+    <div class="postcontent-entry">
+      <div class="cleared"></div>
+      <p>Linux中查找文件的命令通常为“find”命令，“find”命令能帮助我们在使用,管理Linux的日常事务中方便的查找出我们需要的文件。find是个很强大的命令，能够匹配正则，查找对应权限，能够帮你精确的定位你的系统中的任何地方任何目录下的文件。</p>
+
+<h3>语法</h3>
+
+<pre id="bash" style="width:580px">
+Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec] [path...] [expression]
+</pre>
+
+
+<h3>find 命令选项</h3>
+
+<pre id="wiki" style="width:580px">
+-name filename      #查找名为filename的文件
+-perm               #按执行权限来查找
+-user username      #按文件属主来查找
+-group groupname    #按组来查找
+-mtime -n +n        #按文件更改时间来查找文件，-n指n天以内，+n指n天以前
+-atime -n +n        #按文件访问时间来查
+-perm               #按执行权限来查找
+-user  username     #按文件属主来查找
+-group groupname    #按组来查找
+-mtime -n +n     #按文件更改时间来查找文件，-n指n天以内，+n指n天以前
+-atime -n +n     #按文件访问时间来查找文件，-n指n天以内，+n指n天以前 
+-ctime -n +n     #按文件创建时间来查找文件，-n指n天以内，+n指n天以前 
+-nogroup         #查无有效属组的文件，即文件的属组在/etc/groups中不存在
+-nouser          #查无有效属主的文件，即文件的属主在/etc/passwd中不存
+-newer f1 !f2    #找文件，-n指n天以内，+n指n天以前 
+-ctime -n +n     #按文件创建时间来查找文件，-n指n天以内，+n指n天以前 
+-nogroup         #查无有效属组的文件，即文件的属组在/etc/groups中不存在
+-nouser          #查无有效属主的文件，即文件的属主在/etc/passwd中不存
+-newer f1 !f2    #查更改时间比f1新但比f2旧的文件
+-type  b/d/c/p/l/f  #查是块设备、目录、字符设备、管道、符号链接、普通文件
+-size  n[c]         #查长度为n块[或n字节]的文件
+-depth              #使查找在进入子目录前先行查找完本目录
+-fstype             #查更改时间比f1新但比f2旧的文件
+-type b/d/c/p/l/f   #查是块设备、目录、字符设备、管道、符号链接、普通文件
+-size n[c]          #查长度为n块[或n字节]的文件
+-depth              #使查找在进入子目录前先行查找完本目录
+-mount              #查文件时不跨越文件系统mount点
+-follow             #如果遇到符号链接文件，就跟踪链接所指的文件
+-mount              #查文件时不跨越文件系统mount点
+-follow             #如果遇到符号链接文件，就跟踪链接所指的文件
+-cpio               #对匹配的文件使用cpio命令，将他们备份到磁带设备中
+-prune              #忽略某个目录
+</pre>
+
+
+<h3>find命令示例</h3>
+
+<pre id="bash" style="width:580px">
+$find ~ -name "*.txt" -print    #在$HOME中查.txt文件并显示
+$find . -name "*.txt" -print
+$find . -name "[A-Z]*" -pri26nbsp; 
+#对匹配的文件使用cpio命令，将他们备份到磁带设备中
+$find ~ -name "*.txt" -print    #在$HOME中查.txt文件并显示
+$find . -name "*.txt" -print
+$find . -name "[A-Z]*" -print #查以大写字母开头的文件
+$find /etc -name "host*" -print #查以host开头的文件
+$find . -name "[a-z][a-z][0--9].txt" -print 
+#查以两个小写字母和两个数字开头的txt文件
+$find . -perm 755 -print
+$find . -perm -007 -exec ls -l {} /; #查所有用户都可读写执行的文件同-perm 777
+$find . -type d -print
+$find . ! -type d -print 
+$find . -type l -print
+$find . -size +1000000c -print #查长度大于1Mb的文件
+$find . -size 100c -print      #查长度为100c的文件
+$find . -size +10 -print       #查长度超过期作废10块的文件（1块=512字节）
+$find etc home apps -depth -print | cpio -ivcdC65536 -o /dev/rmt0
+$find /etc -name "passwd*" -exec grep "cnscn" {} /; #看是否存在cnscn用户
+$find . -name "yao*" | xargs file
+$find . -name "yao*" | xargs echo   "" < /tmp/core.log
+$find . -name "yao*" | xargs chmod o-w
+</pre>
+
+
+
+
+<pre id="bash" style="width:580px">
+$find -name april*              #在当前目录下查找以april开始的文件
+$find -name april* fprint file  
+#在当前目录下查找以april开始的文件，并把结果输出到file中
+$find -name ap* -o -name may*   #查找以ap或may开头的文件
+$find /mnt -name tom.txt -ftype vfat  
+#在/mnt下查找名称为tom.txt且文件系统类型为vfat的文件
+$find /mnt -name t.txt ! -ftype vfat  
+#在/mnt下查找名称为tom.txt且文件系统类型不为vfat的文件
+$find /tmp -name wa* -type l    #在/tmp下查找名为wa开头且类型为符号链接的文件
+$find /home -mtime -2           #在/home下查最近两天内改动过的文件
+$find /home   -atime -1         #查1天之内被存取过的文件
+$find /home -mmin   +60         #在/home下查60分钟前改动过的文件
+$find /home -amin +30           #查最近30分钟前被存取过的文件
+$find /home -newer tmp.txt      #在/home下查更新时间比tmp.txt近的文件或目录
+$find /home -anewer tmp.txt     #在/home下查存取时间比tmp.txt近的文件或目录
+$find /home -used -2            #列出文件或目录被改动过之后，在2日内被存取过的文件或目录
+$find /home -user cnscn         #列出/home目录内属于用户cnscn的文件或目录
+$find /home -uid +501           #列出/home目录内用户的识别码大于501的文件或目录
+$find /home -group cnscn        #列出/home内组为cnscn的文件或目录
+$find /home -gid 501            #列出/home内组id为501的文件或目录
+$find /home -nouser             #列出/home内不属于本地用户的文件或目录
+$find /home -nogroup            #列出/home内不属于本地组的文件或目录
+$find /home -name tmp.txt -maxdepth 4 #列出/home内的tmp.txt 查时深度最多为3层
+$find /home -name tmp.txt -mindepth 3 #从第2层开始查
+$find /home -empty              #查找大小为0的文件或空目录
+$find /home -size +512k         #查大于512k的文件
+$find /home -size -512k         #查小于512k的文件
+$find /home -links +2           #查硬连接数大于2的文件或目录
+$find /home -perm 0700          #查权限为700的文件或目录
+$find /tmp -name tmp.txt -exec cat {} /;
+$find /tmp -name tmp.txt -ok rm {} /;
+$find / -amin -10       #查找在系统中最后10分钟访问的文件
+$find / -atime -2       #查找在系统中最后48小时访问的文件
+$find / -empty          #查找在系统中为空的文件或者文件夹
+$find / -group cat      #查找在系统中属于 groupcat的文件
+$find / -mmin -5        #查找在系统中最后5分钟里修改过的文件
+$find / -mtime -1       #查找在系统中最后24小时里修改过的文件
+$find / -nouser         #查找在系统中属于作废用户的文件
+$find / -user fred      #查找在系统中属于FRED这个用户的文件
+</pre>
+
+
+<h3>查当前目录下的所有普通文件</h3>
+
+<p>查当前目录下的所有普通文件，并在-exec选项中使用ls -l命令将它们列出</p>
+
+<pre id="bash" style="width:580px">
+$find . -type f | xargs ls -lt {}\;
+-rw-rw-r-- 1 root root  2245 Nov 19 09:40 ./2008-09-23-java-annotation.md
+-rw-rw-r-- 1 root root  1094 Nov 19 09:40 ./2009-04-27-a-python-program.md
+-rw-rw-r-- 1 root root  1239 Nov 19 09:40 ./2009-09-09-about-form-get-post.md
+-rw-rw-r-- 1 root root  7078 Nov 19 09:40 ./2010-07-21-hash-table.md
+</pre>
+
+
+<p>在/logs目录中查找更改时间在5日以前的文件并删除它们：</p>
+
+<pre id="bash" style="width:580px">
+$ find logs -type f -mtime +5 | xargs -ok rm {}\;
+</pre>
+
+
+<p>查询当天修改过的文件</p>
+
+<pre id="bash" style="width:580px">
+$find ./ -mtime -1 -type f | xargs ls -l {}\;
+</pre>
+
+
+<p>查询并交给awk去处理</p>
+
+<pre id="bash" style="width:580px">
+$ who | awk '{print $1"/t"$2}'
+</pre>
+
+
+<p>Linux字符编码转换</p>
+
+<pre id="bash" style="width:580px">
+find default -type d -exec mkdir -p utf/{} \;
+find default -type f -exec iconv -f GBK -t UTF-8 {} -o utf/{} \;
+</pre>
+
+
+<p>这两行命令将default目录下的文件由GBK编码转换为UTF-8编码，目录结构不变，转码后的文件保存在utf/default目录下。</p>
+
+<p>从M个文件中查找包含某个字符的文件并移动到另一个目录</p>
+
+<pre id="bash" style="widht:580px">
+grep -l "data-thread-key" ./* | xargs -i -i mv {} test/
+</pre>
+
+
+    </div><!-- /postcontent -->
+
+    <div class="v-pagination">
+      
+      <a class="prev" href="/2012/11/22/bash-profile" title="前一篇：.bash_profile .bashrc profile 文件的作用的执行顺序">&laquo; .bash_profile .bashrc profile 文件的作用的执行顺序</a>
+      
+      <!--
+      <a class="center" href="/archives/">文章列表</a>
+      -->
+      
+      <a class="next" href="/2012/11/22/version-manager" title="后一篇：版本管理策略">版本管理策略 &raquo;</a>
+      
+    </div>
+    <!-- JiaThis Button BEGIN -->
+    <div class="jiathis_style" style="margin: 10px 10px 20px 0;padding: 10px 0 0;">
+      <span class="jiathis_txt">分享到：</span>
+      <a class="jiathis_button_tools_1"></a>
+      <a class="jiathis_button_tools_2"></a>
+      <a class="jiathis_button_tools_3"></a>
+      <a class="jiathis_button_tools_4"></a>
+      <a href="http://www.jiathis.com/share?uid=1706288" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+      <a class="jiathis_counter_style"></a>
+    </div>
+    <script type="text/javascript">
+      var jiathis_config = {data_track_clickback:true};
+    </script>
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1343704647947962" charset="utf-8"></script>
+    <!-- JiaThis Button END -->
+  </div><!-- /post -->
+  <div class="cleared"></div>
+
+  <div class="archivesbox">
+    <div class="comments">
+      <!-- Duoshuo Comment Begin -->
+      <div class="ds-thread" data-thread-id="201211221050" data-thread-key="201211221050" data-title="Linux find命令实践" data-url="/2012/11/22/linux-find-practice"
+        data-order="desc" data-form-positon="top"></div>
+      <!-- Duoshuo Comment End -->
+    </div>
+  </div>
+</div><!-- /content -->
+
+<div id="sidebar">
+  <ul>
+    <li id="tag_cloud" class="boxed widget widget_tag_cloud">
+    <h3 class="widgettitle">标签</h3>
+    
+      <a href='/tags/#Shell' class='tag-link-9' title='Shell' style='font-size: 15pt;'>Shell</a>
+      
+      <a href='/tags/#Jekyll' class='tag-link-1' title='Jekyll' style='font-size: 16pt;'>Jekyll</a>
+      
+      <a href='/tags/#CI' class='tag-link-1' title='CI' style='font-size: 12pt;'>CI</a>
+      
+      <a href='/tags/#Annotation' class='tag-link-1' title='Annotation' style='font-size: 20pt;'>Annotation</a>
+      
+      <a href='/tags/#Java' class='tag-link-6' title='Java' style='font-size: 14pt;'>Java</a>
+      
+      <a href='/tags/#prettify' class='tag-link-1' title='prettify' style='font-size: 18pt;'>prettify</a>
+      
+      <a href='/tags/#svn' class='tag-link-1' title='svn' style='font-size: 13pt;'>svn</a>
+      
+      <a href='/tags/#version' class='tag-link-1' title='version' style='font-size: 17pt;'>version</a>
+      
+      <a href='/tags/#HTTP' class='tag-link-1' title='HTTP' style='font-size: 14pt;'>HTTP</a>
+      
+      <a href='/tags/#OS' class='tag-link-1' title='OS' style='font-size: 12pt;'>OS</a>
+      
+      <a href='/tags/#Markdown' class='tag-link-1' title='Markdown' style='font-size: 18pt;'>Markdown</a>
+      
+      <a href='/tags/#Life' class='tag-link-1' title='Life' style='font-size: 14pt;'>Life</a>
+      
+      <a href='/tags/#Linux' class='tag-link-11' title='Linux' style='font-size: 15pt;'>Linux</a>
+      
+      <a href='/tags/#SSH' class='tag-link-2' title='SSH' style='font-size: 13pt;'>SSH</a>
+      
+      <a href='/tags/#Jenkins' class='tag-link-2' title='Jenkins' style='font-size: 17pt;'>Jenkins</a>
+      
+      <a href='/tags/#研发实践' class='tag-link-2' title='研发实践' style='font-size: 22pt;'>研发实践</a>
+      
+      <a href='/tags/#Hudson' class='tag-link-1' title='Hudson' style='font-size: 16pt;'>Hudson</a>
+      
+      <a href='/tags/#Python' class='tag-link-1' title='Python' style='font-size: 16pt;'>Python</a>
+      
+      <a href='/tags/#Ubuntu' class='tag-link-2' title='Ubuntu' style='font-size: 16pt;'>Ubuntu</a>
+      
+      <a href='/tags/#安全' class='tag-link-1' title='安全' style='font-size: 16pt;'>安全</a>
+      
+      <a href='/tags/#Github' class='tag-link-2' title='Github' style='font-size: 16pt;'>Github</a>
+      
+      <a href='/tags/#编程实践' class='tag-link-1' title='编程实践' style='font-size: 22pt;'>编程实践</a>
+      
+      <a href='/tags/#编程语言' class='tag-link-1' title='编程语言' style='font-size: 22pt;'>编程语言</a>
+      
+      <a href='/tags/#Mavne' class='tag-link-1' title='Mavne' style='font-size: 15pt;'>Mavne</a>
+      
+      <a href='/tags/#梦想' class='tag-link-1' title='梦想' style='font-size: 16pt;'>梦想</a>
+      
+      <a href='/tags/#HTML' class='tag-link-1' title='HTML' style='font-size: 14pt;'>HTML</a>
+      
+    </li>
+    <li id="recent-posts-2" class="boxed widget widget_recent_entries">		
+    <h3 class="widgettitle">近期文章</h3>	
+    <ul>
+       
+      <li>
+      <a href="/2012/11/22/version-manager" title="版本管理策略">版本管理策略</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/22/linux-find-practice" title="Linux find命令实践">Linux find命令实践</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/22/bash-profile" title=".bash_profile .bashrc profile 文件的作用的执行顺序">.bash_profile .bashrc profile 文件的作用的执行顺序</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/21/ssh-remote" title="SSH登陆响应慢的问题">SSH登陆响应慢的问题</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/21/http-status" title="HTTP状态码">HTTP状态码</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/20/ubunut-virtualbox" title="Ubuntu 中VirtualBox 使用U盾">Ubuntu 中VirtualBox 使用U盾</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/20/linux-ffmpeg" title="Linux下的命令行下转换媒体格式工具FFMPEG详解">Linux下的命令行下转换媒体格式工具FFMPEG详解</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/19/linux-command" title="程序员的利器-Linux常用命令">程序员的利器-Linux常用命令</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/19/jenkins-PermGen-Space" title="Jenkins PermGen space 问题">Jenkins PermGen space 问题</a>
+      </li>
+       
+      <li>
+      <a href="/2012/11/18/easybcd-win7-ubuntu" title="Win7 + Ubuntu12.04 + EasyDBC安装">Win7 + Ubuntu12.04 + EasyDBC安装</a>
+      </li>
+      
+    </ul>
+    </li>
+    <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
+    <h3 class="widgettitle">热评文章</h3>
+    <ul class="ds-top-threads" data-num-items="5" data-range="weekly"></ul>
+    </li>
+    <li id="ds-recent-comments-3" class="boxed widget ds-widget-recent-comments">
+    <h3 class="widgettitle">近期评论</h3>
+    <ul class="ds-recent-comments" data-num-items="10" data-show-avatars="1" data-show-time="1" data-show-title="0" data-show-admin="0" data-avatar-size="32" data-excerpt-length="70">
+    </ul>
+    </li>
+    <script>
+      if (typeof DUOSHUO !== 'undefined')
+      DUOSHUO.RecentCommentsWidget && DUOSHUO.RecentCommentsWidget('.ds-recent-comments');
+    </script>
+    <li id="ds-qqt-follow" class="boxed widget ds-widget-qqt-follow">
+    <iframe src="http://follow.v.t.qq.com/index.php?c=follow&a=quick&name=denghp_280606790&style=1&t=1352387427769&f=1" frameborder="0" scrolling="auto" width="227" height="75" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
+    </li>
+    <li id="ds-recent-visitors-2" class="boxed widget ds-widget-recent-visitors">
+    <h3 class="widgettitle">最近访客</h3>
+    <ul class="ds-recent-visitors" data-num-items="21" data-show-time="0" data-avatar-size="50"></ul>
+    </li>
+    <script>
+      if (typeof DUOSHUO !== 'undefined')
+      DUOSHUO.TopThreads && DUOSHUO.TopThreads('.ds-top-threads');
+    </script>
+  </ul>
+</div>
+<!-- /sidebar -->
+<div class="cleared"></div>
+
+
+
+
+
+  
+
+       </div> <!-- /main -->
+     </div> <!-- wrapper -->
+
+     <!-- footer -->
+     <footer>
+<div id="footer">                                          
+  <p class="t-center" style='font-size: 10pt;'>
+  &copy; 2012 <a href="/">Demi Panda Lab</a>, All Rights Reserved.
+  <script src="http://s14.cnzz.com/stat.php?id=4734788&web_id=4734788&show=pic" language="JavaScript"></script>
+  </p>
+  </div> 
+</footer>
+
+ 
+
+   </body>
+ </html>
+
