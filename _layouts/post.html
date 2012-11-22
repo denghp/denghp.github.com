@@ -16,10 +16,25 @@ layout: default
       {% endif %}
       分类:
       {% if page.categories %}
-      {% for cat in page.categories %}
-      <a href="{{ site.baseurl }}/categories/#{{cat}}" class="text" title="{{ cat }}" rel="category tag">{{ cat }}</a>&nbsp;|
+      {% for cat in page.categories limit:5 %}
+      <a href="{{ site.baseurl }}/categories/#{{cat}}" class="text" title="{{ cat }}" rel="category tag">{{ cat }}</a>&nbsp;
       {% endfor %}
       {% endif %}
+      &nbsp;&nbsp;
+
+      <!-- Place this tag where you want the +1 button to render. -->
+      <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="200"></div>
+
+      <!-- Place this tag after the last +1 button tag. -->
+      <script type="text/javascript">
+        window.___gcfg = {lang: 'zh-CN'};
+
+(function() {
+ var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+ po.src = 'https://apis.google.com/js/plusone.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+ })();
+</script>
       {% if page.tags%}
       <div class="tag">
         {% for tag in page.tags%}
