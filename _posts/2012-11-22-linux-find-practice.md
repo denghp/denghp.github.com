@@ -14,7 +14,7 @@ date: 2012-11-22
 Linux中查找文件的命令通常为“find”命令，“find”命令能帮助我们在使用,管理Linux的日常事务中方便的查找出我们需要的文件。find是个很强大的命令，能够匹配正则，查找对应权限，能够帮你精确的定位你的系统中的任何地方任何目录下的文件。
 
 ###语法
-<pre id="bash" style="width:580px">
+<pre id="bash" >
 Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec] [path...] [expression]
 </pre>
 

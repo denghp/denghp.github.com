@@ -2,10 +2,9 @@
 layout: post
 title: 版本管理策略
 tags: 
-- version
-- 编程实践
+- 研发实践
 categories:
-- 编程实践
+- 研发实践
 UUID: 201211220500
 date: 2012-11-22
 ---

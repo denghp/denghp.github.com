@@ -455,7 +455,15 @@ img.aligncenter {margin:10px auto; text-align:center; display:block;}
   font-weight: bold;
   border-bottom: 1px solid #e8e8e8; margin-bottom: 18px; margin-top: 1.5em; 
 }
-.postcontent-entry h4 { margin-bottom: 18px; font-size: 14px; font-weight: 700; color: #489620; line-height: 26px; text-transform: uppercase; }
+.postcontent-entry h4 {   
+  font-family: verdana, sans-serif;
+  margin-bottom: 18px; 
+  font-size: 14px; 
+  font-weight: 700; 
+  color: #262424; 
+  line-height: 26px; 
+  text-transform: capitalize; 
+}
 .postcontent-entry h5 { 
   font-family: verdana, sans-serif;
   color: #262424;
