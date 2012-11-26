@@ -99,8 +99,11 @@ http://slave_host:port/solr/replication?command=enablepoll
 http://slave_host:port/solr/replication?command=details
 </pre>
 返回配置和当前状态
-
+<pre>
 http://host:port/solr/replication?command=filelist&indexversion=&lt;index-version-number&gt;
+</pre>
 返回指定主机的索引文件列表，可以指定版本号
+<pre>
 http://master_host:port/solr/replication?command=backup
+</pre>
 如果有新的commit，将备份索引库，该命令在阶段备份索引时很有用
