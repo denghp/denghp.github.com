@@ -5,7 +5,7 @@ layout: nil
 <rss version="2.0">
     <channel>
         <title>{{ site.meta.site_title }}</title>
-        <link>{{ site.meta.absolute_baseurl }}</link>
+        <link  rel="self" type="application/atom+xml" href="{{ site.meta.absolute_baseurl }}" />
         <description>{{ site.meta.site_subtitle }}</description>
         <managingEditor>{{ site.meta.author.email }} ({{ site.meta.author.full_name }})</managingEditor>
         <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
@@ -16,7 +16,7 @@ layout: nil
             <title>{{ post.title }}</title>
             <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
             <description>{{ post.content | xml_escape }}</description>
-            <link>{{ site.meta.absolute_baseurl }}{{ post.url }}</link>
+            <link rel="alternate" type="text/html" href="{{ site.meta.absolute_baseurl }}{{ post.url }}"/>
             <guid>{{ site.meta.absolute_baseurl }}{{ post.url }}</guid>
         </item>
 
