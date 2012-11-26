@@ -21,8 +21,25 @@ Tags: white, black, blue, light, two-columns, threaded-comments, fixed-width, ri
 /************************************************
 *          Resets          *
 ************************************************/
-html, body, div, p, span, h1, h2, h3, h4, h5, h6, img, ul, ol, dl, li, dt, dd, blockquote, pre, form, fieldset, label, input, table, th, td, a
+html, body, div, p, span, h1, h2, h3, h4, h5, h6, img, ul, ol, dl, li, dt, dd, blockquote, pre, form, fieldset, label, input, table, th, td, a {
+margin: 0;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+padding: 0;
+padding-top: 0px;
+padding-right: 0px;
+padding-bottom: 0px;
+padding-left: 0px;
+}
+#content {
+  font-size: 14px;
+  line-height: 25px;
+}
+/**
 {margin:0; padding:0; border:0; vertical-align:baseline; color:#222;}  
+**/
 :focus {outline:0;}
 body {line-height:1;}
 ul, ol {list-style:none;}
@@ -471,6 +488,15 @@ img.aligncenter {margin:10px auto; text-align:center; display:block;}
   font-weight: bold;
 }
 .postcontent-entry h6 { font-size: 13px; font-weight: 700; margin-bottom: 0.5em; color: #444; line-height: 26px; }
+.postcontent-entry p {
+  padding: 7px 0;
+  padding-top: 7px;
+  padding-right: 0px;
+  padding-bottom: 7px;
+  padding-left: 0px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
 .post .meta {
   text-align: left;
   color: #a0a0a0;
