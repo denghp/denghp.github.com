@@ -145,7 +145,7 @@ $ git tag revert_version bbaf6fb5060b4875b18ff9ff637ce118256d6f20
 
 将tag push到远程
 <pre>
-$ git push origin tagname
+$ git push --tags tagname
 </pre>
 
 删除远程tag
