@@ -41,6 +41,7 @@ pre.prettyprint{
   -webkit-border-radius:2px;
   -moz-border-radius:2px;
   border-radius:2px;
+  font-size:1.0em;
   font-family: verdana, sans-serif;
   monospace;
   width:580px;

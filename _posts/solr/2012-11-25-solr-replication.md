@@ -29,7 +29,7 @@ Solr作为一个搜索服务器，在并发搜索请求的场景下，可能一�
 事实上，Solr框架在上面的几个方面都能做到不错的支持，具有很大的灵活性。基于上述的几个问题，我们来配置Solr集群的Replication，并实践集群复制的功能。
 
 ###结构图
-<img src="/media/pub/solr-replication.png"></img>
+<img src="/media/pub/solr/solr-replication.png"></img>
 
 ### 配置
 ReplicationHandler是个RequestHandler，如果需要使用它，也就是在solrconfig.xml中配置它，下面介绍ReplicationHandler的配置参数。
