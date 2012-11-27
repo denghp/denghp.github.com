@@ -3,6 +3,8 @@ layout: post
 title: Git原理浅析
 categories:
 - Tools
+- Github
+- 研发实践
 tags:
 - Github
 - Linux
