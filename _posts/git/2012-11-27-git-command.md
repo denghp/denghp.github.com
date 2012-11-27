@@ -142,3 +142,16 @@ $ git config branch.master.remote origin
 $ git tag revert_version bbaf6fb5060b4875b18ff9ff637ce118256d6f20
 </pre>
 来标记这个被你还原的版本，那么以后你想查看该版本时，就可以使用 revert_version标签名，而不是哈希值了
+
+将tag push到远程
+<pre>
+$ git push origin tagname
+</pre>
+
+删除远程tag
+<pre>
+$ git tag -d tagname
+#删除本地tag
+$ git push origin :refs/tags/tagname
+#删除远程tag
+</pre>
