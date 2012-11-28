@@ -12,7 +12,7 @@ date: 2012-11-22
 ---
 
 ##登陆shell与交互式非登陆shell的区别
-<img src="/media/pub/bash-profile.png" alt="Black Cube Theme" class="img-center" width="430px" /> 
+<img src="/media/pub/bash-profile.jpg" alt="Black Cube Theme" class="img-center" /> 
 
 ###登录shell
 所谓登录shell,指的是当用户登录系统时所取的那个   shell。登录shell属于交互式shell。
