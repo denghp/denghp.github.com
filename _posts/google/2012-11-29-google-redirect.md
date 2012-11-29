@@ -33,9 +33,8 @@ Google 通过重定向统计搜索结果的点击次数和记录用户的搜索�
 
 ###浏览器扩展和插件
 看了前两段, 也许你觉得这里会有一大段代码, 然后告诉你按某些步骤添加到哪里哪里... 其实没那么复杂, 我也懒得弄. 很多浏览器有类似插件:
-<ol>
-<li>Firefox: [Remove google search redirects](https://addons.mozilla.org/en-us/firefox/addon/google-no-tracking-url/)</li>
-<li>Chrome: [Remove Google Redirects](https://chrome.google.com/webstore/detail/remove-google-redirects/ccenmflbeofaceccfhhggbagkblihpoh)</li>
-<li>Opera: [Remove Google Redirects](https://addons.opera.com/zh-cn/extensions/details/remove-google-redirects/?display=en)</li>
-</ol>
-
+<ul>
+<li>Firefox: <a href="https://addons.mozilla.org/en-us/firefox/addon/google-no-tracking-url/" rel="external">Remove google search redirects</a></li>
+<li>Chrome: <a href="https://chrome.google.com/webstore/detail/remove-google-redirects/ccenmflbeofaceccfhhggbagkblihpoh" rel="external">Remove Google Redirects</a></li>
+<li>Opera: <a href="https://addons.opera.com/zh-cn/extensions/details/remove-google-redirects/" rel="external">Remove Google Redirects</a></li>
+</ul>
