@@ -25,46 +25,46 @@ Matches strings of tokens and replaces them with other strings of tokens.
 
 ###schema.xml配置
 <pre id="xml">
-<fieldType name="text" class="solr.TextField" positionIncrementGap="100">  
-    <analyzer type="index">  
-        <tokenizer class="solr.ChineseTokenizerFactory"/>  
-        <filter class="solr.SynonymFilterFactory" 
+&lt;fieldType name="text" class="solr.TextField" positionIncrementGap="100"&gt;  
+    &lt;analyzer type="index"&gt;  
+        &lt;tokenizer class="solr.ChineseTokenizerFactory"/&gt;  
+        &lt;filter class="solr.SynonymFilterFactory" 
             synonyms="synonyms.txt" 
             ignoreCase="true" 
             expand="true" 
-            tokenizerFactory="solr.ChineseTokenizerFactory"/> 
-        <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" enablePositionIncrements="true" />  
-        <filter class="solr.WordDelimiterFilterFactory" 
+            tokenizerFactory="solr.ChineseTokenizerFactory"/&gt; 
+        &lt;filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" enablePositionIncrements="true" /&gt;  
+        &lt;filter class="solr.WordDelimiterFilterFactory" 
             generateWordParts="1" 
             generateNumberParts="1"   
             catenateWords="1" 
             catenateNumbers="1" 
-            catenateAll="0" splitOnCaseChange="0"/>  
-        <filter class="solr.LowerCaseFilterFactory"/>  
-        <filter class="solr.RemoveDuplicatesTokenFilterFactory"/>
-    </analyzer>  
-    <analyzer type="query">  
-        <tokenizer class="solr.ChineseTokenizerFactory"/>  
-        <filter class="solr.SynonymFilterFactory"
+            catenateAll="0" splitOnCaseChange="0"/&gt;  
+        &lt;filter class="solr.LowerCaseFilterFactory"/&gt;  
+        &lt;filter class="solr.RemoveDuplicatesTokenFilterFactory"/&gt;
+    &lt;/analyzer&gt;  
+    &lt;analyzer type="query"&gt;  
+        &lt;tokenizer class="solr.ChineseTokenizerFactory"/&gt;  
+        &lt;filter class="solr.SynonymFilterFactory"
             synonyms="synonyms.txt" 
             ignoreCase="true"   
             expand="true" 
-            tokenizerFactory="solr.ChineseTokenizerFactory"/>  
-        <filter class="solr.StopFilterFactory" 
+            tokenizerFactory="solr.ChineseTokenizerFactory"/&gt;  
+        &lt;filter class="solr.StopFilterFactory" 
             ignoreCase="true" 
             words="stopwords.txt" 
-            enablePositionIncrements="true"/>  
-        <filter class="solr.WordDelimiterFilterFactory" 
+            enablePositionIncrements="true"/&gt;  
+        &lt;filter class="solr.WordDelimiterFilterFactory" 
             generateWordParts="1" 
             generateNumberParts="1"  
             catenateWords="0" 
             catenateNumbers="0" 
             catenateAll="0" 
-            splitOnCaseChange="1"/>  
-        <filter class="solr.LowerCaseFilterFactory"/>  
-        <filter class="solr.RemoveDuplicatesTokenFilterFactory"/>  
-    </analyzer>  
-</fieldType>
+            splitOnCaseChange="1"/&gt;  
+        &lt;filter class="solr.LowerCaseFilterFactory"/&gt;  
+        &lt;filter class="solr.RemoveDuplicatesTokenFilterFactory"/&gt;  
+    &lt;/analyzer&gt;  
+&lt;/fieldType&gt;
 </pre>
 
 ###synonyms.txt配置
