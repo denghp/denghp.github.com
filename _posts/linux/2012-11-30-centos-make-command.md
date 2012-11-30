@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: CentOS 5: Make Command not Found
+title: CentOS Make Command not Found
 tags: 
 - CentOS
 - Linux
