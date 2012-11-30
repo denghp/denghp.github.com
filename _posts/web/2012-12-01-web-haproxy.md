@@ -134,5 +134,6 @@ Requests: 13254 susceed, 0 failed.
 ###配置说明
 1.4系列参考配置文件
 <a rel="nofollow" href="http://haproxy.1wt.eu/download/1.4/doc/configuration.txt">http://haproxy.1wt.eu/download/1.4/doc/configuration.txt</a>
+
 1.3系列参考配置文件
 <a rel="nofollow" href="http://haproxy.1wt.eu/download/1.3/doc/configuration.txt">http://haproxy.1wt.eu/download/1.3/doc/configuration.txt</a>
