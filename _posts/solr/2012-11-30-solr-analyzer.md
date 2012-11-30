@@ -12,26 +12,26 @@ UUID: 201211302330
 date: 2012-11-30
 ---
 
-Solr 1.4 有了对字段的分词。FieldAnalysisRequestHandler 可以对某个字段或字段类型的分词器对查询串取到分词数据。
+Solr1.4有了对字段的分词。FieldAnalysisRequestHandler可以对某个字段或字段类型的分词器对查询串取到分词数据。
 用 solr 的默认配置，如 solr 1.4.0。
 我用IKAnalyzer为例,在schema.xml的 types 元素内加：
 <pre id="wiki">
 &lt;fieldType name="text_cn" class="solr.TextField" positionIncrementGap="100"&gt;
   &lt;analyzer&gt;
       &lt;tokenizer class="org.wltea.analyzer.solr.IKTokenizerFactory"/&gt;
-  &lt;filter class="solr.StopFilterFactory"  
-     ignoreCase="true" words="stopwords.txt"/&gt;
-  &lt;filter class="solr.WordDelimiterFilterFactory"  
-     generateWordParts="1"  
-     generateNumberParts="1"  
-     catenateWords="1"  
-     catenateNumbers="1"  
-     catenateAll="0"  
-     splitOnCaseChange="1"/&gt;
-  &lt;filter class="solr.LowerCaseFilterFactory"/&gt;
-  &lt;filter class="solr.EnglishPorterFilterFactory"  
-     protected="protwords.txt"/&gt;
-  &lt;filter class="solr.RemoveDuplicatesTokenFilterFactory"/&gt;
+      &lt;filter class="solr.StopFilterFactory"  
+          ignoreCase="true" words="stopwords.txt"/&gt;
+      &lt;filter class="solr.WordDelimiterFilterFactory"  
+          generateWordParts="1"  
+          generateNumberParts="1"  
+          catenateWords="1"  
+          catenateNumbers="1"  
+          catenateAll="0"  
+          splitOnCaseChange="1"/&gt;
+      &lt;filter class="solr.LowerCaseFilterFactory"/&gt;
+      &lt;filter class="solr.EnglishPorterFilterFactory"  
+          protected="protwords.txt"/&gt;
+      &lt;filter class="solr.RemoveDuplicatesTokenFilterFactory"/&gt;
   &lt;/analyzer&gt;  
  &lt;/fieldType&gt;
 </pre>
@@ -91,28 +91,14 @@ http://localhost:6091/solr-web-shop/shop/analysis/field?q=北京烤鸭&analysis.
               type: "word"
             }
           ],
-          "org.apache.lucene.analysis.synonym.SynonymFilter",
-          [
-            
-          ],
-          "org.apache.lucene.analysis.StopFilter",
-          [
-            
-          ],
-          "org.apache.lucene.analysis.LowerCaseFilter",
-          [
-            
-          ],
-          "org.apache.solr.analysis.RemoveDuplicatesTokenFilter",
-          [
-            
-          ]
+          "org.apache.lucene.analysis.synonym.SynonymFilter",[],
+          "org.apache.lucene.analysis.StopFilter",[],
+          "org.apache.lucene.analysis.LowerCaseFilter",[],
+          "org.apache.solr.analysis.RemoveDuplicatesTokenFilter",[]
         ]
       }
     },
-    field_names: {
-      
-    }
+    field_names: {}
   }
 }
 </pre>
@@ -121,22 +107,21 @@ http://localhost:6091/solr-web-shop/shop/analysis/field?q=北京烤鸭&analysis.
 <pre id="java">
 public static void main(String[] args) throws MalformedURLException, SolrServerException, IOException {
     CommonsHttpSolrServer solrServer = new CommonsHttpSolrServer("http://localhost:6091/solr-web-shop/shop");
-    
+
     FieldAnalysisRequest request = new FieldAnalysisRequest("/analysis/field");
     request.addFieldName("shopName");
     request.setFieldValue("text");
     request.setQuery("北京烤鸭");
     FieldAnalysisResponse response = request.process(solrServer);
-    System.out.println(response.toString());
+
     Iterator it = response.getFieldNameAnalysis("shopName").getQueryPhases().iterator();
     while(it.hasNext()) {
       AnalysisPhase pharse = (AnalysisPhase)it.next();
       List<TokenInfo> list = pharse.getTokens();
       for (TokenInfo info : list) {
-        
-      System.out.println(" text : "+ info.getText());
+        System.out.println(" text : "+ info.getText());
       }
-      
+
     }
-  }
+}
 </pre>
