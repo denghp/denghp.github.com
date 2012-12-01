@@ -3,7 +3,7 @@ layout: post
 title: 取消 Google 搜索结果链接重定向
 tags: 
 - 浏览器
-- Google Search
+- Google 
 categories:
 - Search
 - Google
