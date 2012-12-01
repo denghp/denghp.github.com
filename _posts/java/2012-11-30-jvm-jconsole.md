@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Java内存泄露监控工具：JVM监控工具介绍jconsole, jstack
+title: Java内存泄露监控工具：jconsole, jstack
 tags: 
 - jdk
 - jvm
