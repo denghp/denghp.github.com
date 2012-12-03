@@ -2,11 +2,11 @@
 layout: post
 title: 舜皇岩
 tags: 
-- Life
+- 生活范儿
 - 风景名胜
 - 旅游
 categories:
-- Life
+- 生活范儿
 - 风景名胜
 - 旅游
 - 湖南旅游

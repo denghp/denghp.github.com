@@ -5,7 +5,7 @@ tags:
 comment: true
 published: true
 categories:
-- Life
+- 生活范儿
 - Book 
 UUID: 20121104
 date: 2012-11-04
