@@ -3,10 +3,10 @@ layout: post
 title: 负载均衡工具haproxy安装，配置，使用
 tags: 
 - Web
-- haproxy
+- Haproxy
 categories:
 - Web
-- haproxy
+- Haproxy
 - Linux
 - 研发实践
 UUID: 201212010027

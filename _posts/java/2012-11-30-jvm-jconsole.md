@@ -2,12 +2,11 @@
 layout: post
 title: Java内存泄露监控工具：jconsole, jstack
 tags: 
-- jdk
-- jvm
-- jconsole
+- JDK
+- Jconsole
 categories:
 - Java
-- jvm
+- JVM
 UUID: 201211301527
 date: 2012-11-30
 ---

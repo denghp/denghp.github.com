@@ -3,7 +3,7 @@ layout: post
 title: HTTP协议头部与Keep-Alive模式详解
 tags: 
 - Java
-- Http
+- HTTP
 categories:
 - Java
 - J2EE
