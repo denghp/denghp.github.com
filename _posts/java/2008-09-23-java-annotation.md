@@ -23,8 +23,7 @@ JavaSE5中自带了一些Annotation，可以分为两类，
 整个Annotation的使用过程可以分成三块，Annotation的定义，Annotation的使用，和Annotation的处理器。  
 
 ### 1.首先我们可以看一下如何定义一个Annotation  
-
-{% highlight java %}
+<pre id="java">
 package com.luke.hello;
 
 import java.lang.annotation.ElementType;
@@ -39,24 +38,19 @@ import java.lang.annotation.Target;
 public @interface Hello {
 public String echo() default("Hello,I am a field!");
 }
-
-{% endhighlight %}
-
+</pre>
 
 ### 2.我们将这个刚刚定义的Annotation拿来使用
-
-{% highlight java %}
+<pre id="java">
 package com.luke.test;
 import com.luke.hello.Hello;
 public class Book {
 @Hello(echo="Hello,I am the name of the book!")
 public String name;
 }
-{% endhighlight %}
-
+</pre>
 ### 3.写一个处理器类来对Annotatin进行处理，这里要使用到Java的反射机制了呢
-
-{% highlight java %}
+<pre id="java">
 package com.luke;
 
 import java.lang.reflect.Field;
@@ -77,4 +71,4 @@ public static void main(String[] args){
 trackBook(Book.class);
 }
 }
-{% endhighlight %}
+</pre>
