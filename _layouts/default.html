@@ -3,12 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta http-equiv="content-language" content="en" />
+    <meta http-equiv="content-language" content="CN" />
     <meta name="robots" content="all,follow" />
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.meta.site_title }}</title>
+    <meta name="keywords" content="{{site.meta.site_content}}"/>
     <meta name="author" lang="en" content="All: Demi-Panda Lab [demi-panda.com]; e-mail: blog.pandam@gmail.com" />
     <meta name="copyright" lang="en" content="@2012 Demi_Panda Lab, All Rights Reserved!" />
-    <meta name="description" content="{{site.meta.site_subtitle}}" />
+    <meta name="description" content="{{site.meta.site_subtitle}}{{site.meta.site_content}}" />
     <meta property="wb:webmaster" content="eb26a33b1e192873" />
     <link rel="shortcut icon" href="{{ site.baseurl }}/media/demi/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" media="screen,projection" type="text/css" href="{{ site.baseurl }}/media/demi/css/style.css" />
