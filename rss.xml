@@ -10,13 +10,12 @@ layout: nil
         <managingEditor>{{ site.meta.author.email }} ({{ site.meta.author.full_name }})</managingEditor>
         <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
         <language>{{ site.meta.site_language }}</language>
-        {% for post in site.posts limit:15 %}
-
+        {% for post in site.posts limit:30 %}
         <item>
             <title>{{ post.title }}</title>
             <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
             <description>{{ post.content | xml_escape }}</description>
-            <link rel="alternate" type="text/html" href="{{ site.meta.absolute_baseurl }}{{ post.url }}"/>
+            <link rel="alternate" type="text/html" href="{{ site.meta.absolute_baseurl }}{{ post.url }}">{{ site.meta.absolute_baseurl }}{{ post.url }}</link>
             <guid>{{ site.meta.absolute_baseurl }}{{ post.url }}</guid>
         </item>
 
