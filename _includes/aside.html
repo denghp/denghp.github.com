@@ -1,9 +1,11 @@
 <div id="sidebar">
   <ul>
     <li id="tag_cloud" class="boxed widget widget_tag_cloud">
-    <h3 class="widgettitle">标签</h3>
+    <h3 class="widgettitle">热门标签</h3>
     {% for tag in site.tags %}
+    {% if tag[1].size >= 3 %}
     <a href='{{ site.baseurl }}/tags/#{{ tag[0] }}' class='tag-link-{{tag[1].size}}' title='{{ tag[0] }}' style='font-size: {{ 10 | plus:tag[0].size }}pt;'>{{ tag[0]}}</a>
+    {% endif %}
     {% endfor %}
     </li>
     <li id="recent-posts-2" class="boxed widget widget_recent_entries">		

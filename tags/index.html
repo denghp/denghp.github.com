@@ -4,6 +4,13 @@ layout: default
 ---
 
 <div id="content">
+  <div class="archivesbox">
+    <h3 id="tagcloud">博文标签</h3>
+    {% for tag in site.tags %}
+    <a href='{{ site.baseurl }}#{{ tag[0] }}' class='tag-link-{{tag[1].size}}' title='{{ tag[0] }}' style='font-size: {{ 10 | plus:tag[0].size }}pt;'>{{ tag[0]}}</a>
+    {% endfor %}
+  </div><!-- /archivesbox -->
+
   {% for tag in site.tags %}
   <div class="archivesbox category-{{ cat[0]}}" id="{{ tag[0]}}">
     <h3 class="widgettitle">

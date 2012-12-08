@@ -429,30 +429,6 @@ img.aligncenter {margin:10px auto; text-align:center; display:block;}
 #slider ul li { list-style-type: none; float: left; display: inline; height: 267px; width: 770px; padding: 56px 80px 4px 60px; position: relative; overflow: hidden; }
 .button-more { display: block; width: 120px; height: 29px; font-size: 0; line-height: 0; text-indent: -4000px; background: url(../img/button-more.png) no-repeat 0 0; }
 
-#cols3 .col h3 {background-color:#EEF8E4; color:#090;}
-#cols3 .col h3 a {color:#090;}
-#cols3 .col h3 a:hover {color:#000;}
-#cols3 .col-more {background:#F5F5F5;}
-
-#cols2 #col-left .title h4, #cols2 #col-right h4 {color:#090;}
-#cols2 #col-left .title h4, #cols2 #col-left .title span {background-color:#FFF;}
-#cols2 #col-left .article {color:#090;}
-#cols2 #col-left a:hover.article {color:#000;}
-
-#cols2 #col-right {background-color:#EEF8E4;}
-#cols2 #col-right h4 span {background-color:#EEF8E4;}
-
-.noscreen {display:none;}
-
-.col {float:left; width:308px; padding:0 1px; margin-right:15px;}
-.col.last {margin-right:0;}
-.col h3 {margin:0; padding:7px 15px 12px 50px; background:url("../img/cols3-title.gif") 20px 40% no-repeat; font-size:120%;}
-
-.col-text {padding:20px; border-top:1px solid #DFDFDF;}
-.col-text p {margin:0;}
-.col-text ul {margin-bottom:0;}
-.col-more {padding:10px 10px 1px 0; text-align:right;}
-
 .listing-item a, .listing-item a:hover{              
   border-bottom:0px;
   color:#090;
