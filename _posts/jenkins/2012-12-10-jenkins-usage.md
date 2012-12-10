@@ -3,6 +3,7 @@ layout: post
 title: 基于Jenkins搭建集群部署环境
 categories:
 - SE
+- Jenkins
 tags:
 - Jenkins
 - Hudson
