@@ -102,7 +102,12 @@ ul.ul-list span.date {padding-right:10px;}
         #cols2 #col-left h4, #cols2 #col-right h4 {margin:0; font-size:100%;}
         #cols2 #col-left .title {background:url("../img/dot.gif") 0 50% repeat-x;}
         #cols2 #col-left .title h4 {display:inline; padding-right:10px;}
+        #cols2 #col-left .title h4, #cols2 #col-right h4 {color:#090;}
+        #cols2 #col-left .title h4, #cols2 #col-left .title span {background-color:#FFF;} 
         #cols2 #col-left .title span {padding-left:10px;}
+        #cols2 #col-left .article {color:#090;}
+        #cols2 #col-left a:hover.article {color:#000;}
+
 
         #cols2 .box {margin-top:15px;}
         #cols2 #col-right h4 {background:url("../img/dot-02.gif") 0 50% repeat-x;}
