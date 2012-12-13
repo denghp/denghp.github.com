@@ -22,3 +22,40 @@ UUID: 201212131829
 $ svn merge -r 12:10 http://svn.example.com/repos/myproject/trunk -m "message"
 </pre>
 
+###常用操作
+#####还原到某个版本
+<pre id="bash">
+svn up -r 版本号
+svn up -r 版本号 文件名称
+</pre>
+#####还原改动
+对应提交(commit)，要有类似回滚（rollback）的操作。
+<pre id="bash">
+$ svn revert
+</pre>
+##### 还原已提交的改动
+revert只适合未提交的情况。
+如果已经提交，发现问题，要回退到之前的修订版。
+首先需要：
+<pre id="bash">
+$ svn up
+</pre>
+让本地工作拷贝更新到最新状态。
+然后：
+<pre id="bash">
+$ svn log your_file_path
+</pre>
+查看文件日志，这时候提交时填写的说明信息就派上用场了。
+查看两个修订版之间的不同：
+<pre id="bash">
+$ svn diff -r 旧修订版序号:新修订版序号 your_file_path
+</pre>
+决定用哪个旧的修订版号后，用旧的修订版号文件覆盖新的修订版号文件。
+<pre id="bash">
+$ svn merge -r 新修订版序号:旧修订版序号 your_file_path
+</pre>
+还需要：
+<pre id="bash">
+$ svn commit -m “恢复到某修订版（某修订版作废）”
+</pre>
+这个还原是所谓的，不是用旧的版本号替代，而是将旧文件覆盖新文件。
