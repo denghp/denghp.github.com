@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "svn 文件状态含义"
-tags: svn
+title: "Subversion 文件状态含义"
+tags: Subversion
 comment: true
 published: true
 categories:
-- svn
+- Subversion
+- 研发实践
 UUID: 20121112101820
 date: 2012-11-12
 ---

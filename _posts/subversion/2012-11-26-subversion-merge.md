@@ -2,11 +2,11 @@
 layout: post
 title: SVN merge branche into trunk [分支与合并]
 tags: 
-- svn
+- Subversion
 - 研发实践
 categories:
 - 研发实践
-- svn
+- Subversion
 UUID: 201211261730
 date: 2012-11-26
 ---
