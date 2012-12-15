@@ -1,0 +1,114 @@
+---
+layout: default
+---
+<div id="content">
+
+    {% for post in site.posts %} 
+    <div class="post type-post status-publish format-standard category-1 hentry post" id='{{post.UUID}}'>
+        <div class="posttop">
+            <h2 class="posttitle">
+                <a href="{{site.baseurl}}{{ post.url }}" rel="bookmark" title="{{ post.title }} {{ post.date | date_to_string }}">{{ post.title }}</a>
+            </h2>
+            <div class="postmetatop">
+                Posted <time class="text" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>&nbsp;
+                {% if post.author != null %}
+                By {{ post.author }}
+                {% endif %}
+
+                {% if post.categories %}
+                分类:
+                {% for cat in post.categories %}
+                <a href="{{ site.baseurl }}/categories/#{{cat}}" class="text" title="{{ cat }}" rel="category tag">{{ cat }}</a>&nbsp;
+                {% endfor %}
+                {% endif %}
+            </div>
+            <!-- /postmetatop -->
+        </div><!-- /posttop -->
+
+        <div class="postcontent">
+            {% if post.description %}                                                    
+            <p>{{ post.description }}</p>
+            {% else %}
+            <p>{{ post.content | strip_html | truncatewords: 2 }}</p>
+            {% endif %}
+            <p> <a href="{{ site.baseurl}}{{ post.url }}/#more-{{ post.UUID }}" class="more-link">Read More &raquo;</a></p> 
+            <div class="cleared"></div>
+
+        </div><!-- /postcontent -->
+
+        <div class="postmetabottom">
+            <div class="tags"></div>
+            <div class="metacomments">
+                <span>
+                    <a href="{{ post.url }}/#comments" title="《{{ post.title }}》上的评论">
+                        <span class="ds-thread-count" data-thread-key="{{ post.UUID }}" data-replace="1">暂无评论</span>
+                    </a>
+                </span>
+            </div>
+            <div class="cleared"></div>
+
+        </div><!-- /postmetabottom -->
+
+    </div><!-- /post -->
+{% endfor %}
+
+{% if site.posts.size > page.initItem %}
+<script src="/media/js/waypoints.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+            // 关于waypoint，请看 http://imakewebthings.com/jquery-waypoints/
+            var $loading = $("<div class='loading' style='text-align:center'><img src='/images/loading.gif'></div>"),
+            $footer = $('footer'),
+            opts = {
+offset: '100%'
+};
+
+var count = {{ page.initItem }};  // 初始文章数
+var count_sup = 0;  // 循环上界，初始为0
+$footer.waypoint(function(event, direction) {
+    $footer.waypoint('remove');
+    $('.posts').append($loading);
+    $.getJSON("../post.json",function(data){
+        var content ="";
+        count_sup = count + {{ page.perPageItem }}; // 循环上界每次增加50
+        var delta = 0;          // 局部计数器
+        $.each(data,function(i,item){
+            if(i>= count & i< count_sup){ 
+	    var cats="";
+        var cat;
+		for(cat in item.categories) { 
+                   cats += item.categories[cat] + "&nbsp;";
+		}
+		             
+            content +=  "<div class='post type-post status-publish format-standard category-1 hentry post'>";
+            content += "<div class='posttop'><h2 class='posttitle'>";
+            content += "<a href='"+ item.url +"' title='"+ item.title +"'>" + item.title + "</a></h2>";
+            content += "<div class='postmetatop'>";
+            content += "<time class='text' datetime='" + item.date + "'>"+"Posted "+ item.date + "</time> By <span class='text'>"+ item.author +"</span> 分类: " + cats + "";
+            content += "</div></div>";
+            content += "<div class='postcontent'><p>"+ unescape(item.description) +"</p><p><a href="+ item.url +"/#more-"+ item.UUID +" class='more-link'>Read More &raquo;</a></p><div class='cleared'></div></div><!-- /postcontent -->";
+            content += "<div class='postmetabottom'> <div class='tags'></div><div class='metacomments'><span>";
+            content += "<a href='"+ item.url +"'/#comments' title='&lt;&lt;'"+item.title+"'&gt;&gt;上的评论'>";
+            content += "<span class='ds-thread-count' data-thread-key='"+item.UUID+"' data-replace='1'>暂无评论</span>";
+            content += "</a>";
+            content += "</span></div> <div class='cleared'></div></div><!-- /postmetabottom -->";
+            content += "</div>";
+            delta++;
+            }
+
+            });
+        count += delta; 
+        $('div.loading').remove();
+        $(".posts").append(content);
+        if ( count< data.length ) $footer.waypoint(opts);
+    });
+}, opts);
+});
+</script>
+
+{% endif %}
+
+</div><!-- /content -->
+{% include aside.html %}
+
+
