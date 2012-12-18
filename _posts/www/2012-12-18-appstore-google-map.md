@@ -8,10 +8,7 @@ tags:
 - iOS
 categories:
 - Web
-<<<<<<< HEAD
 - itnews
-=======
->>>>>>> 351f728e050fe062f9f13e48a6e699ffb6e9dcec
 UUID: 201212181027
 ---
 <img src="/media/pub/web/google-map.jpeg" width="580px"></img>
