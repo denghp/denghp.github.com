@@ -2,7 +2,7 @@
 layout: post
 title: Java HashMap 核心源码解读
 categories:
-- Programming
+- Code
 tags:
 - Java
 UUID: 20100722

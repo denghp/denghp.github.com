@@ -7,8 +7,7 @@ tags:
 - Shell
 categories:
 - Java
-- JDK
-- 研发实践
+- Code
 UUID: 201003171527
 ---
 

@@ -4,7 +4,7 @@ title: Java自定义Annotation
 comment: true
 published: true
 categories:
-- Programming
+- Code
 tags:
 - Java
 - Annotation

@@ -8,7 +8,7 @@ tags:
 categories:
 - Linux
 - Jekyll
-- 研发实践
+- Code
 UUID: 201210301036
 date: 2012-10-30
 ---

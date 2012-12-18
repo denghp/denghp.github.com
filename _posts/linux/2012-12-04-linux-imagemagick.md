@@ -1,13 +1,12 @@
 ---
 layout: post
 title: Linux图片处理工具imagemagick使用方法
+short_title: imagemagick使用方法
 tags: 
 - Linux
 - Shell
 categories:
 - Linux
-- Shell
-- 研发实践
 UUID: 201212041732
 date: 2012-12-04
 ---

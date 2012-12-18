@@ -4,9 +4,9 @@ title: Solr 同义词搜索 synonyms
 tags: 
 - solr
 - lucene
-- 研发实践
+- Code
 categories:
-- 研发实践
+- Code
 - solr 
 UUID: 20121020202012
 date: 2012-11-20

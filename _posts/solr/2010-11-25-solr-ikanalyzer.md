@@ -4,9 +4,9 @@ title: Solr4.0配置IKAnalyzer
 tags: 
 - solr
 - lucene
-- 研发实践
+- Code
 categories:
-- 研发实践
+- Code
 - solr 
 UUID: 201011252230
 date: 2010-11-25

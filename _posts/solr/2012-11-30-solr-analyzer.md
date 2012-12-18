@@ -4,9 +4,9 @@ title: Solr 获取分词
 tags: 
 - solr
 - lucene
-- 研发实践
+- Code
 categories:
-- 研发实践
+- Code
 - solr 
 UUID: 201211302330
 date: 2012-11-30

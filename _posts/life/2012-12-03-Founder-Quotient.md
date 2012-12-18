@@ -2,13 +2,10 @@
 layout: post
 title: 衡量创业智商的几个因素
 tags: 
-- 生活范儿
 - 创业
 categories:
-- 生活范儿
-- 创业
+- itnews
 UUID: 201212261830
-date: 2012-12-03
 ---
 
 我们总提起IQ，EQ，听说过FQ（Founder Quotient）吗？又是哪些因素是考察FQ需要考虑的呢？Charles River Ventrues的Saar Gur给出了一些答案，本文发表于[TC](http://techcrunch.com/2012/11/17/measure-founder-strength-with-your-founder-quotient/)

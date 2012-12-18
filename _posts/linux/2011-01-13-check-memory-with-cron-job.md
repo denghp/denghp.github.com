@@ -2,7 +2,7 @@
 layout: post
 title: Check Memory With Cron Job
 categories:
-- Programming
+- Code
 tags:
 - Shell
 UUID: 20110113

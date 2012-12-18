@@ -3,9 +3,9 @@ layout: post
 title: HTTP状态码
 tags: 
 - HTTP
-- 研发实践
+- 状态码
 categories:
-- HTTP
+- Code
 UUID: 201211212348
 date: 2012-11-21
 ---

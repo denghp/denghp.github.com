@@ -99,6 +99,39 @@ form label {font-weight:bold; display:block;}
 h2#contentdesc {font-weight:normal; font-size:1.4em; text-transform:capitalize;}
 h2#contentdesc span {color:#225990;}
 
+.tbox_left {padding:15px 0px 30px 0px;position:absolute; margin:0px 10px 10px 0px; width:310px; background:#fff url(../img/graygrad.gif) top left repeat-x; border:1px solid #d1d1d1;
+  display:inline;
+  list-style: none;float: left;
+  border-bottom: 1px dashed  #CCC;
+  /* optional rounded corners for browsers that support it */
+  -moz-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+.tbox_left li{
+	float: left;
+	line-height:28px;
+	display: list-item;
+text-align: -webkit-match-parent;
+	}
+.tbox_center {padding:15px 0px 30px 0px;position:absolute; margin:0px 0px 0px 320px; width:310px;margin-bottom:10px; background:#fff url(../img/graygrad.gif) top left repeat-x; border:1px solid #d1d1d1;
+  display:inline;
+  /* optional rounded corners for browsers that support it */
+  -moz-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+.tbox_right {padding:15px 0px 30px 0px; position:absolute; margin:0px 0px 0px 640px; width:320px;margin-bottom:10px; background:#fff url(../img/dot-02.gif) top left repeat-x; border:1px solid #d1d1d1;
+  display:inline;
+  /* optional rounded corners for browsers that support it */
+  -moz-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
 .archivesbox {padding:15px 20px; margin-bottom:10px; background:#fff url(../img/graygrad.gif) top left repeat-x; border:1px solid #d1d1d1;
   /* optional rounded corners for browsers that support it */
   -moz-border-radius: 8px;
@@ -109,6 +142,28 @@ h2#contentdesc span {color:#225990;}
 .archivesbox h3 {font-weight:normal; font-size:1.4em; margin-bottom:10px;line-height:0.3;margin-top:8px;}
 .archivesbox a {color:#090;padding:2px;margin:0 0 5px 0; font:normal "Microsoft YaHei";}
 .archivesbox a:hover {color:#000;}
+
+.cat_menu {
+padding:15px 20px; margin-bottom:10px; background:#fff url(../img/graygrad.gif) top left repeat-x; border:1px solid #d1d1d1;
+  /* optional rounded corners for browsers that support it */
+  -moz-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.cat_menu ul {
+margin: 9px auto 0;
+width: 950px;
+color: #BFBFBF;
+font-size: 14px;
+}
+.cat_menu li {
+line-height: 24px;
+text-align: center;
+}
+.cat_menu li a { color: #186BB1; display: inline-block; font-size: 14px; width: 63px; text-align: center; padding: 3px 0 0; margin: 0 17px; }
+.cat_menu li a:hover { background: #3970a8; color: #fff; text-decoration: none; }
 
 .post {padding:15px 20px; margin-bottom:10px; background:#fff url(../img/graygrad.gif) top left repeat-x; border:1px solid #d1d1d1;
   /* optional rounded corners for browsers that support it */
@@ -295,6 +350,7 @@ h2#contentdesc span {color:#225990;}
 #sidebar .widgettitle {
   font-family: 'trebuchet MS', sans-serif;
   color: #2B2727;
+  margin-top:0px;
   font-size: 15px;
   word-spacing: -1.4pt;
   line-height: 1.0;
@@ -427,7 +483,7 @@ img.aligncenter {margin:10px auto; text-align:center; display:block;}
 #slider ul { width: 910px; height: 327px; position: relative; overflow: hidden; }
 #slider ul li { list-style-type: none; float: left; display: inline; height: 267px; width: 770px; padding: 56px 80px 4px 60px; position: relative; overflow: hidden; }
 .button-more { display: block; width: 120px; height: 29px; font-size: 0; line-height: 0; text-indent: -4000px; background: url(../img/button-more.png) no-repeat 0 0; }
-
+.button-more-min { display: block; width: 110px; height: 29px; font-size: 0; line-height: 0; text-indent: -4000px; background: url(../img/button-more.png) no-repeat 0 0; }
 .listing-item a, .listing-item a:hover{              
   border-bottom:0px;
   color:#090;
@@ -563,4 +619,36 @@ ol li {
   background:#c00; color:#fff;
 }
 
+.ption {
+float: left;
+width: 308px;
+height: 25px;
+}
+.archive_more {
+  float:right;
+}
+
+.archive_more a,.archive_more a:visited {
+  float:left;
+  width:87px;
+  height:25px;
+  color: #999;
+  line-height: 25px;                                                                                                                           
+  text-align:center;
+  text-shadow: 0px 1px 0px #393939;
+}
+
+.archive_more a:hover,.archive_more a:active {
+  width:87px;
+  height:25px;
+  color: #393939;
+  text-shadow: 0px 1px 0px #f1f1f1;
+}
+
+.archive_more a,.archive_more a:visited {
+  background:url(../img/bg.png) 0 -146px;
+}
+.archive_more a:hover,.archive_more a:active {
+  background: url(../img/bg.png) 0 -170px;
+}      
 

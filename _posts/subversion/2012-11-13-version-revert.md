@@ -2,10 +2,10 @@
 layout: post
 title: Subversion恢复到某个版本
 tags: 
-- 研发实践
+- Code
 - Subversion
 categories:
-- 研发实践
+- Code
 - Subversion
 UUID: 201212131829
 ---

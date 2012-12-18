@@ -4,9 +4,9 @@ title: Linux命令 date详解
 tags: 
 - Linux
 - Shell
-- 研发实践
+- Code
 categories:
-- 研发实践
+- Code
 - Linux
 UUID: 201211261630
 date: 2012-11-26

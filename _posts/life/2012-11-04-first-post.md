@@ -2,11 +2,12 @@
 layout: post
 title: "2012年的第一场雪"
 tags:
+- 2012年
+- 雪
 comment: true
 published: true
 categories:
-- 生活范儿
-- Book 
+- Micro-life
 UUID: 20121104
 date: 2012-11-04
 ---

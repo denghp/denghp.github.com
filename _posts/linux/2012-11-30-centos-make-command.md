@@ -6,8 +6,7 @@ tags:
 - Linux
 categories:
 - Linux
-- Centos
-- 研发实践
+- Code
 UUID: 20121130236
 date: 2012-11-30
 ---

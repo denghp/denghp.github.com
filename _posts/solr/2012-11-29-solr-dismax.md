@@ -4,9 +4,9 @@ title: Solr Dismax查询解析器
 tags: 
 - solr
 - lucene
-- 研发实践
+- Code
 categories:
-- 研发实践
+- Code
 - solr 
 UUID: 201211291350
 date: 2012-11-29

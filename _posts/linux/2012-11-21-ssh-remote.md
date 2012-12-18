@@ -7,7 +7,6 @@ tags:
 - Shell
 categories:
 - Linux
-- SSH
 UUID: 201211212334
 date: 2012-11-21
 ---

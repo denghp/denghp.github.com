@@ -2,13 +2,11 @@
 layout: post
 title: "北漂生活"
 tags: 
-- 生活范儿
 - 梦想
 comment: true
 published: true
 categories:
-- 生活范儿
-- 人生
+- Micro-life
 UUID: 201212040030
 date: 2012-12-04
 ---

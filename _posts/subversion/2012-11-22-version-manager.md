@@ -2,9 +2,9 @@
 layout: post
 title: 版本管理策略
 tags: 
-- 研发实践
+- Code
 categories:
-- 研发实践
+- Code
 UUID: 201211220500
 date: 2012-11-22
 ---

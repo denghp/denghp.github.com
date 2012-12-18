@@ -1,15 +1,15 @@
 --- 
 layout: post
 title: Dont Make Me Think - 街头指示牌和面包屑–设计导航
+short_title: Dont Make Me Think 
 description: 如果人们在网站上找不到方向，人们不会使用你的网站。
-
 tags: 
-- Web
+- 导航
+- 面包屑
 - 设计
 categories:
 - Web
-- 设计
-- 研发实践
+- Code
 UUID: 2012120050
 date: 2012-12-05
 ---

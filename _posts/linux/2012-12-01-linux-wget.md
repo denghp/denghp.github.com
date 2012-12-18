@@ -6,8 +6,7 @@ tags:
 - Linux
 categories:
 - Linux
-- OS
-- 研发实践
+- Code
 UUID: 201212011036
 date: 2012-12-01
 ---

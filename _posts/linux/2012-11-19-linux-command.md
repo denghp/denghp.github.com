@@ -4,11 +4,10 @@ title: 程序员的利器-Linux常用命令
 tags: 
 - Linux
 - Shell
-- 研发实践
 - 编程语言
 categories:
 - Linux
-- Shell
+- Code
 UUID: 201211190944
 date: 2012-11-19
 ---

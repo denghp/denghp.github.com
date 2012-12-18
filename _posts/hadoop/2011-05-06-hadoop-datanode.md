@@ -8,7 +8,7 @@ tags:
 categories:
 - Linux
 - Hadoop
-- 研发实践
+- Code
 UUID: 201105061236
 date: 2011-05-06
 ---

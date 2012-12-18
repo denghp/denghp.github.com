@@ -7,7 +7,7 @@ tags:
 categories:
 - Linux
 - OS
-- 研发实践
+- Code
 UUID: 201010201136
 date: 2010-10-20
 ---

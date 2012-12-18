@@ -6,7 +6,6 @@ tags:
 - Shell
 categories:
 - Linux
-- Shell
 UUID: 201211221050
 date: 2012-11-22
 ---

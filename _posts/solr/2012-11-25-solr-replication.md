@@ -4,9 +4,9 @@ title: Solr集群Replication配置与实践
 tags: 
 - solr
 - lucene
-- 研发实践
+- Code
 categories:
-- 研发实践
+- Code
 - solr 
 UUID: 201211252230
 date: 2012-11-25

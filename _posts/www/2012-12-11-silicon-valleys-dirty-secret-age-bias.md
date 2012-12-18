@@ -8,7 +8,7 @@ comment: true
 published: true
 categories:
 - Web
-- 创业
+- itnews
 UUID: 201212110032
 ---
 

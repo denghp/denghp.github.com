@@ -8,7 +8,7 @@ categories:
 - Web
 - jQuery
 - Linux
-- 研发实践
+- Code
 UUID: 201212012227
 date: 2012-12-01
 ---

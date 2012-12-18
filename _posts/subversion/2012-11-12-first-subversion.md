@@ -6,7 +6,7 @@ comment: true
 published: true
 categories:
 - Subversion
-- 研发实践
+- Code
 UUID: 20121112101820
 date: 2012-11-12
 ---

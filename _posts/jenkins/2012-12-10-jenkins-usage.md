@@ -2,14 +2,13 @@
 layout: post
 title: 基于Jenkins搭建集群部署环境
 categories:
-- SE
 - Jenkins
-- 研发实践
+- Code
 tags:
 - Jenkins
 - Hudson
 - CI
-- 研发实践
+- Code
 UUID: 201212101019
 date: 2012-12-10
 ---

@@ -1,14 +1,14 @@
 --- 
 layout: post
 title: 负载均衡工具haproxy安装，配置，使用
+short_title: Haproxy安装，配置，使用
 tags: 
-- Web
-- Haproxy
-categories:
-- Web
 - Haproxy
 - Linux
-- 研发实践
+- 负载均衡
+categories:
+- Web
+- Code
 UUID: 201212010027
 date: 2012-12-01
 ---

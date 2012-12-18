@@ -7,7 +7,7 @@ tags:
 categories:
 - Java
 - J2EE
-- 研发实践
+- Code
 UUID: 201212020027
 date: 2012-12-02
 ---

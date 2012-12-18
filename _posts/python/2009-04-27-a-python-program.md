@@ -2,7 +2,7 @@
 layout: post
 title: 初试Python
 categories:
-- Programming
+- Code
 tags:
 - Python
 UUID: 20090427

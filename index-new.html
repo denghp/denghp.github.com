@@ -1,0 +1,107 @@
+---
+layout: default
+---
+
+{% include slider.html %}
+
+<!-- 2 columns -->
+<div id="cols2-top"></div>
+<div id="cols2" class="box">
+    <!-- news --> 
+    {% include news.html %} 
+
+    <hr class="noscreen" />
+    <!-- Testimonials -->
+    {% include right.html %} 
+</div> 
+<!-- /cols2 -->
+<div id="cols2-bottom"></div>
+<hr class="noscreen" />
+<!--
+<div class="cat_menu">
+    <h3 style="margin-top:0px;margin-buttom:5px;">推荐分类</h3>
+    <ul>
+        <li>
+        <a title="微生活" href="/life">微生活</a>|
+        <a title="研发实践" href="/practice">研发实践</a>|
+        <a title="搜索引擎" href="/categories/#Search">搜索引擎</a>|
+        <a title="新闻资讯" href="/">IT资讯</a>|
+        <a title="互联网" href="/categories/#Web">互联网</a>|
+        <a title="系统运维" href="/">系统运维</a>|
+        <a title="架构设计" href="/">架构设计</a>|
+        <a title="数据库" href="/">数据库</a>|
+        <a title="综合" href="/">综合</a>|
+        </li></ul>
+    </div>
+    -->
+
+    <!--3 columns -->
+    <div id="cols3-top"></div>
+    <div id="cols3" class="box">
+        <div class="col">
+            <div class="ption">
+                <span><h3>微生活</h3>共有{{ site.categories.Micro-life | size }}篇</span>
+                <span class="archive_more"><a href="/life/" rel="bookmark" title="更多[研发实践]的文章">更  多</a></span>
+            </div>
+            <ul class="ul-list nomb">
+                {% for post in site.categories.Micro-life limit:10 %}
+                <li><span class="date">
+                    [ <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%m/%d" }}</time> ]</span> 
+                {% if post.short_title %}
+                <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.short_title }}</a>
+                {% elsif post.title.size >= 25 %}
+                <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.title | strip_html |truncate: 23 }}</a>
+                {% else %}
+                <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.title }}</a>
+                {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="col">
+            <div class="ption">
+                <span><h3>研发实践</h3>共有{{ site.categories.Code | size }}篇</span>
+                <span class="archive_more"><a href="/practice/" rel="bookmark" title="更多[研发实践]的文章">更  多</a></span>
+            </div>
+            <ul class="ul-list nomb">
+                {% for post in site.categories.Code limit:10 %}
+                <li><span class="date">
+                    [ <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%m/%d" }}</time> ]</span> 
+                {% if post.short_title %}
+                <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.short_title }}</a>
+                {% elsif post.title.size >= 25 %}
+                <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.title | strip_html |truncate: 23 }}</a>
+                {% else %}
+                <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.title }}</a>
+                {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>      
+        <div class="col-last">
+            <div class="ption">
+                <span><h3>系统运维</h3>共有{{ site.categories.Linux | size }}篇</span>
+                <span class="archive_more"><a href="/categories/#Linux" rel="bookmark" title="更多[系统运维]的文章">更  多</a></span>
+            </div>
+            <ul class="ul-list nomb">
+                {% for post in site.categories.Linux limit:10 %}
+                <li><span class="date">
+                    [ <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%m/%d" }}</time> ]</span> 
+                {% if post.short_title %}
+                <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.short_title }}</a>
+                {% elsif post.title.size >= 25 %}
+                <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.title | strip_html |truncate: 23 }}</a>
+                {% else %}
+                <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.title }}</a>
+                {% endif %}
+
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div id="cols3-bottom"></div>
+    <hr class="noscreen" />
+
+

@@ -6,7 +6,7 @@ tags:
 - Jconsole
 categories:
 - Java
-- JVM
+- Code
 UUID: 201211301527
 date: 2012-11-30
 ---

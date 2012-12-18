@@ -7,15 +7,84 @@ layout: default
 <!-- 2 columns -->
 <div id="cols2-top"></div>
 <div id="cols2" class="box">
-  <!-- news --> 
-  {% include news.html %} 
+    <!-- news --> 
+    {% include news.html %} 
 
-  <hr class="noscreen" />
-  <!-- Testimonials -->
-  {% include right.html %} 
+    <hr class="noscreen" />
+    <!-- Testimonials -->
+    {% include right.html %} 
 </div> 
 <!-- /cols2 -->
 <div id="cols2-bottom"></div>
+<hr class="noscreen" />
+
+<!--3 columns -->
+<div id="cols3-top"></div>
+<div id="cols3" class="box">
+    <div class="col">
+        <div class="ption">
+            <span><h3>微生活</h3>共有{{ site.categories.Micro-life | size }}篇</span>
+            <span class="archive_more"><a href="/life/" rel="bookmark" title="更多[研发实践]的文章">更  多</a></span>
+        </div>
+        <ul class="ul-list nomb">
+            {% for post in site.categories.Micro-life limit:10 %}
+            <li><span class="date">
+                [ <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%m/%d" }}</time> ]</span> 
+            {% if post.short_title %}
+            <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.short_title }}</a>
+            {% elsif post.title.size >= 25 %}
+            <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.title | strip_html |truncate: 23 }}</a>
+            {% else %}
+            <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.title }}</a>
+            {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="col">
+        <div class="ption">
+            <span><h3>研发实践</h3>共有{{ site.categories.Code | size }}篇</span>
+            <span class="archive_more"><a href="/practice/" rel="bookmark" title="更多[研发实践]的文章">更  多</a></span>
+        </div>
+        <ul class="ul-list nomb">
+            {% for post in site.categories.Code limit:10 %}
+            <li><span class="date">
+                [ <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%m/%d" }}</time> ]</span> 
+            {% if post.short_title %}
+            <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.short_title }}</a>
+            {% elsif post.title.size >= 25 %}
+            <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.title | strip_html |truncate: 23 }}</a>
+            {% else %}
+            <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.title }}</a>
+            {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>      
+    <div class="col-last">
+        <div class="ption">
+            <span><h3>IT资讯</h3>共有{{ site.categories.itnews | size }}篇</span>
+            <span class="archive_more"><a href="/itnews" rel="bookmark" title="更多[IT资讯]的文章">更  多</a></span>
+        </div>
+        <ul class="ul-list nomb">
+            {% for post in site.categories.itnews limit:10 %}
+            <li><span class="date">
+                [ <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%m/%d" }}</time> ]</span> 
+            {% if post.short_title %}
+            <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.short_title }}</a>
+            {% elsif post.title.size >= 25 %}
+            <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.title | strip_html |truncate: 23 }}</a>
+            {% else %}
+            <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.title }}</a>
+            {% endif %}
+
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+<div id="cols3-bottom"></div>
 <hr class="noscreen" />
 
 

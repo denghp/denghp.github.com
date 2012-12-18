@@ -4,9 +4,9 @@ title: Solr-GeoHash 经纬度距离计算公式
 tags: 
 - solr
 - lucene
-- 研发实践
+- Code
 categories:
-- 研发实践
+- Code
 - solr 
 UUID: 201211302340
 date: 2012-11-30

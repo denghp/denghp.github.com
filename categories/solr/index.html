@@ -1,0 +1,50 @@
+---
+layout: default
+title: IT资讯
+---
+<div id="content">
+    {% for post in site.categories.solr %}
+    <div class="post-{{ post.data-thread-key }} post type-post status-publish format-standard hentry category-1 post" id="post-1968">
+        <div class="posttop">
+            <h2 class="posttitle">
+                <a href="{{site.baseurl}}{{ post.url }}" rel="bookmark" title="{{ post.title }} {{ post.date | date_to_string }}">{{ post.title }}</a>
+            </h2>
+            <div class="postmetatop">
+                Posted <time class="date" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>&nbsp;
+                {% if post.author != null %}
+                By {{ post.author }}
+                {% endif %}
+                {% if post.categories %}
+                分类:
+                {% for cat in post.categories %}
+                <a href="{{ site.baseurl }}/categories/#{{cat}}" class="text" title="{{ cat }}" rel="category tag">{{ cat }}</a>&nbsp;
+                {% endfor %}
+                {% endif %}
+            </div>
+            <!-- /postmetatop -->
+        </div><!-- /posttop -->
+
+        <div class="postcontent">
+            {% if post.description %}                                                    
+            <p>{{ post.description }}</p>
+            {% else %}
+            <p>{{ post.content | strip_html | truncatewords: 2 }}</p>
+            {% endif %}
+            <p> <a href="{{ site.baseurl}}{{ post.url }}/#more-{{ post.data-thread-key }}" class="more-link">Read More &raquo;</a></p> 
+            <div class="cleared"></div>
+
+        </div><!-- /postcontent -->
+
+        <div class="postmetabottom">
+            <div class="tags"></div>
+            <div class="metacomments"><span><a href="{{site.baseurl}}{{ post.url }}/#comments" title="<< {{ post.title }}>>上的评论"><span class="ds-thread-count" data-thread-key="{{ post.UUID }}" data-replace="1"> Comments</span></a></span></div>
+            <div class="cleared"></div>
+
+        </div><!-- /postmetabottom -->
+    </div><!-- /post -->
+    {% endfor %}
+</div><!-- /content -->
+{% include aside.html %}
+
+
+

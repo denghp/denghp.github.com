@@ -2,7 +2,7 @@
 layout: post
 title: 谈谈 Hash Table
 categories:
-- Programming
+- Code
 tags:
 - Java
 UUID: 20100721

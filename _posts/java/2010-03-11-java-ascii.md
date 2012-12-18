@@ -6,7 +6,7 @@ tags:
 - ASCII
 categories:
 - Java
-- 研发实践
+- Code
 UUID: 201003111527
 date: 2010-03-11
 ---

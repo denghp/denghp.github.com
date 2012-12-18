@@ -4,9 +4,9 @@ title: Solr 4.0 缓存配置
 tags: 
 - solr
 - lucene
-- 研发实践
+- Code
 categories:
-- 研发实践
+- Code
 - solr 
 UUID: 201211291130
 date: 2012-11-29

@@ -4,9 +4,9 @@ title: Solr 伸缩性和分布式介绍
 tags: 
 - solr
 - lucene
-- 研发实践
+- Code
 categories:
-- 研发实践
+- Code
 - solr 
 UUID: 201211252330
 date: 2012-11-25

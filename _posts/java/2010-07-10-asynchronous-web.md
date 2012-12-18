@@ -2,7 +2,7 @@
 layout: post
 title: Why Asynchronous Web
 categories:
-- Programming
+- Code
 tags:
 - Java
 UUID: 20100710
