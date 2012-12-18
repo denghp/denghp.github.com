@@ -32,8 +32,10 @@ layout: default
                 [ <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%m/%d" }}</time> ]</span> 
             {% if post.short_title %}
             <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.short_title }}</a>
+            <!--
             {% elsif post.title.size >= 40 %}
             <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.title | strip_html |truncate: 40 }}</a>
+            -->
             {% else %}
             <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.title }}</a>
             {% endif %}
@@ -53,8 +55,6 @@ layout: default
                 [ <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%m/%d" }}</time> ]</span> 
             {% if post.short_title %}
             <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.short_title }}</a>
-            {% elsif post.title.size >= 40 %}
-            <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.title | strip_html |truncate: 40 }}</a>
             {% else %}
             <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.title }}</a>
             {% endif %}
@@ -73,8 +73,6 @@ layout: default
                 [ <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%m/%d" }}</time> ]</span> 
             {% if post.short_title %}
             <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.short_title }}</a>
-            {% elsif post.title.size >= 40 %}
-            <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.title | strip_html |truncate: 40 }}</a>
             {% else %}
             <a href="{{ site.baseurl }}{{post.url}}" class="article" title="{{ post.title }}">{{ post.title }}</a>
             {% endif %}
