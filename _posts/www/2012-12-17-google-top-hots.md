@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: 透过Google 2012年搜索热词榜看网络关注点的背后！
+short_title: Google2012年搜索热词榜的背后！
 author: 小刀马
 tags: 
 - Web

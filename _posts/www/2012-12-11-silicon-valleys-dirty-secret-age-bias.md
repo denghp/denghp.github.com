@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Mark Zuckerberg：年轻人就是比较聪明!"
+short_title: "Mark Zuckerberg年轻人就是聪明!"
 tags: 
 - Zuckerberg
 - 年轻人
