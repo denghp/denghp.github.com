@@ -1,7 +1,8 @@
 --- 
 layout: post
 title: 颈椎病自我康复操
-description: Google 的高级副总裁 Jeff Huber 刚刚在 Google+ 上公布了 iOS 版 Google Maps 的一组数据：上线 48 小时内，这款应用的下载量已经超过了 1000 万次，要知道现在全世界已售出的 iOS 设备也只有约 4 亿台，渗透率接近 2.5%。
+description: 这套操不需要按摩穴位，每个人均可以很快学会并练习。经常练习可以改善患者颈部的血液循环，松解粘连和痉挛的软组织。无颈椎病者可起到预防作用。
+
 tags: 
 - 健康
 - 颈椎病
@@ -10,6 +11,7 @@ tags:
 categories:
 - Micro-life
 - healthy
+show_img: "/media/pub/life/healthy/healthy-2.jpg"
 UUID: 201212191327
 ---
 

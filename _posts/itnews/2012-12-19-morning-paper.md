@@ -9,6 +9,7 @@ tags:
 categories:
 - Web
 - itnews
+show_img: "/media/pub/itnews/177-min.jpg"
 UUID: 201212191027
 ---
 

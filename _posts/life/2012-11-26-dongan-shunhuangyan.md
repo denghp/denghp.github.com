@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 舜皇岩
+show_img: "/media/pub/life/dongan/shunhuangyan-min.jpg"
 tags: 
 - 湖南
 - 舜皇岩

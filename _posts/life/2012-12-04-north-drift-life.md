@@ -7,8 +7,8 @@ comment: true
 published: true
 categories:
 - Micro-life
+show_img: "/media/pub/life/pub/life-style.jpg"
 UUID: 201212040030
-date: 2012-12-04
 ---
 
 北漂生活是一篇自由的散文诗，北漂的感受交织着酸甜苦辣。北漂人就在漂中痛并快乐着。

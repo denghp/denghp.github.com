@@ -23,17 +23,26 @@ title: IT资讯
             </div>
             <!-- /postmetatop -->
         </div><!-- /posttop -->
-
         <div class="postcontent">
-            {% if post.description %}                                                    
-            <p>{{ post.description }}</p>
-            {% else %}
-            <p>{{ post.content | strip_html | truncatewords: 2 }}</p>
-            {% endif %}
-            <p> <a href="{{ site.baseurl}}{{ post.url }}/#more-{{ post.data-thread-key }}" class="more-link">Read More &raquo;</a></p> 
-            <div class="cleared"></div>
+                {% if post.description %}                                                    
+                <p>
+                {% if post.show_img %}
+                <a href="{{post.url}}" title="{{post.title}}">
+                    <img src="{{post.show_img}}" alt="Black Cube Theme"  width="240px" height="140px" class="img-right"></img></a>
+                {% endif %}
+                {{ post.description }} 
+                </p>
+                {% else %}
+                {% if post.show_img %}
+                <a href="{{post.url}}" title="{{post.title}}">
+                    <img src="{{post.show_img}}" alt="Black Cube Theme"  width="240px" height="140px" class="img-right"></img></a>
+                {% endif %}
+                <p>{{ post.content | strip_html | truncatewords: 2 }}</p>
+                {% endif %}
+                <p> <a href="{{ site.baseurl}}{{ post.url }}/#more-{{ post.UUID }}" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
 
-        </div><!-- /postcontent -->
+            </div><!-- /postcontent -->
 
         <div class="postmetabottom">
             <div class="tags"></div>

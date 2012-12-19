@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "2012年的第一场雪"
+show_img: "/media/pub/life/pub/2012-11-04.jpg"
 tags:
 - 2012年
 - 雪
@@ -9,7 +10,6 @@ published: true
 categories:
 - Micro-life
 UUID: 20121104
-date: 2012-11-04
 ---
 
 今天,2012年北京的第一场雪来的比往年早,40小时雨雪降水超历史,也在今天俺开始科目二实车训练啦，心情比较激动，不惧怕风雨雪。
