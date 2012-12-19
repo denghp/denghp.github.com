@@ -24,7 +24,7 @@ layout: default
     <div class="col">
         <div class="ption">
             <span><h3>微生活</h3>共有{{ site.categories.Micro-life | size }}篇</span>
-            <span class="archive_more"><a href="/life/" rel="bookmark" title="更多[研发实践]的文章">更  多</a></span>
+            <span style="float:right;margin-right:10px;" ><a href="/itnews" rel="bookmark" title="更多[IT资讯]的文章">更  多</a></span>
         </div>
         <ul class="ul-list nomb">
             {% for post in site.categories.Micro-life limit:10 %}
@@ -43,7 +43,10 @@ layout: default
     <div class="col">
         <div class="ption">
             <span><h3>研发实践</h3>共有{{ site.categories.Code | size }}篇</span>
+            <span style="float:right;margin-right:10px;" ><a href="/itnews" rel="bookmark" title="更多[IT资讯]的文章">更  多</a></span>       
+            <!--
             <span class="archive_more"><a href="/practice/" rel="bookmark" title="更多[研发实践]的文章">更  多</a></span>
+            -->
         </div>
         <ul class="ul-list nomb">
             {% for post in site.categories.Code limit:10 %}
@@ -61,7 +64,10 @@ layout: default
     <div class="col-last">
         <div class="ption">
             <span><h3>IT资讯</h3>共有{{ site.categories.itnews | size }}篇</span>
+            <span style="float:right;margin-right:10px;" ><a href="/itnews" rel="bookmark" title="更多[IT资讯]的文章">更  多</a></span>       
+            <!--
             <span class="archive_more"><a href="/itnews" rel="bookmark" title="更多[IT资讯]的文章">更  多</a></span>
+            -->
         </div>
         <ul class="ul-list nomb">
             {% for post in site.categories.itnews limit:10 %}
