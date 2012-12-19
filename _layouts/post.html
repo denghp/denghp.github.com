@@ -38,10 +38,18 @@ layout: default
 
     <div class="v-pagination">
       {% if page.previous.url %}
+      {% if page.short_title %}
+      <a class="prev" href="{{ site.baseurl }}{{page.previous.url}}" title="前一篇：{{page.previous.short_title}}">&laquo; {{page.previous.short_title}}</a>
+      {% else %}
       <a class="prev" href="{{ site.baseurl }}{{page.previous.url}}" title="前一篇：{{page.previous.title}}">&laquo; {{page.previous.title}}</a>
       {% endif %}
+      {% endif %}
       {% if page.next.url %}
+      {% if page.short_title %}
+      <a class="next" href="{{ site.baseurl }}{{page.next.url}}" title="后一篇：{{page.next.short_title}}">{{page.next.short_title}} &raquo;</a>
+      {% else %} 
       <a class="next" href="{{ site.baseurl }}{{page.next.url}}" title="后一篇：{{page.next.title}}">{{page.next.title}} &raquo;</a>
+      {% endif %}
       {% endif %}
     </div>
     
