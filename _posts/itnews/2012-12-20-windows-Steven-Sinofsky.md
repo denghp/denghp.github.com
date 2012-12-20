@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Windows 8 之父 Steven Sinofsky 去处已定，明年春天将重返哈佛执教
-short_title: Windows8之父Steven Sinofsky 去处已定
+short_title: Win8之父Steven Sinofsky去处已定
 description: 
 tags: 
 - OS 
