@@ -4,6 +4,8 @@ title: Ubuntu 中VirtualBox 使用U盾
 tags: 
 - Ubuntu 
 - Shell
+- VirtualBox
+- U盾
 categories:
 - Linux
 UUID: 201211201834

@@ -6,6 +6,7 @@ categories:
 tags:
 - 安全
 - Linux
+- apt-get
 UUID: 201103152255
 ---
 

@@ -4,6 +4,7 @@ title: CentOS Make Command not Found
 tags: 
 - CentOS
 - Linux
+- Make
 categories:
 - Linux
 - Code

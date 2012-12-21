@@ -3,7 +3,8 @@ layout: post
 title: SVN merge branche into trunk [分支与合并]
 tags: 
 - Subversion
-- Code
+- 分支
+- 合并
 categories:
 - Code
 - Subversion

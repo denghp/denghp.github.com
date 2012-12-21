@@ -4,7 +4,7 @@ title: Linux命令 date详解
 tags: 
 - Linux
 - Shell
-- Code
+- date详解
 categories:
 - Code
 - Linux

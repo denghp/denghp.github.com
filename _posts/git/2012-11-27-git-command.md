@@ -3,6 +3,7 @@ layout: post
 title: "Git常用命令"
 tags: 
 - Github
+- Git
 comment: true
 published: true
 author: demi-panda

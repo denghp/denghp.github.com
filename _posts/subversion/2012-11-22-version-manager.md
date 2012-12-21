@@ -2,7 +2,9 @@
 layout: post
 title: 版本管理策略
 tags: 
-- Code
+- 版本管理
+- 策略
+- GNU
 categories:
 - Code
 UUID: 201211220500

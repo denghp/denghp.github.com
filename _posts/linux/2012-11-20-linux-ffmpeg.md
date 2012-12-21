@@ -5,6 +5,7 @@ short_title: 媒体格式工具FFMPEG详解
 tags: 
 - Linux
 - Shell
+- ffmpeg
 categories:
 - Linux
 UUID: 201211201849

@@ -2,12 +2,12 @@
 layout: post
 title: jQuery插件-Lazy Load延迟加载图片
 tags: 
-- www
+- 互联网
 - jQuery
+- LazyLoad
+- 延迟加载图片
 categories:
 - www
-- jQuery
-- Linux
 - Code
 show_img: "/media/pub/web/jquery-lazy-load-plugin.png"
 UUID: 201212012227

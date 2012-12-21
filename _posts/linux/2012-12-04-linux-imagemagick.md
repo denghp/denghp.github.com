@@ -5,6 +5,8 @@ short_title: imagemagick使用方法
 tags: 
 - Linux
 - Shell
+- imagemagick
+- Linux图片处理工具
 categories:
 - Linux
 UUID: 201212041732

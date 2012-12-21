@@ -4,6 +4,7 @@ title: Linux wget 详解
 tags: 
 - Ubuntu
 - Linux
+- wget详解
 categories:
 - Linux
 - Code

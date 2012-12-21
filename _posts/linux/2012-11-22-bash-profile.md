@@ -4,6 +4,9 @@ title: .bash_profile .bashrc profile 文件的作用的执行顺序
 tags: 
 - Linux
 - Shell
+- bashrc
+- profile
+- bash_profile
 categories:
 - Linux
 UUID: 201211220950

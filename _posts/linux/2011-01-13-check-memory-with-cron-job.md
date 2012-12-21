@@ -5,6 +5,8 @@ categories:
 - Code
 tags:
 - Shell
+- Job
+- Memory
 UUID: 20110113
 ---
 
