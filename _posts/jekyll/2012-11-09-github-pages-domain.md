@@ -2,7 +2,7 @@
 layout: post
 title: 浅谈github页面域名绑定
 tags: 
-- www
+- 域名
 - Jekyll
 categories:
 - www
