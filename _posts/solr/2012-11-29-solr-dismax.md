@@ -4,7 +4,8 @@ title: Solr Dismax查询解析器
 tags: 
 - solr
 - lucene
-- Code
+- 搜索引擎
+- Dismax
 categories:
 - Code
 - solr 

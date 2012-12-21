@@ -4,7 +4,7 @@ title: 衡量创业智商的几个因素
 tags: 
 - 创业
 categories:
-- itnews
+- www
 UUID: 201212261830
 ---
 

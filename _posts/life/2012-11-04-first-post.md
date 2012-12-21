@@ -5,6 +5,7 @@ show_img: "/media/pub/life/pub/2012-11-04.jpg"
 tags:
 - 2012年
 - 雪
+- 世界末日
 comment: true
 published: true
 categories:
@@ -23,5 +24,15 @@ Jekyll是一个博客生成引擎，可以将markdown写成的博客生成静态
 
 Github Page是Github的一个非常好的服务，免费，可以绑定域名。
 
-博客主要是以IT技术为主，然后会有互联网、生活、社会、音乐、电影、娱乐等分类。
+###科目二考试通过
+北京2012第二场雪，今年学车还真不容易，正所谓是经历了大风，大雨，大雪的考验。就在18号这天，激动的把科目二考过啦
+<img src="/media/pub/life/pub/2012-12-16.jpg" alt="北京 2012年的第二场雪" width="580px" />
+
+###世界末日 2012年12月21日
+在世界末日来临之前，北京飘起了第三场雪，仔细的看了下，发现这场雪比以前的显得光亮些，如此奇异的世界难道真是末日的前兆？
+刚写了一篇世界末日的文章，<a href="{{site.baseurl}}/2012/12/21/shijiemori/"><<世界末日爽约>></a>
+<img src="/media/pub/life/pub/2012-12-20.jpg" alt="世界末日之北京第三场雪" width="580px" />
+
+
+
 

@@ -4,7 +4,8 @@ title: Solr 伸缩性和分布式介绍
 tags: 
 - solr
 - lucene
-- Code
+- 搜索引擎
+- 分布式
 categories:
 - Code
 - solr 

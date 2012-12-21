@@ -1,9 +1,9 @@
 ---
 layout: default
-title: 研发实践-编程语言、经验分享
+title: 熊猫吃货-最懂吃货的心、寻找心中的味道
 ---
 <div id="content">
-    {% for post in site.categories.Code %}
+    {% for post in site.categories.chihuo %}
     <div class="post-{{ post.data-thread-key }} post type-post status-publish format-standard hentry category-1 post" id="post-1968">
         <div class="posttop">
             <h2 class="posttitle">
@@ -23,7 +23,6 @@ title: 研发实践-编程语言、经验分享
                 <a href="{{ site.baseurl }}/tags/#{{tag}}" class="text" title="{{ tag }}" rel="category tag">{{ tag }}</a>&nbsp;
                 {% endfor %}
                 {% endif %}
-
             </div>
             <!-- /postmetatop -->
         </div><!-- /posttop -->
@@ -32,16 +31,16 @@ title: 研发实践-编程语言、经验分享
             {% if post.description %}                                                    
             <p>
             {% if post.show_img %}
-                <a href="{{post.url}}" title="{{post.title}}">
-                    <img src="{{post.show_img}}" alt="Black Cube Theme"  width="240px" height="140px" class="img-right"></img></a>
-           {% endif %}
+            <a href="{{post.url}}" title="{{post.title}}">
+                <img src="{{post.show_img}}" alt="Black Cube Theme"  width="240px" height="140px" class="img-right"></img></a>
+            {% endif %}
             {{ post.description }}</p>
             {% else %}
             <p>
             {% if post.show_img %}
-           <a href="{{post.url}}" title="{{post.title}}">
-           <img src="{{post.show_img}}" alt="Black Cube Theme"  width="240px" height="140px" class="img-right"></img></a>
-           {% endif %}
+            <a href="{{post.url}}" title="{{post.title}}">
+                <img src="{{post.show_img}}" alt="Black Cube Theme"  width="240px" height="140px" class="img-right"></img></a>
+            {% endif %}
             {{ post.content | strip_html | truncatewords: 2 }}</p>
             {% endif %}
             <p> <a href="{{ site.baseurl}}{{ post.url }}/#more-{{ post.data-thread-key }}" class="more-link">Read More &raquo;</a></p> 

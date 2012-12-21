@@ -2,10 +2,10 @@
 layout: post
 title: jQuery插件-Lazy Load延迟加载图片
 tags: 
-- Web
+- www
 - jQuery
 categories:
-- Web
+- www
 - jQuery
 - Linux
 - Code

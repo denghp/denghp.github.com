@@ -24,7 +24,7 @@ layout: default
     <div class="col">
         <div class="ption">
             <span><h3>微生活</h3>共有{{ site.categories.Micro-life | size }}篇</span>
-            <span style="float:right;margin-right:10px;" ><a href="/itnews" rel="bookmark" title="更多[IT资讯]的文章">更  多</a></span>
+            <span style="float:right;margin-right:10px;" ><a href="/life" rel="bookmark" title="更多[微生活]的文章">更  多</a></span>
         </div>
         <ul class="ul-list nomb">
             {% for post in site.categories.Micro-life limit:10 %}
@@ -63,14 +63,14 @@ layout: default
     </div>      
     <div class="col-last">
         <div class="ption">
-            <span><h3>IT资讯</h3>共有{{ site.categories.itnews | size }}篇</span>
-            <span style="float:right;margin-right:10px;" ><a href="/itnews" rel="bookmark" title="更多[IT资讯]的文章">更  多</a></span>       
+            <span><h3>熊猫吃货</h3>共有{{ site.categories.chihuo | size }}篇</span>
+            <span style="float:right;margin-right:10px;" ><a href="/itnews" rel="bookmark" title="更多[熊猫吃货]的文章">更  多</a></span>       
             <!--
             <span class="archive_more"><a href="/itnews" rel="bookmark" title="更多[IT资讯]的文章">更  多</a></span>
             -->
         </div>
         <ul class="ul-list nomb">
-            {% for post in site.categories.itnews limit:10 %}
+            {% for post in site.categories.chihuo limit:10 %}
             <li><span class="date">
                 [ <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%m/%d" }}</time> ]</span> 
             {% if post.short_title %}

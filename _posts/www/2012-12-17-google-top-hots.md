@@ -4,12 +4,11 @@ title: 透过Google 2012年搜索热词榜看网络关注点的背后！
 short_title: Google2012年搜索热词榜的背后！
 author: 小刀马
 tags: 
-- Web
+- 互联网
 - Google
 - 搜索热词
 categories:
-- Web
-- itnews
+- www
 UUID: 201212171027
 ---
 

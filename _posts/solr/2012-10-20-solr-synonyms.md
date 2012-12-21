@@ -4,7 +4,8 @@ title: Solr 同义词搜索 synonyms
 tags: 
 - solr
 - lucene
-- Code
+- 同义词
+- 搜索引擎
 categories:
 - Code
 - solr 

@@ -4,7 +4,9 @@ title: Solr 4.0 缓存配置
 tags: 
 - solr
 - lucene
-- Code
+- 搜索引擎
+- Solr 缓存
+- 缓存
 categories:
 - Code
 - solr 

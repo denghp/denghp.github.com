@@ -2,10 +2,10 @@
 layout: post
 title: 再谈github页面域名绑定
 tags: 
-- Web
+- www
 - Jekyll
 categories:
-- Web
+- www
 UUID: 201211092220
 ---
 

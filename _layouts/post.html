@@ -10,18 +10,13 @@ layout: default
     </div>
     <div class="meta">
       Posted 
-      <time class="text" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>&nbsp; |
+      <time class="text" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>&nbsp; |&nbsp;
+       <span class="ds-thread-count" data-thread-key="{{ page.UUID }}" data-replace="1"> 0</span></a></span> &nbsp;|&nbsp;
       {% if page.author != null %}
-      By {{ page.author }} |
+      By {{ page.author }} |&nbsp;
+      {% else %}
+      By 熊猫人
       {% endif %}
-      分类:
-      {% if page.categories %}
-      {% for cat in page.categories limit:5 %}
-      <a href="{{ site.baseurl }}/categories/#{{cat}}" class="text" title="{{ cat }}" rel="category tag">{{ cat }}</a>&nbsp;
-      {% endfor %}
-      {% endif %}
-      &nbsp;&nbsp;
-
       {% if page.tags%}
       <div class="tag">
         {% for tag in page.tags%}

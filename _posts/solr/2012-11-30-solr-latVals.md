@@ -4,7 +4,8 @@ title: Solr-GeoHash 经纬度距离计算公式
 tags: 
 - solr
 - lucene
-- Code
+- 搜索引擎
+- 经纬度
 categories:
 - Code
 - solr 

@@ -419,7 +419,7 @@ HTTP状态码（HTTP Status Code）是用以表示網頁伺服器HTTP响应状�
       507 Insufficient Storage
       </hd>
       <td> 
-      服务器无法存储完成请求所必须的内容。这个状况被认为是临时的。WebDAV（RFC 4918）
+      服务器无法存储完成请求所必须的内容。这个状况被认为是临时的。wwwDAV（RFC 4918）
       </td>
     </tr>
      <tr>

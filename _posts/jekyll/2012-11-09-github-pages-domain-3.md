@@ -3,10 +3,10 @@ layout: post
 title: 三谈github页面域名绑定:域名跳转
 short_title: 三谈github页面域名绑定
 tags: 
-- Web
+- www
 - Jekyll
 categories:
-- Web
+- www
 UUID: 201211092023
 ---
 

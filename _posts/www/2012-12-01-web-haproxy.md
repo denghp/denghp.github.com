@@ -7,7 +7,7 @@ tags:
 - Linux
 - 负载均衡
 categories:
-- Web
+- www
 - Code
 UUID: 201212010027
 date: 2012-12-01
@@ -120,7 +120,7 @@ log global
 
 
 # 设置健康检查模式
-#option httpchk OPTIONS * HTTP/1.1\r\nHost:\ www
+#option httpchk OPTIONS * HTTP/1.1\r\nHost:\ web
 #option smtpchk
 
 # 后台服务器
@@ -141,7 +141,7 @@ $ haproxy]$ ps -e|grep haproxy
 ###压力测试
 <pre id="bash">
 $ /usr/local/bin/webbench -c 100 -t 30 http://localhost:1080/phpinfo.php
-Webbench – Simple Web Benchmark 1.5
+webbench – Simple web Benchmark 1.5
 Copyright (c) Radim Kolar 1997-2004, GPL Open Source Software.
 Benchmarking: GET http://localhost:1080/phpinfo.php
 100 clients, running 30 sec.

@@ -8,8 +8,7 @@ tags:
 comment: true
 published: true
 categories:
-- Web
-- itnews
+- www
 UUID: 201212110032
 ---
 

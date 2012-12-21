@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 全部文章
+title: 全部文章-研发实践、熊猫吃货、微生活
 initItem: 30
 perPageItem: 10
 ---
@@ -14,18 +14,21 @@ perPageItem: 10
                     <a href="{{site.baseurl}}{{ post.url }}" rel="bookmark" title="{{ post.title }} {{ post.date | date_to_string }}">{{ post.title }}</a>
                 </h2>
                 <div class="postmetatop">
-                    Posted <time class="text" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>&nbsp;
-                    {% if post.author != null %}
-                    By {{ post.author }}
-                    {% endif %}
+                    Posted <time class="text" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>&nbsp;|&nbsp;
+                {% if post.author != null %}
+                By {{ post.author }}
+                {% else %}
+                By 熊猫人
+                {% endif %}
+                &nbsp;|&nbsp;
+                {% if post.tags %}
+                标签:
+                {% for tag in post.tags limit:5 %}
+                <a href="{{ site.baseurl }}/tags/#{{tag}}" class="text" title="{{ tag }}" rel="category tag">{{ tag }}</a>&nbsp;
+                {% endfor %}
+                {% endif %}
 
-                    {% if post.categories %}
-                    分类:
-                    {% for cat in post.categories %}
-                    <a href="{{ site.baseurl }}/categories/#{{cat}}" class="text" title="{{ cat }}" rel="category tag">{{ cat }}</a>&nbsp;
-                    {% endfor %}
-                    {% endif %}
-                </div>
+               </div>
                 <!-- /postmetatop -->
             </div><!-- /posttop -->
 

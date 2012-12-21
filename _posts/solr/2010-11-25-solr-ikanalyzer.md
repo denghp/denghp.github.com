@@ -4,7 +4,7 @@ title: Solr4.0配置IKAnalyzer
 tags: 
 - solr
 - lucene
-- Code
+- 搜索引擎
 categories:
 - Code
 - solr 

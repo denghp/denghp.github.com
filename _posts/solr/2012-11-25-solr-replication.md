@@ -4,7 +4,8 @@ title: Solr集群Replication配置与实践
 tags: 
 - solr
 - lucene
-- Code
+- 搜索引擎
+- apache
 categories:
 - Code
 - solr 

@@ -4,7 +4,7 @@ title: Solr 获取分词
 tags: 
 - solr
 - lucene
-- Code
+- 搜索引擎
 categories:
 - Code
 - solr 
