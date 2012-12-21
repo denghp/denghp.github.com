@@ -11,7 +11,7 @@ title: 微生活-爱生活、爱健康
                     <a href="{{site.baseurl}}{{ post.url }}" rel="bookmark" title="{{ post.title }} {{ post.date | date_to_string }}">{{ post.title }}</a>
                 </h2>
                 <div class="postmetatop">
-                    Posted <time class="date" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>&nbsp;|&nbsp;
+                    Posted <time class="text" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>&nbsp;|&nbsp;
                     {% if post.author != null %}
                     By {{ post.author }}
                     {% else %}

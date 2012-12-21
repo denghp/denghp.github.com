@@ -8,7 +8,7 @@ tags:
 - Jenkins
 - Hudson
 - CI
-- Code
+- 集群部署
 UUID: 201212101019
 date: 2012-12-10
 ---
