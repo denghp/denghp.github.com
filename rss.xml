@@ -10,7 +10,7 @@ layout: nil
         <managingEditor>{{ site.meta.author.email }} ({{ site.meta.author.full_name }})</managingEditor>
         <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
         <language>{{ site.meta.site_language }}</language>
-        {% for post in site.posts limit:30 %}
+        {% for post in site.posts %}
         <item>
             <title>{{ post.title }}</title>
             <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
