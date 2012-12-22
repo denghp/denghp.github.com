@@ -158,6 +158,7 @@ ul.ul-list span.date {padding-right:10px;}
 #contact input.btn {width:100px;margin:0 20px 30px 0;font-size:small;}
 
 .img-left {float: left; margin: 10px 30px 10px 10px;}
+.img-center {float: center; margin: 10px 0px 10px 100px;}
 .img-right {float: right; margin: 10px;}
 
 #buy-list {

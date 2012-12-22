@@ -652,3 +652,17 @@ height: 25px;
   background: url(../img/bg.png) 0 -170px;
 }      
 
+.module.method-related-notes .methods .step {
+    color: #2C63AB;
+    float: left;
+    font-size: 18px;
+    width: 130px;
+}
+.methods .desc{
+    margin-left: 130px;
+}
+.module.method-related-notes .methods {
+    border-bottom: 1px solid #F2F2F2;
+    padding: 0px;
+}
+
