@@ -2,9 +2,11 @@
 layout: post
 title: 羊肉炖白萝卜
 tags: 
+- 美食星期天
 - 羊肉
 - 白萝卜
 - 冬至
+- 汤
 categories:
 - chihuo
 - recipe
