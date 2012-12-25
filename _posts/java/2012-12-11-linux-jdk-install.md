@@ -113,9 +113,17 @@ $ sudo source /etc/profile
 ####方案二
 使用root权限，执行如下步骤
 <ol>
-<li>alternatives --install /usr/bin/java java /usr/local/java/jdk1.6.0_27/bin/java 300</li>
-<li>alternatives --config java 会出现一下信息：
-*+ 1 /usr/lib/jvm/jre-1.5.0-gcj/bin/java</li>
-<li>/usr/local/java/jdk1.6.0_27/bin/java
-按 Enter 来保存当前选择[+]，或键入选择号码：2</li>
+<li>将操作系统默认的java版本替换<br>
+<pre id="bash" style="width:500px">
+sudo update-alternatives --install /usr/bin/java java /home/denghp/software/jdk1.6.0_30/bin/java 300
+</pre></li>
+<li>查看操作系统的所有的java信息<br>
+<pre id="bash" style="width:500px">
+$ sudo update-alternatives --config java 
+</pre>
+<img src="/media/pub/java/jdk-1.jpg" width="480px" alt="jdk-info"></img>
+</li>
+<li>选择自己需要指定的java版本<br>
+<img src="/media/pub/java/jdk-2.jpg" width="480px" alt="jdk-info"></img>
+</li>
 </ol>
