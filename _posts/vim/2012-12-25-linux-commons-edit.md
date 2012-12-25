@@ -4,7 +4,7 @@ title: Linux下常用的编辑器
 tags: 
 - Shell
 - 编辑器
-- Vim
+- vim
 - Emacs
 categories:
 - Code
