@@ -8,45 +8,53 @@ date: 2012-11-13
 ---
 
 <div id="content">
-  <div class="post-1968 post type-post status-publish format-standard hentry category-1 post" id="post-1968">
-    <div class="posttop">
-      <h2 class="posttitle">
-        <a href="{{site.baseurl}}{{ page.url }}" rel="bookmark" title="{{ page.title }} ">{{ page.title }}</a>
-      </h2>
-      <div class="postmetatop">
-      </div>
-      <!-- /postmetatop -->
-    </div><!-- /posttop -->
+    <div class="post-1968 post type-post status-publish format-standard hentry category-1 post" id="post-1968">
+        <div class="posttop">
+            <h2 class="posttitle">
+                <a href="{{site.baseurl}}{{ page.url }}" rel="bookmark" title="{{ page.title }} ">{{ page.title }}</a>
+            </h2>
+            <div class="postmetatop">
+            </div>
+            <!-- /postmetatop -->
+        </div><!-- /posttop -->
 
-    <div class="postcontent">
-        <p>{{site.meta.site_title}}博客, 80后工作IT技术.</br>
-      熟练使用常见的计算机语言.</br>
-      目前从事Java, Search开发相关工作.</p>
-      <p>{{site.meta.site_subtitle}}</p>
-      <p>个人邮箱:blog.pandam@gmail.com</br>
-      github : [https://github.com/denghp]</p>
-      <div class="cleared"></div>
-    </div><!-- /postcontent -->
-    
-    <div class="postmetabottom">
-        <div class="tags"></div>
-        <div class="metacomments">
-          <span>
-            <!--
-            <a href="{{ site.baseurl }}/about/#comments" title="《{{ post.title }}》上的评论">
-              <span class="ds-thread-count" data-thread-key="{{ post.UUID }}" data-replace="1">暂无评论</span>
-              -->
-            </a>
-          </span>
+        <div class="postcontent">
+            <p>{{site.meta.site_title}}博客, 80后工作IT技术.</br>
+            熟练使用常见的计算机语言.</br>
+            目前从事Java, Search开发相关工作.</p>
+            <p>{{site.meta.site_subtitle}}</p>
+            <p>个人邮箱:blog.pandam@gmail.com</br>
+            github : [https://github.com/denghp]</p>
+            <div class="cleared"></div>
+        </div><!-- /postcontent -->
+
+        <div class="postmetabottom">
+            <div class="tags"></div>
+            <div class="metacomments">
+                <span>
+                    <!--
+                    <a href="{{ site.baseurl }}/about/#comments" title="《{{ post.title }}》上的评论">
+                        <span class="ds-thread-count" data-thread-key="{{ post.UUID }}" data-replace="1">暂无评论</span>
+                        -->
+                    </a>
+                </span>
+            </div>
+            <div class="cleared"></div>
+
+        </div><!-- /postmetabottom -->
+
+    </div><!-- /post -->
+
+    <div class="archivesbox">
+        <div class="comments">
+            <!-- Duoshuo Comment Begin -->
+            <div class="ds-thread" data-thread-id="{{page.UUID}}" data-url="{{site.url}}{{page.url}}" data-thread-key="{{page.UUID}}" data-title="{{page.title}}"
+                data-order="desc" data-form-positon="top">
+            </div>
+            <!-- Duoshuo Comment End -->
         </div>
-        <div class="cleared"></div>
+    </div>
 
-      </div><!-- /postmetabottom -->
-
-     </div><!-- /post -->
-
-
-  {% include disqus.html %}
 </div><!-- /content -->
 {% include aside.html %}
 

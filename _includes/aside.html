@@ -1,6 +1,5 @@
 <div id="sidebar">
-  <ul>
-    <li id="tag_cloud" class="boxed widget widget_tag_cloud">
+  <ul> <li id="tag_cloud" class="boxed widget widget_tag_cloud">
     <h3 class="widgettitle">分类目录</h3>
     {% for cat in site.categories %}
     {% if cat[1].size >= 5 %}
@@ -56,8 +55,12 @@
     </div>
     </li>
     <li id="ds-qqt-follow" class="boxed widget ds-widget-qqt-follow">
+    <!--
     <iframe src="http://follow.v.t.qq.com/index.php?c=follow&a=quick&name=denghp_280606790&style=1&t=1352387427769&f=1" frameborder="0" scrolling="auto" width="227" height="75" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
+    -->
+    <script type="text/javascript">document.write('<iframe width="300" height="190" frameborder="0" scrolling="no" src="http://widget.weibo.com/relationship/bulkfollow.php?language=zh_cn&uids=1655072963,&wide=1 marginwidth="0" marginheight="0" allowtransparency="true"></iframe>')</script>
     </li>
+
     <li id="ds-recent-visitors-2" class="boxed widget ds-widget-recent-visitors">
     <h3 class="widgettitle">最近访客</h3>
     <ul class="ds-recent-visitors" data-num-items="21" data-show-time="0" data-avatar-size="50"></ul>
