@@ -8,7 +8,7 @@ categories:
 - Code
 - Linux
 show_img: "/media/pub/linux/vim_logo.png"
-UUID: 201212250010
+UUID: 201212260010
 ---
 
   　　在vim的初始学习阶段，乱码经常是困扰新手的一个比较烦躁的问题，本文试图阐述Vim的编码知识，及设置，针对乱码的原因和解决方案。
