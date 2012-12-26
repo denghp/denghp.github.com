@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Vim编码知识
+title: Vim编码知识,乱码问题
 tags: 
 - 编码
 - vim
