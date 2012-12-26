@@ -1,7 +1,6 @@
 --- 
 layout: post
-title: 熊猫家族 谈 vim 常用命令（查找,替换,删除）
-short_title: vim 常用的查找,替换,删除模式
+title:  vim 常用的查找,替换,删除模式
 tags: 
 - vim
 - 快捷键
