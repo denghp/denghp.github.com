@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ubuntu10.04 Ganglia安装配置
+title: Ganglia安装配置
 tags: 
 - Ganglia
 - Ubuntu
