@@ -85,7 +85,7 @@ xclip -sel clip < ~/.ssh/id_rsa.pub
 <li>Click &quot;Add SSH key&quot;
 <p><img src="/media/pub/github/ssh-add-ssh-key.png" width="320px" alt=""></p></li>
 <li>Paste your key into the &quot;Key&quot; field
-<p><img src="/media/pub/github/ssh-key-paste.png" width="320px" alt=""></p></li>
+<p><img src="/media/pub/github/ssh-key-paste.jpg" width="320px" alt=""></p></li>
 <li>Click &quot;Add key&quot;
 <p><img src="/media/pub/github/ssh-add-key.png" width="320px" alt=""></p></li>
 <li>Confirm the action by entering your GitHub password</li>
