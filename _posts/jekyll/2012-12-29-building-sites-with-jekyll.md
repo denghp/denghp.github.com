@@ -283,10 +283,10 @@ $ git push origin master
 
 <img src="/media/pub/web/jekyll-blog-2.jpg" width="330px" alt="jekyll-blog" class="img-center"></img>
 
-
-
 ###Step 8 域名绑定
 域名绑定请参考我的博客中 [浅谈github域名绑定]("{{site.baseurl}}/2012/11/09/github-pages-domain/")
 
 ###结论
 本文介绍了Jekyll——一种简单的、适用于做博客的、静态网站生成引擎。下次如果你想建一个宣传册风格的、小型展示页面，可以试试用Jekyll，如果你成功了，或者在创建用遇到什么困难，请在留言中告诉我,我会尽最大努力帮助您, 再次感谢您的阅读,支持熊猫家族！
+
+[Jekyll_demo]代码地址<a href="https://github.com/denghp/jekyll_demo">https://github.com/denghp/jekyll_demo</a>
