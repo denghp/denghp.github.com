@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Win7 + Ubuntu12.04 + EasyDBC安装
+title: Win7 + Ubuntu12.04 + EasyBCD安装
 tags: 
 - OS
 - Linux
 - Ubuntu
+- EasyBCD
+- Windows7
 categories:
 - OS
 - Linux
