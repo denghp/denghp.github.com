@@ -104,7 +104,7 @@ $ gem install jekyll
       _site
       </hd>
       <td> 
-      生成的网站将被放置一次化身是转化。
+      存放所有生成的网站的文件。
       </td>
     </tr>
     <tr>
