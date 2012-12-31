@@ -9,7 +9,7 @@ categories:
 UUID: 201211092220
 ---
 
-<p>之前我写过一篇<a href="{{site.baseurl}}/2012/11/09/github-pages-domain/" target="_blank">浅谈github页面域名绑定</a>，现在一直困扰我的问题终于解决了。</p>
+<p>之前我写过一篇<a href="{{site.url}}/2012/11/09/github-pages-domain/" target="_blank">浅谈github页面域名绑定</a>，现在一直困扰我的问题终于解决了。</p>
 
 <p>假设你的用户名是<code>username</code>，要绑定一个二级域名的话，那么不管是user page还是project page，除了在github的版本库里添加CNAME文件，还要在DNS record里增加相应的CNAME记录指向<code>username.github.com</code>。注意这里的表述，指向的地址在两种情况下都是一样的。</p>
 
@@ -23,7 +23,7 @@ UUID: 201211092220
 <p><del>可以用.htaccess文件来实现跳转，在repo代码库根目录下创建.htaccess文件</del></p>
 
 <p><span class="warning">
-本文域名跳转部分有误，请看<a href="{{site.baseurl}}/2012/11/09/github-pages-domain-3/" target="_blank">三谈github页面域名绑定</a>
+本文域名跳转部分有误，请看<a href="{{site.url}}/2012/11/09/github-pages-domain-3/" target="_blank">三谈github页面域名绑定</a>
 </span>
 </p>
 

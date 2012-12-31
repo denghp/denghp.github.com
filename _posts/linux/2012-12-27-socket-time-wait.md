@@ -15,7 +15,7 @@ UUID: 201212270032
 
 ###分析出现 TIME_WAIT 原因
 ####首先了解TCP建立连接的过程
-详情请阅读<a href="{{site.baseurl}}/2012-12-27-TCP-status/">TCP 3次握手连接协议和4次握手断开连接协议</a>
+详情请阅读<a href="{{site.url}}/2012-12-27-TCP-status/">TCP 3次握手连接协议和4次握手断开连接协议</a>
 
 ####什么情况下会进入 TIME_WAIT 状态 ?
 1、server 收到 client 的 FIN, server 发送 ACK，进入 TIME_WAIT<br>

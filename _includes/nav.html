@@ -1,13 +1,71 @@
 <!-- Tray -->
 <div id="tray">
     <ul>
-        <li ><a href="{{site.baseurl}}/index.html">Home</a></li>
+        {% if page.url == '/index.html' AND page.url == '/' %}
+        <li id="tray-active"><a href="{{site.baseurl}}/">Home</a></li>
         <li ><a href="{{site.baseurl}}/archives/">文章列表</a></li>
         <li ><a href="{{site.baseurl}}/practice/">研发实践</a></li>
         <li ><a href="{{site.baseurl}}/chihuo/">熊猫吃货</a></li>
         <li ><a href="{{site.baseurl}}/life/">微生活</a></li>
         <li ><a href="{{site.baseurl}}/tags/">标签</a></li>
         <li ><a href="{{site.baseulr}}/about/">关于我</a></li>
+        {% elsif page.url == '/archives/index.html' %}
+        <li ><a href="{{site.baseurl}}/">Home</a></li>
+        <li id="tray-active" ><a href="{{site.baseurl}}/archives/">文章列表</a></li>
+        <li ><a href="{{site.baseurl}}/practice/">研发实践</a></li>
+        <li ><a href="{{site.baseurl}}/chihuo/">熊猫吃货</a></li>
+        <li ><a href="{{site.baseurl}}/life/">微生活</a></li>
+        <li ><a href="{{site.baseurl}}/tags/">标签</a></li>
+        <li ><a href="{{site.baseulr}}/about/">关于我</a></li>
+        {% elsif page.url == '/practice/index.html' %}
+        <li ><a href="{{site.baseurl}}/">Home</a></li>
+        <li ><a href="{{site.baseurl}}/archives/">文章列表</a></li>
+        <li id="tray-active"><a href="{{site.baseurl}}/practice/">研发实践</a></li>
+        <li ><a href="{{site.baseurl}}/chihuo/">熊猫吃货</a></li>
+        <li ><a href="{{site.baseurl}}/life/">微生活</a></li>
+        <li ><a href="{{site.baseurl}}/tags/">标签</a></li>
+        <li ><a href="{{site.baseulr}}/about/">关于我</a></li>
+        {% elsif page.url == '/chihuo/index.html' %}
+        <li ><a href="{{site.baseurl}}/">Home</a></li>
+        <li ><a href="{{site.baseurl}}/archives/">文章列表</a></li>
+        <li ><a href="{{site.baseurl}}/practice/">研发实践</a></li>
+        <li id="tray-active"><a href="{{site.baseurl}}/chihuo/">熊猫吃货</a></li>
+        <li ><a href="{{site.baseurl}}/life/">微生活</a></li>
+        <li ><a href="{{site.baseurl}}/tags/">标签</a></li>
+        <li ><a href="{{site.baseulr}}/about/">关于我</a></li>
+        {% elsif page.url == '/life/index.html' %}
+        <li ><a href="{{site.baseurl}}/">Home</a></li>
+        <li ><a href="{{site.baseurl}}/archives/">文章列表</a></li>
+        <li ><a href="{{site.baseurl}}/practice/">研发实践</a></li>
+        <li ><a href="{{site.baseurl}}/chihuo/">熊猫吃货</a></li>
+        <li id="tray-active"><a href="{{site.baseurl}}/life/">微生活</a></li>
+        <li ><a href="{{site.baseurl}}/tags/">标签</a></li>
+        <li ><a href="{{site.baseulr}}/about/">关于我</a></li>
+        {% elsif page.url == '/tags/index.html' %}
+        <li ><a href="{{site.baseurl}}/">Home</a></li>
+        <li ><a href="{{site.baseurl}}/archives/">文章列表</a></li>
+        <li ><a href="{{site.baseurl}}/practice/">研发实践</a></li>
+        <li ><a href="{{site.baseurl}}/chihuo/">熊猫吃货</a></li>
+        <li ><a href="{{site.baseurl}}/life/">微生活</a></li>
+        <li id="tray-active"><a href="{{site.baseurl}}/tags/">标签</a></li>
+        <li ><a href="{{site.baseulr}}/about/">关于我</a></li>
+        {% elsif page.url =='/about/index.html' %}
+        <li ><a href="{{site.baseurl}}/">Home</a></li>
+        <li ><a href="{{site.baseurl}}/archives/">文章列表</a></li>
+        <li ><a href="{{site.baseurl}}/practice/">研发实践</a></li>
+        <li ><a href="{{site.baseurl}}/chihuo/">熊猫吃货</a></li>
+        <li ><a href="{{site.baseurl}}/life/">微生活</a></li>
+        <li ><a href="{{site.baseurl}}/tags/">标签</a></li>
+        <li id="tray-active"><a href="{{site.baseulr}}/about/">关于我</a></li>
+        {% elsif page.url != null %}
+        <li ><a href="{{site.baseurl}}/">Home</a></li>
+        <li ><a href="{{site.baseurl}}/archives/">文章列表</a></li>
+        <li ><a href="{{site.baseurl}}/practice/">研发实践</a></li>
+        <li ><a href="{{site.baseurl}}/chihuo/">熊猫吃货</a></li>
+        <li ><a href="{{site.baseurl}}/life/">微生活</a></li>
+        <li ><a href="{{site.baseurl}}/tags/">标签</a></li>
+        <li ><a href="{{site.baseulr}}/about/">关于我</a></li>
+        {% endif %}
         <!--
         <li ><a href="/categories/">分类目录</a></li>
         <li ><a href="/index-new.html">NEW</a></li>

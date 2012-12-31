@@ -41,7 +41,7 @@ show_img: "/media/pub/web/Jekyll.jpg"
 <pre id="bash">
 $ gem install jekyll
 </pre>
-搭建本地环境，请参考我的另一篇文章：[Linux 安装Jekyll 环境]("{{site.baseurl}}/2012/10/30/install-jekyll/")
+搭建本地环境，请参考我的另一篇文章：[Linux 安装Jekyll 环境](http://demi-panda.com/2012/10/30/install-jekyll/)
 
 ###Jekyll构成
 <pre id="bash">
@@ -184,7 +184,7 @@ $ mkdir _layouts
 <pre id="bash">
 $ mkdir _posts
 </pre>
-进入该目录，创建第一篇文章。文章就是普通的文本文件，文件名假定为2012-12-29-hello-jekyll.md。(注意，文件名必须为"年-月-日-文章标题.后缀名"的格式。如果网页代码采用html格式，后缀名为html；如果采用[markdown]("{{site.baseurl}}/2012/11/17/markdown")格式，后缀名为md。）
+进入该目录，创建第一篇文章。文章就是普通的文本文件，文件名假定为2012-12-29-hello-jekyll.md。(注意，文件名必须为"年-月-日-文章标题.后缀名"的格式。如果网页代码采用html格式，后缀名为html；如果采用[markdown](http://demi-panda.com/2012/11/17/markdown)格式，后缀名为md。）
 
 在该文件中，填入以下内容：（注意，行首不能有空格）
 
@@ -228,7 +228,7 @@ By 熊猫人
 &#123;% if page.tags%&#125;
 &lt;div class="tag"&gt;
 &#123;% for tag in page.tags%&#125;
-&lt;a href="&#123;{ site.baseurl }&#125;/tags/#&#123;{tag}&#125;" class="text" title="&#123;{ tag }&#125;" rel="category tag"&gt;&#123;{ tag}&#125;&lt;/a&gt;&nbsp;
+&lt;a href="&#123;{ site.url }&#125;/tags/#&#123;{tag}&#125;" class="text" title="&#123;{ tag }&#125;" rel="category tag"&gt;&#123;{ tag}&#125;&lt;/a&gt;&nbsp;
 &#123;% endfor %&#125;
 &lt;/div&gt;
 &#123;% endif %&#125;
@@ -251,7 +251,7 @@ title: 我的Blog
 &lt;p&gt;最新文章&lt;/p&gt;
 &lt;ul&gt;
 &#123;% for post in site.posts %&#125;
-&lt;li&gt;&#123;{ post.date | date_to_string }&#125; &lt;a href="&#123;{ site.baseurl }&#125;&#123;{ post.url }&#125;"&gt;&#123;{ post.title }&#125;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&#123;{ post.date | date_to_string }&#125; &lt;a href="&#123;{ site.url }&#125;&#123;{ post.url }&#125;"&gt;&#123;{ post.title }&#125;&lt;/a&gt;&lt;/li&gt;
 &#123;% endfor %&#125;
 &lt;/ul&gt;
 </pre>
@@ -284,7 +284,7 @@ $ git push origin master
 <img src="/media/pub/web/jekyll-blog-2.jpg" width="330px" alt="jekyll-blog" class="img-center"></img>
 
 ###Step 8 域名绑定
-域名绑定请参考我的博客中 [浅谈github域名绑定]("{{site.baseurl}}/2012/11/09/github-pages-domain/")
+域名绑定请参考我的博客中 [浅谈github域名绑定](http://demi-panda.com/2012/11/09/github-pages-domain/)
 
 ###结论
 本文介绍了Jekyll——一种简单的、适用于做博客的、静态网站生成引擎。下次如果你想建一个宣传册风格的、小型展示页面，可以试试用Jekyll，如果你成功了，或者在创建用遇到什么困难，请在留言中告诉我,我会尽最大努力帮助您, 再次感谢您的阅读,支持熊猫家族！
