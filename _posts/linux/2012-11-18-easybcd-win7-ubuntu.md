@@ -101,3 +101,23 @@ update 命令会自动找到 windows 7 启动项。并且自动更新 /boot/grub
 然后去我们的c盘 删除vmlinuz，initrd.lz和系统的iso文件。
 利用EasyBCD可以更改启动项菜单按Edit Boot Menu按钮，可以选择将Windows7设为默认开机选项。
 <p>
+
+###filesystem type is ntfs partition type 0x7 异常<br>
+####描述
+boot引导成功<br>
+选择安装界面成功<br>
+到filesystem type is ntfs, partition type 0x7<br>
+
+####原因分析
+1、文件系统为ntfs,linux的文件系统不是ntfs<br>
+2、安装的分区不对
+
+####解决方案
+1、对于有的电脑上你的第一个盘符并不是C盘，在磁盘管理中可以看出，所以安装时需将(hd0,0)改为（hd0,1）
+2、网上还有一种写法，没经过检验：
+<pre>
+loopback loop (hd0,N)/maverick-desktop-i386.iso
+linux (loop)/vmlinuz boot=capser iso-scan/filename=/ubuntu-12.04-amd64.iso noprompt
+initrd (loop)/casper/initrd.lz
+boot
+</pre>
