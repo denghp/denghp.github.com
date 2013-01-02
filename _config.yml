@@ -18,4 +18,3 @@ pygments: true
 permalink: /:year/:month/:day/:title
 auto: true
 debug: true
-
