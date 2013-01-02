@@ -9,6 +9,7 @@ categories:
 - chihuo
 - recipe
 - 湘菜
+recommend: true
 show_img: "/media/pub/chihuo/recipe/xiangyukourou.jpg"
 UUID: 20121240027
 ---

@@ -11,6 +11,7 @@ categories:
 - chihuo
 - health
 - Micro-life
+recommend: true
 show_img: "/media/pub/chihuo/health/ningmen.jpg"
 description: 随着冬季的来临,人们的皮肤变得干燥而缺乏弹性。女性为了保持俏丽容颜,常会在此时倾注极大热情的对皮肤进行养护,本文向女性朋友们介绍一些适合冬季的保健美容的食物。
 UUID: 201212222327
