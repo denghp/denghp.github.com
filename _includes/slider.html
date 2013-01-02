@@ -1,27 +1,30 @@
 <!-- Promo --> 
 <div id="col-top"></div>
 <div id="col" class="box">  
-  <div id="slider">
-    <ul>
-      {% for post in site.posts %}
-      {% if post.recommend == true %}
-      <li>
-      <div class="slide-info">
-          <h2>{{post.title}}</h2>
-        <p>
-        {% if post.description %}
-            {{ post.description }} 
-        {% else %}
-            {{ post.content | strip_html | truncatewords: 2 }}
-        {% endif %}
-        </p>
-        <a href="{{ site.baseurl }}/{{post.url}}" width="344px" height="213px" class="button-more">More</a> </div>
-    <div class="slide-image"> <img src="{{post.show_img}}" alt="{{post.title}}" width="344px" height="213px" /> </div>
-      </li>
-      {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
-  <div class="slider-nav"> <a href="#" class="prev">Previous</a> <a href="#" class="next">Next</a> </div>
+    <div id="slider">
+        <ul>
+            {% for post in site.posts %}
+            {% if post.recommend == true %}
+            <li>
+            <div class="slide-info">
+                <h2>{{post.title}}</h2>
+                <p>
+                {% if post.description %}
+                {{ post.description }} 
+                {% else %}
+                {{ post.content | strip_html | truncatewords: 2 }}
+                {% endif %}
+                </p>
+                <a href="{{ site.url}}{{post.url}}" width="344px" height="213px" class="button-more">More</a> </div>
+            <div class="slide-image"> 
+                <a href="{{ site.url}}{{post.url}}" alt="{{post.title}}">
+                    <img src="{{post.show_img}}" alt="{{post.title}}" width="344px" height="213px" /></a>
+            </div>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="slider-nav"> <a href="#" class="prev">Previous</a> <a href="#" class="next">Next</a> </div>
 </div>
 <div id="col-bottom"></div>
