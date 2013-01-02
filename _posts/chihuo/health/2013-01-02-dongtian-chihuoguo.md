@@ -10,7 +10,6 @@ categories:
 - health
 - Micro-life
 show_img: "/media/pub/chihuo/health/huoguo.jpg"
-description: 
 UUID: 201301022327
 ---
 
