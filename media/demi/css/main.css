@@ -58,7 +58,7 @@ ul.ul-list span.date {padding-right:10px;}
     #tray li#tray-active a {background:url("../img/tray-active.gif");}
 
         #buynow {position:absolute; top:5px; right:20px; width:160px; height:36px; overflow:hidden;}
-        #search {position:absolute; top:8px; right:20px;}
+        #search {position:absolute; right:50px; top:0px;width: 146px;height: 40px;}
         #search div {position:relative; width:185px;}
         
         #search #search-input {position:absolute; top:0; left:0; width:150px; height:30px; background:url("../img/search-input.gif") 0 0 no-repeat; overflow:hidden;}
