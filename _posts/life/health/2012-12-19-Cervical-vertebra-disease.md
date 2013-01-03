@@ -10,7 +10,7 @@ tags:
 - 职业病
 categories:
 - Micro-life
-- healthy
+- health
 show_img: "/media/pub/life/healthy/healthy-2.jpg"
 UUID: 201212191327
 ---
