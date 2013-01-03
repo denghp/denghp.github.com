@@ -11,8 +11,6 @@
         {% if cat[1].size >= 5 %}
         {% if cat[0] == 'Code' %} 
         <a href='{{ site.baseurl }}/practice' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>研发实践({{cat[1].size}})</a>
-        {% elsif cat[0] == 'itnews' %}
-        <a href='{{ site.baseurl }}/itnews' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>IT资讯({{cat[1].size}})</a>
         {% elsif cat[0] == 'Java' %} 
         <a href='{{ site.baseurl }}/categories/java' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>Java语言({{cat[1].size}})</a>
         {% elsif cat[0] == 'solr' %}

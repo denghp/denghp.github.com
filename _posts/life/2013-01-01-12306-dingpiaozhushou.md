@@ -10,7 +10,7 @@ tags:
 - 订票插件
 categories:
 - Micro-life
-recommend: true
+- recommend
 UUID: 201301011537
 show_img: "/media/pub/google/1.jpg"
 ---
