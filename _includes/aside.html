@@ -1,115 +1,121 @@
 <div id="sidebar">
-  <ul> <li id="tag_cloud" class="boxed widget widget_tag_cloud">
-    <h3 class="widgettitle">分类目录</h3>
-    {% for cat in site.categories %}
-    {% if cat[1].size >= 5 %}
-    {% if cat[0] == 'Code' %} 
-    <a href='{{ site.baseurl }}/practice' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>研发实践({{cat[1].size}})</a>
-    {% elsif cat[0] == 'itnews' %}
-    <a href='{{ site.baseurl }}/itnews' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>IT资讯({{cat[1].size}})</a>
-    {% elsif cat[0] == 'Java' %} 
-    <a href='{{ site.baseurl }}/categories/java' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>Java语言({{cat[1].size}})</a>
-    {% elsif cat[0] == 'solr' %}
-    <a href='{{ site.baseurl }}/categories/solr' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>Lucene/Solr({{cat[1].size}})</a>
-    {% elsif cat[0] == 'Linux' %}
-    <a href='{{ site.baseurl }}/categories/linux' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>Uinx/Linux({{cat[1].size}})</a>
-    {% elsif cat[0] == 'Micro-life' %}
-    <a href='{{ site.baseurl }}/life' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>微生活({{cat[1].size}})</a>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-    </li>
-
-    <li id="tag_cloud" class="boxed widget widget_tag_cloud">
-    <h3 class="widgettitle">热门标签</h3>
-    {% for tag in site.tags %}
-    {% if tag[1].size >= 3 %}
-    <a href='{{ site.baseurl }}/tags/#{{ tag[0] }}' class='tag-link-{{tag[1].size}}' title='{{ tag[0] }}' style='font-size: {{ 10 | plus:tag[0].size }}pt;'>{{ tag[0]}}</a>
-    {% endif %}
-    {% endfor %}
-    </li>
-    <li id="recent-posts-2" class="boxed widget widget_recent_entries">		
-    <h3 class="widgettitle">近期文章</h3>	
-    <div id="hot_comment_post">
-      <ul>
-        {% for post in site.posts limit:10 %} 
-        <li>
-        <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    <ul> 
+        <li id="rss-feed" class="boxed widget ds-widget-qqt-follow">
+        <h2 class="widgettitle">RSS Feed</h2>
+            <a href="{{site.baseurl}}/rss.xml" target="_blank"><img src="{{site.baseurl}}/media/demi/img/feed.png"  alt="熊猫家族 RSS feed" border="0" title="Subscribe for Updates"></a>
+            熊猫家族-建设一个有家氛围的博客园
         </li>
+        <li id="tag_cloud" class="boxed widget widget_tag_cloud">
+        <h2 class="widgettitle">分类目录</h2>
+        {% for cat in site.categories %}
+        {% if cat[1].size >= 5 %}
+        {% if cat[0] == 'Code' %} 
+        <a href='{{ site.baseurl }}/practice' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>研发实践({{cat[1].size}})</a>
+        {% elsif cat[0] == 'itnews' %}
+        <a href='{{ site.baseurl }}/itnews' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>IT资讯({{cat[1].size}})</a>
+        {% elsif cat[0] == 'Java' %} 
+        <a href='{{ site.baseurl }}/categories/java' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>Java语言({{cat[1].size}})</a>
+        {% elsif cat[0] == 'solr' %}
+        <a href='{{ site.baseurl }}/categories/solr' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>Lucene/Solr({{cat[1].size}})</a>
+        {% elsif cat[0] == 'Linux' %}
+        <a href='{{ site.baseurl }}/categories/linux' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>Uinx/Linux({{cat[1].size}})</a>
+        {% elsif cat[0] == 'Micro-life' %}
+        <a href='{{ site.baseurl }}/life' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>微生活({{cat[1].size}})</a>
+        {% endif %}
+        {% endif %}
         {% endfor %}
-      </ul>
-    </div>
-
-    </li>
-    <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
-    <h3 class="widgettitle">热评文章</h3>
-    <div id="hot_comment_post">
-      <ul class="ds-top-threads" data-num-items="10" data-range="weekly"></ul>
-    </div>
-    </li>
-    <li id="ds-recent-comments" class="boxed widget ds-widget-recent-comments">
-    <h3 class="widgettitle">近期评论</h3>
-    <div id="hot_comment">
-      <ul class="ds-recent-comments" data-num-items="10" data-show-avatars="1" data-show-time="1" data-show-title="0" data-show-admin="0" data-avatar-size="32" data-excerpt-length="70">
-      </ul>
-    </div>
-    </li>
-    <li id="ds-qqt-follow" class="boxed widget ds-widget-qqt-follow">
-    <!--
-    <iframe src="http://follow.v.t.qq.com/index.php?c=follow&a=quick&name=denghp_280606790&style=1&t=1352387427769&f=1" frameborder="0" scrolling="auto" width="227" height="75" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
-    -->
-    <iframe width="300" height="190" frameborder="0" scrolling="no" src="http://widget.weibo.com/relationship/bulkfollow.php?language=zh_cn&uids=1655072963&wide=1" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
-    </li>
-
-    <li id="ds-recent-visitors-2" class="boxed widget ds-widget-recent-visitors">
-    <h3 class="widgettitle">最近访客</h3>
-    <ul class="ds-recent-visitors" data-num-items="21" data-show-time="0" data-avatar-size="50"></ul>
-    </li>
-    <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
-    <h3 class="widgettitle">友情链接</h3>
-    <div id="hot_comment_post">
-      <ul>
-        <li>
-        <a href="http://lusongsong.com/" target="_blank"  title="卢松松">卢松松</a>
-        </li>
-        <li>
-        <a href="http://www.muchangqing.com/" target="_blank"  title="牟长青">牟长青</a>
-        </li>
-        <li>
-        <a href="http://www.iheima.com/" target="_blank"  title="i黑马">i黑马</a>
-        </li>
-        <li>
-        <a href="http://coolshell.cn/" target="_blank"  title="酷壳">酷壳</a>
-        </li>
-        <li>
-        <a href="http://yanping.me/" target="_blank" title="雁起平沙的网络日志">雁起平沙</a>
-        </li>
-        <li>
-        <a href="http://www.letuknowit.com/" target="_blank"  title="知蚁博客">知蚁博客</a>
-        </li>
-        <li>
-        <a href="http://www.zhangyuchang.com/" target="_blank"  title="纯粹文人">纯粹文人</a>
-        </li>
-        <li>
-        <a href="http://chenpeng.info/" target="_blank"  title="陈鹏个人博客">陈鹏个人博客</a>
-        </li>
-        <li>
-        <a href="http://www.kandisheng.com/" target="_blank"  title="不霁何虹">不霁何虹</a>
-        </li>
-        <li>
-        <a href="http://www.nowamagic.net/" target="_blank"  title="简明现代魔法">简明现代魔法</a>
-        </li>
-        <li>
-        <a href="http://www.shiyayong.cn/" target="_blank"  title="网络茶馆">网络茶馆</a>
-        </li>
-        <li>
-        <a href="http://itkaifa.com/" target="_blank"  title="IT开发网">IT开发网</a>
         </li>
 
-      </ul> 
-    </div>
-    </li>
-  </ul>
+        <li id="tag_cloud" class="boxed widget widget_tag_cloud">
+        <h2 class="widgettitle">热门标签</h2>
+        {% for tag in site.tags %}
+        {% if tag[1].size >= 3 %}
+        <a href='{{ site.baseurl }}/tags/#{{ tag[0] }}' class='tag-link-{{tag[1].size}}' title='{{ tag[0] }}' style='font-size: {{ 10 | plus:tag[0].size }}pt;'>{{ tag[0]}}</a>
+        {% endif %}
+        {% endfor %}
+        </li>
+        <li id="recent-posts-2" class="boxed widget widget_recent_entries">		
+        <h2 class="widgettitle">近期文章</h2>	
+        <div id="hot_comment_post">
+            <ul>
+                {% for post in site.posts limit:10 %} 
+                <li>
+                <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        </li>
+        <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
+        <h2 class="widgettitle">热评文章</h2>
+        <div id="hot_comment_post">
+            <ul class="ds-top-threads" data-num-items="10" data-range="weekly"></ul>
+        </div>
+        </li>
+        <li id="ds-recent-comments" class="boxed widget ds-widget-recent-comments">
+        <h2 class="widgettitle">近期评论</h2>
+        <div id="hot_comment">
+            <ul class="ds-recent-comments" data-num-items="10" data-show-avatars="1" data-show-time="1" data-show-title="0" data-show-admin="0" data-avatar-size="32" data-excerpt-length="70">
+            </ul>
+        </div>
+        </li>
+        <li id="ds-qqt-follow" class="boxed widget ds-widget-qqt-follow">
+        <!--
+        <iframe src="http://follow.v.t.qq.com/index.php?c=follow&a=quick&name=denghp_280606790&style=1&t=1352387427769&f=1" frameborder="0" scrolling="auto" width="227" height="75" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
+        -->
+        <iframe width="300" height="190" frameborder="0" scrolling="no" src="http://widget.weibo.com/relationship/bulkfollow.php?language=zh_cn&uids=1655072963&wide=1" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
+        </li>
+
+        <li id="ds-recent-visitors-2" class="boxed widget ds-widget-recent-visitors">
+        <h2 class="widgettitle">最近访客</h2>
+        <ul class="ds-recent-visitors" data-num-items="20" data-show-time="0" data-avatar-size="50"></ul>
+        </li>
+        <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
+        <h2 class="widgettitle">友情链接</h2>
+        <div id="hot_comment_post">
+            <ul>
+                <li>
+                <a href="http://lusongsong.com/" target="_blank"  title="卢松松">卢松松</a>
+                </li>
+                <li>
+                <a href="http://www.muchangqing.com/" target="_blank"  title="牟长青">牟长青</a>
+                </li>
+                <li>
+                <a href="http://www.iheima.com/" target="_blank"  title="i黑马">i黑马</a>
+                </li>
+                <li>
+                <a href="http://coolshell.cn/" target="_blank"  title="酷壳">酷壳</a>
+                </li>
+                <li>
+                <a href="http://yanping.me/" target="_blank" title="雁起平沙的网络日志">雁起平沙</a>
+                </li>
+                <li>
+                <a href="http://www.letuknowit.com/" target="_blank"  title="知蚁博客">知蚁博客</a>
+                </li>
+                <li>
+                <a href="http://www.zhangyuchang.com/" target="_blank"  title="纯粹文人">纯粹文人</a>
+                </li>
+                <li>
+                <a href="http://chenpeng.info/" target="_blank"  title="陈鹏个人博客">陈鹏个人博客</a>
+                </li>
+                <li>
+                <a href="http://www.kandisheng.com/" target="_blank"  title="不霁何虹">不霁何虹</a>
+                </li>
+                <li>
+                <a href="http://www.nowamagic.net/" target="_blank"  title="简明现代魔法">简明现代魔法</a>
+                </li>
+                <li>
+                <a href="http://www.shiyayong.cn/" target="_blank"  title="网络茶馆">网络茶馆</a>
+                </li>
+                <li>
+                <a href="http://itkaifa.com/" target="_blank"  title="IT开发网">IT开发网</a>
+                </li>
+
+            </ul> 
+        </div>
+        </li>
+    </ul>
 </div>
 <!-- /sidebar -->
 <div class="cleared"></div>
