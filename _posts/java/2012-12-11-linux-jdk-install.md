@@ -71,7 +71,7 @@ $ sudo vi /etc/profile
 JAVA_HOME=/usr/local/java/jdk-6u37-linux
 export PATH=$JAVA_HOME/bin:$PATH:
 export JAVA_BIN=$JAVA_HOME/bin
-export CLASSPATH=.:$JAVA_HOME/lib
+export CLASSPATH=.:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar
 export JAVA_HOME JAVA_BIN PATH CLASSPAT
 </pre>
 注意：<br>
@@ -98,7 +98,7 @@ $ vi ~/.bashrc
 JAVA_HOME=/usr/local/java/jdk-6u37-linux
 export PATH=$JAVA_HOME/bin:$PATH:
 export JAVA_BIN=$JAVA_HOME/bin
-export CLASSPATH=.:$JAVA_HOME/lib
+export CLASSPATH=.:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar
 export JAVA_HOME JAVA_BIN PATH CLASSPAT
 </pre>
 跟使用profile配置一样<br>
