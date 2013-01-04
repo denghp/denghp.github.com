@@ -19,7 +19,7 @@ show_img: "/media/pub/google/1.jpg"
 
 ###怎么网上购票?
 <ol>
-<li>打开<a href="http://12306.cn" target="_blank" alt="铁道部火车票网" >铁道部火车票网</a>上订票唯一官网 - 铁路客户服务中心</li>
+<li>打开<a href="http://www.12306.cn" target="_blank" alt="铁道部火车票网" >铁道部火车票网</a>上订票唯一官网 - 铁路客户服务中心</li>
 <li>如果是第一次登录，则需要下载跟证书</li>
 <li>注册一个登陆名，需要你的身份证号</li>
 <li>如果需要帮别人购买，则需要添加常用联系人</li>
