@@ -77,7 +77,7 @@ show_img: "/media/pub/google/1.jpg"
 ####12306订票助手免费注册方法
 12306订票助手免费注册方法方法非常简单，点击注册，再点击“点击这里免费申请序列号”，就会跳转到12306订票助手官网去注册，填入自己的相关信息即可完成注册，非常简单方便。
 
-<img src="/media/pub/google/149673862.jpg" width="480px" alt="12306订票助手" class="img-center" ></img>
+<img src="/media/pub/google/149673862.jpg" width="480px" alt="12306订票助手" ></img>
 
 点击“点击这里免费申请序列号”<br>
 填入自己的相关信息<br>
@@ -85,7 +85,7 @@ show_img: "/media/pub/google/1.jpg"
 
 
 ####12306订票助手安装成功
-<img src="/media/pub/google/149673861.jpg" width="480px" alt="12306订票助手" class="img-center" ></img>
+<img src="/media/pub/google/149673861.jpg" width="480px" alt="12306订票助手" ></img>
 
 ###小贴士
 <ol>

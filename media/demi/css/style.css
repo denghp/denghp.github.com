@@ -50,9 +50,12 @@ h1, h2, h3, h4, h5, h6 {font-size:1em;}
 /************************************************
 *          General elements       *
 ************************************************/
-body {background-color:#fff; color:#404040;font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif; }
-
-h1, h2, h3, h4, h5, h6 {font-family:Rockwell, Georgia, Palatino Linotype, Palatino, "Times New Roman", Times, serif;}
+body {background: white;
+color: #333;
+font: normal 12px/24px Helvetica, Tahoma, Arial, sans-serif;
+text-decoration: none;
+text-align: center;}
+h1, h2, h3, h4, h5, h6 {font:normal "Microsoft YaHei";}
 a {color:#0D3F6F; text-decoration:none;}
 a:hover {color:#222;}
 blockquote {font-style:italic; background:#eee; padding:.4em 1em .7em 1em; margin:.7em 0; border:1px solid #dedede;}
@@ -546,9 +549,9 @@ img.aligncenter {margin:10px auto; text-align:center; display:block;}
 .post .meta {
   text-align: left;
   color: #a0a0a0;
-  font-family: "Times New Roman",Times,serif;
   font-size: 13px;
   line-height: 26px;
+  font:normal "Microsoft YaHei";
   text-indent: 0;
   font-weight: 600; 
   border-bottom: 3px solid #f0f0f0;
@@ -562,6 +565,7 @@ img.aligncenter {margin:10px auto; text-align:center; display:block;}
   padding: 8px 12px;
   font-style: italic;
   text-align: center;
+  font:normal "Microsoft YaHei";
   color: #888;
   text-indent: 0;
   border-top: 1px solid #e8e8e8;
@@ -581,7 +585,7 @@ img.aligncenter {margin:10px auto; text-align:center; display:block;}
 .post * tr td:last-child { border-right: none; }
 .post * tr th { font-weight: 700; }
 .post em { font-size: 14px; font-style: italic; color: #555; }
-.post strong { font-weight: 700; font-family: "Times New Roman",Times,serif; }
+.post strong { font-weight: 700; font:normal "Microsoft YaHei"; }
 
 
 /** colorcode **/
