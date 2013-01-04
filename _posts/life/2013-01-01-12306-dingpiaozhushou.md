@@ -19,7 +19,7 @@ show_img: "/media/pub/google/1.jpg"
 
 ###怎么网上购票?
 <ol>
-<li>打开<a href="http://12306.cn" alt="铁道部火车票网">铁道部火车票网</a>上订票唯一官网 - 铁路客户服务中心</li>
+<li>打开<a href="http://12306.cn" target="_blank" alt="铁道部火车票网" >铁道部火车票网</a>上订票唯一官网 - 铁路客户服务中心</li>
 <li>如果是第一次登录，则需要下载跟证书</li>
 <li>注册一个登陆名，需要你的身份证号</li>
 <li>如果需要帮别人购买，则需要添加常用联系人</li>
@@ -98,7 +98,7 @@ show_img: "/media/pub/google/1.jpg"
 ####开源：
 本脚本助手已开源（@GitHub）。如果您有兴趣自己定制自己的版本并获得最新的内容，或提交自己的修改，请至[项目主页](https://github.com/iccfish/12306_ticket_helper)。
 
-项目主页位于：<a href="https://github.com/iccfish/12306_ticket_helper">https://github.com/iccfish/12306_ticket_helper</a>
+项目主页位于：<a href="https://github.com/iccfish/12306_ticket_helper" target="_blank">https://github.com/iccfish/12306_ticket_helper</a>
 
 ###购票技巧
 ####插件安装完成后，进入[登录页面](https://dynamic.12306.cn/otsweb/)
@@ -150,6 +150,6 @@ show_img: "/media/pub/google/1.jpg"
 <img src="/media/pub/google/wopupiao.jpg" width="480px" alt="12306订票助手" ></img>
 
 ###小贴士
-<span style="color:red">如果您遇到任何无法使用的问题（包括谷歌浏览器、Firefox、遨游3或遨游4等 上无法使用、弹启用公告提示、打不开网页等），请务必参考助手常见问题页，都有解决方案：</span><a href="http://www.fishlee.net/soft/44/faq.html">http://www.fishlee.net/soft/44/faq.html</a>
+<span style="color:red">如果您遇到任何无法使用的问题（包括谷歌浏览器、Firefox、遨游3或遨游4等 上无法使用、弹启用公告提示、打不开网页等），请务必参考助手常见问题页，都有解决方案：</span><a href="http://www.fishlee.net/soft/44/faq.html" target="_blank">http://www.fishlee.net/soft/44/faq.html</a>
  
-<span style="color:red">如果您使用的是谷歌浏览器，你还可以在谷歌的应用程序商店中安装本扩展：</span><a href="https://chrome.google.com/webstore/detail/idjgmabfihmhmojipdkcackbihbdceno">https://chrome.google.com/webstore/detail/idjgmabfihmhmojipdkcackbihbdceno</a>
+<span style="color:red">如果您使用的是谷歌浏览器，你还可以在谷歌的应用程序商店中安装本扩展：</span><a target="_blank" href="https://chrome.google.com/webstore/detail/idjgmabfihmhmojipdkcackbihbdceno">https://chrome.google.com/webstore/detail/idjgmabfihmhmojipdkcackbihbdceno</a>
