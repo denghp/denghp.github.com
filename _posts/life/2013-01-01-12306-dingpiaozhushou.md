@@ -149,3 +149,7 @@ show_img: "/media/pub/google/1.jpg"
 
 <img src="/media/pub/google/wopupiao.jpg" width="480px" alt="12306订票助手" ></img>
 
+###小贴士
+<span style="color:red">如果您遇到任何无法使用的问题（包括谷歌浏览器、Firefox、遨游3或遨游4等 上无法使用、弹启用公告提示、打不开网页等），请务必参考助手常见问题页，都有解决方案：</span><a href="http://www.fishlee.net/soft/44/faq.html">http://www.fishlee.net/soft/44/faq.html</a>
+ 
+<span style="color:red">如果您使用的是谷歌浏览器，你还可以在谷歌的应用程序商店中安装本扩展：</span><a href="https://chrome.google.com/webstore/detail/idjgmabfihmhmojipdkcackbihbdceno">https://chrome.google.com/webstore/detail/idjgmabfihmhmojipdkcackbihbdceno</a>
