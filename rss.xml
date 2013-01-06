@@ -4,19 +4,22 @@ layout: nil
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
     <channel>
-        <title>{{ site.meta.site_title }}</title>
-        <link  href="{{ site.meta.absolute_baseurl }}" >{{ site.meta.absolute_baseurl }}</link>
-        <description>{{ site.meta.site_subtitle }}</description>
+        <title><![CDATA[{{ site.meta.site_title }}]]></title>
+        <atom:link href="{{ site.meta.site_title}}/rss.xml" rel="self" type="application/rss+xml"/>
+        <link >{{ site.meta.absolute_baseurl }}</link>
+        <description><![CDATA[{{ site.meta.site_content}} ]]></description>
         <managingEditor>{{ site.meta.author.email }} ({{ site.meta.author.full_name }})</managingEditor>
         <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
         <language>{{ site.meta.site_language }}</language>
+        <generator> {{ site.meta.absolute_baseurl}}</generator>
         {% for post in site.posts %}
         <item>
-            <title>{{ post.title }}</title>
+            <title><![CDATA[{{ post.title }} ]]></title>
             <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-            <description>{{ post.content | xml_escape }}</description>
-            <link rel="alternate" type="text/html" href="{{ site.meta.absolute_baseurl }}{{ post.url }}">{{ site.meta.absolute_baseurl }}{{ post.url }}</link>
-            <guid>{{ site.meta.absolute_baseurl }}{{ post.url }}</guid>
+            <description><![CDATA[{{ post.content | xml_escape }} ]]></description>
+            <link>{{ site.meta.absolute_baseurl }}{{ post.url }}/index.html</link>
+            <guid>{{ site.meta.absolute_baseurl }}{{ post.url }}/index.html</guid>
+            <author>{{post.author}}</author>
         </item>
 
         {% endfor %}
