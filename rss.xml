@@ -5,7 +5,6 @@ layout: nil
 <rss version="2.0">
     <channel>
         <title><![CDATA[{{ site.meta.site_title }}]]></title>
-        <atom:link href="{{ site.meta.site_title}}/rss.xml" rel="self" type="application/rss+xml"/>
         <link >{{ site.meta.absolute_baseurl }}</link>
         <description><![CDATA[{{ site.meta.site_content}} ]]></description>
         <managingEditor>{{ site.meta.author.email }} ({{ site.meta.author.full_name }})</managingEditor>
