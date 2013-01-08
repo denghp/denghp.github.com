@@ -9,6 +9,7 @@ tags:
 categories:
 - www
 UUID: 201301081027
+description: 　JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式, 给大家推荐一款Be JSON的工具,为了方便快捷的验证json的有效性，格式化,压缩发送等功能.
 ---
 
  　　JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。 易于人阅读和编写。同时也易于机器解析和生成。 它基于<a href="http://www.crockford.com/javascript/" tagert="_bank">JavaScript Programming Language</a>, <a href="http://www.ecma-international.org/publications/files/ecma-st/ECMA-262.pdf" target="_bank">Standard ECMA-262 3rd Edition - December 1999</a>的一个子集。 JSON采用完全独立于语言的文本格式，但是也使用了类似于C语言家族的习惯（包括C, C++, C#, Java, JavaScript, Perl, Python等）。 这些特性使JSON成为理想的数据交换语言
