@@ -18,7 +18,7 @@ Apache-ab是超文本传输协议(HTTP)的性能测试工具。 其设计意图�
 
 ###功能和性能测试工具AB
 ab是Apache超文本传输协议(HTTP)的性能测试工具。 其设计意图是描绘当前所安装的Apache的执行性能， 主要是显示你安装的Apache每秒可以处理多少个请求。
-<img src="http://demi-panda.com/media/pub/apache-ab.jpg" alt="Apache-ab"  width="560px" />
+<img src="http://demi-panda.com/media/pub/linux/apache-ab.jpg" alt="Apache-ab"  width="560px" />
 
 #####参数详细介绍
 <table style="width:580px">
