@@ -167,22 +167,49 @@ This is ApacheBench, Version 2.3 <$Revision: 655654 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
 
-Benchmarking demi-panda.com (be patient)...
+Benchmarking demi-panda.com (be patient).....done
+
 
 Server Software:        GitHub.com
 Server Hostname:        demi-panda.com
 Server Port:            80
 
 Document Path:          /2013/01/02/dongtian-chihuoguo/
-Document Length:        0 bytes
+Document Length:        28906 bytes
 
 Concurrency Level:      10
-Time taken for tests:   2.328 seconds
-Complete requests:      0
+Time taken for tests:   40.546 seconds
+Complete requests:      100
 Failed requests:        0
 Write errors:           0
-Total transferred:      28672 bytes
-HTML transferred:       26705 bytes
+Total transferred:      2918700 bytes #整个场景中的网络传输量
+HTML transferred:       2890600 bytes #整个场景中的HTML内容传输量
+Requests per second:    2.47 [#/sec] (mean)  #相当于LR 中的 每秒事务数 ，后面括号中的 mean 表示这是一个平均值
+Time per request:       4054.636 [ms] (mean) #相当于 LR 中的 平均事务响应时间 ，后面括号中的 mean 表示这是一个平均值
+Time per request:       405.464 [ms] (mean, across all concurrent requests) 
+Transfer rate:          70.30 [Kbytes/sec] received #平均每秒网络上的流量
+
+
+#网络上消耗的时间
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+              Connect:      379  566 567.6    401    3510
+              Processing:  1553 2728 2375.2   1975   20318
+              Waiting:      381  530 894.5    402    9134
+              Total:       1954 3294 2402.6   2392   20819
+
+#下面是整个场景中所有请求的响应报告。其中 50％ 的用户响应时间小于 2392 毫秒,最大响应时间是20819毫秒.
+Percentage of the requests served within a certain time (ms)
+              50%   2392
+              66%   3263
+              75%   3654
+              80%   3793
+              90%   5182
+              95%   8093
+              98%   9811
+              99%  20819
+              100%  20819 (longest request)
+
 </pre>
 
 ###推荐几款常用的压力测试工具
