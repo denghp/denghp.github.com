@@ -336,7 +336,7 @@ $ make install
       -Y/--speed-limit
       </hd>
       <td> 
-      停止传输速度的限制，速度时间'秒
+      停止传输速度的限制，速度时间秒
       </td>
     </tr>
     <tr>
