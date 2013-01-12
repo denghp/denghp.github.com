@@ -8,6 +8,7 @@ tags:
 - GBK
 - 编码转换
 categories:
+- Code
 - Linux
 UUID: 201301121027
 ---

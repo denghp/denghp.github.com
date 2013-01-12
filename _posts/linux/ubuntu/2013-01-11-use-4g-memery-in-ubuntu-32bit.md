@@ -6,6 +6,7 @@ tags:
 - Ubuntu
 - Linux
 categories:
+- Code
 - Linux
 UUID: 201301111027
 ---
