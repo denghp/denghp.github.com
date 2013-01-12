@@ -18,7 +18,7 @@ perPageItem: 10
                 {% if post.author != null %}
                 By {{ post.author }}
                 {% else %}
-                By 熊猫人
+                By <span class='text'>熊猫人</span>
                 {% endif %}
                 &nbsp;|&nbsp;
                 {% if post.tags %}
@@ -92,17 +92,17 @@ $footer.waypoint(function(event, direction) {
         var delta = 0;          // 局部计数器
         $.each(data,function(i,item){
             if(i>= count & i< count_sup){ 
-            var cats="";
-            var cat;
-            for(cat in item.categories) { 
-            cats += item.categories[cat] + "&nbsp;";
+            var tags="";
+            for(tag in item.tags) { 
+            var tempTag = item.tags[tag];
+            tags += "<a href='{{ site.baseurl }}/tags/#'"+tempTag+"' class='text' title='"+tempTag+"' rel='category tag'>" + tempTag + "</a>&nbsp;";
             }
 
             content +=  "<div class='post type-post status-publish format-standard category-1 hentry post'>";
             content += "<div class='posttop'><h2 class='posttitle'>";
             content += "<a href='"+ item.url +"' title='"+ item.title +"'>" + item.title + "</a></h2>";
             content += "<div class='postmetatop'>";
-            content += "<time class='text' datetime='" + item.date + "'>"+"Posted "+ item.date + "</time> By <span class='text'>"+ item.author +"</span> 分类: " + cats + "";
+            content += "<time class='text' datetime='" + item.date + "'>"+"Posted "+ item.date + "</time> By <span class='text'>"+ item.author +"</span> 标签: " + tags + "";
             content += "</div></div>";
             content += "<div class='postcontent'><p>"+ unescape(item.description) +"</p><p><a href="+ item.url +"/#more-"+ item.UUID +" class='more-link'>Read More &raquo;</a></p><div class='cleared'></div></div>";
             content += "<div class='postmetabottom'> <div class='tags'></div><div class='metacomments'><span>";

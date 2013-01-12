@@ -3,7 +3,7 @@ layout: default
 title: 熊猫吃货-最懂吃货的心、寻找心中的味道
 ---
 <div id="content">
-    {% for post in site.categories.chihuo %}
+    {% for post in site.categories.chihuo limit:site.meta.default_limit %}
     <div class="post-{{ post.data-thread-key }} post type-post status-publish format-standard hentry category-1 post" id="post-1968">
         <div class="posttop">
             <h2 class="posttitle">
@@ -14,7 +14,7 @@ title: 熊猫吃货-最懂吃货的心、寻找心中的味道
                 {% if post.author != null %}
                 By {{ post.author }}
                 {% else %}
-                By 熊猫人
+                By <span class='text'>熊猫人</span>
                 {% endif %}
                 &nbsp;|&nbsp;
                 {% if post.tags %}

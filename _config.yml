@@ -5,6 +5,7 @@ meta:
     site_language: "CN"
     absolute_baseurl: http://demi-panda.com
     domain: demi-panda.com
+    defualt_limit: 50
     author:
         full_name: demi-panda.com
         short_name: demi-panda

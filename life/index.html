@@ -4,7 +4,7 @@ title: 微生活-爱生活、爱健康
 ---
 <div id="main" >
     <div id="content">
-        {% for post in site.categories.Micro-life %}
+        {% for post in site.categories.Micro-life limit:site.meta.default_limit %}
         <div class="post-{{ post.data-thread-key }} post type-post status-publish format-standard hentry category-1 post" id="post-1968">
             <div class="posttop">
                 <h2 class="posttitle">
@@ -15,7 +15,7 @@ title: 微生活-爱生活、爱健康
                     {% if post.author != null %}
                     By {{ post.author }}
                     {% else %}
-                    By 熊猫人
+                    By <span class='text'>熊猫人</span>
                     {% endif %}
                     &nbsp;|&nbsp;
                     {% if post.tags %}
