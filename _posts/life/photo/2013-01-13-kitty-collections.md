@@ -9,7 +9,7 @@ tags:
 categories:
 - Micro-life
 - recommend
-show_img: "/media/pub/life/photo/mengmao-2.jpg"
+show_img: "/media/pub/life/photo/kitty-sanjiangke-2.jpg"
 UUID: 201301101527
 ---
 
