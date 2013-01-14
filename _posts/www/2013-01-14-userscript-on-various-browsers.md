@@ -9,7 +9,7 @@ tags:
 - 浏览器
 categories:
 - www
-UUID: 201301152227
+UUID: 201301142227
 ---
 
  　　最近在网上购票的时候，使用了购票助手，当然这些购票助手都是一些热心的IT牛人写的,哈哈，
@@ -46,7 +46,7 @@ UUID: 201301152227
 <img src="http://demi-panda.com/media/pub/web/userscript.jpg" width="530px"  alt="Greasemonkey" ></img>
 </li>
 <li>
-添加用户脚本
+添加用户脚本<br>
 <img src="http://demi-panda.com/media/pub/web/add-userscript.jpg" width="530px"  alt="Greasemonkey" ></img>
 </li>
 </ol>
