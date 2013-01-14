@@ -26,13 +26,13 @@ UUID: 201301152227
 ####火狐Firefox安装
 ######Greasemonkey扩展<br>
 <a href="https://addons.mozilla.org/en-US/firefox/addon/748" alt="Greasemonkey" target="_bank">https://addons.mozilla.org/en-US/firefox/addon/748</a>
-官方网站：
-<a href="http://www.greasespot.net/" target="_bank">http://www.greasespot.net/</a>
+官方网站：<br>
+<a href="http://www.greasespot.net/" target="_bank">http://www.greasespot.net/</a><br>
 ######Scriptish扩展：
 <a href="https://addons.mozilla.org/en-US/firefox/addon/scriptish/" alt="scriptish" target="_bank">https://addons.mozilla.org/en-US/firefox/addon/scriptish/</a>
 官方网站：<br>
-<a href="http://scriptish.org/" alt="scriptish" target="_bank">http://scriptish.org/</a>
-这是Greasemonkey的一个分支项目，使用方式和Greasemonkey差不多
+<a href="http://scriptish.org/" alt="scriptish" target="_bank">http://scriptish.org/</a><br>
+这是Greasemonkey的一个分支项目，使用方式和Greasemonkey差不多<br>
 ######安装步骤
 <ol>
 <li>安装火狐浏览器</li>
@@ -55,13 +55,13 @@ UUID: 201301152227
 
 ####Internet Explorer安装
 ######IE7Pro扩展：
-<a href="http://www.ie7pro.com/" alt="" target="_bank">http://www.ie7pro.com/</a>
+<a href="http://www.ie7pro.com/" alt="" target="_bank">http://www.ie7pro.com/</a><br>
 将*.user.js脚本改为.ieuser.js后缀，放在C:\Program Files\IEPro\userscripts\下，<br>
 在IE7Pro的选项的“User Script”面板中启用该脚本。
 ######Trixie扩展：
-<a href="http://www.bhelpuri.net/Trixie/" alt="trixie" target="_bank">http://www.bhelpuri.net/Trixie/</a>
-把用户脚本放在C:\Program Files\Bhelpuri\Trixie\Scripts文件夹下，
-在工具->Trixie Options（Trixie选项）中点击Reload Scripts（重新载入）按钮，再选中该脚本，即可使用
+<a href="http://www.bhelpuri.net/Trixie/" alt="trixie" target="_bank">http://www.bhelpuri.net/Trixie/</a><br>
+把用户脚本放在C:\Program Files\Bhelpuri\Trixie\Scripts文件夹下，<br>
+在工具->Trixie Options（Trixie选项）中点击Reload Scripts（重新载入）按钮，再选中该脚本，即可使用<br>
 
 ###Google Chrome和Chromium 安装
 Google Chrome和Chromium 安装虽然原生支持用户脚本，但是2012年8月后的新版Google Chrome已不允许直接点击安装用户脚本，会显示“只可添加来自 Chrome 网上应用店的扩展程序、应用和用户脚本。”。解决方法有3种：
