@@ -155,3 +155,6 @@ show_img: "/media/pub/google/1.jpg"
 <span style="color:red">如果您遇到任何无法使用的问题（包括谷歌浏览器、Firefox、遨游3或遨游4等 上无法使用、弹启用公告提示、打不开网页等），请务必参考助手常见问题页，都有解决方案：</span><a href="http://www.fishlee.net/soft/44/faq.html" target="_blank">http://www.fishlee.net/soft/44/faq.html</a>
  
 <span style="color:red">如果您使用的是谷歌浏览器，你还可以在谷歌的应用程序商店中安装本扩展：</span><a target="_blank" href="https://chrome.google.com/webstore/detail/idjgmabfihmhmojipdkcackbihbdceno">https://chrome.google.com/webstore/detail/idjgmabfihmhmojipdkcackbihbdceno</a>
+
+###推荐使用Firefox+脚本，这样您获得的助手更新将会是最及时的！
+<p><font size="4" color="red"><strong><strong>如果你不会安装或者总是摆不平，请下载由作者打包的Firefox集成版：<a href="http://pan.baidu.com/share/link?shareid=190342&amp;uk=2097456672" target="_blank">http://pan.baidu.com/share/link?shareid=190342&amp;uk=2097456672</a>，已内置必须的Scriptish扩展和4.0.8版助手。请注意不要下载任何第三方人打包的绿色版，作者不保证其中的内容的安全性！</strong></strong></font></p>
