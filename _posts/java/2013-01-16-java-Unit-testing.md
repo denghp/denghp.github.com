@@ -178,7 +178,7 @@ UUID: 201301161027
 * 1. name: xx, 如：test.dir
 * 2. value: xx, 如：junit.xml
 * 例子：
-*       <property name="test.reports.xml.dir" value="${test.reports.dir}/junit-xml" />
+*       &lt;property name="test.reports.xml.dir" value="${test.reports.dir}/junit-xml" /&gt;
 </pre>
 3、target属性
 <pre id="xml">
@@ -196,39 +196,39 @@ UUID: 201301161027
 </pre>
 <strong>2、build-test脚本规范及格式</strong><br>
 <pre id="xml">
- <target name="test-api-document" depends="compile-test-api">
-   <junit printsummary="yes" haltonfailure="no"  showoutput="true">
-     <classpath refid="test.classpath" />
-     <formatter type="xml" />
-      <!— 执行测试的测试类 -->
-   <test name="com.yoyosys.smartstorage.test.TestDocument" todir="${test.reports.xml.today}"/>
-   </junit>
-   <junitreport todir="${test.reports.html.today}">
-     <fileset dir="${test.reports.xml.today}">
-       <include name="*.xml" />
-     </fileset>
-     <report format="frames" todir="${test.reports.html.today}" />
-   </junitreport>
- </target>
+ &lt;target name="test-api-document" depends="compile-test-api"&gt;
+   &lt;junit printsummary="yes" haltonfailure="no"  showoutput="true"&gt;
+     &lt;classpath refid="test.classpath" /&gt;
+     &lt;formatter type="xml" /&gt;
+      &lt;!— 执行测试的测试类 --&gt;
+   &lt;test name="com.yoyosys.smartstorage.test.TestDocument" todir="${test.reports.xml.today}"/&gt;
+   &lt;/junit&gt;
+   &lt;junitreport todir="${test.reports.html.today}"&gt;
+     &lt;fileset dir="${test.reports.xml.today}"&gt;
+       &lt;include name="*.xml" /&gt;
+     &lt;/fileset&gt;
+     &lt;report format="frames" todir="${test.reports.html.today}" /&gt;
+   &lt;/junitreport&gt;
+ &lt;/target&gt;
 </pre>
 <strong>3、测试所有类的执行脚本示例如：</strong><br>
 <pre id="xml">
- <target name="test-api-all" depends="compile-test-api">
-   <junit printsummary="yes" haltonfailure="no"  showoutput="true">
-     <classpath refid="test.classpath" />
-     <formatter type="xml" />
-     <batchtest fork="yes" todir="${test.reports.xml.today}">
-       <fileset dir="${src.test.api}" includes="com/yoyosys/smartstorage/test/Test*.java"/>
-     </batchtest>
-   </junit>
-   <!-- 生成日期命名的测试报告-->
-   <junitreport todir="${test.reports.html.today}">
-     <fileset dir="${test.reports.xml.today}">
-       <include name="*.xml" />
-     </fileset>
-     <report format="frames" todir="${test.reports.html.today}" />
-   </junitreport>
- </target>
+ &lt;target name="test-api-all" depends="compile-test-api"&gt;
+   &lt;junit printsummary="yes" haltonfailure="no"  showoutput="true"&gt;
+     &lt;classpath refid="test.classpath" /&gt;
+     &lt;formatter type="xml" /&gt;
+     &lt;batchtest fork="yes" todir="${test.reports.xml.today}"&gt;
+       &lt;fileset dir="${src.test.api}" includes="com/yoyosys/smartstorage/test/Test*.java"/&gt;
+     &lt;/batchtest&gt;
+   &lt;/junit&gt;
+   &lt;!-- 生成日期命名的测试报告--&gt;
+   &lt;junitreport todir="${test.reports.html.today}"&gt;
+     &lt;fileset dir="${test.reports.xml.today}"&gt;
+       &lt;include name="*.xml" /&gt;
+     &lt;/fileset&gt;
+     &lt;report format="frames" todir="${test.reports.html.today}" /&gt;
+   &lt;/junitreport&gt;
+ &lt;/target&gt;
 </pre>
 
 ####使用ANT执行测试，生成测试报告
@@ -239,20 +239,20 @@ UUID: 201301161027
 ####使用Cobertura测试代码覆盖率
 1、	引用cobertura-xxx.jar包 <br>
 <pre id="xml">
-<property name="cobertura.dir" value="${env.YOYO_SVN_HOME}/app/java/cobertura/cobertura-1.9.4.1" /> 
+&lt;property name="cobertura.dir" value="${env.YOYO_SVN_HOME}/app/java/cobertura/cobertura-1.9.4.1" /&gt; 
 </pre>
 2、设置classpath<br>
 <pre id="xml">
-<path id="test.classpath" > 
- <fileset dir="${cobertura.dir}">
-     <include name="cobertura.jar" />
-     <include name="lib/**/*.jar" />
-   </fileset>
-</path>
+&lt;path id="test.classpath" &gt; 
+ &lt;fileset dir="${cobertura.dir}"&gt;
+     &lt;include name="cobertura.jar" /&gt;
+     &lt;include name="lib/**/*.jar" /&gt;
+   &lt;/fileset>
+&lt;/path>
 </pre>
 3、cobertura的全局属性文件 <br>
 <pre id="xml">
-<taskdef classpathref="test.classpath" resource="tasks.properties"/>
+&lt;taskdef classpathref="test.classpath" resource="tasks.properties"/&gt;
 </pre>
 4、编写测试覆盖率的脚本，请参考build-test.xml中的示例<br>
 5、代码覆盖率执行方法 ant -f build-test.xml coverage<br>
