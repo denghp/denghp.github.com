@@ -182,7 +182,7 @@ UUID: 201301161027
 </pre>
 3、target属性
 <pre id="xml">
-<!-- 
+&lt;!-- 
   * target 元素 test-xxx
   * 1、name 属性 taget name
   * 2、depends 属性 引用其他target
@@ -192,7 +192,7 @@ UUID: 201301161027
   * 3、showoutput 将测试过程中输出信息发送给ant日志记录系统
   * 4、batchtest 执行测试类                                                                                                                                  
   * 其他属性请参考http://ant.apache.org/manual/Tasks/junit.html
- -->
+ --&gt;
 </pre>
 <strong>2、build-test脚本规范及格式</strong><br>
 <pre id="xml">
