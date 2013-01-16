@@ -690,3 +690,40 @@ height: 25px;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
 }
 
+
+.sct {background: url(../img/scroll.png);}
+.scb {background: url(../img/scroll.png) 0 40px;}
+.scc {background: url(../img/scroll.png) 0 80px;}
+.scroll_t,.scroll_c,.scroll_b{
+    width: 80px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    cursor: pointer;
+    border-radius: 5px 0 0 5px;
+    box-shadow:0 2px 2px 1px #666;
+}
+.scroll_t{
+    background: #d03f42;
+}
+.scroll_b{
+    background: #383838;
+}
+.scroll_c{
+    background: #467ebd;
+}
+ul.scroll li {
+    position: relative; 
+    height:40px;
+    float: right;
+}
+ul.scroll li a{
+    display: block;
+    color:#fff;
+}
+ul.scroll li div {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
