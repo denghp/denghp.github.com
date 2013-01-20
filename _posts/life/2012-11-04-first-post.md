@@ -33,6 +33,14 @@ Github Page是Github的一个非常好的服务，免费，可以绑定域名。
 刚写了一篇世界末日的文章，<a href="{{site.url}}/2012/12/21/shijiemori/"><<世界末日爽约>></a>
 <img src="/media/pub/life/pub/2012-12-20.jpg" alt="世界末日之北京第三场雪" width="580px" />
 
+###末日过后,迎来<a href="{{site.url}}/2013/01/13/air-pollution-programs-do-you-know/">阴霾天气</a>
+<img src="http://demi-panda.com/media/pub/life/pub/air-2013.jpg" alt="北京天空的污染"  width="580px" ></img>
+
+###末日后的收获
+在经历过传说中的<a href="{{site.url}}/2012/12/21/shijiemori/"><<世界末日>></a>,<a href="{{site.url}}/2013/01/13/air-pollution-programs-do-you-know/">阴霾天气</a>,传说中的<a href="http://news.baidu.com/ns?cl=2&rn=20&tn=news&word=%E5%8F%B2%E4%B8%8A%E6%9C%80%E4%B8%A5%E9%A9%BE%E8%80%83&ie=utf-8" target="_bank">《史上最严格的驾照》</a>考试，终于拿到了驾照，正所谓不经历风雨，怎能见彩虹。
+<img src="http://demi-panda.com/media/pub/life/pub/my-driving-licenese.jpg" alt="北京驾照"  width="560px" ></img>
+
+
 
 
 
