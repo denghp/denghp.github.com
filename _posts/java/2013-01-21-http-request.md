@@ -43,7 +43,7 @@ http://host[":"port][abs_path]
 ###HTTP协议-请求
 http请求由三部分组成，分别是：请求行、消息报头、请求正文
 
-####请求行
+###请求行
 请求行以一个方法符号开头，以空格分开，后面跟着请求的URI和协议的版本，格式如下：Method Request-URI HTTP-Version CRLF 
 
 其中 Method表示请求方法；Request-URI是一个统一资源标识符；HTTP-Version表示请求的HTTP协议版本；CRLF表示回车和换行（除了作为结尾的CRLF外，不允许出现单独的CR或LF字符）。
@@ -139,10 +139,13 @@ Content-Length:22 (CRLF)
 Connection:Keep-Alive (CRLF)
 Cache-Control:no-cache (CRLF)
 </pre>
-(CRLF)//该CRLF表示消息报头已经结束，在此之前为消息报头<br>
+请求行和标题必须以<CR><LF>作为结尾（也就是，回车然后换行）。空行内必须只 有<CR><LF>而无其他空格。在HTTP/1.1协议中，所有的请求头，除Host外，都是可选的。
 user=admin&pwd=1234  //此行以下为提交的数据
-####<a href="{{site.url}}/2013/01/21/http-response/" alt="HTTP请求报头" target="_bank">请求报头</a>
-####请求正文(省略)
+###请求头部
+<a href="{{site.url}}/2013/01/21/http-response/" alt="HTTP请求报头" target="_bank">请求报头</a>
+###请求正文
+请求正文(省略)
+
 
 ###HTTP协议-版本号
 超文本传输协议已经演化出了很多版本，它们中的大部分都是<a href="http://zh.wikipedia.org/zh-cn/%E5%90%91%E4%B8%8B%E5%85%BC%E5%AE%B9" alt="" target="_bank">向下兼容</a>的。在<a href="http://tools.ietf.org/html/rfc2145" target="_bank" alt="RFC_2145">RFC 2145</a>中描述了HTTP版本号的用法。客户端在请求的开始告诉 服务器它采用的协议版本号，而后者则在响应中采用相同或者更早的协议版本。
