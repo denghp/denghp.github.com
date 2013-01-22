@@ -10,7 +10,7 @@ layout: default-post
     </div>
     <div class="postmetatop">
       Posted 
-      <time class="text" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>&nbsp; |&nbsp;
+      <time class="text" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d %H:%M:%S" }}</time>&nbsp; |&nbsp;
        <span class="ds-thread-count" data-thread-key="{{ page.UUID }}" data-replace="1">暂无评论</span></a></span> &nbsp;|&nbsp;
       {% if page.author != null %}
       By {{ page.author }} &nbsp;

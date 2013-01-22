@@ -8,6 +8,7 @@ tags:
 categories:
 - Code
 UUID: 201301211427
+date: 2013-01-21 08:20:20
 ---
 
 　　上一篇介绍了HTTPRequest的详细实现，及主要知识点，这一篇了解下HTTPResponse的主要知识点，及代码实现。
