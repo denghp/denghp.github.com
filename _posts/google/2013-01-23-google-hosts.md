@@ -59,7 +59,41 @@ sudo vi /etc/hosts
 
 ###Google Drive hosts配置
 <pre id="bash">
-74.125.224.231 drive.google.com
+#google drive and docs
+203.208.46.200 0.docs.google.com
+203.208.46.200	0.drive.google.com
+203.208.46.200	1.docs.google.com
+203.208.46.200	1.drive.google.com
+203.208.46.200	10.docs.google.com
+203.208.46.200	10.drive.google.com
+203.208.46.200	11.docs.google.com
+203.208.46.200	11.drive.google.com
+203.208.46.200	12.docs.google.com
+203.208.46.200	12.drive.google.com
+203.208.46.200	13.docs.google.com
+203.208.46.200	13.drive.google.com
+203.208.46.200	14.docs.google.com
+203.208.46.200	14.drive.google.com
+203.208.46.200	15.docs.google.com
+203.208.46.200	15.drive.google.com
+203.208.46.200	16.docs.google.com
+203.208.46.200	16.drive.google.com
+203.208.46.200	2.docs.google.com
+203.208.46.200	2.drive.google.com
+203.208.46.200	3.docs.google.com
+203.208.46.200	3.drive.google.com
+203.208.46.200	4.docs.google.com
+203.208.46.200	4.drive.google.com
+203.208.46.200	5.docs.google.com
+203.208.46.200	5.drive.google.com
+203.208.46.200	6.docs.google.com
+203.208.46.200	6.drive.google.com
+203.208.46.200	7.docs.google.com
+203.208.46.200	7.drive.google.com
+203.208.46.200	8.docs.google.com
+203.208.46.200	8.drive.google.com
+203.208.46.200	9.docs.google.com
+203.208.46.200	9.drive.google.com
 </pre>
 
 ###获取Google最新hosts配置地址
