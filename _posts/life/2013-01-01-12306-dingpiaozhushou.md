@@ -11,7 +11,6 @@ tags:
 categories:
 - Micro-life
 - recommend
-weight: 10
 UUID: 201301011537
 show_img: "/media/pub/google/1.jpg"
 ---
