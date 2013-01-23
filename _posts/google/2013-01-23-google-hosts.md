@@ -39,13 +39,20 @@ sudo vi /etc/hosts
 
 ###Google Code hosts配置
 <pre id="bash">
-#Code
-74.125.53.9     code.google.com   
-74.125.45.9     code.google.com   
-64.233.161.9    code.google.com   
-74.125.39.102   code.google.com   
-209.85.137.9    code.google.com   
-74.125.39.139   code.l.google.com
+#Google code
+203.208.46.200  autoproxy-gfwlist.googlecode.com
+203.208.46.200  chromium.googlecode.com
+203.208.46.200  closure-library.googlecode.com
+203.208.46.200  earth-api-samples.googlecode.com
+203.208.46.200  gmaps-samples-flash.googlecode.com
+203.208.46.200  google-code-feed-gadget.googlecode.com
+203.208.46.200  codereview.chromium.org
+203.208.46.222  smarthosts.googlecode.com
+203.208.46.200  code.google.com
+203.208.46.200  code.l.google.com 
+203.208.46.200  googlecode.l.google.com
+203.208.46.200  uploads.code.google.com
+203.208.46.202  code-opensocial.googleusercontent.com
 </pre>
 
 ###Google Drive hosts配置
