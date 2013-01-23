@@ -31,10 +31,12 @@ sudo vi /etc/hosts
 ###Google 搜索hosts配置
 <pre id="bash">
 #Search
-74.125.39.99    www.google.com
-74.125.39.103   www.google.com
-74.125.39.104   www.google.com
-74.125.39.105   www.l.google.com
+203.208.46.200  www.google.com.hk
+203.208.46.200  www.google.cn
+203.208.46.200  www.l.google.com
+203.208.46.200  www2.l.google.com
+203.208.46.200  www3.l.google.com
+203.208.46.200  www4.l.google.com
 </pre>
 
 ###Google Code hosts配置
