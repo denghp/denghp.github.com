@@ -23,7 +23,7 @@ UUID: 20121231527
 ###主材料
 嫩母鸡
 <a href="{{site.url}}/media/pub/chihuo/recipe/m_201107240021181.jpg" alt="东安子鸡">
-<img src="/media/pub/chihuo/recipe/m_201107240021181.jpg" width="280px" height="260px"  alt="东安子鸡" class="img-center"></img>
+<img src="{{site.url}}/media/pub/chihuo/recipe/m_201107240021181.jpg" width="280px" height="260px"  alt="东安子鸡" class="img-center"></img>
 </a>
 
 ###调料
