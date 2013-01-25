@@ -8,7 +8,7 @@ tags:
 - 生活
 categories:
 - Micro-life
-UUID: 201301201537
+UUID: 20130120153723
 show_img: "/media/pub/life/pub/man.jpg"
 description: 一个男人，一定要有一个男人的样子，利利索索、痛痛快快，千万不要扭扭捏捏、婆婆妈妈。要懂得保护女人和尊重女人，尤其是后者，千万不要强迫她做她不愿意的事情，不要打女人，无论她伤过你还是骗过你……
 ---
