@@ -42,7 +42,7 @@ $ sudo apt-get install download-monitor
 
 ###Download monitor  Overview
 <a href="{{site.url}}/media/pub/linux/download-monitor.jpg" alt="download monitor" target="_bank">
-<img src="{{site.url}}/media/pub/linux/download-monitoer.jpg" width="560px"  alt="download monitor" />
+<img src="{{site.url}}/media/pub/linux/download-monitor.jpg" width="560px"  alt="download monitor" />
 </a>
 
 ###Download Monitor 设置
