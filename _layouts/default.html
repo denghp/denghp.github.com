@@ -37,6 +37,9 @@
                 {{ content }}  
             </div> 
         </div> <!-- wrapper -->
+        
+        <!-- scroll.html -->
+        {% include scroll.html %}
 
         <!-- footer -->
         {% include footer.html %} 
@@ -58,31 +61,31 @@
             $("pre").addClass("prettyprint");
             prettyPrint();
             })
-        </script>
+</script>
 
-        <script language="javascript">
-            $.fn.tagcloud.defaults = {
-                size: {start: 0.9, end: 2, unit: 'em'},
-                color: {start: '#e77471', end: '#f62817'}
-            };
+<script language="javascript">
+    $.fn.tagcloud.defaults = {
+        size: {start: 0.9, end: 2, unit: 'em'},
+        color: {start: '#e77471', end: '#f62817'}
+    };
 
-            $(function () {
-                $('#tagcloud a').tagcloud();
-            });
-        </script>  
+    $(function () {
+        $('#tagcloud a').tagcloud();
+    });
+</script>  
 
-        <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-36197302-1']);
-            _gaq.push(['_trackPageview']);
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36197302-1']);
+    _gaq.push(['_trackPageview']);
 
-            (function() {
-             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-             })();
+    (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
 
-         </script>
+</script>
      </body>
  </html>
 

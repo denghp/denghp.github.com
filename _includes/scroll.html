@@ -1,22 +1,9 @@
-<!-- scroll -->
-<ul class="scroll">
-    <li class="sct">
-    <a href="#">&nbsp;&nbsp;&nbsp;</a>
-    <div><a class="scroll_t" title="返回顶部">返回顶部</a></div>
-    </li>
-    <li class="scc">
-    <a href="#">&nbsp;&nbsp;&nbsp;</a>
-    <div><a class="scroll_c" title="查看留言">查看留言</a></div>
-    </li>
-    <li class="scb">
-    <a href="#">&nbsp;&nbsp;&nbsp;</a>
-    <div><a class="scroll_b" title="转到底部">转到底部</a></div>
-    </li>
-</ul>
+<div id="full" style="display:none;width:50px; height:95px; position:fixed; left:50%; top:480px; margin-left:425px;  z-index:100; text-align:center; cursor:pointer;">
+    <a><img src="{{site.url}}/media/demi/img/back-top.png" border=0 alt="返回顶部" title="返回顶部"></a>
+</div>
 <script type="text/javascript">
-    function doZoom(size) {
-        var zoom = document.all ? document.all['entry'] : document.getElementById('entry');
-        zoom.style.fontSize = size + 'px';
-    }
+    var isie6 = window.XMLHttpRequest ? false : true; function newtoponload() { var c = document.getElementById("full"); function b() { var a = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop; if (a > 0) { if (isie6) { c.style.display = "none"; clearTimeout(window.show); window.show = setTimeout(function () { var d = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop; if (d > 0) { c.style.display = "block"; c.style.top = (480 + d) + "px" } }, 400) } else { c.style.display = "block" } } else { c.style.display = "none" } } if (isie6) { c.style.position = "absolute" } window.onscroll = b; b() } if (window.attachEvent) { window.attachEvent("onload", newtoponload) } else { window.addEventListener("load", newtoponload, false) } document.getElementById("full").onclick = function () { window.scrollTo(0, 0) };
 </script>
+
+
 
