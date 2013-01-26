@@ -20,4 +20,28 @@ permalink: /:year/:month/:day/:title
 auto: true
 debug: true
 
-
+links:
+    - url: "http://lusongsong.com/"
+      name: 卢松松
+      title: 关注站长和搜索引擎的IT博客
+    - url: "http://www.muchangqing.com/"
+      name: 牟长青
+      title: 牟长青的网站推广博客
+    - url: "http://coolshell.cn/"
+      name: 酷壳
+      title: 享受编程和技术所带来的快乐
+    - url: "http://yanping.me/"
+      name: 雁起平沙
+      title: 雁起平沙的网络日志
+    - url: "http://www.letuknowit.com/"
+      name: 知蚁博客
+      title:
+    - url: "http://www.zhangyuchang.com/"
+      name: 不纯粹文人
+      title: 不经一番寒彻骨，哪得梅花扑鼻香
+    - url: "http://chenpeng.info/"
+      name: 陈鹏个人博客
+    - url: "http://www.kandisheng.com/"
+      name: 不霁何虹博客
+    - url: "http://blog.jobbole.com/"
+      name: 伯乐在线

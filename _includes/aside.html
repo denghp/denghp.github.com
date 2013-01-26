@@ -69,50 +69,18 @@
         <h2 class="widgettitle">最近访客</h2>
         <ul class="ds-recent-visitors" data-num-items="20" data-show-time="0" data-avatar-size="50"></ul>
         </li>
+        {% if site.links %}
         <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
         <h2 class="widgettitle">友情链接</h2>
         <div id="hot_comment_post">
             <ul>
-                <li>
-                <a href="http://lusongsong.com/" target="_blank"  title="卢松松">卢松松</a>
-                </li>
-                <li>
-                <a href="http://www.muchangqing.com/" target="_blank"  title="牟长青">牟长青</a>
-                </li>
-                <li>
-                <a href="http://www.iheima.com/" target="_blank"  title="i黑马">i黑马</a>
-                </li>
-                <li>
-                <a href="http://coolshell.cn/" target="_blank"  title="酷壳">酷壳</a>
-                </li>
-                <li>
-                <a href="http://yanping.me/" target="_blank" title="雁起平沙的网络日志">雁起平沙</a>
-                </li>
-                <li>
-                <a href="http://www.letuknowit.com/" target="_blank"  title="知蚁博客">知蚁博客</a>
-                </li>
-                <li>
-                <a href="http://www.zhangyuchang.com/" target="_blank"  title="纯粹文人">纯粹文人</a>
-                </li>
-                <li>
-                <a href="http://chenpeng.info/" target="_blank"  title="陈鹏个人博客">陈鹏个人博客</a>
-                </li>
-                <li>
-                <a href="http://www.kandisheng.com/" target="_blank"  title="不霁何虹">不霁何虹</a>
-                </li>
-                <li>
-                <a href="http://www.nowamagic.net/" target="_blank"  title="简明现代魔法">简明现代魔法</a>
-                </li>
-                <li>
-                <a href="http://www.shiyayong.cn/" target="_blank"  title="网络茶馆">网络茶馆</a>
-                </li>
-                <li>
-                <a href="http://itkaifa.com/" target="_blank"  title="IT开发网">IT开发网</a>
-                </li>
-
+                {% for link in site.links %}
+                <li><a href="{{link.url}}"target="_blank"  title="{{link.name}}{% if link.title %}-{{link.title}}{% endif %}">{{link.name}}</a></li>
+                {% endfor %}
             </ul> 
         </div>
         </li>
+        {% endif %}
     </ul>
 </div>
 <!-- /sidebar -->
