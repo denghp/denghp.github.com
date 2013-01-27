@@ -76,7 +76,7 @@ show_img: "/media/pub/google/1.jpg"
 
 ####12306订票助手免费注册方法
 12306订票助手免费注册方法方法非常简单，点击注册，再点击“点击这里免费申请序列号”，就会跳转到12306订票助手官网去注册，填入自己的相关信息即可完成注册，非常简单方便。
-<a href="{{site.url}}/media/pub/google/149673862.jpg" alt="12306订票助手">
+<a href="{{site.url}}/media/pub/google/149673862.jpg" alt="12306订票助手" rel="prettyPhoto[{{page.UUID}}]">
 <img src="{{site.url}}/media/pub/google/149673862.jpg" width="480px" alt="12306订票助手" ></img>
 </a>
 
@@ -85,8 +85,8 @@ show_img: "/media/pub/google/1.jpg"
 然后把免费申请的序列号填入，确定完成注册即可。
 
 
-####12306订票助手安装成功
-<a href="{{site.url}}/media/pub/google/149673861.jpg" alt="12306订票助手">
+####12306订票助手安装成功 
+<a href="{{site.url}}/media/pub/google/149673861.jpg" alt="12306订票助手" rel="prettyPhoto[{{page.UUID}}]">
 <img src="{{site.url}}/media/pub/google/149673861.jpg" width="480px" alt="12306订票助手" ></img>
 </a>
 
@@ -105,7 +105,7 @@ show_img: "/media/pub/google/1.jpg"
 
 ###购票技巧
 ####插件安装完成后，进入[登录页面](https://dynamic.12306.cn/otsweb/)
-<a href="{{site.url}}/media/pub/google/1.jpg" alt="12306订票助手">
+<a href="{{site.url}}/media/pub/google/1.jpg" alt="12306订票助手" rel="prettyPhoto[{{page.UUID}}]">
 <img src="{{site.url}}/media/pub/google/1.jpg" width="480px" alt="12306订票助手"  ></img>
 </a>
 
@@ -117,19 +117,19 @@ show_img: "/media/pub/google/1.jpg"
 
 当没有查询到符合要求的车次时，会自动重试。由于系统按钮有5秒钟的限制，所以不允许设置在6秒内重试。
 
-<a href="{{site.url}}/media/pub/google/2.jpg" alt="12306订票助手">
+<a href="{{site.url}}/media/pub/google/2.jpg" alt="12306订票助手" rel="prettyPhoto[{{page.UUID}}]">
 <img src="{{site.url}}/media/pub/google/2.jpg" width="480px" alt="12306订票助手"  ></img>
 </a>
 
 如果查到了，会停止刷新，高亮行，并在桌面右下角弹出提示。在谷歌浏览器下，会有音乐提示。
 
-<a href="{{site.url}}/media/pub/google/3.jpg" alt="12306订票助手">
+<a href="{{site.url}}/media/pub/google/3.jpg" alt="12306订票助手" rel="prettyPhoto[{{page.UUID}}]">
 <img src="{{site.url}}/media/pub/google/3.jpg" width="330px" alt="12306订票助手"  ></img>
 </a>
 
 
 在车次列表，鼠标移动到车次上方时，右侧的提示信息中有两个新增的按钮：
-<a href="{{site.url}}/media/pub/google/5.jpg" alt="12306订票助手">
+<a href="{{site.url}}/media/pub/google/5.jpg" alt="12306订票助手" rel="prettyPhoto[{{page.UUID}}]">
 <img src="{{site.url}}/media/pub/google/5.jpg" width="480px" alt="12306订票助手" ></img>
 </a>
 
@@ -137,13 +137,13 @@ show_img: "/media/pub/google/1.jpg"
 『自动预定本车次』是指将指定的车次加入自动预定列表，如果指定车次的指定席别可用，那么将会自动进入预定页面。<br>
  
 在3.0版本开始，车次列表下方加入了新的辅助工具部分。
-<a href="{{site.url}}/media/pub/google/6.jpg" alt="12306订票助手">
+<a href="{{site.url}}/media/pub/google/6.jpg" alt="12306订票助手" rel="prettyPhoto[{{page.UUID}}]">
 <img src="{{site.url}}/media/pub/google/6.jpg" width="480px" alt="12306订票助手"  ></img>
 </a>
 
 
 『增加自定义车票时间段』用于在查询的时间范围中增加自定义的时间范围。假如对系统设置的时间段不满意，可以使用此功能来增加符合自己要求的时间段。点击后，依次输入开始的小时数、结束的小时并选择是否记忆后，即可看到时间段下出现自定义的时间段（这里定义的是早上9点到下午4点）：
-<a href="{{site.url}}/media/pub/google/7.jpg" alt="12306订票助手">
+<a href="{{site.url}}/media/pub/google/7.jpg" alt="12306订票助手" rel="prettyPhoto[{{page.UUID}}]">
 <img src="{{site.url}}/media/pub/google/7.jpg" width="330px" alt="12306订票助手"  ></img>
 </a>
 
@@ -159,7 +159,7 @@ show_img: "/media/pub/google/1.jpg"
 12306订下铺票的方法就是这样，但并不一定每一次都成功，因此建议想订下铺票的朋友找多几个账号试试，实在不行就换一天……
 
 　　目前这个订下铺票的方法已经广为人知，估计12306在解决空调问题之后又会重新修改这个绝不公开的定下铺代码。当然，伟大的程序员到时又会再一次改变世界。
-<a href="{{site.url}}/media/pub/google/wopupiao.jpg" alt="12306订票助手">
+<a href="{{site.url}}/media/pub/google/wopupiao.jpg" alt="12306订票助手" rel="prettyPhoto[{{page.UUID}}]">
 <img src="{{site.url}}/media/pub/google/wopupiao.jpg" width="480px" alt="12306订票助手" ></img>
 </a>
 
