@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Ubuntu / Linux Mint的图像文本转换器（OCR）
+title: Ubuntu/LinuxMint图像文本转换器（OCR）
 tags: 
 - Shell
 - Ubuntu

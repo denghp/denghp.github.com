@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Ubuntu / Linux Mint的图像文本转换器（OCR）
+title: Ubuntu/Linux Mint简单的图像上传工具Postman
 tags: 
 - Shell
 - Ubuntu
