@@ -15,6 +15,7 @@ UUID: 201301022227
 </a>
 
 我们有一只橘黄色和奶油条纹的小猫,他是非常可爱惹人喜欢的,但是在一个周末的最后一天, 他却走在冰上。
+
 <a href="{{site.url}}/media/pub/life/photo/8318215794_05a3d9340d_z.jpg" rel="prettyPhoto[{{page.UUID}}]" alt="猫">
 <img src="{{site.url}}/media/pub/life/photo/8318215794_05a3d9340d_z.jpg" width="480px" alt="猫" ></img>
 </a>
