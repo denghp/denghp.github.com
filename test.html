@@ -18,6 +18,8 @@
         <link rel="stylesheet" media="screen,projection" type="text/css" href="./media/demi/css/reset.css" />
         <link rel="stylesheet" media="screen,projection" type="text/css" href="./media/demi/css/superfish.css" />
         <link rel="stylesheet" media="screen,projection" type="text/css" href="./media/demi/css/prettify.css" />
+        <link rel='stylesheet' id='pretty-photo-css'  href='./media/demi/css/prettyPhoto-3.4.2.css' type='text/css' media='all' />
+
         <link rel="alternate" type="application/rss+xml" title="熊猫家族" href="./rss.xml" />
         <script src="./media/js/prettify.js" type="text/javascript"></script>
         <script src="./media/js/jquery-1.6.1.min.js" type="text/javascript"></script>
@@ -743,6 +745,9 @@
             </div> 
         </div> <!-- wrapper -->
 
+        <a href="./media/pub/web/firebug.gif" rel="prettyPhoto" title="This is the description">
+            <img src="./media/pub/web/firebug.gif" width="60" height="60" alt="This is the title" />
+        </a>
         <!-- footer -->
         <footer>
 <div id="footer">                                          
@@ -804,6 +809,13 @@
 
          </script>
          -->
+         <script type="text/javascript" charset="utf-8">
+               $(document).ready(function(){
+                   $("a[rel^='prettyPhoto']").prettyPhoto();
+                     });
+                 </script>
+         <script type='text/javascript' src='./media/js/jquery.prettyPhoto-3.4.2.js'></script>
+ 
      </body>
  </html>
 
