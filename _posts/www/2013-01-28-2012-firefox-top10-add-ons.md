@@ -17,7 +17,7 @@ show_img: "/media/pub/web/firefox-add-ons.jpg"
 
 ###TOP 1 Firebug
 Firebug中有很多有用的功能（编辑，调试，监控在现场模式下，你的代码），使Web开发更简单。这是一个Web开发人员必须的组件。
-<a href="{{site.url}}/media/pub/web/firebug.gif" ref="prettyPhoto" alt="firebug" >
+<a href="{{site.url}}/media/pub/web/firebug.gif" rel="prettyPhoto[20130128]" alt="firebug" >
 <img src="{{site.url}}/media/pub/web/firebug.gif" width="330px"  alt="firebug" class="img-center" />
 </a>
 
@@ -25,7 +25,7 @@ Firebug中有很多有用的功能（编辑，调试，监控在现场模式下�
 
 ###TOP 2 Rainbow Color Tools
 它提供了一系列的Web开发工具的颜色 - 易于使用拾色器，颜色库，检查员，分析仪（分析一个网站的配色方案）等。
-<a href="{{site.url}}/media/pub/web/Color-Tools.png" alt="Color-Tools" ref="prettyPhoto"> 
+<a href="{{site.url}}/media/pub/web/Color-Tools.png" alt="Color-Tools" rel="prettyPhoto[20130128]"> 
 <img src="{{site.url}}/media/pub/web/Color-Tools.png" width="330px"  alt="Color-Tools" class="img-center" />
 </a>
 
