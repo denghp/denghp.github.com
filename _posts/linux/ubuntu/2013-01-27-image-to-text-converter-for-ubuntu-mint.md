@@ -14,11 +14,11 @@ UUID: 20130127103000
 date: 2013-01-27 10:30:00
 ---
 
-    　Tesseract 转换图像文本，在Ubuntu / Linux中是最好的方案。我试过几个OCR（光学字符识别）应用，但是Tesseract其精度高于任何其他应用程序。
+　　Tesseract 转换图像文本，在Ubuntu/Linux中是最好的方案。我试过几个OCR（光学字符识别）应用，但是Tesseract其精度高于任何其他应用程序。
 
-    　Tesseract是一个简单的，易于使用的命令行实用程序。它是跨平台的应用程序，当然 - 这是一个自由和开放源码软件！您可以提供各种不同的输入格式，它可以转换成60 +语言。
+　　Tesseract是一个简单的，易于使用的命令行实用程序。它是跨平台的应用程序，当然 - 这是一个自由和开放源码软件！您可以提供各种不同的输入格式，它可以转换成60 +语言。
 
-###Installing Tesseract in Ubuntu / Linux
+###Installing Tesseract in Ubuntu/Linux
 <pre id="bash">
 sudo apt-get install tesseract-ocr
 </pre>

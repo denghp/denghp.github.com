@@ -15,7 +15,7 @@ date: 2013-01-27 11:35:00
 show_img: "/media/pub/linux/postman.jpg"
 ---
 
-    　Postman 是一个不错的应用程序，可以上传你的图片到各种服务，目前它支持的 Google Plus, Picasa, Flickr, Ubuntu One。这是一个易于使用的应用程序，寻找图形界面和最小的一组功能，支持拖放功能的图片上传。您还可以设置基本属性，如标题和描述的图像。
+　　Postman 是一个不错的应用程序，可以上传你的图片到各种服务，目前它支持的 Google Plus, Picasa, Flickr, Ubuntu One。这是一个易于使用的应用程序，寻找图形界面和最小的一组功能，支持拖放功能的图片上传。您还可以设置基本属性，如标题和描述的图像。
 
 <a href="{{site.url}}/media/pub/linux/postman.jpg" alt="postman" target="_bank">
 <img src="{{site.url}}/media/pub/linux/postman.jpg" width="560px"  alt="postman" />
