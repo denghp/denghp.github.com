@@ -20,7 +20,7 @@ UUID: 201212222327
 
 ###黄瓜
 对抗皮肤老化，减少皱纹的产生
-<a href="{{site.url}}/media/pub/chihuo/health/huanggua.jpg" alt="黄瓜">
+<a href="{{site.url}}/media/pub/chihuo/health/huanggua.jpg" alt="黄瓜" rel="prettyPhoto[{{page.UUID}}]">
 <img src="{{site.url}}/media/pub/chihuo/health/huanggua.jpg" width="330px" alt="黄瓜" class="img-center"></img>
 </a>
 
@@ -28,7 +28,7 @@ UUID: 201212222327
 
 ###胡萝卜
 含有丰富的果胶物质,主治食欲不振、腹胀、腹泻、咳喘痰多、视物不明。
-<a href="{{site.url}}/media/pub/chihuo/health/huluobo.jpg" alt="胡萝卜">
+<a href="{{site.url}}/media/pub/chihuo/health/huluobo.jpg" alt="胡萝卜" rel="prettyPhoto[{{page.UUID}}]">
 <img src="{{site.url}}/media/pub/chihuo/health/huluobo.jpg" width="330px" alt="胡萝卜" class="img-center"></img>
 </a>
 
@@ -36,7 +36,7 @@ UUID: 201212222327
 
 ###石榴
 具有很强的抗氧化作用，带皮榨汁效果更加。
-<a href="{{site.url}}/media/pub/chihuo/health/shiliu.jpg" alt="石榴">
+<a href="{{site.url}}/media/pub/chihuo/health/shiliu.jpg" alt="石榴" rel="prettyPhoto[{{page.UUID}}]">
 <img src="{{site.url}}/media/pub/chihuo/health/shiliu.jpg" width="330px" alt="石榴" class="img-center"></img>
 </a>
 
@@ -46,7 +46,7 @@ UUID: 201212222327
 
 ###葡萄
 抗老保湿的佳品
-<a href="{{site.url}}/media/pub/chihuo/health/putao.jpg" alt="葡萄">
+<a href="{{site.url}}/media/pub/chihuo/health/putao.jpg" alt="葡萄" rel="prettyPhoto[{{page.UUID}}]">
 <img src="{{site.url}}/media/pub/chihuo/health/putao.jpg" width="330px" alt="葡萄" class="img-center"></img>
 </a>
 
@@ -54,7 +54,7 @@ UUID: 201212222327
 
 ###柠檬
 可促进肌肤新陈代谢，抑制色素沉淀
-<a href="{{site.url}}/media/pub/chihuo/health/ningmen.jpg" alt="柠檬">
+<a href="{{site.url}}/media/pub/chihuo/health/ningmen.jpg" alt="柠檬" rel="prettyPhoto[{{page.UUID}}]">
 <img src="{{site.url}}/media/pub/chihuo/health/ningmen.jpg" width="330px" alt="柠檬" class="img-center"></img>
 </a>
 
@@ -62,7 +62,7 @@ UUID: 201212222327
 
 ###柚子
 含有的一种柠檬酸已被普遍应用于护肤领域
-<a href="{{site.url}}/media/pub/chihuo/health/youzi.jpg" alt="柚子">
+<a href="{{site.url}}/media/pub/chihuo/health/youzi.jpg" alt="柚子" rel="prettyPhoto[{{page.UUID}}]">
 <img src="{{site.url}}/media/pub/chihuo/health/youzi.jpg" width="330px" alt="柚子" class="img-center"></img>
 </a>
 
