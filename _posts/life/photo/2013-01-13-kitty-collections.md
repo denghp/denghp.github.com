@@ -23,52 +23,52 @@ UUID: 201301101527
 </a>
 
 ###嗨，看招
-<a href="{{site.url}}/media/pub/life/photo/mengmao-1.jpg" alt="萌猫" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/life/photo/mengmao-1.jpg" width="480px" alt="萌猫" ></img>
+<a href="{{site.url}}/media/pub/life/photo/mengmao-1.jpg" alt="萌猫-嗨，看招" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.url}}/media/pub/life/photo/mengmao-1.jpg" width="480px" alt="萌猫-嗨，看招" ></img>
 </a>
 
 ###深情的眼眸
-<a href="{{site.url}}/media/pub/life/photo/mengmao-2.jpg" alt="萌猫" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/life/photo/mengmao-2.jpg" width="480px" alt="萌猫" ></img>
+<a href="{{site.url}}/media/pub/life/photo/mengmao-2.jpg" alt="深情的眼眸" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.url}}/media/pub/life/photo/mengmao-2.jpg" width="480px" alt="深情的眼眸" ></img>
 </a>
 
 ###秀一个哆啦A萌
-<a href="{{site.url}}/media/pub/life/photo/mengmao-3.jpg" alt="萌猫" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/life/photo/mengmao-3.jpg" width="480px" alt="萌猫" ></img>
+<a href="{{site.url}}/media/pub/life/photo/mengmao-3.jpg" alt="秀一个哆啦A萌-萌猫" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.url}}/media/pub/life/photo/mengmao-3.jpg" width="480px" alt="秀一个哆啦A萌-萌猫" ></img>
 </a>
 
 ###累啦，俺得休息会～
-<a href="{{site.url}}/media/pub/life/photo/mengmao-4.jpg" alt="萌猫" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/life/photo/mengmao-4.jpg" width="480px" alt="萌猫" ></img>
+<a href="{{site.url}}/media/pub/life/photo/mengmao-4.jpg" alt="累啦，俺得休息会-萌猫" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.url}}/media/pub/life/photo/mengmao-4.jpg" width="480px" alt="累啦，俺得休息会-萌猫" ></img>
 </a>
 
 ###公爵
-<a href="{{site.url}}/media/pub/life/photo/mengmao-5.jpg" alt="萌猫" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/life/photo/mengmao-5.jpg" width="480px" alt="萌猫" ></img>
+<a href="{{site.url}}/media/pub/life/photo/mengmao-5.jpg" alt="公爵-萌猫" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.url}}/media/pub/life/photo/mengmao-5.jpg" width="480px" alt="公爵-萌猫" ></img>
 </a>
 
 ###忧郁
-<a href="{{site.url}}/media/pub/life/photo/mengmao-6.jpg" alt="萌猫" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/life/photo/mengmao-6.jpg" width="480px" alt="萌猫" ></img>
+<a href="{{site.url}}/media/pub/life/photo/mengmao-6.jpg" alt="忧郁-萌猫" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.url}}/media/pub/life/photo/mengmao-6.jpg" width="480px" alt="忧郁-萌猫" ></img>
 </a>
 
 ###伪装
-<a href="{{site.url}}/media/pub/life/photo/mengmao-7.jpg" alt="萌猫" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/life/photo/mengmao-7.jpg" width="480px" alt="萌猫" ></img>
+<a href="{{site.url}}/media/pub/life/photo/mengmao-7.jpg" alt="伪装-萌猫" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.url}}/media/pub/life/photo/mengmao-7.jpg" width="480px" alt="伪装-萌猫" ></img>
 
 ###金猫狮王
-<a href="{{site.url}}/media/pub/life/photo/mengmao-8.jpg" alt="萌猫" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/life/photo/mengmao-8.jpg" width="480px" alt="萌猫" ></img>
+<a href="{{site.url}}/media/pub/life/photo/mengmao-8.jpg" alt="金猫狮王-萌猫" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.url}}/media/pub/life/photo/mengmao-8.jpg" width="480px" alt="金猫狮王-萌猫" ></img>
 </a>
 
 ###灰色猫度
-<a href="{{site.url}}/media/pub/life/photo/mengmao-9.jpg" alt="萌猫" rel="prettyPhoto[{{page.UUID}}]">
-<img src="http://demi-panda.com/media/pub/life/photo/mengmao-9.jpg" width="480px" alt="萌猫" ></img>
+<a href="{{site.url}}/media/pub/life/photo/mengmao-9.jpg" alt="灰色猫度-萌猫" rel="prettyPhoto[{{page.UUID}}]">
+<img src="http://demi-panda.com/media/pub/life/photo/mengmao-9.jpg" width="480px" alt="灰色猫度-萌猫" ></img>
 </a>
 
 ###有一种爱叫：陪伴
-<a href="{{site.url}}/media/pub/life/photo/mengmao-10.jpg" alt="萌猫" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/life/photo/mengmao-10.jpg" width="480px" alt="萌猫" ></img>
+<a href="{{site.url}}/media/pub/life/photo/mengmao-10.jpg" alt="有一种爱叫：陪伴-萌猫" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.url}}/media/pub/life/photo/mengmao-10.jpg" width="480px" alt="有一种爱叫：陪伴-萌猫" ></img>
 </a>
 
 
