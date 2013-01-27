@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Ubuntu/Linux Mint简单的图像上传工具Postman
+title: Linux简单的图像上传工具Postman
 tags: 
 - Shell
 - Ubuntu
