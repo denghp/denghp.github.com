@@ -10,7 +10,7 @@ tags:
 categories:
 - Code
 - Linux
-- recommend
+- topic
 UUID: 20130127013000
 date: 2013-01-27 01:30:00
 show_img: "/media/pub/linux/download-monitor.jpg"

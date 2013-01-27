@@ -9,7 +9,7 @@ categories:
 - chihuo
 - recipe
 - 湘菜
-- recommend
+- topic
 show_img: "/media/pub/chihuo/recipe/xueya.jpg"
 UUID: 20121241027
 description: 　　永州血鸭是湖南永州的一款传统名菜，具有美味、开胃凉血的特点。说起血鸭，大概吃过这道菜的人此时都已垂涎三尺了吧！那被浓浓的血酱包裹着的每一块鸭肉、红红的辣椒、嫩嫩的子姜，香香的鸭肉中带着微微的酸辣味道，每一口都让你欲罢不能，回味无穷……    

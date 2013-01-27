@@ -7,7 +7,7 @@ tags:
 - 屏蔽
 categories:
 - www
-- recommend
+- topic
 UUID: 20130124003000
 date: 2013-01-24 00:30:00
 show_img: "/media/pub/github/github-logo.jpg"
