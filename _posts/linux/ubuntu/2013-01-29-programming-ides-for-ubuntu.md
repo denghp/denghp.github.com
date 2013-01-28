@@ -9,9 +9,10 @@ tags:
 categories:
 - Code
 - Linux
+- Topic
 UUID: 20130129003000
 date: 2013-01-29 00:30:00
-show_img: "/media/pub/linux/vpn-step-3.jpg"
+show_img: "/media/pub/java/eclipse.jpg"
 ---
 
  　　IDE集成开发环境提供了一个先进的开发环境，很多功能和自动化的各种无聊的任务。虽然，在大多数情况下，一个功能强大的文本编辑器VIM或Emacs等将是更好的选择，但有时这是很好的有IDE，特别是如果你正在处理的非常复杂的东西。如没有Eclipse的Android开发将是多痛苦的。
