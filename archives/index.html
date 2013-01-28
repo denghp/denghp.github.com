@@ -37,14 +37,14 @@ perPageItem: 10
                 <p>
                 {% if post.show_img %}
                 <a href="{{post.url}}" title="{{post.title}}">
-                    <img src="{{post.show_img}}" alt="Black Cube Theme"  width="240px" height="140px" class="img-right"></img></a>
+                    <img src="{{post.show_img}}" alt="{{post.title}}"  width="240px" height="140px" class="img-right"></img></a>
                 {% endif %}
                 {{ post.description }} 
                 </p>
                 {% else %}
                 {% if post.show_img %}
                 <a href="{{post.url}}" title="{{post.title}}">
-                    <img src="{{post.show_img}}" alt="Black Cube Theme"  width="240px" height="140px" class="img-right"></img></a>
+                    <img src="{{post.show_img}}" alt="{{post.title}}"  width="240px" height="140px" class="img-right"></img></a>
                 {% endif %}
                 <p>{{ post.content | strip_html | truncatewords: 2 }}</p>
                 {% endif %}
@@ -97,6 +97,13 @@ $footer.waypoint(function(event, direction) {
             var tempTag = item.tags[tag];
             tags += "<a href='{{ site.baseurl }}/tags/#'"+tempTag+"' class='text' title='"+tempTag+"' rel='category tag'>" + tempTag + "</a>&nbsp;";
             }
+            
+            var show_content = "";
+            if (item.show_img != '') {
+                show_content = "<a href='" + item.url+"' title='"+item.title+"'><img src='"+item.show_img+"' alt='"+item.title+"'  width='240px' height='140px' class='img-right' /></a>" + unescape(item.description);
+            } else {
+                show_content = unescape(item.description); 
+            }
 
             content +=  "<div class='post type-post status-publish format-standard category-1 hentry post'>";
             content += "<div class='posttop'><h2 class='posttitle'>";
@@ -104,10 +111,10 @@ $footer.waypoint(function(event, direction) {
             content += "<div class='postmetatop'>";
             content += "<time class='text' datetime='" + item.date + "'>"+"Posted "+ item.date + "</time> By <span class='text'>"+ item.author +"</span> 标签: " + tags + "";
             content += "</div></div>";
-            content += "<div class='postcontent'><p>"+ unescape(item.description) +"</p><p><a href="+ item.url +"/#more-"+ item.UUID +" class='more-link'>Read More &raquo;</a></p><div class='cleared'></div></div>";
+            content += "<div class='postcontent'><p>"+ show_content +"</p><p><a href="+ item.url +"/#more-"+ item.UUID +" class='more-link'>Read More &raquo;</a></p><div class='cleared'></div></div>";
             content += "<div class='postmetabottom'> <div class='tags'></div><div class='metacomments'><span>";
             content += "<a href='"+ item.url +"/#comments' title='&lt;&lt;"+item.title+"&gt;&gt;上的评论'>";
-            content += "<span class='ds-thread-count' data-thread-key='"+item.UUID+"' data-replace='1'>暂无评论</span>";
+            content += "<span class='ds-thread-count' data-thread-key='"+item.UUID+"' data-replace='1'>查看评论</span>";
             content += "</a>";
             content += "</span></div> <div class='cleared'></div></div>";
             content += "</div>";
