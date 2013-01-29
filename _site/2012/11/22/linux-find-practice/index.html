@@ -1,0 +1,1141 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv=Content-Type content="text/html;charset=utf-8">
+        <meta name="robots" content="all,follow" />
+        <title>Linux find命令实践 - 熊猫家族</title>
+        <meta name="keywords" content="博客,IT技术,研发实践,互联网,资讯,编程语言,搜索引擎,Lucene,Solr,Java,生活,旅游,吃货,熊猫吃货,微生活,健康,美食"/>
+        <meta name="author" lang="en" content="All: Demi-Panda Lab [demi-panda.com]; e-mail: blog.pandam@gmail.com" />
+        <meta name="copyright" lang="en" content="@2012 Demi_Panda Lab, All Rights Reserved!" />
+        <meta name="description" content="熊猫家族博客：敢想,敢拼,敢赢...博客,IT技术,研发实践,互联网,资讯,编程语言,搜索引擎,Lucene,Solr,Java,生活,旅游,吃货,熊猫吃货,微生活,健康,美食" />
+        <meta property="wb:webmaster" content="eb26a33b1e192873" />
+        <meta name="chinaz-site-verification" content="54c83ea9-059c-4447-95ec-4dc8b16e60b2" />
+        <meta name="baidu_union_verify" content="67d51e25cc69ae324f028d2d333b753a">
+        <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+        <link rel="shortcut icon" href="http://demi-panda.com/media/demi/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/style.css" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/main.css" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/reset.css" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/superfish.css" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/prettify.css" />
+        <link rel='stylesheet' id='pretty-photo-css'  href='http://demi-panda.com/media/demi/css/prettyPhoto-3.4.2.css' type='text/css' media='all' />
+        <link rel="alternate" type="application/rss+xml" title="熊猫家族" href="http://demi-panda.com/rss.xml" />
+        <script src="http://demi-panda.com/media/js/prettify.js" type="text/javascript"></script>
+        <script src="http://demi-panda.com/media/js/jquery-1.6.1.min.js" type="text/javascript"></script>
+        <script src="http://demi-panda.com/media/js/jquery.jcarousel.min.js" type="text/javascript"></script>
+        <script src="http://demi-panda.com/media/js/jquery.tagcloud.js" type="text/javascript"></script>
+    </head>
+
+
+    <body >
+
+        <div id="wrapper">
+            <!-- /header -->
+<div id="header">
+
+  <div id="logo">
+    <h1 id="logo">
+      <a href="/" title="[Go to homepage]"><img width="234px" height="86px" src="/media/demi/img/demi-logo.jpg" alt="" /></a>
+    </h1> 
+  </div><!-- /logo -->
+
+  <div class="cleared"></div>
+</div>
+<!-- /header -->
+
+ 
+            <!-- Tray -->
+<div id="tray">
+    <ul>
+        
+        <li ><a href="/">Home</a></li>
+        <li ><a href="/archives/">文章列表</a></li>
+        <li id="tray-active"><a href="/practice/">研发实践</a></li>
+        <li ><a href="/chihuo/">熊猫吃货</a></li>
+        <li ><a href="/life/">微生活</a></li>
+        <li ><a href="/tags/">标签</a></li>
+        <li ><a href="/about/">关于我</a></li>
+        
+        <li>
+        <div id="search">
+            <form action="http://www.google.com/cse" class="lit-search" method="get" target="_blank">
+                <input type="text" class="text" name="q" size="24" placeholder="搜索">
+                <input type="hidden" name="cx" value="007512494910388222978:uvgripsnamg">
+                <input type="hidden" name="ie" value="UTF-8">
+            </form>
+        </div>
+
+        </li>
+
+    </ul>
+    <hr class="noscreen" />                    
+</div> 
+<!-- /tray -->
+
+
+            <div id="main">
+                <div id="content">
+  <div class="post type-post status-publish format-standard hentry category-1 post" >
+    <div class="posttop">
+      <h1 class="posttitle">
+        Linux find命令实践
+      </h1>
+    </div>
+    <div class="postmetatop">
+      Posted 
+      <time class="text" datetime="2012-11-22">2012-11-22 00:00:00</time>&nbsp; |&nbsp;
+       <span class="ds-thread-count" data-thread-key="201211221050" data-replace="1">暂无评论</span></a></span> &nbsp;|&nbsp;
+      
+      By 熊猫人
+      
+      
+      <div class="tag">
+        
+        <a href="/tags/#Linux" class="text" title="Linux" rel="category tag">Linux</a>&nbsp;
+        
+        <a href="/tags/#Shell" class="text" title="Shell" rel="category tag">Shell</a>&nbsp;
+        
+      </div>
+      
+    </div>
+
+    <div class="postcontent-entry">
+      <div class="cleared"></div>
+      <p>Linux中查找文件的命令通常为“find”命令，“find”命令能帮助我们在使用,管理Linux的日常事务中方便的查找出我们需要的文件。find是个很强大的命令，能够匹配正则，查找对应权限，能够帮你精确的定位你的系统中的任何地方任何目录下的文件。</p>
+
+<h3>语法</h3>
+
+<pre id="bash" >
+Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec] [path...] [expression]
+</pre>
+
+
+<h3>find 命令选项</h3>
+
+<pre id="wiki" style="width:580px">
+-name filename      #查找名为filename的文件
+-perm               #按执行权限来查找
+-user username      #按文件属主来查找
+-group groupname    #按组来查找
+-mtime -n +n        #按文件更改时间来查找文件，-n指n天以内，+n指n天以前
+-atime -n +n        #按文件访问时间来查
+-perm               #按执行权限来查找
+-user  username     #按文件属主来查找
+-group groupname    #按组来查找
+-mtime -n +n     #按文件更改时间来查找文件，-n指n天以内，+n指n天以前
+-atime -n +n     #按文件访问时间来查找文件，-n指n天以内，+n指n天以前 
+-ctime -n +n     #按文件创建时间来查找文件，-n指n天以内，+n指n天以前 
+-nogroup         #查无有效属组的文件，即文件的属组在/etc/groups中不存在
+-nouser          #查无有效属主的文件，即文件的属主在/etc/passwd中不存
+-newer f1 !f2    #找文件，-n指n天以内，+n指n天以前 
+-ctime -n +n     #按文件创建时间来查找文件，-n指n天以内，+n指n天以前 
+-nogroup         #查无有效属组的文件，即文件的属组在/etc/groups中不存在
+-nouser          #查无有效属主的文件，即文件的属主在/etc/passwd中不存
+-newer f1 !f2    #查更改时间比f1新但比f2旧的文件
+-type  b/d/c/p/l/f  #查是块设备、目录、字符设备、管道、符号链接、普通文件
+-size  n[c]         #查长度为n块[或n字节]的文件
+-depth              #使查找在进入子目录前先行查找完本目录
+-fstype             #查更改时间比f1新但比f2旧的文件
+-type b/d/c/p/l/f   #查是块设备、目录、字符设备、管道、符号链接、普通文件
+-size n[c]          #查长度为n块[或n字节]的文件
+-depth              #使查找在进入子目录前先行查找完本目录
+-mount              #查文件时不跨越文件系统mount点
+-follow             #如果遇到符号链接文件，就跟踪链接所指的文件
+-mount              #查文件时不跨越文件系统mount点
+-follow             #如果遇到符号链接文件，就跟踪链接所指的文件
+-cpio               #对匹配的文件使用cpio命令，将他们备份到磁带设备中
+-prune              #忽略某个目录
+</pre>
+
+
+<h3>find命令示例</h3>
+
+<pre id="bash" style="width:580px">
+$find ~ -name "*.txt" -print    #在$HOME中查.txt文件并显示
+$find . -name "*.txt" -print
+$find . -name "[A-Z]*" -pri26nbsp; 
+#对匹配的文件使用cpio命令，将他们备份到磁带设备中
+$find ~ -name "*.txt" -print    #在$HOME中查.txt文件并显示
+$find . -name "*.txt" -print
+$find . -name "[A-Z]*" -print #查以大写字母开头的文件
+$find /etc -name "host*" -print #查以host开头的文件
+$find . -name "[a-z][a-z][0--9].txt" -print 
+#查以两个小写字母和两个数字开头的txt文件
+$find . -perm 755 -print
+$find . -perm -007 -exec ls -l {} /; #查所有用户都可读写执行的文件同-perm 777
+$find . -type d -print
+$find . ! -type d -print 
+$find . -type l -print
+$find . -size +1000000c -print #查长度大于1Mb的文件
+$find . -size 100c -print      #查长度为100c的文件
+$find . -size +10 -print       #查长度超过期作废10块的文件（1块=512字节）
+$find etc home apps -depth -print | cpio -ivcdC65536 -o /dev/rmt0
+$find /etc -name "passwd*" -exec grep "cnscn" {} /; #看是否存在cnscn用户
+$find . -name "yao*" | xargs file
+$find . -name "yao*" | xargs echo   "" < /tmp/core.log
+$find . -name "yao*" | xargs chmod o-w
+</pre>
+
+
+
+
+<pre id="bash" style="width:580px">
+$find -name april*              #在当前目录下查找以april开始的文件
+$find -name april* fprint file  
+#在当前目录下查找以april开始的文件，并把结果输出到file中
+$find -name ap* -o -name may*   #查找以ap或may开头的文件
+$find /mnt -name tom.txt -ftype vfat  
+#在/mnt下查找名称为tom.txt且文件系统类型为vfat的文件
+$find /mnt -name t.txt ! -ftype vfat  
+#在/mnt下查找名称为tom.txt且文件系统类型不为vfat的文件
+$find /tmp -name wa* -type l    #在/tmp下查找名为wa开头且类型为符号链接的文件
+$find /home -mtime -2           #在/home下查最近两天内改动过的文件
+$find /home   -atime -1         #查1天之内被存取过的文件
+$find /home -mmin   +60         #在/home下查60分钟前改动过的文件
+$find /home -amin +30           #查最近30分钟前被存取过的文件
+$find /home -newer tmp.txt      #在/home下查更新时间比tmp.txt近的文件或目录
+$find /home -anewer tmp.txt     #在/home下查存取时间比tmp.txt近的文件或目录
+$find /home -used -2            #列出文件或目录被改动过之后，在2日内被存取过的文件或目录
+$find /home -user cnscn         #列出/home目录内属于用户cnscn的文件或目录
+$find /home -uid +501           #列出/home目录内用户的识别码大于501的文件或目录
+$find /home -group cnscn        #列出/home内组为cnscn的文件或目录
+$find /home -gid 501            #列出/home内组id为501的文件或目录
+$find /home -nouser             #列出/home内不属于本地用户的文件或目录
+$find /home -nogroup            #列出/home内不属于本地组的文件或目录
+$find /home -name tmp.txt -maxdepth 4 #列出/home内的tmp.txt 查时深度最多为3层
+$find /home -name tmp.txt -mindepth 3 #从第2层开始查
+$find /home -empty              #查找大小为0的文件或空目录
+$find /home -size +512k         #查大于512k的文件
+$find /home -size -512k         #查小于512k的文件
+$find /home -links +2           #查硬连接数大于2的文件或目录
+$find /home -perm 0700          #查权限为700的文件或目录
+$find /tmp -name tmp.txt -exec cat {} /;
+$find /tmp -name tmp.txt -ok rm {} /;
+$find / -amin -10       #查找在系统中最后10分钟访问的文件
+$find / -atime -2       #查找在系统中最后48小时访问的文件
+$find / -empty          #查找在系统中为空的文件或者文件夹
+$find / -group cat      #查找在系统中属于 groupcat的文件
+$find / -mmin -5        #查找在系统中最后5分钟里修改过的文件
+$find / -mtime -1       #查找在系统中最后24小时里修改过的文件
+$find / -nouser         #查找在系统中属于作废用户的文件
+$find / -user fred      #查找在系统中属于FRED这个用户的文件
+</pre>
+
+
+<h3>查当前目录下的所有普通文件</h3>
+
+<p>查当前目录下的所有普通文件，并在-exec选项中使用ls -l命令将它们列出</p>
+
+<pre id="bash" style="width:580px">
+$find . -type f | xargs ls -lt {}\;
+-rw-rw-r-- 1 root root  2245 Nov 19 09:40 ./2008-09-23-java-annotation.md
+-rw-rw-r-- 1 root root  1094 Nov 19 09:40 ./2009-04-27-a-python-program.md
+-rw-rw-r-- 1 root root  1239 Nov 19 09:40 ./2009-09-09-about-form-get-post.md
+-rw-rw-r-- 1 root root  7078 Nov 19 09:40 ./2010-07-21-hash-table.md
+</pre>
+
+
+<p>在/logs目录中查找更改时间在5日以前的文件并删除它们：</p>
+
+<pre id="bash" style="width:580px">
+$ find logs -type f -mtime +5 | xargs -ok rm {}\;
+</pre>
+
+
+<p>查询当天修改过的文件</p>
+
+<pre id="bash" style="width:580px">
+$find ./ -mtime -1 -type f | xargs ls -l {}\;
+</pre>
+
+
+<p>查询并交给awk去处理</p>
+
+<pre id="bash" style="width:580px">
+$ who | awk '{print $1"/t"$2}'
+</pre>
+
+
+<p>Linux字符编码转换</p>
+
+<pre id="bash" style="width:580px">
+find default -type d -exec mkdir -p utf/{} \;
+find default -type f -exec iconv -f GBK -t UTF-8 {} -o utf/{} \;
+</pre>
+
+
+<p>这两行命令将default目录下的文件由GBK编码转换为UTF-8编码，目录结构不变，转码后的文件保存在utf/default目录下。</p>
+
+<p>从M个文件中查找包含某个字符的文件并移动到另一个目录</p>
+
+<pre id="bash" style="widht:580px">
+grep -l "data-thread-key" ./* | xargs -i -i mv {} test/
+</pre>
+
+
+    </div><!-- /postcontent -->
+
+    <div class="v-pagination">
+      
+      
+      <a class="prev" href="/2012/11/22/bash-profile" title="前一篇：.bash_profile .bashrc profile 文件的作用的执行顺序">&laquo; .bash_profile .bashrc profile 文件的作用的执行顺序</a>
+      
+      
+      
+       
+      <a class="next" href="/2012/11/22/version-manager" title="后一篇：版本管理策略">版本管理策略 &raquo;</a>
+      
+      
+    </div>
+    
+    <!-- JiaThis Button BEGIN -->
+    <div class="jiathis_style" style="margin: 10px 10px 20px 0;padding: 10px 0 0;">
+      <span class="jiathis_txt">分享到：</span>
+      <a class="jiathis_button_qzone">QQ空间</a>
+      <a class="jiathis_button_tsina">新浪微博</a>
+      <a class="jiathis_button_tqq">腾讯微博</a>
+      <a class="jiathis_button_renren">人人网</a>
+      <a class="jiathis_button_googleplus">Google+</a>
+      <a href="http://www.jiathis.com/share?uid=1706288" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+      <a class="jiathis_counter_style"></a>
+    </div>
+    <script type="text/javascript">
+      var jiathis_config = {data_track_clickback:true};
+    </script>
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1343704647947962" charset="utf-8"></script>
+    <!-- JiaThis Button END -->
+ </div><!-- /post -->
+  <div class="cleared"></div>
+ 
+  <div class="archivesbox">
+    <b>版权声明：</b>自由转载-非商用-非衍生-保持署名 | <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">Creative Commons BY-NC-ND 3.0</a><br>
+    <b>原文网址：</b><a href="/2012/11/22/linux-find-practice">http://demi-panda.com/2012/11/22/linux-find-practice</a>
+  </div>
+
+  <div class="archivesbox">
+    <div class="comments">
+      <!-- Duoshuo Comment Begin -->
+      <div class="ds-thread" data-thread-id="201211221050" data-url="http://demi-panda.com/2012/11/22/linux-find-practice" data-thread-key="201211221050" data-title="Linux find命令实践"
+        data-order="desc" data-form-positon="top"></div>
+      <!-- Duoshuo Comment End -->
+    </div>
+  </div>
+</div><!-- /content -->
+
+<div id="sidebar">
+    <ul> 
+        <li id="rss-feed" class="boxed widget ds-widget-qqt-follow">
+        <h2 class="widgettitle">RSS Feed</h2>
+            <a href="/rss.xml" target="_blank"><img src="/media/demi/img/feed.png"  alt="熊猫家族 RSS feed" border="0" title="Subscribe for Updates"></a>
+            熊猫家族-建设一个有家氛围的博客园
+        </li>
+        <li id="tag_cloud" class="boxed widget widget_tag_cloud">
+        <h2 class="widgettitle">分类目录</h2>
+        
+        
+         
+        <a href='/practice' class='tag-link-77' title='Code' style='font-size: 14pt;'>研发实践(77)</a>
+        
+        
+        
+        
+         
+        <a href='/categories/java' class='tag-link-7' title='Java' style='font-size: 14pt;'>Java语言(7)</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/categories/linux' class='tag-link-34' title='Linux' style='font-size: 15pt;'>Uinx/Linux(34)</a>
+        
+        
+        
+        
+        
+        <a href='/categories/solr' class='tag-link-8' title='solr' style='font-size: 14pt;'>Lucene/Solr(8)</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/life' class='tag-link-30' title='Micro-life' style='font-size: 20pt;'>微生活(30)</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </li>
+
+        <li id="tag_cloud" class="boxed widget widget_tag_cloud">
+        <h2 class="widgettitle">热门标签</h2>
+        
+        
+        <a href='/tags/#Java' class='tag-link-10' title='Java' style='font-size: 14pt;'>Java</a>
+        
+        
+        
+        
+        
+        <a href='/tags/#Python' class='tag-link-3' title='Python' style='font-size: 16pt;'>Python</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Github' class='tag-link-6' title='Github' style='font-size: 16pt;'>Github</a>
+        
+        
+        
+        <a href='/tags/#Linux' class='tag-link-37' title='Linux' style='font-size: 15pt;'>Linux</a>
+        
+        
+        
+        
+        
+        <a href='/tags/#Shell' class='tag-link-30' title='Shell' style='font-size: 15pt;'>Shell</a>
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#solr' class='tag-link-9' title='solr' style='font-size: 14pt;'>solr</a>
+        
+        
+        
+        <a href='/tags/#lucene' class='tag-link-9' title='lucene' style='font-size: 16pt;'>lucene</a>
+        
+        
+        
+        <a href='/tags/#搜索引擎' class='tag-link-9' title='搜索引擎' style='font-size: 14pt;'>搜索引擎</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Jenkins' class='tag-link-3' title='Jenkins' style='font-size: 17pt;'>Jenkins</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Ubuntu' class='tag-link-16' title='Ubuntu' style='font-size: 16pt;'>Ubuntu</a>
+        
+        
+        
+        <a href='/tags/#Jekyll' class='tag-link-6' title='Jekyll' style='font-size: 16pt;'>Jekyll</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#域名' class='tag-link-3' title='域名' style='font-size: 12pt;'>域名</a>
+        
+        
+        
+        <a href='/tags/#Subversion' class='tag-link-3' title='Subversion' style='font-size: 20pt;'>Subversion</a>
+        
+        
+        
+        
+        
+        <a href='/tags/#SSH' class='tag-link-3' title='SSH' style='font-size: 13pt;'>SSH</a>
+        
+        
+        
+        
+        
+        <a href='/tags/#梦想' class='tag-link-3' title='梦想' style='font-size: 12pt;'>梦想</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#HTTP' class='tag-link-4' title='HTTP' style='font-size: 14pt;'>HTTP</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#浏览器' class='tag-link-3' title='浏览器' style='font-size: 13pt;'>浏览器</a>
+        
+        
+        
+        <a href='/tags/#Google' class='tag-link-4' title='Google' style='font-size: 16pt;'>Google</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#互联网' class='tag-link-10' title='互联网' style='font-size: 13pt;'>互联网</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#健康' class='tag-link-4' title='健康' style='font-size: 12pt;'>健康</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#美食星期天' class='tag-link-5' title='美食星期天' style='font-size: 15pt;'>美食星期天</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#vim' class='tag-link-5' title='vim' style='font-size: 13pt;'>vim</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#生活' class='tag-link-6' title='生活' style='font-size: 12pt;'>生活</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#研发实践' class='tag-link-10' title='研发实践' style='font-size: 14pt;'>研发实践</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#屏蔽' class='tag-link-3' title='屏蔽' style='font-size: 12pt;'>屏蔽</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </li>
+        <li id="recent-posts-2" class="boxed widget widget_recent_entries">		
+        <h2 class="widgettitle">近期文章</h2>	
+        <div id="hot_comment_post">
+            <ul>
+                 
+                <li>
+                <a href="/2013/01/30/top-8-sexy-ways-to-de-stress-during-the-holidays" title="在节假日,8大性感的解除压力的方法">在节假日,8大性感的解除压力的方法</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/29/programming-ides-for-ubuntu" title="Ubuntu 常用的编程开发环境IDEs">Ubuntu 常用的编程开发环境IDEs</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/28/2012-firefox-top10-add-ons" title="2012年Firefox TOP10 附加组件">2012年Firefox TOP10 附加组件</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/28/ubunut-setup-vpn-connection" title="Ubuntu/Linux 配置VPN连接">Ubuntu/Linux 配置VPN连接</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/27/postman-a-simple-image-uploading-application-for-ubuntu-linux-mint" title="Linux简单的图像上传工具Postman">Linux简单的图像上传工具Postman</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/27/image-to-text-converter-for-ubuntu-mint" title="Linux图像文本转换器（OCR）">Linux图像文本转换器（OCR）</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/27/download-monitor" title="Download Monitor监控上传和下载流量">Download Monitor监控上传和下载流量</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/26/java-parse-javascript" title="Java解析JavaScript数据">Java解析JavaScript数据</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/26/linux-kill-multi-process" title="Linux kill多个进程">Linux kill多个进程</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/25/linux-find-command" title="Linux 下使用find命令查找最近修改文件">Linux 下使用find命令查找最近修改文件</a>
+                </li>
+                
+            </ul>
+        </div>
+
+        </li>
+        <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
+        <h2 class="widgettitle">热评文章</h2>
+        <div id="hot_comment_post">
+            <ul class="ds-top-threads" data-num-items="10" data-range="weekly"></ul>
+        </div>
+        </li>
+        <li id="ds-recent-comments" class="boxed widget ds-widget-recent-comments">
+        <h2 class="widgettitle">近期评论</h2>
+        <div id="hot_comment">
+            <ul class="ds-recent-comments" data-num-items="10" data-show-avatars="1" data-show-time="1" data-show-title="0" data-show-admin="0" data-avatar-size="32" data-excerpt-length="70">
+            </ul>
+        </div>
+        </li>
+        <li id="ds-qqt-follow" class="boxed widget ds-widget-qqt-follow">
+        <!--
+        <iframe src="http://follow.v.t.qq.com/index.php?c=follow&a=quick&name=denghp_280606790&style=1&t=1352387427769&f=1" frameborder="0" scrolling="auto" width="227" height="75" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
+        -->
+        <iframe width="300" height="190" frameborder="0" scrolling="no" src="http://widget.weibo.com/relationship/bulkfollow.php?language=zh_cn&uids=1655072963&wide=1" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
+        </li>
+
+        <li id="ds-recent-visitors-2" class="boxed widget ds-widget-recent-visitors">
+        <h2 class="widgettitle">最近访客</h2>
+        <ul class="ds-recent-visitors" data-num-items="20" data-show-time="0" data-avatar-size="50"></ul>
+        </li>
+        
+        <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
+        <h2 class="widgettitle">友情链接</h2>
+        <div id="hot_comment_post">
+            <ul>
+                
+                <li><a href="http://lusongsong.com/"target="_blank"  title="卢松松-关注站长和搜索引擎的IT博客">卢松松</a></li>
+                
+                <li><a href="http://www.muchangqing.com/"target="_blank"  title="牟长青-牟长青的网站推广博客">牟长青</a></li>
+                
+                <li><a href="http://coolshell.cn/"target="_blank"  title="酷壳-享受编程和技术所带来的快乐">酷壳</a></li>
+                
+                <li><a href="http://yanping.me/"target="_blank"  title="雁起平沙-雁起平沙的网络日志">雁起平沙</a></li>
+                
+                <li><a href="http://www.letuknowit.com/"target="_blank"  title="知蚁博客">知蚁博客</a></li>
+                
+                <li><a href="http://www.zhangyuchang.com/"target="_blank"  title="不纯粹文人-不经一番寒彻骨，哪得梅花扑鼻香">不纯粹文人</a></li>
+                
+                <li><a href="http://chenpeng.info/"target="_blank"  title="陈鹏个人博客">陈鹏个人博客</a></li>
+                
+                <li><a href="http://www.kandisheng.com/"target="_blank"  title="不霁何虹博客">不霁何虹博客</a></li>
+                
+                <li><a href="http://blog.jobbole.com/"target="_blank"  title="伯乐在线">伯乐在线</a></li>
+                
+            </ul> 
+        </div>
+        </li>
+        
+    </ul>
+</div>
+<!-- /sidebar -->
+<div class="cleared"></div>
+
+
+
+
+  
+            </div> 
+        </div> <!-- wrapper -->
+        
+        <!-- scroll.html -->
+        <div id="full" style="display:none;width:50px; height:95px; position:fixed; left:50%; top:480px; margin-left:425px;  z-index:100; text-align:center; cursor:pointer;">
+    <a><img src="http://demi-panda.com/media/demi/img/back-top.png" border=0 alt="返回顶部" title="返回顶部"></a>
+</div>
+<script type="text/javascript">
+    var isie6 = window.XMLHttpRequest ? false : true; function newtoponload() { var c = document.getElementById("full"); function b() { var a = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop; if (a > 0) { if (isie6) { c.style.display = "none"; clearTimeout(window.show); window.show = setTimeout(function () { var d = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop; if (d > 0) { c.style.display = "block"; c.style.top = (480 + d) + "px" } }, 400) } else { c.style.display = "block" } } else { c.style.display = "none" } } if (isie6) { c.style.position = "absolute" } window.onscroll = b; b() } if (window.attachEvent) { window.attachEvent("onload", newtoponload) } else { window.addEventListener("load", newtoponload, false) } document.getElementById("full").onclick = function () { window.scrollTo(0, 0) };
+</script>
+
+
+
+
+       
+        <!-- footer -->
+        <footer>
+<div id="footer">                                          
+  <p class="t-center" style='font-size: 10pt;'>
+  &copy; 2012 <a href="/">Demi Panda Lab</a>, All Rights Reserved.
+
+  <script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9ed8ee65a576b9495a4d989eabbd4c09' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+
+  <script src="http://s14.cnzz.com/stat.php?id=4734788&web_id=4734788&show=pic" language="JavaScript"></script>
+  </p>
+  </div> 
+</footer>
+
+ 
+        <script type="text/javascript">
+            var duoshuoQuery = {short_name:"demi-panda"};
+(function() {
+ var ds = document.createElement('script');
+ ds.type = 'text/javascript';ds.async = true;
+ ds.src = 'http://static.duoshuo.com/embed.js';
+ ds.charset = 'UTF-8';
+ (document.getElementsByTagName('head')[0] 
+  || document.getElementsByTagName('body')[0]).appendChild(ds);
+ })();
+</script>  
+
+
+<script type="text/javascript">
+    $(window).load(function(){
+            $("pre").addClass("prettyprint");
+            prettyPrint();
+            })
+        </script>
+
+        <script language="javascript">
+            $.fn.tagcloud.defaults = {
+                size: {start: 0.9, end: 2, unit: 'em'},
+                color: {start: '#e77471', end: '#f62817'}
+            };
+
+            $(function () {
+                $('#tagcloud a').tagcloud();
+            });
+        </script>  
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-36197302-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+             })();
+
+         </script>
+         <script type='text/javascript' src='http://demi-panda.com/media/js/jquery.prettyPhoto-3.4.2.js'></script>
+         <script type='text/javascript' src='http://demi-panda.com/media/js/themify.script-3.4.2.js'></script> 
+     </body>
+ </html>
+

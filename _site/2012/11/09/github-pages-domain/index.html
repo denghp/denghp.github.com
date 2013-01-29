@@ -1,0 +1,1023 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv=Content-Type content="text/html;charset=utf-8">
+        <meta name="robots" content="all,follow" />
+        <title>浅谈github页面域名绑定 - 熊猫家族</title>
+        <meta name="keywords" content="博客,IT技术,研发实践,互联网,资讯,编程语言,搜索引擎,Lucene,Solr,Java,生活,旅游,吃货,熊猫吃货,微生活,健康,美食"/>
+        <meta name="author" lang="en" content="All: Demi-Panda Lab [demi-panda.com]; e-mail: blog.pandam@gmail.com" />
+        <meta name="copyright" lang="en" content="@2012 Demi_Panda Lab, All Rights Reserved!" />
+        <meta name="description" content="熊猫家族博客：敢想,敢拼,敢赢...博客,IT技术,研发实践,互联网,资讯,编程语言,搜索引擎,Lucene,Solr,Java,生活,旅游,吃货,熊猫吃货,微生活,健康,美食" />
+        <meta property="wb:webmaster" content="eb26a33b1e192873" />
+        <meta name="chinaz-site-verification" content="54c83ea9-059c-4447-95ec-4dc8b16e60b2" />
+        <meta name="baidu_union_verify" content="67d51e25cc69ae324f028d2d333b753a">
+        <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+        <link rel="shortcut icon" href="http://demi-panda.com/media/demi/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/style.css" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/main.css" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/reset.css" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/superfish.css" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/prettify.css" />
+        <link rel='stylesheet' id='pretty-photo-css'  href='http://demi-panda.com/media/demi/css/prettyPhoto-3.4.2.css' type='text/css' media='all' />
+        <link rel="alternate" type="application/rss+xml" title="熊猫家族" href="http://demi-panda.com/rss.xml" />
+        <script src="http://demi-panda.com/media/js/prettify.js" type="text/javascript"></script>
+        <script src="http://demi-panda.com/media/js/jquery-1.6.1.min.js" type="text/javascript"></script>
+        <script src="http://demi-panda.com/media/js/jquery.jcarousel.min.js" type="text/javascript"></script>
+        <script src="http://demi-panda.com/media/js/jquery.tagcloud.js" type="text/javascript"></script>
+    </head>
+
+
+    <body >
+
+        <div id="wrapper">
+            <!-- /header -->
+<div id="header">
+
+  <div id="logo">
+    <h1 id="logo">
+      <a href="/" title="[Go to homepage]"><img width="234px" height="86px" src="/media/demi/img/demi-logo.jpg" alt="" /></a>
+    </h1> 
+  </div><!-- /logo -->
+
+  <div class="cleared"></div>
+</div>
+<!-- /header -->
+
+ 
+            <!-- Tray -->
+<div id="tray">
+    <ul>
+        
+        <li ><a href="/">Home</a></li>
+        <li ><a href="/archives/">文章列表</a></li>
+        <li id="tray-active"><a href="/practice/">研发实践</a></li>
+        <li ><a href="/chihuo/">熊猫吃货</a></li>
+        <li ><a href="/life/">微生活</a></li>
+        <li ><a href="/tags/">标签</a></li>
+        <li ><a href="/about/">关于我</a></li>
+        
+        <li>
+        <div id="search">
+            <form action="http://www.google.com/cse" class="lit-search" method="get" target="_blank">
+                <input type="text" class="text" name="q" size="24" placeholder="搜索">
+                <input type="hidden" name="cx" value="007512494910388222978:uvgripsnamg">
+                <input type="hidden" name="ie" value="UTF-8">
+            </form>
+        </div>
+
+        </li>
+
+    </ul>
+    <hr class="noscreen" />                    
+</div> 
+<!-- /tray -->
+
+
+            <div id="main">
+                <div id="content">
+  <div class="post type-post status-publish format-standard hentry category-1 post" >
+    <div class="posttop">
+      <h1 class="posttitle">
+        浅谈github页面域名绑定
+      </h1>
+    </div>
+    <div class="postmetatop">
+      Posted 
+      <time class="text" datetime="2012-11-09">2012-11-09 00:00:00</time>&nbsp; |&nbsp;
+       <span class="ds-thread-count" data-thread-key="201211092323" data-replace="1">暂无评论</span></a></span> &nbsp;|&nbsp;
+      
+      By 熊猫人
+      
+      
+      <div class="tag">
+        
+        <a href="/tags/#域名" class="text" title="域名" rel="category tag">域名</a>&nbsp;
+        
+        <a href="/tags/#Jekyll" class="text" title="Jekyll" rel="category tag">Jekyll</a>&nbsp;
+        
+      </div>
+      
+    </div>
+
+    <div class="postcontent-entry">
+      <div class="cleared"></div>
+      <p>前段时间看到COS上的各位都有博客，也想开个博，给COS的各位管理员发邮件，向他们请教如何开个像怡轩和太云那样的博客，思喆兄说要向益辉申请空间和cos的二级域名。无奈老大太忙，迟迟没有给我分配空间和域名，只是某次提到有个叫<a target="_blank" href="http://github.com">github</a>的东西，可以在上面建网页，还可以写博客，写博客还可以不用网络哦亲，只要在本地写好，哪天有网络了就一个push过去哦亲，so fashion！<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>于是我又给他写了很多邮件，向他请教如何使用该系统，结果，他还是不回复。得，自己研究吧。</p>
+
+
+
+
+<p>关于如何在github上创建页面本文就不讲了，文章末尾会列出参考文献，本文着重介绍github页面的域名绑定问题。
+github pages的<a target="_blank" href="http://pages.github.com/">官方主页</a>这样说：</p>
+
+
+
+
+<ul>
+<li>假设你github的用户名为<strong>username</strong>，那么创建一个名为username.github.com的代码库（repository）,在这个库中上传html、CSS等静态页面文件，可以用地址 http://username.github.com来访问页面了，这个页面就是你账户的主页面（User pages）。</li>
+<li>如果你又创建了个叫<strong>repo</strong>的代码库，在它下面的gh-pages分支里上传了html、CSS等静态页面文件，那么用http://username.github.com/repo这个地址就能访问页面了。</li>
+<li>要想生成复杂点的页面，可以用<a target="_blank" href="http://github.com/mojombo/jekyll/">jekyll</a>，语法高亮用<code>pygments</code> 。</li>
+        <li>要想域名绑定，在代码库的根目录下放一个CNAME文件就行了，文件里写上想要绑定的域名，然后在域名DNS管理的后台网站建立指向就行。如果想把页面绑定到二级域名，需要创建一个CNAME指向。如果要把页面绑定到顶级域名，需要创建一个A指向。不能用CNAME指向顶级域名，否则会造成冲突。 </li>
+        </ul>
+
+
+
+
+<p>现在问题就来自上面的最后一条，当我建立了个用户页面 http://username.github.com并把它的域名绑定为顶级域名example.com之后，我账户下所有代码库页面都变成了example.com下面的二级目录。我想这可能是因为代码库页面原来的网址为http://username.github.com/repo，DNS把http://username.github.com解析成了http://example.com。请看 <a target="_blank" href="https://github.com/lmorchard">https://github.com/lmorchard</a>，他在github上有两个博客， <a target="_blank" href="http://decafbad.com/skein">http://decafbad.com/skein</a> 和 <a target="_blank" href="http://decafbad.com/blog/">http://decafbad.com/blog/ </a></p>
+
+
+
+
+<p><del>然而当我把用户页面的域名绑定为二级域名http://sub.example.com之后，所有代码库的页面都404了。所以我还是建议把顶级域名绑定到用户页面，这样代码库页面也能够正常访问。</del> 今天又试了一下，我把用户页面的域名绑定为二级域名，项目页面还是可以显示的，依然是二级目录的形式。明天我再试试换过来会怎么样。</p>
+
+
+
+
+<p>如果我不给用户页面绑定域名，或者干脆不创建用户页面，是不是可以给代码库页面绑定域名呢？答案是否定的，因为A指向需要提供个IP地址，CNAM需要指向个域名，而不能是http://username.github.com/repo的形式。</p>
+
+
+
+
+<p>如果想充分利用你的域名和子域名，我暂时能想到的就是多开几个github账户吧，关于一台电脑上多个github账户的操作，网上有现成的教程，我会在以后整理出来。 </p>
+
+
+
+
+<p>我也注意到github也有例外，请看<a target="_blank" href="http://gitready.com/">http://gitready.com/</a>这个网站，它在github上的代码地址是<a target="_blank" href="http://github.com/gitready/gitready/">http://github.com/gitready/gitready/</a> , 可以看到它还有别的语言版本，域名分别是<a target="_blank" href="http://de.gitready.com/">http://de.gitready.com/</a>、<a target="_blank" href="http://fr.gitready.com">http://fr.gitready.com</a> 。。。 这是怎么做到的呢？ 我注意到，它这个目录下没有master分支，是跟这个有关吗？ 目前还没有得到作者的回复，也从知晓。感兴趣的同学们来研究一下吧。</p>
+
+
+
+
+<h3 id="section">快速应用</h3>
+
+
+<p><code>jekyll</code>对初学者太难掌握，有人推荐使用<a target="_blank" href="http://www.octopress.org">octopress</a>、<a target="_blank" href="https://github.com/cloudhead/toto">toto</a>或者<a target="_blank" href="http://alexyoung.org/2011/07/24/pop/">pop</a>等基于Jekyll的静态博客站点生成系统<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>，它很大程度上简化了用Jekyll搭建博客的过程。<del>可惜这些系统在windows下都不能顺畅使用，我也没试成功。使用Linux的同学可以试一试。</del><ins>在windows下使用Octopress的教程请看我的<a href="http://chen.yanping.me/cn/blog/2011/12/26/octopress-on-windows/" target="_blank">博客文章</a></ins>。</p>
+
+
+<p>原文地址：<a href="http://yanping.me/cn/blog/2011/12/04/github-pages-domain/">http://yanping.me/cn/blog/2011/12/04/github-pages-domain/</a></p>
+
+    </div><!-- /postcontent -->
+
+    <div class="v-pagination">
+      
+      
+      <a class="prev" href="/2012/11/04/first-post" title="前一篇：2012年的第一场雪">&laquo; 2012年的第一场雪</a>
+      
+      
+      
+       
+      <a class="next" href="/2012/11/09/github-pages-domain-2" title="后一篇：再谈github页面域名绑定">再谈github页面域名绑定 &raquo;</a>
+      
+      
+    </div>
+    
+    <!-- JiaThis Button BEGIN -->
+    <div class="jiathis_style" style="margin: 10px 10px 20px 0;padding: 10px 0 0;">
+      <span class="jiathis_txt">分享到：</span>
+      <a class="jiathis_button_qzone">QQ空间</a>
+      <a class="jiathis_button_tsina">新浪微博</a>
+      <a class="jiathis_button_tqq">腾讯微博</a>
+      <a class="jiathis_button_renren">人人网</a>
+      <a class="jiathis_button_googleplus">Google+</a>
+      <a href="http://www.jiathis.com/share?uid=1706288" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+      <a class="jiathis_counter_style"></a>
+    </div>
+    <script type="text/javascript">
+      var jiathis_config = {data_track_clickback:true};
+    </script>
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1343704647947962" charset="utf-8"></script>
+    <!-- JiaThis Button END -->
+ </div><!-- /post -->
+  <div class="cleared"></div>
+ 
+  <div class="archivesbox">
+    <b>版权声明：</b>自由转载-非商用-非衍生-保持署名 | <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">Creative Commons BY-NC-ND 3.0</a><br>
+    <b>原文网址：</b><a href="/2012/11/09/github-pages-domain">http://demi-panda.com/2012/11/09/github-pages-domain</a>
+  </div>
+
+  <div class="archivesbox">
+    <div class="comments">
+      <!-- Duoshuo Comment Begin -->
+      <div class="ds-thread" data-thread-id="201211092323" data-url="http://demi-panda.com/2012/11/09/github-pages-domain" data-thread-key="201211092323" data-title="浅谈github页面域名绑定"
+        data-order="desc" data-form-positon="top"></div>
+      <!-- Duoshuo Comment End -->
+    </div>
+  </div>
+</div><!-- /content -->
+
+<div id="sidebar">
+    <ul> 
+        <li id="rss-feed" class="boxed widget ds-widget-qqt-follow">
+        <h2 class="widgettitle">RSS Feed</h2>
+            <a href="/rss.xml" target="_blank"><img src="/media/demi/img/feed.png"  alt="熊猫家族 RSS feed" border="0" title="Subscribe for Updates"></a>
+            熊猫家族-建设一个有家氛围的博客园
+        </li>
+        <li id="tag_cloud" class="boxed widget widget_tag_cloud">
+        <h2 class="widgettitle">分类目录</h2>
+        
+        
+         
+        <a href='/practice' class='tag-link-77' title='Code' style='font-size: 14pt;'>研发实践(77)</a>
+        
+        
+        
+        
+         
+        <a href='/categories/java' class='tag-link-7' title='Java' style='font-size: 14pt;'>Java语言(7)</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/categories/linux' class='tag-link-34' title='Linux' style='font-size: 15pt;'>Uinx/Linux(34)</a>
+        
+        
+        
+        
+        
+        <a href='/categories/solr' class='tag-link-8' title='solr' style='font-size: 14pt;'>Lucene/Solr(8)</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/life' class='tag-link-30' title='Micro-life' style='font-size: 20pt;'>微生活(30)</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </li>
+
+        <li id="tag_cloud" class="boxed widget widget_tag_cloud">
+        <h2 class="widgettitle">热门标签</h2>
+        
+        
+        <a href='/tags/#Java' class='tag-link-10' title='Java' style='font-size: 14pt;'>Java</a>
+        
+        
+        
+        
+        
+        <a href='/tags/#Python' class='tag-link-3' title='Python' style='font-size: 16pt;'>Python</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Github' class='tag-link-6' title='Github' style='font-size: 16pt;'>Github</a>
+        
+        
+        
+        <a href='/tags/#Linux' class='tag-link-37' title='Linux' style='font-size: 15pt;'>Linux</a>
+        
+        
+        
+        
+        
+        <a href='/tags/#Shell' class='tag-link-30' title='Shell' style='font-size: 15pt;'>Shell</a>
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#solr' class='tag-link-9' title='solr' style='font-size: 14pt;'>solr</a>
+        
+        
+        
+        <a href='/tags/#lucene' class='tag-link-9' title='lucene' style='font-size: 16pt;'>lucene</a>
+        
+        
+        
+        <a href='/tags/#搜索引擎' class='tag-link-9' title='搜索引擎' style='font-size: 14pt;'>搜索引擎</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Jenkins' class='tag-link-3' title='Jenkins' style='font-size: 17pt;'>Jenkins</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Ubuntu' class='tag-link-16' title='Ubuntu' style='font-size: 16pt;'>Ubuntu</a>
+        
+        
+        
+        <a href='/tags/#Jekyll' class='tag-link-6' title='Jekyll' style='font-size: 16pt;'>Jekyll</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#域名' class='tag-link-3' title='域名' style='font-size: 12pt;'>域名</a>
+        
+        
+        
+        <a href='/tags/#Subversion' class='tag-link-3' title='Subversion' style='font-size: 20pt;'>Subversion</a>
+        
+        
+        
+        
+        
+        <a href='/tags/#SSH' class='tag-link-3' title='SSH' style='font-size: 13pt;'>SSH</a>
+        
+        
+        
+        
+        
+        <a href='/tags/#梦想' class='tag-link-3' title='梦想' style='font-size: 12pt;'>梦想</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#HTTP' class='tag-link-4' title='HTTP' style='font-size: 14pt;'>HTTP</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#浏览器' class='tag-link-3' title='浏览器' style='font-size: 13pt;'>浏览器</a>
+        
+        
+        
+        <a href='/tags/#Google' class='tag-link-4' title='Google' style='font-size: 16pt;'>Google</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#互联网' class='tag-link-10' title='互联网' style='font-size: 13pt;'>互联网</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#健康' class='tag-link-4' title='健康' style='font-size: 12pt;'>健康</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#美食星期天' class='tag-link-5' title='美食星期天' style='font-size: 15pt;'>美食星期天</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#vim' class='tag-link-5' title='vim' style='font-size: 13pt;'>vim</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#生活' class='tag-link-6' title='生活' style='font-size: 12pt;'>生活</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#研发实践' class='tag-link-10' title='研发实践' style='font-size: 14pt;'>研发实践</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#屏蔽' class='tag-link-3' title='屏蔽' style='font-size: 12pt;'>屏蔽</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </li>
+        <li id="recent-posts-2" class="boxed widget widget_recent_entries">		
+        <h2 class="widgettitle">近期文章</h2>	
+        <div id="hot_comment_post">
+            <ul>
+                 
+                <li>
+                <a href="/2013/01/30/top-8-sexy-ways-to-de-stress-during-the-holidays" title="在节假日,8大性感的解除压力的方法">在节假日,8大性感的解除压力的方法</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/29/programming-ides-for-ubuntu" title="Ubuntu 常用的编程开发环境IDEs">Ubuntu 常用的编程开发环境IDEs</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/28/2012-firefox-top10-add-ons" title="2012年Firefox TOP10 附加组件">2012年Firefox TOP10 附加组件</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/28/ubunut-setup-vpn-connection" title="Ubuntu/Linux 配置VPN连接">Ubuntu/Linux 配置VPN连接</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/27/postman-a-simple-image-uploading-application-for-ubuntu-linux-mint" title="Linux简单的图像上传工具Postman">Linux简单的图像上传工具Postman</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/27/image-to-text-converter-for-ubuntu-mint" title="Linux图像文本转换器（OCR）">Linux图像文本转换器（OCR）</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/27/download-monitor" title="Download Monitor监控上传和下载流量">Download Monitor监控上传和下载流量</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/26/java-parse-javascript" title="Java解析JavaScript数据">Java解析JavaScript数据</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/26/linux-kill-multi-process" title="Linux kill多个进程">Linux kill多个进程</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/25/linux-find-command" title="Linux 下使用find命令查找最近修改文件">Linux 下使用find命令查找最近修改文件</a>
+                </li>
+                
+            </ul>
+        </div>
+
+        </li>
+        <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
+        <h2 class="widgettitle">热评文章</h2>
+        <div id="hot_comment_post">
+            <ul class="ds-top-threads" data-num-items="10" data-range="weekly"></ul>
+        </div>
+        </li>
+        <li id="ds-recent-comments" class="boxed widget ds-widget-recent-comments">
+        <h2 class="widgettitle">近期评论</h2>
+        <div id="hot_comment">
+            <ul class="ds-recent-comments" data-num-items="10" data-show-avatars="1" data-show-time="1" data-show-title="0" data-show-admin="0" data-avatar-size="32" data-excerpt-length="70">
+            </ul>
+        </div>
+        </li>
+        <li id="ds-qqt-follow" class="boxed widget ds-widget-qqt-follow">
+        <!--
+        <iframe src="http://follow.v.t.qq.com/index.php?c=follow&a=quick&name=denghp_280606790&style=1&t=1352387427769&f=1" frameborder="0" scrolling="auto" width="227" height="75" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
+        -->
+        <iframe width="300" height="190" frameborder="0" scrolling="no" src="http://widget.weibo.com/relationship/bulkfollow.php?language=zh_cn&uids=1655072963&wide=1" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
+        </li>
+
+        <li id="ds-recent-visitors-2" class="boxed widget ds-widget-recent-visitors">
+        <h2 class="widgettitle">最近访客</h2>
+        <ul class="ds-recent-visitors" data-num-items="20" data-show-time="0" data-avatar-size="50"></ul>
+        </li>
+        
+        <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
+        <h2 class="widgettitle">友情链接</h2>
+        <div id="hot_comment_post">
+            <ul>
+                
+                <li><a href="http://lusongsong.com/"target="_blank"  title="卢松松-关注站长和搜索引擎的IT博客">卢松松</a></li>
+                
+                <li><a href="http://www.muchangqing.com/"target="_blank"  title="牟长青-牟长青的网站推广博客">牟长青</a></li>
+                
+                <li><a href="http://coolshell.cn/"target="_blank"  title="酷壳-享受编程和技术所带来的快乐">酷壳</a></li>
+                
+                <li><a href="http://yanping.me/"target="_blank"  title="雁起平沙-雁起平沙的网络日志">雁起平沙</a></li>
+                
+                <li><a href="http://www.letuknowit.com/"target="_blank"  title="知蚁博客">知蚁博客</a></li>
+                
+                <li><a href="http://www.zhangyuchang.com/"target="_blank"  title="不纯粹文人-不经一番寒彻骨，哪得梅花扑鼻香">不纯粹文人</a></li>
+                
+                <li><a href="http://chenpeng.info/"target="_blank"  title="陈鹏个人博客">陈鹏个人博客</a></li>
+                
+                <li><a href="http://www.kandisheng.com/"target="_blank"  title="不霁何虹博客">不霁何虹博客</a></li>
+                
+                <li><a href="http://blog.jobbole.com/"target="_blank"  title="伯乐在线">伯乐在线</a></li>
+                
+            </ul> 
+        </div>
+        </li>
+        
+    </ul>
+</div>
+<!-- /sidebar -->
+<div class="cleared"></div>
+
+
+
+
+  
+            </div> 
+        </div> <!-- wrapper -->
+        
+        <!-- scroll.html -->
+        <div id="full" style="display:none;width:50px; height:95px; position:fixed; left:50%; top:480px; margin-left:425px;  z-index:100; text-align:center; cursor:pointer;">
+    <a><img src="http://demi-panda.com/media/demi/img/back-top.png" border=0 alt="返回顶部" title="返回顶部"></a>
+</div>
+<script type="text/javascript">
+    var isie6 = window.XMLHttpRequest ? false : true; function newtoponload() { var c = document.getElementById("full"); function b() { var a = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop; if (a > 0) { if (isie6) { c.style.display = "none"; clearTimeout(window.show); window.show = setTimeout(function () { var d = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop; if (d > 0) { c.style.display = "block"; c.style.top = (480 + d) + "px" } }, 400) } else { c.style.display = "block" } } else { c.style.display = "none" } } if (isie6) { c.style.position = "absolute" } window.onscroll = b; b() } if (window.attachEvent) { window.attachEvent("onload", newtoponload) } else { window.addEventListener("load", newtoponload, false) } document.getElementById("full").onclick = function () { window.scrollTo(0, 0) };
+</script>
+
+
+
+
+       
+        <!-- footer -->
+        <footer>
+<div id="footer">                                          
+  <p class="t-center" style='font-size: 10pt;'>
+  &copy; 2012 <a href="/">Demi Panda Lab</a>, All Rights Reserved.
+
+  <script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9ed8ee65a576b9495a4d989eabbd4c09' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+
+  <script src="http://s14.cnzz.com/stat.php?id=4734788&web_id=4734788&show=pic" language="JavaScript"></script>
+  </p>
+  </div> 
+</footer>
+
+ 
+        <script type="text/javascript">
+            var duoshuoQuery = {short_name:"demi-panda"};
+(function() {
+ var ds = document.createElement('script');
+ ds.type = 'text/javascript';ds.async = true;
+ ds.src = 'http://static.duoshuo.com/embed.js';
+ ds.charset = 'UTF-8';
+ (document.getElementsByTagName('head')[0] 
+  || document.getElementsByTagName('body')[0]).appendChild(ds);
+ })();
+</script>  
+
+
+<script type="text/javascript">
+    $(window).load(function(){
+            $("pre").addClass("prettyprint");
+            prettyPrint();
+            })
+        </script>
+
+        <script language="javascript">
+            $.fn.tagcloud.defaults = {
+                size: {start: 0.9, end: 2, unit: 'em'},
+                color: {start: '#e77471', end: '#f62817'}
+            };
+
+            $(function () {
+                $('#tagcloud a').tagcloud();
+            });
+        </script>  
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-36197302-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+             })();
+
+         </script>
+         <script type='text/javascript' src='http://demi-panda.com/media/js/jquery.prettyPhoto-3.4.2.js'></script>
+         <script type='text/javascript' src='http://demi-panda.com/media/js/themify.script-3.4.2.js'></script> 
+     </body>
+ </html>
+
