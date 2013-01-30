@@ -8,6 +8,7 @@ tags:
 - 研发实践
 categories:
 - Code
+- solr
 UUID: 201301231027
 date: 2013-01-23 12:27:22
 show_img: "/media/pub/solr/solr-logo.png"

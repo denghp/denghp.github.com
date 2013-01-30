@@ -1,0 +1,2560 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv=Content-Type content="text/html;charset=utf-8">
+        <meta name="robots" content="all,follow" />
+        <title>全部文章-研发实践、熊猫吃货、微生活 - 熊猫家族</title>
+        <meta name="keywords" content="博客,IT技术,研发实践,互联网,资讯,编程语言,搜索引擎,Lucene,Solr,Java,生活,旅游,吃货,熊猫吃货,微生活,健康,美食"/>
+        <meta name="author" lang="en" content="All: Demi-Panda Lab [demi-panda.com]; e-mail: blog.pandam@gmail.com" />
+        <meta name="copyright" lang="en" content="@2012 Demi_Panda Lab, All Rights Reserved!" />
+        <meta name="description" content="熊猫家族博客：敢想,敢拼,敢赢...博客,IT技术,研发实践,互联网,资讯,编程语言,搜索引擎,Lucene,Solr,Java,生活,旅游,吃货,熊猫吃货,微生活,健康,美食" />
+        <meta property="wb:webmaster" content="eb26a33b1e192873" />
+        <meta name="chinaz-site-verification" content="54c83ea9-059c-4447-95ec-4dc8b16e60b2" />
+        <meta name="baidu_union_verify" content="67d51e25cc69ae324f028d2d333b753a">
+        <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+        <link rel="shortcut icon" href="/media/demi/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="/media/demi/css/style.css" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="/media/demi/css/main.css" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="/media/demi/css/reset.css" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="/media/demi/css/superfish.css" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="/media/demi/css/prettify.css" />
+        <link rel="alternate" type="application/rss+xml" title="熊猫家族" href="/rss.xml" />
+        <script src="/media/js/prettify.js" type="text/javascript"></script>
+        <script src="/media/js/jquery-1.6.1.min.js" type="text/javascript"></script>
+        <script src="/media/js/jquery.jcarousel.min.js" type="text/javascript"></script>
+        <script src="/media/js/jquery.tagcloud.js" type="text/javascript"></script>
+        <script src="/media/js/jquery.demi.slider.js" type="text/javascript"></script>
+    </head>
+
+
+    <body >
+
+        <div id="wrapper">
+            <!-- /header -->
+<div id="header">
+
+  <div id="logo">
+    <h1 id="logo">
+      <a href="/" title="[Go to homepage]"><img width="234px" height="86px" src="/media/demi/img/demi-logo.jpg" alt="" /></a>
+    </h1> 
+  </div><!-- /logo -->
+
+  <div class="cleared"></div>
+</div>
+<!-- /header -->
+
+ 
+            <!-- Tray -->
+<div id="tray">
+    <ul>
+        
+        <li ><a href="/">Home</a></li>
+        <li id="tray-active" ><a href="/archives/">文章列表</a></li>
+        <li ><a href="/practice/">研发实践</a></li>
+        <li ><a href="/chihuo/">熊猫吃货</a></li>
+        <li ><a href="/life/">微生活</a></li>
+        <li ><a href="/tags/">标签</a></li>
+        <li ><a href="/about/">关于我</a></li>
+        
+        <li>
+        <div id="search">
+            <form action="http://www.google.com/cse" class="lit-search" method="get" target="_blank">
+                <input type="text" class="text" name="q" size="24" placeholder="搜索">
+                <input type="hidden" name="cx" value="007512494910388222978:uvgripsnamg">
+                <input type="hidden" name="ie" value="UTF-8">
+            </form>
+        </div>
+        </li>
+
+    </ul>
+    <hr class="noscreen" />                    
+</div> 
+<!-- /tray -->
+
+
+            <div id="main">
+                <div class="content" id="content">
+    <div class="posts">
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='20130131002700'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/31/solr-4-1-stored-fields-compression" rel="bookmark" title="Solr 4.1 特性-存储字段压缩 31 Jan 2013">Solr 4.1 特性-存储字段压缩</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-31">2013-01-31</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#solr" class="text" title="solr" rel="category tag">solr</a>&nbsp;
+                
+                <a href="/tags/#lucene" class="text" title="lucene" rel="category tag">lucene</a>&nbsp;
+                
+                <a href="/tags/#搜索引擎" class="text" title="搜索引擎" rel="category tag">搜索引擎</a>&nbsp;
+                
+                <a href="/tags/#研发实践" class="text" title="研发实践" rel="category tag">研发实践</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <p>尽管Lucene和Solr在4.0版本包含大量的新特性以及性能的提升，今天来看看Solr 4.1版本的变化。当我们使用更多的field存储，索引的大小问题是我们考虑优化的因素，4.1版本的这些变化将被存储领域的压缩，以减少索引大小。让我们来看看，看看它是如何工作的。...</p>
+                
+                <p> <a href="/2013/01/31/solr-4-1-stored-fields-compression/#more-20130131002700" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/31/solr-4-1-stored-fields-compression/#comments" title="《Solr 4.1 特性-存储字段压缩》上的评论">
+                            <span class="ds-thread-count" data-thread-key="20130131002700" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='20130130003000'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/30/top-8-sexy-ways-to-de-stress-during-the-holidays" rel="bookmark" title="在节假日,8大性感的解除压力的方法 30 Jan 2013">在节假日,8大性感的解除压力的方法</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-30">2013-01-30</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#生活" class="text" title="生活" rel="category tag">生活</a>&nbsp;
+                
+                <a href="/tags/#情感生活" class="text" title="情感生活" rel="category tag">情感生活</a>&nbsp;
+                
+                <a href="/tags/#女性健康" class="text" title="女性健康" rel="category tag">女性健康</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <a href="/2013/01/30/top-8-sexy-ways-to-de-stress-during-the-holidays" title="在节假日,8大性感的解除压力的方法">
+                    <img src="/media/pub/life/healthy/sex-happy-300x168.jpg" alt="在节假日,8大性感的解除压力的方法"  width="240px" height="140px" class="img-right"></img></a>
+                
+                <p>　　假期可以是一个非常紧张的时间。购物，烹饪，旅游，走亲戚，装饰，主机托管，扮演圣诞老人，我应该去吗？所有，同时试图保持节日精神,这是一个很大的要求。因此，为什么不利用自己的时间一点点性感解除压力？以下是节假日期间-8大性感解除压力的方法。 性感的洗澡时间...</p>
+                
+                <p> <a href="/2013/01/30/top-8-sexy-ways-to-de-stress-during-the-holidays/#more-20130130003000" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/30/top-8-sexy-ways-to-de-stress-during-the-holidays/#comments" title="《在节假日,8大性感的解除压力的方法》上的评论">
+                            <span class="ds-thread-count" data-thread-key="20130130003000" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='20130129003000'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/29/programming-ides-for-ubuntu" rel="bookmark" title="Ubuntu 常用的编程开发环境IDEs 29 Jan 2013">Ubuntu 常用的编程开发环境IDEs</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-29">2013-01-29</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#Shell" class="text" title="Shell" rel="category tag">Shell</a>&nbsp;
+                
+                <a href="/tags/#Ubuntu" class="text" title="Ubuntu" rel="category tag">Ubuntu</a>&nbsp;
+                
+                <a href="/tags/#Linux" class="text" title="Linux" rel="category tag">Linux</a>&nbsp;
+                
+                <a href="/tags/#IDE" class="text" title="IDE" rel="category tag">IDE</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <a href="/2013/01/29/programming-ides-for-ubuntu" title="Ubuntu 常用的编程开发环境IDEs">
+                    <img src="/media/pub/java/eclipse.jpg" alt="Ubuntu 常用的编程开发环境IDEs"  width="240px" height="140px" class="img-right"></img></a>
+                
+                <p>　　IDE集成开发环境提供了一个先进的开发环境，很多功能和自动化的各种无聊的任务。虽然，在大多数情况下，一个功能强大的文本编辑器VIM或Emacs等将是更好的选择，但有时这是很好的有IDE，特别是如果你正在处理的非常复杂的东西。如没有Eclipse的Android开发将是多痛苦的。 　　SO，这里是一些常用和最强大的IDE列表可能对您有用。其中有些是沉重的，而有些是轻量级的IDE。...</p>
+                
+                <p> <a href="/2013/01/29/programming-ides-for-ubuntu/#more-20130129003000" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/29/programming-ides-for-ubuntu/#comments" title="《Ubuntu 常用的编程开发环境IDEs》上的评论">
+                            <span class="ds-thread-count" data-thread-key="20130129003000" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='20130128083000'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/28/2012-firefox-top10-add-ons" rel="bookmark" title="2012年Firefox TOP10 附加组件 28 Jan 2013">2012年Firefox TOP10 附加组件</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-28">2013-01-28</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#Firefox" class="text" title="Firefox" rel="category tag">Firefox</a>&nbsp;
+                
+                <a href="/tags/#浏览器" class="text" title="浏览器" rel="category tag">浏览器</a>&nbsp;
+                
+                <a href="/tags/#Firefox附件组件" class="text" title="Firefox附件组件" rel="category tag">Firefox附件组件</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <a href="/2013/01/28/2012-firefox-top10-add-ons" title="2012年Firefox TOP10 附加组件">
+                    <img src="/media/pub/web/firefox-add-ons.jpg" alt="2012年Firefox TOP10 附加组件"  width="240px" height="140px" class="img-right"></img></a>
+                
+                <p>　　Mozilla Firefox浏览器默认情况下，有一些很酷的开发工具（暂存，样式编辑器，调试器，响应“设计”视图，检查（3D...</p>
+                
+                <p> <a href="/2013/01/28/2012-firefox-top10-add-ons/#more-20130128083000" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/28/2012-firefox-top10-add-ons/#comments" title="《2012年Firefox TOP10 附加组件》上的评论">
+                            <span class="ds-thread-count" data-thread-key="20130128083000" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='20130128013000'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/28/ubunut-setup-vpn-connection" rel="bookmark" title="Ubuntu/Linux 配置VPN连接 28 Jan 2013">Ubuntu/Linux 配置VPN连接</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-28">2013-01-28</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#Shell" class="text" title="Shell" rel="category tag">Shell</a>&nbsp;
+                
+                <a href="/tags/#Ubuntu" class="text" title="Ubuntu" rel="category tag">Ubuntu</a>&nbsp;
+                
+                <a href="/tags/#Linux" class="text" title="Linux" rel="category tag">Linux</a>&nbsp;
+                
+                <a href="/tags/#VPN" class="text" title="VPN" rel="category tag">VPN</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <a href="/2013/01/28/ubunut-setup-vpn-connection" title="Ubuntu/Linux 配置VPN连接">
+                    <img src="/media/pub/linux/vpn-step-3.jpg" alt="Ubuntu/Linux 配置VPN连接"  width="240px" height="140px" class="img-right"></img></a>
+                
+                <p>　　互联网上对于那些想需要更高的安全性，使用VPN (Virtual...</p>
+                
+                <p> <a href="/2013/01/28/ubunut-setup-vpn-connection/#more-20130128013000" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/28/ubunut-setup-vpn-connection/#comments" title="《Ubuntu/Linux 配置VPN连接》上的评论">
+                            <span class="ds-thread-count" data-thread-key="20130128013000" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='20130127113500'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/27/postman-a-simple-image-uploading-application-for-ubuntu-linux-mint" rel="bookmark" title="Linux简单的图像上传工具Postman 27 Jan 2013">Linux简单的图像上传工具Postman</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-27">2013-01-27</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#Shell" class="text" title="Shell" rel="category tag">Shell</a>&nbsp;
+                
+                <a href="/tags/#Ubuntu" class="text" title="Ubuntu" rel="category tag">Ubuntu</a>&nbsp;
+                
+                <a href="/tags/#Linux" class="text" title="Linux" rel="category tag">Linux</a>&nbsp;
+                
+                <a href="/tags/#OCR" class="text" title="OCR" rel="category tag">OCR</a>&nbsp;
+                
+                <a href="/tags/#图像文本转换器" class="text" title="图像文本转换器" rel="category tag">图像文本转换器</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <a href="/2013/01/27/postman-a-simple-image-uploading-application-for-ubuntu-linux-mint" title="Linux简单的图像上传工具Postman">
+                    <img src="/media/pub/linux/postman.jpg" alt="Linux简单的图像上传工具Postman"  width="240px" height="140px" class="img-right"></img></a>
+                
+                <p>　　Postman 是一个不错的应用程序，可以上传你的图片到各种服务，目前它支持的...</p>
+                
+                <p> <a href="/2013/01/27/postman-a-simple-image-uploading-application-for-ubuntu-linux-mint/#more-20130127113500" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/27/postman-a-simple-image-uploading-application-for-ubuntu-linux-mint/#comments" title="《Linux简单的图像上传工具Postman》上的评论">
+                            <span class="ds-thread-count" data-thread-key="20130127113500" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='20130127103000'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/27/image-to-text-converter-for-ubuntu-mint" rel="bookmark" title="Linux图像文本转换器（OCR） 27 Jan 2013">Linux图像文本转换器（OCR）</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-27">2013-01-27</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#Shell" class="text" title="Shell" rel="category tag">Shell</a>&nbsp;
+                
+                <a href="/tags/#Ubuntu" class="text" title="Ubuntu" rel="category tag">Ubuntu</a>&nbsp;
+                
+                <a href="/tags/#Linux" class="text" title="Linux" rel="category tag">Linux</a>&nbsp;
+                
+                <a href="/tags/#OCR" class="text" title="OCR" rel="category tag">OCR</a>&nbsp;
+                
+                <a href="/tags/#图像文本转换器" class="text" title="图像文本转换器" rel="category tag">图像文本转换器</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <p>　　Tesseract 转换图像文本，在Ubuntu/Linux中是最好的方案。我试过几个OCR（光学字符识别）应用，但是Tesseract其精度高于任何其他应用程序。...</p>
+                
+                <p> <a href="/2013/01/27/image-to-text-converter-for-ubuntu-mint/#more-20130127103000" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/27/image-to-text-converter-for-ubuntu-mint/#comments" title="《Linux图像文本转换器（OCR）》上的评论">
+                            <span class="ds-thread-count" data-thread-key="20130127103000" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='20130127013000'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/27/download-monitor" rel="bookmark" title="Download Monitor监控上传和下载流量 27 Jan 2013">Download Monitor监控上传和下载流量</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-27">2013-01-27</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#Shell" class="text" title="Shell" rel="category tag">Shell</a>&nbsp;
+                
+                <a href="/tags/#Ubuntu" class="text" title="Ubuntu" rel="category tag">Ubuntu</a>&nbsp;
+                
+                <a href="/tags/#Linux" class="text" title="Linux" rel="category tag">Linux</a>&nbsp;
+                
+                <a href="/tags/#Download" class="text" title="Download" rel="category tag">Download</a>&nbsp;
+                
+                <a href="/tags/#Monitor" class="text" title="Monitor" rel="category tag">Monitor</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <a href="/2013/01/27/download-monitor" title="Download Monitor监控上传和下载流量">
+                    <img src="/media/pub/linux/download-monitor.jpg" alt="Download Monitor监控上传和下载流量"  width="240px" height="140px" class="img-right"></img></a>
+                
+                <p>　download-monitor 通过网络上传和下载的数据量。显示此网络使用情况的图形。允许设置配额，并发出警告时，它是即将超过。监控随着时间的推移在网络上下载和上传的数据的量。容易阅读的图表显示此数据。允许设置一个使用配额，并警告说，当超出配额或即将被超越。对需要限制数据流量计划的人非常有用。...</p>
+                
+                <p> <a href="/2013/01/27/download-monitor/#more-20130127013000" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/27/download-monitor/#comments" title="《Download Monitor监控上传和下载流量》上的评论">
+                            <span class="ds-thread-count" data-thread-key="20130127013000" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='201301261427'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/26/java-parse-javascript" rel="bookmark" title="Java解析JavaScript数据 26 Jan 2013">Java解析JavaScript数据</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-26">2013-01-26</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#JavaScript" class="text" title="JavaScript" rel="category tag">JavaScript</a>&nbsp;
+                
+                <a href="/tags/#Java" class="text" title="Java" rel="category tag">Java</a>&nbsp;
+                
+                <a href="/tags/#ScriptEngine" class="text" title="ScriptEngine" rel="category tag">ScriptEngine</a>&nbsp;
+                
+                <a href="/tags/#Rhino" class="text" title="Rhino" rel="category tag">Rhino</a>&nbsp;
+                
+                <a href="/tags/#研发实践" class="text" title="研发实践" rel="category tag">研发实践</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <p>　　最近有一个小小的需求，就是在java中解析javascript脚本,JDK6就已经支持脚本语言了,针对JS有js引擎ScriptEngine。但是我在使用过程觉得用的不是很方便，比较别扭，经研究发现还有一个更强大的脚本引擎-mozilla提供的rhino Java用ScriptEngine解析脚本...</p>
+                
+                <p> <a href="/2013/01/26/java-parse-javascript/#more-201301261427" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/26/java-parse-javascript/#comments" title="《Java解析JavaScript数据》上的评论">
+                            <span class="ds-thread-count" data-thread-key="201301261427" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='20130125182300'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/25/linux-kill-multi-process" rel="bookmark" title="Linux kill多个进程 25 Jan 2013">Linux kill多个进程</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-25">2013-01-25</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#Shell" class="text" title="Shell" rel="category tag">Shell</a>&nbsp;
+                
+                <a href="/tags/#kill" class="text" title="kill" rel="category tag">kill</a>&nbsp;
+                
+                <a href="/tags/#Linux" class="text" title="Linux" rel="category tag">Linux</a>&nbsp;
+                
+                <a href="/tags/#进程" class="text" title="进程" rel="category tag">进程</a>&nbsp;
+                
+                <a href="/tags/#研发实践" class="text" title="研发实践" rel="category tag">研发实践</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                                                                    
+                <p>
+                
+                kill 送出一个特定的信号 (signal) 给行程 id 为 pid 的行程根据该信号而做特定的动作,若没有指定，预设是送出终止 (TERM) 的信号. 
+                </p>
+                
+                <p> <a href="/2013/01/25/linux-kill-multi-process/#more-20130125182300" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/25/linux-kill-multi-process/#comments" title="《Linux kill多个进程》上的评论">
+                            <span class="ds-thread-count" data-thread-key="20130125182300" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='201301250023'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/25/linux-find-command" rel="bookmark" title="Linux 下使用find命令查找最近修改文件 25 Jan 2013">Linux 下使用find命令查找最近修改文件</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-25">2013-01-25</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#Shell" class="text" title="Shell" rel="category tag">Shell</a>&nbsp;
+                
+                <a href="/tags/#find" class="text" title="find" rel="category tag">find</a>&nbsp;
+                
+                <a href="/tags/#Linux" class="text" title="Linux" rel="category tag">Linux</a>&nbsp;
+                
+                <a href="/tags/#研发实践" class="text" title="研发实践" rel="category tag">研发实践</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <p>　　经常会在Linux有查找某个目录下的一些特殊文件，然后根据最近修改的时间来查找，然后获取TOP-N数量返回，今天介绍下根据时间来查找，然后进行相应的处理。 find...</p>
+                
+                <p> <a href="/2013/01/25/linux-find-command/#more-201301250023" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/25/linux-find-command/#comments" title="《Linux 下使用find命令查找最近修改文件》上的评论">
+                            <span class="ds-thread-count" data-thread-key="201301250023" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='201301251427'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/25/python-shell-command" rel="bookmark" title="python 调用Linux的Shell命令 25 Jan 2013">python 调用Linux的Shell命令</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-25">2013-01-25</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#Python" class="text" title="Python" rel="category tag">Python</a>&nbsp;
+                
+                <a href="/tags/#Linux" class="text" title="Linux" rel="category tag">Linux</a>&nbsp;
+                
+                <a href="/tags/#Shell" class="text" title="Shell" rel="category tag">Shell</a>&nbsp;
+                
+                <a href="/tags/#研发实践" class="text" title="研发实践" rel="category tag">研发实践</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <a href="/2013/01/25/python-shell-command" title="python 调用Linux的Shell命令">
+                    <img src="/media/pub/python/486px-Python_logo.png" alt="python 调用Linux的Shell命令"  width="240px" height="140px" class="img-right"></img></a>
+                
+                <p>　　Python是一种即译式的，互动的，面向对象的编程语言，它包含了模组式的操作，异常处理，动态资料形态，十分高层次的动态资料结构，以及类别的使用。它具有很多优秀的脚本语言的特点：解释的，面向对象的，内建的高级数据结构，支持模块和包，支持多种平台，可扩展。而且它还支持交互式方式运行，图形方式运行。它拥有众多的编程界面支持各种操作系统平台以及众多的各类函数库。介绍下Python调用Linux的shell命令. os...</p>
+                
+                <p> <a href="/2013/01/25/python-shell-command/#more-201301251427" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/25/python-shell-command/#comments" title="《python 调用Linux的Shell命令》上的评论">
+                            <span class="ds-thread-count" data-thread-key="201301251427" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='20130124003000'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/24/github-via-dns" rel="bookmark" title="GitHub 无法访问解决方案 24 Jan 2013">GitHub 无法访问解决方案</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-24">2013-01-24</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#互联网" class="text" title="互联网" rel="category tag">互联网</a>&nbsp;
+                
+                <a href="/tags/#Github" class="text" title="Github" rel="category tag">Github</a>&nbsp;
+                
+                <a href="/tags/#屏蔽" class="text" title="屏蔽" rel="category tag">屏蔽</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                                                                    
+                <p>
+                
+                <a href="/2013/01/24/github-via-dns" title="GitHub 无法访问解决方案">
+                    <img src="/media/pub/github/github-logo.jpg" alt="GitHub 无法访问解决方案"  width="240px" height="140px" class="img-right"></img></a>
+                
+                被称为“程序员的天堂”的GitHub，因服务器被“12306订票助手”拖垮而为国人所熟知，网友猜测，我国地区无法访问GitHub，或是受到12306抢票插件的影响，12306抢票插件搞垮美国Github服务器。 
+                </p>
+                
+                <p> <a href="/2013/01/24/github-via-dns/#more-20130124003000" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/24/github-via-dns/#comments" title="《GitHub 无法访问解决方案》上的评论">
+                            <span class="ds-thread-count" data-thread-key="20130124003000" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='20130123223000'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/23/google-hosts" rel="bookmark" title="Google Search 无法访问解决方案 23 Jan 2013">Google Search 无法访问解决方案</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-23">2013-01-23</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#互联网" class="text" title="互联网" rel="category tag">互联网</a>&nbsp;
+                
+                <a href="/tags/#Google" class="text" title="Google" rel="category tag">Google</a>&nbsp;
+                
+                <a href="/tags/#屏蔽" class="text" title="屏蔽" rel="category tag">屏蔽</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <a href="/2013/01/23/google-hosts" title="Google Search 无法访问解决方案">
+                    <img src="/media/pub/google/google-search.jpg" alt="Google Search 无法访问解决方案"  width="240px" height="140px" class="img-right"></img></a>
+                
+                <p>　　众所周知，在国内出于国内安全和自我保护意识，google的各项服务都是禁止使用的。很多网站主更是有所感受，那么如何才能正常访问的google的各项服务呢？ Windows下修改hosts...</p>
+                
+                <p> <a href="/2013/01/23/google-hosts/#more-20130123223000" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/23/google-hosts/#comments" title="《Google Search 无法访问解决方案》上的评论">
+                            <span class="ds-thread-count" data-thread-key="20130123223000" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='201301231027'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/23/solr-release-4.1.0" rel="bookmark" title="Solr 4.1 正式发布 23 Jan 2013">Solr 4.1 正式发布</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-23">2013-01-23</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#solr" class="text" title="solr" rel="category tag">solr</a>&nbsp;
+                
+                <a href="/tags/#lucene" class="text" title="lucene" rel="category tag">lucene</a>&nbsp;
+                
+                <a href="/tags/#搜索引擎" class="text" title="搜索引擎" rel="category tag">搜索引擎</a>&nbsp;
+                
+                <a href="/tags/#研发实践" class="text" title="研发实践" rel="category tag">研发实践</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <a href="/2013/01/23/solr-release-4.1.0" title="Solr 4.1 正式发布">
+                    <img src="/media/pub/solr/solr-logo.png" alt="Solr 4.1 正式发布"  width="240px" height="140px" class="img-right"></img></a>
+                
+                <p>　　Apache Solr是流行的，速度极快，开源的NoSQL的搜索平台，来自于Apache...</p>
+                
+                <p> <a href="/2013/01/23/solr-release-4.1.0/#more-201301231027" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/23/solr-release-4.1.0/#comments" title="《Solr 4.1 正式发布》上的评论">
+                            <span class="ds-thread-count" data-thread-key="201301231027" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='201301231027'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/23/htmlcleaner-xpath-html" rel="bookmark" title="HtmlCleaner+XPath抓取HTML中的数据 23 Jan 2013">HtmlCleaner+XPath抓取HTML中的数据</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-23">2013-01-23</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#爬虫" class="text" title="爬虫" rel="category tag">爬虫</a>&nbsp;
+                
+                <a href="/tags/#HtmlCleaner" class="text" title="HtmlCleaner" rel="category tag">HtmlCleaner</a>&nbsp;
+                
+                <a href="/tags/#XPath" class="text" title="XPath" rel="category tag">XPath</a>&nbsp;
+                
+                <a href="/tags/#抓取html" class="text" title="抓取html" rel="category tag">抓取html</a>&nbsp;
+                
+                <a href="/tags/#研发实践" class="text" title="研发实践" rel="category tag">研发实践</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <p>　　以前用过apache-nutch,功能虽然很强大，可以配置抓取的线程数，抓取页面的频率，创建索引实现搜索功能等等，但是在现实工作中，往往是针对不同的功能，需求，使用不同的技术实现，最近有一个小小的需求：对国内的招聘网站的职位类别的数据进行抓取。针对这个需求可以使用htmlcleaner+xpath来实现,因为htmlcleaner实用性很强，而且非常容易上手。 HtmlCleaner...</p>
+                
+                <p> <a href="/2013/01/23/htmlcleaner-xpath-html/#more-201301231027" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/23/htmlcleaner-xpath-html/#comments" title="《HtmlCleaner+XPath抓取HTML中的数据》上的评论">
+                            <span class="ds-thread-count" data-thread-key="201301231027" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='2013012210237'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/22/github-shield" rel="bookmark" title="GitHub网站及关键字被屏蔽 22 Jan 2013">GitHub网站及关键字被屏蔽</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-22">2013-01-22</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#互联网" class="text" title="互联网" rel="category tag">互联网</a>&nbsp;
+                
+                <a href="/tags/#Github" class="text" title="Github" rel="category tag">Github</a>&nbsp;
+                
+                <a href="/tags/#屏蔽" class="text" title="屏蔽" rel="category tag">屏蔽</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <a href="/2013/01/22/github-shield" title="GitHub网站及关键字被屏蔽">
+                    <img src="/media/pub/github/github.jpg" alt="GitHub网站及关键字被屏蔽"  width="240px" height="140px" class="img-right"></img></a>
+                
+                <p>　　全球知名的分布式代码托管网站GitHub昨天被中国关键字屏蔽，目前已经无法从中国访问，前几天12306抢票插件曾经直接引用了Github上的js文件，导致Github服务器被拖垮了，插件作者不得不将js文件托管在其他网站,1月21日测试，https版本的github也无法访问了。 Git控制工具...</p>
+                
+                <p> <a href="/2013/01/22/github-shield/#more-2013012210237" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/22/github-shield/#comments" title="《GitHub网站及关键字被屏蔽》上的评论">
+                            <span class="ds-thread-count" data-thread-key="2013012210237" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='201301211427'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/21/http-response" rel="bookmark" title="HTTPResponse实现详解 21 Jan 2013">HTTPResponse实现详解</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-21">2013-01-21</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#HTTP" class="text" title="HTTP" rel="category tag">HTTP</a>&nbsp;
+                
+                <a href="/tags/#HTTPResponse" class="text" title="HTTPResponse" rel="category tag">HTTPResponse</a>&nbsp;
+                
+                <a href="/tags/#研发实践" class="text" title="研发实践" rel="category tag">研发实践</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <p>　　上一篇介绍了HTTPRequest的详细实现，及主要知识点，这一篇了解下HTTPResponse的主要知识点，及代码实现。 HTTP协议-状态行...</p>
+                
+                <p> <a href="/2013/01/21/http-response/#more-201301211427" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/21/http-response/#comments" title="《HTTPResponse实现详解》上的评论">
+                            <span class="ds-thread-count" data-thread-key="201301211427" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='201301210027'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/21/http-request" rel="bookmark" title="HTTPRequest实现详解 21 Jan 2013">HTTPRequest实现详解</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-21">2013-01-21</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#HTTP" class="text" title="HTTP" rel="category tag">HTTP</a>&nbsp;
+                
+                <a href="/tags/#HTTPRequest" class="text" title="HTTPRequest" rel="category tag">HTTPRequest</a>&nbsp;
+                
+                <a href="/tags/#研发实践" class="text" title="研发实践" rel="category tag">研发实践</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <p>　　HTTP是一个属于应用层的面向对象的协议，由于其简捷、快速的方式，适用于分布式超媒体信息系统。它于1990年提出，经过几年的使用与发展，得到不断地完善和扩展。目前在WWW中使用的是HTTP/1.0的第六版，HTTP/1.1的规范化工作正在进行之中，而且HTTP-NG(Next Generation...</p>
+                
+                <p> <a href="/2013/01/21/http-request/#more-201301210027" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/21/http-request/#comments" title="《HTTPRequest实现详解》上的评论">
+                            <span class="ds-thread-count" data-thread-key="201301210027" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='201301201537'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/20/glamour-woman" rel="bookmark" title="魅力女人修成法 20 Jan 2013">魅力女人修成法</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-20">2013-01-20</time>&nbsp;|&nbsp;
+                
+                By 网络文章
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#女人" class="text" title="女人" rel="category tag">女人</a>&nbsp;
+                
+                <a href="/tags/#责任" class="text" title="责任" rel="category tag">责任</a>&nbsp;
+                
+                <a href="/tags/#生活" class="text" title="生活" rel="category tag">生活</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                                                                    
+                <p>
+                
+                <a href="/2013/01/20/glamour-woman" title="魅力女人修成法">
+                    <img src="/media/pub/life/pub/woman.jpg" alt="魅力女人修成法"  width="240px" height="140px" class="img-right"></img></a>
+                
+                不要当三瓶女人：年轻时是花瓶，中年时是醋瓶，老年时是药瓶。不要只做三转女人：围着锅台转，围着老公转，围着孩子转... 
+                </p>
+                
+                <p> <a href="/2013/01/20/glamour-woman/#more-201301201537" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/20/glamour-woman/#comments" title="《魅力女人修成法》上的评论">
+                            <span class="ds-thread-count" data-thread-key="201301201537" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='20130120153723'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/20/glamour-man" rel="bookmark" title="魅力男人应该有的样子 20 Jan 2013">魅力男人应该有的样子</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-20">2013-01-20</time>&nbsp;|&nbsp;
+                
+                By 网络文章
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#男人" class="text" title="男人" rel="category tag">男人</a>&nbsp;
+                
+                <a href="/tags/#责任" class="text" title="责任" rel="category tag">责任</a>&nbsp;
+                
+                <a href="/tags/#生活" class="text" title="生活" rel="category tag">生活</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                                                                    
+                <p>
+                
+                <a href="/2013/01/20/glamour-man" title="魅力男人应该有的样子">
+                    <img src="/media/pub/life/pub/man.jpg" alt="魅力男人应该有的样子"  width="240px" height="140px" class="img-right"></img></a>
+                
+                一个男人，一定要有一个男人的样子，利利索索、痛痛快快，千万不要扭扭捏捏、婆婆妈妈。要懂得保护女人和尊重女人，尤其是后者，千万不要强迫她做她不愿意的事情，不要打女人，无论她伤过你还是骗过你…… 
+                </p>
+                
+                <p> <a href="/2013/01/20/glamour-man/#more-20130120153723" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/20/glamour-man/#comments" title="《魅力男人应该有的样子》上的评论">
+                            <span class="ds-thread-count" data-thread-key="20130120153723" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='201301171027'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/17/ubuntu-root-authority" rel="bookmark" title="Ubuntu root 权限详解 17 Jan 2013">Ubuntu root 权限详解</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-17">2013-01-17</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#Shell" class="text" title="Shell" rel="category tag">Shell</a>&nbsp;
+                
+                <a href="/tags/#Ubuntu" class="text" title="Ubuntu" rel="category tag">Ubuntu</a>&nbsp;
+                
+                <a href="/tags/#Linux" class="text" title="Linux" rel="category tag">Linux</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <p>　　Ubantu是一个比较大的Linux发行版本，而其中有关Linux root权限的问题很值得讨论。新接触ubuntu的人（base...</p>
+                
+                <p> <a href="/2013/01/17/ubuntu-root-authority/#more-201301171027" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/17/ubuntu-root-authority/#comments" title="《Ubuntu root 权限详解》上的评论">
+                            <span class="ds-thread-count" data-thread-key="201301171027" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='201301171127'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/17/linux-update-terminal-suggest" rel="bookmark" title="Linux下如何修改终端提示符？ 17 Jan 2013">Linux下如何修改终端提示符？</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-17">2013-01-17</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#Shell" class="text" title="Shell" rel="category tag">Shell</a>&nbsp;
+                
+                <a href="/tags/#Ubuntu" class="text" title="Ubuntu" rel="category tag">Ubuntu</a>&nbsp;
+                
+                <a href="/tags/#Linux" class="text" title="Linux" rel="category tag">Linux</a>&nbsp;
+                
+                <a href="/tags/#Centos6" class="text" title="Centos6" rel="category tag">Centos6</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <p>　　Linux终端大家想必都清楚吧，最近在使用的时候发现在进入到某个文件夹目录比较深的层次后，终端提示的绝对路径很长，这样给人的感觉很不习惯，在这里给大家介绍下如何修改终端的提示，顺便介绍下提示符的颜色: PS1变量简介...</p>
+                
+                <p> <a href="/2013/01/17/linux-update-terminal-suggest/#more-201301171127" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/17/linux-update-terminal-suggest/#comments" title="《Linux下如何修改终端提示符？》上的评论">
+                            <span class="ds-thread-count" data-thread-key="201301171127" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='201301160023'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/16/shell-monitor" rel="bookmark" title="Shell脚本实现监控指定进程负载 16 Jan 2013">Shell脚本实现监控指定进程负载</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-16">2013-01-16</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#Shell" class="text" title="Shell" rel="category tag">Shell</a>&nbsp;
+                
+                <a href="/tags/#监控" class="text" title="监控" rel="category tag">监控</a>&nbsp;
+                
+                <a href="/tags/#Linux" class="text" title="Linux" rel="category tag">Linux</a>&nbsp;
+                
+                <a href="/tags/#研发实践" class="text" title="研发实践" rel="category tag">研发实践</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <p>　　在Linux下监控的工具还真不少，并且非常强大，各有各的好处，但是也有一定缺陷，要想使其达到自己想要的功能，就得自己花点时间啦。 Linux下大家都知道TOP这个命令工具，可以查看系统的负载。但是却无法将监控的数据存储下来，最近用shell写了一个小程序，对自己有点帮助吧。...</p>
+                
+                <p> <a href="/2013/01/16/shell-monitor/#more-201301160023" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/16/shell-monitor/#comments" title="《Shell脚本实现监控指定进程负载》上的评论">
+                            <span class="ds-thread-count" data-thread-key="201301160023" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='201301161027'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/16/java-Unit-testing" rel="bookmark" title="单元测试规范 16 Jan 2013">单元测试规范</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-16">2013-01-16</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#单元测试" class="text" title="单元测试" rel="category tag">单元测试</a>&nbsp;
+                
+                <a href="/tags/#测试规范" class="text" title="测试规范" rel="category tag">测试规范</a>&nbsp;
+                
+                <a href="/tags/#研发实践" class="text" title="研发实践" rel="category tag">研发实践</a>&nbsp;
+                
+                <a href="/tags/#测试" class="text" title="测试" rel="category tag">测试</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <p>　　本规范适合开发人员在产品开发时上进行单元测试时使用的参考手册，基于JTestCase+Junit基础上的架构， 可以给开发人员的研发工作上提供高效、可靠、正确、简单的达到产品高质量。...</p>
+                
+                <p> <a href="/2013/01/16/java-Unit-testing/#more-201301161027" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/16/java-Unit-testing/#comments" title="《单元测试规范》上的评论">
+                            <span class="ds-thread-count" data-thread-key="201301161027" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='201301150027'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/15/product-consumer" rel="bookmark" title="BlockingQueue实现生产者-消费者模式 15 Jan 2013">BlockingQueue实现生产者-消费者模式</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-15">2013-01-15</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#多线程" class="text" title="多线程" rel="category tag">多线程</a>&nbsp;
+                
+                <a href="/tags/#生产者消费者" class="text" title="生产者消费者" rel="category tag">生产者消费者</a>&nbsp;
+                
+                <a href="/tags/#编程实践" class="text" title="编程实践" rel="category tag">编程实践</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <p>　　生产者消费者问题是一个著名的线程同步问题，该问题描述如下：有一个生产者在生产产品，这些产品将提供给若干个消费者去消费， 为了使生产者和消费者能并发执行，在两者之间设置一个具有多个缓冲区的缓冲池，生产者将它生产的产品放入一个缓冲区中，消费者可...</p>
+                
+                <p> <a href="/2013/01/15/product-consumer/#more-201301150027" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/15/product-consumer/#comments" title="《BlockingQueue实现生产者-消费者模式》上的评论">
+                            <span class="ds-thread-count" data-thread-key="201301150027" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='201301142227'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/14/userscript-on-various-browsers" rel="bookmark" title="浏览器的用户脚本管理工具 14 Jan 2013">浏览器的用户脚本管理工具</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-14">2013-01-14</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#用户脚本" class="text" title="用户脚本" rel="category tag">用户脚本</a>&nbsp;
+                
+                <a href="/tags/#互联网" class="text" title="互联网" rel="category tag">互联网</a>&nbsp;
+                
+                <a href="/tags/#firefox" class="text" title="firefox" rel="category tag">firefox</a>&nbsp;
+                
+                <a href="/tags/#chrome" class="text" title="chrome" rel="category tag">chrome</a>&nbsp;
+                
+                <a href="/tags/#浏览器" class="text" title="浏览器" rel="category tag">浏览器</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <p>　　最近在网上购票的时候，使用了购票助手，当然这些购票助手都是一些热心的IT牛人写的,哈哈， 我们只能站在巨人的肩膀上挖掘更多的价值。这些购票助手的插件都是基于浏览器使用javascript实现的，...</p>
+                
+                <p> <a href="/2013/01/14/userscript-on-various-browsers/#more-201301142227" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/14/userscript-on-various-browsers/#comments" title="《浏览器的用户脚本管理工具》上的评论">
+                            <span class="ds-thread-count" data-thread-key="201301142227" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='201301101527'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/13/kitty-collections" rel="bookmark" title="2013 萌猫大收藏 13 Jan 2013">2013 萌猫大收藏</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-13">2013-01-13</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#萌猫" class="text" title="萌猫" rel="category tag">萌猫</a>&nbsp;
+                
+                <a href="/tags/#猫" class="text" title="猫" rel="category tag">猫</a>&nbsp;
+                
+                <a href="/tags/#Kitty" class="text" title="Kitty" rel="category tag">Kitty</a>&nbsp;
+                
+                <a href="/tags/#2013" class="text" title="2013" rel="category tag">2013</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <a href="/2013/01/13/kitty-collections" title="2013 萌猫大收藏">
+                    <img src="/media/pub/life/photo/kitty-sanjiangke-2.jpg" alt="2013 萌猫大收藏"  width="240px" height="140px" class="img-right"></img></a>
+                
+                <p>前段时间在网上看了《萌猫三剑客》小短片，片长:13分钟 又名:...</p>
+                
+                <p> <a href="/2013/01/13/kitty-collections/#more-201301101527" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/13/kitty-collections/#comments" title="《2013 萌猫大收藏》上的评论">
+                            <span class="ds-thread-count" data-thread-key="201301101527" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='201301131237'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/13/air-pollution-programs-do-you-know" rel="bookmark" title="2013年的空气污染程度你知道吗？ 13 Jan 2013">2013年的空气污染程度你知道吗？</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-13">2013-01-13</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#生活" class="text" title="生活" rel="category tag">生活</a>&nbsp;
+                
+                <a href="/tags/#空气污染" class="text" title="空气污染" rel="category tag">空气污染</a>&nbsp;
+                
+                <a href="/tags/#PM2.5" class="text" title="PM2.5" rel="category tag">PM2.5</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <p>　　2013年元旦过完没多长时间，北京的空气发生了从所未有得变化，10日晚间开始笼罩京城的雾霾仍在继续，12日北京PM2．5指数 濒临“爆表”，空气质量持续六级严重污染。北京环境监测中心专家表示，从污染形势预报的分析结果看，此次影响北京市的重污染过程...</p>
+                
+                <p> <a href="/2013/01/13/air-pollution-programs-do-you-know/#more-201301131237" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/13/air-pollution-programs-do-you-know/#comments" title="《2013年的空气污染程度你知道吗？》上的评论">
+                            <span class="ds-thread-count" data-thread-key="201301131237" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+         
+        <div class="post type-post status-publish format-standard category-1 hentry post" id='201301121027'>
+            <div class="posttop">
+                <h2 class="posttitle">
+                    <a href="/2013/01/12/linux-encoding-convert" rel="bookmark" title="Linux下GBK->UTF-8文件编码批量转换命令 12 Jan 2013">Linux下GBK->UTF-8文件编码批量转换命令</a>
+                </h2>
+                <div class="postmetatop">
+                    Posted <time class="text" datetime="2013-01-12">2013-01-12</time>&nbsp;|&nbsp;
+                
+                By <span class='text'>熊猫人</span>
+                
+                &nbsp;|&nbsp;
+                
+                标签:
+                
+                <a href="/tags/#Shell" class="text" title="Shell" rel="category tag">Shell</a>&nbsp;
+                
+                <a href="/tags/#Ubuntu" class="text" title="Ubuntu" rel="category tag">Ubuntu</a>&nbsp;
+                
+                <a href="/tags/#UTF-8" class="text" title="UTF-8" rel="category tag">UTF-8</a>&nbsp;
+                
+                <a href="/tags/#GBK" class="text" title="GBK" rel="category tag">GBK</a>&nbsp;
+                
+                <a href="/tags/#编码转换" class="text" title="编码转换" rel="category tag">编码转换</a>&nbsp;
+                
+                
+
+               </div>
+                <!-- /postmetatop -->
+            </div><!-- /posttop -->
+
+            <div class="postcontent">
+                
+                
+                <p>　　在工作中，经常会遇到使用操作系统不一样的环境，从而导致在不同环境下的文件编辑的编码是不一样的，Windows默认是GBK编码格式，Linux默认是UTF-8的格式，这样就会出现把GBK编码的文件拷贝到Linux下出现乱码情况，很是让人头疼，下面给大家介绍下GBK->UTF-8文件编码批量转换。 Linux命令-enca...</p>
+                
+                <p> <a href="/2013/01/12/linux-encoding-convert/#more-201301121027" class="more-link">Read More &raquo;</a></p> 
+                <div class="cleared"></div>
+
+            </div><!-- /postcontent -->
+
+            <div class="postmetabottom">
+                <div class="tags"></div>
+                <div class="metacomments">
+                    <span>
+                        <a href="/2013/01/12/linux-encoding-convert/#comments" title="《Linux下GBK->UTF-8文件编码批量转换命令》上的评论">
+                            <span class="ds-thread-count" data-thread-key="201301121027" data-replace="1">暂无评论</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="cleared"></div>
+
+            </div><!-- /postmetabottom -->
+        </div><!-- /post -->
+        
+    </div>
+</div>
+
+
+<script src="/media/js/waypoints.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+            // 关于waypoint，请看 http://imakewebthings.com/jquery-waypoints/
+            var $loading = $("<div class='loading' style='text-align:center'><img src='/media/demi/img/loading.gif'></div>"),
+            $footer = $('footer'),
+            opts = {
+offset: '100%'
+};
+
+var count = 30;  // 初始文章数
+var count_sup = 0;  // 循环上界，初始为0
+$footer.waypoint(function(event, direction) {
+    $footer.waypoint('remove');
+    $('.posts').append($loading);
+    $.getJSON("../post.json",function(data){
+        var content ="";
+        count_sup = count + 10; // 循环上界每次增加50
+        var delta = 0;          // 局部计数器
+        $.each(data,function(i,item){
+            if(i>= count & i< count_sup){ 
+            var tags="";
+            for(tag in item.tags) { 
+            var tempTag = item.tags[tag];
+            tags += "<a href='/tags/#'"+tempTag+"' class='text' title='"+tempTag+"' rel='category tag'>" + tempTag + "</a>&nbsp;";
+            }
+            
+            var show_content = "";
+            if (item.show_img != '') {
+                show_content = "<a href='" + item.url+"' title='"+item.title+"'><img src='"+item.show_img+"' alt='"+item.title+"'  width='240px' height='140px' class='img-right' /></a>" + unescape(item.description);
+            } else {
+                show_content = unescape(item.description); 
+            }
+
+            content +=  "<div class='post type-post status-publish format-standard category-1 hentry post'>";
+            content += "<div class='posttop'><h2 class='posttitle'>";
+            content += "<a href='"+ item.url +"' title='"+ item.title +"'>" + item.title + "</a></h2>";
+            content += "<div class='postmetatop'>";
+            content += "<time class='text' datetime='" + item.date + "'>"+"Posted "+ item.date + "</time> By <span class='text'>"+ item.author +"</span> 标签: " + tags + "";
+            content += "</div></div>";
+            content += "<div class='postcontent'><p>"+ show_content +"</p><p><a href="+ item.url +"/#more-"+ item.UUID +" class='more-link'>Read More &raquo;</a></p><div class='cleared'></div></div>";
+            content += "<div class='postmetabottom'> <div class='tags'></div><div class='metacomments'><span>";
+            content += "<a href='"+ item.url +"/#comments' title='&lt;&lt;"+item.title+"&gt;&gt;上的评论'>";
+            content += "<span class='ds-thread-count' data-thread-key='"+item.UUID+"' data-replace='1'>查看评论</span>";
+            content += "</a>";
+            content += "</span></div> <div class='cleared'></div></div>";
+            content += "</div>";
+            delta++;
+            }
+
+        });
+        count += delta; 
+        $('div.loading').remove();
+        $(".posts").append(content);
+        if ( count< data.length ) $footer.waypoint(opts);
+    });
+}, opts);
+});
+</script>
+
+<div id="sidebar">
+    <ul> 
+        <li id="rss-feed" class="boxed widget ds-widget-qqt-follow">
+        <h2 class="widgettitle">RSS Feed</h2>
+            <a href="/rss.xml" target="_blank"><img src="/media/demi/img/feed.png"  alt="熊猫家族 RSS feed" border="0" title="Subscribe for Updates"></a>
+            熊猫家族-建设一个有家氛围的博客园
+        </li>
+        <li id="tag_cloud" class="boxed widget widget_tag_cloud">
+        <h2 class="widgettitle">分类目录</h2>
+        
+        
+        
+        
+        
+        <a href='/life' class='tag-link-30' title='Micro-life' style='font-size: 20pt;'>微生活(30)</a>
+        
+        
+        
+        
+        
+        <a href='/categories/linux' class='tag-link-34' title='Linux' style='font-size: 15pt;'>Uinx/Linux(34)</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+         
+        <a href='/practice' class='tag-link-78' title='Code' style='font-size: 14pt;'>研发实践(78)</a>
+        
+        
+        
+        
+        
+        
+        
+        
+         
+        <a href='/categories/java' class='tag-link-7' title='Java' style='font-size: 14pt;'>Java语言(7)</a>
+        
+        
+        
+        
+        
+        
+        
+        <a href='/categories/solr' class='tag-link-8' title='solr' style='font-size: 14pt;'>Lucene/Solr(8)</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </li>
+
+        <li id="tag_cloud" class="boxed widget widget_tag_cloud">
+        <h2 class="widgettitle">热门标签</h2>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#健康' class='tag-link-4' title='健康' style='font-size: 16pt;'>健康</a>
+        
+        
+        
+        <a href='/tags/#域名' class='tag-link-3' title='域名' style='font-size: 16pt;'>域名</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#生活' class='tag-link-6' title='生活' style='font-size: 16pt;'>生活</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Ubuntu' class='tag-link-16' title='Ubuntu' style='font-size: 16pt;'>Ubuntu</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#浏览器' class='tag-link-3' title='浏览器' style='font-size: 19pt;'>浏览器</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#梦想' class='tag-link-3' title='梦想' style='font-size: 16pt;'>梦想</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Linux' class='tag-link-37' title='Linux' style='font-size: 15pt;'>Linux</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#lucene' class='tag-link-10' title='lucene' style='font-size: 16pt;'>lucene</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#solr' class='tag-link-10' title='solr' style='font-size: 14pt;'>solr</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#美食星期天' class='tag-link-5' title='美食星期天' style='font-size: 25pt;'>美食星期天</a>
+        
+        
+        
+        <a href='/tags/#Shell' class='tag-link-30' title='Shell' style='font-size: 15pt;'>Shell</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#HTTP' class='tag-link-4' title='HTTP' style='font-size: 14pt;'>HTTP</a>
+        
+        
+        
+        
+        
+        <a href='/tags/#搜索引擎' class='tag-link-10' title='搜索引擎' style='font-size: 22pt;'>搜索引擎</a>
+        
+        
+        
+        <a href='/tags/#Google' class='tag-link-4' title='Google' style='font-size: 16pt;'>Google</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Python' class='tag-link-3' title='Python' style='font-size: 16pt;'>Python</a>
+        
+        
+        
+        <a href='/tags/#SSH' class='tag-link-3' title='SSH' style='font-size: 13pt;'>SSH</a>
+        
+        
+        
+        
+        
+        <a href='/tags/#Jekyll' class='tag-link-6' title='Jekyll' style='font-size: 16pt;'>Jekyll</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#互联网' class='tag-link-10' title='互联网' style='font-size: 19pt;'>互联网</a>
+        
+        
+        
+        
+        
+        <a href='/tags/#Subversion' class='tag-link-3' title='Subversion' style='font-size: 20pt;'>Subversion</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Java' class='tag-link-10' title='Java' style='font-size: 14pt;'>Java</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Github' class='tag-link-6' title='Github' style='font-size: 16pt;'>Github</a>
+        
+        
+        
+        <a href='/tags/#屏蔽' class='tag-link-3' title='屏蔽' style='font-size: 16pt;'>屏蔽</a>
+        
+        
+        
+        
+        
+        <a href='/tags/#vim' class='tag-link-5' title='vim' style='font-size: 13pt;'>vim</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Jenkins' class='tag-link-3' title='Jenkins' style='font-size: 17pt;'>Jenkins</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#研发实践' class='tag-link-11' title='研发实践' style='font-size: 22pt;'>研发实践</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </li>
+        <li id="recent-posts-2" class="boxed widget widget_recent_entries">		
+        <h2 class="widgettitle">近期文章</h2>	
+        <div id="hot_comment_post">
+            <ul>
+                 
+                <li>
+                <a href="/2013/01/31/solr-4-1-stored-fields-compression" title="Solr 4.1 特性-存储字段压缩">Solr 4.1 特性-存储字段压缩</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/30/top-8-sexy-ways-to-de-stress-during-the-holidays" title="在节假日,8大性感的解除压力的方法">在节假日,8大性感的解除压力的方法</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/29/programming-ides-for-ubuntu" title="Ubuntu 常用的编程开发环境IDEs">Ubuntu 常用的编程开发环境IDEs</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/28/2012-firefox-top10-add-ons" title="2012年Firefox TOP10 附加组件">2012年Firefox TOP10 附加组件</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/28/ubunut-setup-vpn-connection" title="Ubuntu/Linux 配置VPN连接">Ubuntu/Linux 配置VPN连接</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/27/postman-a-simple-image-uploading-application-for-ubuntu-linux-mint" title="Linux简单的图像上传工具Postman">Linux简单的图像上传工具Postman</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/27/image-to-text-converter-for-ubuntu-mint" title="Linux图像文本转换器（OCR）">Linux图像文本转换器（OCR）</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/27/download-monitor" title="Download Monitor监控上传和下载流量">Download Monitor监控上传和下载流量</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/26/java-parse-javascript" title="Java解析JavaScript数据">Java解析JavaScript数据</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/25/linux-kill-multi-process" title="Linux kill多个进程">Linux kill多个进程</a>
+                </li>
+                
+            </ul>
+        </div>
+
+        </li>
+        <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
+        <h2 class="widgettitle">热评文章</h2>
+        <div id="hot_comment_post">
+            <ul class="ds-top-threads" data-num-items="10" data-range="weekly"></ul>
+        </div>
+        </li>
+        <li id="ds-recent-comments" class="boxed widget ds-widget-recent-comments">
+        <h2 class="widgettitle">近期评论</h2>
+        <div id="hot_comment">
+            <ul class="ds-recent-comments" data-num-items="10" data-show-avatars="1" data-show-time="1" data-show-title="0" data-show-admin="0" data-avatar-size="32" data-excerpt-length="70">
+            </ul>
+        </div>
+        </li>
+        <li id="ds-qqt-follow" class="boxed widget ds-widget-qqt-follow">
+        <!--
+        <iframe src="http://follow.v.t.qq.com/index.php?c=follow&a=quick&name=denghp_280606790&style=1&t=1352387427769&f=1" frameborder="0" scrolling="auto" width="227" height="75" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
+        -->
+        <iframe width="300" height="190" frameborder="0" scrolling="no" src="http://widget.weibo.com/relationship/bulkfollow.php?language=zh_cn&uids=1655072963&wide=1" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
+        </li>
+
+        <li id="ds-recent-visitors-2" class="boxed widget ds-widget-recent-visitors">
+        <h2 class="widgettitle">最近访客</h2>
+        <ul class="ds-recent-visitors" data-num-items="20" data-show-time="0" data-avatar-size="50"></ul>
+        </li>
+        
+        <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
+        <h2 class="widgettitle">友情链接</h2>
+        <div id="hot_comment_post">
+            <ul>
+                
+                <li><a href="http://lusongsong.com/"target="_blank"  title="卢松松-关注站长和搜索引擎的IT博客">卢松松</a></li>
+                
+                <li><a href="http://www.muchangqing.com/"target="_blank"  title="牟长青-牟长青的网站推广博客">牟长青</a></li>
+                
+                <li><a href="http://coolshell.cn/"target="_blank"  title="酷壳-享受编程和技术所带来的快乐">酷壳</a></li>
+                
+                <li><a href="http://yanping.me/"target="_blank"  title="雁起平沙-雁起平沙的网络日志">雁起平沙</a></li>
+                
+                <li><a href="http://www.letuknowit.com/"target="_blank"  title="知蚁博客">知蚁博客</a></li>
+                
+                <li><a href="http://www.zhangyuchang.com/"target="_blank"  title="不纯粹文人-不经一番寒彻骨，哪得梅花扑鼻香">不纯粹文人</a></li>
+                
+                <li><a href="http://chenpeng.info/"target="_blank"  title="陈鹏个人博客">陈鹏个人博客</a></li>
+                
+                <li><a href="http://www.kandisheng.com/"target="_blank"  title="不霁何虹博客">不霁何虹博客</a></li>
+                
+                <li><a href="http://blog.jobbole.com/"target="_blank"  title="伯乐在线">伯乐在线</a></li>
+                
+            </ul> 
+        </div>
+        </li>
+        
+    </ul>
+</div>
+<!-- /sidebar -->
+<div class="cleared"></div>
+
+
+
+
+  
+            </div> 
+        </div> <!-- wrapper -->
+        
+        <!-- scroll.html -->
+        <div id="full" style="display:none;width:50px; height:95px; position:fixed; left:50%; top:480px; margin-left:425px;  z-index:100; text-align:center; cursor:pointer;">
+    <a><img src="http://demi-panda.com/media/demi/img/back-top.png" border=0 alt="返回顶部" title="返回顶部"></a>
+</div>
+<script type="text/javascript">
+    var isie6 = window.XMLHttpRequest ? false : true; function newtoponload() { var c = document.getElementById("full"); function b() { var a = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop; if (a > 0) { if (isie6) { c.style.display = "none"; clearTimeout(window.show); window.show = setTimeout(function () { var d = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop; if (d > 0) { c.style.display = "block"; c.style.top = (480 + d) + "px" } }, 400) } else { c.style.display = "block" } } else { c.style.display = "none" } } if (isie6) { c.style.position = "absolute" } window.onscroll = b; b() } if (window.attachEvent) { window.attachEvent("onload", newtoponload) } else { window.addEventListener("load", newtoponload, false) } document.getElementById("full").onclick = function () { window.scrollTo(0, 0) };
+</script>
+
+
+
+
+
+        <!-- footer -->
+        <footer>
+<div id="footer">                                          
+  <p class="t-center" style='font-size: 10pt;'>
+  &copy; 2012 <a href="/">Demi Panda Lab</a>, All Rights Reserved.
+
+  <script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9ed8ee65a576b9495a4d989eabbd4c09' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+
+  <script src="http://s14.cnzz.com/stat.php?id=4734788&web_id=4734788&show=pic" language="JavaScript"></script>
+  </p>
+  </div> 
+</footer>
+
+ 
+        <script type="text/javascript">
+            var duoshuoQuery = {short_name:"demi-panda"};
+(function() {
+ var ds = document.createElement('script');
+ ds.type = 'text/javascript';ds.async = true;
+ ds.src = 'http://static.duoshuo.com/embed.js';
+ ds.charset = 'UTF-8';
+ (document.getElementsByTagName('head')[0] 
+  || document.getElementsByTagName('body')[0]).appendChild(ds);
+ })();
+</script>  
+
+
+<script type="text/javascript">
+    $(window).load(function(){
+            $("pre").addClass("prettyprint");
+            prettyPrint();
+            })
+</script>
+
+<script language="javascript">
+    $.fn.tagcloud.defaults = {
+        size: {start: 0.9, end: 2, unit: 'em'},
+        color: {start: '#e77471', end: '#f62817'}
+    };
+
+    $(function () {
+        $('#tagcloud a').tagcloud();
+    });
+</script>  
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36197302-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+
+</script>
+
+     </body>
+ </html>
+

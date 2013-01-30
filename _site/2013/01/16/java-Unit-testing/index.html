@@ -1,0 +1,1277 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv=Content-Type content="text/html;charset=utf-8">
+        <meta name="robots" content="all,follow" />
+        <title>单元测试规范 - 熊猫家族</title>
+        <meta name="keywords" content="博客,IT技术,研发实践,互联网,资讯,编程语言,搜索引擎,Lucene,Solr,Java,生活,旅游,吃货,熊猫吃货,微生活,健康,美食"/>
+        <meta name="author" lang="en" content="All: Demi-Panda Lab [demi-panda.com]; e-mail: blog.pandam@gmail.com" />
+        <meta name="copyright" lang="en" content="@2012 Demi_Panda Lab, All Rights Reserved!" />
+        <meta name="description" content="熊猫家族博客：敢想,敢拼,敢赢...博客,IT技术,研发实践,互联网,资讯,编程语言,搜索引擎,Lucene,Solr,Java,生活,旅游,吃货,熊猫吃货,微生活,健康,美食" />
+        <meta property="wb:webmaster" content="eb26a33b1e192873" />
+        <meta name="chinaz-site-verification" content="54c83ea9-059c-4447-95ec-4dc8b16e60b2" />
+        <meta name="baidu_union_verify" content="67d51e25cc69ae324f028d2d333b753a">
+        <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+        <link rel="shortcut icon" href="http://demi-panda.com/media/demi/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/style.css" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/main.css" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/reset.css" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/superfish.css" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/prettify.css" />
+        <link rel='stylesheet' id='pretty-photo-css'  href='http://demi-panda.com/media/demi/css/prettyPhoto-3.4.2.css' type='text/css' media='all' />
+        <link rel="alternate" type="application/rss+xml" title="熊猫家族" href="http://demi-panda.com/rss.xml" />
+        <script src="http://demi-panda.com/media/js/prettify.js" type="text/javascript"></script>
+        <script src="http://demi-panda.com/media/js/jquery-1.6.1.min.js" type="text/javascript"></script>
+        <script src="http://demi-panda.com/media/js/jquery.jcarousel.min.js" type="text/javascript"></script>
+        <script src="http://demi-panda.com/media/js/jquery.tagcloud.js" type="text/javascript"></script>
+    </head>
+
+
+    <body >
+
+        <div id="wrapper">
+            <!-- /header -->
+<div id="header">
+
+  <div id="logo">
+    <h1 id="logo">
+      <a href="/" title="[Go to homepage]"><img width="234px" height="86px" src="/media/demi/img/demi-logo.jpg" alt="" /></a>
+    </h1> 
+  </div><!-- /logo -->
+
+  <div class="cleared"></div>
+</div>
+<!-- /header -->
+
+ 
+            <!-- Tray -->
+<div id="tray">
+    <ul>
+        
+        <li ><a href="/">Home</a></li>
+        <li ><a href="/archives/">文章列表</a></li>
+        <li id="tray-active"><a href="/practice/">研发实践</a></li>
+        <li ><a href="/chihuo/">熊猫吃货</a></li>
+        <li ><a href="/life/">微生活</a></li>
+        <li ><a href="/tags/">标签</a></li>
+        <li ><a href="/about/">关于我</a></li>
+        
+        <li>
+        <div id="search">
+            <form action="http://www.google.com/cse" class="lit-search" method="get" target="_blank">
+                <input type="text" class="text" name="q" size="24" placeholder="搜索">
+                <input type="hidden" name="cx" value="007512494910388222978:uvgripsnamg">
+                <input type="hidden" name="ie" value="UTF-8">
+            </form>
+        </div>
+
+        </li>
+
+    </ul>
+    <hr class="noscreen" />                    
+</div> 
+<!-- /tray -->
+
+
+            <div id="main">
+                <div id="content">
+  <div class="post type-post status-publish format-standard hentry category-1 post" >
+    <div class="posttop">
+      <h1 class="posttitle">
+        单元测试规范
+      </h1>
+    </div>
+    <div class="postmetatop">
+      Posted 
+      <time class="text" datetime="2013-01-16">2013-01-16 00:00:00</time>&nbsp; |&nbsp;
+       <span class="ds-thread-count" data-thread-key="201301161027" data-replace="1">暂无评论</span></a></span> &nbsp;|&nbsp;
+      
+      By 熊猫人
+      
+      
+      <div class="tag">
+        
+        <a href="/tags/#单元测试" class="text" title="单元测试" rel="category tag">单元测试</a>&nbsp;
+        
+        <a href="/tags/#测试规范" class="text" title="测试规范" rel="category tag">测试规范</a>&nbsp;
+        
+        <a href="/tags/#研发实践" class="text" title="研发实践" rel="category tag">研发实践</a>&nbsp;
+        
+        <a href="/tags/#测试" class="text" title="测试" rel="category tag">测试</a>&nbsp;
+        
+      </div>
+      
+    </div>
+
+    <div class="postcontent-entry">
+      <div class="cleared"></div>
+      <p> 　　本规范适合开发人员在产品开发时上进行单元测试时使用的参考手册，基于JTestCase+Junit基础上的架构，
+可以给开发人员的研发工作上提供高效、可靠、正确、简单的达到产品高质量。</p>
+
+<h3>适用对象</h3>
+
+<p> 　　本文档适用于在公司各产品、项目上构建应用的测试框架，适用于系统构建工程师、软件工程师、系统测试人员等相关使用者使用。要求这些人员能够具备使用Java开发应用的技能。</p>
+
+<h3>版本说明</h3>
+
+<p> 　　本手册基于JTestCase4.0+Junit4.8版本而编写，随着公司产品本身的不断升级，本手册也会不断进行扩展、更新。届时请关注本节说明。</p>
+
+<h3>参考文档</h3>
+
+<p>1、JDK开发文档<br>
+2、JUINT 4.8 API 开发文档<br>
+3、YOYO单元测试框架使用手册<br>
+4、测试用例编码规范<br></p>
+
+<h3>规范的使用场景说明，即目的</h3>
+
+<p>1、规范是为了检查开发过程中尽可能早的发现问题，让程序员编写的代码有个纸面上的评估及确认.<br>
+2、规范是为了便于维护后期开发代码，进行正确性检查的依据。<br>
+3、    使用JTestCase+Junit测试框架<br>
+4、    结合ANT脚本执行测试程序<br></p>
+
+<h3>规范的范围</h3>
+
+<p>1、规范适用于整个项目的开发过程，其中单元测试代码规范应该参考。<br>
+2、规范适用于整个项目的阶段性功能代码结束后进行集成测试，性能，压力测试的说明。<br>
+3、规范适用于整个项目完成后，进行安装测试的说明。<br></p>
+
+<h3>单元测试分类</h3>
+
+<h4>接口测试</h4>
+
+<p>1、针对被测接口的输入、输出参数<br>
+2、被测接口的异常及异常信息是否合理<br></p>
+
+<h4>持久层类方法测试</h4>
+
+<p>1、结构化数据、非结构化数据的持久化测试<br>
+2、结构化数据使用SQL语句测试，保证SQL语句参数的灵活性、对持久化的数据进行确认，事务的可靠性等<br>
+3、非结构化数据保证非结构化数据的准确性，事务的可靠性，如：文件大小、内容是否丢失、以及一些结构化数据的准确性等<br>
+4、数据确认流程：调用持久测试方法，对应调用查询测试方法进行数据确认<br></p>
+
+<h4>工具类方法、帮助类方法</h4>
+
+<p>1、被测工具方法、帮助类方法的作用及要达到的目的<br>
+2、被测试方法的输入、输出参数的是否合理<br></p>
+
+<h4>业务过程类方法</h4>
+
+<p>1、业务过程类方法测试首先设计TestCase，考虑各种因素设计不同的TestCase<br>
+2、被测方法的安全性，指的是要考虑多线程情况下如何设计测试用例及方法代码编写<br>
+3、业务逻辑的被测方法的覆盖率<br>
+4、被测试方法中的成员变量的安全性、<br>
+5、被测试方法中的for、while等逻辑处理是否正常退出<br></p>
+
+<h4>外部系统类方法、属性文件读写类方法</h4>
+
+<p>1、外部系统类方法的被测方法输入、输出参数、异常的准确行性<br>
+2、被测方法的安全性等<br>
+3、属性文件读写类的被测试方法是否支持多个实例、参数的输入、输出<br></p>
+
+<h4>异常测试</h4>
+
+<p>1、轻量级错误测试<br>
+2、系统是否异常终止？<br>
+3、系统是否输出异常信息？<br>
+4、抛出的异常被谁捕获处理？<br>
+5、程序是否正常的退出而不是崩溃？<br>
+6、测试信息内容<br>
+错误码是否符合设计？<br>
+错误信息是否准确的反应了错误原因？<br>
+错误信息是否通俗易懂？<br>
+错误信息是否能定位出错位置？<br>
+错误信息中是否包含了不要的其他信息？<br></p>
+
+<h3>测试用例编写规范</h3>
+
+<h4>常规测试用例</h4>
+
+<p>1、对于功能的一个模块，每个数据类型输入项或选取典型的取值，生成用例<br>
+2、参数的类型输入生成用例<br></p>
+
+<h4>初始化测试用例</h4>
+
+<p>1、针对功能模块，一些初始化的功能数据，确保所有的初始化数据正确。</p>
+
+<h4>边界的测试用例</h4>
+
+<p>1、针对每个参数项，生成一个边界用例<br>
+2、字符串参数的长度<br>
+3、布尔值数据的所有取值<br>
+4、集合参数，或null<br></p>
+
+<h4>空值的测试用例</h4>
+
+<p>1、对于每个必填数据项,都生成一个用例(不提供空值的除外,比如无空值的下拉框、有缺省值的单选按钮组),则预期结果提示该数据项为空</p>
+
+<h4>格式化错误的测试用例</h4>
+
+<p>1、对于每个参数项，都生成一个用例，预期结果提示该数据项格式错误日期格式、数值、字符串：Email、邮编、用户名格式等</p>
+
+<h4>溢出的测试用例</h4>
+
+<p>1、对于参数项，都生成一个取值范围外的测试用例,预期结果提示该数据项超出范围</p>
+
+<h4>唯一值的测试用例</h4>
+
+<p>1、根据某业务设计某字段是唯一，预期结果提示该数据已经存在</p>
+
+<h4>权限的测试用例</h4>
+
+<p>1、对于功能模块，生成一个用例，生成有权限和没用权限的身份访问，预期结果提示权限不足等</p>
+
+<h4>角色权限的测试用例</h4>
+
+<p>1、业务功能流程涉及一到多个角色,对于每个角色,都生成一个用例,预期结果为用户以这个角色登陆时,他仅能执行权限允许的操作</p>
+
+<h3>测试工作指导</h3>
+
+<h4>开发阶段单元测试步骤</h4>
+
+<p><strong>编写TestCase</strong>
+1、    创建测试类，每个被测试类对应一个测试类，测试需继承AbstractTestCase基类，便于统一管理及初始化基本参数，也可以直接继承Junit框架的TestCase<br>
+2、    测试类需要按照统一的命名方式如Testxxx.java,便于统一管理<br>
+3、    添加无参构造函数，使用JTestCase初始化数据源，也可以直接在基类中初始化，但是要保证JTestCase的实例是唯一的，否则会覆盖其他的实例<br>
+4、    测试用例编写遵循上述原则，编写合适的测试用例，数据源在xml中配置，示例</p>
+
+<pre id="java">
+/** 
+   *
+   * 初始化JTestCase实例
+   *
+   */
+  public TestDocument()
+  {
+    try {
+      jtestcase = new JTestCase(data[0], data[1]);
+    } catch (FileNotFoundException e) {
+      e.printStackTrace();
+    } catch (JTestCaseException e) {
+      e.printStackTrace();
+    }   
+  }
+  
+ /** 
+   *
+   *测试抛出的异常是否属于正常
+   *
+   */
+  public void testDeleteCheckException() throws JTestCaseException
+  {
+    log.info("methodName : " + methods[1]);
+    getTestCases(methods[1], jtestcase);
+    for (int i = 0; i < testcases.size(); i++) {
+      // 获取testcase实例及每个testcase中的参数
+      TestCaseInstance instance = (TestCaseInstance) testcases
+        .elementAt(i);
+      try {
+        params = instance.getTestCaseParams();
+        Long docId = (Long) params.get("doc_id");
+        // 执行test方法
+        int code = docService.deleteDoc(docId);
+      } catch (IllegalArgumentException ex) {
+        log.debug("IllegalArgumentException" + ex.getMessage());
+        // 进行实际测试结果与测试数据中定义的预期结果进行断言
+        assertResult = instance.assertTestVariable(expectedResult,
+            ex.getMessage());
+        assertTrue(instance.getFailureReason(), assertResult);
+      }
+    }
+  }
+</pre>
+
+
+<h4>准备测试数据</h4>
+
+<p>1、    测试数据源的统一格式以xml格式定义<br>
+2、    数据源定义规则参考YOYO单元测试框架使用文档<br>
+3、    测试数据源名称统一使用小写，都以testxxx.xml形式<br></p>
+
+<h4>ANT脚本编写规范</h4>
+
+<p><strong>1、build-test脚本规范及格式</strong><br>
+1、命名以build-test.xml为基准<br>
+2、属性格式<br></p>
+
+<pre id="xml">
+* xx 属性，【必须】
+* 1. name: xx, 如：test.dir
+* 2. value: xx, 如：junit.xml
+* 例子：
+*       &lt;property name="test.reports.xml.dir" value="${test.reports.dir}/junit-xml" /&gt;
+</pre>
+
+
+<p>3、target属性</p>
+
+<pre id="xml">
+&lt;!-- 
+  * target 元素 test-xxx
+  * 1、name 属性 taget name
+  * 2、depends 属性 引用其他target
+  * junit 元素 
+  * 1、printsummary 打印出测试用例的信息
+  * 2、haltonfailure 停止测试过程中失败的用例
+  * 3、showoutput 将测试过程中输出信息发送给ant日志记录系统
+  * 4、batchtest 执行测试类                                                                                                                                  
+  * 其他属性请参考http://ant.apache.org/manual/Tasks/junit.html
+ --&gt;
+</pre>
+
+
+<p><strong>2、build-test脚本规范及格式</strong><br></p>
+
+<pre id="xml">
+ &lt;target name="test-api-document" depends="compile-test-api"&gt;
+   &lt;junit printsummary="yes" haltonfailure="no"  showoutput="true"&gt;
+     &lt;classpath refid="test.classpath" /&gt;
+     &lt;formatter type="xml" /&gt;
+      &lt;!— 执行测试的测试类 --&gt;
+   &lt;test name="com.yoyosys.smartstorage.test.TestDocument" todir="${test.reports.xml.today}"/&gt;
+   &lt;/junit&gt;
+   &lt;junitreport todir="${test.reports.html.today}"&gt;
+     &lt;fileset dir="${test.reports.xml.today}"&gt;
+       &lt;include name="*.xml" /&gt;
+     &lt;/fileset&gt;
+     &lt;report format="frames" todir="${test.reports.html.today}" /&gt;
+   &lt;/junitreport&gt;
+ &lt;/target&gt;
+</pre>
+
+
+<p><strong>3、测试所有类的执行脚本示例如：</strong><br></p>
+
+<pre id="xml">
+ &lt;target name="test-api-all" depends="compile-test-api"&gt;
+   &lt;junit printsummary="yes" haltonfailure="no"  showoutput="true"&gt;
+     &lt;classpath refid="test.classpath" /&gt;
+     &lt;formatter type="xml" /&gt;
+     &lt;batchtest fork="yes" todir="${test.reports.xml.today}"&gt;
+       &lt;fileset dir="${src.test.api}" includes="com/yoyosys/smartstorage/test/Test*.java"/&gt;
+     &lt;/batchtest&gt;
+   &lt;/junit&gt;
+   &lt;!-- 生成日期命名的测试报告--&gt;
+   &lt;junitreport todir="${test.reports.html.today}"&gt;
+     &lt;fileset dir="${test.reports.xml.today}"&gt;
+       &lt;include name="*.xml" /&gt;
+     &lt;/fileset&gt;
+     &lt;report format="frames" todir="${test.reports.html.today}" /&gt;
+   &lt;/junitreport&gt;
+ &lt;/target&gt;
+</pre>
+
+
+<h4>使用ANT执行测试，生成测试报告</h4>
+
+<p>1、    ANT执行的方法 ant -f build-test.xml target <br>
+2、    测试报告在第3点编写build脚本已经实现，也可以只在需要生成报告时添加<br>
+3、    执行所有的测试类并生成报告如：ant -f build-test.xml test-api-all<br></p>
+
+<h4>使用Cobertura测试代码覆盖率</h4>
+
+<p>1、    引用cobertura-xxx.jar包 <br></p>
+
+<pre id="xml">
+&lt;property name="cobertura.dir" value="${env.YOYO_SVN_HOME}/app/java/cobertura/cobertura-1.9.4.1" /&gt; 
+</pre>
+
+
+<p>2、设置classpath<br></p>
+
+<pre id="xml">
+&lt;path id="test.classpath" &gt; 
+ &lt;fileset dir="${cobertura.dir}"&gt;
+     &lt;include name="cobertura.jar" /&gt;
+     &lt;include name="lib/**/*.jar" /&gt;
+   &lt;/fileset>
+&lt;/path>
+</pre>
+
+
+<p>3、cobertura的全局属性文件 <br></p>
+
+<pre id="xml">
+&lt;taskdef classpathref="test.classpath" resource="tasks.properties"/&gt;
+</pre>
+
+
+<p>4、编写测试覆盖率的脚本，请参考build-test.xml中的示例<br>
+5、代码覆盖率执行方法 ant -f build-test.xml coverage<br></p>
+
+<h3>回归测试流程如下</h3>
+
+<p>1、测试流程步骤如上 <br>
+2、参考规范列表，如测试流程手册，TestLink使用手册，Bugzilla使用手册。<br>
+3、准备帐号，向Lead申请测试帐号<br>
+4、根据测试用例设计规范准备TestCase<br>
+5、根据测试记录填写<br>
+6、提交测试，修改bug，进行反馈的机制。规定如何填写好测试反馈，以及解决方案<br>
+7、总结测试报告<br></p>
+
+    </div><!-- /postcontent -->
+
+    <div class="v-pagination">
+      
+      
+      <a class="prev" href="/2013/01/15/product-consumer" title="前一篇：BlockingQueue实现生产者-消费者模式">&laquo; BlockingQueue实现生产者-消费者模式</a>
+      
+      
+      
+       
+      <a class="next" href="/2013/01/16/shell-monitor" title="后一篇：Shell脚本实现监控指定进程负载">Shell脚本实现监控指定进程负载 &raquo;</a>
+      
+      
+    </div>
+    
+    <!-- JiaThis Button BEGIN -->
+    <div class="jiathis_style" style="margin: 10px 10px 20px 0;padding: 10px 0 0;">
+      <span class="jiathis_txt">分享到：</span>
+      <a class="jiathis_button_qzone">QQ空间</a>
+      <a class="jiathis_button_tsina">新浪微博</a>
+      <a class="jiathis_button_tqq">腾讯微博</a>
+      <a class="jiathis_button_renren">人人网</a>
+      <a class="jiathis_button_googleplus">Google+</a>
+      <a href="http://www.jiathis.com/share?uid=1706288" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+      <a class="jiathis_counter_style"></a>
+    </div>
+    <script type="text/javascript">
+      var jiathis_config = {data_track_clickback:true};
+    </script>
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1343704647947962" charset="utf-8"></script>
+    <!-- JiaThis Button END -->
+ </div><!-- /post -->
+  <div class="cleared"></div>
+ 
+  <div class="archivesbox">
+    <b>版权声明：</b>自由转载-非商用-非衍生-保持署名 | <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">Creative Commons BY-NC-ND 3.0</a><br>
+    <b>原文网址：</b><a href="/2013/01/16/java-Unit-testing">http://demi-panda.com/2013/01/16/java-Unit-testing</a>
+  </div>
+
+  <div class="archivesbox">
+    <div class="comments">
+      <!-- Duoshuo Comment Begin -->
+      <div class="ds-thread" data-thread-id="201301161027" data-url="http://demi-panda.com/2013/01/16/java-Unit-testing" data-thread-key="201301161027" data-title="单元测试规范"
+        data-order="desc" data-form-positon="top"></div>
+      <!-- Duoshuo Comment End -->
+    </div>
+  </div>
+</div><!-- /content -->
+
+<div id="sidebar">
+    <ul> 
+        <li id="rss-feed" class="boxed widget ds-widget-qqt-follow">
+        <h2 class="widgettitle">RSS Feed</h2>
+            <a href="/rss.xml" target="_blank"><img src="/media/demi/img/feed.png"  alt="熊猫家族 RSS feed" border="0" title="Subscribe for Updates"></a>
+            熊猫家族-建设一个有家氛围的博客园
+        </li>
+        <li id="tag_cloud" class="boxed widget widget_tag_cloud">
+        <h2 class="widgettitle">分类目录</h2>
+        
+        
+        
+        
+        
+        <a href='/life' class='tag-link-30' title='Micro-life' style='font-size: 20pt;'>微生活(30)</a>
+        
+        
+        
+        
+        
+        <a href='/categories/linux' class='tag-link-34' title='Linux' style='font-size: 15pt;'>Uinx/Linux(34)</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+         
+        <a href='/practice' class='tag-link-78' title='Code' style='font-size: 14pt;'>研发实践(78)</a>
+        
+        
+        
+        
+        
+        
+        
+        
+         
+        <a href='/categories/java' class='tag-link-7' title='Java' style='font-size: 14pt;'>Java语言(7)</a>
+        
+        
+        
+        
+        
+        
+        
+        <a href='/categories/solr' class='tag-link-8' title='solr' style='font-size: 14pt;'>Lucene/Solr(8)</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </li>
+
+        <li id="tag_cloud" class="boxed widget widget_tag_cloud">
+        <h2 class="widgettitle">热门标签</h2>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#健康' class='tag-link-4' title='健康' style='font-size: 16pt;'>健康</a>
+        
+        
+        
+        <a href='/tags/#域名' class='tag-link-3' title='域名' style='font-size: 16pt;'>域名</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#生活' class='tag-link-6' title='生活' style='font-size: 16pt;'>生活</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Ubuntu' class='tag-link-16' title='Ubuntu' style='font-size: 16pt;'>Ubuntu</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#浏览器' class='tag-link-3' title='浏览器' style='font-size: 19pt;'>浏览器</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#梦想' class='tag-link-3' title='梦想' style='font-size: 16pt;'>梦想</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Linux' class='tag-link-37' title='Linux' style='font-size: 15pt;'>Linux</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#lucene' class='tag-link-10' title='lucene' style='font-size: 16pt;'>lucene</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#solr' class='tag-link-10' title='solr' style='font-size: 14pt;'>solr</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#美食星期天' class='tag-link-5' title='美食星期天' style='font-size: 25pt;'>美食星期天</a>
+        
+        
+        
+        <a href='/tags/#Shell' class='tag-link-30' title='Shell' style='font-size: 15pt;'>Shell</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#HTTP' class='tag-link-4' title='HTTP' style='font-size: 14pt;'>HTTP</a>
+        
+        
+        
+        
+        
+        <a href='/tags/#搜索引擎' class='tag-link-10' title='搜索引擎' style='font-size: 22pt;'>搜索引擎</a>
+        
+        
+        
+        <a href='/tags/#Google' class='tag-link-4' title='Google' style='font-size: 16pt;'>Google</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Python' class='tag-link-3' title='Python' style='font-size: 16pt;'>Python</a>
+        
+        
+        
+        <a href='/tags/#SSH' class='tag-link-3' title='SSH' style='font-size: 13pt;'>SSH</a>
+        
+        
+        
+        
+        
+        <a href='/tags/#Jekyll' class='tag-link-6' title='Jekyll' style='font-size: 16pt;'>Jekyll</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#互联网' class='tag-link-10' title='互联网' style='font-size: 19pt;'>互联网</a>
+        
+        
+        
+        
+        
+        <a href='/tags/#Subversion' class='tag-link-3' title='Subversion' style='font-size: 20pt;'>Subversion</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Java' class='tag-link-10' title='Java' style='font-size: 14pt;'>Java</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Github' class='tag-link-6' title='Github' style='font-size: 16pt;'>Github</a>
+        
+        
+        
+        <a href='/tags/#屏蔽' class='tag-link-3' title='屏蔽' style='font-size: 16pt;'>屏蔽</a>
+        
+        
+        
+        
+        
+        <a href='/tags/#vim' class='tag-link-5' title='vim' style='font-size: 13pt;'>vim</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Jenkins' class='tag-link-3' title='Jenkins' style='font-size: 17pt;'>Jenkins</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#研发实践' class='tag-link-11' title='研发实践' style='font-size: 22pt;'>研发实践</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </li>
+        <li id="recent-posts-2" class="boxed widget widget_recent_entries">		
+        <h2 class="widgettitle">近期文章</h2>	
+        <div id="hot_comment_post">
+            <ul>
+                 
+                <li>
+                <a href="/2013/01/31/solr-4-1-stored-fields-compression" title="Solr 4.1 特性-存储字段压缩">Solr 4.1 特性-存储字段压缩</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/30/top-8-sexy-ways-to-de-stress-during-the-holidays" title="在节假日,8大性感的解除压力的方法">在节假日,8大性感的解除压力的方法</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/29/programming-ides-for-ubuntu" title="Ubuntu 常用的编程开发环境IDEs">Ubuntu 常用的编程开发环境IDEs</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/28/2012-firefox-top10-add-ons" title="2012年Firefox TOP10 附加组件">2012年Firefox TOP10 附加组件</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/28/ubunut-setup-vpn-connection" title="Ubuntu/Linux 配置VPN连接">Ubuntu/Linux 配置VPN连接</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/27/postman-a-simple-image-uploading-application-for-ubuntu-linux-mint" title="Linux简单的图像上传工具Postman">Linux简单的图像上传工具Postman</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/27/image-to-text-converter-for-ubuntu-mint" title="Linux图像文本转换器（OCR）">Linux图像文本转换器（OCR）</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/27/download-monitor" title="Download Monitor监控上传和下载流量">Download Monitor监控上传和下载流量</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/26/java-parse-javascript" title="Java解析JavaScript数据">Java解析JavaScript数据</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/01/25/linux-kill-multi-process" title="Linux kill多个进程">Linux kill多个进程</a>
+                </li>
+                
+            </ul>
+        </div>
+
+        </li>
+        <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
+        <h2 class="widgettitle">热评文章</h2>
+        <div id="hot_comment_post">
+            <ul class="ds-top-threads" data-num-items="10" data-range="weekly"></ul>
+        </div>
+        </li>
+        <li id="ds-recent-comments" class="boxed widget ds-widget-recent-comments">
+        <h2 class="widgettitle">近期评论</h2>
+        <div id="hot_comment">
+            <ul class="ds-recent-comments" data-num-items="10" data-show-avatars="1" data-show-time="1" data-show-title="0" data-show-admin="0" data-avatar-size="32" data-excerpt-length="70">
+            </ul>
+        </div>
+        </li>
+        <li id="ds-qqt-follow" class="boxed widget ds-widget-qqt-follow">
+        <!--
+        <iframe src="http://follow.v.t.qq.com/index.php?c=follow&a=quick&name=denghp_280606790&style=1&t=1352387427769&f=1" frameborder="0" scrolling="auto" width="227" height="75" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
+        -->
+        <iframe width="300" height="190" frameborder="0" scrolling="no" src="http://widget.weibo.com/relationship/bulkfollow.php?language=zh_cn&uids=1655072963&wide=1" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
+        </li>
+
+        <li id="ds-recent-visitors-2" class="boxed widget ds-widget-recent-visitors">
+        <h2 class="widgettitle">最近访客</h2>
+        <ul class="ds-recent-visitors" data-num-items="20" data-show-time="0" data-avatar-size="50"></ul>
+        </li>
+        
+        <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
+        <h2 class="widgettitle">友情链接</h2>
+        <div id="hot_comment_post">
+            <ul>
+                
+                <li><a href="http://lusongsong.com/"target="_blank"  title="卢松松-关注站长和搜索引擎的IT博客">卢松松</a></li>
+                
+                <li><a href="http://www.muchangqing.com/"target="_blank"  title="牟长青-牟长青的网站推广博客">牟长青</a></li>
+                
+                <li><a href="http://coolshell.cn/"target="_blank"  title="酷壳-享受编程和技术所带来的快乐">酷壳</a></li>
+                
+                <li><a href="http://yanping.me/"target="_blank"  title="雁起平沙-雁起平沙的网络日志">雁起平沙</a></li>
+                
+                <li><a href="http://www.letuknowit.com/"target="_blank"  title="知蚁博客">知蚁博客</a></li>
+                
+                <li><a href="http://www.zhangyuchang.com/"target="_blank"  title="不纯粹文人-不经一番寒彻骨，哪得梅花扑鼻香">不纯粹文人</a></li>
+                
+                <li><a href="http://chenpeng.info/"target="_blank"  title="陈鹏个人博客">陈鹏个人博客</a></li>
+                
+                <li><a href="http://www.kandisheng.com/"target="_blank"  title="不霁何虹博客">不霁何虹博客</a></li>
+                
+                <li><a href="http://blog.jobbole.com/"target="_blank"  title="伯乐在线">伯乐在线</a></li>
+                
+            </ul> 
+        </div>
+        </li>
+        
+    </ul>
+</div>
+<!-- /sidebar -->
+<div class="cleared"></div>
+
+
+
+
+  
+            </div> 
+        </div> <!-- wrapper -->
+        
+        <!-- scroll.html -->
+        <div id="full" style="display:none;width:50px; height:95px; position:fixed; left:50%; top:480px; margin-left:425px;  z-index:100; text-align:center; cursor:pointer;">
+    <a><img src="http://demi-panda.com/media/demi/img/back-top.png" border=0 alt="返回顶部" title="返回顶部"></a>
+</div>
+<script type="text/javascript">
+    var isie6 = window.XMLHttpRequest ? false : true; function newtoponload() { var c = document.getElementById("full"); function b() { var a = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop; if (a > 0) { if (isie6) { c.style.display = "none"; clearTimeout(window.show); window.show = setTimeout(function () { var d = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop; if (d > 0) { c.style.display = "block"; c.style.top = (480 + d) + "px" } }, 400) } else { c.style.display = "block" } } else { c.style.display = "none" } } if (isie6) { c.style.position = "absolute" } window.onscroll = b; b() } if (window.attachEvent) { window.attachEvent("onload", newtoponload) } else { window.addEventListener("load", newtoponload, false) } document.getElementById("full").onclick = function () { window.scrollTo(0, 0) };
+</script>
+
+
+
+
+       
+        <!-- footer -->
+        <footer>
+<div id="footer">                                          
+  <p class="t-center" style='font-size: 10pt;'>
+  &copy; 2012 <a href="/">Demi Panda Lab</a>, All Rights Reserved.
+
+  <script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9ed8ee65a576b9495a4d989eabbd4c09' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+
+  <script src="http://s14.cnzz.com/stat.php?id=4734788&web_id=4734788&show=pic" language="JavaScript"></script>
+  </p>
+  </div> 
+</footer>
+
+ 
+        <script type="text/javascript">
+            var duoshuoQuery = {short_name:"demi-panda"};
+(function() {
+ var ds = document.createElement('script');
+ ds.type = 'text/javascript';ds.async = true;
+ ds.src = 'http://static.duoshuo.com/embed.js';
+ ds.charset = 'UTF-8';
+ (document.getElementsByTagName('head')[0] 
+  || document.getElementsByTagName('body')[0]).appendChild(ds);
+ })();
+</script>  
+
+
+<script type="text/javascript">
+    $(window).load(function(){
+            $("pre").addClass("prettyprint");
+            prettyPrint();
+            })
+        </script>
+
+        <script language="javascript">
+            $.fn.tagcloud.defaults = {
+                size: {start: 0.9, end: 2, unit: 'em'},
+                color: {start: '#e77471', end: '#f62817'}
+            };
+
+            $(function () {
+                $('#tagcloud a').tagcloud();
+            });
+        </script>  
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-36197302-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+             })();
+
+         </script>
+         <script type='text/javascript' src='http://demi-panda.com/media/js/jquery.prettyPhoto-3.4.2.js'></script>
+         <script type='text/javascript' src='http://demi-panda.com/media/js/themify.script-3.4.2.js'></script> 
+     </body>
+ </html>
+
