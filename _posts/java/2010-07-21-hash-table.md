@@ -3,6 +3,7 @@ layout: post
 title: 谈谈 Hash Table
 categories:
 - Code
+- Java
 tags:
 - Java
 UUID: 20100721

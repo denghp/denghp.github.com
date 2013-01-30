@@ -3,6 +3,7 @@ layout: post
 title: ConcurrentHashMap原理分析
 categories:
 - Code
+- Java
 tags:
 - Java
 UUID: 20100728

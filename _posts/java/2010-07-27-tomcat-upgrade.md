@@ -3,8 +3,10 @@ layout: post
 title: Tomcat升级
 categories:
 - Code
+- Java
 tags:
 - Java
+- tomcat
 UUID: 20100727
 ---
 

@@ -29,7 +29,7 @@ Firebug中有很多有用的功能（编辑，调试，监控在现场模式下�
 <img src="{{site.url}}/media/pub/web/Color-Tools.png" width="330px"  alt="Color-Tools" class="img-center" />
 </a>
 
-<a href="" alt="Download Rainbow Color Tools" target="_bank">
+<a href="https://addons.mozilla.org/en-US/firefox/addon/rainbow-color-tools/" alt="Download Rainbow Color Tools" target="_bank">
 Download Rainbow Color Tools</a>
 
 ###TOP 3 Wappalyzer
