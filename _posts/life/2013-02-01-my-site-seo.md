@@ -7,6 +7,7 @@ tags:
 - 总结
 categories:
 - Micro-life
+- topic
 UUID: 20130201003700
 date: 2013-02-01 00:37:00
 show_img: "/media/pub/life/pub/demi-panda-seo.jpg"
