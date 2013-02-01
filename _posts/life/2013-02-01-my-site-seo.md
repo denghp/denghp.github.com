@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 熊猫家族博客终于被百度收录啦
+title: 博客终于被百度收录啦
 tags: 
 - 生活
 - 博客
