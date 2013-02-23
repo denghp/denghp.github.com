@@ -32,14 +32,14 @@ title: 熊猫吃货-最懂吃货的心、寻找心中的味道
             <p>
             {% if post.show_img %}
             <a href="{{post.url}}" title="{{post.title}}">
-                <img src="{{post.show_img}}" alt="Black Cube Theme"  width="240px" height="140px" class="img-right"></img></a>
+                <img src="{{post.show_img}}" alt="{{post.title}}"  width="240px" height="140px" class="img-right"></img></a>
             {% endif %}
             {{ post.description }}</p>
             {% else %}
             <p>
             {% if post.show_img %}
             <a href="{{post.url}}" title="{{post.title}}">
-                <img src="{{post.show_img}}" alt="Black Cube Theme"  width="240px" height="140px" class="img-right"></img></a>
+                <img src="{{post.show_img}}" alt="{{post.title}}"  width="240px" height="140px" class="img-right"></img></a>
             {% endif %}
             {{ post.content | strip_html | truncatewords: 2 }}</p>
             {% endif %}
