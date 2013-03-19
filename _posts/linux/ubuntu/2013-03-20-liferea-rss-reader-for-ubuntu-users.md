@@ -33,6 +33,7 @@ $ sudo apt-get install liferea
 </pre>
 
 自定义Liferea
+
 <a href="{{site.url}}/media/pub/linux/liferea-settings.jpg" alt="liferea" rel="prettyPhoto[{{page.UUID}}]">
 <img src="{{site.url}}/media/pub/linux/liferea-settings.jpg" width="560px"  alt="liferea" />
 </a>
