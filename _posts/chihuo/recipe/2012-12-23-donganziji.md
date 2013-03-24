@@ -2,7 +2,7 @@
 layout: post
 title: 东安子鸡-家乡名菜(湘菜)
 tags: 
-- 美食星期天
+- 熊猫厨房
 - 东安
 - 子鸡
 categories:

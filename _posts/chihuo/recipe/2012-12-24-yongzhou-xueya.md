@@ -2,7 +2,7 @@
 layout: post
 title: 永州血鸭-家乡名菜(湘菜)
 tags: 
-- 美食星期天
+- 熊猫厨房
 - 永州
 - 血鸭
 categories:
