@@ -69,7 +69,7 @@ layout: default-post
  
   <div class="archivesbox">
     <b>版权声明：</b>自由转载-非商用-非衍生-保持署名 | <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">Creative Commons BY-NC-ND 3.0</a><br>
-    <b>原文网址：</b><a href="{{page.url}}">{{site.url}}{{page.url}}</a>
+    <b>原文网址：</b><a href="{% if page.source_url %}{{page.source_url}}{% else %}{{page.url}}{% endif%}">{% if page.source_url %}{{page.source_url}}{% else %}{{site.url}}{{page.url}}{% endif %}</a>
   </div>
 
   <div class="archivesbox">

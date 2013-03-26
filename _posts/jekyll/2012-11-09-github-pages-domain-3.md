@@ -8,6 +8,7 @@ tags:
 categories:
 - www
 UUID: 201211092023
+source_url: "http://yanping.me/cn/blog/2012/02/06/github-pages-domain-3/"
 ---
 
 之前我写过<a href="{{site.baseurl}}/2012/11/09/github-pages-domain/" target="_blank">浅谈github页面域名绑定</a>和<a href="/2012/11/09/github-pages-domain-2/" target="_blank">再谈github页面域名绑定</a>，在后文提到的域名跳转方法是错的。本文提供了一种正确的方法。

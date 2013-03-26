@@ -7,6 +7,7 @@ tags:
 categories:
 - www
 UUID: 201211092220
+source_url: "http://yanping.me/cn/blog/2011/12/26/github-pages-domain-2/"
 ---
 
 <p>之前我写过一篇<a href="{{site.url}}/2012/11/09/github-pages-domain/" target="_blank">浅谈github页面域名绑定</a>，现在一直困扰我的问题终于解决了。</p>

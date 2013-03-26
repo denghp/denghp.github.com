@@ -7,6 +7,7 @@ tags:
 categories:
 - www
 UUID: 201211092323
+source_url: "http://yanping.me/cn/blog/2011/12/04/github-pages-domain/"
 ---
 
 <p>前段时间看到COS上的各位都有博客，也想开个博，给COS的各位管理员发邮件，向他们请教如何开个像怡轩和太云那样的博客，思喆兄说要向益辉申请空间和cos的二级域名。无奈老大太忙，迟迟没有给我分配空间和域名，只是某次提到有个叫<a target="_blank" href="http://github.com">github</a>的东西，可以在上面建网页，还可以写博客，写博客还可以不用网络哦亲，只要在本地写好，哪天有网络了就一个push过去哦亲，so fashion！<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>于是我又给他写了很多邮件，向他请教如何使用该系统，结果，他还是不回复。得，自己研究吧。</p>
