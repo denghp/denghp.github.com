@@ -10,7 +10,7 @@ categories:
 - Linux
 UUID: 20130409001000
 date: 2013-04-09 00:10:00
-show_img: "/media/pub/linux/fstab-inf.jpg"
+show_img: "/media/pub/linux/fstab-info.jpg"
 ---
 
 在64位Ubuntu 12.04以后的版本中,ntfs写入支持程序,不能正常运行。所以想ubuntu自动挂载ntfs分区就要手动编辑/etc/fstab 文件。  /etc/fstab包含了挂在磁盘的必要信息，在系统启动时读入。
