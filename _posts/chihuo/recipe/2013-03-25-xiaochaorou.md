@@ -89,13 +89,13 @@ date: 2013-03-25 00:10:00
    <li class="methods">
    <span class="step">Step 5</span>
    <p class="desc">
-   放入肉片炒。肉炒变色后，加入老抽、豆豉爆炒装出备用。
+   放入肉片炒。肉炒变色后，加入老抽、豆豉、辣椒爆炒。
    </p>
    </li>
    <li class="methods">
    <span class="step">Step 6</span>
    <p class="desc">
-    最后倒入肉片炒，加盐、味精、胡椒粉快速炒匀出锅。
+    最后加盐、味精、胡椒粉快速炒匀出锅。
    </p>
    </li>
    </ul>
