@@ -19,6 +19,25 @@ UUID: 201211122255
 这里写一下配置的过程。
 假设有A机器和B机器，A机器通过非密码的方式登录B机器，
 
+###要应用RSA或者DSA认证，我们需要执行以下步骤：
+1.把公用密钥拷贝到remote-host。
+
+2.公用密钥为remotebox的sshd能够定位它存放在一个专门的文件里，这个位置就是网上大部分文章说的~/.ssh/authorized_keys
+
+3.用户进行RSA登录，在localbox的控制台键入ssh user_name@remote-host
+
+4.ssh告诉remote-host的sshd，localbox请求RSA认证。
+
+5.remote-host的sshd生成一个随机的数，用公共密钥进行加密。
+
+6.sshd把加密的随机数发送给locolhost上的ssh
+
+7.ssh利用专用密钥进行解密，解密出随机数并发送给remotebox
+
+8.remote-host知道locolhost拥有能够解密的专用密钥，sshd允许localhost登录。
+
+9.localhost被授权访问remote-host，连接建立。
+
 ### 1.生成密钥对
 
 这个时候我们来到A机器进行相关操作
