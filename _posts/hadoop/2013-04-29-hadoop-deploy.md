@@ -20,7 +20,7 @@ show_img: "/media/pub/linux/hadoop-logo.jpg"
 最近有对hadoop进行简单研究，为了以后方便，把简单的伪分布式环境搭建给记录下来：
 
 ###硬件、软件准备
-Ubuntu10.04，Java环境
+Ubuntu12.04，Java环境
 
 ###安装过程
 1、安装ssh、设置免密码登录
