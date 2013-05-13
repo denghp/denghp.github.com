@@ -23,11 +23,11 @@ layout: default
 <div id="cols3" class="box">
     <div class="col">
         <div class="ption">
-            <span><h3>微生活</h3>共有{{ site.categories.Micro-life | size }}篇</span>
+            <span><h3>微生活</h3>共有{{ site.categories.life | size }}篇</span>
             <span style="float:right;margin-right:10px;" ><a href="/life" rel="bookmark" title="更多[微生活]的文章">更  多</a></span>
         </div>
         <ul class="ul-list nomb">
-            {% for post in site.categories.Micro-life limit:10 %}
+            {% for post in site.categories.life limit:10 %}
             <li><span class="date">
                 [ <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%m/%d" }}</time> ]</span> 
             {% if post.short_title %}
@@ -42,14 +42,14 @@ layout: default
 
     <div class="col">
         <div class="ption">
-            <span><h3>研发实践</h3>共有{{ site.categories.Code | size }}篇</span>
+            <span><h3>研发实践</h3>共有{{ site.categories.code | size }}篇</span>
             <span style="float:right;margin-right:10px;" ><a href="{{site.baseurl}}/practice" rel="bookmark" title="更多[研发实践]的文章">更  多</a></span>       
             <!--
             <span class="archive_more"><a href="/practice/" rel="bookmark" title="更多[研发实践]的文章">更  多</a></span>
             -->
         </div>
         <ul class="ul-list nomb">
-            {% for post in site.categories.Code limit:10 %}
+            {% for post in site.categories.code limit:10 %}
             <li><span class="date">
                 [ <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%m/%d" }}</time> ]</span> 
             {% if post.short_title %}
