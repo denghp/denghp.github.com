@@ -4,7 +4,7 @@ title: Check Memory With Cron Job
 categories:
 - code
 tags:
-- Shell
+- shell
 - Job
 - Memory
 UUID: 20110113

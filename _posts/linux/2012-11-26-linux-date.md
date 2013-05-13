@@ -3,7 +3,7 @@ layout: post
 title: Linux命令 date详解
 tags: 
 - linux
-- Shell
+- shell
 - date详解
 categories:
 - code

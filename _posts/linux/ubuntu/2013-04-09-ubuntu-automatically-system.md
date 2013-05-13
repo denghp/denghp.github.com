@@ -2,7 +2,7 @@
 layout: post
 title: Ubuntu 开机自动挂载分区
 tags: 
-- Shell
+- shell
 - Ubuntu
 - linux
 categories:

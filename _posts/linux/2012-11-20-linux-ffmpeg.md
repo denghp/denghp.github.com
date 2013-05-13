@@ -4,7 +4,7 @@ title: Linux下的命令行下转换媒体格式工具FFMPEG详解
 short_title: 媒体格式工具FFMPEG详解
 tags: 
 - linux
-- Shell
+- shell
 - ffmpeg
 categories:
 - linux

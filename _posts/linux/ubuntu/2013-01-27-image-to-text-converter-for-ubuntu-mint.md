@@ -2,7 +2,7 @@
 layout: post
 title: Linux图像文本转换器（OCR）
 tags: 
-- Shell
+- shell
 - Ubuntu
 - linux
 - OCR

@@ -3,7 +3,7 @@ layout: post
 title: Linux Feed Reader —— Linux用户最好的阅读器
 short_title: Linux Feed Reader
 tags: 
-- Shell
+- shell
 - Ubuntu
 - linux
 - Download

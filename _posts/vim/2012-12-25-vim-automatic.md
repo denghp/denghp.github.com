@@ -5,7 +5,7 @@ tags:
 - vim
 - 自动补全
 - 插件
-- Shell
+- shell
 categories:
 - code
 show_img: "/media/pub/linux/vim_logo.png"

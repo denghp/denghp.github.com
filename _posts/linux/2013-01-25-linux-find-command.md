@@ -2,7 +2,7 @@
 layout: post
 title: Linux 下使用find命令查找最近修改文件
 tags: 
-- Shell
+- shell
 - find
 - linux
 - 研发实践

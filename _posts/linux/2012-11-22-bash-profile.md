@@ -3,7 +3,7 @@ layout: post
 title: .bash_profile .bashrc profile 文件的作用的执行顺序
 tags: 
 - linux
-- Shell
+- shell
 - bashrc
 - profile
 - bash_profile

@@ -3,7 +3,7 @@ layout: post
 title: "Linux ulimit 设置"
 tags: 
 - linux
-- Shell
+- shell
 comment: true
 published: true
 author: demi-panda

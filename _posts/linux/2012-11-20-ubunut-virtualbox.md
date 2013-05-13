@@ -3,7 +3,7 @@ layout: post
 title: Ubuntu 中VirtualBox 使用U盾
 tags: 
 - Ubuntu 
-- Shell
+- shell
 - VirtualBox
 - U盾
 categories:

@@ -3,7 +3,7 @@ layout: post
 title: Linux下GBK->UTF-8文件编码批量转换命令
 short_title: Linux下文件编码批量转换命令
 tags: 
-- Shell
+- shell
 - Ubuntu
 - UTF-8
 - GBK

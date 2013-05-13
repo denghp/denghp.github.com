@@ -2,7 +2,7 @@
 layout: post
 title: Ubuntu 下如何找回密码？
 tags: 
-- Shell
+- shell
 - Ubuntu
 - linux
 categories:

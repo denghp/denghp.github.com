@@ -2,7 +2,7 @@
 layout: post
 title: Linux下常用的编辑器
 tags: 
-- Shell
+- shell
 - 编辑器
 - vim
 - Emacs

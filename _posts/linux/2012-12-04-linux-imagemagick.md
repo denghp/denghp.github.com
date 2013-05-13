@@ -4,7 +4,7 @@ title: Linux图片处理工具imagemagick使用方法
 short_title: imagemagick使用方法
 tags: 
 - linux
-- Shell
+- shell
 - imagemagick
 - linux图片处理工具
 categories:

@@ -2,7 +2,7 @@
 layout: post
 title: Linux kill多个进程
 tags: 
-- Shell
+- shell
 - kill
 - linux
 - 进程

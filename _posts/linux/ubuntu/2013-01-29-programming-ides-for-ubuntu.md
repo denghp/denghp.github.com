@@ -2,7 +2,7 @@
 layout: post
 title: Ubuntu 常用的编程开发环境IDEs
 tags: 
-- Shell
+- shell
 - Ubuntu
 - linux
 - IDE

@@ -2,7 +2,7 @@
 layout: post
 title: Ubuntu root 权限详解
 tags: 
-- Shell
+- shell
 - Ubuntu
 - linux
 categories:

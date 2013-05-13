@@ -2,7 +2,7 @@
 layout: post
 title: whereis,which输出命令的位置
 tags: 
-- Shell
+- shell
 - Ubuntu
 - linux
 categories:

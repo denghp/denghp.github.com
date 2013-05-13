@@ -4,7 +4,7 @@ title: SSH登陆响应慢的问题
 tags: 
 - SSH
 - linux
-- Shell
+- shell
 categories:
 - linux
 UUID: 201211212334

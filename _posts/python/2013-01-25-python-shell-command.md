@@ -4,7 +4,7 @@ title: python 调用Linux的Shell命令
 tags: 
 - Python
 - linux
-- Shell
+- shell
 - 研发实践
 categories:
 - code

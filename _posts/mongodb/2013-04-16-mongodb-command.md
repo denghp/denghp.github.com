@@ -2,7 +2,7 @@
 layout: post
 title: Mongodb 安装及常用命令
 tags: 
-- Shell 
+- shell 
 - Mongodb
 categories:
 - code

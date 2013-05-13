@@ -2,7 +2,7 @@
 layout: post
 title: Linux 重设日期和时间的方法
 tags: 
-- Shell
+- shell
 - Ubuntu
 - linux
 categories:

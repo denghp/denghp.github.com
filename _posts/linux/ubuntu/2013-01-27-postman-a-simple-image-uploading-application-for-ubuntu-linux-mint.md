@@ -2,7 +2,7 @@
 layout: post
 title: Linux简单的图像上传工具Postman
 tags: 
-- Shell
+- shell
 - Ubuntu
 - linux
 - OCR

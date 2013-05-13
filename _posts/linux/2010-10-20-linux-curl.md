@@ -2,7 +2,7 @@
 layout: post
 title: Linux curl 详解 
 tags: 
-- Shell
+- shell
 - linux
 categories:
 - linux

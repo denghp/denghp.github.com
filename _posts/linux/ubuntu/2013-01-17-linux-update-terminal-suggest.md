@@ -2,7 +2,7 @@
 layout: post
 title: Linux下如何修改终端提示符？
 tags: 
-- Shell
+- shell
 - Ubuntu
 - linux
 - Centos6

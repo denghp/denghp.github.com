@@ -2,7 +2,7 @@
 layout: post
 title: Download Monitor监控上传和下载流量
 tags: 
-- Shell
+- shell
 - Ubuntu
 - linux
 - Download

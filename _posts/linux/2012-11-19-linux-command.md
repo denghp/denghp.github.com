@@ -3,7 +3,7 @@ layout: post
 title: 程序员的利器-Linux常用命令
 tags: 
 - linux
-- Shell
+- shell
 - 编程语言
 categories:
 - linux

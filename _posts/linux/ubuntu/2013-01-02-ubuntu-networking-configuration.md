@@ -2,7 +2,7 @@
 layout: post
 title: 使用命令行配置Ubuntu Networking
 tags: 
-- Shell
+- shell
 - Ubuntu
 - Networking
 categories:

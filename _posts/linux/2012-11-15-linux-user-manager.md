@@ -3,7 +3,7 @@ layout: post
 title: "Linux 创建用户"
 tags: 
 - linux
-- Shell
+- shell
 - 创建用户
 comment: true
 published: true

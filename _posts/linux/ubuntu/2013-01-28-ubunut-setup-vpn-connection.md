@@ -2,7 +2,7 @@
 layout: post
 title: Ubuntu/Linux 配置VPN连接
 tags: 
-- Shell
+- shell
 - Ubuntu
 - linux
 - VPN

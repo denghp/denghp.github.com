@@ -3,7 +3,7 @@ layout: post
 title: Linux find命令实践
 tags: 
 - linux
-- Shell
+- shell
 categories:
 - linux
 UUID: 201211221050

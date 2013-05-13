@@ -2,7 +2,7 @@
 layout: post
 title: Shell脚本实现监控指定进程负载
 tags: 
-- Shell
+- shell
 - 监控
 - linux
 - 研发实践
