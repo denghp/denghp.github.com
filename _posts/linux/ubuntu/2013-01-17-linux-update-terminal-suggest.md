@@ -4,11 +4,11 @@ title: Linux下如何修改终端提示符？
 tags: 
 - Shell
 - Ubuntu
-- Linux
+- linux
 - Centos6
 categories:
 - code
-- Linux
+- linux
 UUID: 201301171127
 ---
 

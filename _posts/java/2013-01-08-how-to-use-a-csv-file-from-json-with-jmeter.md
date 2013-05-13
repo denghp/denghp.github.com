@@ -10,7 +10,7 @@ tags:
 - CSV
 categories:
 - code
-- Java
+- java
 UUID: 201301081427
 description: Apache JMeter( http://jakarta.apache.org/jmeter/ )是来自 Apache Jakarta 项目的一个压力测试工具, 目前版本2.0.3, JMeter 支持 HTTP, FTP, SOAP/XML-RPC, JDBC 等多种目标的压力测试。 最近在工作中实现了一个webservice，支持json的post请求，使用JMeter来进行压力测试显得就非常简单啦。
 ---

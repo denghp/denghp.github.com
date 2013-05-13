@@ -3,9 +3,9 @@ layout: post
 title: Linux curl 详解 
 tags: 
 - Shell
-- Linux
+- linux
 categories:
-- Linux
+- linux
 - code
 UUID: 201010201136
 date: 2010-10-20

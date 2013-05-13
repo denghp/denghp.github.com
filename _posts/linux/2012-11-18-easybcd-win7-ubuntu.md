@@ -3,13 +3,13 @@ layout: post
 title: Win7 + Ubuntu12.04 + EasyBCD安装
 tags: 
 - OS
-- Linux
+- linux
 - Ubuntu
 - EasyBCD
 - Windows7
 categories:
 - OS
-- Linux
+- linux
 UUID: 201211182243
 date: 2012-11-18
 ---

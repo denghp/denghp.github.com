@@ -4,11 +4,11 @@ title: Shell脚本实现监控指定进程负载
 tags: 
 - Shell
 - 监控
-- Linux
+- linux
 - 研发实践
 categories:
 - code
-- Linux 
+- linux 
 UUID: 201301160023
 ---
 

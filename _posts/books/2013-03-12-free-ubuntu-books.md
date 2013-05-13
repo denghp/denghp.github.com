@@ -4,10 +4,10 @@ title: 免费的ubuntu电子书
 tags: 
 - Ubuntu
 - 电子书
-- Linux
+- linux
 categories:
 - code
-- Linux 
+- linux 
 UUID: 20130312001000
 date: 2013-03-12 00:10:00
 show_img: "/media/pub/books/w_ubun04c.gif"

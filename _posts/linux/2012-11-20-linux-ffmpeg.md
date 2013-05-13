@@ -3,11 +3,11 @@ layout: post
 title: Linux下的命令行下转换媒体格式工具FFMPEG详解 
 short_title: 媒体格式工具FFMPEG详解
 tags: 
-- Linux
+- linux
 - Shell
 - ffmpeg
 categories:
-- Linux
+- linux
 UUID: 201211201849
 date: 2012-11-20
 ---

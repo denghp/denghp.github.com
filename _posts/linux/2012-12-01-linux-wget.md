@@ -3,10 +3,10 @@ layout: post
 title: Linux wget 详解 
 tags: 
 - Ubuntu
-- Linux
+- linux
 - wget详解
 categories:
-- Linux
+- linux
 - code
 UUID: 201212011036
 date: 2012-12-01

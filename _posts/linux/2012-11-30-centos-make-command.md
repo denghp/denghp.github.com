@@ -3,10 +3,10 @@ layout: post
 title: CentOS Make Command not Found
 tags: 
 - CentOS
-- Linux
+- linux
 - Make
 categories:
-- Linux
+- linux
 - code
 UUID: 20121130236
 date: 2012-11-30

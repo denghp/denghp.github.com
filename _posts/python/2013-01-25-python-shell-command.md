@@ -3,7 +3,7 @@ layout: post
 title: python 调用Linux的Shell命令
 tags: 
 - Python
-- Linux
+- linux
 - Shell
 - 研发实践
 categories:

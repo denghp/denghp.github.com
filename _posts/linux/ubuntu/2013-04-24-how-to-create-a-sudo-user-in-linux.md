@@ -4,10 +4,10 @@ title: Linux 创建sudo用户权限
 tags: 
 - Shell
 - Ubuntu
-- Linux
+- linux
 categories:
 - code
-- Linux
+- linux
 UUID: 20130424001000
 date: 2013-04-24 00:10:00
 show_img: "/media/pub/linux/create-user-sudo.jpg"

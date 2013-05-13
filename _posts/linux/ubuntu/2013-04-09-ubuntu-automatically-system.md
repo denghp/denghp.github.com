@@ -4,10 +4,10 @@ title: Ubuntu 开机自动挂载分区
 tags: 
 - Shell
 - Ubuntu
-- Linux
+- linux
 categories:
 - code
-- Linux
+- linux
 UUID: 20130409001000
 date: 2013-04-09 00:10:00
 show_img: "/media/pub/linux/fstab-info.jpg"

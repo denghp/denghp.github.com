@@ -4,12 +4,12 @@ title: Linux图像文本转换器（OCR）
 tags: 
 - Shell
 - Ubuntu
-- Linux
+- linux
 - OCR
 - 图像文本转换器
 categories:
 - code
-- Linux
+- linux
 UUID: 20130127103000
 date: 2013-01-27 10:30:00
 ---

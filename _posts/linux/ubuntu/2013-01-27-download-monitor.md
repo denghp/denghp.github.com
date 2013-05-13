@@ -4,12 +4,12 @@ title: Download Monitor监控上传和下载流量
 tags: 
 - Shell
 - Ubuntu
-- Linux
+- linux
 - Download
 - Monitor
 categories:
 - code
-- Linux
+- linux
 - topic
 UUID: 20130127013000
 date: 2013-01-27 01:30:00

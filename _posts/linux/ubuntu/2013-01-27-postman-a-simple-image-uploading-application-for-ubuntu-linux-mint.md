@@ -4,12 +4,12 @@ title: Linux简单的图像上传工具Postman
 tags: 
 - Shell
 - Ubuntu
-- Linux
+- linux
 - OCR
 - 图像文本转换器
 categories:
 - code
-- Linux
+- linux
 UUID: 20130127113500
 date: 2013-01-27 11:35:00
 show_img: "/media/pub/linux/postman.jpg"

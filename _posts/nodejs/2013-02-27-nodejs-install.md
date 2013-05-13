@@ -3,11 +3,11 @@ layout: post
 title: Nodejs认识及简单使用
 tags: 
 - Nodejs
-- Linux
+- linux
 - 研发实践
 categories:
 - code
-- Linux 
+- linux 
 - topic
 UUID: 20130227002300
 date: 2013-02-27 00:10:00

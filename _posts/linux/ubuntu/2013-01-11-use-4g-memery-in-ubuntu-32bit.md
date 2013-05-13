@@ -4,10 +4,10 @@ title: Ubuntu32位使用4G内存的解决方案
 tags: 
 - Shell
 - Ubuntu
-- Linux
+- linux
 categories:
 - code
-- Linux
+- linux
 UUID: 201301111027
 ---
 

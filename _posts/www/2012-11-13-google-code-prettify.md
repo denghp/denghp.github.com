@@ -6,7 +6,7 @@ tags:
 comment: true
 published: true
 categories:
-- JavaScript
+- javaScript
 UUID: 201211130032
 date: 2012-11-13
 ---

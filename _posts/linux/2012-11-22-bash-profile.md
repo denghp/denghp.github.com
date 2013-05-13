@@ -2,13 +2,13 @@
 layout: post
 title: .bash_profile .bashrc profile 文件的作用的执行顺序
 tags: 
-- Linux
+- linux
 - Shell
 - bashrc
 - profile
 - bash_profile
 categories:
-- Linux
+- linux
 UUID: 201211220950
 date: 2012-11-22
 ---

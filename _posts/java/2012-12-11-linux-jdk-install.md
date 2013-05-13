@@ -3,10 +3,10 @@ layout: post
 title: Centos 6.6 Linux 安装JDK
 tags: 
 - JDK
-- Linux
+- linux
 - Shell
 categories:
-- Java
+- java
 - code
 UUID: 201003171527
 ---

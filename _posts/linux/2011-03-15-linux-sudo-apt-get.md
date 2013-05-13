@@ -2,10 +2,10 @@
 layout: post
 title: sudo apt-get 命令大全
 categories:
-- Linux
+- linux
 tags:
 - 安全
-- Linux
+- linux
 - apt-get
 UUID: 201103152255
 ---

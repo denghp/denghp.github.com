@@ -2,10 +2,10 @@
 layout: post
 title: Linux find命令实践
 tags: 
-- Linux
+- linux
 - Shell
 categories:
-- Linux
+- linux
 UUID: 201211221050
 date: 2012-11-22
 ---

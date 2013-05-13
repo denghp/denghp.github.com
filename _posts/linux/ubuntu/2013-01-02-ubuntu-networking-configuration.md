@@ -6,7 +6,7 @@ tags:
 - Ubuntu
 - Networking
 categories:
-- Linux
+- linux
 UUID: 201301021027
 ---
 

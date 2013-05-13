@@ -2,11 +2,11 @@
 layout: post
 title: 程序员的利器-Linux常用命令
 tags: 
-- Linux
+- linux
 - Shell
 - 编程语言
 categories:
-- Linux
+- linux
 - code
 UUID: 201211190944
 date: 2012-11-19

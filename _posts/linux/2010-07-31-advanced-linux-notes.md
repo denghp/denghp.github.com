@@ -3,9 +3,9 @@ layout: post
 title: Linux培训笔记
 categories:
 - OS
-- Linux
+- linux
 tags:
-- Linux
+- linux
 UUID: 20100731
 ---
 

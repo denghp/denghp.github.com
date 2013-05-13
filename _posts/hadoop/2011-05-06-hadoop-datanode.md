@@ -3,10 +3,10 @@ layout: post
 title: Hadoop 动态添加节点datanode及tasktracker
 tags: 
 - CentOS
-- Linux
+- linux
 - Hadoop
 categories:
-- Linux
+- linux
 - Hadoop
 - code
 UUID: 201105061236

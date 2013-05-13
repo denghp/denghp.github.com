@@ -4,10 +4,10 @@ title: Ubuntu root 权限详解
 tags: 
 - Shell
 - Ubuntu
-- Linux
+- linux
 categories:
 - code
-- Linux
+- linux
 UUID: 201301171027
 ---
 

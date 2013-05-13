@@ -4,10 +4,10 @@ title: whereis,which输出命令的位置
 tags: 
 - Shell
 - Ubuntu
-- Linux
+- linux
 categories:
 - code
-- Linux
+- linux
 UUID: 20130224012700
 date: 2013-02-24 01:27:00
 show_img: "/media/pub/linux/whereis-images.jpg"

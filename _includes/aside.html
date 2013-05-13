@@ -11,11 +11,11 @@
         {% if cat[1].size >= 5 %}
         {% if cat[0] == 'code' %} 
         <a href='{{ site.baseurl }}/practice' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>研发实践({{cat[1].size}})</a>
-        {% elsif cat[0] == 'Java' %} 
+        {% elsif cat[0] == 'java' %} 
         <a href='{{ site.baseurl }}/categories/java' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>Java语言({{cat[1].size}})</a>
         {% elsif cat[0] == 'solr' %}
         <a href='{{ site.baseurl }}/categories/solr' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>Lucene/Solr({{cat[1].size}})</a>
-        {% elsif cat[0] == 'Linux' %}
+        {% elsif cat[0] == 'linux' %}
         <a href='{{ site.baseurl }}/categories/linux' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>Uinx/Linux({{cat[1].size}})</a>
         {% elsif cat[0] == 'life' %}
         <a href='{{ site.baseurl }}/life' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>微生活({{cat[1].size}})</a>

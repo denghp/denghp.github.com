@@ -10,7 +10,7 @@ tags:
 - 编码转换
 categories:
 - code
-- Linux
+- linux
 UUID: 201301121027
 ---
 

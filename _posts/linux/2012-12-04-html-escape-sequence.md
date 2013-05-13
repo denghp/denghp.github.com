@@ -3,9 +3,9 @@ layout: post
 title: HTML JavaScript 转义字符
 tags: 
 - HTML
-- JavaScript
+- javaScript
 categories:
-- JavaScript
+- javaScript
 - Web
 UUID: 201212041832
 date: 2012-12-04

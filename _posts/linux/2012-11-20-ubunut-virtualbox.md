@@ -7,7 +7,7 @@ tags:
 - VirtualBox
 - U盾
 categories:
-- Linux
+- linux
 UUID: 201211201834
 date: 2012-11-20
 ---

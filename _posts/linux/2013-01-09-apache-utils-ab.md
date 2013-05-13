@@ -4,7 +4,7 @@ title: Linux常用的压力测试工具Apache-ab
 tags: 
 - ab
 - Apache
-- Linux
+- linux
 - 压力测试
 categories:
 - code

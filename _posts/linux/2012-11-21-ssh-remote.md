@@ -3,10 +3,10 @@ layout: post
 title: SSH登陆响应慢的问题
 tags: 
 - SSH
-- Linux
+- linux
 - Shell
 categories:
-- Linux
+- linux
 UUID: 201211212334
 date: 2012-11-21
 ---

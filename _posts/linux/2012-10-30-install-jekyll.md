@@ -3,10 +3,10 @@ layout: post
 title: Linux 安装Jekyll 环境
 tags: 
 - Ubuntu
-- Linux
+- linux
 - Jekyll
 categories:
-- Linux
+- linux
 - code
 UUID: 201210301036
 date: 2012-10-30

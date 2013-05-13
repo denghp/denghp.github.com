@@ -6,7 +6,7 @@ published: true
 categories:
 - code
 tags:
-- Java
+- java
 - Annotation
 UUID: 20080923
 date: 2008-09-23

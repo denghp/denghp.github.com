@@ -6,7 +6,7 @@ categories:
 - code
 tags:
 - Github
-- Linux
+- linux
 - Tools
 UUID: 20100605
 ---

@@ -3,9 +3,9 @@ layout: post
 title: 谈谈 Hash Table
 categories:
 - code
-- Java
+- java
 tags:
-- Java
+- java
 UUID: 20100721
 ---
 

@@ -4,11 +4,11 @@ title: Ubuntu 常用的编程开发环境IDEs
 tags: 
 - Shell
 - Ubuntu
-- Linux
+- linux
 - IDE
 categories:
 - code
-- Linux
+- linux
 - topic
 UUID: 20130129003000
 date: 2013-01-29 00:30:00

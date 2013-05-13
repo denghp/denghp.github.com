@@ -2,13 +2,13 @@
 layout: post
 title: Finagle：一个协议不可知的 RPC 系统
 tags: 
-- Java
+- java
 - RPC
 - Finagle
 - 研发实践
 categories:
 - code
-- Java
+- java
 UUID: 20130131102700
 date: 2013-01-31 10:27:00
 description: Finagle是一个协议不可知的，异步的，用于 JVM 的 RPC 系统，它使得在 Java、Scala 或任何基于 JVM 的语言重构建鲁棒的客户端和服务器非常容易。

@@ -4,11 +4,11 @@ title: Linux 下使用find命令查找最近修改文件
 tags: 
 - Shell
 - find
-- Linux
+- linux
 - 研发实践
 categories:
 - code
-- Linux 
+- linux 
 UUID: 201301250023
 date: 2013-01-25 14:23:22
 ---

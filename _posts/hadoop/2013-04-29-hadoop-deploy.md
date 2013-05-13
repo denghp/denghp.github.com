@@ -3,10 +3,10 @@ layout: post
 title: Hadoop 部署详解
 tags: 
 - CentOS
-- Linux
+- linux
 - Hadoop
 categories:
-- Linux
+- linux
 - Hadoop
 - code
 - topic

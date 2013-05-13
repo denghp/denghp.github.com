@@ -3,9 +3,9 @@ layout: post
 title: Java HashMap 核心源码解读
 categories:
 - code
-- Java
+- java
 tags:
-- Java
+- java
 UUID: 20100722
 ---
 

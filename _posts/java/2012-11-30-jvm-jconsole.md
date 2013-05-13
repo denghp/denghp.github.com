@@ -5,7 +5,7 @@ tags:
 - JDK
 - Jconsole
 categories:
-- Java
+- java
 - code
 UUID: 201211301527
 date: 2012-11-30

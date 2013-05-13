@@ -3,7 +3,7 @@ layout: post
 title: Socket TIME_WAIT 解决方案
 tags: 
 - Socket
-- Linux
+- linux
 - TIME_WAIT
 categories:
 - Socket

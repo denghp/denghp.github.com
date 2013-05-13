@@ -2,14 +2,14 @@
 layout: post
 title: "Linux 创建用户"
 tags: 
-- Linux
+- linux
 - Shell
 - 创建用户
 comment: true
 published: true
 author: demi-panda
 categories:
-- Linux
+- linux
 UUID: 201211152330
 date: 2012-11-15
 ---

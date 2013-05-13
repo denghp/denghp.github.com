@@ -2,10 +2,10 @@
 layout: post
 title: ASCII和中文互转 
 tags: 
-- Java
+- java
 - ASCII
 categories:
-- Java
+- java
 - code
 UUID: 201003111527
 date: 2010-03-11

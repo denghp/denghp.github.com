@@ -2,10 +2,10 @@
 layout: post
 title: HTTP协议头部与Keep-Alive模式详解
 tags: 
-- Java
+- java
 - HTTP
 categories:
-- Java
+- java
 - J2EE
 - code
 UUID: 201212020027

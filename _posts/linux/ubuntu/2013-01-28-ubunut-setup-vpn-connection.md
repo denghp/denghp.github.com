@@ -4,11 +4,11 @@ title: Ubuntu/Linux 配置VPN连接
 tags: 
 - Shell
 - Ubuntu
-- Linux
+- linux
 - VPN
 categories:
 - code
-- Linux
+- linux
 UUID: 20130128013000
 date: 2013-01-28 01:30:00
 show_img: "/media/pub/linux/vpn-step-3.jpg"

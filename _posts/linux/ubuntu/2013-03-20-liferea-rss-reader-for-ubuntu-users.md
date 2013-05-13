@@ -5,12 +5,12 @@ short_title: Linux Feed Reader
 tags: 
 - Shell
 - Ubuntu
-- Linux
+- linux
 - Download
 - Monitor
 categories:
 - code
-- Linux
+- linux
 - topic
 UUID: 20130320001000
 date: 2013-03-20 00:10:00

@@ -2,13 +2,13 @@
 layout: post
 title: "Linux ulimit 设置"
 tags: 
-- Linux
+- linux
 - Shell
 comment: true
 published: true
 author: demi-panda
 categories:
-- Linux
+- linux
 UUID: 201211160030
 date: 2012-11-16
 ---

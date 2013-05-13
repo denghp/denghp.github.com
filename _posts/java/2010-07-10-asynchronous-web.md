@@ -4,7 +4,7 @@ title: Why Asynchronous Web
 categories:
 - code
 tags:
-- Java
+- java
 UUID: 20100710
 ---
 

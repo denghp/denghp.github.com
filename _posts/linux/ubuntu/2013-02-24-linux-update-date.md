@@ -4,10 +4,10 @@ title: Linux 重设日期和时间的方法
 tags: 
 - Shell
 - Ubuntu
-- Linux
+- linux
 categories:
 - code
-- Linux
+- linux
 UUID: 20130224002700
 date: 2013-02-24 00:27:00
 show_img: "/media/pub/linux/october-calendar-date-md.png"

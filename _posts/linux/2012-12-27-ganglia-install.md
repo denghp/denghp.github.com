@@ -5,7 +5,7 @@ tags:
 - Ganglia
 - Ubuntu
 - 监控
-- Linux
+- linux
 categories:
 - code
 UUID: 201212270050

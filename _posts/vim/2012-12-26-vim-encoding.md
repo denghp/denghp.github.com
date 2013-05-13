@@ -6,7 +6,7 @@ tags:
 - vim
 categories:
 - code
-- Linux
+- linux
 show_img: "/media/pub/linux/vim_logo.png"
 UUID: 201212260010
 ---

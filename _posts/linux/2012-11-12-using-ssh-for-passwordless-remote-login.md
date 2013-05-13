@@ -5,7 +5,7 @@ categories:
 - Web
 tags:
 - 安全
-- Linux
+- linux
 - SSH
 UUID: 201211122255
 ---

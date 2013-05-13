@@ -2,12 +2,12 @@
 layout: post
 title: Linux命令 date详解
 tags: 
-- Linux
+- linux
 - Shell
 - date详解
 categories:
 - code
-- Linux
+- linux
 UUID: 201211261630
 date: 2012-11-26
 ---

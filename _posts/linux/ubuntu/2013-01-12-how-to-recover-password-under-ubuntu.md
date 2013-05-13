@@ -4,9 +4,9 @@ title: Ubuntu 下如何找回密码？
 tags: 
 - Shell
 - Ubuntu
-- Linux
+- linux
 categories:
-- Linux
+- linux
 UUID: 201301121027
 ---
 
