@@ -6,7 +6,7 @@ tags:
 - 生产者消费者
 - 编程实践
 categories:
-- Code
+- code
 - Java
 UUID: 201301150027
 ---

@@ -7,7 +7,7 @@ tags:
 - Finagle
 - 研发实践
 categories:
-- Code
+- code
 - Java
 UUID: 20130131102700
 date: 2013-01-31 10:27:00

@@ -8,7 +8,7 @@ tags:
 categories:
 - chihuo
 - health
-- Micro-life
+- life
 show_img: "/media/pub/chihuo/health/huoguo.jpg"
 UUID: 201301022327
 ---

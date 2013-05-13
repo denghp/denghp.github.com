@@ -7,7 +7,7 @@ tags:
 - Linux
 - IDE
 categories:
-- Code
+- code
 - Linux
 - topic
 UUID: 20130129003000

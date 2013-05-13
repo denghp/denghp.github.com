@@ -6,7 +6,7 @@ tags:
 - 减肥
 - 计划
 categories:
-- Micro-life
+- life
 UUID: 2013010331237
 ---
 

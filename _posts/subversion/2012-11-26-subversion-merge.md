@@ -6,7 +6,7 @@ tags:
 - 分支
 - 合并
 categories:
-- Code
+- code
 - Subversion
 UUID: 201211261730
 date: 2012-11-26

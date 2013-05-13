@@ -6,7 +6,7 @@ tags:
 - Github
 - 免费博客
 categories:
-- Code
+- code
 UUID: 201212291027
 show_img: "/media/pub/web/Jekyll.jpg"
 ---

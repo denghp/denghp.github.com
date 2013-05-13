@@ -5,7 +5,7 @@ tags:
 - Shell 
 - Mongodb
 categories:
-- Code
+- code
 - Mongodb
 UUID: 20130416001000
 date: 2013-04-16 00:10:00

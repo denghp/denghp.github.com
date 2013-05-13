@@ -6,7 +6,7 @@ tags:
 - Subversion
 - Svn
 categories:
-- Code
+- code
 - Subversion
 UUID: 201212131829
 ---

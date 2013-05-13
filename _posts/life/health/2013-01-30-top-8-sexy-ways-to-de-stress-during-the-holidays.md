@@ -6,7 +6,7 @@ tags:
 - 情感生活
 - 女性健康
 categories:
-- Micro-life
+- life
 - topic
 UUID: 20130130003000
 show_img: "/media/pub/life/healthy/sex-happy-300x168.jpg"

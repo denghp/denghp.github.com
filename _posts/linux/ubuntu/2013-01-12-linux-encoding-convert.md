@@ -9,7 +9,7 @@ tags:
 - GBK
 - 编码转换
 categories:
-- Code
+- code
 - Linux
 UUID: 201301121027
 ---

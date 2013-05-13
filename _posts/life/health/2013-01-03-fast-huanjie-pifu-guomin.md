@@ -7,7 +7,7 @@ tags:
 - 皮肤过敏
 - 快速缓解
 categories:
-- Micro-life
+- life
 - health
 UUID: 201301031651
 ---

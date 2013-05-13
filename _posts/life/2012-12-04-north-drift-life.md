@@ -6,7 +6,7 @@ tags:
 comment: true
 published: true
 categories:
-- Micro-life
+- life
 - topic
 show_img: "/media/pub/life/pub/life-style.jpg"
 UUID: 201212040030

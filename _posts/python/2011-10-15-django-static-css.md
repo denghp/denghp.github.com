@@ -2,7 +2,7 @@
 layout: post
 title: 在Django模板中使用css、javascript 等静态文件
 categories:
-- Code
+- code
 - Python
 tags:
 - Python

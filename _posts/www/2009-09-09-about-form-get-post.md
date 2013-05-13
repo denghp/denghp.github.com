@@ -2,7 +2,7 @@
 layout: post
 title: 关于Form的GET和POST
 categories:
-- Code
+- code
 tags:
 - HTML
 UUID: 20090909

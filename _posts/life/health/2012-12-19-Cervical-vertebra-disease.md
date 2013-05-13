@@ -9,7 +9,7 @@ tags:
 - 康复操
 - 职业病
 categories:
-- Micro-life
+- life
 - health
 show_img: "/media/pub/life/healthy/healthy-2.jpg"
 UUID: 201212191327

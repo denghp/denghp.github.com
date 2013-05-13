@@ -2,7 +2,7 @@
 layout: post
 title: Check Memory With Cron Job
 categories:
-- Code
+- code
 tags:
 - Shell
 - Job

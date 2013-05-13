@@ -6,7 +6,7 @@ tags:
 - 电子书
 - Linux
 categories:
-- Code
+- code
 - Linux 
 UUID: 20130312001000
 date: 2013-03-12 00:10:00

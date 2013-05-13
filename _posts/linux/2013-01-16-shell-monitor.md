@@ -7,7 +7,7 @@ tags:
 - Linux
 - 研发实践
 categories:
-- Code
+- code
 - Linux 
 UUID: 201301160023
 ---

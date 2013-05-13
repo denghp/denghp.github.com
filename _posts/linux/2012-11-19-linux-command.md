@@ -7,7 +7,7 @@ tags:
 - 编程语言
 categories:
 - Linux
-- Code
+- code
 UUID: 201211190944
 date: 2012-11-19
 ---

@@ -8,7 +8,7 @@ tags:
 - 负载均衡
 categories:
 - www
-- Code
+- code
 UUID: 201212010027
 date: 2012-12-01
 ---

@@ -7,7 +7,7 @@ tags:
 - TIME_WAIT
 categories:
 - Socket
-- Code
+- code
 UUID: 201212270032
 ---
 

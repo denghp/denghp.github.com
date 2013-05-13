@@ -2,7 +2,7 @@
 layout: post
 title: Tomcat升级
 categories:
-- Code
+- code
 - Java
 tags:
 - Java

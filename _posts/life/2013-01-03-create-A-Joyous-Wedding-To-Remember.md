@@ -5,7 +5,7 @@ tags:
 - 欢乐
 - 婚礼
 categories:
-- Micro-life
+- life
 UUID: 201301031751
 show_img: "/media/pub/life/13569436189893.jpg"
 ---

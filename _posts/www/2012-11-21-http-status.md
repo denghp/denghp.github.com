@@ -5,7 +5,7 @@ tags:
 - HTTP
 - 状态码
 categories:
-- Code
+- code
 UUID: 201211212348
 date: 2012-11-21
 ---

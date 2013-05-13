@@ -9,7 +9,7 @@ published: true
 author: demi-panda
 categories:
 - Github
-- Code
+- code
 UUID: 201211271035
 date: 2012-11-27
 ---

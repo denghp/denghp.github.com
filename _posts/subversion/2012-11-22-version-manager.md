@@ -6,7 +6,7 @@ tags:
 - 策略
 - GNU
 categories:
-- Code
+- code
 UUID: 201211220500
 date: 2012-11-22
 ---

@@ -6,7 +6,7 @@ tags:
 - 博客
 - 总结
 categories:
-- Micro-life
+- life
 - topic
 UUID: 20130201003700
 date: 2013-02-01 00:37:00

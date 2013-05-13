@@ -7,7 +7,7 @@ tags:
 - Make
 categories:
 - Linux
-- Code
+- code
 UUID: 20121130236
 date: 2012-11-30
 ---

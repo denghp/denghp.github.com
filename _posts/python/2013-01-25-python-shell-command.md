@@ -7,7 +7,7 @@ tags:
 - Shell
 - 研发实践
 categories:
-- Code
+- code
 UUID: 201301251427
 date: 2013-01-25 08:27:22
 show_img: "/media/pub/python/486px-Python_logo.png"

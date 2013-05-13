@@ -8,7 +8,7 @@ comment: true
 published: true
 author: lisa
 categories:
-- Micro-life
+- life
 UUID: 201212232030
 ---
 

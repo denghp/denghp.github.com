@@ -7,7 +7,7 @@ tags:
 - 监控
 - Linux
 categories:
-- Code
+- code
 UUID: 201212270050
 ---
 

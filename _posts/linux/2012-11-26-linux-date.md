@@ -6,7 +6,7 @@ tags:
 - Shell
 - date详解
 categories:
-- Code
+- code
 - Linux
 UUID: 201211261630
 date: 2012-11-26

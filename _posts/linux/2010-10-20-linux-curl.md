@@ -6,7 +6,7 @@ tags:
 - Linux
 categories:
 - Linux
-- Code
+- code
 UUID: 201010201136
 date: 2010-10-20
 ---

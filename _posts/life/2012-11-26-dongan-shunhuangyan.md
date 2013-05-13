@@ -6,7 +6,7 @@ tags:
 - 湖南
 - 舜皇岩
 categories:
-- Micro-life
+- life
 - travel
 UUID: 201211262030
 ---

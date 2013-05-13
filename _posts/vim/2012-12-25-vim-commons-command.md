@@ -5,7 +5,7 @@ tags:
 - vim
 - 快捷键
 categories:
-- Code
+- code
 UUID: 201212252242
 ---
     

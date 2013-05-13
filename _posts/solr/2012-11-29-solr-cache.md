@@ -8,7 +8,7 @@ tags:
 - Solr 缓存
 - 缓存
 categories:
-- Code
+- code
 - solr 
 UUID: 201211291130
 date: 2012-11-29

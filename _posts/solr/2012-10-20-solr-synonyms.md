@@ -7,7 +7,7 @@ tags:
 - 同义词
 - 搜索引擎
 categories:
-- Code
+- code
 - solr 
 UUID: 20121020202012
 date: 2012-11-20

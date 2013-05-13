@@ -2,7 +2,7 @@
 layout: post
 title: ConcurrentHashMap原理分析
 categories:
-- Code
+- code
 - Java
 tags:
 - Java

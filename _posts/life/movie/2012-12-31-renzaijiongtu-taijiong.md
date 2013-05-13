@@ -7,7 +7,7 @@ tags:
 - 泰囧
 - 囧途
 categories:
-- Micro-life
+- life
 - movie
 UUID: 201212312137
 show_img: "/media/pub/life/movie/54fbb2fb43166d22fbf6a478462309f79152d25d.jpg"

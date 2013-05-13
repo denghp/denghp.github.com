@@ -7,7 +7,7 @@ tags:
 - Linux
 - 压力测试
 categories:
-- Code
+- code
 - 测试工具
 UUID: 201301092343
 ---

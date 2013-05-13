@@ -6,7 +6,7 @@ tags:
 - 猫
 - 冰
 categories:
-- Micro-life
+- life
 show_img: "/media/pub/life/photo/8317161721_5cc47c1c03_z.jpg"
 UUID: 201301022227
 ---

@@ -6,7 +6,7 @@ tags:
 - Linux
 - 研发实践
 categories:
-- Code
+- code
 - Linux 
 - topic
 UUID: 20130227002300

@@ -7,7 +7,7 @@ tags:
 - Jekyll
 categories:
 - Linux
-- Code
+- code
 UUID: 201210301036
 date: 2012-10-30
 ---

@@ -7,7 +7,7 @@ tags:
 - wget详解
 categories:
 - Linux
-- Code
+- code
 UUID: 201212011036
 date: 2012-12-01
 ---

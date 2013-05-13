@@ -5,7 +5,7 @@ tags:
 - memcached
 - 缓存
 categories:
-- Code
+- code
 UUID: 201011212330
 date: 2010-11-21
 ---

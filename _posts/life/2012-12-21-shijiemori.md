@@ -5,7 +5,7 @@ tags:
 - 世界末日
 - 玛雅人
 categories:
-- Micro-life
+- life
 show_img: "/media/pub/life/pub/houtian.jpg"
 UUID: 201212212240
 ---

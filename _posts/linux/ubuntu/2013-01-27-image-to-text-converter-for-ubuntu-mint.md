@@ -8,7 +8,7 @@ tags:
 - OCR
 - 图像文本转换器
 categories:
-- Code
+- code
 - Linux
 UUID: 20130127103000
 date: 2013-01-27 10:30:00

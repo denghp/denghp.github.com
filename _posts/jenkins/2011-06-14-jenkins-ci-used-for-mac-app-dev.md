@@ -2,7 +2,7 @@
 layout: post
 title: Jenkins CI Used For Mac App Dev
 categories:
-- Code
+- code
 tags:
 - Jenkins
 - Hudson

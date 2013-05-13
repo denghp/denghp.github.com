@@ -7,7 +7,7 @@ tags:
 - 注释代码
 - 快捷键
 categories:
-- Code
+- code
 UUID: 201212252232
 ---
 

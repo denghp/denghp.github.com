@@ -3,7 +3,7 @@ layout: post
 title: Git原理浅析
 categories:
 - Github
-- Code
+- code
 tags:
 - Github
 - Linux

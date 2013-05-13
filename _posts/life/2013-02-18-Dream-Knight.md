@@ -6,7 +6,7 @@ tags:
 - 梦骑士
 - 大众银行
 categories:
-- Micro-life
+- life
 - topic
 UUID: 20130218003712
 date: 2013-02-18 00:10:00

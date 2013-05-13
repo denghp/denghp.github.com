@@ -7,7 +7,7 @@ tags:
 - 搜索引擎
 - 研发实践
 categories:
-- Code
+- code
 - solr
 - topic
 UUID: 20130330001027

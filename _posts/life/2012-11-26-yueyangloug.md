@@ -6,7 +6,7 @@ tags:
 - 岳阳
 - 岳阳楼
 categories:
-- Micro-life
+- life
 - travel
 UUID: 201211261830
 ---

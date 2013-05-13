@@ -7,7 +7,7 @@ tags:
 - 搜索引擎
 - Dismax
 categories:
-- Code
+- code
 - solr 
 UUID: 201211291350
 date: 2012-11-29

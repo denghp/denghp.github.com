@@ -7,7 +7,7 @@ tags:
 - 责任
 - 生活
 categories:
-- Micro-life
+- life
 UUID: 201301201537
 show_img: "/media/pub/life/pub/woman.jpg"
 description: 不要当三瓶女人：年轻时是花瓶，中年时是醋瓶，老年时是药瓶。不要只做三转女人：围着锅台转，围着老公转，围着孩子转...

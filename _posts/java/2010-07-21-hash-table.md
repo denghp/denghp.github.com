@@ -2,7 +2,7 @@
 layout: post
 title: 谈谈 Hash Table
 categories:
-- Code
+- code
 - Java
 tags:
 - Java

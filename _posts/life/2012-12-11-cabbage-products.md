@@ -7,7 +7,7 @@ tags:
 - 白菜价
 - 淘宝
 categories:
-- Micro-life
+- life
 show_img: "/media/pub/life/pub/8610a412jw1dzd090l3vjj.jpg"
 UUID: 201212110930
 ---

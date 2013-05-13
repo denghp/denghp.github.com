@@ -6,7 +6,7 @@ tags:
 - 空气污染
 - PM2.5
 categories:
-- Micro-life
+- life
 UUID: 201301131237
 ---
 

@@ -8,7 +8,7 @@ tags:
 - Download
 - Monitor
 categories:
-- Code
+- code
 - Linux
 - topic
 UUID: 20130127013000

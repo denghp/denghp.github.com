@@ -7,7 +7,7 @@ tags:
 - Linux
 - Centos6
 categories:
-- Code
+- code
 - Linux
 UUID: 201301171127
 ---

@@ -6,7 +6,7 @@ tags:
 - lucene
 - 搜索引擎
 categories:
-- Code
+- code
 - solr 
 UUID: 201211302330
 date: 2012-11-30

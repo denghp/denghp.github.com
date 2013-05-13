@@ -7,7 +7,7 @@ tags:
 - vim
 - Emacs
 categories:
-- Code
+- code
 - Linux
 show_img: "/media/pub/linux/vim_logo.png"
 UUID: 201212250010

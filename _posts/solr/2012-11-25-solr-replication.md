@@ -7,7 +7,7 @@ tags:
 - 搜索引擎
 - apache
 categories:
-- Code
+- code
 - solr 
 UUID: 201211252230
 date: 2012-11-25

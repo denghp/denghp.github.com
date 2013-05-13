@@ -5,7 +5,7 @@ tags:
 - 电影
 - CHD
 categories:
-- Micro-life
+- life
 - movie
 UUID: 201212062137
 ---

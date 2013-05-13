@@ -7,7 +7,7 @@ tags:
 - 搜索引擎
 - 经纬度
 categories:
-- Code
+- code
 - solr 
 UUID: 201211302340
 date: 2012-11-30

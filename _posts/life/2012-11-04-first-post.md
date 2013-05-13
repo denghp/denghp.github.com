@@ -9,7 +9,7 @@ tags:
 comment: true
 published: true
 categories:
-- Micro-life
+- life
 UUID: 20121104
 ---
 

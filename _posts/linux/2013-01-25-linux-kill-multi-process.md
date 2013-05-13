@@ -8,7 +8,7 @@ tags:
 - 进程
 - 研发实践
 categories:
-- Code
+- code
 - Linux 
 UUID: 20130125182300
 date: 2013-01-25 18:23:22
