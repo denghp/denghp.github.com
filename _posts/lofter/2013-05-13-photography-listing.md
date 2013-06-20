@@ -174,5 +174,8 @@ date: 2013-05-13 00:10:00
 
 <strong>Photoshop.CS5r的100技巧 </strong><br>
 <a href="http://u.115.com/file/f188025ecc" alt="Photoshop.CS5r的100技巧" target="_bank">http://u.115.com/file/f188025ecc</a> 
-
-
+<!--
+<a href="http://pan.baidu.com/share/link?shareid=478780&uk=2148449180" rel="prettyPhoto[{{page.UUID}}]" alt="loader">
+<img src="http://pan.baidu.com/share/link?shareid=478780&uk=2148449180" width="480px" alt="loader-test" ></img>
+</a>
+-->
