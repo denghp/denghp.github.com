@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ubuntu 安装Redmine
+title: redmine高级编辑插件-CKEditor
 tags: 
 - redmine
 - 项目管理
