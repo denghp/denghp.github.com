@@ -37,7 +37,7 @@ ruby script/rails server webrick -e production
 </pre>
 
 5、登录redmine改变文本格式到ckeditor
-<a href="{{site.url}}/media/pub/web/redmine-CKEditor.jpg" alt="redmine-CKEditor" rel="prettyPhoto[20130429001236]">
+<a href="{{site.url}}/media/pub/web/redmine-CKEditor.jpg" alt="redmine-CKEditor" rel="prettyPhoto[{{page.UUID}}]">
   <img src="http://demi-panda.com/media/pub/web/redmine-CKEditor.jpg" width="560px"  alt="redmine-CKEditor" />
 </a>
 然后进入到项目管理中的新建问题或者wiki编辑功能或者讨论区功能，编辑的功能如下:<br>
