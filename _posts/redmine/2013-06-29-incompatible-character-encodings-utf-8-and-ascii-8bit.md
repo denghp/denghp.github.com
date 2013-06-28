@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Redmine incompatible character encodings: UTF-8 and ASCII-8BIT
-short_title: Redmine encodings UTF-8 and ASCII-8BIT
+title: Redmine incompatible character encodings "UTF-8 and ASCII-8BIT"
+short_title: Encoding UTF-8 and ASCII-8BIT
 tags: 
 - redmine
 - 项目管理
@@ -17,13 +17,13 @@ date: 2013-06-29 00:20:00
 After migrating Redmine to a new server, I’ve encountered such an error:
 <pre id="ruby">
 ActionView::Template::Error (incompatible character encodings: ASCII-8BIT and UTF-8):
-    55:         <%= yield :sidebar %>
-    56:         <%= view_layouts_base_sidebar_hook_response %>
-    57:     </div>
+    55:         &lt;%= yield :sidebar %&gt;
+    56:         &lt;%= view_layouts_base_sidebar_hook_response %&gt;
+    57:     &lt;/div&gt;
     58: 
-    59:     <div id="content">
-    60:         <%= render_flash_messages %>
-    61:         <%= yield %>
+    59:     &lt;div id="content"&gt;
+    60:         &lt;%= render_flash_messages %&gt;
+    61:         &lt;%= yield %&gt;
   app/views/layouts/base.html.erb:58:in `_app_views_layouts_base_html_erb__1607427593261861101_37006840
 </pre>
 
