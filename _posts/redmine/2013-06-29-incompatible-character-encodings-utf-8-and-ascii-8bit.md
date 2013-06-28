@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Redmine incompatible character encodings "UTF-8 and ASCII-8BIT"
+title: Redmine incompatible character encodings UTF-8 and ASCII-8BIT
 short_title: Encoding UTF-8 and ASCII-8BIT
 tags: 
 - redmine
