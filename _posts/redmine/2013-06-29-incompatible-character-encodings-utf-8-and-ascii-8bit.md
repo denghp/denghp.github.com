@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Redmine incompatible character encodings: UTF-8 and ASCII-8BIT
-short_title: Redmine encodings: UTF-8 and ASCII-8BIT
+short_title: Redmine encodings UTF-8 and ASCII-8BIT
 tags: 
 - redmine
 - 项目管理
