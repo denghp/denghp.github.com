@@ -47,7 +47,7 @@ production:
   password: "123456"
   encoding: utf8
 </pre>
-注意：adapter: mysql2 必须是mysql2,如果使用mysql则就会出现上面的问题
+注意：adapter: mysql2 必须是mysql2,如果使用mysql则就会出现上面的问题<br>
 7、<code>locale</code>确认操作系统的编码是否UTF-8
 <pre id="bash">
 LANG=en_US.UTF-8
