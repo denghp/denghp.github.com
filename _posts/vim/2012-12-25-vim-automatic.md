@@ -33,10 +33,28 @@ $ sudo cp javacomplete.vim java_parser.vim /usr/share/vim/vimcurrent/autoload
 <pre id="bash">
 $ javac Reflection.java
 $ cp Reflection.class $JAVA_HOME
+$ vi ~/.bashrc 
+$ export export CLASSPATH=.:$JAVA_HOME:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar
+$ echo $CLASSPATH
 </pre>
+
 3、然后把 doc下的javacomplete.txt拷贝到 vimcurrent的doc目录下
 <pre id="bash">
 $ cp javacomplete.txt /usr/share/vim/vimcurrent/doc
+</pre>
+
+4、也可以在.vimrc中这样配置
+<pre id="bash">
+setlocal omnifunc=javacomplete#Complete
+setlocal completefunc=javacomplete#CompleteParamsInfo
+inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P>
+inoremap <buffer> <C-S-Space> <C-X><C-U><C-P>
+autocmd Filetype java inoremap <buffer> . .<C-X><C-O><C-P>
+</pre>
+<strong>注意最后一条命令的两个点号之间是有空格的。</strong>
+其中第一条命令也可以换成：
+<pre id="bash">
+autocmd Filetype java setlocal omnifunc=javacomplete#Complete
 </pre>
 
 ###修改vim配置
