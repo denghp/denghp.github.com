@@ -47,9 +47,9 @@ $ cp javacomplete.txt /usr/share/vim/vimcurrent/doc
 <pre id="bash">
 setlocal omnifunc=javacomplete#Complete
 setlocal completefunc=javacomplete#CompleteParamsInfo
-inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P>
-inoremap <buffer> <C-S-Space> <C-X><C-U><C-P>
-autocmd Filetype java inoremap <buffer> . .<C-X><C-O><C-P>
+inoremap &lt;buffer&gt; &lt;C-X&gt;&lt;C-U&gt; &lt;C-X&gt;&lt;C-U&gt;&lt;C-P&gt;
+inoremap &lt;buffer&gt; &lt;C-S-Space&gt; &lt;C-X&gt;&lt;C-U&gt;&lt;C-P&gt;
+autocmd Filetype java inoremap &lt;buffer&gt; . .&lt;C-X&gt;&lt;C-O&gt;&lt;C-P&gt;
 </pre>
 <strong>注意最后一条命令的两个点号之间是有空格的。</strong>
 其中第一条命令也可以换成：
