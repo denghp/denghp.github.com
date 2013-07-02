@@ -17,7 +17,7 @@ UUID: 201212250032
 
 ###下载插件
 <pre id="bash">
-$ wgeit http://www.vim.org/scripts/download_script.php?src_id=6738
+$ wget http://www.vim.org/scripts/download_script.php?src_id=6738
 </pre>
 
 ###解压
@@ -27,7 +27,7 @@ $ unzip -x javacomplete.zip
 1、把autoload文件夹下的javacomplete.vim java_parser.vim 加入到 
 /usr/share/vim/vimcurrent/autoload目录
 <pre id="bash">
-$ sudo cp javacomplete.vim java_parser.vim /usr/share/vim/vimcurrent
+$ sudo cp javacomplete.vim java_parser.vim /usr/share/vim/vimcurrent/autoload
 </pre>
 2、然后把压缩包中的 Reflection.java编译，把生成的.class 文件拷贝到 $JAVA_HOME 的某个目录下。配置到系统环境变量的$CLASSPATH中
 <pre id="bash">
