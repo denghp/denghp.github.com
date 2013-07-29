@@ -1,11 +1,12 @@
 --- 
 layout: post
-title: &#39;tools.jar&#39; is not in IDEA classpath
+title: tools.jar is not in IDEA classpath
 tags: 
 - idea
 - Ubuntu
 categories:
 - idea
+- code
 UUID: 20130729122000
 date: 2013-07-29 12:50:22
 ---
