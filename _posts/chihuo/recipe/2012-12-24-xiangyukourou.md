@@ -16,14 +16,14 @@ UUID: 20121240027
 　　香芋和五花肉配在一起，相辅相成，香芋吸收五花肉的油和肉味，五花肉也变的不油腻了而且甘香可口。每次回家我爸就亲自下厨烧给我吃。今天就让熊猫家族带你走这一遭。
 
 ###香芋扣肉
-<a href="{{site.url}}/media/pub/chihuo/recipe/xiangyukourou.jpg" alt="香芋扣肉" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/chihuo/recipe/xiangyukourou.jpg" width="330px"  alt="香芋扣肉" class="img-center"></img>
+<a href="{{site.static_url}}/media/pub/chihuo/recipe/xiangyukourou.jpg" alt="香芋扣肉" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/chihuo/recipe/xiangyukourou.jpg" width="330px"  alt="香芋扣肉" class="img-center"></img>
 </a>
 
 ###主材料
 猪肋条肉（五花肉）600克,芋头400克
-<a href="{{site.url}}/media/pub/chihuo/recipe/0230440080.jpg" alt="香芋扣肉" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/chihuo/recipe/0230440080.jpg" width="330px"  alt="香芋扣肉" class="img-center"></img>
+<a href="{{site.static_url}}/media/pub/chihuo/recipe/0230440080.jpg" alt="香芋扣肉" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/chihuo/recipe/0230440080.jpg" width="330px"  alt="香芋扣肉" class="img-center"></img>
 </a>
 
 ###调料

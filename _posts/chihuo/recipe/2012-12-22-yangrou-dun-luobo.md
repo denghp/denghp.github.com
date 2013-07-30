@@ -21,15 +21,15 @@ UUID: 201212212327
 
 ###羊肉炖白萝卜
 冬天的晚餐桌上有一锅热汤足矣。下面介绍下羊肉炖白萝卜的做法：
-<a href="{{site.url}}/media/pub/chihuo/recipe/20121221.jpg" alt="羊腿肉炖白萝卜" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/chihuo/recipe/20121221.jpg" width="330px" alt="羊腿肉炖白萝卜" class="img-center"></img>
+<a href="{{site.static_url}}/media/pub/chihuo/recipe/20121221.jpg" alt="羊腿肉炖白萝卜" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/chihuo/recipe/20121221.jpg" width="330px" alt="羊腿肉炖白萝卜" class="img-center"></img>
 </a>
 
 
 ###材料
 羊腿肉，或者羊排
-<a href="{{site.url}}/media/pub/chihuo/recipe/yangtuirou.jpg" alt="羊腿肉" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/chihuo/recipe/yangtuirou.jpg" width="230px" height="130px" alt="羊腿肉" class="img-right"></img>
+<a href="{{site.static_url}}/media/pub/chihuo/recipe/yangtuirou.jpg" alt="羊腿肉" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/chihuo/recipe/yangtuirou.jpg" width="230px" height="130px" alt="羊腿肉" class="img-right"></img>
 </a>
 
 白萝卜，洗净后去皮，切成小块

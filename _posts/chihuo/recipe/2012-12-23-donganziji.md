@@ -16,14 +16,14 @@ UUID: 20121231527
 　　“东安子鸡”这道菜，始创于唐代的开元年间。驰名中外的美味佳肴，被列为国宴菜谱之一、八大湘菜之首。做为本土人士自然会十分的热衷它的美味啦，今天就让我再来回味下这道菜的做法。
 
 ###东安子鸡
-<a href="{{site.url}}/media/pub/chihuo/recipe/donganziji.jpg" alt="东安子鸡" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/chihuo/recipe/donganziji.jpg" width="330px"  alt="东安子鸡" class="img-center"></img>
+<a href="{{site.static_url}}/media/pub/chihuo/recipe/donganziji.jpg" alt="东安子鸡" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/chihuo/recipe/donganziji.jpg" width="330px"  alt="东安子鸡" class="img-center"></img>
 </a>
 
 ###主材料
 嫩母鸡
-<a href="{{site.url}}/media/pub/chihuo/recipe/m_201107240021181.jpg" alt="主材料-东安子鸡" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/chihuo/recipe/m_201107240021181.jpg" width="280px" height="260px"  alt="东安子鸡" class="img-center"></img>
+<a href="{{site.static_url}}/media/pub/chihuo/recipe/m_201107240021181.jpg" alt="主材料-东安子鸡" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/chihuo/recipe/m_201107240021181.jpg" width="280px" height="260px"  alt="东安子鸡" class="img-center"></img>
 </a>
 
 ###调料

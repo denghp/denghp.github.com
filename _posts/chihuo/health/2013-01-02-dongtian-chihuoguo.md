@@ -18,8 +18,8 @@ UUID: 201301022327
 
 ###冬季吃羊肉火锅的益处
 　　羊肉性温热，这就是说，它会促进人体的能量释放，让人有发热的感觉。如果身体本身怕冷，手脚冰凉，气力不足，吃这个自然是恰到好处；如果身体本来就发热，怕热不怕冷，精力旺盛不知疲倦，那就没必要多吃羊肉了。
-<a href="{{site.url}}/media/pub/chihuo/health/huoguo.jpg" alt="火锅,羊肉火锅" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/chihuo/health/huoguo.jpg" width="330px" alt="火锅,羊肉火锅" class="img-center"></img>
+<a href="{{site.static_url}}/media/pub/chihuo/health/huoguo.jpg" alt="火锅,羊肉火锅" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/chihuo/health/huoguo.jpg" width="330px" alt="火锅,羊肉火锅" class="img-center"></img>
 </a>
 
 ###如何选锅底
@@ -32,8 +32,8 @@ UUID: 201301022327
 从配菜来说，身体瘦弱的人宜早点配合各种淀粉类食材，最好是在涮肉开始时就下点土豆、山药片、藕片等，它们有健脾胃的作用，柔软美味，又富含多种矿物质和维生素。以它们作为主食，既能提高主食的营养质量，又能早点吃到淀粉类主食，避免一下子吃进去太多高脂肪肉类，给消化系统带来沉重负担。而身体强健的人宜早点配合萝卜、生菜、白菜，以及各种蘑菇，下点豆腐，减少肉类的比例。绿叶蔬菜适合各类人，可以在涮肉的中段加进去，注意及时捞出来，避免煮烂后营养素损失太大。
 
 吃火锅时，多配合新鲜蔬菜，可以减少亚硝酸盐合成亚硝胺类致癌物的危险。过多的蛋白质会增强致癌物的作用。蔬菜不宜久煮，最好能早一点放入汤中，而不是等汤里亚硝酸盐含量已经很高的时候。
-<a href="{{site.url}}/media/pub/chihuo/health/huoguo-peicai.jpg" alt="火锅配菜" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/chihuo/health/huoguo-peicai.jpg" width="330px" alt="火锅配菜" class="img-center"></img>
+<a href="{{site.static_url}}/media/pub/chihuo/health/huoguo-peicai.jpg" alt="火锅配菜" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/chihuo/health/huoguo-peicai.jpg" width="330px" alt="火锅配菜" class="img-center"></img>
 </a>
 
 ###健康饮料

@@ -16,15 +16,15 @@ UUID: 201212312327
 　　鲫鱼汤不但味香汤鲜，而且具有较强的滋补作用，非常适合中老年人和病后虚弱者食用，也特别适合产妇食用。 不过做鲫鱼汤很重要的一点是注意火候的把握。 只要把握好了,那这道汤就完全没问题了.
 
 ###鲫鱼豆腐汤
-<a href="{{site.url}}/media/pub/chihuo/recipe/jiyudoufutang.jpg" alt="鲫鱼豆腐汤" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/chihuo/recipe/jiyudoufutang.jpg" width="330px"  alt="鲫鱼豆腐汤" class="img-center"></img>
+<a href="{{site.static_url}}/media/pub/chihuo/recipe/jiyudoufutang.jpg" alt="鲫鱼豆腐汤" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/chihuo/recipe/jiyudoufutang.jpg" width="330px"  alt="鲫鱼豆腐汤" class="img-center"></img>
 </a>
 
 
 
 ###主材料
 鲫鱼，豆腐
-<a href="{{site.url}}/media/pub/chihuo/recipe/image.jpg" alt="鲫鱼" rel="prettyPhoto[{{page.UUID}}]">
+<a href="{{site.static_url}}/media/pub/chihuo/recipe/image.jpg" alt="鲫鱼" rel="prettyPhoto[{{page.UUID}}]">
 <img src="/media/pub/chihuo/recipe/image.jpg" width="330px"  alt="鲫鱼" class="img-center"></img>
 </a>
 

@@ -4,7 +4,6 @@ meta:
     site_content: "博客,IT技术,研发实践,互联网,资讯,编程语言,搜索引擎,Lucene,Solr,Java,生活,旅游,吃货,熊猫吃货,微生活,健康,美食"
     site_language: "CN"
     absolute_baseurl: http://demi-panda.com
-    static_baseurl: http://static.demi-panda.com
     domain: demi-panda.com
     defualt_limit: 50
     author:
@@ -13,6 +12,7 @@ meta:
         name: 
         email: demi-panda@126.com
 
+static_url: http://demi-panda.oss.aliyuncs.com
 url: http://demi-panda.com
 baseurl:
 markdown: rdiscount
