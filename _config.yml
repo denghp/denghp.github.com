@@ -19,6 +19,12 @@ pygments: true
 permalink: /:year/:month/:day/:title
 auto: true
 debug: true
+paginate: 10
+pygments: true
+tag_page_dir: tag
+#tag_feed_dir: tag
+#tag_page_layout: tag_page
+#tag_feed_layout: tag_feed
 
 links:
     - url: "http://lusongsong.com/"
