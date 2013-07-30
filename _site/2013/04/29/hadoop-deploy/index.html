@@ -1,0 +1,1301 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv=Content-Type content="text/html;charset=utf-8">
+        <meta name="robots" content="all,follow" />
+        <title>Hadoop 部署详解 - 熊猫家族</title>
+        <meta name="keywords" content="博客,IT技术,研发实践,互联网,资讯,编程语言,搜索引擎,Lucene,Solr,Java,生活,旅游,吃货,熊猫吃货,微生活,健康,美食"/>
+        <meta name="author" lang="en" content="All: Demi-Panda Lab [demi-panda.com]; e-mail: blog.pandam@gmail.com" />
+        <meta name="copyright" lang="en" content="@2012 Demi_Panda Lab, All Rights Reserved!" />
+        <meta name="description" content="熊猫家族博客：敢想,敢拼,敢赢...博客,IT技术,研发实践,互联网,资讯,编程语言,搜索引擎,Lucene,Solr,Java,生活,旅游,吃货,熊猫吃货,微生活,健康,美食" />
+        <meta property="wb:webmaster" content="eb26a33b1e192873" />
+        <meta name="chinaz-site-verification" content="54c83ea9-059c-4447-95ec-4dc8b16e60b2" />
+        <meta name="baidu_union_verify" content="67d51e25cc69ae324f028d2d333b753a">
+        <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+        <link rel="shortcut icon" href="http://demi-panda.com/media/demi/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/style.css" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/main.css" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/reset.css" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/superfish.css" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/prettify.css" />
+        <link rel='stylesheet' id='pretty-photo-css'  href='http://demi-panda.com/media/demi/css/prettyPhoto-3.4.2.css' type='text/css' media='all' />
+        <link rel="alternate" type="application/rss+xml" title="熊猫家族" href="http://demi-panda.com/rss.xml" />
+        <script src="http://demi-panda.com/media/js/prettify.js" type="text/javascript"></script>
+        <script src="http://demi-panda.com/media/js/jquery-1.6.1.min.js" type="text/javascript"></script>
+        <script src="http://demi-panda.com/media/js/jquery.jcarousel.min.js" type="text/javascript"></script>
+        <script src="http://demi-panda.com/media/js/jquery.tagcloud.js" type="text/javascript"></script>
+        <style type='text/css'>
+          code {
+            margin: 0 2px;
+            padding: 0px 5px;
+            border: 1px solid #EAEAEA;
+            background-color: #F8F8F8;
+            border-radius: 3px;
+            font-size: 12px;
+            font-family: Consolas, "Liberation Mono", Courier, monospace;
+            }
+        </style>
+    </head>
+
+
+    <body >
+
+        <div id="wrapper">
+            <!-- /header -->
+<div id="header">
+
+  <div id="logo">
+    <h1 id="logo">
+      <a href="/" title="[Go to homepage]"><img width="234px" height="86px" src="/media/demi/img/demi-logo.jpg" alt="" /></a>
+    </h1> 
+  </div><!-- /logo -->
+
+  <div class="cleared"></div>
+</div>
+<!-- /header -->
+
+ 
+            <!-- Tray -->
+<div id="tray">
+    <ul>
+        
+        <li ><a href="/">Home</a></li>
+        <li id="tray-active" ><a href="/archives/">文章列表</a></li>
+        <li><a href="/practice/">研发实践</a></li>
+        <li ><a href="/chihuo/">熊猫吃货</a></li>
+        <li ><a href="/life/">微生活</a></li>
+        <li ><a href="/tags/">标签</a></li>
+        <li ><a href="/about/">关于我</a></li>
+        
+        <li>
+        <div id="search">
+            <form action="http://www.google.com/cse" class="lit-search" method="get" target="_blank">
+                <input type="text" class="text" name="q" size="24" placeholder="搜索">
+                <input type="hidden" name="cx" value="007512494910388222978:uvgripsnamg">
+                <input type="hidden" name="ie" value="UTF-8">
+            </form>
+        </div>
+
+        </li>
+
+    </ul>
+    <hr class="noscreen" />                    
+</div> 
+<!-- /tray -->
+
+
+            <div id="main">
+                <div id="content">
+  <div class="post type-post status-publish format-standard hentry category-1 post" >
+    <div class="posttop">
+      <h1 class="posttitle">
+        Hadoop 部署详解
+      </h1>
+    </div>
+    <div class="postmetatop">
+      Posted 
+      <time class="text" datetime="2013-04-29">2013-04-29 00:12:36</time>&nbsp; |&nbsp;
+       <span class="ds-thread-count" data-thread-key="20130429001236" data-replace="1">暂无评论</span></a></span> &nbsp;|&nbsp;
+      
+      By 熊猫人
+      
+      
+      <div class="tag">
+        
+        <a href="/tags/#CentOS" class="text" title="CentOS" rel="category tag">CentOS</a>&nbsp;
+        
+        <a href="/tags/#linux" class="text" title="linux" rel="category tag">linux</a>&nbsp;
+        
+        <a href="/tags/#Hadoop" class="text" title="Hadoop" rel="category tag">Hadoop</a>&nbsp;
+        
+      </div>
+      
+    </div>
+
+    <div class="postcontent-entry">
+      <div class="cleared"></div>
+      <p> 　　一个分布式系统基础架构，由Apache基金会开发。用户可以在不了解分布式底层细节的情况下，开发分布式程序。充分利用集群的威力高速运算和存储。Hadoop实现了一个分布式文件系统（Hadoop Distributed File System），简称HDFS。HDFS有着高容错性的特点，并且设计用来部署在低廉的（low-cost）硬件上。而且它提供高传输率（high throughput）来访问应用程序的数据，适合那些有着超大数据集（large data set）的应用程序。HDFS放宽了（relax）POSIX的要求（requirements）这样可以流的形式访问（streaming access）文件系统中的数据。</p>
+
+<p>最近有对hadoop进行简单研究，为了以后方便，把简单的伪分布式环境搭建给记录下来：</p>
+
+<h3>硬件、软件准备</h3>
+
+<p>Ubuntu12.04，Java环境</p>
+
+<h3>安装过程</h3>
+
+<p>1、安装ssh、设置免密码登录</p>
+
+<pre id="bash">
+$ sudo apt-get install ssh
+$ sudo apt-get install rsync
+</pre>
+
+
+<p>2、配置免密码ssh登录</p>
+
+<pre id="bash">
+$ ssh-keygen -t dsa -P '' -f ~/.ssh/id_dsa 
+$ cat ~/.ssh/id_dsa.pub >> ~/.ssh/authorized_keys
+</pre>
+
+
+<p>配置完后，执行一下 ssh localhost, 确认你的机器可以用 SSH 连接，并且连接时不需要手工输入密码。</p>
+
+<p>3、安装Hadoop
+(1)、hadoop包含三个部分：Hadoop Common，HDFS，Hadoop MapReduce</p>
+
+<p>(2)、下载Hadoop稳定的发行版本。下载地址http://hadoop.apache.org/common/releases.html</p>
+
+<p>(3)、配置Hadoop环境变量$HADOOP_HOME</p>
+
+<pre id="bash">
+$ sudo vim /etc/profile
+#添加如下配置
+HADOOP_HOME=/home/denghp/hadoop-0.21.0
+export HADOOP_HOME
+export HADOOP=$HADOOP_HOME/bin
+export PATH=$HADOOP:$PATH
+</pre>
+
+
+<p>(4)、修改hadoop配置
+hadoop配置文件，在hadoop的conf文件夹中，hadoop的所有配置文件都在里面，这里主要关注以下几个配置文件:</p>
+
+<p>根据提示添加JAVA环境变量JAVA_HOME</p>
+
+<pre id="bash">
+$ vi hadoop-env.sh
+# The java implementation to use.  Required.
+export JAVA_HOME=/home/denghp/software/jdk1.6.0_30
+</pre>
+
+
+<p>(5)、伪分布式配置
+Hadoop可以在单节点上以所谓的伪分布式模式运行，此时每一个Hadoop守护进程都作为一个独立的Java进程运行。</p>
+
+<p><strong>core-site.xml配置如下:</strong></p>
+
+<pre id="bash">
+&lt;configuration&gt;
+　&lt;property&gt;
+      &lt;name&gt;fs.default.name&lt;/name&gt;
+      &lt;value&gt;hdfs://localhost:9000&lt;/value&gt;
+   &lt;/property&gt;
+&lt;/configuration&gt;
+</pre>
+
+
+<p><strong>hdfs-site.xml配置如下:</strong></p>
+
+<pre id="bash">
+&lt;configuration&gt;
+  &lt;property&gt;
+    &lt;name&gt;dfs.name.dir&lt;/name&gt;
+    &lt;value&gt;/home/denghp/hdfs/name&lt;/value&gt;
+  &lt;/property&gt;
+  &lt;property&gt;
+    &lt;name&gt;dfs.data.dir&lt;/name&gt;
+    &lt;value&gt;/home/denghp/hdfs/data&lt;/value&gt;
+  &lt;/property&gt;
+  &lt;property&gt;
+    &lt;name&gt;dfs.replication&lt;/name&gt;
+    &lt;value&gt;1&lt;/value&gt;
+  &lt;/property&gt;
+&lt;/configuration&gt;
+</pre>
+
+
+<p><strong>mapred-site.xml配置如下:</strong></p>
+
+<pre id="bash">
+&lt;configuration&gt;
+  &lt;property&gt;
+    &lt;name&gt;mapred.job.tracker&lt;/name&gt;
+    &lt;value&gt;localhost:9001&lt;/value&gt;
+  &lt;/property&gt;
+&lt;/configuration&gt;
+</pre>
+
+
+<h3>启动伪分布式hadoop</h3>
+
+<p>1、格式化一个新的文件系统，挂载</p>
+
+<pre id="bash">
+$ hadoop namenode -format
+</pre>
+
+
+<p><a href="http://demi-panda.com/media/pub/linux/hadoop-format.jpg" alt="hadoop namenode -format" rel="prettyPhoto[20130429001236]">
+  <img src="http://demi-panda.com/media/pub/linux/hadoop-format.jpg" width="560px"  alt="hadoop namenode format" />
+</a></p>
+
+<p>namenode -format 这是第一需要做的初始化之后产生如下文件:
+<a href="http://demi-panda.com/media/pub/linux/format-files.jpg" alt="hadoop namenode -format" rel="prettyPhoto[20130429001236]">
+  <img src="http://demi-panda.com/media/pub/linux/format-files.jpg" width="330px"  alt="namenode format" />
+</a></p>
+
+<p>2、因为我们把hadoop的已经配置到环境变量中了，所以我们可以在任何目录下执行hadoop的start-all.sh，启动hadoop守护进程</p>
+
+<pre id="bash">
+denghp@denghp:~/software/hadoop-0.21.0$ start-all.sh
+This script is Deprecated. Instead use start-dfs.sh and start-mapred.sh
+starting namenode, logging to /home/denghp/software/hadoop-0.21.0/bin/../logs/hadoop-denghp-namenode-denghp.out
+localhost: starting datanode, logging to /home/denghp/software/hadoop-0.21.0/bin/../logs/hadoop-denghp-datanode-denghp.out
+localhost: starting secondarynamenode, logging to /home/denghp/software/hadoop-0.21.0/bin/../logs/hadoop-denghp-secondarynamenode-denghp.out
+starting jobtracker, logging to /home/denghp/software/hadoop-0.21.0/bin/../logs/hadoop-denghp-jobtracker-denghp.out
+localhost: starting tasktracker, logging to /home/denghp/software/hadoop-0.21.0/bin/../logs/hadoop-denghp-tasktracker-denghp.out
+</pre>
+
+
+<p>3、查看启动状态</p>
+
+<pre id="bash">
+$ jps
+17268 TaskTracker
+17473 Jps
+16848 SecondaryNameNode
+16241 NameNode
+16545 DataNode
+16971 JobTracker
+2859 Main
+</pre>
+
+
+<p>4、通过界面查看NameNode,JobTracker</p>
+
+<pre id="bash">
+NameNode--   http://localhost:50070
+JobTracker--   http://localhost:50030
+</pre>
+
+
+<p><strong>NameNode</strong>
+<a href="http://demi-panda.com/media/pub/linux/namenode-web.jpg" alt="hadoop namenode web" rel="prettyPhoto[20130429001236]">
+  <img src="http://demi-panda.com/media/pub/linux/namenode-web.jpg" width="560px"  alt="namenode web" />
+</a></p>
+
+<p><strong>Jobtracker</strong>
+<a href="http://demi-panda.com/media/pub/linux/jobtracker-web.jpg" alt="jobtracker web" rel="prettyPhoto[20130429001236]">
+  <img src="http://demi-panda.com/media/pub/linux/jobtracker-web.jpg" width="560px"  alt="jobtracker web" />
+</a></p>
+
+<h3>运行MapReduce Tutorial的例子</h3>
+
+<p>1、将input文件夹及文件copy到hdfs</p>
+
+<pre id="bash">
+$ hadoop fs -copyFromLocal input input
+</pre>
+
+
+<p>2、查看拷贝上去的文件</p>
+
+<pre id="bash">
+$ hadoop fs -ls input
+
+13/04/28 16:46:26 INFO security.Groups: Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping; cacheTimeout=300000
+13/04/28 16:46:26 WARN conf.Configuration: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+Found 4 items
+-rw-r--r--   1 denghp supergroup         28 2013-04-28 16:46 /user/denghp/input/input-1.txt
+-rw-r--r--   1 denghp supergroup         36 2013-04-28 16:46 /user/denghp/input/input.txt
+-rw-r--r--   1 denghp supergroup        178 2013-04-28 16:46 /user/denghp/input/test.txt
+-rw-r--r--   1 denghp supergroup        370 2013-04-28 16:46 /user/denghp/input/url
+</pre>
+
+
+<p>3、文件内容</p>
+
+<pre id="bash">
+denghp@denghp:~/software/hadoop-0.21.0$ hadoop fs -cat input/url
+13/04/28 16:49:03 INFO security.Groups: Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping; cacheTimeout=300000
+13/04/28 16:49:03 WARN conf.Configuration: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+http://www.hao123.com/ 公司介绍 创业团队 荣誉之路 企业招聘 联系我们 友情链接 新闻资讯 产品与服务 分布式虚拟存储系统
+http://www.baidu.com/ baidu
+http://www.google.com/ google中国
+denghp@denghp:~/software/hadoop-0.21.0$ hadoop fs -cat input/input-1.txt
+13/04/28 16:49:10 INFO security.Groups: Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping; cacheTimeout=300000
+13/04/28 16:49:11 WARN conf.Configuration: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+Hello Hadoop Goodbye Hadoop
+</pre>
+
+
+<p>4、运行WordCount程序</p>
+
+<pre id="bash">
+$ hadoop jar lib/wordcount-example-1.0-20130428.jar com.company.mr.WordCount input out
+</pre>
+
+
+<p><a href="http://demi-panda.com/media/pub/linux/hadoop-mapreduce.jpg" alt="hadoop mapreduce" rel="prettyPhoto[20130429001236]">
+  <img src="http://demi-panda.com/media/pub/linux/hadoop-mapreduce.jpg" width="560px"  alt="hadoop mapreduce" />
+</a></p>
+
+<p>5、运行结果</p>
+
+<pre id="bash">
+denghp@denghp:~/workspace/mapreduce/trunk$ hadoop fs -cat out/part-00000
+13/04/28 15:25:41 INFO security.Groups: Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping; cacheTimeout=300000
+13/04/28 15:25:41 WARN conf.Configuration: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+Goodbye 1
+Hadoop  2
+Hello 1
+baidu 1
+google中国  1
+http://www.baidu.com/ 3
+http://www.dangdang.com/  2
+http://www.google.com/  1
+http://www.hao123.com 1
+产品与服务  1
+企业招聘  1
+公司介绍  1
+分布式虚拟存储系统  1
+创业团队  1
+友情链接  1
+新闻资讯  1
+联系我们  1
+荣誉之路  1
+</pre>
+
+
+    </div><!-- /postcontent -->
+
+    <div class="v-pagination">
+      
+      
+      <a class="prev" href="/2013/04/24/how-to-create-a-sudo-user-in-linux" title="前一篇：Linux 创建sudo用户权限">&laquo; Linux 创建sudo用户权限</a>
+      
+      
+      
+       
+      <a class="next" href="/2013/05/13/photography-listing" title="后一篇：摄影书籍下载大全">摄影书籍下载大全 &raquo;</a>
+      
+      
+    </div>
+    
+    <!-- JiaThis Button BEGIN -->
+    <div class="jiathis_style" style="margin: 10px 10px 20px 0;padding: 10px 0 0;">
+      <span class="jiathis_txt">分享到：</span>
+      <a class="jiathis_button_qzone">QQ空间</a>
+      <a class="jiathis_button_tsina">新浪微博</a>
+      <a class="jiathis_button_tqq">腾讯微博</a>
+      <a class="jiathis_button_renren">人人网</a>
+      <a class="jiathis_button_googleplus">Google+</a>
+      <a href="http://www.jiathis.com/share?uid=1706288" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+      <a class="jiathis_counter_style"></a>
+    </div>
+    <script type="text/javascript">
+      var jiathis_config = {data_track_clickback:true};
+    </script>
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1343704647947962" charset="utf-8"></script>
+    <!-- JiaThis Button END -->
+ </div><!-- /post -->
+  <div class="cleared"></div>
+ 
+  <div class="archivesbox">
+    <b>版权声明：</b>自由转载-非商用-非衍生-保持署名 | <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">Creative Commons BY-NC-ND 3.0</a><br>
+    <b>原文网址：</b><a href="/2013/04/29/hadoop-deploy">http://demi-panda.com/2013/04/29/hadoop-deploy</a>
+  </div>
+
+  <div class="archivesbox">
+    <div class="comments">
+      <!-- Duoshuo Comment Begin -->
+      <div class="ds-thread" data-thread-id="20130429001236" data-url="http://demi-panda.com/2013/04/29/hadoop-deploy" data-thread-key="20130429001236" data-title="Hadoop 部署详解"
+        data-order="desc" data-form-positon="top"></div>
+      <!-- Duoshuo Comment End -->
+    </div>
+  </div>
+</div><!-- /content -->
+
+<div id="sidebar">
+    <ul> 
+        <li id="rss-feed" class="boxed widget ds-widget-qqt-follow">
+        <h2 class="widgettitle">RSS Feed</h2>
+            <a href="/rss.xml" target="_blank"><img src="/media/demi/img/feed.png"  alt="熊猫家族 RSS feed" border="0" title="Subscribe for Updates"></a>
+            熊猫家族-建设一个有家氛围的博客园
+        </li>
+        <li id="tag_cloud" class="boxed widget widget_tag_cloud">
+        <h2 class="widgettitle">分类目录</h2>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+         
+        <a href='/practice' class='tag-link-102' title='code' style='font-size: 14pt;'>研发实践(102)</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/life' class='tag-link-34' title='life' style='font-size: 14pt;'>微生活(34)</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+         
+        <a href='/categories/java' class='tag-link-18' title='java' style='font-size: 14pt;'>Java语言(18)</a>
+        
+        
+        
+        
+        
+        <a href='/categories/solr' class='tag-link-14' title='solr' style='font-size: 14pt;'>Lucene/Solr(14)</a>
+        
+        
+        
+        
+        
+        <a href='/categories/linux' class='tag-link-43' title='linux' style='font-size: 15pt;'>Uinx/Linux(43)</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </li>
+
+        <li id="tag_cloud" class="boxed widget widget_tag_cloud">
+        <h2 class="widgettitle">热门标签</h2>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Google' class='tag-link-4' title='Google' style='font-size: 16pt;'>Google</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#HTTP' class='tag-link-4' title='HTTP' style='font-size: 14pt;'>HTTP</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#生活' class='tag-link-7' title='生活' style='font-size: 16pt;'>生活</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#项目管理' class='tag-link-3' title='项目管理' style='font-size: 22pt;'>项目管理</a>
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#健康' class='tag-link-4' title='健康' style='font-size: 16pt;'>健康</a>
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Github' class='tag-link-6' title='Github' style='font-size: 16pt;'>Github</a>
+        
+        
+        
+        <a href='/tags/#搜索引擎' class='tag-link-14' title='搜索引擎' style='font-size: 22pt;'>搜索引擎</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#CentOS' class='tag-link-3' title='CentOS' style='font-size: 16pt;'>CentOS</a>
+        
+        
+        
+        
+        
+        <a href='/tags/#屏蔽' class='tag-link-3' title='屏蔽' style='font-size: 16pt;'>屏蔽</a>
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#监控' class='tag-link-3' title='监控' style='font-size: 16pt;'>监控</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#SSH' class='tag-link-3' title='SSH' style='font-size: 13pt;'>SSH</a>
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#lucene' class='tag-link-14' title='lucene' style='font-size: 16pt;'>lucene</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Ubuntu' class='tag-link-23' title='Ubuntu' style='font-size: 16pt;'>Ubuntu</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#浏览器' class='tag-link-3' title='浏览器' style='font-size: 19pt;'>浏览器</a>
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Subversion' class='tag-link-3' title='Subversion' style='font-size: 20pt;'>Subversion</a>
+        
+        
+        
+        <a href='/tags/#熊猫厨房' class='tag-link-6' title='熊猫厨房' style='font-size: 22pt;'>熊猫厨房</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Jekyll' class='tag-link-6' title='Jekyll' style='font-size: 16pt;'>Jekyll</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#vim' class='tag-link-5' title='vim' style='font-size: 13pt;'>vim</a>
+        
+        
+        
+        
+        
+        <a href='/tags/#域名' class='tag-link-3' title='域名' style='font-size: 16pt;'>域名</a>
+        
+        
+        
+        <a href='/tags/#shell' class='tag-link-37' title='shell' style='font-size: 15pt;'>shell</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#互联网' class='tag-link-11' title='互联网' style='font-size: 19pt;'>互联网</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#redmine' class='tag-link-3' title='redmine' style='font-size: 17pt;'>redmine</a>
+        
+        
+        
+        
+        
+        <a href='/tags/#java' class='tag-link-11' title='java' style='font-size: 14pt;'>java</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Python' class='tag-link-3' title='Python' style='font-size: 16pt;'>Python</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#研发实践' class='tag-link-20' title='研发实践' style='font-size: 22pt;'>研发实践</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#linux' class='tag-link-49' title='linux' style='font-size: 15pt;'>linux</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#梦想' class='tag-link-4' title='梦想' style='font-size: 16pt;'>梦想</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#solr' class='tag-link-14' title='solr' style='font-size: 14pt;'>solr</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Jenkins' class='tag-link-3' title='Jenkins' style='font-size: 17pt;'>Jenkins</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </li>
+        <li id="recent-posts-2" class="boxed widget widget_recent_entries">		
+        <h2 class="widgettitle">近期文章</h2>	
+        <div id="hot_comment_post">
+            <ul>
+                 
+                <li>
+                <a href="/2013/07/29/tools-jar-is-not-in-idea-classpath" title="Tools Jar Is Not In Idea Classpath">Tools Jar Is Not In Idea Classpath</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/07/24/install-wine-on-ubuntu-and-linux-mint" title="Wine 1.6 Released – Install on Ubuntu 13.04/12.10/12.04/11.10 and Linux Mint 15/13">Wine 1.6 Released – Install on Ubuntu 13.04/12.10/12.04/11.10 and Linux Mint 15/13</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/06/29/incompatible-character-encodings-utf-8-and-ascii-8bit" title="Redmine incompatible character encodings UTF-8 and ASCII-8BIT">Redmine incompatible character encodings UTF-8 and ASCII-8BIT</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/06/28/java-exec-linux-command" title="Java使用Runtime执行Linux命令用管理连接问题">Java使用Runtime执行Linux命令用管理连接问题</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/06/26/Redmine-CKEditor-plugin" title="Redmine高级编辑插件-CKEditor">Redmine高级编辑插件-CKEditor</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/06/21/ubuntu-install-redmine" title="Ubuntu 安装Redmine">Ubuntu 安装Redmine</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/05/22/linux-install-python-pil" title="Linux 64位系统安装Python PIL模块">Linux 64位系统安装Python PIL模块</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/05/21/centos-install-python-2.7" title="Centos 安装Django开发环境">Centos 安装Django开发环境</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/05/16/linux-vmstat" title="Linux系统监控工具之vmstat详解">Linux系统监控工具之vmstat详解</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/05/13/photography-listing" title="摄影书籍下载大全">摄影书籍下载大全</a>
+                </li>
+                
+            </ul>
+        </div>
+
+        </li>
+        <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
+        <h2 class="widgettitle">热评文章</h2>
+        <div id="hot_comment_post">
+            <ul class="ds-top-threads" data-num-items="10" data-range="weekly"></ul>
+        </div>
+        </li>
+        <li id="ds-recent-comments" class="boxed widget ds-widget-recent-comments">
+        <h2 class="widgettitle">近期评论</h2>
+        <div id="hot_comment">
+            <ul class="ds-recent-comments" data-num-items="10" data-show-avatars="1" data-show-time="1" data-show-title="0" data-show-admin="0" data-avatar-size="32" data-excerpt-length="70">
+            </ul>
+        </div>
+        </li>
+        <li id="ds-qqt-follow" class="boxed widget ds-widget-qqt-follow">
+        <!--
+        <iframe src="http://follow.v.t.qq.com/index.php?c=follow&a=quick&name=denghp_280606790&style=1&t=1352387427769&f=1" frameborder="0" scrolling="auto" width="227" height="75" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
+        -->
+        <iframe width="300" height="190" frameborder="0" scrolling="no" src="http://widget.weibo.com/relationship/bulkfollow.php?language=zh_cn&uids=1655072963&wide=1" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
+        </li>
+
+        <li id="ds-recent-visitors-2" class="boxed widget ds-widget-recent-visitors">
+        <h2 class="widgettitle">最近访客</h2>
+        <ul class="ds-recent-visitors" data-num-items="20" data-show-time="0" data-avatar-size="50"></ul>
+        </li>
+        
+        <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
+        <h2 class="widgettitle">友情链接</h2>
+        <div id="hot_comment_post">
+            <ul>
+                
+                <li><a href="http://lusongsong.com/"target="_blank"  title="卢松松-关注站长和搜索引擎的IT博客">卢松松</a></li>
+                
+                <li><a href="http://www.muchangqing.com/"target="_blank"  title="牟长青-牟长青的网站推广博客">牟长青</a></li>
+                
+                <li><a href="http://coolshell.cn/"target="_blank"  title="酷壳-享受编程和技术所带来的快乐">酷壳</a></li>
+                
+                <li><a href="http://yanping.me/"target="_blank"  title="雁起平沙-雁起平沙的网络日志">雁起平沙</a></li>
+                
+                <li><a href="http://www.letuknowit.com/"target="_blank"  title="知蚁博客">知蚁博客</a></li>
+                
+                <li><a href="http://www.zhangyuchang.com/"target="_blank"  title="不纯粹文人-不经一番寒彻骨，哪得梅花扑鼻香">不纯粹文人</a></li>
+                
+                <li><a href="http://chenpeng.info/"target="_blank"  title="陈鹏个人博客">陈鹏个人博客</a></li>
+                
+                <li><a href="http://www.kandisheng.com/"target="_blank"  title="不霁何虹博客">不霁何虹博客</a></li>
+                
+                <li><a href="http://blog.jobbole.com/"target="_blank"  title="伯乐在线">伯乐在线</a></li>
+                
+            </ul> 
+        </div>
+        </li>
+        
+    </ul>
+</div>
+<!-- /sidebar -->
+<div class="cleared"></div>
+
+
+
+
+  
+            </div> 
+        </div> <!-- wrapper -->
+        
+        <!-- scroll.html -->
+        <div id="full" style="display:none;width:50px; height:95px; position:fixed; left:50%; top:480px; margin-left:425px;  z-index:100; text-align:center; cursor:pointer;">
+    <a><img src="http://demi-panda.com/media/demi/img/back-top.png" border=0 alt="返回顶部" title="返回顶部"></a>
+</div>
+<script type="text/javascript">
+    var isie6 = window.XMLHttpRequest ? false : true; function newtoponload() { var c = document.getElementById("full"); function b() { var a = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop; if (a > 0) { if (isie6) { c.style.display = "none"; clearTimeout(window.show); window.show = setTimeout(function () { var d = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop; if (d > 0) { c.style.display = "block"; c.style.top = (480 + d) + "px" } }, 400) } else { c.style.display = "block" } } else { c.style.display = "none" } } if (isie6) { c.style.position = "absolute" } window.onscroll = b; b() } if (window.attachEvent) { window.attachEvent("onload", newtoponload) } else { window.addEventListener("load", newtoponload, false) } document.getElementById("full").onclick = function () { window.scrollTo(0, 0) };
+</script>
+
+
+
+
+       
+        <!-- footer -->
+        <footer>
+<div id="footer">                                          
+  <p class="t-center" style='font-size: 10pt;'>
+  &copy; 2012 <a href="/">Demi Panda Lab</a>, All Rights Reserved.
+
+  <script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9ed8ee65a576b9495a4d989eabbd4c09' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+
+  <script src="http://s14.cnzz.com/stat.php?id=4734788&web_id=4734788&show=pic" language="JavaScript"></script>
+  </p>
+  </div> 
+</footer>
+
+ 
+        <script type="text/javascript">
+            var duoshuoQuery = {short_name:"demi-panda"};
+(function() {
+ var ds = document.createElement('script');
+ ds.type = 'text/javascript';ds.async = true;
+ ds.src = 'http://static.duoshuo.com/embed.js';
+ ds.charset = 'UTF-8';
+ (document.getElementsByTagName('head')[0] 
+  || document.getElementsByTagName('body')[0]).appendChild(ds);
+ })();
+</script>  
+
+
+<script type="text/javascript">
+    $(window).load(function(){
+            $("pre").addClass("prettyprint");
+            prettyPrint();
+            })
+        </script>
+
+        <script language="javascript">
+            $.fn.tagcloud.defaults = {
+                size: {start: 0.9, end: 2, unit: 'em'},
+                color: {start: '#e77471', end: '#f62817'}
+            };
+
+            $(function () {
+                $('#tagcloud a').tagcloud();
+            });
+        </script>  
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-36197302-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+             })();
+
+         </script>
+         <script type='text/javascript' src='http://demi-panda.com/media/js/jquery.prettyPhoto-3.4.2.js'></script>
+         <script type='text/javascript' src='http://demi-panda.com/media/js/themify.script-3.4.2.js'></script> 
+     </body>
+ </html>
+

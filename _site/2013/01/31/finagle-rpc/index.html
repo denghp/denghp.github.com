@@ -1,0 +1,1497 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv=Content-Type content="text/html;charset=utf-8">
+        <meta name="robots" content="all,follow" />
+        <title>Finagle：一个协议不可知的 RPC 系统 - 熊猫家族</title>
+        <meta name="keywords" content="博客,IT技术,研发实践,互联网,资讯,编程语言,搜索引擎,Lucene,Solr,Java,生活,旅游,吃货,熊猫吃货,微生活,健康,美食"/>
+        <meta name="author" lang="en" content="All: Demi-Panda Lab [demi-panda.com]; e-mail: blog.pandam@gmail.com" />
+        <meta name="copyright" lang="en" content="@2012 Demi_Panda Lab, All Rights Reserved!" />
+        <meta name="description" content="熊猫家族博客：敢想,敢拼,敢赢...博客,IT技术,研发实践,互联网,资讯,编程语言,搜索引擎,Lucene,Solr,Java,生活,旅游,吃货,熊猫吃货,微生活,健康,美食" />
+        <meta property="wb:webmaster" content="eb26a33b1e192873" />
+        <meta name="chinaz-site-verification" content="54c83ea9-059c-4447-95ec-4dc8b16e60b2" />
+        <meta name="baidu_union_verify" content="67d51e25cc69ae324f028d2d333b753a">
+        <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+        <link rel="shortcut icon" href="http://demi-panda.com/media/demi/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/style.css" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/main.css" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/reset.css" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/superfish.css" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="http://demi-panda.com/media/demi/css/prettify.css" />
+        <link rel='stylesheet' id='pretty-photo-css'  href='http://demi-panda.com/media/demi/css/prettyPhoto-3.4.2.css' type='text/css' media='all' />
+        <link rel="alternate" type="application/rss+xml" title="熊猫家族" href="http://demi-panda.com/rss.xml" />
+        <script src="http://demi-panda.com/media/js/prettify.js" type="text/javascript"></script>
+        <script src="http://demi-panda.com/media/js/jquery-1.6.1.min.js" type="text/javascript"></script>
+        <script src="http://demi-panda.com/media/js/jquery.jcarousel.min.js" type="text/javascript"></script>
+        <script src="http://demi-panda.com/media/js/jquery.tagcloud.js" type="text/javascript"></script>
+        <style type='text/css'>
+          code {
+            margin: 0 2px;
+            padding: 0px 5px;
+            border: 1px solid #EAEAEA;
+            background-color: #F8F8F8;
+            border-radius: 3px;
+            font-size: 12px;
+            font-family: Consolas, "Liberation Mono", Courier, monospace;
+            }
+        </style>
+    </head>
+
+
+    <body >
+
+        <div id="wrapper">
+            <!-- /header -->
+<div id="header">
+
+  <div id="logo">
+    <h1 id="logo">
+      <a href="/" title="[Go to homepage]"><img width="234px" height="86px" src="/media/demi/img/demi-logo.jpg" alt="" /></a>
+    </h1> 
+  </div><!-- /logo -->
+
+  <div class="cleared"></div>
+</div>
+<!-- /header -->
+
+ 
+            <!-- Tray -->
+<div id="tray">
+    <ul>
+        
+        <li ><a href="/">Home</a></li>
+        <li id="tray-active" ><a href="/archives/">文章列表</a></li>
+        <li><a href="/practice/">研发实践</a></li>
+        <li ><a href="/chihuo/">熊猫吃货</a></li>
+        <li ><a href="/life/">微生活</a></li>
+        <li ><a href="/tags/">标签</a></li>
+        <li ><a href="/about/">关于我</a></li>
+        
+        <li>
+        <div id="search">
+            <form action="http://www.google.com/cse" class="lit-search" method="get" target="_blank">
+                <input type="text" class="text" name="q" size="24" placeholder="搜索">
+                <input type="hidden" name="cx" value="007512494910388222978:uvgripsnamg">
+                <input type="hidden" name="ie" value="UTF-8">
+            </form>
+        </div>
+
+        </li>
+
+    </ul>
+    <hr class="noscreen" />                    
+</div> 
+<!-- /tray -->
+
+
+            <div id="main">
+                <div id="content">
+  <div class="post type-post status-publish format-standard hentry category-1 post" >
+    <div class="posttop">
+      <h1 class="posttitle">
+        Finagle：一个协议不可知的 RPC 系统
+      </h1>
+    </div>
+    <div class="postmetatop">
+      Posted 
+      <time class="text" datetime="2013-01-31">2013-01-31 10:27:00</time>&nbsp; |&nbsp;
+       <span class="ds-thread-count" data-thread-key="20130131102700" data-replace="1">暂无评论</span></a></span> &nbsp;|&nbsp;
+      
+      By 熊猫人
+      
+      
+      <div class="tag">
+        
+        <a href="/tags/#java" class="text" title="java" rel="category tag">java</a>&nbsp;
+        
+        <a href="/tags/#RPC" class="text" title="RPC" rel="category tag">RPC</a>&nbsp;
+        
+        <a href="/tags/#Finagle" class="text" title="Finagle" rel="category tag">Finagle</a>&nbsp;
+        
+        <a href="/tags/#研发实践" class="text" title="研发实践" rel="category tag">研发实践</a>&nbsp;
+        
+      </div>
+      
+    </div>
+
+    <div class="postcontent-entry">
+      <div class="cleared"></div>
+      <p>　　Finagle是一个协议不可知的，异步的，用于 JVM 的 RPC 系统，它使得在 Java、Scala 或任何基于 JVM 的语言重构建鲁棒的客户端和服务器非常容易。</p>
+
+<p>　　在<a href="http://twitter.com/" alt="Twitter" target="_bank">Twitter.com</a> 上面即使是渲染最简单的网页也需要十多个说着不同协议的网络服务的合作。比如，为了渲染首页，应用程序需要向社交网络图（Social Graph）服务、Memcached、数据库、以及许多其它网络服务发出请求。他们每个都使用不同的协议：Thrift、Memcached、MySQL等等。此外，这些服务之间还相互交谈——他们既是服务器又是客户端。比如，社交网络图服务就提供了一个 Thrift 接口，但是它也从一个 MySQL 集群里面获取信息。</p>
+
+<p>　　在这样一个系统里面，服务中断最常见的原因就是这些部件之间在发生故障的时候糟糕的交互；常见的故障包括崩溃的主机和极高的时延差异。这些故障可以　　通过让工作队列任务堆积、TCP 连接搅动（churn）、耗光内存和文件描述符等方式在系统里面叠加起来。在最糟的情况下，用户就会看到<strong>失败鲸</strong>。</p>
+
+<h3>构造一个稳定的分布式系统的挑战</h3>
+
+<p>　　复杂的网络服务器和客户端有很多活动部件：故障检测器、负载平衡器、失效备援策略（failover strategy）等等。这些部件之间需要达到一种精致的平衡，以便对大型产品系统里面的故障有足够的弹性。</p>
+
+<p>　　故障检测器、负载平衡器等部件的不同协议的很多不同实现使得这个任务变得尤其困难。比如，Thrift 的背压（back pressure）策略就和 HTTP 的不同。在事故的时候确保在这种异构系统上的覆盖率非常具有挑战性。</p>
+
+<h3>我们的方法</h3>
+
+<p>　　我们设计了一个能够用于我们<strong>所有协议</strong>的基本网络服务器和客户端组件的<strong>单一实现</strong>。Finagle 是一个协议不可知的、异步的、用于 Java 虚拟机的远程过程调用（RPC）系统，它可能让在 Java、Scala或任何基于 JVM 的语言上构建鲁棒的客户端和服务器变得很容易。Finagle 支持广泛的基于请求/答复的 RPC 协议和很多类型的流协议。</p>
+
+<h4>Finagle的功能实现</h4>
+
+<ol>
+<li>连接池（connection pool）：带有限流（throttling）支持以防止 TCP 连接搅动（churn）；</li>
+<li>故障检测器（failure detector），用于识别太慢或者崩溃了的主机；</li>
+<li>失效备援策略（failover strategies），用于把流量从不健康的主机上引开；</li>
+<li>平衡负载器（load-balancer），包括“最少连接”和其它策略；</li>
+<li>背压（back-pressure）技术，用于保护服务器免受客户端滥用或者叠罗汉（或DoS攻击）。</li>
+</ol>
+
+
+<h4>Finagle 让构造和部署下列服务变得容易</h4>
+
+<ol>
+<li>发布标准统计信息、日志和异常报告；</li>
+<li>支持跨协议的分布式追踪（以 Dapper 形式）；</li>
+<li>选择性地使用 ZooKeeper 用于集群管理；</li>
+<li>支持常见切分（sharding）策略。</li>
+</ol>
+
+
+<h3>Twitter 里的 Finagle</h3>
+
+<p>今天，Finagle 已经部署到了 Twitter 多个前端和后端的运行产品中，包括我们的 URL 爬虫（crawler）和 HTTP 代理。我们计划更广泛地部署 Finagle。
+<a href="http://demi-panda.com/media/pub/java/Finagle-Diagram.png" alt="finagle" target="_bank" rel="prettyPhoto[20130131102700]">
+<img src="/media/pub/java/Finagle-Diagram.png" alt="finagle" class="img-center" />
+</a></p>
+
+<p>上图展示了一个全面使用 Finagle 的未来体系结构。比如，User Service 是一个使用 Finalge Memcached 客户端的 Finagle 服务器，并和 Finagle Kestrel Service 交谈。</p>
+
+<h3>Finagle的Java设计模式</h3>
+
+<p>　　实现RPC服务器和客户端的Java和Scala实现的是类似的。在必要的风格，你可以写你的Java服务，这是传统的Java编程风格，或者你可以写在函数式的风格，它使用的对象和功能的基础Scala的。 Java和Scala实现的大部分差异是相关的异常处理。</p>
+
+<h4>Future 对象</h4>
+
+<p>在 Finagle 中，Future 对象是对于所有异步计算的统一抽象。一个 Future 表示了一个尚未完成的计算，其可能成功也可能失败。使用 Future 两个最基本的方法是：<br></p>
+
+<ul>
+<li>阻塞并等待计算结束返回</li>
+<li>注册一个回调函数，在计算最终成功或失败时 Future 回调</li>
+</ul>
+
+
+<p>如果任务需要在计算结束之后继续异步执行，你可以指定一个成功回调函数和一个失败回调函数。回调函数通过 onSuccess 和 onFailure 函数注册：</p>
+
+<pre id="java">
+Future<String> future = executor.schedule(job);
+future.addEventListener(
+  new FutureEventListener<String>() {
+      public void onSuccess(String value) {
+            println(value);
+      }
+      public void onFailure(Throwable t) {
+      }
+)
+</pre>
+
+
+<h4>组合 Future</h4>
+
+<p>下面的例子显示了功能性风格的地<code>map</code>方法:</p>
+
+<pre id="java">
+Future<String> future = executor.schedule(job);
+Future<Integer> result = future.map(new Function<String, Integer>() {
+  public Integer apply(String value) { return Integer.valueOf(value);
+}
+</pre>
+
+
+<h3>在Java中建立一个server</h3>
+
+<p>　　如果你需要使用java创建一个服务器，你有几种选择:您可以创建一个同步或异步处理请求的服务器。您还必须选择一个适当的异常处理。在任何情况下，都需要返回Future或返回一个异常；下面介绍Java编写的服务器有关的一些技术：</p>
+
+<ol>
+<li><a href="#Server%20Imports">Server Imports</a></li>
+<li><a href="#Performing%20Synchronous%20Operations">Performing Synchronous Operations - 执行同步操作</a></li>
+<li><a href="#Chaining%20Asynchronous%20Operations">Chaining Asynchronous Operations - 连锁异步操作</a></li>
+<li><a href="#Invoking%20the%20Server">Invoking the Server - 调用服务器</a></li>
+</ol>
+
+
+<p><a name="Server%20Imports"></a></p>
+
+<h4>Server Imports</h4>
+
+<p>当你使用Java实现一个服务器，你得熟悉下面的包和类。 Netty的类是具体涉及到HTTP。您将使用的大部分的类中定义的的<code>com.twitter.finagle</code>和<code>com.twitter.util</code>软件包。</p>
+
+<pre id="java">
+import java.net.InetSocketAddress;
+
+import org.jboss.netty.buffer.ChannelBuffers;
+import org.jboss.netty.handler.codec.http.DefaultHttpResponse;
+import org.jboss.netty.handler.codec.http.HttpRequest;
+import org.jboss.netty.handler.codec.http.HttpResponse;
+import org.jboss.netty.handler.codec.http.HttpResponseStatus;
+import org.jboss.netty.handler.codec.http.HttpVersion;
+
+import com.twitter.finagle.Service;
+import com.twitter.finagle.builder.ServerBuilder;
+import com.twitter.finagle.http.Http;
+import com.twitter.util.Future;
+import com.twitter.util.FutureEventListener;
+import com.twitter.util.FutureTransformer;
+</pre>
+
+
+<p><a name="Performing%20Synchronous%20Operations"></a></p>
+
+<h4>Performing Synchronous Operations</h4>
+
+<p>如果您的服务器可以响应同步，您可以使用下面的方法来实现您的服务：</p>
+
+<pre id="java">
+public class HTTPServer extends Service<HttpRequest, HttpResponse> {
+  public Future<HttpResponse> apply(HttpRequest request) {
+    // If I can generate the response synchronously, then I just do this.
+    try {
+      HttpResponse response = processRequest(request);
+      return Future.value(response);
+    } catch (MyException e) {
+      return Future.exception(e);
+    }
+  }
+}
+</pre>
+
+
+<p>在这个例子中，try catch块会捕获返响应的异常。</p>
+
+<p><a name="Chaining%20Asynchronous%20Operations"></a></p>
+
+<h4>Chaining Asynchronous Operations</h4>
+
+<p>在Java中，你可以将多个异步操作通过调用Future对象的transformedBy的方法。这样做是，通过供给FutureTransformer对象Future对象的transformedBy方法的。通常实现FutureTransformer的地图的方法来执行实际的转换，FutureTransformer的句柄当异常发生时，这就是所谓的方法。下面的示例演示了这种模式：<br>
+注：如果您需要执行阻塞操作，<a href="#Implementing%20a%20Pool%20for%20Blocking%20Operations%20in%20Java" >Implementing a Pool for Blocking Operations in Java</a></p>
+
+<pre id="java">
+public class HTTPServer extends Service<HttpRequest, HttpResponse> {
+
+  private Future<String> getContentAsync(HttpRequest request) {
+    // asynchronously gets content, possibly by submitting
+    // a function to a FuturePool
+    ...
+  }
+
+  public Future<HttpResponse> apply(HttpRequest request) {
+
+    Future<String> contentFuture = getContentAsync(request);
+    return contentFuture.transformedBy(new FutureTransformer<String, HttpResponse>() {
+      @Override
+      public HttpResponse map(String content) {
+        HttpResponse httpResponse =
+          new DefaultHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK);
+        httpResponse.setContent(ChannelBuffers.wrappedBuffer(content.getBytes()));
+          return httpResponse;
+      }
+
+      @Override
+      public HttpResponse handle(Throwable throwable) {
+        HttpResponse httpResponse =
+          new DefaultHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.SERVICE_UNAVAILABLE);
+        httpResponse.setContent(ChannelBuffers.wrappedBuffer(throwable.toString().getBytes()));
+        return httpResponse;
+      }
+    }
+  });
+}
+</pre>
+
+
+<p><a name="Invoking%20the%20Server"></a></p>
+
+<h4>Invoking the Server</h4>
+
+<p>下面的示例演示的实例化和调用的服务器。静态调用ServerBuilder的safeBuild方法的参数,如果缺少一个必需的参数，会导致运行时错误的ServerBuilder;</p>
+
+<pre id="java">
+  public static void main(String[] args) {
+    ServerBuilder.safeBuild(new HTTPServer(),
+                            ServerBuilder.get()
+                                         .codec(Http())
+                                         .name("HTTPServer")
+                                         .bindTo(new InetSocketAddress("localhost", 8080)));
+
+  }
+</pre>
+
+
+<h3>Java中建立一个client</h3>
+
+<p>当你创建一个Java的客户端，你有几种选择。您可以创建一个客户端，同步或异步处理的反应。您还必须选择一个适当的异常处理。本节介绍了在Java编写的客户端相关的一些技术：</p>
+
+<ol>
+<li><a href="#Client%20Imports">Client Imports</a></li>
+<li><a href="#Creating%20the%20Client">Creating the Client</a></li>
+<li><a href="#Handling%20Synchronous%20Responses">Handling Synchronous Responses</a></li>
+<li><a href="#Handling%20Synchronous%20Responses%20With%20Timeouts">Handling Synchronous Responses With Timeouts</a></li>
+<li><a href="#Handling%20Synchronous%20Responses%20With%20Exception%20Handling">Handling Synchronous Responses With Exception Handling</a></li>
+<li><a href="#Handling%20Asynchronous%20Responses">Handling Asynchronous Responses</a></li>
+</ol>
+
+
+<p><a name="Client%20Imports" ></a></p>
+
+<h4>Client Imports</h4>
+
+<p>当你写一个Java的客户端，你将成为熟悉下面的包和类。 Netty的类是具体涉及到HTTP。您将使用的大部分的类中定义的的<code>com.twitter.finagle</code>和<code>com.twitter.util</code>软件包。</p>
+
+<pre id="java">
+import java.net.InetSocketAddress;
+import java.util.concurrent.TimeUnit;
+
+import org.jboss.netty.handler.codec.http.DefaultHttpRequest;
+import org.jboss.netty.handler.codec.http.HttpMethod;
+import org.jboss.netty.handler.codec.http.HttpRequest;
+import org.jboss.netty.handler.codec.http.HttpResponse;
+import org.jboss.netty.handler.codec.http.HttpVersion;
+
+import com.twitter.finagle.Service;
+import com.twitter.finagle.builder.ClientBuilder;
+import com.twitter.finagle.http.Http;
+import com.twitter.util.Duration;
+import com.twitter.util.FutureEventListener;
+import com.twitter.util.Throw;
+import com.twitter.util.Try;
+</pre>
+
+
+<p><a name="Creating%20the%20Client" ></a></p>
+
+<h4>Creating the Client</h4>
+
+<p>下面的示例演示的实例化和调用的客户端。调用的ClientBuilder的safeBuild方法静态检查参数,如果缺少一个必需的参数，会导致运行时错误的ClientBuilder。</p>
+
+<pre id="java">
+public class HTTPClient {
+  public static void main(String[] args) {
+    Service<HttpRequest, HttpResponse> httpClient =
+      ClientBuilder.safeBuild(
+        ClientBuilder.get()
+                     .codec(Http())
+                     .hosts(new InetSocketAddress(8080))
+                     .hostConnectionLimit(1));
+  }
+}
+</pre>
+
+
+<p><strong>Note:</strong> Choosing a value of 1 for hostConnectionLimit eliminates contention for a host.
+<a name="Handling%20Synchronous%20Responses" ></a></p>
+
+<h4>Handling Synchronous Responses</h4>
+
+<p>在最简单的情况下，你可以等待响应，有可能永远。通常情况下，你应该处理了有效的响应和异常：</p>
+
+<pre id="java">
+ HttpRequest request = new DefaultHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.GET, "/");
+
+    try {
+      HttpResponse response1 = httpClient.apply(request).apply();
+    } catch (Exception e) {
+        ...
+    }
+</pre>
+
+
+<p><a name="Handling%20Synchronous%20Responses%20With%20Timeouts" /></p>
+
+<h4>Handling Synchronous Responses With Timeouts</h4>
+
+<p>要避免等待永远的响应，你可以指定一个时间，会抛出一个异常，如果持续时间到期。下面的示例设置为1秒的持续时间：</p>
+
+<pre id="java">
+ try {
+      HttpResponse response2 = httpClient.apply(request).apply(
+        new Duration(TimeUnit.SECONDS.toNanos(1)));
+    } catch (Exception e) {
+        ...
+    }
+</pre>
+
+
+<p><a name="Handling%20Synchronous%20Responses%20With%20Exception%20Handling" ></a></p>
+
+<h4>Handling Synchronous Responses With Exception Handling</h4>
+
+<p>使用Try，并抛出<code>com.twitter.util</code>来实现异常处理同步响应。除了指定超时时间，可以抛出一个异常，其他异常也可以被抛出。</p>
+
+<pre id="java">
+    Try<HttpResponse> responseTry = httpClient.apply(request).get(
+      new Duration(TimeUnit.SECONDS.toNanos(1)));
+    if (responseTry.isReturn()) {
+      // Cool, I have a response! Get it and do something
+      HttpResponse response3 = responseTry.get();
+      ...
+    } else {
+        // Throw an exception
+      Throwable throwable = ((Throw)responseTry).e();
+      System.out.println("Exception thrown by client: " +  throwable);
+    }
+</pre>
+
+
+<p><strong>注意：</strong>您必须调用请求的<code>get</code>方法的<code>apply</code>方法检索对象。
+<a name="Handling%20Asynchronous%20Responses" ></a></p>
+
+<h4>Handling Asynchronous Responses</h4>
+
+<p>处理异步响应，您可以添加一个FutureEventListener听的响应。Finagle调用的onSuccess方法，响应到达时或调用onFailure处的例外：</p>
+
+<pre id="java">
+ httpClient.apply(request).addEventListener(new FutureEventListener<HttpResponse>() {
+      @Override
+      public void onSuccess(HttpResponse response4) {
+        // Cool, I have a response, do something with it!
+        ...
+      }
+
+      @Override
+      public void onFailure(Throwable throwable) {
+        System.out.println("Exception thrown by client: " +  throwable);
+      }
+    });
+  }
+}
+</pre>
+
+
+<p><a name="Implementing%20a%20Pool%20for%20Blocking%20Operations%20in%20Java" ></a></p>
+
+<h3>在Java中实现线程池阻塞操作</h3>
+
+<p>To prevent blocking operations from executing on the main Finagle thread, you must wrap the blocking operation in a Scala closure and execute the closure on the Java thread that you create. Typically, your Java thread is part of a thread pool. The following sections show how to wrap your blocking operation, set up a thread pool, and execute the blocking operation on a thread in your pool:</p>
+
+<ul>
+<li><a href="#Wrapping%20the%20Blocking%20Operation">Wrapping the Blocking Operation - 封装阻塞操作</a></li>
+<li><a href="#Setting%20Up%20Your%20Thread%20Pool">Setting Up Your Thread Pool  - 设置您的线程池</a></li>
+<li><a href="#Invoking%20the%20Blocking%20Operation">Invoking the Blocking Operation - 调用阻塞操作</a></li>
+</ul>
+
+
+<p><strong>Note:</strong> Jakob Homan provides an example implementation of a thread pool that executes Scala closures on <a href="https://github.com/jghoman/finagle-java-example" target="_bank" alt="finagle-java-example">GitHub</a>.</p>
+
+<p><a name="Wrapping%20the%20Blocking%20Operation" ></a></p>
+
+<h4>Wrapping the Blocking Operation</h4>
+
+<p>The Util project contains a Function0 class that represents a Scala closure. You can override the apply method to wrap your blocking operation:</p>
+
+<pre id="java">
+public static class BlockingOperation extends com.twitter.util.Function0<Integer> {
+  public Integer apply() {
+    // Implement your blocking operation here
+    ...
+  }
+}
+</pre>
+
+
+<p><a name="Setting%20Up%20Your%20Thread%20Pool" ></a></p>
+
+<h4>Setting Up Your Thread Pool</h4>
+
+<p>下面的示例显示了一个<code>Thrift</code>的服务器将阻塞操作中定义的<code>Future0</code>对象的申请方法在Java线程池，它最终将执行并返回结果：</p>
+
+<pre id="java">
+public static class HelloServer implements Hello.ServiceIface {
+  ExecutorService pool = Executors.newFixedThreadPool(4);                     // Java thread pool
+  ExecutorServiceFuturePool futurePool = new ExecutorServiceFuturePool(pool); // Java Future thread pool
+
+  public Future<Integer> blockingOperation() {
+      Function0<Integer> blockingWork = new BlockingOperation();
+    return futurePool.apply(blockingWork);
+  }
+
+  public static void main(String[] args) {
+    Hello.ServiceIface processor = new Hello.ServiceIface();
+
+    ServerBuilder.safeBuild(
+      new Hello.Service(processor, new TBinaryProtocol.Factory()),
+      ServerBuilder.get()
+                   .name("HelloService")
+                   .codec(ThriftServerFramedCodec.get())
+                   .bindTo(new InetSocketAddress(8080))
+      );
+    )
+  )
+)
+}
+}
+</pre>
+
+
+<p><a name="Invoking%20the%20Blocking%20Operation" ></a></p>
+
+<h4>Invoking the Blocking Operation</h4>
+
+<p>要调用阻塞操作，可以调用的方法来封装你的阻塞操作，并添加一个事件监听器，等待成功或失败：</p>
+
+<pre id="java">
+      Service<ThriftClientRequest, byte[]> client = ClientBuilder.safeBuild(ClientBuilder.get()
+        .hosts(new InetSocketAddress(8080))
+        .codec(new ThriftClientFramedCodecFactory())
+        .hostConnectionLimit(100)); // Must be more than 1 to enable parallel execution
+
+      Hello.ServiceIface client =
+        new Hello.ServiceToClient(client, new TBinaryProtocol.Factory());
+
+      client.blockingOperation().addEventListener(new FutureEventListener<Integer>() {
+        public void onSuccess(Integer i) {
+          System.out.println(i);
+        }
+
+      public void onFailure(Throwable t) {
+        System.out.println("Exception! ", t.toString());
+      });     
+</pre>
+
+
+
+
+    </div><!-- /postcontent -->
+
+    <div class="v-pagination">
+      
+      
+      <a class="prev" href="/2013/01/31/solr-4-1-stored-fields-compression" title="前一篇：Solr 4.1 特性-存储字段压缩">&laquo; Solr 4.1 特性-存储字段压缩</a>
+      
+      
+      
+       
+      <a class="next" href="/2013/02/01/my-site-seo" title="后一篇：博客终于被百度收录啦">博客终于被百度收录啦 &raquo;</a>
+      
+      
+    </div>
+    
+    <!-- JiaThis Button BEGIN -->
+    <div class="jiathis_style" style="margin: 10px 10px 20px 0;padding: 10px 0 0;">
+      <span class="jiathis_txt">分享到：</span>
+      <a class="jiathis_button_qzone">QQ空间</a>
+      <a class="jiathis_button_tsina">新浪微博</a>
+      <a class="jiathis_button_tqq">腾讯微博</a>
+      <a class="jiathis_button_renren">人人网</a>
+      <a class="jiathis_button_googleplus">Google+</a>
+      <a href="http://www.jiathis.com/share?uid=1706288" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+      <a class="jiathis_counter_style"></a>
+    </div>
+    <script type="text/javascript">
+      var jiathis_config = {data_track_clickback:true};
+    </script>
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1343704647947962" charset="utf-8"></script>
+    <!-- JiaThis Button END -->
+ </div><!-- /post -->
+  <div class="cleared"></div>
+ 
+  <div class="archivesbox">
+    <b>版权声明：</b>自由转载-非商用-非衍生-保持署名 | <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">Creative Commons BY-NC-ND 3.0</a><br>
+    <b>原文网址：</b><a href="/2013/01/31/finagle-rpc">http://demi-panda.com/2013/01/31/finagle-rpc</a>
+  </div>
+
+  <div class="archivesbox">
+    <div class="comments">
+      <!-- Duoshuo Comment Begin -->
+      <div class="ds-thread" data-thread-id="20130131102700" data-url="http://demi-panda.com/2013/01/31/finagle-rpc" data-thread-key="20130131102700" data-title="Finagle：一个协议不可知的 RPC 系统"
+        data-order="desc" data-form-positon="top"></div>
+      <!-- Duoshuo Comment End -->
+    </div>
+  </div>
+</div><!-- /content -->
+
+<div id="sidebar">
+    <ul> 
+        <li id="rss-feed" class="boxed widget ds-widget-qqt-follow">
+        <h2 class="widgettitle">RSS Feed</h2>
+            <a href="/rss.xml" target="_blank"><img src="/media/demi/img/feed.png"  alt="熊猫家族 RSS feed" border="0" title="Subscribe for Updates"></a>
+            熊猫家族-建设一个有家氛围的博客园
+        </li>
+        <li id="tag_cloud" class="boxed widget widget_tag_cloud">
+        <h2 class="widgettitle">分类目录</h2>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+         
+        <a href='/practice' class='tag-link-102' title='code' style='font-size: 14pt;'>研发实践(102)</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/life' class='tag-link-34' title='life' style='font-size: 14pt;'>微生活(34)</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+         
+        <a href='/categories/java' class='tag-link-18' title='java' style='font-size: 14pt;'>Java语言(18)</a>
+        
+        
+        
+        
+        
+        <a href='/categories/solr' class='tag-link-14' title='solr' style='font-size: 14pt;'>Lucene/Solr(14)</a>
+        
+        
+        
+        
+        
+        <a href='/categories/linux' class='tag-link-43' title='linux' style='font-size: 15pt;'>Uinx/Linux(43)</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </li>
+
+        <li id="tag_cloud" class="boxed widget widget_tag_cloud">
+        <h2 class="widgettitle">热门标签</h2>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Google' class='tag-link-4' title='Google' style='font-size: 16pt;'>Google</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#HTTP' class='tag-link-4' title='HTTP' style='font-size: 14pt;'>HTTP</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#生活' class='tag-link-7' title='生活' style='font-size: 16pt;'>生活</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#项目管理' class='tag-link-3' title='项目管理' style='font-size: 22pt;'>项目管理</a>
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#健康' class='tag-link-4' title='健康' style='font-size: 16pt;'>健康</a>
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Github' class='tag-link-6' title='Github' style='font-size: 16pt;'>Github</a>
+        
+        
+        
+        <a href='/tags/#搜索引擎' class='tag-link-14' title='搜索引擎' style='font-size: 22pt;'>搜索引擎</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#CentOS' class='tag-link-3' title='CentOS' style='font-size: 16pt;'>CentOS</a>
+        
+        
+        
+        
+        
+        <a href='/tags/#屏蔽' class='tag-link-3' title='屏蔽' style='font-size: 16pt;'>屏蔽</a>
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#监控' class='tag-link-3' title='监控' style='font-size: 16pt;'>监控</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#SSH' class='tag-link-3' title='SSH' style='font-size: 13pt;'>SSH</a>
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#lucene' class='tag-link-14' title='lucene' style='font-size: 16pt;'>lucene</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Ubuntu' class='tag-link-23' title='Ubuntu' style='font-size: 16pt;'>Ubuntu</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#浏览器' class='tag-link-3' title='浏览器' style='font-size: 19pt;'>浏览器</a>
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Subversion' class='tag-link-3' title='Subversion' style='font-size: 20pt;'>Subversion</a>
+        
+        
+        
+        <a href='/tags/#熊猫厨房' class='tag-link-6' title='熊猫厨房' style='font-size: 22pt;'>熊猫厨房</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Jekyll' class='tag-link-6' title='Jekyll' style='font-size: 16pt;'>Jekyll</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#vim' class='tag-link-5' title='vim' style='font-size: 13pt;'>vim</a>
+        
+        
+        
+        
+        
+        <a href='/tags/#域名' class='tag-link-3' title='域名' style='font-size: 16pt;'>域名</a>
+        
+        
+        
+        <a href='/tags/#shell' class='tag-link-37' title='shell' style='font-size: 15pt;'>shell</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#互联网' class='tag-link-11' title='互联网' style='font-size: 19pt;'>互联网</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#redmine' class='tag-link-3' title='redmine' style='font-size: 17pt;'>redmine</a>
+        
+        
+        
+        
+        
+        <a href='/tags/#java' class='tag-link-11' title='java' style='font-size: 14pt;'>java</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Python' class='tag-link-3' title='Python' style='font-size: 16pt;'>Python</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#研发实践' class='tag-link-20' title='研发实践' style='font-size: 22pt;'>研发实践</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#linux' class='tag-link-49' title='linux' style='font-size: 15pt;'>linux</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#梦想' class='tag-link-4' title='梦想' style='font-size: 16pt;'>梦想</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#solr' class='tag-link-14' title='solr' style='font-size: 14pt;'>solr</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href='/tags/#Jenkins' class='tag-link-3' title='Jenkins' style='font-size: 17pt;'>Jenkins</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </li>
+        <li id="recent-posts-2" class="boxed widget widget_recent_entries">		
+        <h2 class="widgettitle">近期文章</h2>	
+        <div id="hot_comment_post">
+            <ul>
+                 
+                <li>
+                <a href="/2013/07/29/tools-jar-is-not-in-idea-classpath" title="Tools Jar Is Not In Idea Classpath">Tools Jar Is Not In Idea Classpath</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/07/24/install-wine-on-ubuntu-and-linux-mint" title="Wine 1.6 Released – Install on Ubuntu 13.04/12.10/12.04/11.10 and Linux Mint 15/13">Wine 1.6 Released – Install on Ubuntu 13.04/12.10/12.04/11.10 and Linux Mint 15/13</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/06/29/incompatible-character-encodings-utf-8-and-ascii-8bit" title="Redmine incompatible character encodings UTF-8 and ASCII-8BIT">Redmine incompatible character encodings UTF-8 and ASCII-8BIT</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/06/28/java-exec-linux-command" title="Java使用Runtime执行Linux命令用管理连接问题">Java使用Runtime执行Linux命令用管理连接问题</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/06/26/Redmine-CKEditor-plugin" title="Redmine高级编辑插件-CKEditor">Redmine高级编辑插件-CKEditor</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/06/21/ubuntu-install-redmine" title="Ubuntu 安装Redmine">Ubuntu 安装Redmine</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/05/22/linux-install-python-pil" title="Linux 64位系统安装Python PIL模块">Linux 64位系统安装Python PIL模块</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/05/21/centos-install-python-2.7" title="Centos 安装Django开发环境">Centos 安装Django开发环境</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/05/16/linux-vmstat" title="Linux系统监控工具之vmstat详解">Linux系统监控工具之vmstat详解</a>
+                </li>
+                 
+                <li>
+                <a href="/2013/05/13/photography-listing" title="摄影书籍下载大全">摄影书籍下载大全</a>
+                </li>
+                
+            </ul>
+        </div>
+
+        </li>
+        <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
+        <h2 class="widgettitle">热评文章</h2>
+        <div id="hot_comment_post">
+            <ul class="ds-top-threads" data-num-items="10" data-range="weekly"></ul>
+        </div>
+        </li>
+        <li id="ds-recent-comments" class="boxed widget ds-widget-recent-comments">
+        <h2 class="widgettitle">近期评论</h2>
+        <div id="hot_comment">
+            <ul class="ds-recent-comments" data-num-items="10" data-show-avatars="1" data-show-time="1" data-show-title="0" data-show-admin="0" data-avatar-size="32" data-excerpt-length="70">
+            </ul>
+        </div>
+        </li>
+        <li id="ds-qqt-follow" class="boxed widget ds-widget-qqt-follow">
+        <!--
+        <iframe src="http://follow.v.t.qq.com/index.php?c=follow&a=quick&name=denghp_280606790&style=1&t=1352387427769&f=1" frameborder="0" scrolling="auto" width="227" height="75" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
+        -->
+        <iframe width="300" height="190" frameborder="0" scrolling="no" src="http://widget.weibo.com/relationship/bulkfollow.php?language=zh_cn&uids=1655072963&wide=1" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
+        </li>
+
+        <li id="ds-recent-visitors-2" class="boxed widget ds-widget-recent-visitors">
+        <h2 class="widgettitle">最近访客</h2>
+        <ul class="ds-recent-visitors" data-num-items="20" data-show-time="0" data-avatar-size="50"></ul>
+        </li>
+        
+        <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
+        <h2 class="widgettitle">友情链接</h2>
+        <div id="hot_comment_post">
+            <ul>
+                
+                <li><a href="http://lusongsong.com/"target="_blank"  title="卢松松-关注站长和搜索引擎的IT博客">卢松松</a></li>
+                
+                <li><a href="http://www.muchangqing.com/"target="_blank"  title="牟长青-牟长青的网站推广博客">牟长青</a></li>
+                
+                <li><a href="http://coolshell.cn/"target="_blank"  title="酷壳-享受编程和技术所带来的快乐">酷壳</a></li>
+                
+                <li><a href="http://yanping.me/"target="_blank"  title="雁起平沙-雁起平沙的网络日志">雁起平沙</a></li>
+                
+                <li><a href="http://www.letuknowit.com/"target="_blank"  title="知蚁博客">知蚁博客</a></li>
+                
+                <li><a href="http://www.zhangyuchang.com/"target="_blank"  title="不纯粹文人-不经一番寒彻骨，哪得梅花扑鼻香">不纯粹文人</a></li>
+                
+                <li><a href="http://chenpeng.info/"target="_blank"  title="陈鹏个人博客">陈鹏个人博客</a></li>
+                
+                <li><a href="http://www.kandisheng.com/"target="_blank"  title="不霁何虹博客">不霁何虹博客</a></li>
+                
+                <li><a href="http://blog.jobbole.com/"target="_blank"  title="伯乐在线">伯乐在线</a></li>
+                
+            </ul> 
+        </div>
+        </li>
+        
+    </ul>
+</div>
+<!-- /sidebar -->
+<div class="cleared"></div>
+
+
+
+
+  
+            </div> 
+        </div> <!-- wrapper -->
+        
+        <!-- scroll.html -->
+        <div id="full" style="display:none;width:50px; height:95px; position:fixed; left:50%; top:480px; margin-left:425px;  z-index:100; text-align:center; cursor:pointer;">
+    <a><img src="http://demi-panda.com/media/demi/img/back-top.png" border=0 alt="返回顶部" title="返回顶部"></a>
+</div>
+<script type="text/javascript">
+    var isie6 = window.XMLHttpRequest ? false : true; function newtoponload() { var c = document.getElementById("full"); function b() { var a = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop; if (a > 0) { if (isie6) { c.style.display = "none"; clearTimeout(window.show); window.show = setTimeout(function () { var d = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop; if (d > 0) { c.style.display = "block"; c.style.top = (480 + d) + "px" } }, 400) } else { c.style.display = "block" } } else { c.style.display = "none" } } if (isie6) { c.style.position = "absolute" } window.onscroll = b; b() } if (window.attachEvent) { window.attachEvent("onload", newtoponload) } else { window.addEventListener("load", newtoponload, false) } document.getElementById("full").onclick = function () { window.scrollTo(0, 0) };
+</script>
+
+
+
+
+       
+        <!-- footer -->
+        <footer>
+<div id="footer">                                          
+  <p class="t-center" style='font-size: 10pt;'>
+  &copy; 2012 <a href="/">Demi Panda Lab</a>, All Rights Reserved.
+
+  <script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9ed8ee65a576b9495a4d989eabbd4c09' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+
+  <script src="http://s14.cnzz.com/stat.php?id=4734788&web_id=4734788&show=pic" language="JavaScript"></script>
+  </p>
+  </div> 
+</footer>
+
+ 
+        <script type="text/javascript">
+            var duoshuoQuery = {short_name:"demi-panda"};
+(function() {
+ var ds = document.createElement('script');
+ ds.type = 'text/javascript';ds.async = true;
+ ds.src = 'http://static.duoshuo.com/embed.js';
+ ds.charset = 'UTF-8';
+ (document.getElementsByTagName('head')[0] 
+  || document.getElementsByTagName('body')[0]).appendChild(ds);
+ })();
+</script>  
+
+
+<script type="text/javascript">
+    $(window).load(function(){
+            $("pre").addClass("prettyprint");
+            prettyPrint();
+            })
+        </script>
+
+        <script language="javascript">
+            $.fn.tagcloud.defaults = {
+                size: {start: 0.9, end: 2, unit: 'em'},
+                color: {start: '#e77471', end: '#f62817'}
+            };
+
+            $(function () {
+                $('#tagcloud a').tagcloud();
+            });
+        </script>  
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-36197302-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+             })();
+
+         </script>
+         <script type='text/javascript' src='http://demi-panda.com/media/js/jquery.prettyPhoto-3.4.2.js'></script>
+         <script type='text/javascript' src='http://demi-panda.com/media/js/themify.script-3.4.2.js'></script> 
+     </body>
+ </html>
+
