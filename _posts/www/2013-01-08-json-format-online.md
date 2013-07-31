@@ -27,19 +27,19 @@ description: 　JSON(JavaScript Object Notation) 是一种轻量级的数据交�
 <strong><span style="color:red">Be JSON地址:<a href="http://www.bejson.com/go.html?u=http://www.bejson.com/index.php" alt="Be JSON" target="_bank">http://www.bejson.com/go.html?u=http://www.bejson.com/index.php</a></span></strong>
 
 ####验证
-<img src="http://demi-panda.com/media/pub/web/json-validate.jpg" width="480px"  alt="json-validate" ></img>
+<img src="{{site.static_url}}/media/pub/web/json-validate.jpg" width="480px"  alt="json-validate" ></img>
 
 ####格式化
-<img src="http://demi-panda.com/media/pub/web/json-format.jpg" width="380px"  alt="json-validate" ></img>
+<img src="{{site.static_url}}/media/pub/web/json-format.jpg" width="380px"  alt="json-validate" ></img>
 
 ####编辑
-<img src="http://demi-panda.com/media/pub/web/josn-enitor-online.jpg" width="480px"  alt="json-enitor" ></img>
+<img src="{{site.static_url}}/media/pub/web/josn-enitor-online.jpg" width="480px"  alt="json-enitor" ></img>
 
 ####压缩和传输
-<img src="http://demi-panda.com/media/pub/web/json-compress.jpg" width="480px"  alt="json-compress" ></img>
+<img src="{{site.static_url}}/media/pub/web/json-compress.jpg" width="480px"  alt="json-compress" ></img>
 
 ####发送json请求
-<img src="http://demi-panda.com/media/pub/web/send-json.jpg" width="480px"  alt="send-json" ></img>
+<img src="{{site.static_url}}/media/pub/web/send-json.jpg" width="480px"  alt="send-json" ></img>
 
 
 

@@ -19,13 +19,13 @@ description: Apache JMeter( http://jakarta.apache.org/jmeter/ )是来自 Apache 
 最近在工作中实现了一个webservice，支持json的post请求，使用JMeter来进行压力测试显得就非常简单啦。
 
 ###Step 1 创建测试计划
-<img src="http://demi-panda.com/media/pub/java/json-http-test-plan.jpg" width="560px"  alt="json-http-test-plan" ></img>
+<img src="{{site.static_url}}/media/pub/java/json-http-test-plan.jpg" width="560px"  alt="json-http-test-plan" ></img>
 
 ###Step 2 添加Header Manager
-<img src="http://demi-panda.com/media/pub/java/json-http-header-manager.jpg" width="560px"  alt="json-http-header-manager" ></img>
+<img src="{{site.static_url}}/media/pub/java/json-http-header-manager.jpg" width="560px"  alt="json-http-header-manager" ></img>
 
 ###Step 3 添加CSV
-<img src="http://demi-panda.com/media/pub/java/json-http-request-csv.jpg" width="560px"  alt="json-http-request-csv.jpg" ></img>
+<img src="{{site.static_url}}/media/pub/java/json-http-request-csv.jpg" width="560px"  alt="json-http-request-csv.jpg" ></img>
 
 您需要填写至少3个值：<br>
 <ol>
@@ -45,7 +45,7 @@ description: Apache JMeter( http://jakarta.apache.org/jmeter/ )是来自 Apache 
 </pre>
 
 ###Step 5 创建HttpRequest
-<img src="http://demi-panda.com/media/pub/java/json-http-search-request.jpg" width="560px"  alt="json-http-search-request.jpg" ></img>
+<img src="{{site.static_url}}/media/pub/java/json-http-search-request.jpg" width="560px"  alt="json-http-search-request.jpg" ></img>
 
 
 

@@ -41,15 +41,15 @@ $ sudo apt-get install download-monitor
 </pre>
 
 ###Download monitor  Overview
-<a href="{{site.url}}/media/pub/linux/download-monitor.jpg" alt="download monitor" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/linux/download-monitor.jpg" width="560px"  alt="download monitor" />
+<a href="{{site.static_url}}/media/pub/linux/download-monitor.jpg" alt="download monitor" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/linux/download-monitor.jpg" width="560px"  alt="download monitor" />
 </a>
 
 ###Download Monitor 设置
 设置配额是要通过其统一发射器的设置配额执行，点击它，召唤一个对话框哪里下载配额，上传配额和配额总量是要调整;后的首选配额值是进入，超过数据的使用（超过设定的配额）通过通知的通知。
 
-<a href="{{site.url}}/media/pub/linux/download-monitor-setting.jpg" alt="download monitor" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/linux/download-monitor-setting.jpg" width="330px" class="img-center" alt="download monitor" />
+<a href="{{site.static_url}}/media/pub/linux/download-monitor-setting.jpg" alt="download monitor" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/linux/download-monitor-setting.jpg" width="330px" class="img-center" alt="download monitor" />
 </a>
 
 

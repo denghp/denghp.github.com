@@ -29,11 +29,11 @@ JAVA_OPTS="$JAVA_OPTS -Dcom.sun.management.jmxremote.port=5679"
 <pre id="bash">
 $ $JAVA_HOME/bin/jconsole
 </pre>
-<img src="http://demi-panda.com/media/pub/java/jconsole-index.jpg" width="580px"></img>
+<img src="{{site.static_url}}/media/pub/java/jconsole-index.jpg" width="580px"></img>
 
 ####监控视图
 jconsole监控视图还是做的很不错的
-<img src="http://demi-panda.com/media/pub/java/jconsole.png" width="580px"></img>
+<img src="{{site.static_url}}/media/pub/java/jconsole.png" width="580px"></img>
 
 ###jstack
 如果java程序崩溃生成core文件，jstack工具可以用来获得core文件的java stack和native stack的信息，从而可以轻松地知道java程序是如何崩溃和在程序何处发生问题。另外，jstack工具还可以附属到正在运行的java程序中，看到 当时运行的java程序的java stack和native stack的信息, 如果现在运行的java程序呈现hung的状态，jstack是非常有用的。目前只有在Solaris和Linux的JDK版本里面才有。

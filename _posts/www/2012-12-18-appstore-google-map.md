@@ -11,7 +11,7 @@ categories:
 - www
 UUID: 201212181027
 ---
-<img src="/media/pub/web/google-map.jpeg" width="580px"></img>
+<img src="{{site.static_url}}/media/pub/web/google-map.jpeg" width="580px"></img>
 
 　　Google 的高级副总裁 Jeff Huber 刚刚在 Google+ 上公布了 iOS 版 Google Maps 的一组数据：上线 48 小时内，这款应用的下载量已经超过了 1000 万次，要知道现在全世界已售出的 iOS 设备也只有约 4 亿台，渗透率接近 2.5%。
 

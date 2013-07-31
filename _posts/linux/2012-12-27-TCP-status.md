@@ -17,7 +17,7 @@ UUID: 201212270023
   　　在TCP/IP协议中，TCP协议提供可靠的连接服务，采用三次握手建立一个连接，如图1所示。 (SYN包表示标志位syn=1,ACK包表示标志位ack=1,SYN+ACK包表示标志位syn=1,ack=1)
 
 ###TCP/IP 状态机
-<img src="/media/pub/linux/tcp-ip-status.jpg" width="480px" alt="tcp-ip-status" class="img-center"></img>
+<img src="{{site.static_url}}/media/pub/linux/tcp-ip-status.jpg" width="480px" alt="tcp-ip-status" class="img-center"></img>
 
 
 ###三次握手
@@ -25,7 +25,7 @@ UUID: 201212270023
 第二次握手：服务器B收到SYN包，必须确认客户A的SYN(ACK_NUMBER=j+1)，同时自己也发送一个SYN包(SEQ_NUMBER=k)，即SYN+ACK包，此时服务器B进入SYN_RECV状态。<br>
 第三次握手：客户端A收到服务器B的SYN＋ACK包，向服务器B发送确认包ACK(ACK_NUMBER=k+1)，此包发送完毕，客户端A和服务器B进入ESTABLISHED状态，完成三次握手。<br>
 
-<img src="/media/pub/linux/0_1324910111Sc6p.gif" width="380px" alt="tcp三次握手" class="img-center"></img>
+<img src="{{site.static_url}}/media/pub/linux/0_1324910111Sc6p.gif" width="380px" alt="tcp三次握手" class="img-center"></img>
 
 ###四次握手
  　　由于TCP连接是全双工的，因此每个方向都必须单独进行关闭。这个原则是当一方完成它的数据发送任务后就能发送一个FIN来终止这个方向的连接。收到一个 FIN只意味着这一方向上没有数据流动，一个TCP连接在收到一个FIN后仍能发送数据。首先进行关闭的一方将执行主动关闭，而另一方执行被动关闭。
@@ -35,7 +35,7 @@ UUID: 201212270023
 3、服务器B关闭与客户端A的连接，发送一个FIN给客户端A(报文段6)。<br>
 4、客户端A发回ACK报文确认，并将确认序号设置为收到序号加1(报文段7)。<br>
 
-<img src="/media/pub/linux/0_1324910173iGc3.gif" width="380px" alt="tcp四次握手" class="img-center"></img>
+<img src="{{site.static_url}}/media/pub/linux/0_1324910173iGc3.gif" width="380px" alt="tcp四次握手" class="img-center"></img>
 
 ###为什么建立连接协议是三次握手，而关闭连接却是四次握手呢？
  　　因为服务端的LISTEN状态下的SOCKET当收到SYN报文的连接请求后，它可以把ACK和SYN(ACK起应答作用，而SYN起同步作用)放在一个报文里来发送。但关闭连接时，当收到对方的FIN报文通知时，它仅仅表示对方没有数据发送给你了；但未必你所有的数据都全部发送给对方了，所以你可能未必会马上会关闭SOCKET,也即你可能还需要发送一些数据给对方之后，再发送FIN报文给对方来表示你同意现在可以关闭连接了，所以它这里的ACK报文和FIN报文多数情况下都是分开发送的。

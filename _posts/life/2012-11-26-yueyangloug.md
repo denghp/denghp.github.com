@@ -12,8 +12,8 @@ UUID: 201211261830
 ---
 
 江南三大名楼之一，北视长江、南望三湘，范仲淹那篇名满天下的《岳阳楼记》着实为岳阳楼做足了广告。
-<a href="{{site.url}}/media/pub/life/yueyanglou/yueyanglou.jpg" alt="岳阳楼">
-<img src="{{site.url}}/media/pub/life/yueyanglou/yueyanglou.jpg" width="580px"/>
+<a href="{{site.static_url}}/media/pub/life/yueyanglou/yueyanglou.jpg" alt="岳阳楼">
+<img src="{{site.static_url}}/media/pub/life/yueyanglou/yueyanglou.jpg" width="580px"/>
 </a>
 
 ###岳阳楼简介
@@ -42,8 +42,8 @@ UUID: 201211261830
 岳阳楼的建筑构制独特，风格奇异。气势之壮阔，构制之雄伟，堪称江南三大名楼之首。岳阳楼为四柱三层，飞檐、盔顶、纯木结构，楼中四柱高耸，楼顶檐牙啄，金碧辉煌．远远而了，恰似一只凌空欲飞的鲲鹏。全楼高达25.35米，平面呈长方形，宽17.2米，进深15.6米，占地251平方米。 　
 
 中部以四根直径50厘米的楠木大柱直贯楼顶，承载楼体的大部分重量。再用12根圆木柱子支撑2楼，外以12根梓木檐柱，顶起飞檐。彼此牵制，结为整体，全楼梁、柱、檩、椽全靠榫头衔接，相互咬合，稳如磐石。 　　
-<a href="{{site.url}}/media/pub/life/yueyanglou/yueyanglou-tf.jpg" alt="岳阳楼">
-<img src="{{site.url}}/media/pub/life/yueyanglou/yueyanglou-tf.jpg" width="580px"/>
+<a href="{{site.static_url}}/media/pub/life/yueyanglou/yueyanglou-tf.jpg" alt="岳阳楼">
+<img src="{{site.static_url}}/media/pub/life/yueyanglou/yueyanglou-tf.jpg" width="580px"/>
 </a>
 
 岳阳楼的楼顶为层叠相衬的“如意斗拱”托举而成的盔顶式，这种拱而复翘的古代将军头盔式的顶式结构在我国古代建筑史上是独一无二的。

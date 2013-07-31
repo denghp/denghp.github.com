@@ -102,4 +102,4 @@ PID USER PR  NI  VIRT RES  SHR S %CPU %MEM TIME+
 
 ###生成报告
 这里需要人工手动复制数据到excel中生成图表，呵呵
-<img src="http://demi-panda.com/media/pub/linux/mytop.jpg" width="560px"  alt="mytop" ></img>
+<img src="{{site.static_url}}/media/pub/linux/mytop.jpg" width="560px"  alt="mytop" ></img>

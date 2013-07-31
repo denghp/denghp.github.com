@@ -11,8 +11,8 @@ show_img: "/media/pub/life/13569436189893.jpg"
 ---
 
   　　一对夫妇一个非常浪漫的时刻可能是一种参与。然而，婚礼策划的压力可能比较苍白的浪漫。以下的建议将有助于确保任何一对夫妻，规划他们的婚礼顺利。
-<a href="{{site.url}}/media/pub/life/13569436189893.jpg" alt="婚纱照">
-<img src="{{site.url}}/media/pub/life/13569436189893.jpg" width="330px" alt="婚纱照" class="img-center"></img>
+<a href="{{site.static_url}}/media/pub/life/13569436189893.jpg" alt="婚纱照">
+<img src="{{site.static_url}}/media/pub/life/13569436189893.jpg" width="330px" alt="婚纱照" class="img-center"></img>
 </a>
 
 ###欢乐婚礼的建议

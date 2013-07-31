@@ -21,13 +21,13 @@ Google 是个我用得最多的搜索引擎, 非常好用, 但因为某些原因
 http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0CDQQFjAA&url=http%3A%2F%2Fwordpress.com%2F&ei=H0ay
 
 搜索结果的链接会变成 Google 重定向链接, 这个链接最后也会转跳到原网站链接 http://wordpress.org, 如下图.
-<img src="/media/pub/google/google-redirects.png" width="580px"></img>
+<img src="{{site.static_url}}/media/pub/google/google-redirects.png" width="580px"></img>
 
 ###重定向带来的问题
 但因为网络问题和其他一些原因, Google 的服务器在国内访问其实会遇到很多麻烦, 搜索结果经常打不开. 就算你用了某些代理来解决这些问题, 也避免不了网速变慢带来的不愉悦感.
 
 依我的观察, Google 重定向经历了几个阶段, 最开始的时候是将重定向链接输出到页面上的 (百度和 360 现在就这么干), 如果这样的话我们没有任何办法. 幸好 Google 现在选择用 JavaScript 脚本来处理, 点用户按下鼠标时才跟换 URL 地址, 所以只要我们禁止这个 JavaScript 操作, 就可以避免出现错误页面, 也减免了代理出国再过来的网络开销, 就会变成下图所示.
-<img src="/media/pub/google/direct-links.png" width="580px"></img>
+<img src="{{site.static_url}}/media/pub/google/direct-links.png" width="580px"></img>
 
 Google 通过重定向统计搜索结果的点击次数和记录用户的搜索历史, 取消掉重定向将导致用户看不到搜索历史记录.
 

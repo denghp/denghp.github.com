@@ -29,12 +29,12 @@ Ubuntu是一个南非的民族观念，该词来自于祖鲁语和科萨语，�
 ###An Absolute Ubuntu Beginners Guide ——绝对的Ubuntu初学者指南
 这本30页的ubuntu指南，为初学者编写的，会告诉你一切你需要知道的关于Ubuntu的经验。您将学习如何在您的计算机上安装和设置Ubuntu，并且在哪个社区去寻求技术支持，了解了Ubuntu的理念，统一的桌面界面导航和使用Ubuntu兼容的软件程序。此外，这个免费的指南，你会收到新的很酷的网站和程序，在您的电子邮件每日更新免费提供的MakeUseOf。
 
-<a href="{{site.url}}/media/pub/books/w_make72c.gif" rel="prettyPhoto[{{page.UUID}}]" alt="An Absolute Ubuntu Beginners Guide" >
-<img src="{{site.url}}/media/pub/books/w_make72c.gif" width="230px"  alt="An Absolute Ubuntu Beginners Guide" />
+<a href="{{site.static_url}}/media/pub/books/w_make72c.gif" rel="prettyPhoto[{{page.UUID}}]" alt="An Absolute Ubuntu Beginners Guide" >
+<img src="{{site.static_url}}/media/pub/books/w_make72c.gif" width="230px"  alt="An Absolute Ubuntu Beginners Guide" />
 </a>
 
 <a href="http://manuals.makeuseof.com.s3.amazonaws.com/for-mobile/Ubuntu_Beginners_Guide_-_MakeUseOf.com.pdf" target="_bank" alt="An Absolute Ubuntu Beginners Guide">
-<img src="{{site.url}}/media/demi/img/download.gif" alt="download-icon" />
+<img src="{{site.static_url}}/media/demi/img/download.gif" alt="download-icon" />
 </a>
 
 ###Getting Started with Ubuntu 12.10 (Quantal Quetzal) PDF Guide
@@ -42,12 +42,12 @@ Ubuntu是一个南非的民族观念，该词来自于祖鲁语和科萨语，�
 
 与Ubuntu12.10入门并不打算成为一个全面的Ubuntu的使用说明书。它更像是一个快速入门指南，将让你做的事情，你需要做的与您的电脑快速，轻松地，与所有的技术细节没有陷入困境。 Ubuntu的12.10融入了许多新的功能，包括一个新的内核支持新的图形卡，更新的更新管理，全磁盘加密，仅举几例。
 
-<a href="{{site.url}}/media/pub/books/w_ubun04c.gif" rel="prettyPhoto[{{page.UUID}}]" alt="Getting Started with Ubuntu 12.10" >
-<img src="{{site.url}}/media/pub/books/w_ubun04c.gif" width="230px"  alt="Getting Started with Ubuntu 12.10" />
+<a href="{{site.static_url}}/media/pub/books/w_ubun04c.gif" rel="prettyPhoto[{{page.UUID}}]" alt="Getting Started with Ubuntu 12.10" >
+<img src="{{site.static_url}}/media/pub/books/w_ubun04c.gif" width="230px"  alt="Getting Started with Ubuntu 12.10" />
 </a>
 
 <a href="http://ishare.iask.sina.com.cn/f/34325730.html" target="_bank" alt="An Absolute Ubuntu Beginners Guide">
-<img src="{{site.url}}/media/demi/img/download.gif" alt="download-icon" />
+<img src="{{site.static_url}}/media/demi/img/download.gif" alt="download-icon" />
 </a>
 
 ###The GNU/Linux Advanced Administration eBook
@@ -57,12 +57,12 @@ GNU / Linux系统的成熟程度已经达到了一个重要的，允许将它们
 
 所涉及的主题，在这500+页的电子书，包括Linux网络，服务器和数据管理，Linux内核，安全性，群集，配置，调整，优化，迁移和共存与非Linux系统。一个必须阅读任何严重的Linux系统管理员。
 
-<a href="{{site.url}}/media/pub/books/w_free01_160.gif" rel="prettyPhoto[{{page.UUID}}]" alt="The GNU/Linux Advanced Administration eBook" >
-<img src="{{site.url}}/media/pub/books/w_free01_160.gif" width="230px"  alt="The GNU/Linux Advanced Administration eBook" />
+<a href="{{site.static_url}}/media/pub/books/w_free01_160.gif" rel="prettyPhoto[{{page.UUID}}]" alt="The GNU/Linux Advanced Administration eBook" >
+<img src="{{site.static_url}}/media/pub/books/w_free01_160.gif" width="230px"  alt="The GNU/Linux Advanced Administration eBook" />
 </a>
 
 <a href="http://ubuntugeek.tradepub.com/free/w_free01/prgm.cgi" target="_bank" alt="The GNU/Linux Advanced Administration eBook">
-<img src="{{site.url}}/media/demi/img/download.gif" alt="download-icon" />
+<img src="{{site.static_url}}/media/demi/img/download.gif" alt="download-icon" />
 </a>
 
 ###Free PDF guide How to create your own linux from scratch
@@ -70,12 +70,12 @@ Linux From Scratch的描述过程，只是用软件的源代码，你需要从�
 
 318页的电子书读者提供的背景和教学设计和建造定制的Linux系统。这本电子书的重点是Linux From Scratch项目和使用该系统的好处。用户可以决定他们的系统的各个方面，包括目录布局，脚本设置和安全设置。由此产生的系统将完全从源代码进行编译，并且用户将能够指定情况下，为什么，和如何安装方案。这本电子书，使得读者可以完全根据自己的需要定制Linux系统，并允许用户更好地控制他们的系统。
 
-<a href="{{site.url}}/media/pub/books/w_linu01c.gif" rel="prettyPhoto[{{page.UUID}}]" alt="Free PDF guide How to create your own linux from scratch" >
-<img src="{{site.url}}/media/pub/books/w_linu01c.gif" width="230px"  alt="Free PDF guide How to create your own linux from scratch" />
+<a href="{{site.static_url}}/media/pub/books/w_linu01c.gif" rel="prettyPhoto[{{page.UUID}}]" alt="Free PDF guide How to create your own linux from scratch" >
+<img src="{{site.static_url}}/media/pub/books/w_linu01c.gif" width="230px"  alt="Free PDF guide How to create your own linux from scratch" />
 </a>
 
 <a href="http://linuxconfig-org.tradepub.com/free/w_linu01/prgm.cgi" target="_bank" alt="Free PDF guide How to create your own linux from scratch">
-<img src="{{site.url}}/media/demi/img/download.gif" alt="download-icon" />
+<img src="{{site.static_url}}/media/demi/img/download.gif" alt="download-icon" />
 </a>
 
 

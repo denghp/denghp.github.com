@@ -23,8 +23,8 @@ show_img: "/media/pub/solr/2shard4serverFull.jpg"
 <li>查询时自动负载均衡 </li>
 </ol>
 
-<a href="{{site.url}}/media/pub/solr/2shard4serverFull.jpg" alt="solr" rel="prettyPhoto[{{page.UUID}}]" target="_bank">
-<img src="{{site.url}}/media/pub/solr/2shard4serverFull.jpg" alt="solr" width="580px" />
+<a href="{{site.static_url}}/media/pub/solr/2shard4serverFull.jpg" alt="solr" rel="prettyPhoto[{{page.UUID}}]" target="_bank">
+<img src="{{site.static_url}}/media/pub/solr/2shard4serverFull.jpg" alt="solr" width="580px" />
 </a>
 
    　　基本可以用上面这幅图来概述，这是一个拥有4个Solr节点的集群，索引分布在两个Shard里面，每个Shard包含两个Solr节点，一个是Leader节点，一个是Replica节点，此外集群中有一个负责维护集群状态信息的Overseer节点，它是一个总控制器。集群的所有状态信息都放在Zookeeper集群中统一维护。从图中还可以看到，任何一个节点都可以接收索引更新的请求，然后再将这个请求转发到文档所应该属于的那个Shard的Leader节点，Leader节点更新结束完成，最后将版本号和文档转发给同属于一个Shard的replicas节点。
@@ -98,8 +98,8 @@ $ vi /tmp/zookeeper/myid
 
 ###SolrCloud安装配置
 包含2个shard的集群，每个shard中有replica节点
-<a href="{{site.url}}/media/pub/solr/2shard4server.jpg" alt="solr" rel="prettyPhoto[{{page.UUID}}]" target="_bank">
-<img src="{{site.url}}/media/pub/solr/2shard4server.jpg" alt="solr" width="330px" />
+<a href="{{site.static_url}}/media/pub/solr/2shard4server.jpg" alt="solr" rel="prettyPhoto[{{page.UUID}}]" target="_bank">
+<img src="{{site.static_url}}/media/pub/solr/2shard4server.jpg" alt="solr" width="330px" />
 </a>
 <ol>
 <li>安装Tomcat</li>
@@ -115,23 +115,23 @@ $ copy -r solr $TOMCAT_HOME4/conf
 </li>
 <li>
 更改第一台tomcat的启动脚本catalina.sh，添加solr_home及配置信息到JAVA_OPTS,添加到开头就行,在catalina.sh指定solr_home,也可以在solr.war包中的web.xml中配置
-<a href="{{site.url}}/media/pub/solr/config-1.jpg" alt="solr" rel="prettyPhoto[{{page.UUID}}]" target="_bank">
-<img src="{{site.url}}/media/pub/solr/config-1.jpg" alt="solr" width="540px" />
+<a href="{{site.static_url}}/media/pub/solr/config-1.jpg" alt="solr" rel="prettyPhoto[{{page.UUID}}]" target="_bank">
+<img src="{{site.static_url}}/media/pub/solr/config-1.jpg" alt="solr" width="540px" />
 </a>
 
 </li>
 <li>
 更改第二台及其他tomcat的启动脚本catalina.sh
-<a href="{{site.url}}/media/pub/solr/config-2.jpg" alt="solr" rel="prettyPhoto[{{page.UUID}}]" target="_bank">
-<img src="{{site.url}}/media/pub/solr/config-2.jpg" alt="solr" width="540px" />
+<a href="{{site.static_url}}/media/pub/solr/config-2.jpg" alt="solr" rel="prettyPhoto[{{page.UUID}}]" target="_bank">
+<img src="{{site.static_url}}/media/pub/solr/config-2.jpg" alt="solr" width="540px" />
 </a>
 </li>
 <li>
 配置完所有的solr服务，则从第一台开始启动<code>$TOMCAT_HOME1/bin/catalina.sh run</code>
 </li>
 </ol>
-<a href="{{site.url}}/media/pub/solr/solrcloud.jpg" alt="solr" rel="prettyPhoto[{{page.UUID}}]" target="_bank">
-<img src="{{site.url}}/media/pub/solr/solrcloud.jpg" alt="solr" width="540px" />
+<a href="{{site.static_url}}/media/pub/solr/solrcloud.jpg" alt="solr" rel="prettyPhoto[{{page.UUID}}]" target="_bank">
+<img src="{{site.static_url}}/media/pub/solr/solrcloud.jpg" alt="solr" width="540px" />
 </a>
 
 ####备注

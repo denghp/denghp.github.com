@@ -13,7 +13,7 @@ UUID: 201212110930
 ---
 
  　　<span style="color: #BC0202;"><strong>不是所有的白菜价都不靠谱，什么值得买也发布过相当多的淘宝白菜价，很多网友捡到了实惠，但需知白菜也有质量差别，本文讨论的是那些看起来就完全不靠谱的白菜价。</strong></span>双12临近了，近期有海量（太平洋级别）的网友向我们爆料了大量淘宝的白菜神价产品，包括十几块包邮的移动电源，一块多包邮的衣服、杯子、手电、雪地靴等，看起来非常具有诱惑力，商家在吐血，但天上通常不会掉馅饼的，“什么值得买”就给您分析下这里面的道道。
-<img src="/media/pub/life/pub/8610a412jw1dzd090l3vjj.jpg" alt="Black Cube Theme" class="img-right" ></img>
+<img src="{{site.static_url}}/media/pub/life/pub/8610a412jw1dzd090l3vjj.jpg" alt="Black Cube Theme" class="img-right" ></img>
  　　首先网友们会说，这种白菜价值得尝试，原因包括：1、有支付宝作为保障，钱即使付出去了也不会到卖家手里，我能亏什么？2、即使亏也就是几块钱，不怕博一下；3、卖家不发货，我投诉到底，看你能不能折腾过我。<strong>但实际情况要恶劣的多。</strong>
 
  　　众所周知，淘宝的搜索结果排序，与商家的销量有关，同一件产品，哪家卖的多，哪家就容易排在前面。这样很容易形成良性循环，卖得多的会卖得更多。无疑双12会给淘宝带来巨大的流量，这些商家在双12之前，通过设置极低的价格，带来一波海量销量，待排到前面后，再把价格提上去，后来的网友仅能看到“哇，这货卖了这么多，看来很不错”，而未必会去查询或能够查询到之前卖出的价格，这样商家可以带来一批巨额利润的订单，而这批订单的多寡，将决定卖家最终是否能给之前的白菜价发货。来看最理想的情况A：
@@ -39,15 +39,15 @@ UUID: 201212110930
 
 ###下面再来看看怎样识别商家这些招数：
 1、首先价格必须离谱，连邮费都不够，白菜到一种境界
-<img src="/media/pub/life/pub/8610a412jw1dzowwjkrjaj.jpg" alt="Black Cube Theme" class="img-center" ></img>
+<img src="{{site.static_url}}/media/pub/life/pub/8610a412jw1dzowwjkrjaj.jpg" alt="Black Cube Theme" class="img-center" ></img>
 
 2、其次商家信用通常为个位数，当然也有少量不是个位数的例子，因为带钻的店铺也是可以用很低的价钱买到的；
 
 3、销量必须巨大，评价很可能为0；
-<img src="/media/pub/life/pub/8610a412jw1dzowxv27jtj.jpg" alt="Black Cube Theme" class="img-center" ></img>
+<img src="{{site.static_url}}/media/pub/life/pub/8610a412jw1dzowxv27jtj.jpg" alt="Black Cube Theme" class="img-center" ></img>
 
 4、商家一定会说，发货别催，月底发货，不能等者误拍，旺旺爆了，没时间回复。
-<img src="/media/pub/life/pub/8610a412jw1dzox3eseu9j.jpg" alt="Black Cube Theme" class="img-center" ></img>
+<img src="{{site.static_url}}/media/pub/life/pub/8610a412jw1dzox3eseu9j.jpg" alt="Black Cube Theme" class="img-center" ></img>
 
 5、白菜神价不限量，敞开了卖的。
 

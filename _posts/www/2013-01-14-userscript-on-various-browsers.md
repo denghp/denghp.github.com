@@ -38,16 +38,16 @@ UUID: 201301142227
 <li>安装火狐浏览器</li>
 <li>
 点击打开安装<a href="https://addons.mozilla.org/en-US/firefox/addon/748" alt="Greasemonkey" target="_bank">https://addons.mozilla.org/en-US/firefox/addon/748</a>
-<img src="http://demi-panda.com/media/pub/web/Greasemonkey.jpg" width="530px"  alt="Greasemonkey" ></img>
+<img src="{{site.static_url}}/media/pub/web/Greasemonkey.jpg" width="530px"  alt="Greasemonkey" ></img>
 </li>
 
 <li>
 打开工具-找到附加组件就可以看到自己安装的用户脚本管理工具
-<img src="http://demi-panda.com/media/pub/web/userscript.jpg" width="530px"  alt="Greasemonkey" ></img>
+<img src="{{site.static_url}}/media/pub/web/userscript.jpg" width="530px"  alt="Greasemonkey" ></img>
 </li>
 <li>
 添加用户脚本<br>
-<img src="http://demi-panda.com/media/pub/web/add-userscript.jpg" width="530px"  alt="Greasemonkey" ></img>
+<img src="{{site.static_url}}/media/pub/web/add-userscript.jpg" width="530px"  alt="Greasemonkey" ></img>
 </li>
 </ol>
 

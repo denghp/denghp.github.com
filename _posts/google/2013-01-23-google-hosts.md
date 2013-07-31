@@ -15,8 +15,8 @@ show_img: "/media/pub/google/google-search.jpg"
 
  　　众所周知，在国内出于国内安全和自我保护意识，google的各项服务都是禁止使用的。很多网站主更是有所感受，那么如何才能正常访问的google的各项服务呢？
 
-<a href="{{site.url}}/media/pub/google/google-search.jpg" alt="github">
-<img src="{{site.url}}/media/pub/google/google-search.jpg" alt="google search" class="img-center" width="330px"/>
+<a href="{{site.static_url}}/media/pub/google/google-search.jpg" alt="github">
+<img src="{{site.static_url}}/media/pub/google/google-search.jpg" alt="google search" class="img-center" width="330px"/>
 </a>
 
 

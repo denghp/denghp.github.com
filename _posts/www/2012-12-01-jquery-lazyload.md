@@ -18,7 +18,7 @@ Lazy Load 是一个用 JavaScript 编写的 jQuery 插件. 它可以延迟加载
 
 在包含很多大图片长页面中延迟加载图片可以加快页面加载速度. 浏览器将会在加载可见图片之后即进入就绪状态. 在某些情况下还可以帮助降低服务器负担.
 
-<img src="/media/pub/web/jquery-lazy-load-plugin.png" width="580px"></img>
+<img src="{{site.static_url}}/media/pub/web/jquery-lazy-load-plugin.png" width="580px"></img>
 
 Lazy Load 灵感来自 Matt Mlinac 制作的 [YUI ImageLoader](http://developer.yahoo.com/yui/imageloader/) 工具箱. 这是[演示页面](http://www.appelsiini.net/projects/lazyload/enabled.html).
 

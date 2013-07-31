@@ -12,7 +12,7 @@ show_img: "/media/pub/web/Jekyll.jpg"
 ---
 
 　　近日，发现个人总结一些心得，整理一些技术文章的时候，都不确定到底放在哪个网站上合适，因为自己用过好几个博客网站，感觉非常乱，用的也不是很顺心，总感觉缺少了点啥。在行业中近几年比较火的搭建个人博客很多采用wordpress来构建，有使用CMS的等等，虽然这些提高了个人搭建的速度，内容的丰富性等等，但是发现免费的空间限制太多，回归想想，自己只需要一个简单的，轻量级的静态网站就OK。今天，我将介绍一种简单的解决方案--[jekyll](http://jekyllrd.com) 使你可以轻而易举地创建属于个人的博客网站。
-<img src="http://demi-panda.com/media/pub/web/Jekyll.jpg" width="330px" alt="jekyll-blog" class="img-center"></img>
+<img src="{{site.static_url}}/media/pub/web/Jekyll.jpg" width="330px" alt="jekyll-blog" class="img-center"></img>
 
 
 ###Jekyll的含义
@@ -41,7 +41,7 @@ show_img: "/media/pub/web/Jekyll.jpg"
 <pre id="bash">
 $ gem install jekyll
 </pre>
-搭建本地环境，请参考我的另一篇文章：[Linux 安装Jekyll 环境](http://demi-panda.com/2012/10/30/install-jekyll/)
+搭建本地环境，请参考我的另一篇文章：[Linux 安装Jekyll 环境]({{site.url}}/2012/10/30/install-jekyll/)
 
 ###Jekyll构成
 <pre id="bash">
@@ -184,7 +184,7 @@ $ mkdir _layouts
 <pre id="bash">
 $ mkdir _posts
 </pre>
-进入该目录，创建第一篇文章。文章就是普通的文本文件，文件名假定为2012-12-29-hello-jekyll.md。(注意，文件名必须为"年-月-日-文章标题.后缀名"的格式。如果网页代码采用html格式，后缀名为html；如果采用[markdown](http://demi-panda.com/2012/11/17/markdown)格式，后缀名为md。）
+进入该目录，创建第一篇文章。文章就是普通的文本文件，文件名假定为2012-12-29-hello-jekyll.md。(注意，文件名必须为"年-月-日-文章标题.后缀名"的格式。如果网页代码采用html格式，后缀名为html；如果采用[markdown]({{site.url}}/2012/11/17/markdown)格式，后缀名为md。）
 
 在该文件中，填入以下内容：（注意，行首不能有空格）
 
@@ -277,14 +277,14 @@ $ git push origin master
 
 首页
 
-<img src="http://demi-panda.com/media/pub/web/jekyll-blog.jpg" width="330px" alt="jekyll-blog" class="img-center"></img>
+<img src="{{site.static_url}}/media/pub/web/jekyll-blog.jpg" width="330px" alt="jekyll-blog" class="img-center"></img>
 
 文章页面
 
-<img src="http://demi-panda.com/media/pub/web/jekyll-blog-2.jpg" width="330px" alt="jekyll-blog" class="img-center"></img>
+<img src="{{site.static_url}}/media/pub/web/jekyll-blog-2.jpg" width="330px" alt="jekyll-blog" class="img-center"></img>
 
 ###Step 8 域名绑定
-域名绑定请参考我的博客中 [浅谈github域名绑定](http://demi-panda.com/2012/11/09/github-pages-domain/)
+域名绑定请参考我的博客中 [浅谈github域名绑定]({{site.url}}/2012/11/09/github-pages-domain/)
 
 ###结论
 本文介绍了Jekyll——一种简单的、适用于做博客的、静态网站生成引擎。下次如果你想建一个宣传册风格的、小型展示页面，可以试试用Jekyll，如果你成功了，或者在创建用遇到什么困难，请在留言中告诉我,我会尽最大努力帮助您, 再次感谢您的阅读,支持熊猫家族！

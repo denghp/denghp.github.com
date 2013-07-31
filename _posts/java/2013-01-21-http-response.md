@@ -26,7 +26,7 @@ date: 2013-01-21 08:20:20
 <li>5xx服务器错误——服务器在处理某个正确请求时发生错误</li>
 </ol>
 
-详情参考:<a href="{{site.url}}/2012/11/21/http-status/" target="_bank" alt="HTTP状态码">HTTP状态码</a>
+详情参考:<a href="{{site.static_url}}/2012/11/21/http-status/" target="_bank" alt="HTTP状态码">HTTP状态码</a>
 
 ###HTTP协议-消息报头
  　　HTTP消息由客户端到服务器的请求和服务器到客户端的响应组成。请求消息和响应消息都是由开始行（对于请求消息，开始行就是请求行，对于响应消息，开始行就是状态行），消息报头（可选），空行（只有CRLF的行），消息正文（可选）组成。

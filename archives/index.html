@@ -37,14 +37,14 @@ perPageItem: 10
                 <p>
                 {% if post.show_img %}
                 <a href="{{post.url}}" title="{{post.title}}">
-                    <img src="{{post.show_img}}" alt="{{post.title}}"  width="240px" height="140px" class="img-right"></img></a>
+                  <img src="{{site.static_url}}{{post.show_img}}" alt="{{post.title}}"  width="240px" height="140px" class="img-right"></img></a>
                 {% endif %}
                 {{ post.description }} 
                 </p>
                 {% else %}
                 {% if post.show_img %}
                 <a href="{{post.url}}" title="{{post.title}}">
-                    <img src="{{post.show_img}}" alt="{{post.title}}"  width="240px" height="140px" class="img-right"></img></a>
+                  <img src="{{site.static_url}}{{post.show_img}}" alt="{{post.title}}"  width="240px" height="140px" class="img-right"></img></a>
                 {% endif %}
                 <p>{{ post.content | strip_html | truncatewords: 2 }}</p>
                 {% endif %}
@@ -71,11 +71,11 @@ perPageItem: 10
 </div>
 
 {% if site.posts.size > page.initItem %}
-<script src="/media/js/waypoints.min.js" type="text/javascript"></script>
+<script src="{{site.static_url}}/media/js/waypoints.min.js" type="text/javascript"></script>
 <script type="text/javascript">
     $(document).ready(function() {
             // 关于waypoint，请看 http://imakewebthings.com/jquery-waypoints/
-            var $loading = $("<div class='loading' style='text-align:center'><img src='/media/demi/img/loading.gif'></div>"),
+        var $loading = $("<div class='loading' style='text-align:center'><img src='{{site.static_url}}/media/demi/img/loading.gif'></div>"),
             $footer = $('footer'),
             opts = {
 offset: '100%'
@@ -100,7 +100,7 @@ $footer.waypoint(function(event, direction) {
             
             var show_content = "";
             if (item.show_img != '') {
-                show_content = "<a href='" + item.url+"' title='"+item.title+"'><img src='"+item.show_img+"' alt='"+item.title+"'  width='240px' height='140px' class='img-right' /></a>" + unescape(item.description);
+            show_content = "<a href='" + item.url+"' title='"+item.title+"'><img src='{{site.static_url}}"+item.show_img+"' alt='"+item.title+"'  width='240px' height='140px' class='img-right' /></a>" + unescape(item.description);
             } else {
                 show_content = unescape(item.description); 
             }

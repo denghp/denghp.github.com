@@ -14,8 +14,8 @@ date: 2013-03-13 00:10:27
 show_img: "/media/pub/solr/solr-logo.png"
 ---
 
-<a href="{{site.url}}/media/pub/solr/solr-logo.png" alt="python" target="_bank">
-<img src="{{site.url}}/media/pub/solr/solr-logo.png" alt="solr" width="380px" class="img-center"/>
+<a href="{{site.static_url}}/media/pub/solr/solr-logo.png" alt="python" target="_bank">
+<img src="{{site.static_url}}/media/pub/solr/solr-logo.png" alt="solr" width="380px" class="img-center"/>
 </a>
 
  　　Apache Solr是流行的，速度极快，开源的NoSQL的搜索平台，来自于Apache Lucene项目。它的主要功能包括强大的全文搜索，命中高亮显示、面搜索、动态集群、数据库集成、丰富的文档和地理信息搜索。Solr是高度可扩展的、 提供了分布式搜索和索引的容错功能，强大的搜索和导航功能等。
@@ -36,7 +36,7 @@ facet模块中的DrillDownQuery现在支持多选</li>
 
 ###下载地址
 <a href="http://lucene.apache.org/solr/" target="_bank" alt="Solr4.2">
-<img src="{{site.url}}/media/demi/img/download.gif" alt="download-icon" />
+<img src="{{site.static_url}}/media/demi/img/download.gif" alt="download-icon" />
 </a>
 
 

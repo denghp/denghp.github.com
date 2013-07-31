@@ -15,8 +15,8 @@ show_img: "/media/pub/life/movie/54fbb2fb43166d22fbf6a478462309f79152d25d.jpg"
 
 
  　　2010年，由香港年轻导演叶伟民指导、[徐铮](http://baike.baidu.com/view/164289.htm)，[王宝强](http://baike.baidu.com/view/764555.htm)主演的小成本喜剧《人在囧途》成为了当年的年度黑马，在前期几乎无人知晓的情况下斩获近四千万票房。到了2012年，当年的主演之一徐铮摇身一变成为自导自演再拍《人再囧途之泰囧》，携当年的旅伴王宝强,还有[黄渤](http://baike.baidu.com/view/396777.htm)加盟重上囧途，故事背景从国内挪到了泰国，再加上首次出演反派的黄渤助阵，《人再囧途之泰囧》还未上映已亮出了极好的卖相—— 一部标准的类型喜剧。
-<a href="{{site.url}}/media/pub/life/movie/taijiong.jpg" alt="泰囧">
-<img src="{{site.url}}/media/pub/life/movie/taijiong.jpg" width="330px" alt="泰囧" class="img-center" ></img>
+<a href="{{site.static_url}}/media/pub/life/movie/taijiong.jpg" alt="泰囧">
+<img src="{{site.static_url}}/media/pub/life/movie/taijiong.jpg" width="330px" alt="泰囧" class="img-center" ></img>
 </a>
 
   　　大家在繁华都市的生活，确实是枯燥而乏味的，在经历了漫长的一周奋战,都有一种疲惫的感觉，然而大家都会选择在周末或者休息中想方设法的给自己找点放松的方式，包括我在内，偶尔会选择郊外旅行，朋友聚餐聊天,看看电影等等。

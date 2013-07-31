@@ -34,14 +34,14 @@ title: 搜索引擎, Lucene/Solr经验分享，企业搜索引擎，垂直搜索
                 <p>
                 {% if post.show_img %}
                 <a href="{{post.url}}" title="{{post.title}}">
-                    <img src="{{post.show_img}}" alt="{{post.title}}"  width="240px" height="140px" class="img-right"></img></a>
+                  <img src="{{site.static_url}}{{post.show_img}}" alt="{{post.title}}"  width="240px" height="140px" class="img-right"></img></a>
                 {% endif %}
                 {{ post.description }} 
                 </p>
                 {% else %}
                 {% if post.show_img %}
                 <a href="{{post.url}}" title="{{post.title}}">
-                    <img src="{{post.show_img}}" alt="{{post.title}}"  width="240px" height="140px" class="img-right"></img></a>
+                  <img src="{{site.static_url}}{{post.show_img}}" alt="{{post.title}}"  width="240px" height="140px" class="img-right"></img></a>
                 {% endif %}
                 <p>{{ post.content | strip_html | truncatewords: 2 }}</p>
                 {% endif %}

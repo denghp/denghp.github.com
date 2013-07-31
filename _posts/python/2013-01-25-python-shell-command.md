@@ -14,7 +14,7 @@ show_img: "/media/pub/python/486px-Python_logo.png"
 ---
 
 <a href="{{site.url}}/media/pub/python/486px-Python_logo.png" alt="python" target="_bank">
-<img src="{{site.url}}/media/pub/python/486px-Python_logo.png" alt="python" width="380px" class="img-center"/>
+<img src="{{site.static_url}}/media/pub/python/486px-Python_logo.png" alt="python" width="380px" class="img-center"/>
 </a>
 
   　　Python是一种即译式的，互动的，面向对象的编程语言，它包含了模组式的操作，异常处理，动态资料形态，十分高层次的动态资料结构，以及类别的使用。它具有很多优秀的脚本语言的特点：解释的，面向对象的，内建的高级数据结构，支持模块和包，支持多种平台，可扩展。而且它还支持交互式方式运行，图形方式运行。它拥有众多的编程界面支持各种操作系统平台以及众多的各类函数库。介绍下Python调用Linux的shell命令.

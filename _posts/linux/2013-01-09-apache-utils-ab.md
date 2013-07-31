@@ -18,7 +18,7 @@ Apache-ab是超文本传输协议(HTTP)的性能测试工具。 其设计意图�
 
 ###功能和性能测试工具AB
 ab是Apache超文本传输协议(HTTP)的性能测试工具。 其设计意图是描绘当前所安装的Apache的执行性能， 主要是显示你安装的Apache每秒可以处理多少个请求。
-<img src="http://demi-panda.com/media/pub/linux/apache-ab.jpg" alt="Apache-ab"  width="560px" />
+<img src="{{site.static_url}}/media/pub/linux/apache-ab.jpg" alt="Apache-ab"  width="560px" />
 
 #####参数详细介绍
 <table style="width:580px">
@@ -217,17 +217,17 @@ Percentage of the requests served within a certain time (ms)
 <a href="http://learnloadrunner.com/" alt="LoadRunner" taget="_bank">LoadRunner </a>是一种预测系统行为和性能的负载测试工具。通过以模拟上千万用户实施并发负载及实时性能监测的方式来确认和查找问题，LoadRunner 能够对整个企业架构进行测试。通过使用LoadRunner ，企业能最大限度地缩短测试时间，优化性能和加速应用系统的发布周期。
 
 虽然工具很强大，很多大型的企业和专业人员都会选择它，但是相对小企业的选型就很难选择这么庞大的工具。
-<img src="http://demi-panda.com/media/pub/linux/LoadRunner.jpg" alt="Loadrunner"  width="560px" />
+<img src="{{site.static_url}}/media/pub/linux/LoadRunner.jpg" alt="Loadrunner"  width="560px" />
 
 这里有一个网站转门介绍了Loadrunner的教材，很全面，有兴趣的可以去学习<a href="http://www.ltesting.net/ceshi/ceshijishu/rjcsgj/mercury/loadrunner/">http://www.ltesting.net/ceshi/ceshijishu/rjcsgj/mercury/loadrunner/</a>
 
 #####功能测试工具Rational Robot
 <a href="http://www-142.ibm.com/software/products/cn/zh/robot" alt="Rational" taget="_bank">IBM Rational Robot </a>是业界最顶尖的功能测试工具，它甚至可以在测试人员学习高级脚本技术之前帮助其进行成功的测试。可针对电子商务、客户端/服务器和企业资源规划 (ERP) 应用程序自动执行回归、功能和配置测试。它用于根据各种各样的用户界面技术测试应用程序。该软件与 IBM Rational TestManager 解决方案集成，为所有测试活动提供桌面管理支持。
-<img src="http://demi-panda.com/media/pub/linux/Rational-Robot.png" alt="Rational-Robot"  width="560px" />
+<img src="{{site.static_url}}/media/pub/linux/Rational-Robot.png" alt="Rational-Robot"  width="560px" />
 
 #####功能和性能测试的工具JMeter
 <a href="http://jmeter.apache.org/" alt="JMeter" target="_bank">JMeter</a>是Apache组织的开放源代码项目，它是功能和性能测试的工具，100%的用java实现。
 
 前段时间在针对webservice压力测试就使用了Jmeter，个人比较喜欢。
-<img src="http://demi-panda.com/media/pub/java/json-http-test-plan.jpg" alt="Jmeter"  width="560px" />
+<img src="{{site.static_url}}/media/pub/java/json-http-test-plan.jpg" alt="Jmeter"  width="560px" />
 

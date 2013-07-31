@@ -10,7 +10,7 @@ UUID: 201212261830
 
 我们总提起IQ，EQ，听说过FQ（Founder Quotient）吗？又是哪些因素是考察FQ需要考虑的呢？Charles River Ventrues的Saar Gur给出了一些答案，本文发表于[TC](http://techcrunch.com/2012/11/17/measure-founder-strength-with-your-founder-quotient/)
 
-<img src="/media/pub/life/pub/founder-quotient-circle.jpg"  width="300" height="300" class="img-right"/>
+<img src="{{site.static_url}}/media/pub/life/pub/founder-quotient-circle.jpg"  width="300" height="300" class="img-right"/>
 
 
 在Charles River Venture，我们寻找并去支持一些创业者在某一领域建立起一个公司，以期将来有一天，他们可以影响世界。在过去的四十年里，我们经历了15支基金，70个IPO，以及100+的收购并购，结识了很多有天赋的企业家。我们知道，一个高水平的公司有能力经历一些风浪甚至转型，而掌控这一切的关键在于，创始人。那是真正驱动商业动作的主要因素。

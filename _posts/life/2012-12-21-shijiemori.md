@@ -15,8 +15,8 @@ UUID: 201212212240
     网友的总结:"哥还活着，就是心跳偶尔加速,我安然的度过了世界末日，玛雅人很啃爹."
 
 ###<<后天>> 地球进入第二冰河期
-<a href="{{site.url}}/media/pub/life/pub/houtian.jpg" alt="世界末日">
-<img src="{{site.url}}/media/pub/life/pub/houtian.jpg" alt="后天 世界末日" class="img-right" width="230px" /> 
+<a href="{{site.static_url}}/media/pub/life/pub/houtian.jpg" alt="世界末日">
+<img src="{{site.static_url}}/media/pub/life/pub/houtian.jpg" alt="后天 世界末日" class="img-right" width="230px" /> 
 </a>
 相信大家应该看过<a href="http://v.youku.com/v_show/id_XMzM1MjUwODMy.html"><<后天>></a>这部电影，主要讲温室效应引发地球大灾变，北极冰川的融化，飓风、冰雹、极度严寒，一系列的地球巨变引发了一场不可挽救的灾难。
 

@@ -43,8 +43,8 @@ http://www.java2s.com/Code/Jar/h/Downloadhtmlcleanerjar.htm
 <pre id="java">
 .//*[@id='wrapper']/div[3]/div[4]/dl
 </pre>
-<a href="{{site.url}}/media/pub/java/firebug_firepath.jpg" alt="firebug firepath">
-<img src="{{site.url}}/media/pub/java/firebug_firepath.jpg" width="580px"  alt="firebug firepath" ></img>
+<a href="{{site.static_url}}/media/pub/java/firebug_firepath.jpg" alt="firebug firepath">
+<img src="{{site.static_url}}/media/pub/java/firebug_firepath.jpg" width="580px"  alt="firebug firepath" ></img>
 </a>
 
 ####Spider代码

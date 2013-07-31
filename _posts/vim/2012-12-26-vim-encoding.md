@@ -48,7 +48,7 @@ latin1 是一种非常宽松的编码方式,如果你把 latin1 放到了 fileen
 ###Vim编码转换流程图
 借用网友的一张流程图
 
-<img src="/media/pub/linux/0_1274779296pVNL.gif" width="330px" alt="vim" class="img-center"></img>
+<img src="{{site.static_url}}/media/pub/linux/0_1274779296pVNL.gif" width="330px" alt="vim" class="img-center"></img>
 
 ###乱码的原因分析
 1、操作系统的语言环境, 使用 locale 查看<br>

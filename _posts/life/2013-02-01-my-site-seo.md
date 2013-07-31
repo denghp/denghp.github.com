@@ -15,8 +15,8 @@ show_img: "/media/pub/life/pub/demi-panda-seo.jpg"
 
 　　今天早上来到公司，打开SEO综合信息一看，百度终于开始收录-共69篇文章啦，真的很不容易，将近3个月的时间百度爬虫一直只是收录一个首页，很是让人郁闷，相对于google爬虫来说却友好多啦，这两个多月坚持发文章，互访其他园龄大的博客，推广，其他方式做SEO，终于有点点小成绩。下面分享下自己为什么要写博客的几点总结:
 
-<a href="{{site.url}}/media/pub/life/pub/demi-panda-seo.jpg" rel="prettyPhoto[{{page.UUID}}]" alt="demi-panda.com" >
-<img src="{{site.url}}/media/pub/life/pub/demi-panda-seo.jpg" width="560px"  alt="demi-panda.com" />
+<a href="{{site.static_url}}/media/pub/life/pub/demi-panda-seo.jpg" rel="prettyPhoto[{{page.UUID}}]" alt="demi-panda.com" >
+<img src="{{site.static_url}}/media/pub/life/pub/demi-panda-seo.jpg" width="560px"  alt="demi-panda.com" />
 </a>
 
 ##为什么写博客？

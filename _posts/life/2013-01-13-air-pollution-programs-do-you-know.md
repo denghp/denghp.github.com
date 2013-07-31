@@ -15,14 +15,14 @@ UUID: 201301131237
 在下周一之前不会发生明显改变。
 
 ###北京污染指数
-<a href="{{site.url}}/media/pub/life/pub/4271097954.jpg" alt="北京空气污染">
-<img src="{{site.url}}/media/pub/life/pub/4271097954.jpg" alt="北京污染指数"  width="330px" class="img-center"></img>
+<a href="{{site.static_url}}/media/pub/life/pub/4271097954.jpg" alt="北京空气污染">
+<img src="{{site.static_url}}/media/pub/life/pub/4271097954.jpg" alt="北京污染指数"  width="330px" class="img-center"></img>
 </a>
 
 
 ###北京空气的污染前后比较
-<a href="{{site.url}}/media/pub/life/pub/air-2013.jpg" >
-<img src="{{site.url}}/media/pub/life/pub/air-2013.jpg" alt="北京天空的污染"  width="580px" ></img>
+<a href="{{site.static_url}}/media/pub/life/pub/air-2013.jpg" >
+<img src="{{site.static_url}}/media/pub/life/pub/air-2013.jpg" alt="北京天空的污染"  width="580px" ></img>
 </a>
 
   　　空气质量指数大多突破400，空气质量级别6级，严重污染。这就是昨天的京城，在市环保局空气质量日报上全市均被代表严重污染的“褐红色”所覆盖。

@@ -17,7 +17,7 @@ UUID: 201212250010
 
 ###Vim
 VIM是VI的加强版，比vi更容易使用。vi的命令几乎全部都可以在vim上使用。备受程序员和开源社区推崇的“神一样的编辑器”，支持很多的插件，把这些插件都用起来是一件令人非常愉快的事情,网上介绍成堆，这里就不多嘴介绍了。
-<img src="/media/pub/linux/vim.jpg" width="330px" alt="vim" class="img-center"></img>
+<img src="{{site.static_url}}/media/pub/linux/vim.jpg" width="330px" alt="vim" class="img-center"></img>
 
 ####主页
 <a href="http://www.vim.org/">http://www.vim.org/ </a>
@@ -52,7 +52,7 @@ $ sudo apt-get install vim
 
 ###Emacs
 Emacs 实质上是一组文本编辑器的集合。Emacs的标语就是“可扩展、可定制、自文档化的实时显示编辑器。”要注意的是，在它的口号中，并没有提到“易用”或者是“直观”。这并不是为那些需要“所见即所得”软件的用户而设的;如果你需要一些像拼写检查这样的写作工具，它也不适合你。
-<img src="/media/pub/linux/emacs.jpg" width="330px" alt="emacs" class="img-center"></img>
+<img src="{{site.static_url}}/media/pub/linux/emacs.jpg" width="330px" alt="emacs" class="img-center"></img>
 
 ####主页
 <a href="http://www.gnu.org/software/emacs/">http://www.gnu.org/software/emacs/</a>
@@ -87,7 +87,7 @@ $ sudo apt-get install emacs23
 
 ###gEdit Editor
 gedit是GNOME桌面环境的默认文本编辑器。这是一个兼容UTF-8的文本编辑器。
-<img src="/media/pub/linux/0935035064-2.png" width="330px" alt="emacs" class="img-center"></img>
+<img src="{{site.static_url}}/media/pub/linux/0935035064-2.png" width="330px" alt="emacs" class="img-center"></img>
 
 ####主页:<a href="http://projects.gnome.org/gedit/">http://projects.gnome.org/gedit/</a>
 

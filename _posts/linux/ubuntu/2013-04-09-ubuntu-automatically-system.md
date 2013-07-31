@@ -19,8 +19,8 @@ show_img: "/media/pub/linux/fstab-info.jpg"
 <pre id="bash">
 $ sudo fdisk -l
 </pre>
-<a href="{{site.url}}/media/pub/linux/fdisk-info.jpg" alt="disk-info" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/linux/fdisk-info.jpg" width="560px"  alt="fdisk-info" />
+<a href="{{site.static_url}}/media/pub/linux/fdisk-info.jpg" alt="disk-info" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/linux/fdisk-info.jpg" width="560px"  alt="fdisk-info" />
 </a>
 /dev/sda5，/dev/sda6是要挂载的两个分区。
 
@@ -29,8 +29,8 @@ $ sudo fdisk -l
 $ sudo gedit /etc/fstab
 </pre>
 可以看到一些已经定义好的加载点:
-<a href="{{site.url}}/media/pub/linux/fstab-info.jpg" alt="fstab" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/linux/fstab-info.jpg" width="560px"  alt="fstab" />
+<a href="{{site.static_url}}/media/pub/linux/fstab-info.jpg" alt="fstab" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/linux/fstab-info.jpg" width="560px"  alt="fstab" />
 </a>
 
 每一行使用一个tab分成6列，分别为filesystem, mountpoint, type, options, dump, pass<br>
@@ -73,7 +73,7 @@ uid=1000(denghp) gid=1000(denghp) groups=1000(denghp),4(adm),24(cdrom),27(sudo),
 #Data分区
 /dev/sda6    /media/document    ntfs    defaults,locale=en_US.UTF-8,uid=1000,gid=1000,dmask=022,fmask=133 0 0
 </pre>
-<a href="{{site.url}}/media/pub/linux/fstab-info-2.jpg" alt="fstab-info" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/linux/fstab-info-2.jpg" width="560px"  alt="fstab-info" />
+<a href="{{site.static_url}}/media/pub/linux/fstab-info-2.jpg" alt="fstab-info" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/linux/fstab-info-2.jpg" width="560px"  alt="fstab-info" />
 </a>
 

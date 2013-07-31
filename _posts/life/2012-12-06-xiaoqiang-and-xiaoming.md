@@ -18,8 +18,8 @@ UUID: 201212062200
 3，那年，小强和小明都是二十三岁小强的爹妈给他说个巧媳妇，是邻村的，特别贤惠；小明在大学里谈了个女朋友，是邻校的，很有文化。
 
 4，那年，小强和小明都是二十四岁小强在老家结了婚，把媳妇带到工地上，来给他洗衣做饭，恩爱有加；小明终于大学毕业，找了施工单位工作，跟女友分居两地，朝思暮想。
-<a href="{{site.url}}/media/pub/life/pub/feixiang.jpg" >
-<img src="{{site.url}}/media/pub/life/pub/feixiang.jpg" alt="Black Cube Theme" class="img-right" width="330px" />
+<a href="{{site.static_url}}/media/pub/life/pub/feixiang.jpg" >
+<img src="{{site.static_url}}/media/pub/life/pub/feixiang.jpg" alt="Black Cube Theme" class="img-right" width="330px" />
 </a>
 
 5，小强每天很快乐，下了班就没事，吃了饭和媳妇散散步，晚上便和工友打麻将看电视；小明每天很忙碌，白天跑遍工地，晚上还做资料画图纸，好久不见的女友跟他分手了。

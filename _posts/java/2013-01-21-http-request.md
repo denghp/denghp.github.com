@@ -144,7 +144,7 @@ Cache-Control:no-cache (CRLF)
 请求行和标题必须以<CR><LF>作为结尾（也就是，回车然后换行）。空行内必须只 有<CR><LF>而无其他空格。在HTTP/1.1协议中，所有的请求头，除Host外，都是可选的。
 user=admin&pwd=1234  //此行以下为提交的数据
 ###请求头部
-<a href="{{site.url}}/2013/01/21/http-response/" alt="HTTP请求报头" target="_bank">请求报头</a>
+<a href="{{site.static_url}}/2013/01/21/http-response/" alt="HTTP请求报头" target="_bank">请求报头</a>
 ###请求正文
 请求正文(省略)
 

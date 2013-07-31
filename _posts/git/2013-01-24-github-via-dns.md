@@ -14,8 +14,8 @@ show_img: "/media/pub/github/github-logo.jpg"
 description: 被称为“程序员的天堂”的GitHub，因服务器被“12306订票助手”拖垮而为国人所熟知，网友猜测，我国地区无法访问GitHub，或是受到12306抢票插件的影响，12306抢票插件搞垮美国Github服务器。
 ---
 
-<a href="{{site.url}}/media/pub/github/github-logo.jpg" alt="github">
-<img src="{{site.url}}/media/pub/github/github-logo.jpg" alt="github" class="img-center" />
+<a href="{{site.static_url}}/media/pub/github/github-logo.jpg" alt="github" rel="prettyPhoto[{{page.UUID}}]" >
+<img src="{{site.static_url}}/media/pub/github/github-logo.jpg" alt="github" class="img-center" />
 </a>
 
 　　被称为“程序员的天堂”的GitHub，因服务器被“12306订票助手”拖垮而为国人所熟知，网友猜测，我国地区无法访问GitHub，或是受到12306抢票插件的影响，12306抢票插件搞垮美国Github服务器。

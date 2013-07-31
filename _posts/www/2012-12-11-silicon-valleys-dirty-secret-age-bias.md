@@ -14,7 +14,7 @@ UUID: 201212110032
 
  　　美国矽谷近来有年龄歧视已经是不争的事实，在Facebook创办人Mark Zuckerberg 等新创公司崛起后，年龄歧视的趋势又更明显了，像是人力主管毫不避讳表示要找大约26 岁的人来工作，投资者也比较喜欢40 岁以下的老板。但这样的歧视可能到了偏执的地步，雇主变得只选年龄不选能力。
 
-<img alt="Zuckerberg" src="/media/pub/web/Zuckerberg.jpg" style="width: 505px; height: 276px; " />
+<img alt="Zuckerberg" src="{{site.static_url}}/media/pub/web/Zuckerberg.jpg" style="width: 505px; height: 276px; " />
 
 <p>美国矽谷近来有年龄歧视已经是不争的事实，在Facebook创办人Mark Zuckerberg 等新创公司崛起后，年龄歧视的趋势又更明显了，像是人力主管毫不避讳表示要找大约26 岁的人来工作，投资者也比较喜欢40 岁以下的老板。但这样的歧视可能到了偏执的地步，雇主变得只选年龄不选能力。</p>
 

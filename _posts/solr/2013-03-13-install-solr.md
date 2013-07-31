@@ -10,13 +10,13 @@ categories:
 - code
 - solr
 - topic
-UUID: 20130312001027
+UUID: 20130313001027
 date: 2013-03-13 00:10:22
 show_img: "/media/pub/solr/solr-logo.png"
 ---
 
-<a href="{{site.url}}/media/pub/solr/solr-logo.png" alt="solr" rel="prettyPhoto[{{page.UUID}}]" target="_bank">
-<img src="{{site.url}}/media/pub/solr/solr-logo.png" alt="solr" width="380px" class="img-center"/>
+<a href="{{site.static_url}}/media/pub/solr/solr-logo.png" alt="solr" rel="prettyPhoto[{{page.UUID}}]" target="_bank">
+<img src="{{site.static_url}}/media/pub/solr/solr-logo.png" alt="solr" width="380px" class="img-center"/>
 </a>
 
  　　Apache Solr是流行的，速度极快，开源的NoSQL的搜索平台，来自于ApacheLucene项目。Solr的运行在Java servlet容器,如：JBoss,Jetty,Resin,Tomcat,Weblogic,WebSphere的服务容器中，wiki上也有详细的介绍。这里主要讲下Tomcat,Jetty的简单安装与配置：
@@ -86,8 +86,8 @@ $TOMCAT_HOME/bin/catalina.sh run
 $JETTY_HOME/jetty.sh start
 </pre>
 
-<a href="{{site.url}}/media/pub/solr/solr-admin.jpg" alt="solr" rel="prettyPhoto[{{page.UUID}}]" target="_bank">
-<img src="/media/pub/solr/solr-admin.jpg" alt="solr" width="580px" />
+<a href="{{site.static_url}}/media/pub/solr/solr-admin.jpg" alt="solr" rel="prettyPhoto[{{page.UUID}}]" target="_bank">
+<img src="{{site.static_url}}/media/pub/solr/solr-admin.jpg" alt="solr" width="580px" />
 </a>
 
 访问地址: http://localhost:port/solr/admin

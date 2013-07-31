@@ -121,9 +121,9 @@ sudo update-alternatives --install /usr/bin/java java /home/denghp/software/jdk1
 <pre id="bash" style="width:500px">
 $ sudo update-alternatives --config java 
 </pre>
-<img src="http://demi-panda.com/media/pub/java/jdk-1.jpg" width="480px" alt="jdk-info"></img>
+<img src="{{site.static_url}}/media/pub/java/jdk-1.jpg" width="480px" alt="jdk-info"></img>
 </li>
 <li>选择自己需要指定的java版本<br>
-<img src="http://demi-panda.com/media/pub/java/jdk-2.jpg" width="480px" alt="jdk-info"></img>
+<img src="{{site.static_url}}/media/pub/java/jdk-2.jpg" width="480px" alt="jdk-info"></img>
 </li>
 </ol>

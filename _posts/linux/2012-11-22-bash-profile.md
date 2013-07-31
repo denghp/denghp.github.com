@@ -14,7 +14,7 @@ date: 2012-11-22
 ---
 
 ##登陆shell与交互式非登陆shell的区别
-<img src="http://demi-panda.com/media/pub/linux/bash-profile.jpg" alt="bashrc profile" width="560px"/> 
+<img src="{{site.static_url}}/media/pub/linux/bash-profile.jpg" alt="bashrc profile" width="560px"/> 
 
 ###登录shell
 所谓登录shell,指的是当用户登录系统时所取的那个   shell。登录shell属于交互式shell。

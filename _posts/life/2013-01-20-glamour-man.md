@@ -13,8 +13,8 @@ show_img: "/media/pub/life/pub/man.jpg"
 description: 一个男人，一定要有一个男人的样子，利利索索、痛痛快快，千万不要扭扭捏捏、婆婆妈妈。要懂得保护女人和尊重女人，尤其是后者，千万不要强迫她做她不愿意的事情，不要打女人，无论她伤过你还是骗过你……
 ---
 
-<a href="{{site.url}}/media/pub/life/pub/man.jpg" alt="魅力男人" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/life/pub/man.jpg" width="330px" alt="魅力男人" class="img-center"></img>
+<a href="{{site.static_url}}/media/pub/life/pub/man.jpg" alt="魅力男人" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/life/pub/man.jpg" width="330px" alt="魅力男人" class="img-center"></img>
 </a>
 
 ###男人

@@ -30,7 +30,7 @@ UUID: 201212301027
 
 ###Advanced REST client
  　　网页开发者辅助程序来创建和测试自定义HTTP请求。它是一款非常强大，使用简单的客户端测试工具，得到了程序员的好评。每周超过50k的开发者使用此应用程序。如此多的人是不会错的！
-<img src="/media/pub/web/advance-rest-client.jpg" width="580px"></img>
+<img src="{{site.static_url}}/media/pub/web/advance-rest-client.jpg" width="580px"></img>
 
 
 ####支持的功能
@@ -52,7 +52,7 @@ UUID: 201212301027
 
 ###Postman -REST client
  　　Postman可以帮助你更有效的针对API工作。Postman是一个scratch-your-own-itch项目。它需要的是开发者有效的在项目中创建APIS，能够对API测试进行收藏保留。
-<img src="/media/pub/web/postman-rest-client.jpg" width="580px"></img>
+<img src="{{site.static_url}}/media/pub/web/postman-rest-client.jpg" width="580px"></img>
 
 
 ####支持功能
@@ -74,12 +74,12 @@ UUID: 201212301027
 
 ###Simple REST Client
  　　[Simple REST Client插件](https://chrome.google.com/extensions/detail/fhjcajmcbmldlhcimfajhfbgofnpcjmb)，提供了一个简单的表单进行各种HTTP操作，并可以看到返回的信息。构建自定义HTTP请求直接测试您的网络服务。
-<img src="/media/pub/web/Simple-REST-Client-560x491.jpg" width="580px"></img>
+<img src="{{site.static_url}}/media/pub/web/Simple-REST-Client-560x491.jpg" width="580px"></img>
 
 ###Firefox下的RESTClient
  　　Firefox[RESTClient](https://addons.mozilla.org/zh-CN/firefox/addon/9780/)的插件，这款插件由国人开发，功能上支持Basic和OAuth的登录header发送，并且对于返回的XML数据还可以高亮显示
 
-<img src="/media/pub/web/RESTClient-560x420.jpg" width="580px"></img>
+<img src="{{site.static_url}}/media/pub/web/RESTClient-560x420.jpg" width="580px"></img>
 
 ###Linux常用的工具CURL
  　　CURL是一个很强大的支持各种协议的文件传输工具，用它来进行RESTful Web Services的测试简直是小菜一碟。
@@ -95,5 +95,5 @@ CURL的命令参数非常多，一般用于RESTful Web Services测试要用到�
 ###Java GUI rest-client
  　　这是一个用Java写的测试小工具，[项目主页](http://code.google.com/p/rest-client/)上提到它有命令行和GUI两种版本。为了方便操作我们选择GUI版本来看看。既然是一款软件，显然就比刚才介绍的浏览器插件功能更加强大。它支持应答正文的JSON和XML缩排和高亮，还可以一键搭建一个RESTful服务端，另外还提供了单元测试的功能。
 
-<img src="/media/pub/web/RESTClient-Java-491x600.jpg" width="580px"></img>
+<img src="{{site.static_url}}/media/pub/web/RESTClient-Java-491x600.jpg" width="580px"></img>
 

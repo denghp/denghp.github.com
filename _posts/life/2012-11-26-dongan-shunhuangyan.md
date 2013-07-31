@@ -21,8 +21,8 @@ UUID: 201211262030
 
 ###舜皇岩 - 景观介绍
 舜皇岩位于东安县舜皇山东麓，离湘桂铁路紫溪市站10公里，距县城30公里。 
-<a href="{{site.url}}/media/pub/life/dongan/shunhuangyan-min.jpg" alt="舜皇岩" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/life/dongan/shunhuangyan-min.jpg" alt="舜皇岩" class="img-right" width="330px" ></img>
+<a href="{{site.static_url}}/media/pub/life/dongan/shunhuangyan-min.jpg" alt="舜皇岩" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/life/dongan/shunhuangyan-min.jpg" alt="舜皇岩" class="img-right" width="330px" ></img>
 </a>
 
 洞长760米左右，总面积1万多平方米。有四宫十八殿，每宫周围都有许多小洞，形成洞中有洞。整个岩洞无论是远看近看，所有石柱、石笋、石幔和钟乳石怪异多姿。中宫有个顶天立地的大石柱，高14米，围44米，雄姿巍巍；前宫有块石幔，自顶穹直泻而下，如万丈瀑布，奔腾不息。大岩洞之内，充满了自然美景，形象逼真，变幻无穷。这里既有平坦宽阔的大厅，又有蜿蜒曲折的小径；既有绿树成荫的“山林”，又有清澈见底的水潭；既有步步登高的“神梯”，又有横跨云端的“天桥”，还有“瑞狮朝阳”、“玉纱琼阁”等景。上上下下，千回百转，游人如临仙境一般。 
@@ -37,8 +37,8 @@ UUID: 201211262030
 ###前 宫
 
 舜皇岩是一座古老的溶岩，已发育上亿年之久。洞内遍布由石灰质溶液凝结而成的石钟乳，色彩绚丽，姿态万千。石柱、石笋、石花、石幔、石兽等象形景观，栉比鳞次，令人目不暇接，让你不能不为大自然的鬼斧神工而叹为观止。据地质学家考证，这里曾经历过一系列的地质构造运动，在沉积了大量可熔性强的石灰岩和白云岩地层后，经过漫长的地质年代孕育，并受地下岩溶水的作用，各类钟乳石开始生长，便形成了千姿百态的溶洞奇观。　 
-<a href="{{site.url}}/media/pub/life/dongan/qiangong.jpg" alt="舜皇岩" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/life/dongan/qiangong.jpg" alt="舜皇岩" class="img-right" width="330px" />
+<a href="{{site.static_url}}/media/pub/life/dongan/qiangong.jpg" alt="舜皇岩" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/life/dongan/qiangong.jpg" alt="舜皇岩" class="img-right" width="330px" />
 </a>
 沿着石阶蜿蜒而下约30米，呈现在大家眼前的便是前宫了，又叫迎宾殿。大家看头顶上，岩洞的穹顶上描绘着五彩缤纷的石乳、石幔，好似朵朵彩云，道道霞光。而“云霞”之下，那高高低低的钟乳石，活像一支浩浩荡荡的迎宾队伍，这是舜帝的礼乐队在迎接各位的到来。各位可是受到了很高的礼遇哦！ 
 
@@ -52,8 +52,8 @@ UUID: 201211262030
 ###中 宫
 绕过“水帘洞”，穿过“独木桥”，进到了中宫。 
 这里是舜皇岩的主宫，更是舜皇岩的精品。它把龙虎堂、御膳厅、瑶池洞，千佛洞、舜乐厅、御花园、珍珠库和舜皇殿等八大殿，合并在一个底面积约为4000多平方米的空间里，组成一个雄浑、壮观而又气派的整体。在宫中的中堂有一根高14米、围径4.4米的擎天玉柱，大家可以试试，看需要几个人才能抱住？它可是国内溶洞所罕见的景象。玉柱赫然矗立着，似乎在告诉世人舜帝的一生，就是这样顶天立地的。 
-<a href="{{site.url}}/media/pub/life/dongan/zhonggong.jpg" alt="舜皇岩" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/life/dongan/zhonggong.jpg" alt="舜皇岩" class="img-right" width="330px" />
+<a href="{{site.static_url}}/media/pub/life/dongan/zhonggong.jpg" alt="舜皇岩" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/life/dongan/zhonggong.jpg" alt="舜皇岩" class="img-right" width="330px" />
 </a>
 这里有一只下山猛虎，西方有一条白龙。这标志着舜皇岩的中宫，是龙盘虎踞之地。请大家再仔细看看，猛虎上方还有千年古化石恐龙的遗迹，不难看出它的悠久历史了。在入口处有“银花”和“金果”两棵石树，分立两旁。银花，形似珊瑚，吸引着仙蜂采蜜。金果树，现在是硕果累累，相传它八千年开花，八千年结果。再看北面，石台上有一个千佛洞。据说舜庙被毁后，庙里的伏羲氏、神农氏、遂神氏神佛全部来此洞修身养性。
 
@@ -66,8 +66,8 @@ UUID: 201211262030
 
 ###后 宫
 从中宫攀金藤、扶玉笋，绕过崎岖的山岗，登上“五尺神梯”，到了后宫。 
-<a href="{{site.url}}/media/pub/life/dongan/IMG_1659.JPG" alt="舜皇岩" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/life/dongan/IMG_1659.JPG" alt="舜皇岩" class="img-right" width="330px" />
+<a href="{{site.static_url}}/media/pub/life/dongan/IMG_1659.JPG" alt="舜皇岩" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/life/dongan/IMG_1659.JPG" alt="舜皇岩" class="img-right" width="330px" />
 </a>
 后宫面积5000多平方米，有御花园、玉石走廊、舜皇殿、珍珠洞、天宁寺等景观。我们现在走进的是御花园。御花园里古木苍天，花卉奇异，有桂花、杜鹃花、山茶花，其中山茶花最多最美。太空中的游仙，人间的众神，每次来朝拜舜皇时，无不来此观花。因这些花实在太美太奇太珍贵了，所以舜帝特意派了一只小神猴在此看管着御花园。看来齐天大圣的子孙后代们日子过的挺滋润的啊！ 
 
@@ -79,8 +79,8 @@ UUID: 201211262030
 
 ### 西 宫
 从天宁寺盘旋而下，进入到西宫。
-<a href="{{site.url}}/media/pub/life/dongan/hougong.jpg" alt="舜皇岩" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/life/dongan/hougong.jpg" alt="舜皇岩" class="img-right" width="330px" />
+<a href="{{site.static_url}}/media/pub/life/dongan/hougong.jpg" alt="舜皇岩" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/life/dongan/hougong.jpg" alt="舜皇岩" class="img-right" width="330px" />
 </a>
 首先看到的就是观景厅。厅内高高低低，大大小小，远远近近的石乳，参差不齐的石柱、石笋、石林，疏疏密密，粗粗细细，苍苍莽莽。粗一看，山连山，峰连峰，重峦叠嶂，云雾缭绕；细一瞧，几道似玉带般洁白的石幔从山谷中蜿蜒铺下，宛若山溪淙淙流水。再看山溪两旁，下面往上长的叫石笋，上面倒挂往下长的叫石钟乳。乍看它们的表层之处是灰色，因为长期裸露，被空气氧化，使它们失去了原来的光泽；细看它们内部的颜色是乳白色，因为它的主要成分是碳酸钙。 
 

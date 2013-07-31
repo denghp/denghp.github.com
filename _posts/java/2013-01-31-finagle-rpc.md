@@ -47,8 +47,8 @@ description: Finagle是一个协议不可知的，异步的，用于 JVM 的 RPC
 
 ###Twitter 里的 Finagle
 今天，Finagle 已经部署到了 Twitter 多个前端和后端的运行产品中，包括我们的 URL 爬虫（crawler）和 HTTP 代理。我们计划更广泛地部署 Finagle。
-<a href="{{site.url}}/media/pub/java/Finagle-Diagram.png" alt="finagle" target="_bank" rel="prettyPhoto[{{page.UUID}}]">
-<img src="/media/pub/java/Finagle-Diagram.png" alt="finagle" class="img-center" />
+<a href="{{site.static_url}}/media/pub/java/Finagle-Diagram.png" alt="finagle" target="_bank" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/java/Finagle-Diagram.png" alt="finagle" class="img-center" />
 </a>
 
 上图展示了一个全面使用 Finagle 的未来体系结构。比如，User Service 是一个使用 Finalge Memcached 客户端的 Finagle 服务器，并和 Finagle Kestrel Service 交谈。

@@ -15,7 +15,7 @@ show_img: "/media/pub/life/healthy/sex-happy-300x168.jpg"
    　　假期可以是一个非常紧张的时间。购物，烹饪，旅游，走亲戚，装饰，主机托管，扮演圣诞老人，我应该去吗？所有，同时试图保持节日精神,这是一个很大的要求。因此，为什么不利用自己的时间一点点性感解除压力？以下是节假日期间-8大性感解除压力的方法。
 
 ###性感的洗澡时间
-　　<a href="{{site.url}}/media/pub/life/healthy/sex-happy-300x168.jpg" alt="8大性感解压方式" rel="prettyPhoto[{{site.UUID}}]"><img src="{{site.url}}/media/pub/life/healthy/sex-happy-300x168.jpg" width="300" class="img-right" alt="8大性感解压方式" /></a>在这一周中花一个小时享受一个性感的浴。点蜡烛，烧香，播放舒缓的古典音乐（或任何让你心情欢喜的形式！）。沐浴与豪华海景盐，躺下来，放松身心。让你的头脑漂走，当你细细品味的时刻，离开你的身体感到压力。如果你喜欢薰衣草或者依兰的精油，也可以擦太阳穴，以帮助您进一步放松和解除压力。之后，采取快速凉水澡，用海盐磨砂身体唤醒冷静，冷静再通电。
+　　<a href="{{site.static_url}}/media/pub/life/healthy/sex-happy-300x168.jpg" alt="8大性感解压方式" rel="prettyPhoto[{{site.UUID}}]"><img src="{{site.static_url}}/media/pub/life/healthy/sex-happy-300x168.jpg" width="300" class="img-right" alt="8大性感解压方式" /></a>在这一周中花一个小时享受一个性感的浴。点蜡烛，烧香，播放舒缓的古典音乐（或任何让你心情欢喜的形式！）。沐浴与豪华海景盐，躺下来，放松身心。让你的头脑漂走，当你细细品味的时刻，离开你的身体感到压力。如果你喜欢薰衣草或者依兰的精油，也可以擦太阳穴，以帮助您进一步放松和解除压力。之后，采取快速凉水澡，用海盐磨砂身体唤醒冷静，冷静再通电。
 
 
 ###吃巧克力

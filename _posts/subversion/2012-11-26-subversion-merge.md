@@ -28,7 +28,7 @@ $ svn copy http://svn.example.com/repos/calc/trunk \
 从版本库的视点来看，其实这两种方法没有什么区别，两个过程都在版本341建立了一个新目录作为/calc/trunk的一个备份，这些可以在图 4.3 “版本库与复制”看到，注意第二种方法，只是执行了一个立即提交。 [20]这是一个简单的过程，因为你不需要取出版本库一个庞大的镜像，事实上，这个技术不需要你有工作拷贝，这是大多数用户创建分支的方式。
 
 ###图 4.3. 版本库与复制
-<img src="/media/pub/svn-branch.png" />
+<img src="{{site.static_url}}/media/pub/svn-branch.png" />
 
 ###将trunk合并到当前分支
 前面的78是开分支之前trunk的版本号，后面的83是merge时trunk的版本号

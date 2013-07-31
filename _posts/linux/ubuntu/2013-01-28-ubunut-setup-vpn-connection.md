@@ -28,8 +28,8 @@ show_img: "/media/pub/linux/vpn-step-3.jpg"
         <span class="step">Step 1</span>
         <p class="desc">
         单击右上角网络图标,“配置VPN”<br>
-        <a href="{{site.url}}/media/pub/linux/vpn-step-1.jpg" alt="VPN" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/linux/vpn-step-1.jpg" width="300px"  alt="VPN" class="img-center" />
+        <a href="{{site.static_url}}/media/pub/linux/vpn-step-1.jpg" alt="VPN" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/linux/vpn-step-1.jpg" width="300px"  alt="VPN" class="img-center" />
 </a>
         </p>
      </li>
@@ -37,8 +37,8 @@ show_img: "/media/pub/linux/vpn-step-3.jpg"
         <span class="step">Step 2</span>
         <p class="desc">
         单击添加，弹出如下窗口，点击新建,然后选择VPN类型 - 选择PPTP<br>
-<a href="{{site.url}}/media/pub/linux/vpn-step-2.jpg" alt="VPN" rel="prettyPhoto[page.UUID]">
-<img src="{{site.url}}/media/pub/linux/vpn-step-2.jpg" width="300px"  alt="VPN" class="img-center" />
+<a href="{{site.static_url}}/media/pub/linux/vpn-step-2.jpg" alt="VPN" rel="prettyPhoto[page.UUID]">
+<img src="{{site.static_url}}/media/pub/linux/vpn-step-2.jpg" width="300px"  alt="VPN" class="img-center" />
 </a>
 
         </p>
@@ -47,8 +47,8 @@ show_img: "/media/pub/linux/vpn-step-3.jpg"
       <span class="step">Step 3</span>
       <p class="desc">
       弹出如下窗口，Gateway一项填写<a href="https://www.grjsq.biz/user-xianlu.html" target="_bank">服务器域名（点击查看）</a>，Optional几项填写在网站注册的用户名和密码，NT Domain不用填写。<br>
-<a href="{{site.url}}/media/pub/linux/vpn-step-3.jpg" alt="VPN" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/linux/vpn-step-3.jpg" width="300px"  alt="VPN" class="img-center" />
+<a href="{{site.static_url}}/media/pub/linux/vpn-step-3.jpg" alt="VPN" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/linux/vpn-step-3.jpg" width="300px"  alt="VPN" class="img-center" />
 </a>
       </p>
    </li><!-- // .methods -->
@@ -56,8 +56,8 @@ show_img: "/media/pub/linux/vpn-step-3.jpg"
    <span class="step">Step 4</span>
    <p class="desc">
    单击上图Advanced选项，弹出如下窗口，取消EAP选项，勾选Use point-to-point encryption(MPPE)项，点击确定<br>
-<a href="{{site.url}}/media/pub/linux/vpn-step-4.jpg" alt="VPN" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/linux/vpn-step-4.jpg" width="300px"  alt="VPN" class="img-center" />
+<a href="{{site.static_url}}/media/pub/linux/vpn-step-4.jpg" alt="VPN" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/linux/vpn-step-4.jpg" width="300px"  alt="VPN" class="img-center" />
 </a>
    </p>
    </li>
@@ -65,8 +65,8 @@ show_img: "/media/pub/linux/vpn-step-3.jpg"
    <span class="step">Step 5</span>
    <p class="desc">
    点击网络图标并切换到VPN模式，连接成功后，会看到图标上有一把锁<br>
-<a href="{{site.url}}/media/pub/linux/vpn-step-5.jpg" alt="VPN" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.url}}/media/pub/linux/vpn-step-5.jpg" width="300px"  alt="VPN" class="img-center" />
+<a href="{{site.static_url}}/media/pub/linux/vpn-step-5.jpg" alt="VPN" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/media/pub/linux/vpn-step-5.jpg" width="300px"  alt="VPN" class="img-center" />
 </a>
    </p>
    </li>

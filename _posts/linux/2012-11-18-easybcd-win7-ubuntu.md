@@ -30,11 +30,11 @@ date: 2012-11-18
 
 选择“Add New Entry”-> 选择NeoGrub
 
-<img src="/media/pub/os/EasyBCD-GRUB.jpg"></img>
+<img src="{{site.static_url}}/media/pub/os/EasyBCD-GRUB.jpg"></img>
 <p>
 选NeoGrub 然后点Install NeoGrub点Save ，接着是Configure
 </p>
-<img src="/media/pub/os/easybcd-2.jpg"></img>
+<img src="{{site.static_url}}/media/pub/os/easybcd-2.jpg"></img>
 <p>
 然后就会出现一个menu.lst文件,我们需要编辑这个文件,因为系统启动需要依靠这个文件找到我们的ubuntu的ios.
 把下面的配置复制进去，把原来的全覆盖掉:
@@ -67,16 +67,16 @@ sudo umount -l /isodevice
 
 ###开始安装
 根据自己的爱好，选择语言,选择安装类型，可以自定义.
-<img src="/media/pub/os/ubuntu-install.jpg"></img>
+<img src="{{site.static_url}}/media/pub/os/ubuntu-install.jpg"></img>
 挂在分区的方案如下(以30G为例)：
 <pre id="wiki">
 / 20G  ext4（根分区可以大点）
 SWAP  2G
 /home  8G ext4（剩下的给/home）
 </pre>
-<img src="/media/pub/os/ubuntu-install-1.jpg"></img> 
-<img src="/media/pub/os/ubuntu-install-2.jpg"></img> 
-<img src="/media/pub/os/ubuntu-install-3.jpg"></img> 
+<img src="{{site.static_url}}/media/pub/os/ubuntu-install-1.jpg"></img> 
+<img src="{{site.static_url}}/media/pub/os/ubuntu-install-2.jpg"></img> 
+<img src="{{site.static_url}}/media/pub/os/ubuntu-install-3.jpg"></img> 
 
 *注意:*
 <p>
