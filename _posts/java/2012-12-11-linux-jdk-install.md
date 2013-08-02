@@ -68,7 +68,7 @@ $ sudo vi /etc/profile
 </pre>
 2、在profile文件后追加如下配置
 <pre id="bash">
-JAVA_HOME=/usr/local/java/jdk-6u37-linux
+export JAVA_HOME=/usr/local/java/jdk-6u37-linux
 export PATH=$JAVA_HOME/bin:$PATH:
 export JAVA_BIN=$JAVA_HOME/bin
 export CLASSPATH=.:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar
@@ -95,7 +95,7 @@ $ vi ~/.bashrc
 </pre>
 2、追加如下配置
 <pre id="bash">
-JAVA_HOME=/usr/local/java/jdk-6u37-linux
+export JAVA_HOME=/usr/local/java/jdk-6u37-linux
 export PATH=$JAVA_HOME/bin:$PATH:
 export JAVA_BIN=$JAVA_HOME/bin
 export CLASSPATH=.:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar
