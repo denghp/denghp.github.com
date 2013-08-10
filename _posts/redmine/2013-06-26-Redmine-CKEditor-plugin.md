@@ -7,9 +7,10 @@ tags:
 categories:
 - code
 - project
+- archives
 UUID: 20130626002000
 date: 2013-06-26 00:20:00
-show_img: "/media/pub/web/CKEditor-plugin.jpg"
+images: ["/assets/images/web/CKEditor-plugin.jpg"]
 ---
 
  　　redmine自带的高级功能编辑不怎么好用，必须使用代码才能使用，不甚方便，找了一个好用的ckeditor高级功能插件；下面来看看怎么给redmine安装插件吧，其他的插件安装方式应该类似:
@@ -37,12 +38,12 @@ ruby script/rails server webrick -e production
 </pre>
 
 5、登录redmine改变文本格式到ckeditor
-<a href="{{site.static_url}}/media/pub/web/redmine-CKEditor.jpg" alt="redmine-CKEditor" rel="prettyPhoto[{{page.UUID}}]">
-  <img src="{{site.static_url}}/media/pub/web/redmine-CKEditor.jpg" width="560px"  alt="redmine-CKEditor" />
+<a href="{{site.static_url}}/assets/images/web/redmine-CKEditor.jpg" alt="redmine-CKEditor" rel="prettyPhoto[{{page.UUID}}]">
+  <img src="{{site.static_url}}/assets/images/web/redmine-CKEditor.jpg" width="560px"  alt="redmine-CKEditor" />
 </a>
 然后进入到项目管理中的新建问题或者wiki编辑功能或者讨论区功能，编辑的功能如下:<br>
-<a href="{{site.static_url}}/media/pub/web/CKEditor-plugin.jpg" alt="redmine-CKEditor" rel="prettyPhoto[{{page.UUID}}]">
-  <img src="{{site.static_url}}/media/pub/web/CKEditor-plugin.jpg" width="560px"  alt="redmine-CKEditor" />
+<a href="{{site.static_url}}/assets/images/web/CKEditor-plugin.jpg" alt="redmine-CKEditor" rel="prettyPhoto[{{page.UUID}}]">
+  <img src="{{site.static_url}}/assets/images/web/CKEditor-plugin.jpg" width="560px"  alt="redmine-CKEditor" />
 </a>
 
 

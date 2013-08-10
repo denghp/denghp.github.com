@@ -9,6 +9,7 @@ tags:
 - linux图片处理工具
 categories:
 - linux
+- archives
 UUID: 201212041732
 date: 2012-12-04
 ---

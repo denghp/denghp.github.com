@@ -6,6 +6,7 @@ tags:
 - 快捷键
 categories:
 - code
+- archives
 UUID: 201212252242
 ---
     

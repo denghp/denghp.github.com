@@ -9,6 +9,7 @@ published: true
 author: demi-panda
 categories:
 - Github
+- archives
 UUID: 201211141035
 date: 2012-11-14
 ---
@@ -76,18 +77,18 @@ xclip -sel clip < ~/.ssh/id_rsa.pub
 <ol>
 <li>Go to your <a href="https://github.com/settings">Account Settings</a>
 <p>
-<img src="{{site.static_url}}/media/pub/github/userbar-account-settings.png"  alt="">
+<img src="{{site.static_url}}/assets/images/github/userbar-account-settings.png"  alt="">
 </p>
 </li>
 <li>Click <a href="https://github.com/settings/ssh">&quot;SSH Keys&quot;</a> in the left sidebar
-<p><img src="{{site.static_url}}/media/pub/github/settings-sidebar-ssh-keys.png" width="320px" alt=""></p>
+<p><img src="{{site.static_url}}/assets/images/github/settings-sidebar-ssh-keys.png" width="320px" alt=""></p>
 </li>
 <li>Click &quot;Add SSH key&quot;
-<p><img src="{{site.static_url}}/media/pub/github/ssh-add-ssh-key.png" width="320px" alt=""></p></li>
+<p><img src="{{site.static_url}}/assets/images/github/ssh-add-ssh-key.png" width="320px" alt=""></p></li>
 <li>Paste your key into the &quot;Key&quot; field
-<p><img src="{{site.static_url}}/media/pub/github/ssh-key-paste.jpg" width="320px" alt=""></p></li>
+<p><img src="{{site.static_url}}/assets/images/github/ssh-key-paste.jpg" width="320px" alt=""></p></li>
 <li>Click &quot;Add key&quot;
-<p><img src="{{site.static_url}}/media/pub/github/ssh-add-key.png" width="320px" alt=""></p></li>
+<p><img src="{{site.static_url}}/assets/images/github/ssh-add-key.png" width="320px" alt=""></p></li>
 <li>Confirm the action by entering your GitHub password</li>
 </ol>
 

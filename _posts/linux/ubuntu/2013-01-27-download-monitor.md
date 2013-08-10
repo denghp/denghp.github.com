@@ -10,10 +10,11 @@ tags:
 categories:
 - code
 - linux
-- topic
+- special
+- archives
 UUID: 20130127013000
 date: 2013-01-27 01:30:00
-show_img: "/media/pub/linux/download-monitor.jpg"
+images: ["/assets/images/linux/download-monitor.jpg"]
 ---
 
    　download-monitor 通过网络上传和下载的数据量。显示此网络使用情况的图形。允许设置配额，并发出警告时，它是即将超过。监控随着时间的推移在网络上下载和上传的数据的量。容易阅读的图表显示此数据。允许设置一个使用配额，并警告说，当超出配额或即将被超越。对需要限制数据流量计划的人非常有用。
@@ -41,15 +42,15 @@ $ sudo apt-get install download-monitor
 </pre>
 
 ###Download monitor  Overview
-<a href="{{site.static_url}}/media/pub/linux/download-monitor.jpg" alt="download monitor" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.static_url}}/media/pub/linux/download-monitor.jpg" width="560px"  alt="download monitor" />
+<a href="{{site.static_url}}/assets/images/linux/download-monitor.jpg" alt="download monitor" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/assets/images/linux/download-monitor.jpg" width="560px"  alt="download monitor" />
 </a>
 
 ###Download Monitor 设置
 设置配额是要通过其统一发射器的设置配额执行，点击它，召唤一个对话框哪里下载配额，上传配额和配额总量是要调整;后的首选配额值是进入，超过数据的使用（超过设定的配额）通过通知的通知。
 
-<a href="{{site.static_url}}/media/pub/linux/download-monitor-setting.jpg" alt="download monitor" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.static_url}}/media/pub/linux/download-monitor-setting.jpg" width="330px" class="img-center" alt="download monitor" />
+<a href="{{site.static_url}}/assets/images/linux/download-monitor-setting.jpg" alt="download monitor" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/assets/images/linux/download-monitor-setting.jpg" width="330px" class="img-center" alt="download monitor" />
 </a>
 
 

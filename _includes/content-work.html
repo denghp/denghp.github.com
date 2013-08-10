@@ -1,0 +1,239 @@
+<section id="maincontent">
+<div class="container">
+<div class="row">
+    <div class="span4">
+        <div class="post-slider">
+            <!-- start flexslider -->
+            <div class="flexslider">
+                <ul class="slides">
+                    {% for post in site.categories.special limit:5 %}
+                    <li>
+                        <a href="{{ site.url}}{{post.url}}">
+                        {% if post.images.size > 0 %}
+                            <img src="{{site.static_url}}{{post.images[0]}}" alt="{{post.title}}"/>
+                        {% endif %}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <!-- end flexslider -->
+        </div>
+    </div>
+    <div class="span4 features">
+
+        <aside>
+            <i class="icon-circled icon-32 icon-suitcase left active"></i>
+            <h4>热门文章推荐</h4>
+
+            <div class="widget">
+                <ul class="cat">
+                    {% for post in site.categories.special limit:5 %}
+                    {% if post.short_title %}
+                    <li><a href="{{site.baseurl}}{{post.url}}">{{post.short_title }}</a></li>
+                    {% else %}
+                    <li><a href="{{site.baseurl}}{{post.url}}">{{post.title | strip_html | truncatewords: 4 }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+            <a href="{{site.baseurl}}/special">Learn more</a>
+        </aside>
+    </div>
+    <div class="span4 features">
+        <aside>
+            <i class="icon-circled icon-32 icon- icon-eye-open left active"></i>
+            <h4>最新文章推荐</h4>
+
+            <div class="widget">
+                <ul class="cat">
+                    {% for post in site.posts limit:5 %}
+                    {% if post.short_title %}
+                    <li><a href="{{site.baseurl}}{{post.url}}">{{post.short_title }}</a></li>
+                    {% else %}
+                    <li><a href="{{site.baseurl}}{{post.url}}">{{post.title | strip_html | truncatewords: 4 }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+            <a href="{{site.baseurl}}/archives/">Learn more</a>
+        </aside>
+    </div>
+</div>
+
+<div class="row">
+    <ul class="portfolio-area da-thumbs">
+        <div class="span12">
+            <h3><a href="{{site.baseurl}}/code/">研发推荐({{ site.categories.code | size }})</a></h3>
+
+            <div class="solidline"></div>
+        </div>
+        {% assign countI = 0 %}
+        {% for post in site.categories.code limit:20 %}
+        {% if post.images.size > 0 %}
+        {% assign countI = countI | plus:1 %}
+        <li class="portfolio-item2" data-id="id-0" data-type="photo">
+            <div class="span3">
+                <div class="thumbnail">
+                    <div class="image-wrapp">
+                        <a href="{{site.baseurl}}{{ post.url }}"><img src="{{site.static_url}}{{post.images[0]}}"/></a>
+                        <article class="da-animate da-slideFromRight" style="display: block;">
+                            <h4>{{ post.title | strip_html | truncatewords: 5}}</h4>
+                            <a href="{{ site.baseurl }}{{post.url}}"><i class="icon-rounded icon-48 icon-link"></i></a>
+                                <span>
+                                  <a class="zoom" data-pretty="prettyPhoto" href="{{site.static_url}}{{post.images[0]}}">
+                                      <i class="icon-rounded icon-48 icon-zoom-in"></i>
+                                  </a>
+                                </span>
+                        </article>
+                    </div>
+                </div>
+                <div class="entry-meta">
+                    <a href="{{site.baseurl}}{{post.url}}"><i class="icon-square icon-48 icon-pencil left"></i></a>
+					<span class="date">{{ post.date | date:"%m-%d" }} <br/>
+					{{ post.date | date:"%Y" }}</span>
+                </div>
+                <div class="entry-body">
+                    <a href="{{site.baseurl}}{{post.url}}">
+                        <h5 class="title">{{post.title | strip_html | truncatewords: 5}}</h5>
+                    </a>
+
+                    <p>
+                        {% if post.tags %}
+                        {% for tag in post.tags limit:4 %}
+                        <a href="{{ site.baseurl }}/tag/{{tag}}" class="text" title="{{ tag }}"
+                           rel="category tag">{{ tag }}</a>&nbsp;
+                        {% endfor %}
+                        {% endif %}
+                    </p>
+                </div>
+            </div>
+        </li>
+        {% endif %}
+        {% if countI >= 8 %}
+        {% break %}
+        {% endif %}
+        {% endfor %}
+
+    </ul>
+</div>
+
+<div class="row">
+    <ul class="portfolio-area da-thumbs">
+        <div class="span12">
+            <h3><a href="{{site.baseurl}}/chihuo/">熊猫吃货({{ site.categories.life | size }})</a></h3>
+
+            <div class="solidline"></div>
+        </div>
+        {% for post in site.categories.chihuo limit:8 %}
+        <li class="portfolio-item2" data-id="id-0" data-type="photo">
+            <div class="span3">
+                <div class="thumbnail">
+                    <div class="image-wrapp">
+                        {% if post.images.size > 0 %}
+                        <a href="{{site.baseurl}}{{ post.url }}"><img src="{{site.static_url}}{{post.images[0]}}"
+                                                                      alt="{{ post.title }}"/></a>
+                        {% else %}
+                        <a href="{{site.baseurl}}{{ post.url }}"><img
+                                src="{{site.static_url}}/assets/img/dummies/work3.jpg" alt="{{ post.title }}"/></a>
+                        {% endif %}
+                        <article class="da-animate da-slideFromRight" style="display: block;">
+                            <h4>{{ post.title | strip_html | truncatewords: 5}}</h4>
+                            <a href="{{ site.baseurl }}{{post.url}}"><i class="icon-rounded icon-48 icon-link"></i></a>
+                                <span>
+                                  {% if post.images.size > 0 %}
+                                  <a class="zoom" data-pretty="prettyPhoto" href="{{site.static_url}}{{post.images[0]}}">
+                                      <i class="icon-rounded icon-48 icon-zoom-in"></i>
+                                  </a>
+                                      {% else %}
+                                  <a class="zoom" data-pretty="prettyPhoto"
+                                     href="{{site.static_url}}/assets/img/dummies/work3.jpg">
+                                      <i class="icon-rounded icon-48 icon-zoom-in"></i>
+                                  </a>
+                                  {% endif %}
+                            </span>
+                        </article>
+                    </div>
+                </div>
+                <div class="entry-meta">
+                    <a href="#"><i class="icon-square icon-48 icon-pencil left"></i></a>
+					<span class="date">{{ post.date | date:"%m-%d" }} <br/>
+					{{ post.date | date:"%Y" }}</span>
+                </div>
+                <div class="entry-body">
+                    <a href="{{site.baseurl}}{{post.url}}">
+                        <h5 class="title">{{post.title | strip_html | truncatewords: 5}}</h5>
+                    </a>
+
+                    <p>
+                        {% if post.tags %}
+                        {% for tag in post.tags limit:4 %}
+                        <a href="{{ site.baseurl }}/tag/{{tag}}" class="text" title="{{ tag }}"
+                           rel="category tag">{{ tag }}</a>&nbsp;
+                        {% endfor %}
+                        {% endif %}
+                    </p>
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+<div class="row">
+    <ul class="portfolio-area da-thumbs">
+        <div class="span12">
+            <h3><a href="{{site.baseurl}}/life/">微生活({{ site.categories.chihuo | size }})</a></h3>
+
+            <div class="solidline"></div>
+        </div>
+        {% assign count = 0 %}
+        {% for post in site.categories.life limit:20 %}
+        {% if post.images.size > 0 %}
+        {% assign count = count | plus:1 %}
+        <li class="portfolio-item2" data-id="id-0" data-type="photo">
+            <div class="span3">
+                <div class="thumbnail">
+                    <div class="image-wrapp">
+                        <a href="{{site.baseurl}}{{ post.url }}"><img src="{{site.static_url}}{{post.images[0]}}"/></a>
+                        <article class="da-animate da-slideFromRight" style="display: block;">
+                            <h4>{{ post.title | strip_html | truncatewords: 5}}</h4>
+                            <a href="{{ site.baseurl }}{{post.url}}"><i class="icon-rounded icon-48 icon-link"></i></a>
+                                <span>
+                                  <a class="zoom" data-pretty="prettyPhoto" href="{{site.static_url}}{{post.images[0]}}">
+                                      <i class="icon-rounded icon-48 icon-zoom-in"></i>
+                                  </a>
+                                </span>
+                        </article>
+
+                    </div>
+                </div>
+                <div class="entry-meta">
+                    <a href="#"><i class="icon-square icon-48 icon-pencil left"></i></a>
+					<span class="date">{{ post.date | date:"%m-%d" }} <br/>
+					{{ post.date | date:"%Y" }}</span>
+                </div>
+                <div class="entry-body">
+                    <a href="{{site.baseurl}}{{post.url}}">
+                        <h5 class="title">{{post.title | strip_html | truncatewords: 5}}</h5>
+                    </a>
+
+                    <p>
+                        {% if post.tags %}
+                        {% for tag in post.tags limit:4 %}
+                        <a href="{{ site.baseurl }}/tag/{{tag}}" class="text" title="{{ tag }}"
+                           rel="category tag">{{ tag }}</a>&nbsp;
+                        {% endfor %}
+                        {% endif %}
+                    </p>
+                </div>
+            </div>
+        </li>
+        {% endif %}
+        {% if count >= 8 %}
+        {% break %}
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+</div>
+</section>

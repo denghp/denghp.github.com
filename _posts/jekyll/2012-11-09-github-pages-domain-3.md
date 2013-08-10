@@ -7,6 +7,7 @@ tags:
 - Jekyll
 categories:
 - www
+- archives
 UUID: 201211092023
 source_url: "http://yanping.me/cn/blog/2012/02/06/github-pages-domain-3/"
 ---

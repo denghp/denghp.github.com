@@ -9,7 +9,8 @@ tags:
 - 研发实践
 categories:
 - code
-- linux 
+- linux
+- archives
 UUID: 20130125182300
 date: 2013-01-25 18:23:22
 description: kill 送出一个特定的信号 (signal) 给行程 id 为 pid 的行程根据该信号而做特定的动作,若没有指定，预设是送出终止 (TERM) 的信号.

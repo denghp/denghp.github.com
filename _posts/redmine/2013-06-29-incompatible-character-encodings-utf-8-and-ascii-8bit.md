@@ -9,8 +9,10 @@ tags:
 categories:
 - code
 - project
+- archives
 UUID: 20130629002000
 date: 2013-06-29 00:20:00
+images: ["/assets/images/linux/redmine-exception.jpg"]
 ---
 
 ###异常信息

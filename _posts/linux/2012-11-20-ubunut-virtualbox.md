@@ -8,6 +8,7 @@ tags:
 - U盾
 categories:
 - linux
+- archives
 UUID: 201211201834
 date: 2012-11-20
 ---

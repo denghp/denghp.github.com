@@ -7,8 +7,9 @@ tags:
 comment: true
 published: true
 categories:
-- Subversion
+- svn
 - code
+- archives
 UUID: 20121112101820
 date: 2012-11-12
 ---

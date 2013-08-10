@@ -1,13 +1,15 @@
 ---
 layout: post
 title: 舜皇岩
-show_img: "/media/pub/life/dongan/shunhuangyan-min.jpg"
 tags: 
 - 湖南
 - 舜皇岩
 categories:
 - life
 - travel
+- archives
+data_type: fengjing
+images: ["/assets/images/life/dongan/shunhuangyan.jpg"]
 UUID: 201211262030
 ---
 
@@ -21,8 +23,8 @@ UUID: 201211262030
 
 ###舜皇岩 - 景观介绍
 舜皇岩位于东安县舜皇山东麓，离湘桂铁路紫溪市站10公里，距县城30公里。 
-<a href="{{site.static_url}}/media/pub/life/dongan/shunhuangyan-min.jpg" alt="舜皇岩" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.static_url}}/media/pub/life/dongan/shunhuangyan-min.jpg" alt="舜皇岩" class="img-right" width="330px" ></img>
+<a href="{{site.static_url}}/assets/pub/life/dongan/shunhuangyan-min.jpg" alt="舜皇岩" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/assets/pub/life/dongan/shunhuangyan-min.jpg" alt="舜皇岩" class="img-right" width="330px" ></img>
 </a>
 
 洞长760米左右，总面积1万多平方米。有四宫十八殿，每宫周围都有许多小洞，形成洞中有洞。整个岩洞无论是远看近看，所有石柱、石笋、石幔和钟乳石怪异多姿。中宫有个顶天立地的大石柱，高14米，围44米，雄姿巍巍；前宫有块石幔，自顶穹直泻而下，如万丈瀑布，奔腾不息。大岩洞之内，充满了自然美景，形象逼真，变幻无穷。这里既有平坦宽阔的大厅，又有蜿蜒曲折的小径；既有绿树成荫的“山林”，又有清澈见底的水潭；既有步步登高的“神梯”，又有横跨云端的“天桥”，还有“瑞狮朝阳”、“玉纱琼阁”等景。上上下下，千回百转，游人如临仙境一般。 

@@ -1,66 +1,102 @@
 ---
 layout: default
 title: 微生活-爱生活、爱健康
+initItem: 30
+perPageItem: 10
 ---
-<div id="main" >
-    <div id="content">
-        {% for post in site.categories.life limit:site.meta.default_limit %}
-        <div class="post-{{ post.data-thread-key }} post type-post status-publish format-standard hentry category-1 post" id="post-1968">
-            <div class="posttop">
-                <h2 class="posttitle">
-                    <a href="{{site.baseurl}}{{ post.url }}" rel="bookmark" title="{{ post.title }} {{ post.date | date_to_string }}">{{ post.title }}</a>
-                </h2>
-                <div class="postmetatop">
-                    Posted <time class="text" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>&nbsp;|&nbsp;
-                    {% if post.author != null %}
-                    By {{ post.author }}
-                    {% else %}
-                    By <span class='text'>熊猫人</span>
-                    {% endif %}
-                    &nbsp;|&nbsp;
-                    {% if post.tags %}
-                    标签:
-                    {% for tag in post.tags limit:5 %}
-                    <a href="{{ site.baseurl }}/tags/#{{tag}}" class="text" title="{{ tag }}" rel="category tag">{{ tag }}</a>&nbsp;
-                    {% endfor %}
-                    {% endif %}
+{% include emergency_news.html %}
+<section id="maincontent">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <ul class="filter">
+                    <li class="all active"><a href="#" class="btn btn-color">All categories</a></li>
+                    <li class="renwen"><a href="#" class="btn btn-color">人文</a></li>
+                    <li class="fengjing"><a href="#" class="btn btn-color">风景</a></li>
+                    <li class="meishi"><a href="#" class="btn btn-color">美食</a></li>
+                    <li class="web"><a href="#" class="btn btn-color">互联网</a></li>
+                    <li class="dongwu"><a href="#" class="btn btn-color">动物</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <ul class="portfolio-area da-thumbs">
+                {% for post in site.categories.life %}
+                {% if post.data_type %}
+                <li class="portfolio-item2" data-id="id-0" data-type="{{post.data_type}}">
+                    <div class="span3">
+                        <div class="thumbnail">
+                            <div class="image-wrapp">
 
-                </div>
-                <!-- /postmetatop -->
-            </div><!-- /posttop -->
+                                {% if post.images.size > 0 %}
+                                <a href="{{site.baseurl}}{{ post.url }}"><img
+                                        src="{{site.static_url}}{{post.images[0]}}"
+                                        alt="{{ post.title }}"/></a>
+                                {% else %}
+                                <a href="{{site.baseurl}}{{ post.url }}"><img
+                                        src="{{site.static_url}}/assets/img/dummies/work3.jpg" alt="{{ post.title }}"/></a>
+                                {% endif %}
+                                <!--
+                                <a href="{{site.static_url}}/2013/01/20/glamour-woman"><img src="{{site.static_url}}/assets/img/dummies/work8.jpg" alt="Portfolio name" title="" /></a>
+                                -->
+                                <article class="da-animate da-slideFromRight" style="display: block;">
+                                    <h4>
+                                        {% if post.short_title %}
+                                        {{post.short_title}}
+                                        {% else %}
+                                        {{ post.title | strip_html | truncatewords: 3}}
+                                        {% endif %}
+                                    </h4>
+                                    <a href="{{ site.baseurl }}{{post.url}}"><i
+                                            class="icon-rounded icon-48 icon-link"></i></a>
+                                <span>
+                                  {% if post.images.size > 0 %}
+                                  <a class="zoom" data-pretty="prettyPhoto"
+                                     href="{{site.static_url}}{{post.images[0]}}">
+                                      <i class="icon-rounded icon-48 icon-zoom-in"></i>
+                                  </a>
+                                      {% else %}
+                                  <a class="zoom" data-pretty="prettyPhoto"
+                                     href="{{site.static_url}}/assets/img/dummies/work3.jpg">
+                                      <i class="icon-rounded icon-48 icon-zoom-in"></i>
+                                  </a>
+                                  {% endif %}
+                            </span>
+                                </article>
+                            </div>
+                        </div>
+                        <!--
+                        <div class="entry-meta">
+                            <a href="#"><i class="icon-square icon-48 icon-pencil left"></i></a>
+					<span class="date">{{ post.date | date:"%m-%d" }} <br/>
+					{{ post.date | date:"%Y" }}</span>
+                        </div>
+                        <div class="entry-body">
+                            <a href="single-post.html">
+                                <h5 class="title">
+                                    {% if post.short_title %}
+                                    {{post.short_title}}
+                                    {% else %}
+                                    {{ post.title | strip_html | truncatewords: 3}}
+                                    {% endif %}
+                                </h5>
+                            </a>
 
-            <div class="postcontent">
-                {% if post.description %}                                                    
-                <p>
-                {% if post.show_img %}
-                <a href="{{post.url}}" title="{{post.title}}">
-                  <img src="{{site.static_url}}{{post.show_img}}" alt="{{post.title}}"  width="240px" height="140px" class="img-right"></img></a>
+                            <p>
+                                {% if post.tags %}
+                                {% for tag in post.tags limit:3 %}
+                                <a href="{{ site.baseurl }}/tags/#{{tag}}" class="text" title="{{ tag }}"
+                                   rel="category tag">{{ tag }}</a>&nbsp;
+                                {% endfor %}
+                                {% endif %}
+                            </p>
+                        </div>
+                        -->
+                    </div>
+                </li>
                 {% endif %}
-                {{ post.description }}</p>
-                {% else %}
-                <p>
-                {% if post.show_img %}
-                <a href="{{post.url}}" title="{{post.title}}">
-                  <img src="{{site.static_url}}{{post.show_img}}" alt="{{post.title}}"  width="240px" height="140px" class="img-right"></img></a>
-                {% endif %}
-                {{ post.content | strip_html | truncatewords: 2 }}</p>
-                {% endif %}
-                <p> <a href="{{ site.baseurl}}{{ post.url }}/#more-{{ post.data-thread-key }}" class="more-link">Read More &raquo;</a></p> 
-                <div class="cleared"></div>
-
-            </div><!-- /postcontent -->
-
-            <div class="postmetabottom">
-                <div class="tags"></div>
-                <div class="metacomments"><span><a href="{{site.baseurl}}{{ post.url }}/#comments" title="<< {{ post.title }}>>上的评论"><span class="ds-thread-count" data-thread-key="{{ post.UUID }}" data-replace="1"> Comments</span></a></span></div>
-                <div class="cleared"></div>
-
-            </div><!-- /postmetabottom -->
-        </div><!-- /post -->
-        {% endfor %}
-    </div><!-- /content -->
-    {% include aside.html %}
-
-</div><!-- /main --> 
-
-
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>

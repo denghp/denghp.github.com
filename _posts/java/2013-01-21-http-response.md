@@ -8,6 +8,7 @@ tags:
 categories:
 - code
 - java
+- archives
 UUID: 201301211427
 date: 2013-01-21 08:20:20
 ---

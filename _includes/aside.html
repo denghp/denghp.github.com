@@ -1,89 +1,83 @@
-<div id="sidebar">
-    <ul> 
-        <li id="rss-feed" class="boxed widget ds-widget-qqt-follow">
-        <h2 class="widgettitle">RSS Feed</h2>
-            <a href="{{site.baseurl}}/rss.xml" target="_blank"><img src="{{site.static_url}}/media/demi/img/feed.png"  alt="熊猫家族 RSS feed" border="0" title="Subscribe for Updates"></a>
-            熊猫家族-建设一个有家氛围的博客园
-        </li>
-        <li id="tag_cloud" class="boxed widget widget_tag_cloud">
-        <h2 class="widgettitle">分类目录</h2>
-        {% for cat in site.categories %}
-        {% if cat[1].size >= 5 %}
-        {% if cat[0] == 'code' %} 
-        <a href='{{ site.baseurl }}/practice' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>研发实践({{cat[1].size}})</a>
-        {% elsif cat[0] == 'java' %} 
-        <a href='{{ site.baseurl }}/categories/java' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>Java语言({{cat[1].size}})</a>
-        {% elsif cat[0] == 'solr' %}
-        <a href='{{ site.baseurl }}/categories/solr' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>Lucene/Solr({{cat[1].size}})</a>
-        {% elsif cat[0] == 'linux' %}
-        <a href='{{ site.baseurl }}/categories/linux' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>Uinx/Linux({{cat[1].size}})</a>
-        {% elsif cat[0] == 'life' %}
-        <a href='{{ site.baseurl }}/life' class='tag-link-{{cat[1].size}}' title='{{ cat[0] }}' style='font-size: {{ 10 | plus:cat[0].size }}pt;'>微生活({{cat[1].size}})</a>
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-        </li>
+<aside>
+    <div class="widget">
+        <form action="http://www.google.com/cse" class="lit-search" method="get" target="_blank">
+            <input type="text" class="text" name="q" size="24" placeholder="搜索">
+            <input type="hidden" name="cx" value="007512494910388222978:uvgripsnamg">
+            <input type="hidden" name="ie" value="UTF-8">
+        </form>
+    </div>
+    <div class="widget">
+        <h4>RSS Feed</h4>
+        <a href="{{site.baseurl}}/rss.xml" target="_blank"><img src="{{site.static_url}}/assets/img/feed.png"  alt="熊猫家族 RSS feed" border="0" title="Subscribe for Updates"></a>
+        熊猫家族-今日一刻,分享生活
+    </div>
+    <div class="widget">
+        <h4>Categories</h4>
+        <ul class="cat">
+            {% for cat in site.categories %}
+            {% if cat[1].size >= 5 %}
+            {% if cat[0] == 'code' %}
+            <li><a href="{{site.baseurl}}/code">研发实践({{cat[1].size}})</a></li>
+            {% elsif cat[0] == 'java' %}
+            <li><a href="{{site.baseurl}}/category/java.html">Java实践({{cat[1].size}})</a></li>
+            {% elsif cat[0] == 'solr' %}
+            <li><a href="{{site.baseurl}}/category/search.html">搜索引擎-Lucene/Solr ({{cat[1].size}})</a></li>
+            {% elsif cat[0] == 'linux' %}
+            <li><a href="{{site.baseurl}}/category/linux.html">Uinx/Linux ({{cat[1].size}})</a></li>
+            {% elsif cat[0] == 'life' %}
+            <li><a href="{{site.baseurl}}/life">微生活({{cat[1].size}})</a></li>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="widget">
+        <h4>热评文章</h4>
+        <ul class="ds-top-threads" data-num-items="10" data-range="weekly" data-show-time="1">
+        </ul>
+    </div>
+    <div class="widget">
+        <h4>近期文章</h4>
+        <ul class="recent-posts">
+            {% for post in site.posts limit:10 %}
+            <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 
-        <li id="tag_cloud" class="boxed widget widget_tag_cloud">
-        <h2 class="widgettitle">热门标签</h2>
-        {% for tag in site.tags %}
-        {% if tag[1].size >= 3 %}
-        <a href='{{ site.baseurl }}/tags/#{{ tag[0] }}' class='tag-link-{{tag[1].size}}' title='{{ tag[0] }}' style='font-size: {{ 10 | plus:tag[0].size }}pt;'>{{ tag[0]}}</a>
-        {% endif %}
-        {% endfor %}
-        </li>
-        <li id="recent-posts-2" class="boxed widget widget_recent_entries">		
-        <h2 class="widgettitle">近期文章</h2>	
-        <div id="hot_comment_post">
-            <ul>
-                {% for post in site.posts limit:10 %} 
-                <li>
-                <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
+                <div class="clear">
+                </div>
+                <span class="date"><i class="icon-calendar"></i> {{ post.date | date:"%Y-%m-%d" }}</span>
+                <span class="comment">
+                    <i class="icon-comment"></i>
+                <a href="{{site.baseurl}}{{ post.url }}/#comments" title="<< {{ post.title }}>>上的评论"><span class="ds-thread-count" data-thread-key="{{ post.UUID }}" data-replace="1"> Comments</span></a>
+                    </span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="widget">
+        <h4>近期评论</h4>
+        <ul class="ds-recent-comments" data-num-items="11" data-show-title="1" data-show-avatars="1" data-show-time="1"
+            data-show-admin="0" data-avatar-size="32" data-excerpt-length="50"/>
+    </div>
+    <!--
+    <div class="widget">
+        <h4>Tags</h4>
+        <ul class="tags">
+            {% for tag in site.tags %}
+            {% if tag[1].size >= 3 %}
+            <li><a href="{{site.baseurl}}/tag/{{tag[0]}}" class="btn btn-link">{{tag[0]}}</a></li>
+            {% endif %}
+            {% endfor %}
 
-        </li>
-        <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
-        <h2 class="widgettitle">热评文章</h2>
-        <div id="hot_comment_post">
-            <ul class="ds-top-threads" data-num-items="10" data-range="weekly"></ul>
-        </div>
-        </li>
-        <li id="ds-recent-comments" class="boxed widget ds-widget-recent-comments">
-        <h2 class="widgettitle">近期评论</h2>
-        <div id="hot_comment">
-            <ul class="ds-recent-comments" data-num-items="10" data-show-avatars="1" data-show-time="1" data-show-title="0" data-show-admin="0" data-avatar-size="32" data-excerpt-length="70">
-            </ul>
-        </div>
-        </li>
-        <li id="ds-qqt-follow" class="boxed widget ds-widget-qqt-follow">
-        <!--
-        <iframe src="http://follow.v.t.qq.com/index.php?c=follow&a=quick&name=denghp_280606790&style=1&t=1352387427769&f=1" frameborder="0" scrolling="auto" width="227" height="75" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
-        -->
-        <iframe width="300" height="190" frameborder="0" scrolling="no" src="http://widget.weibo.com/relationship/bulkfollow.php?language=zh_cn&uids=1655072963&wide=1" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
-        </li>
-
-        <li id="ds-recent-visitors-2" class="boxed widget ds-widget-recent-visitors">
-        <h2 class="widgettitle">最近访客</h2>
+        </ul>
+    </div>
+    -->
+    <div class="widget">
+        <iframe width="300" height="190" frameborder="0" scrolling="no"
+                src="http://widget.weibo.com/relationship/bulkfollow.php?language=zh_cn&uids=1655072963&wide=1"
+                marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
+    </div>
+    <div class="widget">
+        <h4>最近访客</h4>
         <ul class="ds-recent-visitors" data-num-items="20" data-show-time="0" data-avatar-size="50"></ul>
-        </li>
-        {% if site.links %}
-        <li id="ds-top-threads" class="boxed widget ds-widget-top-threads">
-        <h2 class="widgettitle">友情链接</h2>
-        <div id="hot_comment_post">
-            <ul>
-                {% for link in site.links %}
-                <li><a href="{{link.url}}"target="_blank"  title="{{link.name}}{% if link.title %}-{{link.title}}{% endif %}">{{link.name}}</a></li>
-                {% endfor %}
-            </ul> 
-        </div>
-        </li>
-        {% endif %}
-    </ul>
-</div>
-<!-- /sidebar -->
-<div class="cleared"></div>
-
-
+    </div>
+</aside>

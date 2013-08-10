@@ -9,6 +9,7 @@ published: true
 author: lisa
 categories:
 - life
+- archives
 UUID: 201212232030
 ---
 

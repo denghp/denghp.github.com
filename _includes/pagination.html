@@ -1,0 +1,43 @@
+{% if page.grouptype == 'tag' %}
+{% capture paging_root %}/tag/{{page.tag}}/{% endcapture %}
+{% elsif page.grouptype == 'category' %}
+{% capture paging_root %}/category/{{page.category}}/{% endcapture %}
+{% else %}
+{% capture paging_root %}/{% endcapture %}
+{% endif %}
+
+
+<div class="pagination pagination-large">
+    <ul>
+        {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+        <li><a href="#">Prev</a></li>
+        {% else %}
+        <li><a href="{{paging_root}}{{ paginator.previous_page_path }}">Prev</a><li>
+        {% endif %}
+        {% else %}
+        <li class="disabled"><a href="#">Prev</a></li>
+        {% endif %}
+
+        {% if paginator.page == 1 %}
+        <li class="active"> <a href="{{paging_root}}index.html">1</a> </li>
+        {% else %}
+        <li><a href="{{paging_root}}index.html">1</a> </li>
+        {% endif %}
+
+
+        {% for count in (2..paginator.total_pages) %}
+        {% if count == paginator.page %}
+        <li class="active"><a href="{{paging_root}}page{{ count }}">{{ count }}</a></li>
+        {% else %}
+        <li><a href="{{paging_root}}page{{ count }}">{{ count }}</a></li>
+        {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+        <li><a href="{{paging_root}}{{ paginator.next_page_path }}">Next</a></li>
+        {% else %}
+        <li class="disabled"><a href="#">Next</a></li>
+        {% endif %}
+    </ul>
+</div>

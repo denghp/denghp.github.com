@@ -7,9 +7,10 @@ tags:
 - centos
 categories:
 - code
+- archives
 UUID: 20130521002000
 date: 2013-05-21 00:20:00
-show_img: '/media/pub/linux/django-logo.jpg'
+images: ['/assets/images/linux/django-logo.jpg']
 ---
 
 　　Django是一个开源的Web应用框架，由Python写成，并于2005年7月在BSD许可证下发布。Django的主要目标是使得开发复杂的、数据库驱动的网站变得简单。Django采用MVC设计模式注重组件的重用性和“可插拔性”，敏捷开发和DRY法则（Don’t Repeat Yourself）。在Django中Python被普遍使用，甚至包括配置文件和数据模型。本文介绍Django在Linux+Mysql环境下安装、配置的过程，包括安装、运行、添加应用的所有流程，最终建立一个可以从Mysql读取文章并显示的Django应用。文章面向刚接触Python/Django的初学者，所以安装过程都以默认环境为主，用pip可以大大简化安装过程。

@@ -7,6 +7,7 @@ tags:
 categories:
 - javaScript
 - Web
+- archives
 UUID: 201212041832
 date: 2012-12-04
 ---

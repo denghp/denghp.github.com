@@ -9,7 +9,9 @@ tags:
 - 缓存
 categories:
 - code
-- solr 
+- solr
+- search
+- archives
 UUID: 201211291130
 date: 2012-11-29
 ---
@@ -45,7 +47,7 @@ solr中主要是LRUCache,主要使用的是LRU是Least Recently Used最近最少
 
 我们可以通过solr管理界面查看缓存的状态，也可以通过日志进行查看。下图是我进行的参数设置后的状态：
 ###Plugins / status
-<img src="/media/pub/solr/solr-cache.jpg" width="580px"></img>
+<img src="/assets/images/solr/solr-cache.jpg" width="580px"></img>
 
 *参数说明:*
 <ol>

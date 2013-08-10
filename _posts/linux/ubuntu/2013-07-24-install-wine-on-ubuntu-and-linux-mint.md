@@ -10,9 +10,10 @@ tags:
 categories:
 - code
 - linux
+- archives
 UUID: 20130724122000
 date: 2013-07-24 12:50:22
-show_img: "/media/pub/linux/wine.jpg"
+images: ["/assets/images/linux/wine.jpg"]
 ---
 
 　　wine，是一款优秀的Linux系统平台下的模拟器软件，用来将Windows系统下的软件在Linux系统下稳定运行，该软件更新频繁，日臻完善，可以运行许多大型Windows系统下的软件。另外英语单词wine是葡萄酒的意思。

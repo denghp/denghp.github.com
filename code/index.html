@@ -1,0 +1,30 @@
+---
+layout: default
+title: 全部文章-研发实践
+---
+
+{% include emergency_news.html %}
+
+<section id="maincontent">
+    <div class="container">
+        <div class="row">
+            <div class="span8">
+                <!-- start article -->
+                <div id="content"></div>
+                <div id="page-selection"></div>
+                <!-- end article  -->
+
+            </div>
+            <div class="span4">
+                {% include aside.html %}
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    $(function () {
+        initJsonData("{{site.baseurl}}/json/code.json");
+        getStartedInitialization(15);
+    });
+
+</script>

@@ -8,9 +8,10 @@ tags:
 categories:
 - code
 - linux
+- archives
 UUID: 20130409001000
 date: 2013-04-09 00:10:00
-show_img: "/media/pub/linux/fstab-info.jpg"
+images: ["/assets/images/linux/fstab-info.jpg"]
 ---
 
 在64位Ubuntu 12.04以后的版本中,ntfs写入支持程序,不能正常运行。所以想ubuntu自动挂载ntfs分区就要手动编辑/etc/fstab 文件。  /etc/fstab包含了挂在磁盘的必要信息，在系统启动时读入。
@@ -19,8 +20,8 @@ show_img: "/media/pub/linux/fstab-info.jpg"
 <pre id="bash">
 $ sudo fdisk -l
 </pre>
-<a href="{{site.static_url}}/media/pub/linux/fdisk-info.jpg" alt="disk-info" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.static_url}}/media/pub/linux/fdisk-info.jpg" width="560px"  alt="fdisk-info" />
+<a href="{{site.static_url}}/assets/images/linux/fdisk-info.jpg" alt="disk-info" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/assets/images/linux/fdisk-info.jpg" width="560px"  alt="fdisk-info" />
 </a>
 /dev/sda5，/dev/sda6是要挂载的两个分区。
 
@@ -29,8 +30,8 @@ $ sudo fdisk -l
 $ sudo gedit /etc/fstab
 </pre>
 可以看到一些已经定义好的加载点:
-<a href="{{site.static_url}}/media/pub/linux/fstab-info.jpg" alt="fstab" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.static_url}}/media/pub/linux/fstab-info.jpg" width="560px"  alt="fstab" />
+<a href="{{site.static_url}}/assets/images/linux/fstab-info.jpg" alt="fstab" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/assets/images/linux/fstab-info.jpg" width="560px"  alt="fstab" />
 </a>
 
 每一行使用一个tab分成6列，分别为filesystem, mountpoint, type, options, dump, pass<br>
@@ -73,7 +74,7 @@ uid=1000(denghp) gid=1000(denghp) groups=1000(denghp),4(adm),24(cdrom),27(sudo),
 #Data分区
 /dev/sda6    /media/document    ntfs    defaults,locale=en_US.UTF-8,uid=1000,gid=1000,dmask=022,fmask=133 0 0
 </pre>
-<a href="{{site.static_url}}/media/pub/linux/fstab-info-2.jpg" alt="fstab-info" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.static_url}}/media/pub/linux/fstab-info-2.jpg" width="560px"  alt="fstab-info" />
+<a href="{{site.static_url}}/assets/images/linux/fstab-info-2.jpg" alt="fstab-info" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/assets/images/linux/fstab-info-2.jpg" width="560px"  alt="fstab-info" />
 </a>
 

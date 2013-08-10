@@ -3,10 +3,11 @@ layout: post
 title: 在Django模板中使用css、javascript 等静态文件
 categories:
 - code
-- Python
+- python
+- archives
 tags:
-- Python
-- Django
+- python
+- django
 UUID: 201110152330
 date: 2011-10-15
 ---

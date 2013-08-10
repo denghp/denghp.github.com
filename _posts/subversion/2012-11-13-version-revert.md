@@ -4,10 +4,11 @@ title: Subversion恢复到某个版本
 tags: 
 - 版本
 - Subversion
-- Svn
+- svn
 categories:
 - code
-- Subversion
+- svn
+- archives
 UUID: 201212131829
 ---
 

@@ -7,6 +7,7 @@ tags:
 - 计划
 categories:
 - life
+- archives
 UUID: 2013010331237
 ---
 

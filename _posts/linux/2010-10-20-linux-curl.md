@@ -7,6 +7,7 @@ tags:
 categories:
 - linux
 - code
+- archives
 UUID: 201010201136
 date: 2010-10-20
 ---

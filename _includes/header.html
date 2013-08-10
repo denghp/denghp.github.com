@@ -1,13 +1,86 @@
-<!-- /header -->
-<div id="header">
-
-  <div id="logo">
-    <h1 id="logo">
-      <a href="{{ site.baseurl }}/" title="[Go to homepage]"><img width="234px" height="86px" src="{{ site.static_url}}/media/demi/img/demi-logo.jpg" alt="" /></a>
-    </h1> 
-  </div><!-- /logo -->
-
-  <div class="cleared"></div>
-</div>
-<!-- /header -->
-
+<header>
+    <!-- Navbar
+        ================================================== -->
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <!-- logo -->
+                <a class="brand logo" href="index.html">
+                    <img src="{{site.static_url}}/assets/img/demi-logo.jpg" alt="" />
+                </a>
+                <!-- end logo -->
+                <!-- top menu -->
+                <div class="navigation">
+                    <nav>
+                        <ul class="nav topnav">
+                            {% if page.url == '/index.html' or page.url == '/' %}
+                            <li class="dropdown active">
+                                <a href="{{site.baseurl}}/index.html">Home</a>
+                            </li>
+                            {% else %}
+                            <li class="dropdown">
+                                <a href="{{site.baseurl}}/index.html">Home</a>
+                            </li>
+                            {% endif %}
+                            {% if page.url == '/archives/index.html' or page.url == '/archives' %}
+                            <li class="dropdown active">
+                                <a href="{{site.baseurl}}/archives/">文章列表</a>
+                            </li>
+                            {% else %}
+                            <li class="dropdown ">
+                                <a href="{{site.baseurl}}/archives/">文章列表</a>
+                            </li>
+                            {% endif %}
+                            {% if page.url == '/special/index.html' or page.url == '/special' %}
+                            <li class="dropdown active">
+                                <a href="{{site.baseurl}}/special">热门推荐</a>
+                            </li>
+                            {% else %}
+                            <li class="dropdown">
+                                <a href="{{site.baseurl}}/special">热门推荐</a>
+                            </li>
+                            {% endif %}
+                            {% if page.url == '/code/index.html' or page.url == '/code' %}
+                            <li class="dropdown active">
+                                <a href="{{site.baseurl}}/code">研发实践</a>
+                            </li>
+                            {% else %}
+                            <li class="dropdown">
+                                <a href="{{site.baseurl}}/code">研发实践</a>
+                            </li>
+                            {% endif %}
+                            {% if page.url == '/chihuo/index.html' or page.url == '/chihuo' %}
+                            <li class="dropdown active">
+                                <a href="{{site.baseurl}}/chihuo">熊猫吃货</a>
+                            </li>
+                            {% else %}
+                            <li class="dropdown">
+                                <a href="{{site.baseurl}}/chihuo">熊猫吃货</a>
+                            </li>
+                            {% endif %}
+                            {% if page.url == '/life/index.html' or page.url == '/life' %}
+                            <li class="dropdown active">
+                                <a href="{{site.baseurl}}/life/index.html">微生活</a>
+                            </li>
+                            {% else %}
+                            <li class="dropdown">
+                                <a href="{{site.baseurl}}/life/index.html">微生活</a>
+                            </li>
+                            {% endif %}
+                            {% if page.url == '/about.html' %}
+                            <li class="dropdown active">
+                                <a href="{{site.baseurl}}/about.html">关于我</a>
+                            </li>
+                            {% else %}
+                            <li class="dropdown">
+                                <a href="{{site.baseurl}}/about.html">关于我</a>
+                            </li>
+                            {% endif %}
+                        </ul>
+                    </nav>
+                </div>
+                <!-- end menu -->
+            </div>
+        </div>
+    </div>
+</header>

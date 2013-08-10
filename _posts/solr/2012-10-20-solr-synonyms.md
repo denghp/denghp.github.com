@@ -8,7 +8,9 @@ tags:
 - 搜索引擎
 categories:
 - code
-- solr 
+- solr
+- search
+- archives
 UUID: 20121020202012
 date: 2012-11-20
 ---

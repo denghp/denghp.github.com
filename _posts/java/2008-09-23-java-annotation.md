@@ -5,6 +5,7 @@ comment: true
 published: true
 categories:
 - code
+- archives
 tags:
 - java
 - Annotation

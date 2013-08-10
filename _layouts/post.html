@@ -1,86 +1,89 @@
 ---
-layout: default-post
+layout: default
 ---
-<div id="content">
-  <div class="post type-post status-publish format-standard hentry category-1 post" >
-    <div class="posttop">
-      <h1 class="posttitle">
-        {{ page.title }}
-      </h1>
-    </div>
-    <div class="postmetatop">
-      Posted 
-      <time class="text" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d %H:%M:%S" }}</time>&nbsp; |&nbsp;
-       <span class="ds-thread-count" data-thread-key="{{ page.UUID }}" data-replace="1">暂无评论</span></a></span> &nbsp;|&nbsp;
-      {% if page.author != null %}
-      By {{ page.author }} &nbsp;
-      {% else %}
-      By 熊猫人
-      {% endif %}
-      {% if page.tags%}
-      <div class="tag">
-        {% for tag in page.tags%}
-        <a href="{{ site.baseurl }}/tags/#{{tag}}" class="text" title="{{ tag }}" rel="category tag">{{ tag}}</a>&nbsp;
-        {% endfor %}
-      </div>
-      {% endif %}
-    </div>
+{% include emergency_news.html %}
 
-    <div class="postcontent-entry">
-      <div class="cleared"></div>
-      {{ content }}
-    </div><!-- /postcontent -->
+<section id="maincontent">
+    <div class="container">
+        <div class="row">
+            <div class="span8">
+                <!-- start article full post -->
+                <article class="blog-post">
+                    <div class="post-heading">
+                        <h3><a href="#">{{page.title}}</a></h3>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    {% for item in page.array %}
+                    <img src="{{site.static_url}}{{item}}" alt="{{page.title}}" />
+                    {% endfor %}
 
-    <div class="v-pagination">
-      {% if page.previous.url %}
-      {% if page.previous.short_title %}
-      <a class="prev" href="{{ site.baseurl }}{{page.previous.url}}" title="前一篇：{{page.previous.short_title}}">&laquo; {{page.previous.short_title}}</a>
-      {% else %}
-      <a class="prev" href="{{ site.baseurl }}{{page.previous.url}}" title="前一篇：{{page.previous.title}}">&laquo; {{page.previous.title}}</a>
-      {% endif %}
-      {% endif %}
-      {% if page.next.url %}
-      {% if page.next.short_title %}
-      <a class="next" href="{{ site.baseurl }}{{page.next.url}}" title="后一篇：{{page.next.short_title}}">{{page.next.short_title}} &raquo;</a>
-      {% else %} 
-      <a class="next" href="{{ site.baseurl }}{{page.next.url}}" title="后一篇：{{page.next.title}}">{{page.next.title}} &raquo;</a>
-      {% endif %}
-      {% endif %}
+                    <ul class="post-meta">
+                        <li class="first"><i class="icon-calendar"></i><span>{{ page.date | date:"%Y-%m-%d" }}</span></li>
+                        <li><i class="icon-list-alt"></i>
+                            <span><a href="{{site.baseurl}}{{ page.url }}/#comments" title="<< {{ page.title }}>>上的评论"><span class="ds-thread-count" data-thread-key="{{ page.UUID }}" data-replace="1"> Comments</span></a></span>
+                        </li>
+                        <li class="last"><i class="icon-tags"></i>
+                            <span>
+                            {% for tag in page.tags %}
+                            <a href="{{site.baseurl}}/tag/{{tag}}">{{tag}}</a>,
+                            {% endfor %}
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="clearfix">
+                    </div>
+                    <p>
+                        {{ content }}
+                    </p>
+                    <!---->
+                    <ul  class="pager">
+                    {% if page.previous.url %}
+                    {% if page.previous.short_title %}
+                    <li class="previous"><a href="{{ site.baseurl }}{{page.previous.url}}" title="前一篇：{{page.previous.short_title}}">&larr; {{page.previous.short_title}} </a></li>
+                    {% else %}
+                    <li class="previous"><a href="{{ site.baseurl }}{{page.previous.url}}" title="前一篇：{{page.previous.title}}">&larr; {{page.previous.title}}</a></li>
+                    {% endif %}
+                    {% endif %}
+                     <!--
+                    {% if page.next.url %}
+                    {% if page.next.short_title %}
+                    <li class="next"><a href="{{ site.baseurl }}{{page.next.url}}" title="后一篇：{{page.next.short_title}}">{{page.next.short_title}} &rarr;</a></li>
+                    {% else %}
+                    <li class="next"><a href="{{ site.baseurl }}{{page.next.url}}" title="后一篇：{{page.next.title}}">{{page.next.title}} &rarr;</a></li>
+                    {% endif %}
+                    {% endif %}
+                    -->
+                        <li class="next"><a href="{{ site.baseurl }}{{page.next.url}}" title="后一篇：{{page.next.title}}">{{page.next.title}} &rarr;</a></li>
+                    </ul>
+                    <!-- JiaThis Button BEGIN -->
+                    <div class="jiathis_style">
+                        <span class="jiathis_txt">分享到：</span>
+                        <a class="jiathis_button_qzone">QQ空间</a>
+                        <a class="jiathis_button_tsina">新浪微博</a>
+                        <a class="jiathis_button_tqq">腾讯微博</a>
+                        <a class="jiathis_button_renren">人人网</a>
+                        <a class="jiathis_button_googleplus">Google+</a>
+                        <a href="http://www.jiathis.com/share?uid=1706288"
+                           class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+                        <a class="jiathis_counter_style"></a>
+                    </div>
+                    <script type="text/javascript">
+                        var jiathis_config = {data_track_clickback: true};
+                    </script>
+                    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1343704647947962"
+                            charset="utf-8"></script>
+                    <!-- JiaThis Button END -->
+                </article>
+                <!-- end article full post -->
+                <!-- Duoshuo Comment Begin -->
+                <div class="ds-thread" data-thread-id="{{page.UUID}}" data-url="{{site.url}}{{page.url}}" data-thread-key="{{page.UUID}}" data-title="{{page.title}}"
+                     data-order="desc" data-form-positon="top"></div>
+                <!-- Duoshuo Comment End -->
+            </div>
+            <div class="span4">
+                {% include aside.html %}
+            </div>
+        </div>
     </div>
-    
-    <!-- JiaThis Button BEGIN -->
-    <div class="jiathis_style" style="margin: 10px 10px 20px 0;padding: 10px 0 0;">
-      <span class="jiathis_txt">分享到：</span>
-      <a class="jiathis_button_qzone">QQ空间</a>
-      <a class="jiathis_button_tsina">新浪微博</a>
-      <a class="jiathis_button_tqq">腾讯微博</a>
-      <a class="jiathis_button_renren">人人网</a>
-      <a class="jiathis_button_googleplus">Google+</a>
-      <a href="http://www.jiathis.com/share?uid=1706288" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
-      <a class="jiathis_counter_style"></a>
-    </div>
-    <script type="text/javascript">
-      var jiathis_config = {data_track_clickback:true};
-    </script>
-    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1343704647947962" charset="utf-8"></script>
-    <!-- JiaThis Button END -->
- </div><!-- /post -->
-  <div class="cleared"></div>
- 
-  <div class="archivesbox">
-    <b>版权声明：</b>自由转载-非商用-非衍生-保持署名 | <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">Creative Commons BY-NC-ND 3.0</a><br>
-    <b>原文网址：</b><a href="{% if page.source_url %}{{page.source_url}}{% else %}{{page.url}}{% endif%}">{% if page.source_url %}{{page.source_url}}{% else %}{{site.url}}{{page.url}}{% endif %}</a>
-  </div>
-
-  <div class="archivesbox">
-    <div class="comments">
-      <!-- Duoshuo Comment Begin -->
-      <div class="ds-thread" data-thread-id="{{page.UUID}}" data-url="{{site.url}}{{page.url}}" data-thread-key="{{page.UUID}}" data-title="{{page.title}}"
-        data-order="desc" data-form-positon="top"></div>
-      <!-- Duoshuo Comment End -->
-    </div>
-  </div>
-</div><!-- /content -->
-
-{% include aside.html %}
-
+</section>

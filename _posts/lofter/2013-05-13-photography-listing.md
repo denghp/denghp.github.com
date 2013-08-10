@@ -6,8 +6,7 @@ tags:
 - 电子书
 - 摄影书籍
 categories:
-- photo
-- life
+- archives
 UUID: 20130513001010
 date: 2013-05-13 00:10:00
 ---

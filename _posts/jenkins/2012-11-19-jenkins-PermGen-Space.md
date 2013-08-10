@@ -6,6 +6,7 @@ tags:
 - Mavne
 categories:
 - Jenkins
+- archives
 UUID: 201211192343
 date: 2012-11-19
 ---

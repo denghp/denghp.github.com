@@ -8,9 +8,10 @@ tags:
 categories:
 - code
 - linux
+- archives
 UUID: 20130224002700
 date: 2013-02-24 00:27:00
-show_img: "/media/pub/linux/october-calendar-date-md.png"
+images: ["/assets/images/linux/october-calendar-date-md.png"]
 ---
 
 　　Linux 提供了系统的日期和时间；而计算机硬件也提供了一个基于硬件时钟的时间。在大多数情况下，这连个时间可能差别很大。Linux 系统的时间是从1970年1月1日开始计算的。而计算机的硬件时间取决于机器主板上所安装的时钟芯片的类型，并且许多芯片组在使用一段时间后其硬件时间都会变的不准。

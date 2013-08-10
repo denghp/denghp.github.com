@@ -4,6 +4,7 @@ title: 谈谈 Hash Table
 categories:
 - code
 - java
+- archives
 tags:
 - java
 UUID: 20100721

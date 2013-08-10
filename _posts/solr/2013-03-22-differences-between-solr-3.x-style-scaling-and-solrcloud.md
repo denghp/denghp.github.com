@@ -8,7 +8,9 @@ tags:
 - 研发实践
 categories:
 - code
+- search
 - solr
+- archives
 UUID: 20130323001027
 date: 2013-03-23 00:10:22
 ---

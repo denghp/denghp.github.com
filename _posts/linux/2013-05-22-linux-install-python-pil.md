@@ -7,7 +7,7 @@ tags:
 - 系统监控
 categories:
 - code
-- 系统监控
+- archives
 UUID: 20130522002000
 date: 2013-05-22 00:20:00
 ---

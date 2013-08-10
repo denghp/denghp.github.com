@@ -3,6 +3,7 @@ layout: post
 title: sudo apt-get 命令大全
 categories:
 - linux
+- archives
 tags:
 - 安全
 - linux

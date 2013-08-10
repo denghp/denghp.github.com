@@ -3,6 +3,7 @@ layout: post
 title: SSH免密码远程登录设置
 categories:
 - Web
+- archives
 tags:
 - 安全
 - linux

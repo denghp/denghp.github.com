@@ -11,6 +11,7 @@ tags:
 categories:
 - code
 - java
+- archives
 UUID: 201301081427
 description: Apache JMeter( http://jakarta.apache.org/jmeter/ )是来自 Apache Jakarta 项目的一个压力测试工具, 目前版本2.0.3, JMeter 支持 HTTP, FTP, SOAP/XML-RPC, JDBC 等多种目标的压力测试。 最近在工作中实现了一个webservice，支持json的post请求，使用JMeter来进行压力测试显得就非常简单啦。
 ---
@@ -19,13 +20,13 @@ description: Apache JMeter( http://jakarta.apache.org/jmeter/ )是来自 Apache 
 最近在工作中实现了一个webservice，支持json的post请求，使用JMeter来进行压力测试显得就非常简单啦。
 
 ###Step 1 创建测试计划
-<img src="{{site.static_url}}/media/pub/java/json-http-test-plan.jpg" width="560px"  alt="json-http-test-plan" ></img>
+<img src="{{site.static_url}}/assets/images/java/json-http-test-plan.jpg" width="560px"  alt="json-http-test-plan" ></img>
 
 ###Step 2 添加Header Manager
-<img src="{{site.static_url}}/media/pub/java/json-http-header-manager.jpg" width="560px"  alt="json-http-header-manager" ></img>
+<img src="{{site.static_url}}/assets/images/java/json-http-header-manager.jpg" width="560px"  alt="json-http-header-manager" ></img>
 
 ###Step 3 添加CSV
-<img src="{{site.static_url}}/media/pub/java/json-http-request-csv.jpg" width="560px"  alt="json-http-request-csv.jpg" ></img>
+<img src="{{site.static_url}}/assets/images/java/json-http-request-csv.jpg" width="560px"  alt="json-http-request-csv.jpg" ></img>
 
 您需要填写至少3个值：<br>
 <ol>
@@ -45,7 +46,7 @@ description: Apache JMeter( http://jakarta.apache.org/jmeter/ )是来自 Apache 
 </pre>
 
 ###Step 5 创建HttpRequest
-<img src="{{site.static_url}}/media/pub/java/json-http-search-request.jpg" width="560px"  alt="json-http-search-request.jpg" ></img>
+<img src="{{site.static_url}}/assets/images/java/json-http-search-request.jpg" width="560px"  alt="json-http-search-request.jpg" ></img>
 
 
 

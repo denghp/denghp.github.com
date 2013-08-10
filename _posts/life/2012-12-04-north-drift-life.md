@@ -7,8 +7,10 @@ comment: true
 published: true
 categories:
 - life
-- topic
-show_img: "/media/pub/life/pub/life-style.jpg"
+- special
+- archives
+data_type: renwen
+images: ["/assets/images/life/pub/life-style.jpg"]
 UUID: 201212040030
 ---
 
@@ -16,8 +18,8 @@ UUID: 201212040030
 
 ###酸
 离开家奔波于一个陌生的城市里，穿梭于陌生的人群中，是寂寞之酸；寄人篱下，对房东忍气吞声是无奈之酸；没有户口，飘泊不定，是无根之酸；北漂了很久，因为漂着，注定有一天要离开这个城市，这种感觉最酸。
-<a href="{{site.static_url}}/media/pub/life/pub/life-style.jpg" alt="北漂生活" >
-<img src="{{site.static_url}}/media/pub/life/pub/life-style.jpg" alt="北漂生活" class="img-right" width="330px" /> 
+<a href="{{site.static_url}}/assets/images/life/pub/life-style.jpg" alt="北漂生活" >
+<img src="{{site.static_url}}/assets/images/life/pub/life-style.jpg" alt="北漂生活" class="img-right" width="330px" />
 </a>
 
 ###甜

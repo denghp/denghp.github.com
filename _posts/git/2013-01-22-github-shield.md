@@ -7,14 +7,15 @@ tags:
 - 屏蔽
 categories:
 - www
+- archives
 UUID: 2013012210237
 date: 2013-01-22 10:30:00
-show_img: "/media/pub/github/github.jpg"
+images: ["/assets/images/github/github.jpg"]
 ---
 
 　　全球知名的分布式代码托管网站GitHub昨天被中国关键字屏蔽，目前已经无法从中国访问，前几天12306抢票插件曾经直接引用了Github上的js文件，导致<a href="http://diy.pconline.com.cn/315/3155207.html" alt="Github服务器被拖跨" target="_bank">Github服务器被拖垮</a>了，插件作者不得不将js文件托管在其他网站,1月21日测试，https版本的github也无法访问了。
 <a href="http://github.com" target="_bank">
-<img src="{{site.static_url}}/media/pub/github/github.jpg" width="330px" alt="github屏蔽" class="img-center" ></img>
+<img src="{{site.static_url}}/assets/images/github/github.jpg" width="330px" alt="github屏蔽" class="img-center" ></img>
 </a>
 
 ###Git控制工具
@@ -41,13 +42,13 @@ show_img: "/media/pub/github/github.jpg"
 
 ###解决国外facebook,twitter,github等著名网站的访问
 <a href="http://github.com" target="_bank">
-<img src="{{site.static_url}}/media/pub/github/github-home.jpg" width="330" class="img-center" alt="github屏蔽"  ></img>
+<img src="{{site.static_url}}/assets/images/github/github-home.jpg" width="330" class="img-center" alt="github屏蔽"  ></img>
 </a>
 <a href="http://twitter.com" target="_bank">
-<img src="{{site.static_url}}/media/pub/web/twitter.jpg" width="330px" alt="twitter" class="img-center" ></img>
+<img src="{{site.static_url}}/assets/images/web/twitter.jpg" width="330px" alt="twitter" class="img-center" ></img>
 </a>
 <a href="http://facebook.com" target="_bank">
-<img src="{{site.static_url}}/media/pub/web/facebook.jpg" width="330px" alt="facebook" class="img-center" ></img>
+<img src="{{site.static_url}}/assets/images/web/facebook.jpg" width="330px" alt="facebook" class="img-center" ></img>
 </a>
 
 

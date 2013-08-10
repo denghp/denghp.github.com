@@ -10,6 +10,7 @@ tags:
 categories:
 - www
 - code
+- archives
 UUID: 2012120050
 date: 2012-12-05
 ---

@@ -6,6 +6,7 @@ tags:
 - 缓存
 categories:
 - code
+- archives
 UUID: 201011212330
 date: 2010-11-21
 ---

@@ -1,32 +1,28 @@
 ---
-title: 标签
 layout: default
+title: 全部热门标签
 ---
 
-<div id="content">
-  <div class="archivesbox">
-    <h3 id="tagcloud">博文标签</h3>
-    {% for tag in site.tags %}
-    {% if tag[1].size >= 3 %}
-    <a href='{{ site.baseurl }}#{{ tag[0] }}' class='tag-link-{{tag[1].size}}' title='{{ tag[0] }}' style='font-size: {{ 10 | plus:tag[0].size }}pt;'>{{ tag[0]}}</a>
-    {% endif %}
-    {% endfor %}
-</div><!-- /archivesbox -->
+{% include emergency_news.html %}
 
-  {% for tag in site.tags %}
-  <div class="archivesbox category-{{ cat[0]}}" id="{{ tag[0]}}">
-    <h3 class="widgettitle">
-      {{ tag[0] }}
-    </h3>
-    {% for post in tag[1] %} 
-    <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-  </div><!-- /archivesbox -->
-  {% endfor %}
-</div> <!-- /content -->
-{% include aside.html %}
-
-
+<section id="maincontent">
+    <div class="container">
+        <div class="row">
+            <div class="span8">
+                <div class="widget">
+                    <h4>Tags</h4>
+                    <ul class="tags">
+                        {% for tag in site.tags %}
+                        {% if tag[1].size >= 3 %}
+                        <li><a href="{{site.baseurl}}/tag/{{tag[0]}}" class="btn btn-link">{{tag[0]}}</a></li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="span4">
+                {% include aside.html %}
+            </div>
+        </div>
+    </div>
+</section>

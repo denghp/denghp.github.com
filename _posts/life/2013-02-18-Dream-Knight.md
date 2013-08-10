@@ -7,10 +7,12 @@ tags:
 - 大众银行
 categories:
 - life
-- topic
+- special
+- archives
+data_type: renwen
 UUID: 20130218003712
 date: 2013-02-18 00:10:00
-show_img: "/media/pub/life/pub/Dream-Knight.jpg"
+images: ["/assets/images/life/pub/Dream-Knight.jpg"]
 ---
 
 　　今天无意中让我再次想起了<a href="http://www.tudou.com/programs/view/9HhrvdB76s8/" target="_bank" alt="梦骑士"><<梦骑士>></a>台湾大众银行的这个广告，打开电脑把以前下载的视频又仔细的看了一篇，这个短片也看了好几次了，每次给我的心情都是激情澎湃,每次的感触也颇多...

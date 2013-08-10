@@ -3,6 +3,7 @@ layout: post
 title: Check Memory With Cron Job
 categories:
 - code
+- archives
 tags:
 - shell
 - Job

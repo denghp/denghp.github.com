@@ -9,6 +9,7 @@ published: true
 author: demi-panda
 categories:
 - linux
+- archives
 UUID: 201211160030
 date: 2012-11-16
 ---

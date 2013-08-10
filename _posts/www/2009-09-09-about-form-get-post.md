@@ -3,8 +3,9 @@ layout: post
 title: 关于Form的GET和POST
 categories:
 - code
+- archives
 tags:
-- HTML
+- html
 UUID: 20090909
 ---
 

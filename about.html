@@ -1,0 +1,95 @@
+---
+layout: default
+title: 关于我
+UUID: 201211131101
+---
+{% include emergency_news.html %}
+<section id="maincontent">
+<div class="container">
+    <div class="row">
+        <div class="span8">
+            <!-- start article 1 -->
+            <article class="blog-post">
+                <div class="post-heading">
+                    <h3><a href="{{site.baseurl}}{{ post.url }}">关于我</a></h3>
+                </div>
+                <div class="row">
+                    <div class="span3">
+                        <div class="post-image">
+                            <a href="#"><img src="{{site.static_url}}/assets/img/dummies/me-photo.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="span5">
+                        <ul class="post-meta">
+                            <li class="first"><i class="icon-calendar"></i><span>2012-09-11</span></li>
+                            <li class="last"><i class="icon-tags"></i>
+                                <span>
+                                    <a href="{{site.baseurl}}/code">技术研发</a>,<a href="{{site.baseurl}}/cotegory/搜索引擎">搜索引擎</a>,<a href="{{site.baseurl}}/chihuo">吃货</a>,<a href="{{site.baseurl}}/life">微生活</a>
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="clearfix">
+                        </div>
+                        <p>
+                            敢想,敢拼,敢赢... <br>
+                            80后IT技术,随着我的兴趣和喜好去学习一些技术,积累,分享<br>
+                            目前从事Java, Search开发相关工作,对高性能,高可用性,分布式,高并发,以及大规模数据处理系统有一些经验和心得.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <div >
+                <h4>Our Category</h4>
+                <!-- start: Accordion -->
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle active" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                                <i class="icon-minus"></i> 研发实践</a>
+                        </div>
+                        <div id="collapseOne" class="accordion-body collapse in">
+                            <div class="accordion-inner">
+                                概念,计划,开发,测试,发布,而研发流程改进也是个持续的过程,需要不断的持续改进研发流程。对高性能,高可用性,分布式,高并发,以及大规模数据处理系统深入研究。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                                <i class="icon-plus"></i> 熊猫吃货</a>
+                        </div>
+                        <div id="collapseTwo" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                对美食有一种独特的向往、追求，有品味的美食爱好者，美食客，美食家。吃货对生活有着无限美好的向往！吃货往往很能吃，但是他们更求精，他们是凡间的美食家，但与美食家不同，他们随性而来，慢慢品味，即使是街边小吃，他们也会品味厨师在料理当中的那一点点心意。给予人们美好的赞美，认同别人，给人勇气！使生活充满了希冀。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                                <i class="icon-plus"></i> 微生活</a>
+                        </div>
+                        <div id="collapseThree" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                分享明确生活、家庭、事业所追求的目标，调适自我，使生活逐步走向常态化、有序化。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end: Accordion -->
+            </div>
+            <div >
+                <!-- Duoshuo Comment Begin -->
+                <div class="ds-thread" data-thread-id="{{page.UUID}}" data-url="{{site.url}}{{page.url}}" data-thread-key="{{page.UUID}}" data-title="{{page.title}}"
+                     data-order="desc" data-form-positon="top"></div>
+                <!-- Duoshuo Comment End -->
+            </div>
+        </div>
+        <div class="span4">
+            {% include aside.html %}
+        </div>
+    </div>
+
+
+</div>
+</section>

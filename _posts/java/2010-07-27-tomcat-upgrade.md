@@ -4,6 +4,7 @@ title: Tomcat升级
 categories:
 - code
 - java
+- archives
 tags:
 - java
 - tomcat

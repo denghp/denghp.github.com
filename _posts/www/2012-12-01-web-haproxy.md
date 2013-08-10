@@ -9,6 +9,7 @@ tags:
 categories:
 - www
 - code
+- archives
 UUID: 201212010027
 date: 2012-12-01
 ---
@@ -152,7 +153,7 @@ Requests: 13254 susceed, 0 failed.
 统计监听的是8888端口 http://localhost:8888/haproxy-stats
 
 ###监控页面
-<img src="{{site.static_url}}/media/pub/web/haproxy-300x76.jpg"></img>
+<img src="{{site.static_url}}/assets/images/web/haproxy-300x76.jpg"></img>
 
 
 ###配置说明

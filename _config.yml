@@ -6,20 +6,24 @@ meta:
     absolute_baseurl: http://demi-panda.com
     domain: demi-panda.com
     defualt_limit: 50
+    emergency_news: "熊猫家族博客新版本上线,欢迎大家交流"
     author:
-        full_name: demi-panda.com
-        short_name: demi-panda
+        full_name: denghaiping
+        short_name: denghp
         name: 
-        email: demi-panda@126.com
+        email: denghp@126.com
 
 static_url: http://demi-panda.oss.aliyuncs.com
+#static_url:
 url: http://demi-panda.com
-baseurl:
+baseurl: 
 markdown: rdiscount
 pygments: true
 permalink: /:year/:month/:day/:title
 auto: true
 debug: true
+
+countPerPage: 15
 
 links:
     - url: "http://lusongsong.com/"

@@ -3,6 +3,7 @@ layout: post
 title: Why Asynchronous Web
 categories:
 - code
+- archives
 tags:
 - java
 UUID: 20100710

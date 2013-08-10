@@ -3,10 +3,10 @@ layout: post
 title: "Google Code Prettify 实现代码高亮"
 tags: 
 - prettify
-comment: true
-published: true
 categories:
 - javaScript
+- archives
+- code
 UUID: 201211130032
 date: 2012-11-13
 ---

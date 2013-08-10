@@ -3,6 +3,7 @@ layout: post
 title: 初试Python
 categories:
 - code
+- archives
 tags:
 - Python
 UUID: 20090427

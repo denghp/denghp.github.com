@@ -9,6 +9,7 @@ tags:
 categories:
 - code
 - linux
+- archives
 UUID: 201301171127
 ---
 

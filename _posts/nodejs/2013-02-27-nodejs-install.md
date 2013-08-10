@@ -8,11 +8,12 @@ tags:
 categories:
 - code
 - linux 
-- topic
+- special
+- archives
 UUID: 20130227002300
 date: 2013-02-27 00:10:00
 
-show_img: "/media/pub/web/nodejs-380x300.png"
+images: ["/assets/images/web/nodejs-380x300.png"]
 ---
 
  　　Node.js是一个基于Google V8引擎构建的服务器端JavaScript平台，致力于提供一套编写高性能并发Web应用的JavaScript框架，完全事件驱动IO，基于V8引擎，很适合中间件和WEB项目开发。 在0.9.4这个不稳定版本中包含了一个<a href="http://blog.nodejs.org/2012/12/20/streams2/" target="新的流API">新的流API</a>。新API称为“streams2”，计划在0.10稳定版中正式发布。

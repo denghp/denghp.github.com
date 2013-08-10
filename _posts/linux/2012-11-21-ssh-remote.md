@@ -7,6 +7,7 @@ tags:
 - shell
 categories:
 - linux
+- archives
 UUID: 201211212334
 date: 2012-11-21
 ---

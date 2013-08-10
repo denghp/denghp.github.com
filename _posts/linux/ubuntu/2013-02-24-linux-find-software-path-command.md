@@ -8,9 +8,10 @@ tags:
 categories:
 - code
 - linux
+- archives
 UUID: 20130224012700
 date: 2013-02-24 01:27:00
-show_img: "/media/pub/linux/whereis-images.jpg"
+images: ["/assets/images/linux/whereis-images.jpg"]
 ---
 
 　　Linux 中经常会遇到，安装的软件却忘记了具体的安装路径，通过使用whereis,which命令可以解决这个问题：

@@ -8,6 +8,7 @@ tags:
 - linux
 categories:
 - code
+- archives
 UUID: 201212270050
 ---
 
@@ -26,7 +27,7 @@ UUID: 201212270050
 ####对于不直接支持gmetad的指标
   　　对于不直接支持gmetad的指标，Ganglia和命令行程序gmetric共同追踪附加的指标。这些信息都报告给gmond， gmond可将这些信息和已建立起的统计数据一起传递给gmetad。最新发布的3.1.2版本可通过用c语言或Python语言来编写模块，达到直接扩 展gmond的目的。  
 
-<img src="{{site.static_url}}/media/pub/linux/ganglia-2.jpg" width="380px" alt="ganglia" class="img-center"></img>
+<img src="{{site.static_url}}/assets/images/linux/ganglia-2.jpg" width="380px" alt="ganglia" class="img-center"></img>
 
 
 ###安装步骤
@@ -135,5 +136,5 @@ cluster {
 <pre id="bash">
 $ sudo service ganglia-monitor restart
 </pre>
-<img src="{{site.static_url}}/media/pub/linux/Ganglia_1.jpg" width="550px" alt="gangla-center" class="img-left"></img>
+<img src="{{site.static_url}}/assets/images/linux/Ganglia_1.jpg" width="550px" alt="gangla-center" class="img-left"></img>
 

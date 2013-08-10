@@ -3,13 +3,14 @@ layout: post
 title: jQuery插件-Lazy Load延迟加载图片
 tags: 
 - 互联网
-- jQuery
-- LazyLoad
+- jquery
+- lazyLoad
 - 延迟加载图片
 categories:
 - www
 - code
-show_img: "/media/pub/web/jquery-lazy-load-plugin.png"
+- archives
+images: ["/assets/images/web/jquery-lazy-load-plugin.png"]
 UUID: 201212012227
 description: Lazy Load 是一个用 JavaScript 编写的 jQuery 插件. 它可以延迟加载长页面中的图片. 在浏览器可视区域外的图片不会被载入, 直到用户将页面滚动到它们所在的位置. 这与图片预加载的处理方式正好是相反的.
 ---
@@ -18,7 +19,7 @@ Lazy Load 是一个用 JavaScript 编写的 jQuery 插件. 它可以延迟加载
 
 在包含很多大图片长页面中延迟加载图片可以加快页面加载速度. 浏览器将会在加载可见图片之后即进入就绪状态. 在某些情况下还可以帮助降低服务器负担.
 
-<img src="{{site.static_url}}/media/pub/web/jquery-lazy-load-plugin.png" width="580px"></img>
+<img src="{{site.static_url}}/assets/images/web/jquery-lazy-load-plugin.png" width="580px"></img>
 
 Lazy Load 灵感来自 Matt Mlinac 制作的 [YUI ImageLoader](http://developer.yahoo.com/yui/imageloader/) 工具箱. 这是[演示页面](http://www.appelsiini.net/projects/lazyload/enabled.html).
 

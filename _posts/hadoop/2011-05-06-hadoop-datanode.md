@@ -9,6 +9,7 @@ categories:
 - linux
 - Hadoop
 - code
+- archives
 UUID: 201105061236
 date: 2011-05-06
 ---

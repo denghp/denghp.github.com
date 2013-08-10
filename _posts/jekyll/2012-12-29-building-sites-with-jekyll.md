@@ -7,12 +7,13 @@ tags:
 - 免费博客
 categories:
 - code
+- archives
 UUID: 201212291027
-show_img: "/media/pub/web/Jekyll.jpg"
+images: ["/assets/images/web/Jekyll.jpg"]
 ---
 
 　　近日，发现个人总结一些心得，整理一些技术文章的时候，都不确定到底放在哪个网站上合适，因为自己用过好几个博客网站，感觉非常乱，用的也不是很顺心，总感觉缺少了点啥。在行业中近几年比较火的搭建个人博客很多采用wordpress来构建，有使用CMS的等等，虽然这些提高了个人搭建的速度，内容的丰富性等等，但是发现免费的空间限制太多，回归想想，自己只需要一个简单的，轻量级的静态网站就OK。今天，我将介绍一种简单的解决方案--[jekyll](http://jekyllrd.com) 使你可以轻而易举地创建属于个人的博客网站。
-<img src="{{site.static_url}}/media/pub/web/Jekyll.jpg" width="330px" alt="jekyll-blog" class="img-center"></img>
+<img src="{{site.static_url}}/assets/images/web/Jekyll.jpg" width="330px" alt="jekyll-blog" class="img-center"></img>
 
 
 ###Jekyll的含义
@@ -277,11 +278,11 @@ $ git push origin master
 
 首页
 
-<img src="{{site.static_url}}/media/pub/web/jekyll-blog.jpg" width="330px" alt="jekyll-blog" class="img-center"></img>
+<img src="{{site.static_url}}/assets/images/web/jekyll-blog.jpg" width="330px" alt="jekyll-blog" class="img-center"></img>
 
 文章页面
 
-<img src="{{site.static_url}}/media/pub/web/jekyll-blog-2.jpg" width="330px" alt="jekyll-blog" class="img-center"></img>
+<img src="{{site.static_url}}/assets/images/web/jekyll-blog-2.jpg" width="330px" alt="jekyll-blog" class="img-center"></img>
 
 ###Step 8 域名绑定
 域名绑定请参考我的博客中 [浅谈github域名绑定]({{site.url}}/2012/11/09/github-pages-domain/)

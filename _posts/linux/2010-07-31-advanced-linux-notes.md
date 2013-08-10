@@ -4,6 +4,7 @@ title: Linux培训笔记
 categories:
 - OS
 - linux
+- archives
 tags:
 - linux
 UUID: 20100731

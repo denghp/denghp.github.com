@@ -7,26 +7,27 @@ tags:
 - Firefox附件组件
 categories:
 - code
-- topic 
+- special
+- archives
 UUID: 20130128083000
 date: 2013-01-28 08:30:00
-show_img: "/media/pub/web/firefox-add-ons.jpg"
+images: ["/assets/images/web/firefox-add-ons.jpg"]
 ---
 
 　　Mozilla Firefox浏览器默认情况下，有一些很酷的开发工具（暂存，样式编辑器，调试器，响应“设计”视图，检查（3D view），更多），但你可以进一步扩展他们一些伟大的add-ons/extensions这里列出的。
 
 ###TOP 1 Firebug
 Firebug中有很多有用的功能（编辑，调试，监控在现场模式下，你的代码），使Web开发更简单。这是一个Web开发人员必须的组件。
-<a href="{{site.static_url}}/media/pub/web/firebug.gif" rel="prettyPhoto[{{page.UUID}}]" alt="firebug" >
-<img src="{{site.static_url}}/media/pub/web/firebug.gif" width="330px"  alt="firebug" class="img-center" />
+<a href="{{site.static_url}}/assets/images/web/firebug.gif" rel="prettyPhoto[{{page.UUID}}]" alt="firebug" >
+<img src="{{site.static_url}}/assets/images/web/firebug.gif" width="330px"  alt="firebug" class="img-center" />
 </a>
 
 <a href="https://addons.mozilla.org/en-US/firefox/addon/firebug/" alt="Download Firebug" target="_bank">Download Firebug</a>
 
 ###TOP 2 Rainbow Color Tools
 它提供了一系列的Web开发工具的颜色 - 易于使用拾色器，颜色库，检查员，分析仪（分析一个网站的配色方案）等。
-<a href="{{site.static_url}}/media/pub/web/Color-Tools.png" alt="Color-Tools" rel="prettyPhoto[{{page.UUID}}]"> 
-<img src="{{site.static_url}}/media/pub/web/Color-Tools.png" width="330px"  alt="Color-Tools" class="img-center" />
+<a href="{{site.static_url}}/assets/images/web/Color-Tools.png" alt="Color-Tools" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.static_url}}/assets/images/web/Color-Tools.png" width="330px"  alt="Color-Tools" class="img-center" />
 </a>
 
 <a href="https://addons.mozilla.org/en-US/firefox/addon/rainbow-color-tools/" alt="Download Rainbow Color Tools" target="_bank">

@@ -4,6 +4,7 @@ title: Java HashMap 核心源码解读
 categories:
 - code
 - java
+- archives
 tags:
 - java
 UUID: 20100722

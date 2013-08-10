@@ -3,11 +3,12 @@ layout: post
 title: Nginx 常用命令
 tags: 
 - 互联网
-- Nginx
+- nginx
 - 负载均衡
 categories:
 - www
 - code
+- archives
 UUID: 20130326001010
 date: 2013-03-26 00:10:00
 ---

@@ -10,6 +10,7 @@ tags:
 categories:
 - code
 - java
+- archives
 UUID: 201301231027
 date: 2013-01-23 10:27:22
 ---
@@ -43,8 +44,8 @@ http://www.java2s.com/Code/Jar/h/Downloadhtmlcleanerjar.htm
 <pre id="java">
 .//*[@id='wrapper']/div[3]/div[4]/dl
 </pre>
-<a href="{{site.static_url}}/media/pub/java/firebug_firepath.jpg" alt="firebug firepath">
-<img src="{{site.static_url}}/media/pub/java/firebug_firepath.jpg" width="580px"  alt="firebug firepath" ></img>
+<a href="{{site.static_url}}/assets/images/java/firebug_firepath.jpg" alt="firebug firepath">
+<img src="{{site.static_url}}/assets/images/java/firebug_firepath.jpg" width="580px"  alt="firebug firepath" ></img>
 </a>
 
 ####Spider代码

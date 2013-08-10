@@ -4,6 +4,7 @@ title: Git原理浅析
 categories:
 - Github
 - code
+- archives
 tags:
 - Github
 - linux

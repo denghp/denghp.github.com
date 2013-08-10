@@ -7,6 +7,7 @@ tags:
 categories:
 - java
 - code
+- archives
 UUID: 201003111527
 date: 2010-03-11
 ---
