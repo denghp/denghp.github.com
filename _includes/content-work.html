@@ -30,14 +30,14 @@
                 <ul class="cat">
                     {% for post in site.categories.special limit:5 %}
                     {% if post.short_title %}
-                    <li><a href="{{site.baseurl}}{{post.url}}">{{post.short_title }}</a></li>
+                    <li><a href="{{site.base_url}}{{post.url}}">{{post.short_title }}</a></li>
                     {% else %}
-                    <li><a href="{{site.baseurl}}{{post.url}}">{{post.title | strip_html | truncatewords: 4 }}</a></li>
+                    <li><a href="{{site.base_url}}{{post.url}}">{{post.title | strip_html | truncatewords: 4 }}</a></li>
                     {% endif %}
                     {% endfor %}
                 </ul>
             </div>
-            <a href="{{site.baseurl}}/special">Learn more</a>
+            <a href="{{site.base_url}}/special">Learn more</a>
         </aside>
     </div>
     <div class="span4 features">
@@ -49,14 +49,14 @@
                 <ul class="cat">
                     {% for post in site.posts limit:5 %}
                     {% if post.short_title %}
-                    <li><a href="{{site.baseurl}}{{post.url}}">{{post.short_title }}</a></li>
+                    <li><a href="{{site.base_url}}{{post.url}}">{{post.short_title }}</a></li>
                     {% else %}
-                    <li><a href="{{site.baseurl}}{{post.url}}">{{post.title | strip_html | truncatewords: 4 }}</a></li>
+                    <li><a href="{{site.base_url}}{{post.url}}">{{post.title | strip_html | truncatewords: 4 }}</a></li>
                     {% endif %}
                     {% endfor %}
                 </ul>
             </div>
-            <a href="{{site.baseurl}}/archives/">Learn more</a>
+            <a href="{{site.base_url}}/archives/">Learn more</a>
         </aside>
     </div>
 </div>
@@ -64,7 +64,7 @@
 <div class="row">
     <ul class="portfolio-area da-thumbs">
         <div class="span12">
-            <h3><a href="{{site.baseurl}}/code/">研发推荐({{ site.categories.code | size }})</a></h3>
+            <h3><a href="{{site.base_url}}/code/">研发推荐({{ site.categories.code | size }})</a></h3>
 
             <div class="solidline"></div>
         </div>
@@ -76,10 +76,10 @@
             <div class="span3">
                 <div class="thumbnail">
                     <div class="image-wrapp">
-                        <a href="{{site.baseurl}}{{ post.url }}"><img src="{{site.static_url}}{{post.images[0]}}"/></a>
+                        <a href="{{site.base_url}}{{ post.url }}"><img src="{{site.static_url}}{{post.images[0]}}"/></a>
                         <article class="da-animate da-slideFromRight" style="display: block;">
                             <h4>{{ post.title | strip_html | truncatewords: 5}}</h4>
-                            <a href="{{ site.baseurl }}{{post.url}}"><i class="icon-rounded icon-48 icon-link"></i></a>
+                            <a href="{{ site.base_url }}{{post.url}}"><i class="icon-rounded icon-48 icon-link"></i></a>
                                 <span>
                                   <a class="zoom" data-pretty="prettyPhoto" href="{{site.static_url}}{{post.images[0]}}">
                                       <i class="icon-rounded icon-48 icon-zoom-in"></i>
@@ -89,19 +89,19 @@
                     </div>
                 </div>
                 <div class="entry-meta">
-                    <a href="{{site.baseurl}}{{post.url}}"><i class="icon-square icon-48 icon-pencil left"></i></a>
+                    <a href="{{site.base_url}}{{post.url}}"><i class="icon-square icon-48 icon-pencil left"></i></a>
 					<span class="date">{{ post.date | date:"%m-%d" }} <br/>
 					{{ post.date | date:"%Y" }}</span>
                 </div>
                 <div class="entry-body">
-                    <a href="{{site.baseurl}}{{post.url}}">
+                    <a href="{{site.base_url}}{{post.url}}">
                         <h5 class="title">{{post.title | strip_html | truncatewords: 5}}</h5>
                     </a>
 
                     <p>
                         {% if post.tags %}
                         {% for tag in post.tags limit:4 %}
-                        <a href="{{ site.baseurl }}/tags/index.html?name={{tag}}" class="text" title="{{ tag }}"
+                        <a href="{{ site.base_url }}/tags/index.html?name={{tag}}" class="text" title="{{ tag }}"
                            rel="category tag">{{ tag }}</a>&nbsp;
                         {% endfor %}
                         {% endif %}
@@ -121,7 +121,7 @@
 <div class="row">
     <ul class="portfolio-area da-thumbs">
         <div class="span12">
-            <h3><a href="{{site.baseurl}}/chihuo/">熊猫吃货({{ site.categories.chihuo | size }})</a></h3>
+            <h3><a href="{{site.base_url}}/chihuo/">熊猫吃货({{ site.categories.chihuo | size }})</a></h3>
 
             <div class="solidline"></div>
         </div>
@@ -131,15 +131,15 @@
                 <div class="thumbnail">
                     <div class="image-wrapp">
                         {% if post.images.size > 0 %}
-                        <a href="{{site.baseurl}}{{ post.url }}"><img src="{{site.static_url}}{{post.images[0]}}"
+                        <a href="{{site.base_url}}{{ post.url }}"><img src="{{site.static_url}}{{post.images[0]}}"
                                                                       alt="{{ post.title }}"/></a>
                         {% else %}
-                        <a href="{{site.baseurl}}{{ post.url }}"><img
+                        <a href="{{site.base_url}}{{ post.url }}"><img
                                 src="{{site.static_url}}/assets/img/dummies/work3.jpg" alt="{{ post.title }}"/></a>
                         {% endif %}
                         <article class="da-animate da-slideFromRight" style="display: block;">
                             <h4>{{ post.title | strip_html | truncatewords: 5}}</h4>
-                            <a href="{{ site.baseurl }}{{post.url}}"><i class="icon-rounded icon-48 icon-link"></i></a>
+                            <a href="{{ site.base_url }}{{post.url}}"><i class="icon-rounded icon-48 icon-link"></i></a>
                                 <span>
                                   {% if post.images.size > 0 %}
                                   <a class="zoom" data-pretty="prettyPhoto" href="{{site.static_url}}{{post.images[0]}}">
@@ -161,14 +161,14 @@
 					{{ post.date | date:"%Y" }}</span>
                 </div>
                 <div class="entry-body">
-                    <a href="{{site.baseurl}}{{post.url}}">
+                    <a href="{{site.base_url}}{{post.url}}">
                         <h5 class="title">{{post.title | strip_html | truncatewords: 5}}</h5>
                     </a>
 
                     <p>
                         {% if post.tags %}
                         {% for tag in post.tags limit:4 %}
-                        <a href="{{ site.baseurl }}/tags/index.html?name={{tag}}" class="text" title="{{ tag }}"
+                        <a href="{{ site.base_url }}/tags/index.html?name={{tag}}" class="text" title="{{ tag }}"
                            rel="category tag">{{ tag }}</a>&nbsp;
                         {% endfor %}
                         {% endif %}
@@ -182,7 +182,7 @@
 <div class="row">
     <ul class="portfolio-area da-thumbs">
         <div class="span12">
-            <h3><a href="{{site.baseurl}}/life/">微生活({{ site.categories.life | size }})</a></h3>
+            <h3><a href="{{site.base_url}}/life/">微生活({{ site.categories.life | size }})</a></h3>
 
             <div class="solidline"></div>
         </div>
@@ -194,10 +194,10 @@
             <div class="span3">
                 <div class="thumbnail">
                     <div class="image-wrapp">
-                        <a href="{{site.baseurl}}{{ post.url }}"><img src="{{site.static_url}}{{post.images[0]}}"/></a>
+                        <a href="{{site.base_url}}{{ post.url }}"><img src="{{site.static_url}}{{post.images[0]}}"/></a>
                         <article class="da-animate da-slideFromRight" style="display: block;">
                             <h4>{{ post.title | strip_html | truncatewords: 5}}</h4>
-                            <a href="{{ site.baseurl }}{{post.url}}"><i class="icon-rounded icon-48 icon-link"></i></a>
+                            <a href="{{ site.base_url }}{{post.url}}"><i class="icon-rounded icon-48 icon-link"></i></a>
                                 <span>
                                   <a class="zoom" data-pretty="prettyPhoto" href="{{site.static_url}}{{post.images[0]}}">
                                       <i class="icon-rounded icon-48 icon-zoom-in"></i>
@@ -213,14 +213,14 @@
 					{{ post.date | date:"%Y" }}</span>
                 </div>
                 <div class="entry-body">
-                    <a href="{{site.baseurl}}{{post.url}}">
+                    <a href="{{site.base_url}}{{post.url}}">
                         <h5 class="title">{{post.title | strip_html | truncatewords: 5}}</h5>
                     </a>
 
                     <p>
                         {% if post.tags %}
                         {% for tag in post.tags limit:4 %}
-                        <a href="{{ site.baseurl }}/tags/index.html?name={{tag}}" class="text" title="{{ tag }}"
+                        <a href="{{ site.base_url }}/tags/index.html?name={{tag}}" class="text" title="{{ tag }}"
                            rel="category tag">{{ tag }}</a>&nbsp;
                         {% endfor %}
                         {% endif %}

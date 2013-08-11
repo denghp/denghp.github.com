@@ -12,7 +12,7 @@ UUID: 201211092023
 source_url: "http://yanping.me/cn/blog/2012/02/06/github-pages-domain-3/"
 ---
 
-之前我写过<a href="{{site.baseurl}}/2012/11/09/github-pages-domain/" target="_blank">浅谈github页面域名绑定</a>和<a href="/2012/11/09/github-pages-domain-2/" target="_blank">再谈github页面域名绑定</a>，在后文提到的域名跳转方法是错的。本文提供了一种正确的方法。
+之前我写过<a href="{{site.base_url}}/2012/11/09/github-pages-domain/" target="_blank">浅谈github页面域名绑定</a>和<a href="/2012/11/09/github-pages-domain-2/" target="_blank">再谈github页面域名绑定</a>，在后文提到的域名跳转方法是错的。本文提供了一种正确的方法。
 
 <h2 id="section">为什么要跳转域名</h2>
 <p>假设github上的用户名是 <em>username</em>，创建代码库名为username.github.com的代码库，在master分支下建立github页面，设置好域名为 <em>mydomain.com</em> ，则用http://username.github.com访问页面github会自动跳转到http://mydomain.com。</p>

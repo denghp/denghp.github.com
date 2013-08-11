@@ -12,8 +12,8 @@ title: 关于熊猫
         </div>
     </div>
 </section>
-<script src="{{site.baseurl}}/assets/js/bootstrap-paginator.min.js"></script>
-<script src="{{site.baseurl}}/assets/js/custom-paginator.js"></script>
+<script src="{{site.base_url}}/assets/js/bootstrap-paginator.min.js"></script>
+<script src="{{site.base_url}}/assets/js/custom-paginator.js"></script>
 <script type="text/javascript">
     /**
     var posts;
@@ -29,7 +29,7 @@ title: 关于熊猫
         $.ajax({
             type: "get", //jquey是不支持post方式跨域的
             async: false,
-            url: "{{site.baseurl}}/json/archives.json", //跨域请求的URL
+            url: "{{site.base_url}}/json/archives.json", //跨域请求的URL
             dataType: "json",
             //传递给请求处理程序，用以获得jsonp回调函数名的参数名(默认为:callback)
             jsonp: "jsoncallback",
@@ -161,7 +161,7 @@ title: 关于熊猫
             newcontent += "<li class='last'><i class='icon-tags'></i><span>";
             if (posts[i].tags.length > 0) {
                 for (var t = 0; t < posts[i].tags.length; t ++) {
-                    newcontent += "<a href='{{ site.baseurl }}/tags/"+jQuery.trim(posts[i].tags[t])+"' class='text' title='"+posts[i].tags[t]+"' rel='category tag'>"+posts[i].tags[t]+"</a>&nbsp;";
+                    newcontent += "<a href='{{ site.base_url }}/tags/"+jQuery.trim(posts[i].tags[t])+"' class='text' title='"+posts[i].tags[t]+"' rel='category tag'>"+posts[i].tags[t]+"</a>&nbsp;";
                 }
             }
             newcontent += "</span></li></ul>";//ul end

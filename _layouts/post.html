@@ -21,12 +21,12 @@ layout: default
                     <ul class="post-meta">
                         <li class="first"><i class="icon-calendar"></i><span>{{ page.date | date:"%Y-%m-%d" }}</span></li>
                         <li><i class="icon-list-alt"></i>
-                            <span><a href="{{site.baseurl}}{{ page.url }}/#comments" title="<< {{ page.title }}>>上的评论"><span class="ds-thread-count" data-thread-key="{{ page.UUID }}" data-replace="1"> Comments</span></a></span>
+                            <span><a href="{{site.base_url}}{{ page.url }}/#comments" title="<< {{ page.title }}>>上的评论"><span class="ds-thread-count" data-thread-key="{{ page.UUID }}" data-replace="1"> Comments</span></a></span>
                         </li>
                         <li class="last"><i class="icon-tags"></i>
                             <span>
                             {% for tag in page.tags %}
-                            <a href="{{site.baseurl}}/tags/index.html?name={{tag}}">{{tag}}</a>,
+                            <a href="{{site.base_url}}/tags/index.html?name={{tag}}">{{tag}}</a>,
                             {% endfor %}
                             </span>
                         </li>
@@ -60,16 +60,16 @@ layout: default
                 <ul  class="pager">
                     {% if page.previous.url %}
                     {% if page.previous.short_title %}
-                    <li class="previous"><a href="{{ site.baseurl }}{{page.previous.url}}" title="前一篇：{{page.previous.short_title}}">&larr; {{page.previous.short_title}} </a></li>
+                    <li class="previous"><a href="{{ site.base_url }}{{page.previous.url}}" title="前一篇：{{page.previous.short_title}}">&larr; {{page.previous.short_title}} </a></li>
                     {% else %}
-                    <li class="previous"><a href="{{ site.baseurl }}{{page.previous.url}}" title="前一篇：{{page.previous.title}}">&larr; {{page.previous.title}}</a></li>
+                    <li class="previous"><a href="{{ site.base_url }}{{page.previous.url}}" title="前一篇：{{page.previous.title}}">&larr; {{page.previous.title}}</a></li>
                     {% endif %}
                     {% endif %}
                     {% if page.next.url %}
                     {% if page.next.short_title %}
-                    <li class="next"><a href="{{ site.baseurl }}{{page.next.url}}" title="后一篇：{{page.next.short_title}}">{{page.next.short_title}} &rarr;</a></li>
+                    <li class="next"><a href="{{ site.base_url }}{{page.next.url}}" title="后一篇：{{page.next.short_title}}">{{page.next.short_title}} &rarr;</a></li>
                     {% else %}
-                    <li class="next"><a href="{{ site.baseurl }}{{page.next.url}}" title="后一篇：{{page.next.title}}">{{page.next.title}} &rarr;</a></li>
+                    <li class="next"><a href="{{ site.base_url }}{{page.next.url}}" title="后一篇：{{page.next.title}}">{{page.next.title}} &rarr;</a></li>
                     {% endif %}
                     {% endif %}
                 </ul>

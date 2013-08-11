@@ -12,7 +12,74 @@ title: 全部标签
             <div class="span8">
                 <div class="widget">
                     <!-- start article -->
-                    <div id="content"></div>
+                    <div id="content">
+                        {% for post in site.tags limit:site.countPerPage %}
+                        <article class="blog-post">
+                            <div class="post-heading">
+                                <h3><a href="{{site.base_url}}{{ post.url }}">{{ post.title }}</a></h3>
+                            </div>
+                            <div class="row">
+                                <div class="span3">
+                                    {% if post.images.size > 1 %}
+                                    <div class="post-slider">
+                                        <!-- start flexslider -->
+                                        <div class="flexslider">
+                                            <ul class="slides">
+                                                {% for img in post.images %}
+                                                <li>
+                                                    <a href="{{site.base_url}}{{post.url}}"><img src="{{site.static_url}}{{img}}" alt="{{post.title}}" /></a>
+                                                </li>
+                                                {% endfor %}
+                                            </ul>
+                                        </div>
+                                        <!-- end flexslider -->
+                                    </div>
+                                    {% else %}
+                                    <div class="post-image">
+                                        {% if post.images.size > 0 %}
+                                        <a href="{{site.base_url}}{{ post.url }}"><img src="{{site.static_url}}{{post.images[0]}}" alt="{{ post.title }}" /></a>
+                                        {% else %}
+                                        <blockquote>
+                                            {% if post.description %}
+                                            {{ post.description }}
+                                            {% else %}
+                                            {{ post.content | strip_html | truncatewords: 5 }}
+                                            {% endif %}
+                                        </blockquote>
+                                        {% endif %}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                                <div class="span5">
+                                    <ul class="post-meta">
+                                        <li class="first"><i class="icon-calendar"></i><span>{{ post.date | date:"%Y-%m-%d" }}</span></li>
+                                        <li><i class="icon-list-alt"></i>
+                                            <a href="{{site.base_url}}{{ post.url }}/#comments" title="<< {{ post.title }}>>上的评论"><span class="ds-thread-count" data-thread-key="{{ post.UUID }}" data-replace="1"> Comments</span></a>
+                                        </li>
+                                        <li class="last"><i class="icon-tags"></i><span>
+                                    {% if post.tags %}
+                                        {% for tag in post.tags limit:5 %}
+                                            <a href="{{ site.base_url }}/tags/#{{tag}}" class="text" title="{{ tag }}" rel="category tag">{{ tag }}</a>&nbsp;
+                                        {% endfor %}
+                                    {% endif %}
+                                </span>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix">
+                                    </div>
+                                    <p>
+                                        {% if post.description %}
+                                        {{ post.description }}
+                                        {% else %}
+                                        {{ post.content | strip_html | truncatewords: 5 }}
+                                        {% endif %}
+                                    </p>
+                                    <button class="btn btn-small btn-success" type="button">Read more</button>
+                                </div>
+                            </div>
+                        </article>
+                        {% endfor %}
+                    </div>
                     <div id="page-selection"></div>
                     <!-- end article  -->
                 </div>
@@ -24,7 +91,7 @@ title: 全部标签
     </div>
     <script type="text/javascript">
         $(function () {
-            var tags = initTagsJsonData("{{site.baseurl}}/json/tags.json");
+            var tags = initTagsJsonData("{{site.base_url}}/json/tags.json");
             console.log(tags)
             //获取tagName
             var tagName = getTagParameter();
@@ -39,10 +106,10 @@ title: 全部标签
                     allKeys[i] = posts[i].UUID;
                 }
                 console.log("posts : " + posts)
-                getStartedInitialization(posts,allKeys,15, "{{site.baseurl}}");
+                getStartedInitialization(posts,allKeys,15, "{{site.base_url}}");
             } else {
                 //如果直接访问tags页面,则显示所有tags文章
-                //window.location.href = "{{site.baseurl}}/404.html"
+                //window.location.href = "{{site.base_url}}/404.html"
                 var maxItems = "{{site.tags_max_item}}";
                 var posts = new Array(maxItems);
                 var allKeys = new Array(maxItems);
@@ -55,7 +122,7 @@ title: 全部标签
                         break;
                     }
                 }
-                getStartedInitialization(posts,allKeys,15, "{{site.baseurl}}");
+                getStartedInitialization(posts,allKeys,"{{site.countPerPage}}", "{{site.base_url}}");
             }
         });
     </script>

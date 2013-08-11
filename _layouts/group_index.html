@@ -12,7 +12,7 @@ layout: default
                 {% for post in paginator.posts %}
                 <article class="blog-post">
                     <div class="post-heading">
-                        <h3><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h3>
+                        <h3><a href="{{site.base_url}}{{ post.url }}">{{ post.title }}</a></h3>
                     </div>
                     <div class="row">
                         <div class="span3">
@@ -23,7 +23,7 @@ layout: default
                                     <ul class="slides">
                                         {% for img in post.images %}
                                         <li>
-                                            <a href="{{site.baseurl}}{{post.url}}"><img src="{{site.static_url}}{{img}}" alt="{{post.title}}" /></a>
+                                            <a href="{{site.base_url}}{{post.url}}"><img src="{{site.static_url}}{{img}}" alt="{{post.title}}" /></a>
                                         </li>
                                         {% endfor %}
                                     </ul>
@@ -33,7 +33,7 @@ layout: default
                             {% else %}
                             <div class="post-image">
                                 {% if post.images.size > 0 %}
-                                <a href="{{site.baseurl}}{{ post.url }}"><img src="{{site.static_url}}{{post.images[0]}}" alt="{{ post.title }}" /></a>
+                                <a href="{{site.base_url}}{{ post.url }}"><img src="{{site.static_url}}{{post.images[0]}}" alt="{{ post.title }}" /></a>
                                 {% else %}
                                 <blockquote>
                                     {% if post.description %}
@@ -50,11 +50,11 @@ layout: default
                             <ul class="post-meta">
                                 <li class="first"><i
                                         class="icon-calendar"></i><span>{{ post.date | date:"%Y-%m-%d" }}</span></li>
-                                <li><i class="icon-list-alt"></i><a href="{{site.baseurl}}{{ post.url }}/#comments" title="<< {{ post.title }}>>上的评论"><span class="ds-thread-count" data-thread-key="{{ post.UUID }}" data-replace="1"> Comments</span></a></li>
+                                <li><i class="icon-list-alt"></i><a href="{{site.base_url}}{{ post.url }}/#comments" title="<< {{ post.title }}>>上的评论"><span class="ds-thread-count" data-thread-key="{{ post.UUID }}" data-replace="1"> Comments</span></a></li>
                                 <li class="last"><i class="icon-tags"></i><span>
                                     {% if post.tags %}
                                         {% for tag in post.tags limit:5 %}
-                                            <a href="{{ site.baseurl }}/tag/{{tag}}" class="text" title="{{ tag }}"
+                                            <a href="{{ site.base_url }}/tag/{{tag}}" class="text" title="{{ tag }}"
                                                rel="category tag">{{ tag }}</a>&nbsp;
                                         {% endfor %}
                                     {% endif %}
@@ -70,7 +70,7 @@ layout: default
                                 {{ post.content | strip_html | truncatewords: 3 }}
                                 {% endif %}
                             </p>
-                            <a href="{{site.baseurl}}{{ post.url }}"><button class="btn btn-small btn-success" type="button">Read more</button></a>
+                            <a href="{{site.base_url}}{{ post.url }}"><button class="btn btn-small btn-success" type="button">Read more</button></a>
                         </div>
                     </div>
                 </article>

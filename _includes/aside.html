@@ -8,7 +8,7 @@
     </div>
     <div class="widget">
         <h4>RSS Feed</h4>
-        <a href="{{site.baseurl}}/rss.xml" target="_blank"><img src="{{site.static_url}}/assets/img/feed.png"  alt="熊猫家族 RSS feed" border="0" title="Subscribe for Updates"></a>
+        <a href="{{site.base_url}}/rss.xml" target="_blank"><img src="{{site.static_url}}/assets/img/feed.png"  alt="熊猫家族 RSS feed" border="0" title="Subscribe for Updates"></a>
         熊猫家族-今日一刻,分享生活
     </div>
     <div class="widget">
@@ -17,15 +17,15 @@
             {% for cat in site.categories %}
             {% if cat[1].size >= 5 %}
             {% if cat[0] == 'code' %}
-            <li><a href="{{site.baseurl}}/code">研发实践({{cat[1].size}})</a></li>
+            <li><a href="{{site.base_url}}/code">研发实践({{cat[1].size}})</a></li>
             {% elsif cat[0] == 'java' %}
-            <li><a href="{{site.baseurl}}/category/java.html">Java实践({{cat[1].size}})</a></li>
+            <li><a href="{{site.base_url}}/category/java.html">Java实践({{cat[1].size}})</a></li>
             {% elsif cat[0] == 'solr' %}
-            <li><a href="{{site.baseurl}}/category/search.html">搜索引擎-Lucene/Solr ({{cat[1].size}})</a></li>
+            <li><a href="{{site.base_url}}/category/search.html">搜索引擎-Lucene/Solr ({{cat[1].size}})</a></li>
             {% elsif cat[0] == 'linux' %}
-            <li><a href="{{site.baseurl}}/category/linux.html">Uinx/Linux ({{cat[1].size}})</a></li>
+            <li><a href="{{site.base_url}}/category/linux.html">Uinx/Linux ({{cat[1].size}})</a></li>
             {% elsif cat[0] == 'life' %}
-            <li><a href="{{site.baseurl}}/life">微生活({{cat[1].size}})</a></li>
+            <li><a href="{{site.base_url}}/life">微生活({{cat[1].size}})</a></li>
             {% endif %}
             {% endif %}
             {% endfor %}
@@ -40,14 +40,14 @@
         <h4>近期文章</h4>
         <ul class="recent-posts">
             {% for post in site.posts limit:10 %}
-            <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            <li><a href="{{ site.base_url }}{{ post.url }}">{{ post.title }}</a>
 
                 <div class="clear">
                 </div>
                 <span class="date"><i class="icon-calendar"></i> {{ post.date | date:"%Y-%m-%d" }}</span>
                 <span class="comment">
                     <i class="icon-comment"></i>
-                <a href="{{site.baseurl}}{{ post.url }}/#comments" title="<< {{ post.title }}>>上的评论"><span class="ds-thread-count" data-thread-key="{{ post.UUID }}" data-replace="1"> Comments</span></a>
+                <a href="{{site.base_url}}{{ post.url }}/#comments" title="<< {{ post.title }}>>上的评论"><span class="ds-thread-count" data-thread-key="{{ post.UUID }}" data-replace="1"> Comments</span></a>
                     </span>
             </li>
             {% endfor %}
@@ -55,15 +55,14 @@
     </div>
     <div class="widget">
         <h4>近期评论</h4>
-        <ul class="ds-recent-comments" data-num-items="11" data-show-title="1" data-show-avatars="1" data-show-time="1"
-            data-show-admin="0" data-avatar-size="32" data-excerpt-length="50"/>
+        <ul class="ds-recent-comments" data-num-items="11" data-show-title="1" data-show-avatars="1" data-show-time="1" data-show-admin="0" data-avatar-size="32" data-excerpt-length="50"></ul>
     </div>
     <div class="widget">
         <h4>Tags</h4>
         <ul class="tags">
             {% for tag in site.tags %}
             {% if tag[1].size >= 3 %}
-            <li><a href="{{site.baseurl}}/tags/index.html?name={{tag[0]}}" class="btn btn-link">{{tag[0]}}</a></li>
+            <li><a href="{{site.base_url}}/tags/index.html?name={{tag[0]}}" class="btn btn-link">{{tag[0]}}</a></li>
             {% endif %}
             {% endfor %}
 
