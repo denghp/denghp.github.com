@@ -36,26 +36,6 @@ layout: default
                     <p>
                         {{ content }}
                     </p>
-                    <!---->
-                    <ul  class="pager">
-                    {% if page.previous.url %}
-                    {% if page.previous.short_title %}
-                    <li class="previous"><a href="{{ site.baseurl }}{{page.previous.url}}" title="前一篇：{{page.previous.short_title}}">&larr; {{page.previous.short_title}} </a></li>
-                    {% else %}
-                    <li class="previous"><a href="{{ site.baseurl }}{{page.previous.url}}" title="前一篇：{{page.previous.title}}">&larr; {{page.previous.title}}</a></li>
-                    {% endif %}
-                    {% endif %}
-                     <!--
-                    {% if page.next.url %}
-                    {% if page.next.short_title %}
-                    <li class="next"><a href="{{ site.baseurl }}{{page.next.url}}" title="后一篇：{{page.next.short_title}}">{{page.next.short_title}} &rarr;</a></li>
-                    {% else %}
-                    <li class="next"><a href="{{ site.baseurl }}{{page.next.url}}" title="后一篇：{{page.next.title}}">{{page.next.title}} &rarr;</a></li>
-                    {% endif %}
-                    {% endif %}
-                    -->
-                        <li class="next"><a href="{{ site.baseurl }}{{page.next.url}}" title="后一篇：{{page.next.title}}">{{page.next.title}} &rarr;</a></li>
-                    </ul>
                     <!-- JiaThis Button BEGIN -->
                     <div class="jiathis_style">
                         <span class="jiathis_txt">分享到：</span>
@@ -76,6 +56,24 @@ layout: default
                     <!-- JiaThis Button END -->
                 </article>
                 <!-- end article full post -->
+                <!---->
+                <ul  class="pager">
+                    {% if page.previous.url %}
+                    {% if page.previous.short_title %}
+                    <li class="previous"><a href="{{ site.baseurl }}{{page.previous.url}}" title="前一篇：{{page.previous.short_title}}">&larr; {{page.previous.short_title}} </a></li>
+                    {% else %}
+                    <li class="previous"><a href="{{ site.baseurl }}{{page.previous.url}}" title="前一篇：{{page.previous.title}}">&larr; {{page.previous.title}}</a></li>
+                    {% endif %}
+                    {% endif %}
+                    {% if page.next.url %}
+                    {% if page.next.short_title %}
+                    <li class="next"><a href="{{ site.baseurl }}{{page.next.url}}" title="后一篇：{{page.next.short_title}}">{{page.next.short_title}} &rarr;</a></li>
+                    {% else %}
+                    <li class="next"><a href="{{ site.baseurl }}{{page.next.url}}" title="后一篇：{{page.next.title}}">{{page.next.title}} &rarr;</a></li>
+                    {% endif %}
+                    {% endif %}
+                </ul>
+
                 <!-- Duoshuo Comment Begin -->
                 <div class="ds-thread" data-thread-id="{{page.UUID}}" data-url="{{site.url}}{{page.url}}" data-thread-key="{{page.UUID}}" data-title="{{page.title}}"
                      data-order="desc" data-form-positon="top"></div>
