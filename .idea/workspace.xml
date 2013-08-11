@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a3e6386-848c-4817-ad59-2f21717650fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archives/index.html" afterPath="$PROJECT_DIR$/archives/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chihuo/index.html" afterPath="$PROJECT_DIR$/chihuo/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/index.html" afterPath="$PROJECT_DIR$/code/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/special/index.html" afterPath="$PROJECT_DIR$/special/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/index.html" afterPath="$PROJECT_DIR$/tags/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/category/java.html" afterPath="$PROJECT_DIR$/category/java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/category/linux.html" afterPath="$PROJECT_DIR$/category/linux.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/category/search.html" afterPath="$PROJECT_DIR$/category/search.html" />
     </list>
     <ignored path="denghp.github.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -178,91 +170,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="102" selection-start="3336" selection-end="3394" vertical-scroll-proportion="-6.8461537">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chihuo/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="103" selection-start="3219" selection-end="3219" vertical-scroll-proportion="-4.576923">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/special/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="102" selection-start="3392" selection-end="3392" vertical-scroll-proportion="-10.192307">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tags/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="102" selection-start="3600" selection-end="3600" vertical-scroll-proportion="-13.192307">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom-paginator.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/js/custom-paginator.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="40" selection-start="4122" selection-end="4122" vertical-scroll-proportion="0.46279493">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_config.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="12" selection-start="651" selection-end="663" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="java.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/category/java.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="102" selection-start="3395" selection-end="3395" vertical-scroll-proportion="-11.115385">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="linux.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/category/linux.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="102" selection-start="3395" selection-end="3395" vertical-scroll-proportion="-16.038462">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/category/search.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="101" selection-start="3394" selection-end="3394" vertical-scroll-proportion="-9.230769">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/archives/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="102" selection-start="3393" selection-end="3393" vertical-scroll-proportion="-10.307693">
+            <state line="15" column="0" selection-start="305" selection-end="305" vertical-scroll-proportion="0.08525755">
               <folding />
             </state>
           </provider>
@@ -295,13 +206,13 @@
         <option value="$PROJECT_DIR$/_site/assets/js/custom-paginator.js" />
         <option value="$PROJECT_DIR$/code/index.html" />
         <option value="$PROJECT_DIR$/special/index.html" />
-        <option value="$PROJECT_DIR$/tags/index.html" />
         <option value="$PROJECT_DIR$/chihuo/index.html" />
         <option value="$PROJECT_DIR$/category/search.html" />
         <option value="$PROJECT_DIR$/category/linux.html" />
         <option value="$PROJECT_DIR$/category/java.html" />
         <option value="$PROJECT_DIR$/archives/index.html" />
         <option value="$PROJECT_DIR$/assets/js/custom-paginator.js" />
+        <option value="$PROJECT_DIR$/tags/index.html" />
       </list>
     </option>
   </component>
@@ -410,38 +321,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="chihuo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -715,7 +594,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="12" selection-start="651" selection-end="663" vertical-scroll-proportion="0.0">
+        <state line="23" column="12" selection-start="672" selection-end="684" vertical-scroll-proportion="0.6788194">
           <folding />
         </state>
       </provider>
@@ -743,42 +622,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/category/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="101" selection-start="3394" selection-end="3394" vertical-scroll-proportion="-9.230769">
+        <state line="59" column="101" selection-start="3394" selection-end="3394" vertical-scroll-proportion="0.43636364">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/category/linux.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="102" selection-start="3395" selection-end="3395" vertical-scroll-proportion="-16.038462">
+        <state line="59" column="102" selection-start="3395" selection-end="3395" vertical-scroll-proportion="0.7581818">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/category/java.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="102" selection-start="3395" selection-end="3395" vertical-scroll-proportion="-11.115385">
+        <state line="59" column="102" selection-start="3395" selection-end="3395" vertical-scroll-proportion="0.5254545">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/archives/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="102" selection-start="3393" selection-end="3393" vertical-scroll-proportion="-10.307693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tags/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="102" selection-start="3600" selection-end="3600" vertical-scroll-proportion="-13.192307">
+        <state line="59" column="102" selection-start="3393" selection-end="3393" vertical-scroll-proportion="0.48727274">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/custom-paginator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="40" selection-start="4122" selection-end="4122" vertical-scroll-proportion="0.46279493">
+        <state line="124" column="40" selection-start="4122" selection-end="4122" vertical-scroll-proportion="0.44270834">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tags/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="305" selection-end="305" vertical-scroll-proportion="0.08525755">
           <folding />
         </state>
       </provider>
