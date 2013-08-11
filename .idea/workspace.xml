@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a3e6386-848c-4817-ad59-2f21717650fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/chihuo/health/2012-12-22-dongji-yangyan.md" afterPath="$PROJECT_DIR$/_posts/chihuo/health/2012-12-22-dongji-yangyan.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-22-yangrou-dun-luobo.md" afterPath="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-22-yangrou-dun-luobo.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-23-donganziji.md" afterPath="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-23-donganziji.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-23-jiyu-doufu.md" afterPath="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-23-jiyu-doufu.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-24-xiangyukourou.md" afterPath="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-24-xiangyukourou.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-24-yongzhou-xueya.md" afterPath="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-24-yongzhou-xueya.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/photo/2013-01-02-Kitty-on-the-Ice.md" afterPath="$PROJECT_DIR$/_posts/life/photo/2013-01-02-Kitty-on-the-Ice.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/chihuo/health/2013-01-02-dongtian-chihuoguo.md" afterPath="$PROJECT_DIR$/_posts/chihuo/health/2013-01-02-dongtian-chihuoguo.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/chihuo/recipe/2013-03-25-xiaochaorou.md" afterPath="$PROJECT_DIR$/_posts/chihuo/recipe/2013-03-25-xiaochaorou.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chihuo/index.html" afterPath="$PROJECT_DIR$/chihuo/index.html" />
     </list>
     <ignored path="denghp.github.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,7 +94,7 @@
     <file path="/2012-12-23-bootstrap.md" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376183233150" ignored="false" />
     <file path="/2013-01-28-2012-firefox-top10-add-ons.md" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376183242393" ignored="false" />
     <file path="/custom-paginator.js" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376205821012" ignored="false" />
-    <file path="/index.html" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376207816575" ignored="false" />
+    <file path="/index.html" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376210786404" ignored="false" />
     <file path="/default.html" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376198782047" ignored="false" />
     <file path="/_config.yml" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376207682027" ignored="false" />
     <file path="/aside.html" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376204533936" ignored="false" />
@@ -173,91 +164,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2013-01-13-kitty-collections.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/life/photo/2013-01-13-kitty-collections.md">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chihuo/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2013-01-02-Kitty-on-the-Ice.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/life/photo/2013-01-02-Kitty-on-the-Ice.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="97" selection-start="984" selection-end="997" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2012-12-22-dongji-yangyan.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/chihuo/health/2012-12-22-dongji-yangyan.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="84" selection-start="2219" selection-end="2219" vertical-scroll-proportion="0.253493">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2013-01-02-dongtian-chihuoguo.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/chihuo/health/2013-01-02-dongtian-chihuoguo.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="90" selection-start="1499" selection-end="1512" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2012-12-22-yangrou-dun-luobo.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-22-yangrou-dun-luobo.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="87" selection-start="950" selection-end="950" vertical-scroll-proportion="-2.877193">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2012-12-23-donganziji.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-23-donganziji.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="94" selection-start="848" selection-end="848" vertical-scroll-proportion="19.192982">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2012-12-24-xiangyukourou.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-24-xiangyukourou.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="90" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2012-12-24-yongzhou-xueya.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-24-yongzhou-xueya.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="84" selection-start="743" selection-end="743" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2013-03-25-xiaochaorou.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/chihuo/recipe/2013-03-25-xiaochaorou.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="88" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2012-12-23-jiyu-doufu.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-23-jiyu-doufu.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="29" selection-start="726" selection-end="726" vertical-scroll-proportion="-3.7719297">
+            <state line="70" column="48" selection-start="3744" selection-end="3744" vertical-scroll-proportion="0.4018182">
               <folding />
             </state>
           </provider>
@@ -281,7 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/category/linux.html" />
         <option value="$PROJECT_DIR$/category/java.html" />
         <option value="$PROJECT_DIR$/archives/index.html" />
         <option value="$PROJECT_DIR$/archives/index-backup.html" />
@@ -297,6 +206,7 @@
         <option value="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-23-jiyu-doufu.md" />
         <option value="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-22-yangrou-dun-luobo.md" />
         <option value="$PROJECT_DIR$/_posts/chihuo/health/2012-12-22-dongji-yangyan.md" />
+        <option value="$PROJECT_DIR$/chihuo/index.html" />
       </list>
     </option>
   </component>
@@ -363,91 +273,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_posts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_posts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="life" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_posts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="life" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_posts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="chihuo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="recipe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_posts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chihuo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="health" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -683,13 +509,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chihuo/index-dy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="72" selection-start="695" selection-end="695" vertical-scroll-proportion="0.77442276">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="13" selection-start="683" selection-end="696" vertical-scroll-proportion="0.3246528">
@@ -741,56 +560,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/chihuo/health/2013-01-02-dongtian-chihuoguo.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="90" selection-start="1499" selection-end="1512" vertical-scroll-proportion="0.0">
+        <state line="39" column="90" selection-start="1499" selection-end="1512" vertical-scroll-proportion="-0.8269962">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-23-donganziji.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="94" selection-start="848" selection-end="848" vertical-scroll-proportion="19.192982">
+        <state line="29" column="94" selection-start="848" selection-end="848" vertical-scroll-proportion="-2.2145748">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-24-xiangyukourou.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="90" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
+        <state line="21" column="90" selection-start="511" selection-end="511" vertical-scroll-proportion="-0.46279493">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-24-yongzhou-xueya.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="84" selection-start="743" selection-end="743" vertical-scroll-proportion="0.0">
+        <state line="28" column="84" selection-start="743" selection-end="743" vertical-scroll-proportion="0.38368055">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/chihuo/recipe/2013-03-25-xiaochaorou.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="88" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0">
+        <state line="25" column="88" selection-start="550" selection-end="550" vertical-scroll-proportion="-1.7447916">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-23-jiyu-doufu.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="29" selection-start="726" selection-end="726" vertical-scroll-proportion="-3.7719297">
+        <state line="31" column="29" selection-start="726" selection-end="726" vertical-scroll-proportion="0.41425818">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-22-yangrou-dun-luobo.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="87" selection-start="950" selection-end="950" vertical-scroll-proportion="-2.877193">
+        <state line="34" column="87" selection-start="950" selection-end="950" vertical-scroll-proportion="0.3319838">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/chihuo/health/2012-12-22-dongji-yangyan.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="84" selection-start="2219" selection-end="2219" vertical-scroll-proportion="0.253493">
+        <state line="64" column="84" selection-start="2219" selection-end="2219" vertical-scroll-proportion="0.2889734">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chihuo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="48" selection-start="3744" selection-end="3744" vertical-scroll-proportion="0.4018182">
           <folding />
         </state>
       </provider>
