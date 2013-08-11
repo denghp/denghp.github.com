@@ -1,6 +1,7 @@
 ---
 layout: default
-title: 全部热门标签
+title: 全部标签
+
 ---
 
 {% include emergency_news.html %}
@@ -40,7 +41,21 @@ title: 全部热门标签
                 console.log("posts : " + posts)
                 getStartedInitialization(posts,allKeys,15, "{{site.baseurl}}");
             } else {
-                window.location.href = "{{site.baseurl}}/404.html"
+                //如果直接访问tags页面,则显示所有tags文章
+                //window.location.href = "{{site.baseurl}}/404.html"
+                var maxItems = "{{site.tags_max_item}}";
+                var posts = new Array(maxItems);
+                var allKeys = new Array(maxItems);
+                for (var key in tags) {
+                    for(var i = 0; i < tags[key].length; i ++) {
+                       posts[i] = tags[key][i];
+                       allKeys[i] = tags[key][i].UUID;
+                    }
+                    if (posts.length >= maxItems) {
+                        break;
+                    }
+                }
+                getStartedInitialization(posts,allKeys,15, "{{site.baseurl}}");
             }
         });
     </script>

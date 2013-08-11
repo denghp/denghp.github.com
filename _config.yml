@@ -24,7 +24,7 @@ auto: true
 debug: true
 
 countPerPage: 15
-tagsResp: [response]
+tags_max_item: 200
 links:
     - url: "http://lusongsong.com/"
       name: 卢松松
