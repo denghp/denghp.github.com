@@ -23,8 +23,8 @@ title: 搜索引擎研发经验
 </section>
 <script type="text/javascript">
     $(function () {
-        initJsonData("{{site.baseurl}}/json/search.json");
-        getStartedInitialization(15);
+        var array = initJsonData("{{site.baseurl}}/json/search.json");
+        getStartedInitialization(array[0],array[1],15);
     });
 
 </script>

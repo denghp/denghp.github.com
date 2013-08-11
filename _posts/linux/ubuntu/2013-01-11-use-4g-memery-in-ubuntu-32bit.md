@@ -3,7 +3,7 @@ layout: post
 title: Ubuntu32位使用4G内存的解决方案
 tags: 
 - shell
-- Ubuntu
+- ubuntu
 - linux
 categories:
 - code

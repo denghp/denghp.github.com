@@ -5,7 +5,7 @@ categories:
 - code
 - archives
 tags:
-- Python
+- python
 UUID: 20090427
 ---
 

@@ -3,8 +3,8 @@ layout: post
 title: HtmlCleaner+XPath抓取HTML中的数据
 tags: 
 - 爬虫
-- HtmlCleaner
-- XPath
+- htmlcleaner
+- xpath
 - 抓取html
 - 研发实践
 categories:

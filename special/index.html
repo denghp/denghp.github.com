@@ -23,8 +23,8 @@ title: 热门推荐
 </section>
 <script type="text/javascript">
     $(function () {
-        initJsonData("{{site.baseurl}}/json/special.json");
-        getStartedInitialization(15);
+        var array = initJsonData("{{site.baseurl}}/json/special.json");
+        getStartedInitialization(array[0],array[1],15);
     });
 
 </script>

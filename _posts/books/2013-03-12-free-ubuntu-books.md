@@ -2,7 +2,7 @@
 layout: post
 title: 免费的ubuntu电子书
 tags: 
-- Ubuntu
+- ubuntu
 - 电子书
 - linux
 categories:

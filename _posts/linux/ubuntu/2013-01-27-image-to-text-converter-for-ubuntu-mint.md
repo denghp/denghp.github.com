@@ -3,9 +3,9 @@ layout: post
 title: Linux图像文本转换器（OCR）
 tags: 
 - shell
-- Ubuntu
+- ubuntu
 - linux
-- OCR
+- ocr
 - 图像文本转换器
 categories:
 - code

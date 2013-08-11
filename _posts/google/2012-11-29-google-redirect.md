@@ -3,10 +3,10 @@ layout: post
 title: 取消 Google 搜索结果链接重定向
 tags: 
 - 浏览器
-- Google 
+- google
 categories:
-- Search
-- Google
+- search
+- google
 - archives
 UUID: 201211292330
 date: 2012-11-29

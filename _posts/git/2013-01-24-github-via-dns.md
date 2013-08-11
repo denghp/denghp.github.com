@@ -3,7 +3,7 @@ layout: post
 title: GitHub 无法访问解决方案
 tags: 
 - 互联网
-- Github
+- github
 - 屏蔽
 categories:
 - www

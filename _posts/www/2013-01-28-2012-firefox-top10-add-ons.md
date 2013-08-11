@@ -2,9 +2,9 @@
 layout: post
 title: 2012年Firefox TOP10 附加组件
 tags: 
-- Firefox
+- firefox
 - 浏览器
-- Firefox附件组件
+- firefox附件组件
 categories:
 - code
 - special

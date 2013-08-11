@@ -2,13 +2,13 @@
 layout: post
 title: Git原理浅析
 categories:
-- Github
+- github
 - code
 - archives
 tags:
-- Github
+- github
 - linux
-- Tools
+- tools
 UUID: 20100605
 ---
 

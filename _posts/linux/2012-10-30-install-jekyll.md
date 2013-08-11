@@ -2,9 +2,9 @@
 layout: post
 title: Linux 安装Jekyll 环境
 tags: 
-- Ubuntu
+- ubuntu
 - linux
-- Jekyll
+- jekyll
 categories:
 - linux
 - code

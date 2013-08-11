@@ -6,8 +6,8 @@ categories:
 - archives
 tags:
 - shell
-- Job
-- Memory
+- job
+- memory
 UUID: 20110113
 ---
 

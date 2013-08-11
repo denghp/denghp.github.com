@@ -3,7 +3,7 @@ layout: post
 title: Ubuntu 开机自动挂载分区
 tags: 
 - shell
-- Ubuntu
+- ubuntu
 - linux
 categories:
 - code

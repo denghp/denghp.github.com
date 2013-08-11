@@ -5,7 +5,7 @@ tags:
 - solr
 - lucene
 - 搜索引擎
-- Dismax
+- dismax
 categories:
 - code
 - solr

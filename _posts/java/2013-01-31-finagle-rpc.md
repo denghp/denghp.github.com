@@ -3,8 +3,8 @@ layout: post
 title: Finagle：一个协议不可知的 RPC 系统
 tags: 
 - java
-- RPC
-- Finagle
+- rpc
+- finagle
 - 研发实践
 categories:
 - code

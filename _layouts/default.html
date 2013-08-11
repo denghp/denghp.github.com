@@ -49,7 +49,7 @@
     <script src="{{site.static_url}}/assets/js/bootstrap-paginator.min.js"></script>
     <script src="{{site.static_url}}/assets/js/custom-paginator.js"></script>
     {% endif %}
-    {% if page.url == '/category/java.html' or page.url == '/category/linux.html' or page.url == '/category/search.html'%}
+    {% if page.url == '/category/java.html' or page.url == '/category/linux.html' or page.url == '/tags/index.html' or page.url == '/tags' or page.url == '/category/search.html'%}
     <script src="{{site.static_url}}/assets/js/bootstrap-paginator.min.js"></script>
     <script src="{{site.static_url}}/assets/js/custom-paginator.js"></script>
     {% endif %}
@@ -70,12 +70,12 @@
 
 
 </head>
-{% if page.url != '/' and page.url != '/index.html' and page.url != '/404.html' and page.url != '/life' and page.url != '/life/index.html' and page.url != '/about.html' %}
+{% if page.url != '/' and page.url != '/index.html' and page.url != '/404.html' and page.url != '/life' and page.url != '/life/index.html'  %}
 <body onload="removeElement()">
 {% else %}
 <body>
 {% endif %}
-pageurl: {{page.url}}
+
 {% include header.html %}
 
 <!-- content

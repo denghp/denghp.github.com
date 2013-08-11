@@ -4,7 +4,7 @@ title: 版本管理策略
 tags: 
 - 版本管理
 - 策略
-- GNU
+- gnu
 categories:
 - code
 - archives

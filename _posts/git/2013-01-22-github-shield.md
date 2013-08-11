@@ -3,7 +3,7 @@ layout: post
 title: GitHub网站及关键字被屏蔽
 tags: 
 - 互联网
-- Github
+- github
 - 屏蔽
 categories:
 - www

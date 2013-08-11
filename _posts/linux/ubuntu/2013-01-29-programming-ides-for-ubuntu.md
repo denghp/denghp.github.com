@@ -3,9 +3,9 @@ layout: post
 title: Ubuntu 常用的编程开发环境IDEs
 tags: 
 - shell
-- Ubuntu
+- ubuntu
 - linux
-- IDE
+- ide
 categories:
 - code
 - linux

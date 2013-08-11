@@ -4,9 +4,6 @@ title: "Linux ulimit 设置"
 tags: 
 - linux
 - shell
-comment: true
-published: true
-author: demi-panda
 categories:
 - linux
 - archives

@@ -2,12 +2,12 @@
 layout: post
 title: SSH免密码远程登录设置
 categories:
-- Web
+- web
 - archives
 tags:
 - 安全
 - linux
-- SSH
+- ssh
 UUID: 201211122255
 ---
 

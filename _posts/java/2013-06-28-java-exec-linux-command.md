@@ -3,9 +3,9 @@ layout: post
 title: Java使用Runtime执行Linux命令用管理连接问题
 short_title: Runtime执行Linux命令用管道连接
 tags: 
-- Java
-- Runtime
-- Linux
+- java
+- runtime
+- linux
 - 研发实践
 categories:
 - code

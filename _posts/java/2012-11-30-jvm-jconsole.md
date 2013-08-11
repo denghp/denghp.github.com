@@ -2,8 +2,8 @@
 layout: post
 title: Java内存泄露监控工具：jconsole, jstack
 tags: 
-- JDK
-- Jconsole
+- jdk
+- jconsole
 categories:
 - java
 - code

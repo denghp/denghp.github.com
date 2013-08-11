@@ -4,10 +4,10 @@ title: Linux Feed Reader —— Linux用户最好的阅读器
 short_title: Linux Feed Reader
 tags: 
 - shell
-- Ubuntu
+- ubuntu
 - linux
-- Download
-- Monitor
+- download
+- monitor
 categories:
 - code
 - linux

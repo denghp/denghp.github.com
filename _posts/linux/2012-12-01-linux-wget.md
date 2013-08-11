@@ -2,7 +2,7 @@
 layout: post
 title: Linux wget 详解 
 tags: 
-- Ubuntu
+- ubuntu
 - linux
 - wget详解
 categories:

@@ -2,7 +2,7 @@
 layout: post
 title: SSH登陆响应慢的问题
 tags: 
-- SSH
+- ssh
 - linux
 - shell
 categories:

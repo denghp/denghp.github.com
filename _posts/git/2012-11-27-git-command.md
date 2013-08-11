@@ -2,13 +2,10 @@
 layout: post
 title: "Git常用命令"
 tags: 
-- Github
-- Git
-comment: true
-published: true
-author: demi-panda
+- github
+- git
 categories:
-- Github
+- github
 - code
 - archives
 UUID: 201211271035

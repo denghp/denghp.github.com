@@ -3,9 +3,9 @@ layout: post
 title: Linux简单的图像上传工具Postman
 tags: 
 - shell
-- Ubuntu
+- ubuntu
 - linux
-- OCR
+- ocr
 - 图像文本转换器
 categories:
 - code

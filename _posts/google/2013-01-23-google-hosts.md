@@ -3,7 +3,7 @@ layout: post
 title: Google Search 无法访问解决方案
 tags: 
 - 互联网
-- Google
+- google
 - 屏蔽
 categories:
 - www

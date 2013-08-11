@@ -2,8 +2,8 @@
 layout: post
 title: Jekyll快速搭建免费的个人博客
 tags: 
-- Jekyll
-- Github
+- jekyll
+- github
 - 免费博客
 categories:
 - code

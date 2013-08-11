@@ -3,7 +3,7 @@ layout: post
 title: Subversion恢复到某个版本
 tags: 
 - 版本
-- Subversion
+- subversion
 - svn
 categories:
 - code

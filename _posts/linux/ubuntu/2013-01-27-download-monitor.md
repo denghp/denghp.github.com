@@ -3,10 +3,10 @@ layout: post
 title: Download Monitor监控上传和下载流量
 tags: 
 - shell
-- Ubuntu
+- ubuntu
 - linux
-- Download
-- Monitor
+- download
+- monitor
 categories:
 - code
 - linux

@@ -2,13 +2,10 @@
 layout: post
 title: "Generating SSH Keys"
 tags: 
-- SSH
-- Github
-comment: true
-published: true
-author: demi-panda
+- ssh
+- github
 categories:
-- Github
+- github
 - archives
 UUID: 201211141035
 date: 2012-11-14

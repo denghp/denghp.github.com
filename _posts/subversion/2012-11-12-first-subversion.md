@@ -2,10 +2,8 @@
 layout: post
 title: "Subversion 文件状态含义"
 tags:
-- Subversion
-- Svn
-comment: true
-published: true
+- subversion
+- svn
 categories:
 - svn
 - code

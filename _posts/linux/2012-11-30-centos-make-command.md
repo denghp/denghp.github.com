@@ -2,9 +2,9 @@
 layout: post
 title: CentOS Make Command not Found
 tags: 
-- CentOS
+- centos
 - linux
-- Make
+- make
 categories:
 - linux
 - code

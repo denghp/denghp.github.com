@@ -5,7 +5,7 @@ tags:
 - solr
 - lucene
 - 搜索引擎
-- Solr 缓存
+- solr 缓存
 - 缓存
 categories:
 - code

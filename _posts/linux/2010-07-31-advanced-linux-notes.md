@@ -2,7 +2,7 @@
 layout: post
 title: Linux培训笔记
 categories:
-- OS
+- os
 - linux
 - archives
 tags:

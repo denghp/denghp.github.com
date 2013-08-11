@@ -2,9 +2,9 @@
 layout: post
 title: Ganglia安装配置
 tags: 
-- Ganglia
-- Ubuntu
-- 监控
+- ganglia
+- ubuntu
+- monitor
 - linux
 categories:
 - code

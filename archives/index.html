@@ -23,8 +23,8 @@ title: 全部文章-研发实践、熊猫吃货、微生活
 </section>
 <script type="text/javascript">
 $(function () {
-    initJsonData("{{site.baseurl}}/json/archives.json");
-    getStartedInitialization(15);
+    var array = initJsonData("{{site.baseurl}}/json/archives.json");
+    getStartedInitialization(array[0],array[1],15);
 });
 
 </script>

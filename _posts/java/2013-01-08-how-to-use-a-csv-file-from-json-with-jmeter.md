@@ -6,8 +6,8 @@ tags:
 - 测试
 - 压力测试
 - jmeter
-- JSON
-- CSV
+- json
+- csv
 categories:
 - code
 - java

@@ -3,7 +3,7 @@ layout: post
 title: "Mark Zuckerberg：年轻人就是比较聪明!"
 short_title: "Mark Zuckerberg年轻人就是聪明!"
 tags: 
-- Zuckerberg
+- zuckerberg
 - 年轻人
 comment: true
 published: true

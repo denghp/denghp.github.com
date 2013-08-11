@@ -23,8 +23,8 @@ title: JAVA技术研发实践
 </section>
 <script type="text/javascript">
     $(function () {
-        initJsonData("{{site.baseurl}}/json/java.json");
-        getStartedInitialization(15);
+        var array = initJsonData("{{site.baseurl}}/json/java.json");
+        getStartedInitialization(array[0],array[1],15);
     });
 
 </script>

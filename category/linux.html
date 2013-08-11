@@ -23,8 +23,8 @@ title: Linux编程经验
 </section>
 <script type="text/javascript">
     $(function () {
-        initJsonData("{{site.baseurl}}/json/linux.json");
-        getStartedInitialization(15);
+        var array = initJsonData("{{site.baseurl}}/json/linux.json");
+        getStartedInitialization(array[0],array[1],15);
     });
 
 </script>

@@ -2,11 +2,12 @@
 layout: post
 title: HTML JavaScript 转义字符
 tags: 
-- HTML
-- javaScript
+- html
+- javascript
+- 转义字符
 categories:
-- javaScript
-- Web
+- javascript
+- web
 - archives
 UUID: 201212041832
 date: 2012-12-04

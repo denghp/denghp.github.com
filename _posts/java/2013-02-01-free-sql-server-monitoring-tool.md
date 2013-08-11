@@ -2,7 +2,7 @@
 layout: post
 title: 免费的SQL Server监控工具
 tags: 
-- SQL
+- sql
 - 数据库
 - 监控
 - 研发实践

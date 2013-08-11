@@ -4,8 +4,6 @@ title: "社会不得不让大家伪装自己..."
 tags: 
 - 梦想
 - 社会
-comment: true
-published: true
 author: lisa
 categories:
 - life

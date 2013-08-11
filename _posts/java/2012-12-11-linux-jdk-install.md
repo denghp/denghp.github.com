@@ -2,7 +2,7 @@
 layout: post
 title: Centos 6.6 Linux 安装JDK
 tags: 
-- JDK
+- jdk
 - linux
 - shell
 categories:

@@ -3,7 +3,7 @@ layout: post
 title: Linux 创建sudo用户权限
 tags: 
 - shell
-- Ubuntu
+- ubuntu
 - linux
 categories:
 - code

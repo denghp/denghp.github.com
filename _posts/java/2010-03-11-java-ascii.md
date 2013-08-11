@@ -3,7 +3,7 @@ layout: post
 title: ASCII和中文互转 
 tags: 
 - java
-- ASCII
+- ascii
 categories:
 - java
 - code

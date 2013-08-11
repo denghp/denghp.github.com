@@ -3,7 +3,7 @@ layout: post
 title: 下载高清电影的必须收藏的网站
 tags: 
 - 电影
-- CHD
+- chd
 categories:
 - life
 - movie

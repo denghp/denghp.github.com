@@ -2,11 +2,11 @@
 layout: post
 title: Socket TIME_WAIT 解决方案
 tags: 
-- Socket
+- socket
 - linux
-- TIME_WAIT
+- time_wait
 categories:
-- Socket
+- socket
 - code
 - archives
 UUID: 201212270032

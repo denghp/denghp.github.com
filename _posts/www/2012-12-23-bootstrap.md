@@ -2,9 +2,9 @@
 layout: post
 title: "Bootstrap Web前端工具包"
 tags: 
-- Bootstrap
+- bootstrap
 - 工具包
-- Web
+- web
 categories:
 - www
 - archives

@@ -5,9 +5,6 @@ tags:
 - linux
 - shell
 - 创建用户
-comment: true
-published: true
-author: demi-panda
 categories:
 - linux
 - archives

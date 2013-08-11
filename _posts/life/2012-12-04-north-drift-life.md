@@ -3,8 +3,6 @@ layout: post
 title: "北漂生活"
 tags: 
 - 梦想
-comment: true
-published: true
 categories:
 - life
 - special

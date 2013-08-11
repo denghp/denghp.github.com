@@ -8,7 +8,7 @@ categories:
 - archives
 tags:
 - java
-- Annotation
+- annotation
 UUID: 20080923
 date: 2008-09-23
 ---

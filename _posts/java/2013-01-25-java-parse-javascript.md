@@ -2,10 +2,10 @@
 layout: post
 title: Java解析JavaScript数据
 tags: 
-- javaScript
+- javascript
 - java
-- ScriptEngine
-- Rhino
+- scriptengine
+- rhino
 - 研发实践
 categories:
 - code

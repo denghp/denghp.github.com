@@ -3,13 +3,13 @@ layout: post
 title: TCP 3次握手连接协议和4次握手断开连接协议
 short_title: TCP 3次握手连接协议和4次握手协议
 tags: 
-- TCP
-- Socket
+- tcp
+- socket
 - 网络协议
 - 3次握手
-- TCP协议
+- tcp协议
 categories:
-- Socket
+- socket
 - code
 - archives
 UUID: 201212270023

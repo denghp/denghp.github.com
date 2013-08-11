@@ -5,7 +5,7 @@ tags:
 - shell
 - 编辑器
 - vim
-- Emacs
+- emacs
 categories:
 - code
 - linux

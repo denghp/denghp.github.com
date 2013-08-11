@@ -4,9 +4,9 @@ title: Wine 1.6 Released – Install on Ubuntu 13.04/12.10/12.04/11.10 and Linux
 short_title: Installation of Wine 1.6
 tags: 
 - shell
-- Ubuntu
+- ubuntu
 - linux
-- Wine
+- wine
 categories:
 - code
 - linux

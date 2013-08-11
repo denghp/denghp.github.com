@@ -3,7 +3,7 @@ layout: post
 title: Ubuntu root 权限详解
 tags: 
 - shell
-- Ubuntu
+- ubuntu
 - linux
 categories:
 - code

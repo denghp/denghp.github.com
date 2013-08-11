@@ -4,7 +4,7 @@ title: 2013年的空气污染程度你知道吗？
 tags: 
 - 生活
 - 空气污染
-- PM2.5
+- pm2.5
 categories:
 - life
 - archives

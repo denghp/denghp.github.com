@@ -4,7 +4,7 @@ title: 三谈github页面域名绑定:域名跳转
 short_title: 三谈github页面域名绑定
 tags: 
 - 域名
-- Jekyll
+- jekyll
 categories:
 - www
 - archives

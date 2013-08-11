@@ -2,7 +2,7 @@
 layout: post
 title: Nodejs认识及简单使用
 tags: 
-- Nodejs
+- nodejs
 - linux
 - 研发实践
 categories:

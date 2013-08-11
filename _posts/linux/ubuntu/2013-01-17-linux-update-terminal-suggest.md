@@ -3,9 +3,9 @@ layout: post
 title: Linux下如何修改终端提示符？
 tags: 
 - shell
-- Ubuntu
+- ubuntu
 - linux
-- Centos6
+- centos
 categories:
 - code
 - linux

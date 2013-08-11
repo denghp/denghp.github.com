@@ -2,7 +2,7 @@
 layout: post
 title: HTTP状态码
 tags: 
-- HTTP
+- http
 - 状态码
 categories:
 - code

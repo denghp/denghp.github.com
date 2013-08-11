@@ -3,7 +3,7 @@ layout: post
 title: Mongodb 安装及常用命令
 tags: 
 - shell 
-- Mongodb
+- mongodb
 categories:
 - code
 - mongodb

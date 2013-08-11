@@ -5,9 +5,9 @@ categories:
 - code
 - archives
 tags:
-- Jenkins
-- Hudson
-- CI
+- jenkins
+- hudson
+- ci
 UUID: 20110614
 ---
 

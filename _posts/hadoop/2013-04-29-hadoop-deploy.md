@@ -7,7 +7,7 @@ tags:
 - Hadoop
 categories:
 - linux
-- Hadoop
+- hadoop
 - code
 - special
 - archives

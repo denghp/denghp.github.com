@@ -3,10 +3,9 @@ layout: post
 title: HTTP协议头部与Keep-Alive模式详解
 tags: 
 - java
-- HTTP
+- http
 categories:
 - java
-- J2EE
 - code
 - archives
 UUID: 201212020027

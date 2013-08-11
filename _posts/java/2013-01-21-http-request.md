@@ -2,8 +2,8 @@
 layout: post
 title: HTTPRequest实现详解
 tags: 
-- HTTP
-- HTTPRequest
+- http
+- httprequest
 - 研发实践
 categories:
 - code

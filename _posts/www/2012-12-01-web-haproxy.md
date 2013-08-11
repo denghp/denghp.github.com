@@ -3,7 +3,7 @@ layout: post
 title: 负载均衡工具haproxy安装，配置，使用
 short_title: Haproxy安装，配置，使用
 tags: 
-- Haproxy
+- haproxy
 - linux
 - 负载均衡
 categories:

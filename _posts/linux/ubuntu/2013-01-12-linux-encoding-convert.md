@@ -4,9 +4,9 @@ title: Linux下GBK->UTF-8文件编码批量转换命令
 short_title: Linux下文件编码批量转换命令
 tags: 
 - shell
-- Ubuntu
-- UTF-8
-- GBK
+- ubuntu
+- utf-8
+- gbk
 - 编码转换
 categories:
 - code
