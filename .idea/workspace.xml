@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a3e6386-848c-4817-ad59-2f21717650fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/content-work.html" afterPath="$PROJECT_DIR$/_includes/content-work.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/hadoop/2013-04-29-hadoop-deploy.md" afterPath="$PROJECT_DIR$/_posts/hadoop/2013-04-29-hadoop-deploy.md" />
     </list>
     <ignored path="denghp.github.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -167,10 +167,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="content-work.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_includes/content-work.html">
+      <file leaf-file-name="2013-04-29-hadoop-deploy.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/hadoop/2013-04-29-hadoop-deploy.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="81" selection-start="5029" selection-end="5029" vertical-scroll-proportion="1.8454707">
+            <state line="156" column="0" selection-start="4537" selection-end="4537" vertical-scroll-proportion="-1.2430556">
               <folding />
             </state>
           </provider>
@@ -194,7 +194,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-23-donganziji.md" />
         <option value="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-24-xiangyukourou.md" />
         <option value="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-24-yongzhou-xueya.md" />
         <option value="$PROJECT_DIR$/_posts/chihuo/recipe/2013-03-25-xiaochaorou.md" />
@@ -210,6 +209,7 @@
         <option value="$PROJECT_DIR$/assets/js/application.js" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
         <option value="$PROJECT_DIR$/_includes/content-work.html" />
+        <option value="$PROJECT_DIR$/_posts/hadoop/2013-04-29-hadoop-deploy.md" />
       </list>
     </option>
   </component>
@@ -276,7 +276,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_includes" />
+              <option name="myItemId" value="_posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="denghp.github.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="denghp.github.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hadoop" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -512,13 +530,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/chihuo/recipe/2013-03-25-xiaochaorou.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="88" selection-start="550" selection-end="550" vertical-scroll-proportion="-1.7447916">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-23-jiyu-doufu.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="29" selection-start="726" selection-end="726" vertical-scroll-proportion="0.41425818">
@@ -626,6 +637,13 @@
     <entry file="file://$PROJECT_DIR$/_includes/content-work.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="123" column="81" selection-start="5029" selection-end="5029" vertical-scroll-proportion="1.8454707">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/hadoop/2013-04-29-hadoop-deploy.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="156" column="0" selection-start="4537" selection-end="4537" vertical-scroll-proportion="-1.2430556">
           <folding />
         </state>
       </provider>
