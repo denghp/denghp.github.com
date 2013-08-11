@@ -8,8 +8,8 @@ title: 全部文章-研发实践
 <section id="maincontent">
     <div class="container">
         <div class="row">
-            <div id="content">
             <div class="span8">
+                <div id="content">
                 <!-- start article -->
                     {% for post in site.categories.code limit:site.countPerPage %}
                     <article class="blog-post">
@@ -57,7 +57,7 @@ title: 全部文章-研发实践
                                     <li class="last"><i class="icon-tags"></i><span>
                                     {% if post.tags %}
                                         {% for tag in post.tags limit:5 %}
-                                            <a href="{{ site.base_url }}/tags/#{{tag}}" class="text" title="{{ tag }}" rel="category tag">{{ tag }}</a>&nbsp;
+                                            <a href="{{ site.base_url }}/tags/index.html?name={{tag}}" class="text" title="{{ tag }}" rel="category tag">{{ tag }}</a>&nbsp;
                                         {% endfor %}
                                     {% endif %}
                                 </span>
@@ -78,9 +78,10 @@ title: 全部文章-研发实践
                     </article>
                     {% endfor %}
                 <!-- end article  -->
+                </div>
+                <div id="page-selection"></div>
             </div>
-            </div>
-            <div id="page-selection"></div>
+
             <div class="span4">
                 {% include aside.html %}
             </div>

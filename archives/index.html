@@ -57,7 +57,7 @@ title: 全部文章-研发实践、熊猫吃货、微生活
                                     <li class="last"><i class="icon-tags"></i><span>
                                     {% if post.tags %}
                                         {% for tag in post.tags limit:5 %}
-                                            <a href="{{ site.base_url }}/tags/#{{tag}}" class="text" title="{{ tag }}" rel="category tag">{{ tag }}</a>&nbsp;
+                                            <a href="{{ site.base_url }}/tags/index.html?name={{tag}}" class="text" title="{{ tag }}" rel="category tag">{{ tag }}</a>&nbsp;
                                         {% endfor %}
                                     {% endif %}
                                 </span>

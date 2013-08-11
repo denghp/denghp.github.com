@@ -8,8 +8,9 @@ title: 熊猫吃货
 <section id="maincontent">
     <div class="container">
         <div class="row">
-            <div id="content">
+
             <div class="span8">
+                <div id="content">
                 <!-- start article 1 -->
                 {% for post in site.categories.chihuo limit:site.countPerPage %}
                 <article class="blog-post">
@@ -57,7 +58,7 @@ title: 熊猫吃货
                                 <li class="last"><i class="icon-tags"></i><span>
                                     {% if post.tags %}
                                         {% for tag in post.tags limit:5 %}
-                                            <a href="{{ site.base_url }}/tags/#{{tag}}" class="text" title="{{ tag }}" rel="category tag">{{ tag }}</a>&nbsp;
+                                            <a href="{{ site.base_url }}/tags/index.html?name={{tag}}" class="text" title="{{ tag }}" rel="category tag">{{ tag }}</a>&nbsp;
                                         {% endfor %}
                                     {% endif %}
                                 </span>
@@ -80,8 +81,8 @@ title: 熊猫吃货
                 </article>
                 {% endfor %}
                 <!-- end article 1 -->
-            </div>
-            <div id="page-selection"></div>
+                <div id="page-selection"></div>
+                </div>
             </div>
             <div class="span4">
                 {% include aside.html %}
