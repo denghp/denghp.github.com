@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a3e6386-848c-4817-ad59-2f21717650fe" name="Default" comment="" />
+    <list default="true" id="1a3e6386-848c-4817-ad59-2f21717650fe" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
+    </list>
     <ignored path="denghp.github.com.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376180512019" ignored="false" />
     <file path="/404.html" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376180700140" ignored="false" />
     <file path="/tags.json" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376199368900" ignored="false" />
-    <file path="/a.dummy" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376182209618" ignored="false" />
+    <file path="/a.dummy" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376217902434" ignored="false" />
     <file path="/2013-03-12-free-ubuntu-books.md" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376182338722" ignored="false" />
     <file path="/2010-06-05-git-internals.md" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376182372196" ignored="false" />
     <file path="/2012-11-14-github-generating-ssh-keys.md" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376182381170" ignored="false" />
@@ -102,6 +104,9 @@
     <file path="/2012-12-22-dongji-yangyan.md" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376210196861" ignored="false" />
     <file path="/2013-08-12-mudanhua.md" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376214414623" ignored="false" />
     <file path="/2013-08-11-zhangshu.md" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376214023802" ignored="false" />
+    <file path="$PROJECT_DIR$/_site/rss.xml" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376218078816" ignored="false" />
+    <file path="$PROJECT_DIR$/_site/assets/js/application.js" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376218078816" ignored="false" />
+    <file path="$PROJECT_DIR$/_site/assets/js/jquery-1.8.2.min.js" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376218078816" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,76 +167,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chihuo/index.html">
+      <file leaf-file-name="custom.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/custom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="53" selection-start="3909" selection-end="3909" vertical-scroll-proportion="-16.346153">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2013-08-12-mudanhua.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/life/photo/2013-08-12-mudanhua.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="104" selection-start="411" selection-end="443" vertical-scroll-proportion="0.6170599">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2013-08-11-zhangshu.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/life/photo/2013-08-11-zhangshu.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="9" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/life/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="74" selection-start="856" selection-end="856" vertical-scroll-proportion="-11.769231">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="post.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/post.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="39" selection-start="3019" selection-end="3027" vertical-scroll-proportion="-11.115385">
+            <state line="54" column="34" selection-start="1661" selection-end="1672" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="tag#div#3;tag#article#0;tag#div#0;tag#div#0;tag#div#0;tag#section#0" expanded="false" />
-                <element signature="tag#script#1;tag#article#0;tag#div#0;tag#div#0;tag#div#0;tag#section#0" expanded="false" />
+                <marker date="1376214090779" expanded="false" signature="2132:2157" placeholder="..." />
+                <marker date="1376214090779" expanded="false" signature="2483:2495" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="45" selection-start="1535" selection-end="1535" vertical-scroll-proportion="-7.8461537">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pagination.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/pagination.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="272" selection-end="272" vertical-scroll-proportion="-5.8846154">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2013-01-13-kitty-collections.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/life/photo/2013-01-13-kitty-collections.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="451" selection-end="688" vertical-scroll-proportion="0.0">
+            <state line="24" column="24" selection-start="524" selection-end="535" vertical-scroll-proportion="0.2">
               <folding />
             </state>
           </provider>
@@ -255,7 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/_posts/life/photo/2013-01-02-Kitty-on-the-Ice.md" />
         <option value="$PROJECT_DIR$/_posts/chihuo/health/2013-01-02-dongtian-chihuoguo.md" />
         <option value="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-23-donganziji.md" />
         <option value="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-24-xiangyukourou.md" />
@@ -271,6 +221,7 @@
         <option value="$PROJECT_DIR$/life/index.html" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
         <option value="$PROJECT_DIR$/_layouts/post.html" />
+        <option value="$PROJECT_DIR$/assets/js/application.js" />
       </list>
     </option>
   </component>
@@ -337,7 +288,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_layouts" />
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -351,7 +306,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_includes" />
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="google-code-prettify" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="denghp.github.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="denghp.github.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -501,7 +478,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32956383" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -587,27 +564,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/chihuo/health/2013-01-02-dongtian-chihuoguo.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="90" selection-start="1499" selection-end="1512" vertical-scroll-proportion="-0.8269962">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-23-donganziji.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="94" selection-start="848" selection-end="848" vertical-scroll-proportion="-2.2145748">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-24-xiangyukourou.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="90" selection-start="511" selection-end="511" vertical-scroll-proportion="-0.46279493">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-24-yongzhou-xueya.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="84" selection-start="743" selection-end="743" vertical-scroll-proportion="0.38368055">
@@ -645,14 +601,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/life/photo/2013-01-13-kitty-collections.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="451" selection-end="688" vertical-scroll-proportion="0.0">
+        <state line="19" column="0" selection-start="451" selection-end="688" vertical-scroll-proportion="0.5607639">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/life/photo/2013-08-11-zhangshu.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="9" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0">
+        <state line="11" column="9" selection-start="97" selection-end="97" vertical-scroll-proportion="0.33938295">
           <folding />
         </state>
       </provider>
@@ -666,28 +622,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/life/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="74" selection-start="856" selection-end="856" vertical-scroll-proportion="-11.769231">
+        <state line="18" column="74" selection-start="856" selection-end="856" vertical-scroll-proportion="0.55636364">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/pagination.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="272" selection-end="272" vertical-scroll-proportion="-5.8846154">
+        <state line="9" column="0" selection-start="272" selection-end="272" vertical-scroll-proportion="0.27175844">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="45" selection-start="1535" selection-end="1535" vertical-scroll-proportion="-7.8461537">
+        <state line="24" column="45" selection-start="1535" selection-end="1535" vertical-scroll-proportion="0.3709091">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="39" selection-start="3019" selection-end="3027" vertical-scroll-proportion="-11.115385">
+        <state line="61" column="39" selection-start="3019" selection-end="3027" vertical-scroll-proportion="0.5254545">
           <folding>
             <element signature="tag#div#3;tag#article#0;tag#div#0;tag#div#0;tag#div#0;tag#section#0" expanded="false" />
             <element signature="tag#script#1;tag#article#0;tag#div#0;tag#div#0;tag#div#0;tag#section#0" expanded="false" />
@@ -698,6 +654,30 @@
     <entry file="file://$PROJECT_DIR$/_posts/life/photo/2013-08-12-mudanhua.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="104" selection-start="411" selection-end="443" vertical-scroll-proportion="0.6170599">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/google-code-prettify/prettify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="34" selection-start="1661" selection-end="1672" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1376214090779" expanded="false" signature="2132:2157" placeholder="..." />
+            <marker date="1376214090779" expanded="false" signature="2483:2495" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="24" selection-start="524" selection-end="535" vertical-scroll-proportion="0.2">
           <folding />
         </state>
       </provider>
