@@ -27,6 +27,7 @@ UUID: 201301022227
 小心！你会掉下去的！
 
 但是凯蒂说："不用担心！我只重10.2！"
+
 <a href="{{site.static_url}}/assets/images/life/photo/8318215614_85bb18acdf_z.jpg" rel="prettyPhoto[{{page.UUID}}]" alt="猫">
 <img src="{{site.static_url}}/assets/images/life/photo/8318215614_85bb18acdf_z.jpg" width="480px" alt="猫" ></img>
 </a>

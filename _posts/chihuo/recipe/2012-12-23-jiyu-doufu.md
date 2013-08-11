@@ -20,7 +20,7 @@ UUID: 201212312327
 
 ###鲫鱼豆腐汤
 <a href="{{site.static_url}}/assets/images/chihuo/recipe/jiyudoufutang.jpg" alt="鲫鱼豆腐汤" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.static_url}}/assets/images/chihuo/recipe/jiyudoufutang.jpg" width="330px"  alt="鲫鱼豆腐汤" class="img-center"></img>
+<img src="{{site.static_url}}/assets/images/chihuo/recipe/jiyudoufutang.jpg" width="480px"  alt="鲫鱼豆腐汤" class="img-center"></img>
 </a>
 
 
@@ -29,7 +29,7 @@ UUID: 201212312327
 鲫鱼，豆腐
 
 <a href="{{site.static_url}}/assets/images/chihuo/recipe/image.jpg" alt="鲫鱼" rel="prettyPhoto[{{page.UUID}}]">
-<img src="/assets/images/chihuo/recipe/image.jpg"  alt="鲫鱼" class="img-center"></img>
+<img src="{{site.static_url}}/assets/images/chihuo/recipe/image.jpg" width="480px" alt="鲫鱼" class="img-center"></img>
 </a>
 
 ###调料

@@ -22,7 +22,7 @@ UUID: 201301022327
 　　羊肉性温热，这就是说，它会促进人体的能量释放，让人有发热的感觉。如果身体本身怕冷，手脚冰凉，气力不足，吃这个自然是恰到好处；如果身体本来就发热，怕热不怕冷，精力旺盛不知疲倦，那就没必要多吃羊肉了。
 
 <a href="{{site.static_url}}/assets/images/chihuo/health/huoguo.jpg" alt="火锅,羊肉火锅" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.static_url}}/assets/images/chihuo/health/huoguo.jpg"  alt="火锅,羊肉火锅" class="img-center"></img>
+<img src="{{site.static_url}}/assets/images/chihuo/health/huoguo.jpg" width="480px"  alt="火锅,羊肉火锅" class="img-center"></img>
 </a>
 
 ###如何选锅底
@@ -37,7 +37,7 @@ UUID: 201301022327
 吃火锅时，多配合新鲜蔬菜，可以减少亚硝酸盐合成亚硝胺类致癌物的危险。过多的蛋白质会增强致癌物的作用。蔬菜不宜久煮，最好能早一点放入汤中，而不是等汤里亚硝酸盐含量已经很高的时候。
 
 <a href="{{site.static_url}}/assets/images/chihuo/health/huoguo-peicai.jpg" alt="火锅配菜" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.static_url}}/assets/images/chihuo/health/huoguo-peicai.jpg" width="330px" alt="火锅配菜" class="img-center"></img>
+<img src="{{site.static_url}}/assets/images/chihuo/health/huoguo-peicai.jpg" width="480px" alt="火锅配菜" class="img-center"></img>
 </a>
 
 ###健康饮料

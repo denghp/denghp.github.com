@@ -20,14 +20,14 @@ UUID: 20121231527
 
 ###东安子鸡
 <a href="{{site.static_url}}/assets/images/chihuo/recipe/donganziji.jpg" alt="东安子鸡" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.static_url}}/assets/images/chihuo/recipe/donganziji.jpg" width="330px"  alt="东安子鸡" class="img-center"></img>
+<img src="{{site.static_url}}/assets/images/chihuo/recipe/donganziji.jpg" width="480px"  alt="东安子鸡" class="img-center"></img>
 </a>
 
 ###主材料
 嫩母鸡
 
 <a href="{{site.static_url}}/assets/images/chihuo/recipe/m_201107240021181.jpg" alt="主材料-东安子鸡" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.static_url}}/assets/images/chihuo/recipe/m_201107240021181.jpg"  alt="东安子鸡" class="img-center"></img>
+<img src="{{site.static_url}}/assets/images/chihuo/recipe/m_201107240021181.jpg" width="480px" alt="东安子鸡" class="img-center"></img>
 </a>
 
 ###调料
