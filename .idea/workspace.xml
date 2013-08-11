@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a3e6386-848c-4817-ad59-2f21717650fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/post.html" afterPath="$PROJECT_DIR$/_layouts/post.html" />
-    </list>
+    <list default="true" id="1a3e6386-848c-4817-ad59-2f21717650fe" name="Default" comment="" />
     <ignored path="denghp.github.com.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376180512019" ignored="false" />
@@ -175,10 +171,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2013-08-12-mudanhua.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="2013-08-12-mudanhua.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/life/photo/2013-08-12-mudanhua.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="16" selection-start="103" selection-end="108" vertical-scroll-proportion="0.0">
+            <state line="20" column="104" selection-start="411" selection-end="443" vertical-scroll-proportion="0.6170599">
               <folding />
             </state>
           </provider>
@@ -202,10 +198,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="post.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="39" selection-start="3019" selection-end="3027" vertical-scroll-proportion="0.5504762">
+            <state line="61" column="39" selection-start="3019" selection-end="3027" vertical-scroll-proportion="-11.115385">
               <folding>
                 <element signature="tag#div#3;tag#article#0;tag#div#0;tag#div#0;tag#div#0;tag#section#0" expanded="false" />
                 <element signature="tag#script#1;tag#article#0;tag#div#0;tag#div#0;tag#div#0;tag#section#0" expanded="false" />
@@ -661,13 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/life/photo/2013-08-12-mudanhua.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="16" selection-start="103" selection-end="108" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chihuo/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="73" column="53" selection-start="3909" selection-end="3909" vertical-scroll-proportion="-16.346153">
@@ -698,11 +687,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="39" selection-start="3019" selection-end="3027" vertical-scroll-proportion="0.5504762">
+        <state line="61" column="39" selection-start="3019" selection-end="3027" vertical-scroll-proportion="-11.115385">
           <folding>
             <element signature="tag#div#3;tag#article#0;tag#div#0;tag#div#0;tag#div#0;tag#section#0" expanded="false" />
             <element signature="tag#script#1;tag#article#0;tag#div#0;tag#div#0;tag#div#0;tag#section#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/life/photo/2013-08-12-mudanhua.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="104" selection-start="411" selection-end="443" vertical-scroll-proportion="0.6170599">
+          <folding />
         </state>
       </provider>
     </entry>
