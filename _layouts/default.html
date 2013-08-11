@@ -70,11 +70,8 @@
 
 
 </head>
-{% if page.url != '/' and page.url != '/index.html' and page.url != '/404.html' and page.url != '/life' and page.url != '/life/index.html'  %}
-<body onload="removeElement()">
-{% else %}
+
 <body>
-{% endif %}
 
 {% include header.html %}
 
@@ -97,12 +94,14 @@
         (document.getElementsByTagName('head')[0]
                 || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
+    /**
     function removeElement() {
         var topList = document.getElementById("ds-top-threads");
         console.log("topList : " + topList.childNodes);
         topList.removeChild(topList.childNodes[0]);
         console.log("remove topList.childNodes[0] OK");
     }
+    **/
 </script>
 {% endif %}
 </body>

@@ -2,114 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a3e6386-848c-4817-ad59-2f21717650fe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chihuo/index-dy.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json/tags.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demi-panda.iml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/java/2008-09-23-java-annotation.md" afterPath="$PROJECT_DIR$/_posts/java/2008-09-23-java-annotation.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/python/2009-04-27-a-python-program.md" afterPath="$PROJECT_DIR$/_posts/python/2009-04-27-a-python-program.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/java/2010-03-11-java-ascii.md" afterPath="$PROJECT_DIR$/_posts/java/2010-03-11-java-ascii.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/java/2010-04-05-java-site.md" afterPath="$PROJECT_DIR$/_posts/java/2010-04-05-java-site.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/git/2010-06-05-git-internals.md" afterPath="$PROJECT_DIR$/_posts/git/2010-06-05-git-internals.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/2010-07-31-advanced-linux-notes.md" afterPath="$PROJECT_DIR$/_posts/linux/2010-07-31-advanced-linux-notes.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/2011-01-13-check-memory-with-cron-job.md" afterPath="$PROJECT_DIR$/_posts/linux/2011-01-13-check-memory-with-cron-job.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/hadoop/2011-05-06-hadoop-datanode.md" afterPath="$PROJECT_DIR$/_posts/hadoop/2011-05-06-hadoop-datanode.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/jenkins/2011-06-14-jenkins-ci-used-for-mac-app-dev.md" afterPath="$PROJECT_DIR$/_posts/jenkins/2011-06-14-jenkins-ci-used-for-mac-app-dev.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/2012-10-30-install-jekyll.md" afterPath="$PROJECT_DIR$/_posts/linux/2012-10-30-install-jekyll.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/jekyll/2012-11-09-github-pages-domain-2.md" afterPath="$PROJECT_DIR$/_posts/jekyll/2012-11-09-github-pages-domain-2.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/jekyll/2012-11-09-github-pages-domain-3.md" afterPath="$PROJECT_DIR$/_posts/jekyll/2012-11-09-github-pages-domain-3.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/jekyll/2012-11-09-github-pages-domain.md" afterPath="$PROJECT_DIR$/_posts/jekyll/2012-11-09-github-pages-domain.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/subversion/2012-11-12-first-subversion.md" afterPath="$PROJECT_DIR$/_posts/subversion/2012-11-12-first-subversion.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/2012-11-12-using-ssh-for-passwordless-remote-login.md" afterPath="$PROJECT_DIR$/_posts/linux/2012-11-12-using-ssh-for-passwordless-remote-login.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2012-11-13-life-hope.md" afterPath="$PROJECT_DIR$/_posts/life/2012-11-13-life-hope.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/subversion/2012-11-13-version-revert.md" afterPath="$PROJECT_DIR$/_posts/subversion/2012-11-13-version-revert.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/git/2012-11-14-github-generating-ssh-keys.md" afterPath="$PROJECT_DIR$/_posts/git/2012-11-14-github-generating-ssh-keys.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/2012-11-15-linux-user-manager.md" afterPath="$PROJECT_DIR$/_posts/linux/2012-11-15-linux-user-manager.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/2012-11-16-linux-ulimit.md" afterPath="$PROJECT_DIR$/_posts/linux/2012-11-16-linux-ulimit.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/2012-11-18-easybcd-win7-ubuntu.md" afterPath="$PROJECT_DIR$/_posts/linux/2012-11-18-easybcd-win7-ubuntu.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/jenkins/2012-11-19-jenkins-PermGen-Space.md" afterPath="$PROJECT_DIR$/_posts/jenkins/2012-11-19-jenkins-PermGen-Space.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/2012-11-20-ubunut-virtualbox.md" afterPath="$PROJECT_DIR$/_posts/linux/2012-11-20-ubunut-virtualbox.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/www/2012-11-21-http-status.md" afterPath="$PROJECT_DIR$/_posts/www/2012-11-21-http-status.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/2012-11-21-ssh-remote.md" afterPath="$PROJECT_DIR$/_posts/linux/2012-11-21-ssh-remote.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/subversion/2012-11-22-version-manager.md" afterPath="$PROJECT_DIR$/_posts/subversion/2012-11-22-version-manager.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/git/2012-11-27-git-command.md" afterPath="$PROJECT_DIR$/_posts/git/2012-11-27-git-command.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/google/2012-11-29-google-redirect.md" afterPath="$PROJECT_DIR$/_posts/google/2012-11-29-google-redirect.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/solr/2012-11-29-solr-cache.md" afterPath="$PROJECT_DIR$/_posts/solr/2012-11-29-solr-cache.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/solr/2012-11-29-solr-dismax.md" afterPath="$PROJECT_DIR$/_posts/solr/2012-11-29-solr-dismax.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/2012-11-30-centos-make-command.md" afterPath="$PROJECT_DIR$/_posts/linux/2012-11-30-centos-make-command.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/java/2012-11-30-jvm-jconsole.md" afterPath="$PROJECT_DIR$/_posts/java/2012-11-30-jvm-jconsole.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/google/2012-11-30-seo.md" afterPath="$PROJECT_DIR$/_posts/google/2012-11-30-seo.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/www/2012-11-30-web-nginx.md" afterPath="$PROJECT_DIR$/_posts/www/2012-11-30-web-nginx.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/2012-12-01-linux-wget.md" afterPath="$PROJECT_DIR$/_posts/linux/2012-12-01-linux-wget.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/www/2012-12-01-piwik.md" afterPath="$PROJECT_DIR$/_posts/www/2012-12-01-piwik.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/www/2012-12-01-web-haproxy.md" afterPath="$PROJECT_DIR$/_posts/www/2012-12-01-web-haproxy.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/java/2012-12-02-keep-alive.md" afterPath="$PROJECT_DIR$/_posts/java/2012-12-02-keep-alive.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/2012-12-04-html-escape-sequence.md" afterPath="$PROJECT_DIR$/_posts/linux/2012-12-04-html-escape-sequence.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2012-12-04-lvtu.md" afterPath="$PROJECT_DIR$/_posts/life/2012-12-04-lvtu.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2012-12-04-north-drift-life.md" afterPath="$PROJECT_DIR$/_posts/life/2012-12-04-north-drift-life.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2012-12-06-movie-download.md" afterPath="$PROJECT_DIR$/_posts/life/2012-12-06-movie-download.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/www/2012-12-06-steve-job.md" afterPath="$PROJECT_DIR$/_posts/www/2012-12-06-steve-job.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/jenkins/2012-12-10-jenkins-usage.md" afterPath="$PROJECT_DIR$/_posts/jenkins/2012-12-10-jenkins-usage.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/java/2012-12-11-linux-jdk-install.md" afterPath="$PROJECT_DIR$/_posts/java/2012-12-11-linux-jdk-install.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/www/2012-12-11-silicon-valleys-dirty-secret-age-bias.md" afterPath="$PROJECT_DIR$/_posts/www/2012-12-11-silicon-valleys-dirty-secret-age-bias.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/www/2012-12-23-bootstrap.md" afterPath="$PROJECT_DIR$/_posts/www/2012-12-23-bootstrap.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2012-12-23-weizhuang-me.md" afterPath="$PROJECT_DIR$/_posts/life/2012-12-23-weizhuang-me.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/vim/2012-12-25-linux-commons-edit.md" afterPath="$PROJECT_DIR$/_posts/vim/2012-12-25-linux-commons-edit.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/2012-12-27-TCP-status.md" afterPath="$PROJECT_DIR$/_posts/linux/2012-12-27-TCP-status.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/2012-12-27-ganglia-install.md" afterPath="$PROJECT_DIR$/_posts/linux/2012-12-27-ganglia-install.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/2012-12-27-socket-time-wait.md" afterPath="$PROJECT_DIR$/_posts/linux/2012-12-27-socket-time-wait.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/jekyll/2012-12-29-building-sites-with-jekyll.md" afterPath="$PROJECT_DIR$/_posts/jekyll/2012-12-29-building-sites-with-jekyll.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-02-ubuntu-networking-configuration.md" afterPath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-02-ubuntu-networking-configuration.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/java/2013-01-08-how-to-use-a-csv-file-from-json-with-jmeter.md" afterPath="$PROJECT_DIR$/_posts/java/2013-01-08-how-to-use-a-csv-file-from-json-with-jmeter.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/2013-01-09-apache-utils-ab.md" afterPath="$PROJECT_DIR$/_posts/linux/2013-01-09-apache-utils-ab.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-11-use-4g-memery-in-ubuntu-32bit.md" afterPath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-11-use-4g-memery-in-ubuntu-32bit.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-12-how-to-recover-password-under-ubuntu.md" afterPath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-12-how-to-recover-password-under-ubuntu.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-12-linux-encoding-convert.md" afterPath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-12-linux-encoding-convert.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2013-01-13-air-pollution-programs-do-you-know.md" afterPath="$PROJECT_DIR$/_posts/life/2013-01-13-air-pollution-programs-do-you-know.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/2013-01-16-shell-monitor.md" afterPath="$PROJECT_DIR$/_posts/linux/2013-01-16-shell-monitor.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-17-linux-update-terminal-suggest.md" afterPath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-17-linux-update-terminal-suggest.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-17-ubuntu-root-authority.md" afterPath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-17-ubuntu-root-authority.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/java/2013-01-21-http-request.md" afterPath="$PROJECT_DIR$/_posts/java/2013-01-21-http-request.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/git/2013-01-22-github-shield.md" afterPath="$PROJECT_DIR$/_posts/git/2013-01-22-github-shield.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/google/2013-01-23-google-hosts.md" afterPath="$PROJECT_DIR$/_posts/google/2013-01-23-google-hosts.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/java/2013-01-23-htmlcleaner-xpath-html.md" afterPath="$PROJECT_DIR$/_posts/java/2013-01-23-htmlcleaner-xpath-html.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/git/2013-01-24-github-via-dns.md" afterPath="$PROJECT_DIR$/_posts/git/2013-01-24-github-via-dns.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/java/2013-01-25-java-parse-javascript.md" afterPath="$PROJECT_DIR$/_posts/java/2013-01-25-java-parse-javascript.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-27-download-monitor.md" afterPath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-27-download-monitor.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-27-image-to-text-converter-for-ubuntu-mint.md" afterPath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-27-image-to-text-converter-for-ubuntu-mint.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-27-postman-a-simple-image-uploading-application-for-ubuntu-linux-mint.md" afterPath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-27-postman-a-simple-image-uploading-application-for-ubuntu-linux-mint.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/www/2013-01-28-2012-firefox-top10-add-ons.md" afterPath="$PROJECT_DIR$/_posts/www/2013-01-28-2012-firefox-top10-add-ons.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-28-ubunut-setup-vpn-connection.md" afterPath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-28-ubunut-setup-vpn-connection.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-29-programming-ides-for-ubuntu.md" afterPath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-29-programming-ides-for-ubuntu.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/java/2013-01-31-finagle-rpc.md" afterPath="$PROJECT_DIR$/_posts/java/2013-01-31-finagle-rpc.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/java/2013-02-01-free-sql-server-monitoring-tool.md" afterPath="$PROJECT_DIR$/_posts/java/2013-02-01-free-sql-server-monitoring-tool.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-02-24-linux-find-software-path-command.md" afterPath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-02-24-linux-find-software-path-command.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-02-24-linux-update-date.md" afterPath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-02-24-linux-update-date.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/nodejs/2013-02-27-nodejs-install.md" afterPath="$PROJECT_DIR$/_posts/nodejs/2013-02-27-nodejs-install.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/books/2013-03-12-free-ubuntu-books.md" afterPath="$PROJECT_DIR$/_posts/books/2013-03-12-free-ubuntu-books.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-03-20-liferea-rss-reader-for-ubuntu-users.md" afterPath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-03-20-liferea-rss-reader-for-ubuntu-users.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-04-09-ubuntu-automatically-system.md" afterPath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-04-09-ubuntu-automatically-system.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/mongodb/2013-04-16-mongodb-command.md" afterPath="$PROJECT_DIR$/_posts/mongodb/2013-04-16-mongodb-command.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-04-24-how-to-create-a-sudo-user-in-linux.md" afterPath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-04-24-how-to-create-a-sudo-user-in-linux.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/hadoop/2013-04-29-hadoop-deploy.md" afterPath="$PROJECT_DIR$/_posts/hadoop/2013-04-29-hadoop-deploy.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/java/2013-06-28-java-exec-linux-command.md" afterPath="$PROJECT_DIR$/_posts/java/2013-06-28-java-exec-linux-command.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-07-24-install-wine-on-ubuntu-and-linux-mint.md" afterPath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-07-24-install-wine-on-ubuntu-and-linux-mint.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/idea/2013-07-29-tools-jar-is-not-in-idea-classpath.md" afterPath="$PROJECT_DIR$/_posts/idea/2013-07-29-tools-jar-is-not-in-idea-classpath.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/404.html" afterPath="$PROJECT_DIR$/404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/aside.html" afterPath="$PROJECT_DIR$/_includes/aside.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/content-work.html" afterPath="$PROJECT_DIR$/_includes/content-work.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/header.html" afterPath="$PROJECT_DIR$/_includes/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archives/index-backup.html" afterPath="$PROJECT_DIR$/archives/index-backup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archives/index.html" afterPath="$PROJECT_DIR$/archives/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chihuo/index.html" afterPath="$PROJECT_DIR$/chihuo/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/index.html" afterPath="$PROJECT_DIR$/code/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/special/index.html" afterPath="$PROJECT_DIR$/special/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/index.html" afterPath="$PROJECT_DIR$/tags/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/category/java.html" afterPath="$PROJECT_DIR$/category/java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/category/linux.html" afterPath="$PROJECT_DIR$/category/linux.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/post.html" afterPath="$PROJECT_DIR$/_layouts/post.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/category/search.html" afterPath="$PROJECT_DIR$/category/search.html" />
     </list>
     <ignored path="denghp.github.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -266,7 +159,17 @@
     <favorites_list name="denghp.github.com" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="default.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="97" column="26" selection-start="5559" selection-end="5572" vertical-scroll-proportion="0.47454545">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -284,7 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/json/tags.json" />
         <option value="$PROJECT_DIR$/special/index.html" />
         <option value="$PROJECT_DIR$/_site/assets/js/custom-paginator.js" />
         <option value="$PROJECT_DIR$/code/index.html" />
@@ -300,6 +202,7 @@
         <option value="$PROJECT_DIR$/tags/index.html" />
         <option value="$PROJECT_DIR$/_posts/java/2013-06-28-java-exec-linux-command.md" />
         <option value="$PROJECT_DIR$/_posts/linux/ubuntu/2013-07-24-install-wine-on-ubuntu-and-linux-mint.md" />
+        <option value="$PROJECT_DIR$/_layouts/default.html" />
       </list>
     </option>
   </component>
@@ -408,47 +311,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_posts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_posts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="linux" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_posts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="linux" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ubuntu" />
+              <option name="myItemId" value="_layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -593,7 +456,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-4" width="1303" height="773" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -613,7 +476,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24940048" sideWeight="0.6704362" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24940048" sideWeight="0.6704362" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -768,13 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/custom-paginator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="226" column="18" selection-start="8480" selection-end="8489" vertical-scroll-proportion="0.6753472">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/java/2013-06-28-java-exec-linux-command.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="3" selection-start="100" selection-end="100" vertical-scroll-proportion="0.15070923">
@@ -792,6 +648,13 @@
     <entry file="file://$PROJECT_DIR$/_posts/linux/ubuntu/2013-07-24-install-wine-on-ubuntu-and-linux-mint.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="3" selection-start="181" selection-end="181" vertical-scroll-proportion="0.24682395">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="26" selection-start="5559" selection-end="5572" vertical-scroll-proportion="0.47454545">
           <folding />
         </state>
       </provider>
