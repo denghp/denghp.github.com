@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a3e6386-848c-4817-ad59-2f21717650fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/content-work.html" afterPath="$PROJECT_DIR$/_includes/content-work.html" />
     </list>
     <ignored path="denghp.github.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,7 +98,7 @@
     <file path="/default.html" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376216136968" ignored="false" />
     <file path="/_config.yml" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376207682027" ignored="false" />
     <file path="/aside.html" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376204533936" ignored="false" />
-    <file path="/content-work.html" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376204603580" ignored="false" />
+    <file path="/content-work.html" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376232456698" ignored="false" />
     <file path="/post.html" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376216507594" ignored="false" />
     <file path="/2013-01-02-dongtian-chihuoguo.md" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376209839497" ignored="false" />
     <file path="/2012-12-22-dongji-yangyan.md" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376210196861" ignored="false" />
@@ -167,10 +167,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="default.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+      <file leaf-file-name="content-work.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_includes/content-work.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="10" selection-start="5138" selection-end="5138" vertical-scroll-proportion="0.40462428">
+            <state line="123" column="81" selection-start="5029" selection-end="5029" vertical-scroll-proportion="1.8454707">
               <folding />
             </state>
           </provider>
@@ -194,7 +194,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/_posts/chihuo/health/2013-01-02-dongtian-chihuoguo.md" />
         <option value="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-23-donganziji.md" />
         <option value="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-24-xiangyukourou.md" />
         <option value="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-24-yongzhou-xueya.md" />
@@ -210,6 +209,7 @@
         <option value="$PROJECT_DIR$/_layouts/post.html" />
         <option value="$PROJECT_DIR$/assets/js/application.js" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
+        <option value="$PROJECT_DIR$/_includes/content-work.html" />
       </list>
     </option>
   </component>
@@ -276,7 +276,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_layouts" />
+              <option name="myItemId" value="_includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -426,7 +426,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32956383" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -512,13 +512,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-24-yongzhou-xueya.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="84" selection-start="743" selection-end="743" vertical-scroll-proportion="0.38368055">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/chihuo/recipe/2013-03-25-xiaochaorou.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="88" selection-start="550" selection-end="550" vertical-scroll-proportion="-1.7447916">
@@ -625,7 +618,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="10" selection-start="5138" selection-end="5138" vertical-scroll-proportion="0.40462428">
+        <state line="88" column="10" selection-start="5138" selection-end="5138" vertical-scroll-proportion="-0.11636364">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/content-work.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="81" selection-start="5029" selection-end="5029" vertical-scroll-proportion="1.8454707">
           <folding />
         </state>
       </provider>
