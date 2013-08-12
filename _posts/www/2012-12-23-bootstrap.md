@@ -13,7 +13,7 @@ UUID: 201212232332
 
  　　Bootstrap是快速开发Web应用程序的前端工具包。它是一个CSS和HTML的集合，它使用了最新的浏览器技术，给你的Web开发提供了时尚的版式，表单，buttons，表格，网格系统等等。
  
- <img alt="Bootstrap" src="{{site.static_url}}/assets/images/web/16115128_hu5O.jpg" style="width: 505px; height: 276px; " />
+ <img alt="Bootstrap" src="{{site.aliyun_oss}}/assets/images/web/16115128_hu5O.jpg" style="width: 505px; height: 276px; " />
 
 
 ###由匠人建，为匠人用
@@ -52,7 +52,7 @@ Twitter制造
 
 ###Bootstrap案例
 <a href="https://kippt.com/">
-<img alt="kippt" src="{{site.static_url}}/assets/images/web/kippt.png" style="width: 505px; height: 276px; " />
+<img alt="kippt" src="{{site.aliyun_oss}}/assets/images/web/kippt.png" style="width: 505px; height: 276px; " />
 </a>
 
 ###小贴士

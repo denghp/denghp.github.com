@@ -80,6 +80,7 @@ function getDuoShuoData(posts, currentKeys, currentPage, countPerPage) {
             console.log("duoshuo数据获取完成...");
             var content = pageselectCallback(posts, duoshuo, currentPage, countPerPage);
             $('#content').html(content);
+            $("html, body").animate({ scrollTop: 0 }, 1000);
             console.log("初始化第" + currentPage + "页数据 OK...");
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {

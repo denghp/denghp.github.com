@@ -14,61 +14,64 @@
     <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.meta.site_title }}</title>
     <!-- styles -->
-    <link href="{{site.static_url}}/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="{{site.static_url}}/assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="{{site.static_url}}/assets/css/docs.css" rel="stylesheet">
-    <link href="{{site.static_url}}/assets/css/prettyPhoto-3.1.5.css" rel="stylesheet">
-    <link href="{{site.static_url}}/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
-    <link href="{{site.static_url}}/assets/css/flexslider.css" rel="stylesheet">
+    <link href="{{site.base_url}}/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="{{site.base_url}}/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="{{site.base_url}}/assets/css/docs.css" rel="stylesheet">
+    <link href="{{site.base_url}}/assets/css/prettyPhoto-3.1.5.css" rel="stylesheet">
+    <link href="{{site.base_url}}/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="{{site.base_url}}/assets/css/flexslider.css" rel="stylesheet">
     <!--
-    <link href="{{site.static_url}}/assets/css/sequence.css" rel="stylesheet">
+    <link href="{{site.base_url}}/assets/css/sequence.css" rel="stylesheet">
     -->
-    <link href="{{site.static_url}}/assets/css/style.css" rel="stylesheet">
-    <link href="{{site.static_url}}/assets/color/default.css" rel="stylesheet">
+    <link href="{{site.base_url}}/assets/css/style.css" rel="stylesheet">
+    <link href="{{site.base_url}}/assets/color/default.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script src="{{site.static_url}}/assets/js/jquery-1.8.2.min.js"></script>
-    <script src="{{site.static_url}}/assets/js/jquery.easing.1.3.js"></script>
-    <script src="{{site.static_url}}/assets/js/google-code-prettify/prettify.js"></script>
-    <script src="{{site.static_url}}/assets/js/modernizr.js"></script>
-    <script src="{{site.static_url}}/assets/js/bootstrap.js"></script>
-    <script src="{{site.static_url}}/assets/js/jquery.elastislide.js"></script>
-    <script src="{{site.static_url}}/assets/js/jquery.tweet.js"></script>
-    <script src="{{site.static_url}}/assets/js/jquery.prettyPhoto-3.1.5.js"></script>
-    <script src="{{site.static_url}}/assets/js/application.js"></script>
-    <script src="{{site.static_url}}/assets/js/jquery.flexslider.js"></script>
+    <!--[if IE 7]>
+    <link href="{{site.base_url}}/assets/css/font-awesome-ie7.min.css" rel="stylesheet">
+    <![endif]-->
+    <script src="{{site.aliyun_oss}}/assets/js/jquery-1.8.2.min.js"></script>
+    <script src="{{site.aliyun_oss}}/assets/js/jquery.easing.1.3.js"></script>
+    <script src="{{site.aliyun_oss}}/assets/js/google-code-prettify/prettify.js"></script>
+    <script src="{{site.aliyun_oss}}/assets/js/modernizr.js"></script>
+    <script src="{{site.aliyun_oss}}/assets/js/bootstrap.js"></script>
+    <script src="{{site.aliyun_oss}}/assets/js/jquery.elastislide.js"></script>
+    <script src="{{site.aliyun_oss}}/assets/js/jquery.tweet.js"></script>
+    <script src="{{site.aliyun_oss}}/assets/js/jquery.prettyPhoto-3.1.5.js"></script>
+    <script src="{{site.aliyun_oss}}/assets/js/application.js"></script>
+    <script src="{{site.aliyun_oss}}/assets/js/jquery.flexslider.js"></script>
     <!--
-    <script src="{{site.static_url}}/assets/js/sequence/sequence.jquery-min.js"></script>
-    <script src="{{site.static_url}}/assets/js/sequence/setting.js"></script>
+    <script src="{{site.aliyun_oss}}/assets/js/sequence/sequence.jquery-min.js"></script>
+    <script src="{{site.aliyun_oss}}/assets/js/sequence/setting.js"></script>
     -->
     {% if page.url == '/archives/index.html' or page.url == '/archives' or page.url == '/code/index.html' or page.url == '/code'  %}
-    <script src="{{site.static_url}}/assets/js/bootstrap-paginator.min.js"></script>
-    <script src="{{site.static_url}}/assets/js/custom-paginator.js"></script>
+    <script src="{{site.aliyun_oss}}/assets/js/bootstrap-paginator.min.js"></script>
+    <script src="{{site.aliyun_oss}}/assets/js/custom-paginator.js"></script>
     {% endif %}
     {% if page.url == '/chihuo/index.html' or page.url == '/chihuo' or page.url == '/special/index.html' or page.url == '/special'%}
-    <script src="{{site.static_url}}/assets/js/bootstrap-paginator.min.js"></script>
-    <script src="{{site.static_url}}/assets/js/custom-paginator.js"></script>
+    <script src="{{site.aliyun_oss}}/assets/js/bootstrap-paginator.min.js"></script>
+    <script src="{{site.aliyun_oss}}/assets/js/custom-paginator.js"></script>
     {% endif %}
     {% if page.url == '/category/java.html' or page.url == '/category/linux.html' or page.url == '/tags/index.html' or page.url == '/tags' or page.url == '/category/search.html'%}
-    <script src="{{site.static_url}}/assets/js/bootstrap-paginator.min.js"></script>
-    <script src="{{site.static_url}}/assets/js/custom-paginator.js"></script>
+    <script src="{{site.aliyun_oss}}/assets/js/bootstrap-paginator.min.js"></script>
+    <script src="{{site.aliyun_oss}}/assets/js/custom-paginator.js"></script>
     {% endif %}
     <!-- Portfolio -->
-    <script src="{{site.static_url}}/assets/js/portfolio/jquery.quicksand.js"></script>
-    <script src="{{site.static_url}}/assets/js/portfolio/setting.js"></script>
+    <script src="{{site.aliyun_oss}}/assets/js/portfolio/jquery.quicksand.js"></script>
+    <script src="{{site.aliyun_oss}}/assets/js/portfolio/setting.js"></script>
     <!-- Portfolio hover -->
-    <script src="{{site.static_url}}/assets/js/hover/jquery-hover-effect.js"></script>
-    <script src="{{site.static_url}}/assets/js/hover/setting.js"></script>
-    <script src="{{site.static_url}}/assets/js/custom.js"></script>
+    <script src="{{site.aliyun_oss}}/assets/js/hover/jquery-hover-effect.js"></script>
+    <script src="{{site.aliyun_oss}}/assets/js/hover/setting.js"></script>
+    <script src="{{site.aliyun_oss}}/assets/js/custom.js"></script>
     <!--
     {% if page.url != '/' and page.url != '/index.html' and page.url != '/404.html' and page.url != '/life' and page.url != '/life/index.html' and page.url != '/about.html' %}
-    <script src="{{site.static_url}}/assets/js/custom_duoshuo.js"></script>
+    <script src="{{site.aliyun_oss}}/assets/js/custom_duoshuo.js"></script>
     {% endif %}
     -->
     <!-- fav and touch icons  -->
-    <link rel="shortcut icon" href="{{site.static_url}}/assets/img/favicon.ico">
+    <link rel="shortcut icon" href="{{site.aliyun_oss}}/assets/img/favicon.ico">
 
 
 </head>

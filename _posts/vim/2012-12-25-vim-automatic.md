@@ -59,10 +59,10 @@ autocmd Filetype java setlocal omnifunc=javacomplete#Complete
 </pre>
 
 ###修改vim配置
-<img src="{{site.static_url}}/assets/images/linux/vim-javacomplete.jpg" width="480px" alt="vim" class="img-center"></img>
+<img src="{{site.aliyun_oss}}/assets/images/linux/vim-javacomplete.jpg" width="480px" alt="vim" class="img-center"></img>
 
 最终效果如图如下：<br>
-<img src="{{site.static_url}}/assets/images/linux/vim-javacomplete-2.jpg" width="480px" alt="vim" class="img-center"></img>
+<img src="{{site.aliyun_oss}}/assets/images/linux/vim-javacomplete-2.jpg" width="480px" alt="vim" class="img-center"></img>
 
 ###小贴士
 <ol>

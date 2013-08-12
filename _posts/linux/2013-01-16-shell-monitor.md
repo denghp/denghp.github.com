@@ -103,4 +103,4 @@ PID USER PR  NI  VIRT RES  SHR S %CPU %MEM TIME+
 
 ###生成报告
 这里需要人工手动复制数据到excel中生成图表，呵呵
-<img src="{{site.static_url}}/assets/images/linux/mytop.jpg" width="560px"  alt="mytop" ></img>
+<img src="{{site.aliyun_oss}}/assets/images/linux/mytop.jpg" width="560px"  alt="mytop" ></img>

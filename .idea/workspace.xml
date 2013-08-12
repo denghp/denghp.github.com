@@ -2,7 +2,126 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a3e6386-848c-4817-ad59-2f21717650fe" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2012-05-06-taishan.md" afterPath="$PROJECT_DIR$/_posts/life/2012-05-06-taishan.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2012-11-04-first-post.md" afterPath="$PROJECT_DIR$/_posts/life/2012-11-04-first-post.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2012-11-13-life-hope.md" afterPath="$PROJECT_DIR$/_posts/life/2012-11-13-life-hope.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/git/2012-11-14-github-generating-ssh-keys.md" afterPath="$PROJECT_DIR$/_posts/git/2012-11-14-github-generating-ssh-keys.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/2012-11-18-easybcd-win7-ubuntu.md" afterPath="$PROJECT_DIR$/_posts/linux/2012-11-18-easybcd-win7-ubuntu.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/2012-11-22-bash-profile.md" afterPath="$PROJECT_DIR$/_posts/linux/2012-11-22-bash-profile.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2012-11-26-dongan-shunhuangyan.md" afterPath="$PROJECT_DIR$/_posts/life/2012-11-26-dongan-shunhuangyan.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/subversion/2012-11-26-subversion-merge.md" afterPath="$PROJECT_DIR$/_posts/subversion/2012-11-26-subversion-merge.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2012-11-26-yueyangloug.md" afterPath="$PROJECT_DIR$/_posts/life/2012-11-26-yueyangloug.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/git/2012-11-27-git-command.md" afterPath="$PROJECT_DIR$/_posts/git/2012-11-27-git-command.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/google/2012-11-29-google-redirect.md" afterPath="$PROJECT_DIR$/_posts/google/2012-11-29-google-redirect.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/java/2012-11-30-jvm-jconsole.md" afterPath="$PROJECT_DIR$/_posts/java/2012-11-30-jvm-jconsole.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/google/2012-11-30-seo.md" afterPath="$PROJECT_DIR$/_posts/google/2012-11-30-seo.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/www/2012-12-01-jquery-lazyload.md" afterPath="$PROJECT_DIR$/_posts/www/2012-12-01-jquery-lazyload.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/www/2012-12-01-web-haproxy.md" afterPath="$PROJECT_DIR$/_posts/www/2012-12-01-web-haproxy.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/java/2012-12-02-keep-alive.md" afterPath="$PROJECT_DIR$/_posts/java/2012-12-02-keep-alive.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/www/2012-12-03-Founder-Quotient.md" afterPath="$PROJECT_DIR$/_posts/www/2012-12-03-Founder-Quotient.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2012-12-04-lvtu.md" afterPath="$PROJECT_DIR$/_posts/life/2012-12-04-lvtu.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2012-12-04-north-drift-life.md" afterPath="$PROJECT_DIR$/_posts/life/2012-12-04-north-drift-life.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/www/2012-12-06-steve-job.md" afterPath="$PROJECT_DIR$/_posts/www/2012-12-06-steve-job.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2012-12-06-xiaoqiang-and-xiaoming.md" afterPath="$PROJECT_DIR$/_posts/life/2012-12-06-xiaoqiang-and-xiaoming.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2012-12-11-cabbage-products.md" afterPath="$PROJECT_DIR$/_posts/life/2012-12-11-cabbage-products.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/java/2012-12-11-linux-jdk-install.md" afterPath="$PROJECT_DIR$/_posts/java/2012-12-11-linux-jdk-install.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/www/2012-12-11-silicon-valleys-dirty-secret-age-bias.md" afterPath="$PROJECT_DIR$/_posts/www/2012-12-11-silicon-valleys-dirty-secret-age-bias.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2012-12-12-sun-dogs.md" afterPath="$PROJECT_DIR$/_posts/life/2012-12-12-sun-dogs.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/www/2012-12-17-google-top-hots.md" afterPath="$PROJECT_DIR$/_posts/www/2012-12-17-google-top-hots.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/www/2012-12-18-appstore-google-map.md" afterPath="$PROJECT_DIR$/_posts/www/2012-12-18-appstore-google-map.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/health/2012-12-19-Cervical-vertebra-disease.md" afterPath="$PROJECT_DIR$/_posts/life/health/2012-12-19-Cervical-vertebra-disease.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2012-12-21-shijiemori.md" afterPath="$PROJECT_DIR$/_posts/life/2012-12-21-shijiemori.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/chihuo/health/2012-12-22-dongji-yangyan.md" afterPath="$PROJECT_DIR$/_posts/chihuo/health/2012-12-22-dongji-yangyan.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-22-yangrou-dun-luobo.md" afterPath="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-22-yangrou-dun-luobo.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/www/2012-12-23-bootstrap.md" afterPath="$PROJECT_DIR$/_posts/www/2012-12-23-bootstrap.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-23-donganziji.md" afterPath="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-23-donganziji.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-23-jiyu-doufu.md" afterPath="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-23-jiyu-doufu.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-24-xiangyukourou.md" afterPath="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-24-xiangyukourou.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-24-yongzhou-xueya.md" afterPath="$PROJECT_DIR$/_posts/chihuo/recipe/2012-12-24-yongzhou-xueya.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/vim/2012-12-25-linux-commons-edit.md" afterPath="$PROJECT_DIR$/_posts/vim/2012-12-25-linux-commons-edit.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/vim/2012-12-25-vim-automatic.md" afterPath="$PROJECT_DIR$/_posts/vim/2012-12-25-vim-automatic.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/vim/2012-12-26-vim-encoding.md" afterPath="$PROJECT_DIR$/_posts/vim/2012-12-26-vim-encoding.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/2012-12-27-TCP-status.md" afterPath="$PROJECT_DIR$/_posts/linux/2012-12-27-TCP-status.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/2012-12-27-ganglia-install.md" afterPath="$PROJECT_DIR$/_posts/linux/2012-12-27-ganglia-install.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/jekyll/2012-12-29-building-sites-with-jekyll.md" afterPath="$PROJECT_DIR$/_posts/jekyll/2012-12-29-building-sites-with-jekyll.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/www/2012-12-30-advanced-rest-client.md" afterPath="$PROJECT_DIR$/_posts/www/2012-12-30-advanced-rest-client.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/movie/2012-12-31-renzaijiongtu-taijiong.md" afterPath="$PROJECT_DIR$/_posts/life/movie/2012-12-31-renzaijiongtu-taijiong.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2013-01-01-12306-dingpiaozhushou.md" afterPath="$PROJECT_DIR$/_posts/life/2013-01-01-12306-dingpiaozhushou.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2013-01-01-summary.md" afterPath="$PROJECT_DIR$/_posts/life/2013-01-01-summary.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/photo/2013-01-02-Kitty-on-the-Ice.md" afterPath="$PROJECT_DIR$/_posts/life/photo/2013-01-02-Kitty-on-the-Ice.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/chihuo/health/2013-01-02-dongtian-chihuoguo.md" afterPath="$PROJECT_DIR$/_posts/chihuo/health/2013-01-02-dongtian-chihuoguo.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2013-01-03-create-A-Joyous-Wedding-To-Remember.md" afterPath="$PROJECT_DIR$/_posts/life/2013-01-03-create-A-Joyous-Wedding-To-Remember.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/java/2013-01-08-how-to-use-a-csv-file-from-json-with-jmeter.md" afterPath="$PROJECT_DIR$/_posts/java/2013-01-08-how-to-use-a-csv-file-from-json-with-jmeter.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/www/2013-01-08-json-format-online.md" afterPath="$PROJECT_DIR$/_posts/www/2013-01-08-json-format-online.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/2013-01-09-apache-utils-ab.md" afterPath="$PROJECT_DIR$/_posts/linux/2013-01-09-apache-utils-ab.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2013-01-13-air-pollution-programs-do-you-know.md" afterPath="$PROJECT_DIR$/_posts/life/2013-01-13-air-pollution-programs-do-you-know.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/photo/2013-01-13-kitty-collections.md" afterPath="$PROJECT_DIR$/_posts/life/photo/2013-01-13-kitty-collections.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/www/2013-01-14-userscript-on-various-browsers.md" afterPath="$PROJECT_DIR$/_posts/www/2013-01-14-userscript-on-various-browsers.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/2013-01-16-shell-monitor.md" afterPath="$PROJECT_DIR$/_posts/linux/2013-01-16-shell-monitor.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2013-01-20-glamour-man.md" afterPath="$PROJECT_DIR$/_posts/life/2013-01-20-glamour-man.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2013-01-20-glamour-woman.md" afterPath="$PROJECT_DIR$/_posts/life/2013-01-20-glamour-woman.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/java/2013-01-21-http-request.md" afterPath="$PROJECT_DIR$/_posts/java/2013-01-21-http-request.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/java/2013-01-21-http-response.md" afterPath="$PROJECT_DIR$/_posts/java/2013-01-21-http-response.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/git/2013-01-22-github-shield.md" afterPath="$PROJECT_DIR$/_posts/git/2013-01-22-github-shield.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/google/2013-01-23-google-hosts.md" afterPath="$PROJECT_DIR$/_posts/google/2013-01-23-google-hosts.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/java/2013-01-23-htmlcleaner-xpath-html.md" afterPath="$PROJECT_DIR$/_posts/java/2013-01-23-htmlcleaner-xpath-html.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/solr/2013-01-23-solr-release-4.1.0.md" afterPath="$PROJECT_DIR$/_posts/solr/2013-01-23-solr-release-4.1.0.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/git/2013-01-24-github-via-dns.md" afterPath="$PROJECT_DIR$/_posts/git/2013-01-24-github-via-dns.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/python/2013-01-25-python-shell-command.md" afterPath="$PROJECT_DIR$/_posts/python/2013-01-25-python-shell-command.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-27-download-monitor.md" afterPath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-27-download-monitor.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-27-postman-a-simple-image-uploading-application-for-ubuntu-linux-mint.md" afterPath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-27-postman-a-simple-image-uploading-application-for-ubuntu-linux-mint.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/www/2013-01-28-2012-firefox-top10-add-ons.md" afterPath="$PROJECT_DIR$/_posts/www/2013-01-28-2012-firefox-top10-add-ons.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-28-ubunut-setup-vpn-connection.md" afterPath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-28-ubunut-setup-vpn-connection.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-29-programming-ides-for-ubuntu.md" afterPath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-01-29-programming-ides-for-ubuntu.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/health/2013-01-30-top-8-sexy-ways-to-de-stress-during-the-holidays.md" afterPath="$PROJECT_DIR$/_posts/life/health/2013-01-30-top-8-sexy-ways-to-de-stress-during-the-holidays.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/java/2013-01-31-finagle-rpc.md" afterPath="$PROJECT_DIR$/_posts/java/2013-01-31-finagle-rpc.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/java/2013-02-01-free-sql-server-monitoring-tool.md" afterPath="$PROJECT_DIR$/_posts/java/2013-02-01-free-sql-server-monitoring-tool.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2013-02-01-my-site-seo.md" afterPath="$PROJECT_DIR$/_posts/life/2013-02-01-my-site-seo.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/solr/2013-02-13-solr-release-4.2.md" afterPath="$PROJECT_DIR$/_posts/solr/2013-02-13-solr-release-4.2.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/2013-02-19-wugongta.md" afterPath="$PROJECT_DIR$/_posts/life/2013-02-19-wugongta.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/books/2013-03-12-free-ubuntu-books.md" afterPath="$PROJECT_DIR$/_posts/books/2013-03-12-free-ubuntu-books.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/solr/2013-03-13-install-solr.md" afterPath="$PROJECT_DIR$/_posts/solr/2013-03-13-install-solr.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-03-20-liferea-rss-reader-for-ubuntu-users.md" afterPath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-03-20-liferea-rss-reader-for-ubuntu-users.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/chihuo/recipe/2013-03-25-xiaochaorou.md" afterPath="$PROJECT_DIR$/_posts/chihuo/recipe/2013-03-25-xiaochaorou.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/solr/2013-03-30-solr-cloud-install.md" afterPath="$PROJECT_DIR$/_posts/solr/2013-03-30-solr-cloud-install.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-04-09-ubuntu-automatically-system.md" afterPath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-04-09-ubuntu-automatically-system.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-04-24-how-to-create-a-sudo-user-in-linux.md" afterPath="$PROJECT_DIR$/_posts/linux/ubuntu/2013-04-24-how-to-create-a-sudo-user-in-linux.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/hadoop/2013-04-29-hadoop-deploy.md" afterPath="$PROJECT_DIR$/_posts/hadoop/2013-04-29-hadoop-deploy.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/redmine/2013-06-26-Redmine-CKEditor-plugin.md" afterPath="$PROJECT_DIR$/_posts/redmine/2013-06-26-Redmine-CKEditor-plugin.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/photo/2013-08-11-zhangshu.md" afterPath="$PROJECT_DIR$/_posts/life/photo/2013-08-11-zhangshu.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/life/photo/2013-08-12-mudanhua.md" afterPath="$PROJECT_DIR$/_posts/life/photo/2013-08-12-mudanhua.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/archives.json" afterPath="$PROJECT_DIR$/json/archives.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/aside.html" afterPath="$PROJECT_DIR$/_includes/aside.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/chihuo.json" afterPath="$PROJECT_DIR$/json/chihuo.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/code.json" afterPath="$PROJECT_DIR$/json/code.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/content-work.html" afterPath="$PROJECT_DIR$/_includes/content-work.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/custom-paginator.js" afterPath="$PROJECT_DIR$/assets/js/custom-paginator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/font-awesome.css" afterPath="$PROJECT_DIR$/assets/css/font-awesome.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/assets/css/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/group_index.html" afterPath="$PROJECT_DIR$/_layouts/group_index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/header.html" afterPath="$PROJECT_DIR$/_includes/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archives/index-backup.html" afterPath="$PROJECT_DIR$/archives/index-backup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archives/index.html" afterPath="$PROJECT_DIR$/archives/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chihuo/index.html" afterPath="$PROJECT_DIR$/chihuo/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/index.html" afterPath="$PROJECT_DIR$/code/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/life/index.html" afterPath="$PROJECT_DIR$/life/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/special/index.html" afterPath="$PROJECT_DIR$/special/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/intro.html" afterPath="$PROJECT_DIR$/_includes/intro.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/category/java.html" afterPath="$PROJECT_DIR$/category/java.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/java.json" afterPath="$PROJECT_DIR$/json/java.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/category/linux.html" afterPath="$PROJECT_DIR$/category/linux.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/linux.json" afterPath="$PROJECT_DIR$/json/linux.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/maincontent.html" afterPath="$PROJECT_DIR$/_includes/maincontent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/nav.html" afterPath="$PROJECT_DIR$/_includes/nav.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/post.html" afterPath="$PROJECT_DIR$/_layouts/post.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/category/search.html" afterPath="$PROJECT_DIR$/category/search.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/search.json" afterPath="$PROJECT_DIR$/json/search.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/special.json" afterPath="$PROJECT_DIR$/json/special.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/tags.json" afterPath="$PROJECT_DIR$/json/tags.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="denghp.github.com.iws" />
@@ -10,7 +129,7 @@
     <file path="/Dummy.txt" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376312085812" ignored="false" />
     <file path="/404.html" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376180700140" ignored="false" />
     <file path="/tags.json" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376199368900" ignored="false" />
-    <file path="/a.dummy" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376234842494" ignored="false" />
+    <file path="/a.dummy" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376316846537" ignored="false" />
     <file path="/2013-03-12-free-ubuntu-books.md" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376182338722" ignored="false" />
     <file path="/2010-06-05-git-internals.md" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376182372196" ignored="false" />
     <file path="/2012-11-14-github-generating-ssh-keys.md" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376182381170" ignored="false" />
@@ -96,10 +215,10 @@
     <file path="/2013-01-28-2012-firefox-top10-add-ons.md" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376183242393" ignored="false" />
     <file path="/custom-paginator.js" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376238594219" ignored="false" />
     <file path="/index.html" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376272732927" ignored="false" />
-    <file path="/default.html" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376216136968" ignored="false" />
-    <file path="/_config.yml" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376207682027" ignored="false" />
+    <file path="/default.html" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376317280280" ignored="false" />
+    <file path="/_config.yml" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376316044696" ignored="false" />
     <file path="/aside.html" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376234257186" ignored="false" />
-    <file path="/content-work.html" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376232456698" ignored="false" />
+    <file path="/content-work.html" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376316297319" ignored="false" />
     <file path="/post.html" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376216507594" ignored="false" />
     <file path="/2013-01-02-dongtian-chihuoguo.md" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376209839497" ignored="false" />
     <file path="/2012-12-22-dongji-yangyan.md" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376210196861" ignored="false" />
@@ -118,6 +237,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -171,37 +295,60 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_layouts/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="33" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
+            <state line="5" column="22" selection-start="81" selection-end="81" vertical-scroll-proportion="-3.2692308">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_config.yml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="default.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="34" selection-start="3197" selection-end="3197" vertical-scroll-proportion="0.54046243">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_config.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="45" selection-start="611" selection-end="611" vertical-scroll-proportion="0.5017361">
+            <state line="51" column="43" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="font-awesome.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/font-awesome.css">
+      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="36" column="46" selection-start="929" selection-end="929" vertical-scroll-proportion="-5.464286">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="font-awesome.min.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/font-awesome.min.css">
+      <file leaf-file-name="custom.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/custom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="28" column="8" selection-start="877" selection-end="996" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1376214090779" expanded="false" signature="2132:2157" placeholder="..." />
+                <marker date="1376214090779" expanded="false" signature="2483:2495" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom-paginator.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/custom-paginator.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="82" column="58" selection-start="2821" selection-end="2825" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -225,22 +372,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/chihuo/index-dy.html" />
-        <option value="$PROJECT_DIR$/archives/index-backup.html" />
-        <option value="$PROJECT_DIR$/_posts/life/photo/2013-08-11-zhangshu.md" />
-        <option value="$PROJECT_DIR$/_posts/life/photo/2013-08-12-mudanhua.md" />
-        <option value="$PROJECT_DIR$/_site/assets/js/custom-paginator.js" />
-        <option value="$PROJECT_DIR$/assets/js/custom-paginator.js" />
-        <option value="$PROJECT_DIR$/tags/index.html" />
-        <option value="$PROJECT_DIR$/archives/index.html" />
-        <option value="$PROJECT_DIR$/category/java.html" />
         <option value="$PROJECT_DIR$/category/linux.html" />
         <option value="$PROJECT_DIR$/category/search.html" />
         <option value="$PROJECT_DIR$/chihuo/index.html" />
         <option value="$PROJECT_DIR$/code/index.html" />
+        <option value="$PROJECT_DIR$/json/archives.json" />
+        <option value="$PROJECT_DIR$/json/chihuo.json" />
+        <option value="$PROJECT_DIR$/json/code.json" />
+        <option value="$PROJECT_DIR$/json/java.json" />
+        <option value="$PROJECT_DIR$/json/linux.json" />
+        <option value="$PROJECT_DIR$/json/search.json" />
+        <option value="$PROJECT_DIR$/json/special.json" />
+        <option value="$PROJECT_DIR$/json/tags.json" />
         <option value="$PROJECT_DIR$/special/index.html" />
-        <option value="$PROJECT_DIR$/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/life/index.html" />
+        <option value="$PROJECT_DIR$/assets/js/custom-paginator.js" />
+        <option value="$PROJECT_DIR$/_layouts/default.html" />
       </list>
     </option>
   </component>
@@ -328,11 +475,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="_layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -481,6 +624,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32956383" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -499,7 +643,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -567,110 +710,119 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chihuo/index-dy.html">
+    <entry file="file://$PROJECT_DIR$/json/chihuo.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="500" selection-end="739" vertical-scroll-proportion="0.6838366">
+        <state line="14" column="42" selection-start="471" selection-end="471" vertical-scroll-proportion="-4.423077">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/life/photo/2013-08-11-zhangshu.md">
+    <entry file="file://$PROJECT_DIR$/json/code.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="132" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/life/photo/2013-08-12-mudanhua.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="115" selection-start="224" selection-end="224" vertical-scroll-proportion="0.35416666" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/archives/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="31" selection-start="4186" selection-end="4372" vertical-scroll-proportion="0.032380953">
+        <state line="14" column="42" selection-start="469" selection-end="469" vertical-scroll-proportion="-4.423077">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/category/java.html">
+    <entry file="file://$PROJECT_DIR$/json/java.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="36" selection-start="4378" selection-end="4378" vertical-scroll-proportion="0.13454546">
+        <state line="14" column="42" selection-start="469" selection-end="469" vertical-scroll-proportion="-4.423077">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/category/linux.html">
+    <entry file="file://$PROJECT_DIR$/json/linux.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="36" selection-start="4378" selection-end="4378" vertical-scroll-proportion="0.13454546">
+        <state line="14" column="42" selection-start="470" selection-end="470" vertical-scroll-proportion="-4.423077">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/category/search.html">
+    <entry file="file://$PROJECT_DIR$/json/search.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="36" selection-start="4377" selection-end="4377" vertical-scroll-proportion="0.13454546">
+        <state line="14" column="42" selection-start="471" selection-end="471" vertical-scroll-proportion="0.33236995">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chihuo/index.html">
+    <entry file="file://$PROJECT_DIR$/json/special.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="28" selection-start="4136" selection-end="4136" vertical-scroll-proportion="0.13454546">
+        <state line="14" column="42" selection-start="472" selection-end="472" vertical-scroll-proportion="0.33236995">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/index.html">
+    <entry file="file://$PROJECT_DIR$/json/tags.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="36" selection-start="4377" selection-end="4377" vertical-scroll-proportion="0.13454546">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/life/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="74" selection-start="856" selection-end="856" vertical-scroll-proportion="0.030909091">
+        <state line="15" column="42" selection-start="496" selection-end="496" vertical-scroll-proportion="0.33236995">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/special/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="36" selection-start="4375" selection-end="4375" vertical-scroll-proportion="0.13454546">
+        <state line="42" column="23" selection-start="2110" selection-end="2110" vertical-scroll-proportion="0.5549133">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tags/index.html">
+    <entry file="file://$PROJECT_DIR$/life/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="305" selection-end="305" vertical-scroll-proportion="0.031598512">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/font-awesome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/font-awesome.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="33" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
+        <state line="39" column="0" selection-start="1911" selection-end="1911" vertical-scroll-proportion="1.1977715">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="45" selection-start="611" selection-end="611" vertical-scroll-proportion="0.5017361">
+        <state line="51" column="43" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="25" selection-start="933" selection-end="933" vertical-scroll-proportion="0.3655914">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="46" selection-start="929" selection-end="929" vertical-scroll-proportion="-5.464286">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="8" selection-start="877" selection-end="996" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1376214090779" expanded="false" signature="2132:2157" placeholder="..." />
+            <marker date="1376214090779" expanded="false" signature="2483:2495" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/custom-paginator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="58" selection-start="2821" selection-end="2825" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="22" selection-start="81" selection-end="81" vertical-scroll-proportion="-3.2692308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="34" selection-start="3197" selection-end="3197" vertical-scroll-proportion="0.54046243">
           <folding />
         </state>
       </provider>

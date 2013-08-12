@@ -22,8 +22,8 @@ date: 2013-03-25 00:10:00
 　　农家小炒肉 这道卖相不佳的菜肴，是湖南农家每家每户必吃的招牌“土菜”，正中广州人的“平、靓、正”消费 观。主料是辣椒和猪肉，主要烹饪工艺是炒。
 
 ###别名-辣椒炒肉
-<a href="{{site.static_url}}/assets/images/chihuo/recipe/xiaochaorou.jpg" alt="农家小炒肉" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.static_url}}/assets/images/chihuo/recipe/xiaochaorou.jpg" width="480px" class="img-center" alt="农家小炒肉" ></img>
+<a href="{{site.aliyun_oss}}/assets/images/chihuo/recipe/xiaochaorou.jpg" alt="农家小炒肉" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.aliyun_oss}}/assets/images/chihuo/recipe/xiaochaorou.jpg" width="480px" class="img-center" alt="农家小炒肉" ></img>
 </a>
 
 　　辣椒含有丰富的维生素等，食用辣椒，能增加饭量，增强体力，改善怕冷、冻伤、血管性头痛等症状。辣椒含有一种物殊物质，能加速新陈代谢，促进荷尔蒙分泌，保健皮肤。富含维生素C，可以控制心脏病及冠状动脉硬化，降低胆固醇。含有较多抗氧化物质，可预防癌症及其他慢性疾病。可以使呼吸道畅通，用以治疗咳嗽、感冒。辣椒还能杀抑胃腹内的寄生虫。

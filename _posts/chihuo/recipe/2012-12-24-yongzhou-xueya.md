@@ -25,15 +25,15 @@ description: 　　永州血鸭是湖南永州的一款传统名菜，具有美�
 
 ###永州血鸭
 
-<a href="{{site.static_url}}/assets/images/chihuo/recipe/xueya.jpg" alt="永州血鸭" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.static_url}}/assets/images/chihuo/recipe/xueya.jpg"  width="480px" alt="永州血鸭" class="img-center"></img>
+<a href="{{site.aliyun_oss}}/assets/images/chihuo/recipe/xueya.jpg" alt="永州血鸭" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.aliyun_oss}}/assets/images/chihuo/recipe/xueya.jpg"  width="480px" alt="永州血鸭" class="img-center"></img>
 </a>
 
 ###主材料
 鲜仔鸭一只，茄子(苦瓜,香芋)、青红椒、鸭血
 
-<a href="{{site.static_url}}/assets/images/chihuo/recipe/00030894.jpg" alt="永州血鸭" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.static_url}}/assets/images/chihuo/recipe/00030894.jpg" width="480px"  alt="永州血鸭" class="img-center"></img>
+<a href="{{site.aliyun_oss}}/assets/images/chihuo/recipe/00030894.jpg" alt="永州血鸭" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.aliyun_oss}}/assets/images/chihuo/recipe/00030894.jpg" width="480px"  alt="永州血鸭" class="img-center"></img>
 </a>
 
 ###调料

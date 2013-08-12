@@ -21,8 +21,8 @@ images: ["/assets/images/linux/create-user-sudo.jpg"]
 $ sudo adduser user_name
 </pre>
 按照相应提示输入信息，就可以创建新用户了。
-<a href="{{site.static_url}}/assets/images/linux/create-user-sudo.jpg" alt="create user sudo" rel="prettyPhoto[{{page.UUID}}]">
-  <img src="{{site.static_url}}/assets/images/linux/create-user-sudo.jpg" width="560px"  alt="create user sudo" />
+<a href="{{site.aliyun_oss}}/assets/images/linux/create-user-sudo.jpg" alt="create user sudo" rel="prettyPhoto[{{page.UUID}}]">
+  <img src="{{site.aliyun_oss}}/assets/images/linux/create-user-sudo.jpg" width="560px"  alt="create user sudo" />
 </a>
 
 创建完成后，一般需要增加sudo权限，这时就要用到visudo这个命令。

@@ -15,8 +15,8 @@ images: ["/assets/images/life/pub/woman.jpg"]
 description: 不要当三瓶女人：年轻时是花瓶，中年时是醋瓶，老年时是药瓶。不要只做三转女人：围着锅台转，围着老公转，围着孩子转...
 ---
 
-<a href="{{site.static_url}}/assets/images/life/pub/woman.jpg" alt="魅力女人" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.static_url}}/assets/images/life/pub/woman.jpg" width="330px" alt="魅力女人" class="img-center"></img>
+<a href="{{site.aliyun_oss}}/assets/images/life/pub/woman.jpg" alt="魅力女人" rel="prettyPhoto[{{page.UUID}}]">
+<img src="{{site.aliyun_oss}}/assets/images/life/pub/woman.jpg" width="330px" alt="魅力女人" class="img-center"></img>
 </a>
 
 

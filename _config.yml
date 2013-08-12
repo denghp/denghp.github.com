@@ -13,10 +13,8 @@ meta:
         name: 
         email: denghp@126.com
 
-#static_url: http://demi-panda.oss.aliyuncs.com
-#static_url: http://yoyosys.oss.aliyuncs.com
-#static_url: 
-base_url: 
+aliyun_oss: http://demi-panda.oss.aliyuncs.com
+base_url:
 baseurl: 
 markdown: rdiscount
 pygments: true

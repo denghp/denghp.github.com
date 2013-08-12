@@ -108,14 +108,14 @@ Hadoop可以在单节点上以所谓的伪分布式模式运行，此时每一�
 <pre id="bash">
 $ hadoop namenode -format
 </pre>
-<a href="{{site.static_url}}/assets/images/linux/hadoop-format.jpg" alt="hadoop namenode -format" rel="prettyPhoto[{{page.UUID}}]">
-  <img src="{{site.static_url}}/assets/images/linux/hadoop-format.jpg"  alt="hadoop namenode format" />
+<a href="{{site.aliyun_oss}}/assets/images/linux/hadoop-format.jpg" alt="hadoop namenode -format" rel="prettyPhoto[{{page.UUID}}]">
+  <img src="{{site.aliyun_oss}}/assets/images/linux/hadoop-format.jpg"  alt="hadoop namenode format" />
 </a>
 
 namenode -format 这是第一需要做的初始化之后产生如下文件:
 
-<a href="{{site.static_url}}/assets/images/linux/format-files.jpg" alt="hadoop namenode -format" rel="prettyPhoto[{{page.UUID}}]">
-  <img src="{{site.static_url}}/assets/images/linux/format-files.jpg"  alt="namenode format" />
+<a href="{{site.aliyun_oss}}/assets/images/linux/format-files.jpg" alt="hadoop namenode -format" rel="prettyPhoto[{{page.UUID}}]">
+  <img src="{{site.aliyun_oss}}/assets/images/linux/format-files.jpg"  alt="namenode format" />
 </a>
 
 2、因为我们把hadoop的已经配置到环境变量中了，所以我们可以在任何目录下执行hadoop的start-all.sh，启动hadoop守护进程
@@ -149,14 +149,14 @@ JobTracker--   http://localhost:50030
 
 <strong>NameNode</strong>
 
-<a href="{{site.static_url}}/assets/images/linux/namenode-web.jpg" alt="hadoop namenode web" rel="prettyPhoto[{{page.UUID}}]">
-  <img src="{{site.static_url}}/assets/images/linux/namenode-web.jpg" alt="namenode web" />
+<a href="{{site.aliyun_oss}}/assets/images/linux/namenode-web.jpg" alt="hadoop namenode web" rel="prettyPhoto[{{page.UUID}}]">
+  <img src="{{site.aliyun_oss}}/assets/images/linux/namenode-web.jpg" alt="namenode web" />
 </a>
 
 <strong>Jobtracker</strong>
 
-<a href="{{site.static_url}}/assets/images/linux/jobtracker-web.jpg" alt="jobtracker web" rel="prettyPhoto[{{page.UUID}}]">
-  <img src="{{site.static_url}}/assets/images/linux/jobtracker-web.jpg" alt="jobtracker web" />
+<a href="{{site.aliyun_oss}}/assets/images/linux/jobtracker-web.jpg" alt="jobtracker web" rel="prettyPhoto[{{page.UUID}}]">
+  <img src="{{site.aliyun_oss}}/assets/images/linux/jobtracker-web.jpg" alt="jobtracker web" />
 </a>
 
 ###运行MapReduce Tutorial的例子
@@ -196,8 +196,8 @@ Hello Hadoop Goodbye Hadoop
 <pre id="bash">
 $ hadoop jar lib/wordcount-example-1.0-20130428.jar com.company.mr.WordCount input out
 </pre>
-<a href="{{site.static_url}}/assets/images/linux/hadoop-mapreduce.jpg" alt="hadoop mapreduce" rel="prettyPhoto[{{page.UUID}}]">
-  <img src="{{site.static_url}}/assets/images/linux/hadoop-mapreduce.jpg" width="560px"  alt="hadoop mapreduce" />
+<a href="{{site.aliyun_oss}}/assets/images/linux/hadoop-mapreduce.jpg" alt="hadoop mapreduce" rel="prettyPhoto[{{page.UUID}}]">
+  <img src="{{site.aliyun_oss}}/assets/images/linux/hadoop-mapreduce.jpg" width="560px"  alt="hadoop mapreduce" />
 </a>
 
 5、运行结果

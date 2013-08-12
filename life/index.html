@@ -31,15 +31,12 @@ perPageItem: 10
 
                                 {% if post.images.size > 0 %}
                                 <a href="{{site.base_url}}{{ post.url }}"><img
-                                        src="{{site.static_url}}{{post.images[0]}}"
+                                        src="{{site.aliyun_oss}}{{post.images[0]}}"
                                         alt="{{ post.title }}"/></a>
                                 {% else %}
                                 <a href="{{site.base_url}}{{ post.url }}"><img
-                                        src="{{site.static_url}}/assets/img/dummies/work3.jpg" alt="{{ post.title }}"/></a>
+                                        src="{{site.aliyun_oss}}/assets/img/dummies/work3.jpg" alt="{{ post.title }}"/></a>
                                 {% endif %}
-                                <!--
-                                <a href="{{site.static_url}}/2013/01/20/glamour-woman"><img src="{{site.static_url}}/assets/img/dummies/work8.jpg" alt="Portfolio name" title="" /></a>
-                                -->
                                 <article class="da-animate da-slideFromRight" style="display: block;">
                                     <h4>
                                         {% if post.short_title %}
@@ -53,12 +50,12 @@ perPageItem: 10
                                 <span>
                                   {% if post.images.size > 0 %}
                                   <a class="zoom" data-pretty="prettyPhoto"
-                                     href="{{site.static_url}}{{post.images[0]}}">
+                                     href="{{site.aliyun_oss}}{{post.images[0]}}">
                                       <i class="icon-rounded icon-48 icon-zoom-in"></i>
                                   </a>
                                       {% else %}
                                   <a class="zoom" data-pretty="prettyPhoto"
-                                     href="{{site.static_url}}/assets/img/dummies/work3.jpg">
+                                     href="{{site.aliyun_oss}}/assets/img/dummies/work3.jpg">
                                       <i class="icon-rounded icon-48 icon-zoom-in"></i>
                                   </a>
                                   {% endif %}

@@ -153,7 +153,7 @@ Requests: 13254 susceed, 0 failed.
 统计监听的是8888端口 http://localhost:8888/haproxy-stats
 
 ###监控页面
-<img src="{{site.static_url}}/assets/images/web/haproxy-300x76.jpg"></img>
+<img src="{{site.aliyun_oss}}/assets/images/web/haproxy-300x76.jpg"></img>
 
 
 ###配置说明
