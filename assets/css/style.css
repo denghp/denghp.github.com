@@ -623,7 +623,7 @@ aside{
 }
 
 aside .widget{
-	margin-bottom:30px;
+	margin-bottom:20px;
 }
 
 
@@ -648,6 +648,7 @@ aside .widget h4{
 aside .widget ul.cat {
 	list-style:none;
 	margin-left:0;
+    margin-bottom:0;
     font-size:14px;
 }
 aside .widget ul.cat li {

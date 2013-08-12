@@ -18,12 +18,12 @@ title: 全部文章-研发实践、熊猫吃货、微生活
                         </div>
                         <div class="row">
                             <div class="span3">
-                                {% if post.images.size > 1 %}
+                                {% if post.thumbs %}
                                 <div class="post-slider">
                                     <!-- start flexslider -->
                                     <div class="flexslider">
                                         <ul class="slides">
-                                            {% for img in post.images %}
+                                            {% for img in post.thumbs %}
                                             <li>
                                                 <a href="{{site.base_url}}{{post.url}}"><img src="{{site.aliyun_oss}}{{img}}" alt="{{post.title}}" /></a>
                                             </li>
