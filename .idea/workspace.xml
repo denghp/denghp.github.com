@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a3e6386-848c-4817-ad59-2f21717650fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archives/index.html" afterPath="$PROJECT_DIR$/archives/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chihuo/index.html" afterPath="$PROJECT_DIR$/chihuo/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/index.html" afterPath="$PROJECT_DIR$/code/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/special/index.html" afterPath="$PROJECT_DIR$/special/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/category/java.html" afterPath="$PROJECT_DIR$/category/java.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/category/linux.html" afterPath="$PROJECT_DIR$/category/linux.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/category/search.html" afterPath="$PROJECT_DIR$/category/search.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="denghp.github.com.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376272609060" ignored="false" />
+    <file path="/Dummy.txt" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376312085812" ignored="false" />
     <file path="/404.html" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376180700140" ignored="false" />
     <file path="/tags.json" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376199368900" ignored="false" />
     <file path="/a.dummy" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376234842494" ignored="false" />
@@ -118,7 +110,7 @@
     <file path="/java.html" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376236276208" ignored="false" />
     <file path="/search.html" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376236308603" ignored="false" />
     <file path="/linux.html" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376272756157" ignored="false" />
-    <file path="$PROJECT_DIR$/_site/sitemap.xml" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376237699004" ignored="false" />
+    <file path="/style.css" changelist="1a3e6386-848c-4817-ad59-2f21717650fe" time="1376312986014" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,82 +171,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tags/index.html">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="305" selection-end="305" vertical-scroll-proportion="-0.029714286">
+            <state line="3" column="33" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/archives/index.html">
+      <file leaf-file-name="_config.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="31" selection-start="4186" selection-end="4372" vertical-scroll-proportion="-26.461538">
+            <state line="17" column="45" selection-start="611" selection-end="611" vertical-scroll-proportion="0.5017361">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="java.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/category/java.html">
+      <file leaf-file-name="font-awesome.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/font-awesome.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="36" selection-start="4378" selection-end="4378" vertical-scroll-proportion="-29.076923">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="linux.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/category/linux.html">
+      <file leaf-file-name="font-awesome.min.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/font-awesome.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="36" selection-start="4378" selection-end="4378" vertical-scroll-proportion="-27.23077">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/category/search.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="36" selection-start="4377" selection-end="4377" vertical-scroll-proportion="-26.038462">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chihuo/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="28" selection-start="4136" selection-end="4136" vertical-scroll-proportion="-15.846154">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="36" selection-start="4377" selection-end="4377" vertical-scroll-proportion="-17.153847">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/life/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="74" selection-start="856" selection-end="856" vertical-scroll-proportion="24.26923">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/special/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="36" selection-start="4375" selection-end="4375" vertical-scroll-proportion="-17.153847">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -278,10 +225,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/_includes/aside.html" />
         <option value="$PROJECT_DIR$/chihuo/index-dy.html" />
         <option value="$PROJECT_DIR$/archives/index-backup.html" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_posts/life/photo/2013-08-11-zhangshu.md" />
         <option value="$PROJECT_DIR$/_posts/life/photo/2013-08-12-mudanhua.md" />
         <option value="$PROJECT_DIR$/_site/assets/js/custom-paginator.js" />
@@ -294,6 +239,8 @@
         <option value="$PROJECT_DIR$/chihuo/index.html" />
         <option value="$PROJECT_DIR$/code/index.html" />
         <option value="$PROJECT_DIR$/special/index.html" />
+        <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/_config.yml" />
       </list>
     </option>
   </component>
@@ -307,8 +254,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="64" />
     <option name="y" value="-4" />
-    <option name="width" value="1857" />
-    <option name="height" value="1085" />
+    <option name="width" value="1303" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -338,6 +285,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -366,7 +314,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tags" />
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -380,84 +328,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="special" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="life" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chihuo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="category" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="denghp.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="archives" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -465,14 +346,14 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="MavenSettings" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="/media/document/workspace/tuan800/search/tuan800-search/branches" />
+    <property name="options.lastSelected" value="MavenSettings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../document/workspace/tuan800/search/tuan800-search/branches" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -492,6 +373,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -522,19 +416,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -548,6 +429,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -571,13 +459,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method />
-    </configuration>
     <list size="0" />
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -594,7 +475,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
+    <frame x="64" y="-4" width="1303" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -614,7 +495,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24930748" sideWeight="0.6704362" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24860112" sideWeight="0.6704362" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -686,18 +567,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tags/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/content-work.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="50" selection-start="278" selection-end="288" vertical-scroll-proportion="0.24156305" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chihuo/index-dy.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="500" selection-end="739" vertical-scroll-proportion="0.6838366">
@@ -715,70 +584,93 @@
         <state line="12" column="115" selection-start="224" selection-end="224" vertical-scroll-proportion="0.35416666" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="12" selection-start="672" selection-end="684" vertical-scroll-proportion="0.6788194" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/archives/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="31" selection-start="4186" selection-end="4372" vertical-scroll-proportion="-26.461538">
+        <state line="74" column="31" selection-start="4186" selection-end="4372" vertical-scroll-proportion="0.032380953">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/category/java.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="36" selection-start="4378" selection-end="4378" vertical-scroll-proportion="-29.076923">
+        <state line="76" column="36" selection-start="4378" selection-end="4378" vertical-scroll-proportion="0.13454546">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/category/linux.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="36" selection-start="4378" selection-end="4378" vertical-scroll-proportion="-27.23077">
+        <state line="76" column="36" selection-start="4378" selection-end="4378" vertical-scroll-proportion="0.13454546">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/category/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="36" selection-start="4377" selection-end="4377" vertical-scroll-proportion="-26.038462">
+        <state line="76" column="36" selection-start="4377" selection-end="4377" vertical-scroll-proportion="0.13454546">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chihuo/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="28" selection-start="4136" selection-end="4136" vertical-scroll-proportion="-15.846154">
+        <state line="77" column="28" selection-start="4136" selection-end="4136" vertical-scroll-proportion="0.13454546">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/code/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="36" selection-start="4377" selection-end="4377" vertical-scroll-proportion="-17.153847">
+        <state line="76" column="36" selection-start="4377" selection-end="4377" vertical-scroll-proportion="0.13454546">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/life/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="74" selection-start="856" selection-end="856" vertical-scroll-proportion="24.26923">
+        <state line="18" column="74" selection-start="856" selection-end="856" vertical-scroll-proportion="0.030909091">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/special/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="36" selection-start="4375" selection-end="4375" vertical-scroll-proportion="-17.153847">
+        <state line="76" column="36" selection-start="4375" selection-end="4375" vertical-scroll-proportion="0.13454546">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tags/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="305" selection-end="305" vertical-scroll-proportion="-0.029714286">
+        <state line="15" column="0" selection-start="305" selection-end="305" vertical-scroll-proportion="0.031598512">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="33" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="45" selection-start="611" selection-end="611" vertical-scroll-proportion="0.5017361">
           <folding />
         </state>
       </provider>
