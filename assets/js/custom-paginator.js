@@ -138,7 +138,7 @@ function getStartedInitialization(posts, allKeys, countPerPage, href, tagName) {
             getDuoShuoData(posts, currentThreads, newPage, countPerPage);
         }
     }
-    if (tagName != null && tagName != undefined)) {
+    if (tagName != null && tagName != undefined ) {
         if (options.currentPage == 1) {
             //获取第一页的threads
             var currentThreads = getCurrentPageThreads(allKeys, 1, countPerPage);
