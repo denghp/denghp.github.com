@@ -106,7 +106,7 @@
 
                     <p>
                         {% if post.tags %}
-                        {% for tag in post.tags limit:4 %}
+                        {% for tag in post.tags limit:3 %}
                         <a href="{{ site.base_url }}/tags/index.html?name={{tag}}" class="text" title="{{ tag }}"
                            rel="category tag">{{ tag }}</a>&nbsp;
                         {% endfor %}
@@ -173,7 +173,7 @@
 
                     <p>
                         {% if post.tags %}
-                        {% for tag in post.tags limit:4 %}
+                        {% for tag in post.tags limit:3 %}
                         <a href="{{ site.base_url }}/tags/index.html?name={{tag}}" class="text" title="{{ tag }}"
                            rel="category tag">{{ tag }}</a>&nbsp;
                         {% endfor %}
@@ -224,7 +224,7 @@
 
                     <p>
                         {% if post.tags %}
-                        {% for tag in post.tags limit:4 %}
+                        {% for tag in post.tags limit:3 %}
                         <a href="{{ site.base_url }}/tags/index.html?name={{tag}}" class="text" title="{{ tag }}"
                            rel="category tag">{{ tag }}</a>&nbsp;
                         {% endfor %}
