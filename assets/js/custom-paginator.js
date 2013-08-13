@@ -119,10 +119,10 @@ function getStartedInitialization(posts, allKeys, countPerPage, href) {
 }
 
 function getStartedInitialization(posts, allKeys, countPerPage, href, tagName) {
-    if (countPerPage == null) {
+    if (countPerPage == null || countPerPage == undefined) {
         countPerPage = 20;
     }
-    if (href != null) {
+    if (href != null && href.length > 0) {
         valHref = href;
     } else {
         valHref = window.location.host;
@@ -138,7 +138,7 @@ function getStartedInitialization(posts, allKeys, countPerPage, href, tagName) {
             getDuoShuoData(posts, currentThreads, newPage, countPerPage);
         }
     }
-    if (tagName != null) {
+    if (tagName != null && tagName != undefined)) {
         if (options.currentPage == 1) {
             //获取第一页的threads
             var currentThreads = getCurrentPageThreads(allKeys, 1, countPerPage);
