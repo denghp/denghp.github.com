@@ -1,4 +1,3 @@
-var valHref;
 /**
  * 初始化获取archives.json数据
  */
@@ -114,18 +113,13 @@ function getCurrentPageThreads(allKeys, currentPage, countPerPage) {
     return currentThreads;
 }
 
-function getStartedInitialization(posts, allKeys, countPerPage, href) {
-    getStartedInitialization(posts, allKeys, countPerPage, href, null);
+function getStartedInitialization(posts, allKeys, countPerPage) {
+    getStartedInitialization(posts, allKeys, countPerPage, null);
 }
 
-function getStartedInitialization(posts, allKeys, countPerPage, href, tagName) {
+function getStartedInitialization(posts, allKeys, countPerPage, tagName) {
     if (countPerPage == null || countPerPage == undefined) {
         countPerPage = 20;
-    }
-    if (href != null && href.length > 0) {
-        valHref = href;
-    } else {
-        valHref = window.location.host;
     }
     var options = {
         currentPage: 1,
@@ -197,11 +191,11 @@ function pageselectCallback(posts, duoshuo, currentPage, countPerPage) {
         newcontent += "</div>";//span3 end
         newcontent += "<div class='span5'><ul class='post-meta'>"
         newcontent += "<li class='first'><i class='icon-calendar'></i><span>" + posts[i].date + "</span></li>";
-        newcontent += "<li><i class='icon-list-alt'></i><a href='" + posts[i].url + "#comments' title='" + posts.title + "' 的评论'>" + comments + "</a></li>";
+        newcontent += "<li><i class='icon-list-alt'></i><a href='" + posts[i].url + "#comments' title='" + posts[i].title + "' 的评论'>" + comments + "</a></li>";
         newcontent += "<li class='last'><i class='icon-tags'></i><span>";
         if (posts[i].tags.length > 0) {
             for (var t = 0; t < posts[i].tags.length; t++) {
-                newcontent += "<a href='" + valHref + "/tags/index.html?name=" + posts[i].tags[t] + "' class='text' title='" + posts[i].tags[t] + "' rel='category tag'>" + posts[i].tags[t] + "</a>&nbsp;";
+                newcontent += "<a href='/tags/index.html?name=" + posts[i].tags[t] + "' class='text' title='" + posts[i].tags[t] + "' rel='category tag'>" + posts[i].tags[t] + "</a>&nbsp;";
             }
         }
         newcontent += "</span></li></ul>";//ul end
