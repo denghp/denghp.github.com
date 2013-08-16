@@ -13,6 +13,9 @@ title: 全部标签
                 <div class="widget">
                     <!-- start article -->
                     <div id="content">
+                        <div class="well well-large well-transparent lead">
+                            <i class="icon-spinner icon-spin icon-large"></i>  Loading content...
+                        </div>
                     </div>
                     <div id="page-selection"></div>
                     <!-- end article  -->
@@ -36,11 +39,11 @@ title: 全部标签
                 var posts = tags[decodeURI(tagName)]
                 var allKeys = new Array(posts.length);
                 //获取tagname 相对应的key
-                for (var i = 0; i < posts.length; i ++) {
+                for (var i = 0; i < posts.length; i++) {
                     allKeys[i] = posts[i].UUID;
                 }
                 console.log("posts : " + posts)
-                getStartedInitialization(posts,allKeys,"{{site.countPerPage}}", "{{site.base_url}}",decodeURI(tagName));
+                getStartedInitialization(posts, allKeys, "{{site.countPerPage}}", "{{site.base_url}}", decodeURI(tagName));
             } else {
                 //如果直接访问tags页面,则显示所有tags文章
                 //window.location.href = "{{site.base_url}}/404.html"
@@ -48,15 +51,15 @@ title: 全部标签
                 var posts = new Array(maxItems);
                 var allKeys = new Array(maxItems);
                 for (var key in tags) {
-                    for(var i = 0; i < tags[key].length; i ++) {
-                       posts[i] = tags[key][i];
-                       allKeys[i] = tags[key][i].UUID;
+                    for (var i = 0; i < tags[key].length; i++) {
+                        posts[i] = tags[key][i];
+                        allKeys[i] = tags[key][i].UUID;
                     }
                     if (posts.length >= maxItems) {
                         break;
                     }
                 }
-                getStartedInitialization(posts,allKeys,"{{site.countPerPage}}",decodeURI(tagName));
+                getStartedInitialization(posts, allKeys, "{{site.countPerPage}}", decodeURI(tagName));
             }
         });
     </script>
