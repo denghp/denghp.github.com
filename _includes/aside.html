@@ -77,4 +77,13 @@
         <h4>最近访客</h4>
         <ul class="ds-recent-visitors" data-num-items="20" data-show-time="0" data-avatar-size="50"></ul>
     </div>
+    <div class="widget">
+        <h4>友情链接</h4>
+        <ul class="recent-posts">
+            {% for link in site.links limit %}
+            <li><a target="_blank" href="{{link.url}}">{{link.name}}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
 </aside>
