@@ -25,12 +25,12 @@ UUID: 201212191327
 头先向左后向右转动，幅度宜大，以自觉酸胀为好，30次。
 ###前后点头
 <a href="{{site.aliyun_oss}}/assets/images/life/healthy/healthy-1.jpg" alt="颈椎康复" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.aliyun_oss}}/assets/images/life/healthy/healthy-1.jpg" alt="颈椎康复"></img><br>
+<img src="{{site.aliyun_oss}}/assets/images/life/healthy/healthy-1.jpg" width="350px" alt="颈椎康复"></img><br>
 </a>
 头先前再后，前俯时颈项尽量前伸拉长，30次。
 ###旋肩舒颈
 <a href="{{site.aliyun_oss}}/assets/images/life/healthy/healthy-2.jpg" alt="颈椎康复" rel="prettyPhoto[{{page.UUID}}]">
-<img src="{{site.aliyun_oss}}/assets/images/life/healthy/healthy-2.jpg"  alt="颈椎康复"></img></a><br>
+<img src="{{site.aliyun_oss}}/assets/images/life/healthy/healthy-2.jpg" width="350px"  alt="颈椎康复"></img></a><br>
 双手置两侧肩部，掌心向下，两臂先由后向前旋转 20—30次，再由前向后旋转20—30次。
 
 ###摇头晃脑
