@@ -79,9 +79,11 @@ id_rsa  id_rsa.pub  known_hosts
 <pre id="bash">
 vi /etc/ssh/sshd_config   
 </pre>
-设置下面的选项：  
+就打开远程主机的/etc/ssh/sshd_config这个文件，检查下面几行前面"#"注释是否取掉。
 <code>
+RSAAuthentication yes
 PubkeyAuthentication yes  
+AuthorizedKeysFile .ssh/authorized_keys
 </code>
 重启sshd
 <pre id="bash">
