@@ -11,7 +11,7 @@ categories:
 - special
 - archives
 UUID: 20130227002300
-date: 2013-02-27 00:10:00
+date: 2013-02-27
 
 images: ["/assets/images/web/nodejs-380x300.png"]
 ---

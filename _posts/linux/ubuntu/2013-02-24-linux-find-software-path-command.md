@@ -10,7 +10,7 @@ categories:
 - linux
 - archives
 UUID: 20130224012700
-date: 2013-02-24 01:27:00
+date: 2013-02-24 10:27:00
 images: ["/assets/images/linux/whereis-images.jpg"]
 ---
 

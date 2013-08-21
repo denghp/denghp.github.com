@@ -9,7 +9,7 @@ categories:
 - code
 - archives
 UUID: 20130522002000
-date: 2013-05-22 00:20:00
+date: 2013-05-22
 ---
 
  　　最近在使用django图片上传时遇到如下很郁闷的问题，在ubuntu12.04 32位操作系统上无法出现，但是在ubuntu64系统上就报如下异常<code>IOError: decoder jpeg not available</code>，从google上找方案，大家都是直接安装<code>python-imaging</code>,<code>libjpeg62 libjpeg62-dev</code>,设置软连就OK啦，可是我这里居然无法搞定，centos下已经解决，唯独ubuntu64下没解决，希望大家有解决方案的一起讨论。

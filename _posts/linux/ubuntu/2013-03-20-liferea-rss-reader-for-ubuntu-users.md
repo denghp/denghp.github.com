@@ -14,7 +14,7 @@ categories:
 - special
 - archives
 UUID: 20130320001000
-date: 2013-03-20 00:10:00
+date: 2013-03-20
 images: ["/assets/images/linux/liferea-rss.jpg"]
 description: Liferea是一个广播聚合为GNOME的发行版，如Ubuntu，Debian的Linux Mint的，您可以轻松地添加各种来源/订阅（你最喜欢的博客或新闻来源），并保持更新。你甚至都不需要打开浏览器（因为它是一个桌面应用程序），除非有充分的内容是不在你的源广播内。
 

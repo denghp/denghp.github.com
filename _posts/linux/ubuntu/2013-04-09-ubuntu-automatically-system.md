@@ -10,7 +10,7 @@ categories:
 - linux
 - archives
 UUID: 20130409001000
-date: 2013-04-09 00:10:00
+date: 2013-04-09
 images: ["/assets/images/linux/fstab-info.jpg"]
 ---
 

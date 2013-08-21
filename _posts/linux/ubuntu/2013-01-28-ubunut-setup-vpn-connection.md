@@ -11,7 +11,7 @@ categories:
 - linux
 - archives
 UUID: 20130128013000
-date: 2013-01-28 01:30:00
+date: 2013-01-28 10:30:00
 images: ["/assets/images/linux/vpn-step-3.jpg"]
 ---
 

@@ -13,7 +13,6 @@ categories:
 - special
 - archives
 UUID: 20130330001027
-date: 2013-03-30 00:10:22
 images: ["/assets/images/solr/2shard4serverFull.jpg"]
 ---
 

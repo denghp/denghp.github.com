@@ -12,7 +12,7 @@ categories:
 - solr
 - archives
 UUID: 20130323001027
-date: 2013-03-23 00:10:22
+date: 2013-03-23
 ---
 
 ###在Solr3.x中，Solr的功能：

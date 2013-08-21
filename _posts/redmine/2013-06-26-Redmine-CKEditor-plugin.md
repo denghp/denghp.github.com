@@ -9,7 +9,6 @@ categories:
 - project
 - archives
 UUID: 20130626002000
-date: 2013-06-26 00:20:00
 images: ["/assets/images/web/CKEditor-plugin.jpg"]
 ---
 

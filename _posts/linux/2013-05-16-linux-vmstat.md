@@ -9,7 +9,7 @@ categories:
 - code
 - archives
 UUID: 20130516002000
-date: 2013-05-16 00:20:00
+date: 2013-05-16
 ---
 
 　　vmstat是一个查看虚拟内存（Virtual Memory）使用状况的工具，使用vmstat命令可以得到关于进程、内存、内存分页、堵塞IO、traps及CPU活动的信息。本文介绍了虚拟内存的运行原理，继而介绍了vmstat的用法和使用范例。

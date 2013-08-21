@@ -13,7 +13,7 @@ categories:
 - special
 - archives
 UUID: 20130313001027
-date: 2013-03-13 00:10:22
+date: 2013-03-13
 images: ["/assets/images/solr/solr-logo.jpg"]
 ---
 

@@ -10,7 +10,7 @@ categories:
 - special
 - archives
 UUID: 20130124003000
-date: 2013-01-24 00:30:00
+date: 2013-01-24
 images: ["/assets/images/github/github-logo.jpg"]
 description: 被称为“程序员的天堂”的GitHub，因服务器被“12306订票助手”拖垮而为国人所熟知，网友猜测，我国地区无法访问GitHub，或是受到12306抢票插件的影响，12306抢票插件搞垮美国Github服务器。
 ---

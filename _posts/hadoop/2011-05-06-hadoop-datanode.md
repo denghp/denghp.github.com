@@ -11,7 +11,6 @@ categories:
 - code
 - archives
 UUID: 201105061236
-date: 2011-05-06
 ---
 有的时候， datanode或者tasktracker crash，或者需要向集群中增加新的机器时又不能重启集群。下面方法也许对你有用。
 <ol>

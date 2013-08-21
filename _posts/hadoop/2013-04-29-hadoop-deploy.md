@@ -12,7 +12,7 @@ categories:
 - special
 - archives
 UUID: 20130429001236
-date: 2013-04-29 00:12:36
+date: 2013-04-29
 images: ["/assets/images/linux/mapreduce-runtime.jpg"]
 ---
 

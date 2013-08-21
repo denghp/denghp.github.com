@@ -16,7 +16,7 @@ categories:
 data_type: meishi
 images: ["/assets/images/chihuo/recipe/xiaochaorou.jpg"]
 UUID: 20130325001000
-date: 2013-03-25 00:10:00
+date: 2013-03-25 10:10:00
 ---
 
 　　农家小炒肉 这道卖相不佳的菜肴，是湖南农家每家每户必吃的招牌“土菜”，正中广州人的“平、靓、正”消费 观。主料是辣椒和猪肉，主要烹饪工艺是炒。

@@ -9,7 +9,7 @@ categories:
 - mongodb
 - archives
 UUID: 20130416001000
-date: 2013-04-16 00:10:00
+date: 2013-04-16
 images: ["/assets/images/web/mongodb-logo.jpg"]
 ---
 

@@ -10,7 +10,7 @@ categories:
 - linux
 - archives
 UUID: 20130424001000
-date: 2013-04-24 00:10:00
+date: 2013-04-24
 images: ["/assets/images/linux/create-user-sudo.jpg"]
 ---
 
