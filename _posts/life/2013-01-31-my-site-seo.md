@@ -11,7 +11,6 @@ categories:
 - archives
 data_type: web
 UUID: 20130131003700
-date: 2013-01-30 02:37:00
 images: ["/assets/images/life/pub/demi-panda-seo.jpg"]
 ---
 
