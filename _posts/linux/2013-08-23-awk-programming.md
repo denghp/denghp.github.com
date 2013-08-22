@@ -73,7 +73,7 @@ awk [options] -f scriptfile var=value file(s)
 
 
 ###awk的环境变量
-  <table class="table table-bordered table-striped">
+<table class="table table-bordered table-striped">
   <colgroup>
   <col class="span1">
   <col class="span7">
