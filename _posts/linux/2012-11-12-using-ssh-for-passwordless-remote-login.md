@@ -87,10 +87,18 @@ AuthorizedKeysFile .ssh/authorized_keys
 </pre>
 重启sshd
 <pre id="bash">
+#debian系统
 /etc/init.d/sshd restart
+#ubuntu系统
+service ssh restart
 </pre>
   
 这个时候就可以在A机器上ssh登录B 机器了，现在不需要输入用户对应的linux密码了，但是需要输入创建私钥的时候所输入的passphrase，但是这个密码无须在网络上进行传输了。
+
+也可以使用命令复制本地的公钥到远程机器上去:
+<pre id="bash">
+ssh-copy-id -i .ssh/id_rsa.pub root@192.168.10.14
+</pre>
 
 ### 3.使用ssh-add
 我们可以通过ssh-add命令将私钥的密码交给ssh-agent进行管理，这样我们登录远程机器的时候，就会直接使用缓存起来的passphrase，而不会让你每次手动的输入。
