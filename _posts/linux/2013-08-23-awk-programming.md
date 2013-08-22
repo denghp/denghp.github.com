@@ -207,7 +207,7 @@ awk [options] -f scriptfile var=value file(s)
     </tbody>
   </table>
 ###awk运算符
-  <table class="table table-bordered table-striped">
+<table class="table table-bordered table-striped">
   <colgroup>
   <col class="span1">
   <col class="span7">
