@@ -10,6 +10,7 @@ categories:
 - code
 - linux
 - archives
+- special
 images: ["/assets/images/linux/awk_logo.jpg"]
 UUID: 201308230023
 ---
