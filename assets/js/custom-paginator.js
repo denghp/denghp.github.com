@@ -155,10 +155,10 @@ function pageselectCallback(posts, duoshuo, currentPage, countPerPage) {
     for (var i = start; i < max_elem; i++) {
         //获取多说评论数
         var comments = "";
-        if (duoshuo == null || duoshuo.length <= 0) {
-            comments = "暂无评论";
-        } else {
+        if ( duoshuo != null && duoshuo[posts[i].UUID] != undefined && duoshuo[posts[i].UUID].comments != undefined ) {
             comments = duoshuo[posts[i].UUID].comments > 0 ? duoshuo[posts[i].UUID].comments + " 条评论" : "暂无评论";
+        } else {
+            comments = "暂无评论";
         }
         newcontent += "<article class='blog-post'>";
         newcontent += "<div class='post-heading'><h3><a href='" + posts[i].url + "'>" + posts[i].title + "</a></h3></div>";
