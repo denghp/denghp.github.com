@@ -15,6 +15,7 @@ meta:
 
 aliyun_oss: http://demi-panda.oss.aliyuncs.com
 base_url: http://demi-panda.com
+base_url:
 baseurl: 
 markdown: rdiscount
 pygments: true
