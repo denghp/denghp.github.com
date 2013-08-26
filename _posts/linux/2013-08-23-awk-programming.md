@@ -352,6 +352,7 @@ $ awk '{if ($1 < $2) {count++; print "ok"}}' test
 else {
   statement; statement; ...
 }
+}
 </pre>
 示例：
 <pre id="bash">
@@ -359,7 +360,7 @@ else {
 $ awk '{if ($1 > 100) print $1 "bad" ; else print "ok"}' test
 
 #如果$1大于100，则count加一，并打印$1，否则count减一，并打印$1。
-$ awk '{if ($1 > 100){ count++; print $1} else {count--; print $2}' test
+$ awk '{if ($1 > 100){ count++; print $1} else {count--; print $2}}' test
 </pre>
 
 ###### if/else else if语句，用于多重判断
