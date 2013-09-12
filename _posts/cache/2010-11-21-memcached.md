@@ -23,3 +23,10 @@ $ flush_all
 $ echo "flush_all" | nc localhost 11211
 </pre>
 使用flush_all 后并不是删除memcache上的key，而是置为过期
+
+###根据KEY删除缓存
+<pre id="bash">
+get SEARCH_28ef886463f514c373310bf2376db074
+delete SEARCH_28ef886463f514c373310bf2376db074
+DELETED    <--这是返回的结果，表示删除成功
+</pre>
