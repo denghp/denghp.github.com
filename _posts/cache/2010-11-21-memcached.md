@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 两种方法清空memcache缓存
+title: 清空,删除memcache缓存
 tags: 
 - memcached
 - 缓存
