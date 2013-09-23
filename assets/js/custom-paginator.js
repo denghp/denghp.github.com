@@ -182,7 +182,7 @@ function pageselectCallback(posts, duoshuo, currentPage, countPerPage) {
         }**/
         newcontent += "<div class='post-image'>";
         if (posts[i].images.length > 0) {
-            newcontent += "<a href='" + posts[i].url + "'><img src='" + posts[i].images[0] + "' alt='" + posts[i].title + "'/></a>";
+            newcontent += "<a href='" + posts[i].url + "'><img class='lazy' src='http://demi-panda.oss.aliyuncs.com/assets/img/grey.gif' data-original='" + posts[i].images[0] + "' width='270' height='203' alt='" + posts[i].title + "'/></a>";
         } else {
             newcontent += "<blockquote>" + posts[i].description + "</blockquote>";
         }
