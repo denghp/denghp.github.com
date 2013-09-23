@@ -25,7 +25,7 @@ title: 热门推荐
                                         <ul class="slides">
                                             {% for img in post.thumbs %}
                                             <li>
-                                                <a href="{{site.base_url}}{{post.url}}"><img src="{{site.aliyun_oss}}{{img}}" alt="{{post.title}}" /></a>
+                                            <a href="{{site.base_url}}{{post.url}}"><img class="lazy" src="{{site.aliyun_oss}}/assets/img/grey.gif" data-original="{{site.aliyun_oss}}{{img}}" width="270" height="203" alt="{{post.title}}" /></a>
                                             </li>
                                             {% endfor %}
                                         </ul>
@@ -35,7 +35,7 @@ title: 热门推荐
                                 {% else %}
                                 <div class="post-image">
                                     {% if post.images.size > 0 %}
-                                    <a href="{{site.base_url}}{{ post.url }}"><img src="{{site.aliyun_oss}}{{post.images[0]}}" alt="{{ post.title }}" /></a>
+                                    <a href="{{site.base_url}}{{ post.url }}"><img class="lazy" src="{{site.aliyun_oss}}/assets/img/grey.gif" data-original="{{site.aliyun_oss}}{{post.images[0]}}" width="270" height="203" alt="{{ post.title }}" /></a>
                                     {% else %}
                                     <blockquote>
                                         {% if post.description %}
@@ -90,8 +90,10 @@ title: 热门推荐
         </div>
     </div>
 </section>
+<script src="{{site.aliyun_oss}}/assets/js/jquery.lazyload.js" type="text/javascript"></script>
 <script type="text/javascript">
     $(function () {
+        $("img.lazy").lazyload();
         var array = initJsonData("{{site.base_url}}/json/special.json");
         getStartedInitialization(array[0],array[1],"{{site.countPerPage}}");
     });
