@@ -30,12 +30,13 @@ perPageItem: 10
                             <div class="image-wrapp">
 
                                 {% if post.images.size > 0 %}
-                                <a href="{{site.base_url}}{{ post.url }}"><img
-                                        src="{{site.aliyun_oss}}{{post.images[0]}}"
-                                        alt="{{ post.title }}"/></a>
+                                <a href="{{site.base_url}}{{ post.url }}">
+                                  <img class="lazy" src="{{site.aliyun_oss}}/assets/img/grey.gif" data-original="{{site.aliyun_oss}}{{post.images[0]}}" width="270" height="203" alt="{{ post.title }}">
+                                </a>
                                 {% else %}
-                                <a href="{{site.base_url}}{{ post.url }}"><img
-                                        src="{{site.aliyun_oss}}/assets/img/dummies/work3.jpg" alt="{{ post.title }}"/></a>
+                                <a href="{{site.base_url}}{{ post.url }}">
+                                  <img class="lazy" src="{{site.aliyun_oss}}/assets/img/grey.gif" data-original="{{site.aliyun_oss}}/assets/img/dummies/work3.jpg" width="270" height="203" alt="{{ post.title }}">
+                                </a>
                                 {% endif %}
                                 <article class="da-animate da-slideFromRight" style="display: block;">
                                     <h4>
@@ -98,3 +99,10 @@ perPageItem: 10
         </div>
     </div>
 </section>
+<script src="{{site.aliyun_oss}}/assets/js/jquery.lazyload.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8">
+  $(function() {
+      $("img.lazy").lazyload();
+      });
+</script>
+
