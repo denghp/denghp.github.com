@@ -11,8 +11,8 @@ perPageItem: 10
             <div class="span12">
                 <ul class="filter">
                     <li class="all active"><a href="#" class="btn btn-color">All categories</a></li>
-                    <li class="renwen"><a href="#" class="btn btn-color">人文</a></li>
-                    <li class="fengjing"><a href="#" class="btn btn-color">风景</a></li>
+                    <li class="renwen" ><a href="#" class="btn btn-color">人文</a></li>
+                    <li class="fengjing" id="fengjing"><a href="#" class="btn btn-color">风景</a></li>
                     <li class="meishi"><a href="#" class="btn btn-color">美食</a></li>
                     <li class="web"><a href="#" class="btn btn-color">互联网</a></li>
                     <li class="dongwu"><a href="#" class="btn btn-color">动物</a></li>
@@ -64,34 +64,7 @@ perPageItem: 10
                                 </article>
                             </div>
                         </div>
-                        <!--
-                        <div class="entry-meta">
-                            <a href="#"><i class="icon-square icon-48 icon-pencil left"></i></a>
-					<span class="date">{{ post.date | date:"%m-%d" }} <br/>
-					{{ post.date | date:"%Y" }}</span>
-                        </div>
-                        <div class="entry-body">
-                            <a href="single-post.html">
-                                <h5 class="title">
-                                    {% if post.short_title %}
-                                    {{post.short_title}}
-                                    {% else %}
-                                    {{ post.title | strip_html | truncatewords: 3}}
-                                    {% endif %}
-                                </h5>
-                            </a>
-
-                            <p>
-                                {% if post.tags %}
-                                {% for tag in post.tags limit:3 %}
-                                <a href="{{ site.base_url }}/tags/#{{tag}}" class="text" title="{{ tag }}"
-                                   rel="category tag">{{ tag }}</a>&nbsp;
-                                {% endfor %}
-                                {% endif %}
-                            </p>
-                        </div>
-                        -->
-                    </div>
+                         </div>
                 </li>
                 {% endif %}
                 {% endfor %}

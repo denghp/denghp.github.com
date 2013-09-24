@@ -277,6 +277,7 @@ Github site: http://github.com/razorjack/quicksand
                 if (sourceElement.length === 0) {
                     // No such element in source collection...
                     if (!options.useScaling) {
+
                         animationOptions = {
                             opacity: '1.0'
                         };
