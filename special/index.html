@@ -90,10 +90,8 @@ title: 热门推荐
         </div>
     </div>
 </section>
-<script src="{{site.aliyun_oss}}/assets/js/jquery.lazyload.js" type="text/javascript"></script>
 <script type="text/javascript">
     $(function () {
-        $("img.lazy").lazyload();
         var array = initJsonData("{{site.base_url}}/json/special.json");
         getStartedInitialization(array[0],array[1],"{{site.countPerPage}}");
     });
