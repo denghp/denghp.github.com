@@ -14,8 +14,8 @@ meta:
         email: denghp@126.com
 
 aliyun_oss: http://demi-panda.oss.aliyuncs.com
-#base_url: http://demi-panda.com
-base_url:
+base_url: http://demi-panda.com
+#base_url:
 baseurl: 
 markdown: rdiscount
 pygments: true
