@@ -14,8 +14,8 @@ meta:
         email: denghp@126.com
 
 aliyun_oss: http://demi-panda.oss.aliyuncs.com
-#base_url: http://demi-panda.com
-base_url:
+base_url: http://demi-panda.com
+#base_url:
 baseurl: 
 markdown: rdiscount
 pygments: true
@@ -45,3 +45,5 @@ links:
       name: 博客大巴
     - url: "http://asiachrispy.github.io/itec"
       name: 黄忠的技术博客
+    - url: "http://www.ruanyifeng.com/"
+      name: 阮一峰的网络日志
