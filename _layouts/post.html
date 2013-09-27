@@ -15,7 +15,7 @@ layout: default
                     <div class="clearfix">
                     </div>
                     {% for item in page.array %}
-                    <img src="{{site.aliyun_oss}}{{item}}" alt="{{page.title}}" />
+                    <img class="lazy" width="270" height="203" src="{{site.aliyun_oss}}/assets/img/grey.gif" data-original="{{site.aliyun_oss}}{{item}}" alt="{{page.title}}" />
                     {% endfor %}
 
                     <ul class="post-meta">
