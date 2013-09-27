@@ -10,7 +10,7 @@
                     <li>
                         <a href="{{ site.url}}{{post.url}}">
                         {% if post.images.size > 0 %}
-                            <img src="{{site.aliyun_oss}}{{post.images[0]}}" alt="{{post.title}}"/>
+                            <img class="lazy" src="{{site.aliyun_oss}}/assets/img/grey.gif" data-original="{{site.aliyun_oss}}{{post.images[0]}}" width="370" height="277" alt="{{post.title}}"/>
                         {% endif %}
                         </a>
                     </li>
@@ -82,7 +82,7 @@
             <div class="span3">
                 <div class="thumbnail">
                     <div class="image-wrapp">
-                        <a href="{{site.base_url}}{{ post.url }}"><img src="{{site.aliyun_oss}}{{post.images[0]}}"/></a>
+                        <a href="{{site.base_url}}{{ post.url }}"><img class="lazy" src="{{site.aliyun_oss}}/assets/img/grey.gif" data-original="{{site.aliyun_oss}}{{post.images[0]}}" width="270" height="203" alt="{{post.title}}"/></a>
                         <article class="da-animate da-slideFromRight" style="display: block;">
                             <h4>{{ post.title | strip_html | truncatewords: 3}}</h4>
                             <a href="{{ site.base_url }}{{post.url}}"><i class="icon-rounded icon-48 icon-link"></i></a>
@@ -137,11 +137,11 @@
                 <div class="thumbnail">
                     <div class="image-wrapp">
                         {% if post.images.size > 0 %}
-                        <a href="{{site.base_url}}{{ post.url }}"><img src="{{site.aliyun_oss}}{{post.images[0]}}"
-                                                                      alt="{{ post.title }}"/></a>
+                        <a href="{{site.base_url}}{{ post.url }}">
+                            <img class="lazy" src="{{site.aliyun_oss}}/assets/img/grey.gif" data-original="{{site.aliyun_oss}}{{post.images[0]}}" width="270" height="203" alt="{{ post.title }}"/></a>
                         {% else %}
-                        <a href="{{site.base_url}}{{ post.url }}"><img
-                                src="{{site.aliyun_oss}}/assets/img/dummies/work3.jpg" alt="{{ post.title }}"/></a>
+                        <a href="{{site.base_url}}{{ post.url }}">
+                            <img class="lazy" src="{{site.aliyun_oss}}/assets/img/grey.gif" data-original="{{site.aliyun_oss}}/assets/img/dummies/work3.jpg" width="270" height="203" alt="{{ post.title }}"/></a>
                         {% endif %}
                         <article class="da-animate da-slideFromRight" style="display: block;">
                             <h4>{{ post.title | strip_html | truncatewords: 3}}</h4>
@@ -200,7 +200,7 @@
             <div class="span3">
                 <div class="thumbnail">
                     <div class="image-wrapp">
-                        <a href="{{site.base_url}}{{ post.url }}"><img src="{{site.aliyun_oss}}{{post.images[0]}}"/></a>
+                        <a href="{{site.base_url}}{{ post.url }}"><img class="lazy" src="{{site.aliyun_oss}}/assets/img/grey.gif" data-original="{{site.aliyun_oss}}{{post.images[0]}}" width="270" height="203" alt="{{post.title}}"/></a>
                         <article class="da-animate da-slideFromRight" style="display: block;">
                             <h4>{{ post.title | strip_html | truncatewords: 3}}</h4>
                             <a href="{{ site.base_url }}{{post.url}}"><i class="icon-rounded icon-48 icon-link"></i></a>
