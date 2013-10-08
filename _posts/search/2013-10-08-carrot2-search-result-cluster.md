@@ -46,3 +46,6 @@ Carrot2源码地址:<a href="https://github.com/carrot2/carrot2" target="_bank">
 
 ###示例
 代码示例需要自己去看官方的example
+
+###Carrot2聚类工具简介
+Carrot2聚类工具简介<a href="http://pan.baidu.com/s/1c7hW" target="_bank">http://pan.baidu.com/s/1c7hW</a>
