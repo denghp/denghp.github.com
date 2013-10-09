@@ -32,7 +32,7 @@ Solr作为一个搜索服务器，在并发搜索请求的场景下，可能一�
 事实上，Solr框架在上面的几个方面都能做到不错的支持，具有很大的灵活性。基于上述的几个问题，我们来配置Solr集群的Replication，并实践集群复制的功能。
 
 ###结构图
-<img src="/assets/images/solr/solr-replication.jpg"></img>
+<img src="{{site.aliyun_oss}}/assets/images/solr/solr-replication.jpg"></img>
 
 ### 配置
 ReplicationHandler是个RequestHandler，如果需要使用它，也就是在solrconfig.xml中配置它，下面介绍ReplicationHandler的配置参数。
@@ -73,6 +73,11 @@ Slave的配置示例如下：
 上面的参数也不需要太多解释，其中pollInterval参数表明slave从master复制数据的频率。如果对实时性要求不高，通常5-10分钟即可，也避免slave的indexsearcher频繁的切换，同时，master的commit频率也可相对保持一致。
 
 ###ReplicationHandler 的 HTTP API
+索引优化
+<pre id="bash">
+$ http://master_host:port/solr/update?optimize=true
+$ http://master_host:port/solr/update?optimize=true&maxSegments=2
+</pre>
 可以通过以下 HTTP 命令来控制 ReplicationHandler 的操作
 <pre>
 http://master_host:port/solr/replication?command=enablereplication
@@ -110,3 +115,4 @@ http://host:port/solr/replication?command=filelist&indexversion=&lt;index-versio
 http://master_host:port/solr/replication?command=backup
 </pre>
 如果有新的commit，将备份索引库，该命令在阶段备份索引时很有用
+
