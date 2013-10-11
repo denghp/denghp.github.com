@@ -178,3 +178,8 @@ wget [参数列表] [目标软件、网页的网址]
 -nh, –no-host-lookup 不透过 DNS 查寻主机.
 -np, –no-parent 不追朔到起源目录.
 </pre>
+
+###跳过robots限制抓取
+<pre id="bash">
+wget -r -erobots=off http://your.site.here
+</pre>
