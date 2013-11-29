@@ -30,12 +30,15 @@ date: 2012-11-18
 ###EasyBCD使用
 
 选择“Add New Entry”-> 选择NeoGrub
-
+<a href="{{site.aliyun_oss}}/assets/images/os/EasyBCD-GRUB.jpg"  rel="prettyPhoto[{{page.UUID}}]">
 <img src="{{site.aliyun_oss}}/assets/images/os/EasyBCD-GRUB.jpg"></img>
+</a>
 <p>
 选NeoGrub 然后点Install NeoGrub点Save ，接着是Configure
 </p>
+<a href="{{site.aliyun_oss}}/assets/images/os/easybcd-2.jpg"  rel="prettyPhoto[{{page.UUID}}]">
 <img src="{{site.aliyun_oss}}/assets/images/os/easybcd-2.jpg"></img>
+</a>
 <p>
 然后就会出现一个menu.lst文件,我们需要编辑这个文件,因为系统启动需要依靠这个文件找到我们的ubuntu的ios.
 把下面的配置复制进去，把原来的全覆盖掉:
@@ -68,16 +71,24 @@ sudo umount -l /isodevice
 
 ###开始安装
 根据自己的爱好，选择语言,选择安装类型，可以自定义.
+<a href="{{site.aliyun_oss}}/assets/images/os/ubuntu-install.jpg"  rel="prettyPhoto[{{page.UUID}}]">
 <img src="{{site.aliyun_oss}}/assets/images/os/ubuntu-install.jpg"></img>
+</a>
 挂在分区的方案如下(以30G为例)：
 <pre id="wiki">
 / 20G  ext4（根分区可以大点）
 SWAP  2G
 /home  8G ext4（剩下的给/home）
 </pre>
+<a href="{{site.aliyun_oss}}/assets/images/os/ubuntu-install-1.jpg"  rel="prettyPhoto[{{page.UUID}}]">
 <img src="{{site.aliyun_oss}}/assets/images/os/ubuntu-install-1.jpg"></img>
+</a>
+<a href="{{site.aliyun_oss}}/assets/images/os/ubuntu-install-2.jpg"  rel="prettyPhoto[{{page.UUID}}]">
 <img src="{{site.aliyun_oss}}/assets/images/os/ubuntu-install-2.jpg"></img>
+</a>
+<a href="{{site.aliyun_oss}}/assets/images/os/ubuntu-install-3.jpg"  rel="prettyPhoto[{{page.UUID}}]">
 <img src="{{site.aliyun_oss}}/assets/images/os/ubuntu-install-3.jpg"></img>
+</a>
 
 *注意:*
 <p>
@@ -85,7 +96,7 @@ SWAP  2G
 </p>
 <p>
 (2)若重启就会发现原来 windows进不去了。
-<p>
+</p>
 
 打开终端输入命令
 <pre id="bash">
@@ -101,7 +112,7 @@ update 命令会自动找到 windows 7 启动项。并且自动更新 /boot/grub
 (3)最后进入Window7，打开EasyBCD删除安装时改的menu.lst文件，按Remove即可。
 然后去我们的c盘 删除vmlinuz，initrd.lz和系统的iso文件。
 利用EasyBCD可以更改启动项菜单按Edit Boot Menu按钮，可以选择将Windows7设为默认开机选项。
-<p>
+</p>
 
 ###filesystem type is ntfs partition type 0x7 异常<br>
 ####描述
@@ -122,3 +133,14 @@ linux (loop)/vmlinuz boot=capser iso-scan/filename=/ubuntu-12.04-amd64.iso nopro
 initrd (loop)/casper/initrd.lz
 boot
 </pre>
+
+####EasyBCD修复启动项
+运行软件，按下图步骤添加启动条目：
+<a href="{{site.aliyun_oss}}/assets/images/linux/easybcd.gif"  rel="prettyPhoto[{{page.UUID}}]">
+ <img src="{{site.aliyun_oss}}/assets/images/linux/easybcd.gif"></img>
+</a>
+
+重启，就能看到Ubuntu启动菜单了：
+<a href="{{site.aliyun_oss}}/assets/images/linux/easybcd-2.gif"  rel="prettyPhoto[{{page.UUID}}]">
+ <img src="{{site.aliyun_oss}}/assets/images/linux/easybcd-2.gif"></img>
+</a>
