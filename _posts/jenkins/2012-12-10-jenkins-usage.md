@@ -35,16 +35,16 @@ $ $TOMCAT_HOME/bin/catalina.sh run
 </pre>
 </ol>
 启动成功，可以从浏览器中输入<a href="http://localhost:8080/jenkins">http://localhost:8080/jenkins</a>,就可以正常访问jenkins控制页面
-<img src="/assets/images/jenkins/jenkin-console.jpg" width="580px" alt="jenkins,hudson"></img>
+<img src="{{site.aliyun_oss}}/assets/images/jenkins/jenkin-console.jpg" width="580px" alt="jenkins,hudson"></img>
 
 ###jenkins 配置
 ####进入Manager Jenkins页面
 点击jenkins主页上的[Manager Jenkins](http://localhost:6082/jenkins/manage)链接，则显示如下图界面:
-<img src="/assets/images/jenkins/jenkins-manager.jpg" width="580px" alt="jenkins,hudson"></img>
+<img src="{{site.aliyun_oss}}/assets/images/jenkins/jenkins-manager.jpg" width="580px" alt="jenkins,hudson"></img>
 
 ####进入Configure System页面
-<img src="/assets/images/jenkins/jenkins-configure.jpg" width="580px" alt="jenkins,hudson"></img>
-<img src="/assets/images/jenkins/jenkins-email.jpg" width="580px" alt="jenkins email,hudson"></img>
+<img src="{{site.aliyun_oss}}/assets/images/jenkins/jenkins-configure.jpg" width="580px" alt="jenkins,hudson"></img>
+<img src="{{site.aliyun_oss}}/assets/images/jenkins/jenkins-email.jpg" width="580px" alt="jenkins email,hudson"></img>
 ####备注:
 1、配置JDK installations<br>
   　　name:jdk名称，最好与你安装的jdk名称版本一致，如:jdk1.6.0_30<br>
@@ -64,12 +64,12 @@ http://localhost:8080/jenkins/
 
 ####配置邮件通知E-mail Notification
 邮件通知，主要是在编译，部署项目失败,成功时发送邮件通知.
-<img src="/assets/images/jenkins/jenkins-email.jpg" width="580px" alt="jenkins email,hudson"></img>
+<img src="{{site.aliyun_oss}}/assets/images/jenkins/jenkins-email.jpg" width="580px" alt="jenkins email,hudson"></img>
 
 ###构建工程
 ####创建项目
 在jenkins的主页上选择，New Job链接,建立一个项目。填入一个项目名，选择Build a free-style software project，点击ok创建即可。
-<img src="/assets/images/jenkins/jenkins-job.jpg" width="580px" alt="jenkins job,hudson job"></img>
+<img src="{{site.aliyun_oss}}/assets/images/jenkins/jenkins-job.jpg" width="580px" alt="jenkins job,hudson job"></img>
 ####项目配置
 在创建项目单击ok按钮后会自动调整到配置项目页面，其配置如下图，单击save按钮保存。
 <img src="/assets/images/jenkins/jenkins-job-1.jpg" width="580px" alt="jenkins job,hudson job"></img>
@@ -82,7 +82,7 @@ http://localhost:8080/jenkins/
   　　2.1、Repository URL为svn资源的访问地址<br>
   　　2.2、Local module directory(optional)是自动生成<br>
 
-<img src="/assets/images/jenkins/jenkins-job-2.jpg" width="580px" alt="jenkins job,hudson job"></img>
+<img src="{{site.aliyun_oss}}/assets/images/jenkins/jenkins-job-2.jpg" width="580px" alt="jenkins job,hudson job"></img>
 <strong>备注:</strong><br>
 1、勾选Poll SCM选项出现Schedule选项<br>
   　　1.1、Schedule选项为当svn代码库代码发生修改后多长时间开始执行hudson重构,值* * * * *表示代码更新一分后开始执行hudson重构。具体的格式说明单击 进行查看<br>
@@ -105,10 +105,10 @@ jenkins部署方式支持多种:
 &lt;/tomcat-users&gt;
 </pre>
 进入tomcat manager管理界面就OK
-<img src="/assets/images/jenkins/tomcat-manager.jpg" width="580px" alt="jenkins job,hudson job"></img>
+<img src="{{site.aliyun_oss}}/assets/images/jenkins/tomcat-manager.jpg" width="580px" alt="jenkins job,hudson job"></img>
 
 ####jenkins 使用tomcat部署配置
-<img src="/assets/images/jenkins/jenkins-job-3.jpg" width="580px" alt="jenkins job,hudson job"></img>
+<img src="{{site.aliyun_oss}}/assets/images/jenkins/jenkins-job-3.jpg" width="580px" alt="jenkins job,hudson job"></img>
 <strong>备注:</strong><br>
 1、Deploy war/ear to a container 部署war/ear到容器中<br>
 2、WAR/EAR files 配置war或者ear的名称<br>
@@ -118,7 +118,7 @@ jenkins部署方式支持多种:
 
 ###Jenkins权限配置
 配置经过验证的用户才能进行页面的操作,如下图:
-<img src="/assets/images/jenkins/jenkins-admin.jpg" width="580px" alt="jenkins job,hudson job"></img>
+<img src="{{site.aliyun_oss}}/assets/images/jenkins/jenkins-admin.jpg" width="580px" alt="jenkins job,hudson job"></img>
 <strong>说明：</strong><br>
 1、打开全局配置页面<br>
   　　勾选Enable security选项<br>
@@ -126,13 +126,13 @@ jenkins部署方式支持多种:
 2、在Security Realm中选择Jenkins own user database，同时选中Allow users to sign up（容许进行用户注册，因为刚开始时没有注册用户，当进行了全部用户注册后可以把这个选择项去掉）<br>
 3、在Authorization中选择Logged-in users can do anything，让登陆后才能做任何事情，单击save按钮后，在页面右上角有login和sign up链接<br>
 4、单击sign up链接进行登陆注册，<br>
-<img src="/assets/images/jenkins/jenkins-admin-2.jpg" width="580px" alt="jenkins job,hudson job"></img>
+<img src="{{site.aliyun_oss}}/assets/images/jenkins/jenkins-admin-2.jpg" width="580px" alt="jenkins job,hudson job"></img>
 注册成功后会自动跳转到登陆页面，或者单击有上角的login链接进入登陆页面
 
 ####创建其他用户并设置权限
 1、首先创建用户<br>
 2、然后设置每个用户的权限
-<img src="/assets/images/jenkins/jenkins-admin-1.jpg" width="580px" alt="jenkins job,hudson job"></img>
+<img src="{{site.aliyun_oss}}/assets/images/jenkins/jenkins-admin-1.jpg" width="580px" alt="jenkins job,hudson job"></img>
 
 
 
