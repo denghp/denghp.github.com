@@ -72,7 +72,7 @@ http://localhost:8080/jenkins/
 <img src="{{site.aliyun_oss}}/assets/images/jenkins/jenkins-job.jpg" width="580px" alt="jenkins job,hudson job"></img>
 ####项目配置
 在创建项目单击ok按钮后会自动调整到配置项目页面，其配置如下图，单击save按钮保存。
-<img src="/assets/images/jenkins/jenkins-job-1.jpg" width="580px" alt="jenkins job,hudson job"></img>
+<img src="{{site.aliyun_oss}}/assets/images/jenkins/jenkins-job-1.jpg" width="580px" alt="jenkins job,hudson job"></img>
 
 <strong>备注:</strong><br>
 1、Discard Old Builds<br>
