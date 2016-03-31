@@ -92,7 +92,7 @@ title: 热门推荐
 </section>
 <script type="text/javascript">
     $(function () {
-        var array = initJsonData("{{site.base_url}}/json/special.json");
+        var array = initJsonData("/json/special.json");
         getStartedInitialization(array[0],array[1],"{{site.countPerPage}}");
     });
 
