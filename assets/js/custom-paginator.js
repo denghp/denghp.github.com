@@ -31,6 +31,37 @@ function initJsonData(url) {
     return new Array(posts, allKeys)
 }
 
+
+function initJsonData_back(url) {
+    var posts;
+    var allKeys;
+    $.ajax({
+        type: "get", //jquey是不支持post方式跨域的
+        async: false,
+        url: url, //跨域请求的URL
+        dataType: "json",
+        //传递给请求处理程序，用以获得jsonp回调函数名的参数名(默认为:callback)
+        jsonp: "jsoncallback",
+        //自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名
+        jsonpCallback: "success_jsonpCallback",
+        //成功获取跨域服务器上的json数据后,会动态执行这个callback函数
+        success: function (json) {
+            posts = json;
+            allKeys = new Array(posts.length);
+            for (var i = 0; i < posts.length; i++) {
+                allKeys[i] = posts[i].UUID;
+            }
+            console.log(url + "数据获取完成, posts.size : " + posts.length + " threads_key : " + allKeys.length);
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest);
+            console.log(textStatus);
+            console.log(errorThrown);
+        }
+    });
+    return new Array(posts, allKeys)
+}
+
 function initTagsJsonData(url) {
     var tags;
     $.ajax({
