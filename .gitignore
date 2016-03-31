@@ -1,0 +1,7 @@
+### Jekyll template
+_site/
+.sass-cache/
+.jekyll-metadata
+.idea
+*.iml
+# Created by .ignore support plugin (hsz.mobi)
