@@ -10,9 +10,9 @@ function initJsonData(url) {
         url: url, //跨域请求的URL
         dataType: "json",
         //传递给请求处理程序，用以获得jsonp回调函数名的参数名(默认为:callback)
-        jsonp: "jsoncallback",
+        //jsonp: "jsoncallback",
         //自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名
-        jsonpCallback: "success_jsonpCallback",
+        //jsonpCallback: "success_jsonpCallback",
         //成功获取跨域服务器上的json数据后,会动态执行这个callback函数
         success: function (json) {
             posts = json;
@@ -20,7 +20,7 @@ function initJsonData(url) {
             for (var i = 0; i < posts.length; i++) {
                 allKeys[i] = posts[i].UUID;
             }
-            console.log(url + "数据获取完成, posts.size : " + posts.length + " threads_key : " + allKeys.length);
+            //console.log(url + "数据获取完成, posts.size : " + posts.length + " threads_key : " + allKeys.length);
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
             console.log(XMLHttpRequest);
@@ -39,13 +39,13 @@ function initTagsJsonData(url) {
         url: "/json/tags.json", //跨域请求的URL
         dataType: "json",
         //传递给请求处理程序，用以获得jsonp回调函数名的参数名(默认为:callback)
-        jsonp: "jsoncallback",
+        //jsonp: "jsoncallback",
         //自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名
-        jsonpCallback: "success_jsonpCallback",
+        //jsonpCallback: "success_jsonpCallback",
         //成功获取跨域服务器上的json数据后,会动态执行这个callback函数
         success: function (json) {
             tags = json;
-            console.log("tags.json数据获取完成, tags.length : " + tags.length);
+            //console.log("tags.json数据获取完成, tags.length : " + tags.length);
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
             console.log(XMLHttpRequest);
