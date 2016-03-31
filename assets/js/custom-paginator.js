@@ -4,6 +4,23 @@
 function initJsonData(url) {
     var posts;
     var allKeys;
+    jQuery.getJSON(url + "&callbak=?", function(data)  
+    {  
+            posts = json;
+            allKeys = new Array(posts.length);
+            for (var i = 0; i < posts.length; i++) {
+                allKeys[i] = posts[i].UUID;
+            }
+            console.log(url + "数据获取完成, posts.size : " + posts.length + " threads_key : " + allKeys.length);
+
+    }); 
+    return new Array(posts, allKeys)
+}
+
+
+function initJsonData_back(url) {
+    var posts;
+    var allKeys;
     $.ajax({
         type: "get", //jquey是不支持post方式跨域的
         async: false,
