@@ -4,7 +4,7 @@
 function initJsonData(url) {
     var posts;
     var allKeys;
-    jQuery.getJSON(url + "&callbak=?", function(data)  
+    jQuery.getJSON(url, function(data)  
     {  
             posts = json;
             allKeys = new Array(posts.length);
