@@ -27,10 +27,10 @@ https://{username}:{passwd}@github.com
 ```
 
 **.gitconfig文件则会添加如下内容**
-```shell
+{% highlight java %}
 [credential]
         helper = store
-```
+{% endhighlight %}
 
 ### git-工具-凭证存储实现原理
-[git-scm 教程] (https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%87%AD%E8%AF%81%E5%AD%98%E5%82%A8)
+[git-scm 教程] (https://git-scm.com/book/zh/v2/Git-工具-凭证存储)
