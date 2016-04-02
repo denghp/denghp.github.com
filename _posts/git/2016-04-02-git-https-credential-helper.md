@@ -10,7 +10,7 @@ tags:
 - github
 - tools
 UUID: 20160402
-images: ["/assets/images/github/git-logo_bv0ydu.jpg"]
+images: ["/assets/images/github/git-logo.jpg"]
 ---
 
 #### 使用git push提交时，每次都要输入密码，次数多了，感觉挺麻烦. 如果git以ssh协议通讯，免密码可以用ssh公钥设置免登录。如果git时以https方式访问呢，该怎么办？下面方式可以解决这个问题.
