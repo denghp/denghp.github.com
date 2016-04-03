@@ -9,9 +9,6 @@
                     <img src="{{site.aliyun_oss}}/assets/img/demi-logo.jpg" alt="" />
                 </a>
                 <!-- end logo -->
-		<p>
-		PAGEURL : {{page.url}}
-		</p>
                 <!-- top menu -->
                 <div class="navigation">
                     <nav>
@@ -25,34 +22,34 @@
                                 <a href="{{site.base_url}}/index.html">Home</a>
                             </li>
                             {% endif %}
-                            {% if page.url == '/archives/index.html' or page.url == '/archives' %}
+                            {% if page.url == '/archives/index.html' or page.url == '/archives/' %}
                             <li class="dropdown active">
-                                <a href="{{site.base_url}}/archives/">文章列表-page</a>
+                                <a href="{{site.base_url}}/archives/">文章列表</a>
                             </li>
                             {% else %}
                             <li class="dropdown ">
                                 <a href="{{site.base_url}}/archives/">文章列表</a>
                             </li>
                             {% endif %}
-                            {% if page.url == '/special/index.html' or page.url == '/special' %}
+                            {% if page.url == '/special/index.html' or page.url == '/special/' %}
                             <li class="dropdown active">
-                                <a href="{{site.base_url}}/special">热门推荐-tuij</a>
+                                <a href="{{site.base_url}}/special">热门推荐</a>
                             </li>
                             {% else %}
                             <li class="dropdown">
                                 <a href="{{site.base_url}}/special">热门推荐</a>
                             </li>
                             {% endif %}
-                            {% if page.url == '/code/index.html' or page.url == '/code' %}
+                            {% if page.url == '/code/index.html' or page.url == '/code/' %}
                             <li class="dropdown active">
-                                <a href="{{site.base_url}}/code">研发实践-shij</a>
+                                <a href="{{site.base_url}}/code">研发实践</a>
                             </li>
                             {% else %}
                             <li class="dropdown">
                                 <a href="{{site.base_url}}/code">研发实践</a>
                             </li>
                             {% endif %}
-                            {% if page.url == '/chihuo/index.html' or page.url == '/chihuo' %}
+                            {% if page.url == '/chihuo/index.html' or page.url == '/chihuo/' %}
                             <li class="dropdown active">
                                 <a href="{{site.base_url}}/chihuo">熊猫吃货</a>
                             </li>
@@ -61,7 +58,7 @@
                                 <a href="{{site.base_url}}/chihuo">熊猫吃货</a>
                             </li>
                             {% endif %}
-                            {% if page.url == '/life/index.html' or page.url == '/life' %}
+                            {% if page.url == '/life/index.html' or page.url == '/life/' %}
                             <li class="dropdown active">
                                 <a href="{{site.base_url}}/life/index.html">微生活</a>
                             </li>

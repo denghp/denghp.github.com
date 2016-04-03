@@ -19,8 +19,9 @@ base_url: http://denghp.github.com
 baseurl: 
 #markdown: rdiscount
 markdown: kramdown
-#pygments: true
-highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 permalink: /:year/:month/:day/:title
 auto: true
 debug: true
