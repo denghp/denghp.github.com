@@ -17,8 +17,10 @@ aliyun_oss: http://demi-panda.oss.aliyuncs.com
 base_url: http://denghp.github.com
 #base_url:
 baseurl: 
-markdown: rdiscount
-pygments: true
+#markdown: rdiscount
+markdown: kramdown
+#pygments: true
+highlighter: true
 permalink: /:year/:month/:day/:title
 auto: true
 debug: true
