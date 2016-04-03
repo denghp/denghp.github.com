@@ -20,7 +20,7 @@ baseurl:
 #markdown: rdiscount
 markdown: kramdown
 #pygments: true
-highlighter: true
+highlighter: rouge
 permalink: /:year/:month/:day/:title
 auto: true
 debug: true
